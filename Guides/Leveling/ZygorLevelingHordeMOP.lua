@@ -3836,7 +3836,7 @@ goto 62.3,29.4
 .' Tell him you're ready to leave. |goto 76.5,19.4 |noway |c
 step
 goto 76.4,9.0
-.kill Prophet Khar'zul##61541 |q 31228/2 |tip Stay on top of the Altar when he causes the floor to turn purple. Make sure to interrupt the Crow Storm AoE attack.
+.kill Prophet Khar'zul##61541 |q 31228/2 |tip Stay on top of the Altar when he causes the floor to turn purple. Try to interrupt his Crow Storm AoE attack, if he uses it.
 step
 goto 75.4,11.8
 .from Zandalari Headsplitter##64643+, Zandalari Witch Doctor##64631+, Zandalari Worshipper##64642+
@@ -3850,10 +3850,11 @@ goto 58.1,61.5
 .talk 59701
 ..accept 30592
 step
-'Wait for the Caravan to arrive
+goto 58.5,64.7
+.' Join up with the Convoy
 |confirm
 step
-'Protect the caravan and escort them to this point |goto 53.0,66.6 <5 |n
+.' Protect the convoy and escort them to this point |goto 53.0,66.6 <5 |n
 .' Escort grummles to the Burlap Waystation |q 30592/1
 |modelnpc Broketooth Spear-haver##59443
 |modelnpc Broketooth Sneaker##60195
@@ -3865,8 +3866,12 @@ goto 51.7,67.8
 ..accept 30602
 step
 goto 49.1,70.5
-'Talk to Brother Rabbitsfoot |q 30602/1 |modelnpc Brother Rabbitsfoot##59806
+.' Talk to Brother Rabbitsfoot |q 30602/1
+.|tip He's hanging upside down from a tree
 ..accept 30603
+|modelnpc Brother Rabbitsfoot##59806
+step
+.' Follow this path up |goto 48.8,71.5 <5 |c
 step
 goto 48.0,73.2
 .from Mo Mo##59805
@@ -3884,8 +3889,9 @@ goto 56.8,71.1
 .from Tak Tak##59958
 .collect 1 Corpse of Tak Tak##80430
 step
-goto 56.8,71.1
+goto 56.8,71.0
 .click Tak Tak's Altar
+.|tip It's a big stone slab with a torch on either side of it
 .' Destroy Tak Tak's Altar |q 30599/3
 step
 goto 52.3,71.3
@@ -3894,17 +3900,21 @@ goto 52.3,71.3
 step
 goto 52.3,71.5
 .click Ko Ko's Altar
+.|tip It's a big stone slab with a torch on either side of it
 .' Destroy Ko Ko's Altar |q 30599/2
 step
 goto Kun-Lai Summit/12 49.2,39.0
 .from Dak Dak##59424
+.|tip He walks around the cave, some searching may be necessary
 .collect 1 Corpse Of Dak Dak##80428
 step
-goto 49.2,39.0
+goto 49.6,39.7
 .click Dak Dak's Altar
+.|tip It's a big stone slab with a bunch of little candles on it. It is on the bottom floor of this cave
 .' Destroy Dak Dak's Altar |q 30599/1
 step
 goto Kun-Lai Summit 52.7,70.5
+.' Inside this cave and outside:
 .clicknpc Dead Packer##59896
 .get 8 Grummlepack##80307+ |q 30600/1
 .kill 6 Broketooth Tosser##59416+ |q 30604/2
@@ -3932,14 +3942,15 @@ goto Kun-Lai Summit/10 36.7,14.4
 .from Cho Cho the Wicked##60090
 .get Yeti Shackle Key##80535 |q 30607/1
 step
-'Before you release Old Poot Poot do the following inside the cave:
+.' Before you release Old Poot Poot do the following inside the cave:
 .from Knucklethump Jibstabber##59412+, Knucklethump Smasher##59410+
 .' Kill 8 Silverback Hozen |q 30606/1
 .click Grummle Cage
 .from Prisoner Bindings##60027
+.|tip You can mark these with Shift+v and make them easier to spot (Use v to mark enemies again).
 .' Rescue 5 Imprisoned Grummle |q 30608/1
 step
-goto 49.1,59.4
+goto 37.9,23.7
 .click Ball and Chain
 .' Release Old Poot Poot |q 30607/2 |modelnpc Old Poot Poot##59421
 step
@@ -3956,7 +3967,9 @@ goto Kun-Lai Summit 52.0,67.2
 step
 goto 46.3,63.9
 .kill 4 Cagemaster##60169+ |q 30611/1 |tip They are located around the huge wooden dome.
-.click Grummle Gear
+.click Grummle Gear##211686
+.|tip These are small silver and gray boxes on the ground
+.' Send 5 Packers packing |q 30610/1
 step
 goto 45.9,64.1
 .talk 59894
@@ -3969,7 +3982,7 @@ goto 45.9,64.1
 step
 goto 46.0,63.1
 .' Wait for Tassle to enrage Chomp Chomp |q 30612/1 |modelnpc Chomp Chomp##60217
-.kill The Ook of Dook##60188 |q 30612/2 |tip When he throws bananas just dodge them until he runs back to you.
+.kill The Ook of Dook##60188 |q 30612/2 |tip When he throws bananas just dodge them until he runs back to you. Also watch out for the big red double laser that moves around on the ground.
 step
 goto Kun-Lai Summit 52.0,67.3
 .talk 59452
@@ -3979,10 +3992,11 @@ goto 51.7,67.8
 .talk 59703
 ..accept 30692
 step
-'Wait for the Caravan to arrive
+goto 51.6,67.6
+.' Wait here for the Convoy
 |confirm
 step
-'Protect the caravan and escort them to this point |goto 43.9,68.9 <5 |n
+.' Protect the convoy and escort them to this point |goto 43.9,68.9 <5 |n
 .' Escort grummles to the Kota Basecamp |q 30692/1
 |modelnpc Knucklethump Snatcher##59682
 step
@@ -4012,20 +4026,21 @@ goto 42.8,69.3
 .talk 59452
 ..turnin 30612
 step
-'Follow the path marked by red flags up |goto 42.0,70.0 <5 |c
+.' Follow the path marked by red flags up and south |goto 42.0,70.0 <5 |c
 step
-'Enter the cave |goto 37.5,77.9 <5 |c
+.' Enter the cave |goto 37.5,77.9 <5 |c
 step
 goto 35.4,77.0
 .kill 8 Kafa-Crazed Yeti##60564+ |q 30745/1
 .click Kafa'Kota Berries
+.|tip Clusters of tiny red berries
 .get 100 Kafa'kota Berry##81054 |q 30744/1
 step
-'Click the Complete Quest box that displays on the right side of the screen under your minimap
+.' Click the Complete Quest box that displays on the right side of the screen under your minimap
 ..turnin 30744
 ..accept 30746
 step
-'Exit the cave |goto 37.5,77.9 <5 |c
+.' Exit the cave |goto 37.5,77.9 <5 |c
 step
 goto 38.5,77.9
 .kill 12 Kafa-Crazed Mountain Goat##60493 |q 30742/1
@@ -4033,7 +4048,7 @@ goto 38.5,77.9
 .' 15 Kafa'goot "Deposits" Marked |q 30743/1
 .' You can find more "Deposits" and Goats around [39.8,77.1]
 step
-'Enter the cave |goto 37.2,75.9 |c
+.' Enter the cave |goto 37.2,75.9 |c
 step
 goto 36.9,76.2
 .talk 60679
@@ -4057,12 +4072,12 @@ goto 42.6,69.2
 .' Unscrew the flask and offer it to her |invehicle |c
 step
 goto 49.5,68.5
-'Use the abilities on your hotbar to kill Hozen
+.' Use the abilities on your hotbar to kill Hozen
 .from Silverback Piker##60746+, Ookin Marauder##60753+, Broketooth Leaper##60742+, Ookin Shaman##60752+, Silverback Smasher##60749+, Broketooth Ravager##60743+
 .' Kill 100 Burlap Trail Hozen |q 30747/1
 step
 goto 42.5,69.3
-'Click the Leave Vehicle button |outvehicle |c
+.' Click the red arrow on your quickbar to stop riding Koto Kon  |outvehicle
 .talk 60679
 ..turnin 30747
 step
@@ -4077,6 +4092,10 @@ goto Shrine of Two Moons/1 69.2,49.0
 .talk 62996
 ..turnin 31511
 step
+goto Vale of Eternal Blossoms 62.8,21.7
+.talk 61122
+..fpath The Golden Terrace
+step
 goto Kun-Lai Summit 44.5,89.9
 .' Click the double doors and go through.
 .talk 60161
@@ -4090,6 +4109,7 @@ goto 43.9,89.6
 step
 goto 42.9,88.3
 .talk 60178
+.|tip She is hiding inside the house
 ..accept 30682
 .' Rescue Sya Zhong |q 30682/4
 step
@@ -4123,8 +4143,8 @@ goto 44.5,89.9
 ..turnin 30682
 step
 goto 45.4,85.6
-'Use your Blinding Rage Trap and lure Kobai into it |use Blinding Rage Trap##81741 |modelnpc Kobai##61303
-'Click the Steal Mask button that appears on your screen |q 30690/1 |tip You must be targetting Kobai for this to work
+.' Use your Blinding Rage Trap and lure Kobai into it |use Blinding Rage Trap##81741 |modelnpc Kobai##61303
+.' Click the Steal Mask button that appears on your screen |q 30690/1 |tip You must be targetting Kobai for this to work
 .kill Malevolent Fury##61333 |q 30690/2
 step
 goto 44.5,89.9
@@ -4147,14 +4167,17 @@ goto 34.5,59.1
 step
 goto 30.3,60.1
 .clicknpc Shado-Master Zhiyao##61808
+.|tip He's laying face-down on the ground
 .' Shado-Master Zhiyao Released From his Oath |q 30715/1
 step
 goto 30.1,62.5
 .clicknpc Liu of the Thousand Blows##61806
+.|tip Laying on the ground
 .' Liu of the Thousand Blows Released From his Oath |q 30715/2
 step
 goto 30.0,64.4
 .clicknpc Shiya Boldblade##61810
+.|tip Laying on the ground
 .' Shiya Boldblade Released From her Oath |q 30715/3
 step
 goto 30.9,62.0
@@ -4186,6 +4209,7 @@ goto 26.4,59.6
 .from Osul Fire-Warrior##63576+, Osul Veteran Archer##61886+
 .' Kill 12 Veteran Archers or Fire-Warriors |q 30750/1
 .click Yaungol Oil Barrel
+.|tip Brown jugs up on the wall
 .get 6 Yaungol Oil Barrel##82799 |q 30751/1
 step
 goto 29.3,62.3
@@ -4211,7 +4235,7 @@ goto 31.8,60.1
 step
 goto 32.1,60.6
 .clicknpc Keg Bomb##60553
-.' Use the abilities on your hotbar blow up as many Osul as you can in 1 try, you will need to repeat this.
+.' Use the abilities on your hotbar to blow up as many Osul as you can each time. You will need to repeat this.
 .kill 50 Osul Invader##60455 |q 30991/1
 .kill 4 Osul Treelauncher##60483 |q 30991/2
 step
@@ -4243,16 +4267,16 @@ goto 35.3,49.5
 ..accept 30752
 step
 goto 36.7,47.7
-'Talk to Shado-Pan Sentinel
+.' Talk to Shado-Pan Sentinel
 .' Tell him you are here with Ban Bearheart.
 .from Shado-Pan Sentinel##62220
 .' Gain access to the Monastery |q 30752/1
 step
-'Next to you
+.' Next to you:
 .talk 61819
 ..turnin 30752
 step
-'Pass through the Ox Gate and enter Townlong Steppes |goto 29.7,64.0 <5 |c
+.' Pass through the Ox Gate and enter Townlong Steppes |goto 29.7,64.0 <5 |c
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Pandaria 85-90\\Townlong Steppes (88-89)",[[
 author support@zygorguides.com
@@ -4288,8 +4312,10 @@ goto 67.3,54.4
 .kill 6 Osul Sharphorn##60647+ |q 30769/1
 .clicknpc Long-Haired Yak##60669+
 .clicknpc Steppebeast##60739+
+.|tip Just mark them with Shift+v (Use v to mark enemies again).
 .' Free 8 Yaks or Mushan |q 30770/1
 .click Pitch Pot
+.|tip Small tan and blue pots on the ground and inside tents
 .get 8 Dark Pitch##81174 |q 30771/1
 step
 goto 67.2,52.2
@@ -4321,11 +4347,12 @@ goto 67.0,48.2
 .kill Ku-Tong##60726 |q 30775/3 |tip When he casts Stalwart Defender hit him in the back.
 step
 goto 66.9,44.1
-'Use Ban's Explosives on Osul Ballistas |use Ban's Explosives##81193
+.' Use Ban's Explosives on Osul Ballistas |use Ban's Explosives##81193
 .' Destroy 6 Osul Ballistas |q 30773/1
 step
 goto 67.3,49.6
 .from 12 Osul Spearguard##60692+ |q 30772/1
+|tip When they cast Stalwart Defender hit them in the back.
 .collect 4 Stone Key##81178+ |n
 .click Drywood Cage
 .' Rescue 4 Longying Rangers |q 30774/1
@@ -4362,8 +4389,11 @@ goto 68.0,67.7
 .talk 60857
 ..accept 30786
 step
+.' Follow the path up and around |goto 68.4,67.8 <5 |c
+step
 goto 68.4,71.4
-.kill Dmong Naruuk##60683 |q 30786/1 |tip Go up the slope on the left.
+.kill Dmong Naruuk##60683 |q 30786/1
+.|tip Avoid his Blizzard AoE. He doesn't channel it, just move out of the large red circle on the ground.
 step
 goto 68.0,67.7
 .talk 60857
@@ -4371,7 +4401,8 @@ goto 68.0,67.7
 ..accept 30787
 step
 goto 66.6,68.0
-'Kill the Osul Mist-Shamans near Mist-Shaman's Torches |modelnpc Osul Mist-Shaman##60697
+.' Kill the Osul Mist-Shamans near Mist-Shaman's Torches |modelnpc Osul Mist-Shaman##60697
+.|tip The torches are channeling big arcs of blue energy and lightning out of them
 .click Mist-Shaman's Torch
 .get 6 Mist-Shaman's Torch##81176+ |q 30787/1
 step
@@ -4381,7 +4412,7 @@ goto 68.0,67.7
 ..accept 30788
 ..accept 30789
 step
-'Follow the path up |goto 68.4,67.8 <5 |c
+.' Follow the path up |goto 68.4,67.8 <5 |c
 step
 goto 70.5,69.7
 .click Peat Clump
@@ -4413,15 +4444,17 @@ goto 67.9,67.7
 ..accept 30791
 ..accept 30792
 step
-'Follow the path up |goto 68.4,67.8 <5 |c
+.' Follow the path up |goto 68.4,67.8 <5 |c
 step
-goto 74.5,70.4
+goto 71.0,70.8
 .click Snarlvine
+.|tip Green bushes with purple petals
 .get 10 Snarlvine |q 30790/1
 .from Swamp Rodent##60733+
 .get 4 Clotted Rodent's Blood##81260+ |q 30791/1
 .' Walk through the puffs of steam all over this area
 .' Collect 8 Gushing Mist |q 30792/1
+.' More of all of these can be found around [Townlong Steppes,74.5,70.4]
 step
 goto 67.9,67.7
 .talk 60622
@@ -4451,28 +4484,20 @@ goto 82.6,73.0
 .talk 60864
 ..accept 30780
 step
-'While you are doing the following steps make sure you complete the following:
-.kill 8 Ashfang Hyena##60932+ |q 30779/1 |n
-.click Palewind Totem
-.get 9 Palewind Totem##81355 |q 30780/1 |n
-.' Use your Shado-Pan Torch to burn Palewind Villagers |use Shado-Pan Torch##81356
-.' Burn 20 Palewind Villagers |q 30778/1 |n
-|confirm
-step
 goto 83.5,78.5
-'Wait for Xiao Tu to investigate.
+.' Wait for Xiao Tu to investigate.
 .' Examine the Southern Smoke Trail |q 30781/3
 step
 goto 84.9,71.4
-'Wait for Xiao Tu to investigate.
+.' Wait for Xiao Tu to investigate.
 .' Examine the Eastern Smoke Trail |q 30781/1
 step
 goto 84.0,70.9
-'Wait for Xiao Tu to investigate.
+.' Wait for Xiao Tu to investigate.
 .' Examine the Northwestern Smoke Trail |q 30781/4
 step
 goto 81.1,72.0
-'Wait for Xiao Tu to investigate.
+.' Wait for Xiao Tu to investigate.
 .' Examine the Western Smoke Trail |q 30781/2
 step
 goto 81.1,71.8
@@ -4480,6 +4505,7 @@ goto 81.1,71.8
 .click Palewind Totem
 .get 9 Palewind Totem##81355 |q 30780/1
 .' Use your Shado-Pan Torch to burn Palewind Villagers |use Shado-Pan Torch##81356
+.|tip These are the piles of bodies all over this area
 .' Burn 20 Palewind Villagers |q 30778/1
 step
 goto 82.6,73.0
@@ -4513,7 +4539,7 @@ goto 82.7,73.0
 .talk 61261
 ..accept 30782
 step
-'While doing the following quests do not allow your Hatred bar to reach 100. You can lower it by standing in Pools of Harmony.
+.' While doing the following quests do not allow your Hatred bar to reach 100. You can lower it by standing in Pools of Harmony.
 |confirm
 step
 goto 82.0,71.0
@@ -4535,7 +4561,7 @@ goto 82.7,73.0
 ..accept 30784
 step
 goto 84.1,70.7
-'Use the Totem of Harmony to buff yourself during the fight |use Totem of Harmony##81430
+.' Use the Totem of Harmony to buff yourself during the fight |use Totem of Harmony##81430
 .kill Suna Silentstrike##61055 |q 30784/1
 step
 goto 82.7,73.0
@@ -4543,7 +4569,7 @@ goto 82.7,73.0
 ..turnin 30784
 ..accept 30785
 step
-'Follow the path up |goto 78.7,83.5 <5 |c
+.' Follow the path up |goto 78.7,83.5 <5 |c
 step
 goto 76.4,82.5
 .talk 61066
@@ -4586,7 +4612,7 @@ goto 79.4,84.5
 .talk 61467
 ..accept 30889
 step
-'As you run through this area:
+.' As you run through this area:
 .click 8 Shado-Pan Spike Traps |n
 .from 10 Krik'thik Scentlayer##61373+ |n
 |confirm

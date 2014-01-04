@@ -3375,3 +3375,303 @@ ZygorGuidesViewer:RegisterInclude("Pandarian_Mining_Herbalism_1-600",[[
 	label "minherb_600"
 		'Congratulations, you are now a level 600 Miner and Herbalist!
 ]])
+
+
+ZygorGuidesViewer:RegisterInclude("Gear_Collect_Gathering_Alliance",[[
+//HERBALIST'S GLOVES (ALLIANCE)
+	step
+	label "herbgloves"
+		#include "auctioneer"
+		..buy 1 Herbalist's Gloves##7349 |next "menu"
+		.' Click here if you wish to make these yourself. |confirm |next "lw7349" |only if skill("Leatherworking")>=135
+	step
+	label "lw7349"
+		goto Ashenvale 18.2,60.0
+		.talk Harlown Darkweave##34601
+		..buy 1 Pattern: Herbalist's Gloves##7361 |tip NOTE: This pattern is in limited supply. You may need to wait for it to be available.
+		..buy 2 Fine Thread##2321
+	step
+		'Use the Pattern: Herbalist's Gloves in your bags to learn the new pattern. |use Pattern: Herbalist's Gloves##7361
+		.learn Herbalist's Gloves##9146
+	step
+	label "buylw7349"
+		#include "auctioneer"
+		..buy 8 Medium Leather##2319
+		..buy 4 Kingsblood##3356
+		|next "make7349"
+		.' Click here if you wish to farm the Medium Leather yourself. |confirm |next "farmmed" |only if skill("Skinning")
+		.' Click here if you wish to farm the Kingsblood yourself. |confirm |next "farmking" |only if skill("Herbalism")>=125
+	step
+	label "farmmed"
+		goto Wetlands 67.6,47.2
+		.from Ebon Slavehunter##42043+ |tip Skin any dragonkin you kill.
+		..collect 8 Medium Leather##2319
+		|next "buylw7349"
+	step
+	label "farmking"
+		map Northern Stranglethorn
+		path	29.2,25.0	27.5,22.1	25.7,22.0
+		path	23.8,25.0	34.2,35.9	41.3,30.1
+		path	43.6,43.1	46.3,54.1	53.7,60.8
+		path	58.0,67.1	62.9,72.9	62.4,67.1
+		path	60.5,56.0	58.9,19.5
+		#include "follow_path_herbs"
+		..collect 4 Kingsblood##3356
+		|next "buylw7349"
+	step
+	label "make7349"
+		.create 1 Herbalist's Gloves##9146,Leatherworking,1 total
+		|next "menu"
+//ANCIENT PANDAREN MINING PICK
+	step
+	label "ancientpick"
+		goto The Jade Forest 45.5,29.5
+		.click Ancient Pandaren Mining Pick##213364
+		..collect 1 Ancient Pandaren Mining Pick##85777 |tip This object is a rare spawn, so you may need to wait around for a while.
+		|next "menu"
+//HERBALIST'S SPADE (ALLIANCE)
+	step
+	label "herbspade"
+		goto Stormwind City 64.6,71.6
+		.talk Edna Mullby##1286
+		..buy Herbalist's Spade##85663
+		|next "menu"
+//GNOMISH ARMY KNIFE (ALLIANCE)
+	step
+	label "armyknife"
+		#include "auctioneer"
+		..buy 1 Gnomish Army Knife##40772 |next "menu"
+		.' Click here if you wish to make this yourself. |confirm |next "engarmy" |only if skill("Engineering")>=435
+	step
+	label "engarmy"
+		#include "trainer_Engineering"
+		.learn Gnomish Army Knife##56462
+	step
+		goto Stormwind City 64.6,71.6
+		.talk Edna Mullby##1286
+		..buy 1 Skinning Knife##7005
+		..buy 1 Mining Pick##2901
+		..buy 1 Blacksmith Hammer##5956
+	step
+		#include "auctioneer"
+		..buy 10 Saronite Bar##36913 |next "makearmy"
+		.' Click here if you wish to farm these yourself. |confirm |next "farmsaro" |only if skill("Mining")>=400
+	step
+	label "farmsaro"
+		map Sholazar Basin
+		path follow strict
+		path	77.9,63.8	78.7,52.4	74.3,48.6
+		path	58.9,53.9	63.5,44.4	66.7,40.3
+		path	65.1,30.5	58.9,27.8	58.9,21.1
+		path	40.8,20.8	48.0,33.2	52.7,39.9
+		path	47.8,43.1	46.8,39.7	39.6,32.8
+		path	32.9,32.8	23.3,48.4	33.5,46.6
+		path	35.8,49.9	40.0,50.9	38.0,54.9
+		path	30.5,55.3	20.8,56.1	20.4,76.6
+		path	22.6,78.5	22.5,84.0	34.2,78.4
+		path	33.8,73.4	33.0,67.9	40.9,70.1
+		path	34.5,88.9	50.9,88.8	51.5,82.1
+		path	46.0,60.9	55.5,66.5	58.7,88.2
+		path	62.3,74.5	63.6,84.4
+		#include "follow_path_mine"
+		..collect 20 Saronite Ore##36912
+	step
+		#include "maincity_forge"
+		.create 10 Saronite Bar##49258,Mining,10 total
+	step
+	label "makearmy"
+		.create 1 Gnomish Army Knife##56462,Engineering,1 total
+//FORAGER'S GLOVES
+	step
+		goto Timeless Isle/0 68.5,39.9
+		.from Burning Berserker##72895+
+		..collect Forager's Gloves##86566 |tip This is a rare drop, so you may be grinding for a while.
+]])
+
+ZygorGuidesViewer:RegisterInclude("Gear_Collect_Gathering_Horde",[[
+//HERBALIST'S GLOVES (HORDE)
+	step
+	label "herbgloves"
+		#include "auctioneer"
+		..buy 1 Herbalist's Gloves##7349 |next "menu"
+		.' Click here if you wish to make these yourself. |confirm |next "lw7349" |only if skill("Leatherworking")>=135
+	step
+	label "lw7349"
+		'This recipe is only available to the Alliance.
+		.' You can check the _Neutral Auction House_ for the recipe, although it may be very expensive. |tip You may be lucky enough to find it in your home city's auction house as well.
+		..buy 1 Pattern: Herbalist's Gloves##7361
+	step
+		'Use the Pattern: Herbalist's Gloves in your bags to learn the new pattern. |use Pattern: Herbalist's Gloves##7361
+		.learn Herbalist's Gloves##9146
+	step
+	label "buylw7349"
+		#include "auctioneer"
+		..buy 8 Medium Leather##2319
+		..buy 4 Kingsblood##3356
+		|next "make7349"
+		.' Click here if you wish to farm the Medium Leather yourself. |confirm |next "farmmed" |only if skill("Skinning")
+		.' Click here if you wish to farm the Kingsblood yourself. |confirm |next "farmking" |only if skill("Herbalism")>=125
+	step
+	label "farmmed"
+		goto Wetlands 67.6,47.2
+		.from Ebon Slavehunter##42043+ |tip Skin any dragonkin you kill.
+		..collect 8 Medium Leather##2319
+		|next "buylw7349"
+	step
+	label "farmking"
+		map Northern Stranglethorn
+		path	29.2,25.0	27.5,22.1	25.7,22.0
+		path	23.8,25.0	34.2,35.9	41.3,30.1
+		path	43.6,43.1	46.3,54.1	53.7,60.8
+		path	58.0,67.1	62.9,72.9	62.4,67.1
+		path	60.5,56.0	58.9,19.5
+		#include "follow_path_herbs"
+		..collect 4 Kingsblood##3356
+		|next "buylw7349"
+	step
+	label "make7349"
+		.create 1 Herbalist's Gloves##9146,Leatherworking,1 total
+		|next "menu"
+//ANCIENT PANDAREN MINING PICK
+	step
+	label "ancientpick"
+		goto The Jade Forest 45.5,29.5
+		.click Ancient Pandaren Mining Pick##213364
+		..collect 1 Ancient Pandaren Mining Pick##85777 |tip This object is a rare spawn, so you may need to wait around for a while.
+		|next "menu"
+//HERBALIST'S SPADE (HORDE)
+	step
+	label "herbspade"
+		goto Orgrimmar 39.3,84.9
+		.talk Pezik Lockfast##45552
+		..buy Herbalist's Spade##85663
+		|next "menu"
+//GNOMISH ARMY KNIFE (HORDE)
+	step
+	label "armyknife"
+		#include "auctioneer"
+		..buy 1 Gnomish Army Knife##40772 |next "menu"
+		.' Click here if you wish to make this yourself. |confirm |next "engarmy" |only if skill("Engineering")>=435
+	step
+	label "engarmy"
+		#include "trainer_Engineering"
+		.learn Gnomish Army Knife##56462
+	step
+		goto Orgrimmar 39.3,84.9
+		.talk Pezik Lockfast##45552
+		..buy 1 Skinning Knife##7005
+		..buy 1 Mining Pick##2901
+		..buy 1 Blacksmith Hammer##5956
+	step
+		#include "auctioneer"
+		..buy 10 Saronite Bar##36913 |next "makearmy"
+		.' Click here if you wish to farm these yourself. |confirm |next "farmsaro" |only if skill("Mining")>=400
+	step
+	label "farmsaro"
+		map Sholazar Basin
+		path follow strict
+		path	77.9,63.8	78.7,52.4	74.3,48.6
+		path	58.9,53.9	63.5,44.4	66.7,40.3
+		path	65.1,30.5	58.9,27.8	58.9,21.1
+		path	40.8,20.8	48.0,33.2	52.7,39.9
+		path	47.8,43.1	46.8,39.7	39.6,32.8
+		path	32.9,32.8	23.3,48.4	33.5,46.6
+		path	35.8,49.9	40.0,50.9	38.0,54.9
+		path	30.5,55.3	20.8,56.1	20.4,76.6
+		path	22.6,78.5	22.5,84.0	34.2,78.4
+		path	33.8,73.4	33.0,67.9	40.9,70.1
+		path	34.5,88.9	50.9,88.8	51.5,82.1
+		path	46.0,60.9	55.5,66.5	58.7,88.2
+		path	62.3,74.5	63.6,84.4
+		#include "follow_path_mine"
+		..collect 20 Saronite Ore##36912
+	step
+		#include "maincity_forge"
+		.create 10 Saronite Bar##49258,Mining,10 total
+	step
+	label "makearmy"
+		.create 1 Gnomish Army Knife##56462,Engineering,1 total
+//FORAGER'S GLOVES
+	step
+		goto Timeless Isle/0 68.5,39.9
+		.from Burning Berserker##72895+
+		..collect Forager's Gloves##86566 |tip This is a rare drop, so you may be grinding for a while.
+]])
+
+ZygorGuidesViewer:RegisterInclude("Gear_Collect_Fishing_Alliance",[[
+//ROUTER
+//STRONG FISHING POLE
+	step
+	label "strong"
+		goto Stormwind City 55.0,69.6
+		.talk Catherine Leland##5494
+		..buy 1 Strong Fishing Pole##6365
+		|next "menu"
+//PANDAREN FISHING POLE
+	step
+	label "pandaren"
+		'This fishing pole will require you to become _Honored_ with the Anglers.
+		.' You will need to complete dailies and catch rare fish in order to gain reputation with the Anglers faction. |only if not ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+		.' Click here to be taken to the Anglers dailies guide to complete quests and gain reputation with the faction. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Anglers Dailies" |only if ZGV.guidesets['DailiesAMOP']
+		.' Click here to be taken to the Anglers reputations guide to complete quests and gain reputation with the faction. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Anglers" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+		.' Click here to be taken to _Nat Pagle_ in order to purchase the Fishing Pole. |confirm |next "buypanda"
+		.' Click here to be taken to the main menu. |confirm |next "menu"
+	step
+	label "buypanda"
+		goto Krasarang Wilds 68.4,43.4
+		.talk Nat Pagle##63721
+		..buy 1 Pandaren Fishing Pole##84660
+		|next "menu"
+//BIG IRON FISHING POLE
+//SETH'S GRAPHITE FISHING POLE
+	step
+	label "seth"
+		goto Shattrath City 64.0,15.8
+		.talk Seth##18653
+		..accept Rather Be Fishin'##10037
+	step
+		goto Terokkar Forest 39.6,9.6
+		.from Shimmerscale Eel##18750
+		..get 8 Pristine Shimmerscale Eel##25891 |q 10037/1
+	step
+		goto Shattrath City 64.0,15.8
+		.talk Seth##18653
+		..turnin Rather Be Fishin'##10037
+		..collect 1 Seth's Graphite Fishing Pole##25978
+//NAT PAGLE'S EXTREME ANGLER FC-5000
+	step
+	label "fc5000"
+		goto The Hinterlands 66.2,44.2
+		.talk Dron Blastbrew##43109
+		..accept Snapjaws, Lad!##26485
+	step
+		goto The Hinterlands 77.4,66.8
+		.from Saltwater Snapjaw##2505
+		..get 8 Snapjaw Gizzard##58867 |q 26485/1
+	step
+		goto The Hinterlands 66.2,44.2
+		.talk Dron Blastbrew##43109
+		..turnin Snapjaws, Lad!##26485
+		..collect 1 Nat Pagle's Extreme Angler FC-5000##19022
+//BONE FISHING POLE/JEWELED FISHING POLE
+	step
+	label "bonejewel"
+		'This fishing pole is acquired by completing the fishing dailies in Stormwind and Dalaran.
+		.' Click here to be taken to the Stormwind fishing dailies guide. |confirm |next "
+		.' Click here to be taken to the Dalaran fishing dailies guide. |confirm |next "
+//DRAGON FISHING POLE
+	step
+	label "dragon"
+		'This fishing pole will require you to become _Revered_ with the Anglers.
+		.' You will need to complete dailies and catch rare fish in order to gain reputation with the Anglers faction. |only if not ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+		.' Click here to be taken to the Anglers dailies guide to complete quests and gain reputation with the faction. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Anglers Dailies" |only if ZGV.guidesets['DailiesAMOP']
+		.' Click here to be taken to the Anglers reputations guide to complete quests and gain reputation with the faction. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Anglers" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+		.' Click here to be taken to _Nat Pagle_ in order to purchase the Fishing Pole. |confirm |next "buydragon"
+		.' Click here to be taken to the main menu. |confirm |next "menu"
+	step
+	label "buydragon"
+		goto Krasarang Wilds 68.4,43.4
+		.talk Nat Pagle##63721
+		..buy 1 Pandaren Fishing Pole##84660
+		|next "menu"
+]])
