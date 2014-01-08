@@ -564,7 +564,7 @@ function ZGV:MarkUselessQuests()
 	local guidequests = self.CurrentGuide:GetQuests()
 	local strings = ""
 	for qi,quest in ipairs(self.quests) do
-		quest.useless = not guidequests[quest.id] and not quest.daily and not (quest.tagnum==102)
+		quest.useless = not guidequests[quest.id] and not quest.daily and not (quest.tagnum==102) and not (quest.tagnum==83)
 		if quest.useless then strings = strings .. quest.title .. "\n" end
 		--print(quest.title,quest.useless)
 	end

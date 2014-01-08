@@ -4544,7 +4544,8 @@ step
 step
 goto 82.0,71.0
 .kill 10 Spiteful Spirit##63839+ |q 30782/1
-.' Use your Totem of Harmony on Crazed Shado-Pan Rangers |use Totem of Harmony##88584
+.' Use your Totem of Harmony on Crazed Shado-Pan Rangers |use Totem of Harmony##81417
+.|tip You can mark them with shift+v and they will be easier to spot (Use v to mark enemies again).
 .from Seething Hatred##61054+
 .' Purify 8 Crazed Shado-Pan Rangers |q 30783/1 |modelnpc Crazed Shado-Pan Ranger##61050
 step
@@ -4595,6 +4596,7 @@ goto 76.9,78.8
 step
 goto 78.8,79.2
 .click Violet Citron
+.|tip These look like small blue bushes
 .get 10 Violet Citron##82342 |q 30891/1
 .kill 12 Krik'thik Deep-Scout##61374 |q 30887/1
 step
@@ -4611,11 +4613,6 @@ step
 goto 79.4,84.5
 .talk 61467
 ..accept 30889
-step
-.' As you run through this area:
-.click 8 Shado-Pan Spike Traps |n
-.from 10 Krik'thik Scentlayer##61373+ |n
-|confirm
 step
 goto 79.0,90.1
 .talk 61397
@@ -4635,8 +4632,10 @@ goto 82.2,84.1
 step
 goto 80.7,86.5
 .' Use the Shado-Pan Flare in your bags to reveal Scentlayers. |use Shado-Pan Flare##81925
+.|tip Look for the small clouds of dirt on the ground
 .kill 10 Krik'thik Scentlayer##61373+ |q 30888/1
 .click Shado-Pan Spike Trap
+.|tip These look like small gray balls with spikes coming out of them
 .' Rearm 8 Shado-Pan Spike Traps |q 30889/1
 step
 goto 79.4,84.5
@@ -4663,8 +4662,10 @@ goto 74.0,87.5
 .from Krik'thik Locust-Guard##61365+, Krik'thik Limbpincer##61181+
 .' Kill 12 Kirk'thik attackers |q 30893/1
 .click Krik'thik Limb
+.|tip These are Kirk'thik arms and legs on the ground
 .get 22 Krik'thik Limb##82722+ |q 30894/1
 .' Use your Citron-Infused Bandages on Injured Gao-Ran Blackguards |use Citron-Infused Bandages##82787
+.|tip Marking them with shift+v will make them much easier to spot (Use v to mark enemies again).
 .' Heal 8 Injured Gao-Ran Blackguards |q 30892/1
 '|talk Injured Gao-Ran Blackguard##61692
 step
@@ -4678,7 +4679,7 @@ goto 76.4,82.4
 ..turnin 30893
 ..accept 30895
 step
-'Follow this path |goto 73.2,86.9 <5 |c
+.' Follow this path |goto 73.2,86.9 <5 |c
 step
 goto 70.5,86.4
 .talk 61881
@@ -4692,11 +4693,13 @@ goto 63.1,87.7
 .from Needlebottom##61818
 .get Initiate Chao's Sword##82783 |q 30897/1
 step
-goto 65.7,87.8
+goto 63.5,88.8
 .from Agitated Nettleskin##61811+, Agitated Seedstealer##61302+
 .' Kill 10 Agitated Root Sprites |q 30896/1
 .click Dread Orb
+.|tip These look just like the orange orbs all over the trees in the area, but they are small. They are also dropped from Agitated mobs.
 .get 16 Volatile Dread Orb##82723+ |q 30895/1
+.' More of these can be found at [Townlong Steppes,68.2,86.6]
 step
 goto 70.5,86.4
 .talk 61881
@@ -4713,6 +4716,7 @@ goto 76.4,82.4
 step
 goto 74.7,84.6
 .click Dragon Launcher |invehicle
+|modelnpc Dragon Launcher##62024
 .' Use the abilities on your hotbar to kill Krik'thik.
 .from Krik'thik Drone##61960+, Krik'thik Acidslinger##62014+
 .' Kill 50 Krik'thik Drones |q 30898/1
@@ -4724,13 +4728,14 @@ goto 74.2,85.0
 step
 goto 74.3,87.6
 .kill Norvakess##62324 |q 30900/1
+.|tip When he casts Sonic Field avoid the pulsing yellow circles on the ground. When he burrows underground kill the few weak mobs that spawn and then he will resurface.
 step
 goto 76.4,82.4
 .talk 61066
 ..turnin 30900
 ..accept 30901
 step
-'Follow Taran Zhu and Taoshi |goto 67.4,80.6 <10 |noway |c
+.' Follow Taran Zhu and Taoshi |goto 67.4,80.6 <10 |noway |c
 step
 goto 67.3,80.9
 .talk 62436
@@ -4741,15 +4746,14 @@ goto 67.4,80.7
 .talk 62124
 ..accept 30971
 step
-'Enter the tunnel here. |goto 66.8,83.6 <5 |c
+.' Enter the tunnel here. |goto 66.8,83.6 <5 |c
 step
 goto 67.9,82.5
 .click Shado-Pan Fire Arrows
+.|tip These can be found in bundles inside the cave and on the ground outside
 .get 120 Shado-Pan Fire Arrows |q 30971/1
 .kill 9 Seething Fleshripper##61299+ |q 30970/1
-.' You can find more Scorpions and Arrows outside around [64.4,82.6]
-step
-'Leave the tunnel here. |goto 66.8,83.6 <5 |c
+.' You can find more Scorpions and Arrows outside around [Townlong Steppes,64.4,82.6]
 step
 goto 67.3,80.9
 .talk 62436
@@ -4769,7 +4773,9 @@ goto 61.7,79.3
 ..accept 30973
 step
 goto 60.1,78.7
-.kill 10 Kor'thik Timberhusk##61355+ |q 30973/1 |tip In order to remove the Timberhusk buff you must kick a Keg Bomb into the Kor'thik.
+.kill 10 Kor'thik Timberhusk##61355+ |q 30973/1
+.|tip In order to remove the Timberhusk buff you must kick a Keg Bomb into the Kor'thik.
+.|tip If the keg misses drag the mob into the fire
 step
 goto 61.7,79.3
 .talk 62273
@@ -4789,7 +4795,7 @@ goto Townlong Steppes 61.1,83.1
 ..turnin 30975
 ..accept 30976
 step
-'Follow Taran Zhu |goto 54.3,78.0 <5 |noway |c
+.' Follow Taran Zhu |goto 54.3,78.0 <5 |noway |c
 step
 goto 54.3,79.0
 .talk 62898
@@ -4817,28 +4823,31 @@ goto 51.7,87.3
 .click Nurong's Cannon
 .' Use the abilities on your new hotbar to do the following:
 .from Kor'thik Swarmer##62300
+.|tip They are flying on the horizon to the east
 .' Shoot down 50 Korthi'thik Swarmers |q 30978/1
 .from Voress'thalik##62269
+.|tip He will spawn after you've killed the 50 Korthi'thik Swarmers
 .' Shot down Voress'thalik |q 30978/2
 step
-'Click the Leave Vehicle button |outvehicle |c
+.' Click the Leave Vehicle button |outvehicle |c
 step
 goto 51.6,87.2
 .talk 61020
 ..turnin 30978
 ..accept 30979
 step
-'Follow the path down |goto 53.0,83.6 <10 |c
+.' Follow the path down |goto 53.0,83.6 <10 |c
 step
 goto 54.2,86.8
 .kill Voress'thalik##62270 |q 30979/1
+.|tip He walks around this pool of water and may not be in this exact spot
 step
 goto 54.0,87.0
 .talk 62786
 ..turnin 30979
 ..accept 30980
 step
-'Follow the path up |goto 54.2,85.3 <5 |c
+.' Follow the path up |goto 54.2,85.3 <5 |c
 step
 goto 51.8,85.2
 .kill 12 Kor'thik Fleetwing##62128+ |q 30977/1
@@ -4849,7 +4858,7 @@ goto 51.3,83.0
 .talk 62573
 ..turnin 31032
 step
-goto 54.0,78.1
+goto 54.1,77.9
 .talk 62274
 ..turnin 30980
 ..accept 31065
@@ -4862,7 +4871,7 @@ goto 53.5,77.4
 .click Wukao Spyglass
 .' Look through Taoshi's Spyglass |q 31065/1
 step
-goto 54.0,78.1
+goto 54.1,77.9
 .talk 62274
 ..turnin 31065
 ..accept 30981
@@ -4876,12 +4885,15 @@ goto 53.9,78.1
 step
 goto 46.7,83.1
 .kill Korvexxis##62579 |q 30981/1
+.|tip Avoid the red circles on the ground
 step
 goto 39.5,76.0
 .kill Rothek##62581 |q 31064/1
+.|tip Avoid the red circles on the ground
 step
 goto 45.4,77.5
 .kill Serevex##62580 |q 31063/1
+.|tip Avoid the red circles on the ground
 step
 goto 46.9,76.7
 .from Sik'thik Drone##62576+, Sik'thik Venomspitter##62575+, Sik'thik Vess-Guard##61354+
@@ -4898,13 +4910,17 @@ goto 47.5,78.9
 ..turnin 31064
 ..accept 30968
 step
-'Follow Taran Zhu into Sik'vess Lair |goto 45.9,82.8 |subzone Sik'vess Lair
+|subzone Sik'vess Lair
+.' Follow Taran Zhu into Sik'vess Lair |goto 45.9,82.8
 .kill Sha of Hatred##62541 |q 30968/1 |tip The Sha of Hatred periodically shoots off Sha Bursts that deal 80k-90k damage. Keep an eye on the ground and move out of the circles that appear. You may need to turn up your spell detail to see them. It also summons many different adds; make sure to kill them so you do not get overwhelmed.
 step
-goto 45.8,82.1
+|subzone Sik'vess Lair
+goto 46.1,82.4
 .talk 62802
 ..turnin 30968
 ..accept 31656
+step
+.' Exit the Lair |goto 47.3,79.1 <5 |c
 step
 goto 53.9,78.1
 .talk 62278
@@ -4931,11 +4947,13 @@ goto 49.2,71.3
 ..accept 30964
 step
 goto 56.6,54.0
-'Use your Gunpowder Casks to blow up the Kri'thik Supplies |use Gunpowder Casks##81891
+.' Use your Gunpowder Casks to blow up the Kri'thik Supplies |use Gunpowder Casks##81891
+.|tip They look like eggs
 .' Blow up the Kri'thik Supplies |q 30923/2 |tip Follow the path left and up.
 step
 goto 55.5,53.2
-'Use your Gunpowder Casks to blow up the Kri'thik Weapons |use Gunpowder Casks##81891
+.' Use your Gunpowder Casks to blow up the Kri'thik Weapons |use Gunpowder Casks##81891
+.|tip A bunch of weapon racks
 .' Blow up the Kri'thik Weapons |q 30923/1
 step
 goto 56.4,53.3
@@ -4947,12 +4965,13 @@ goto 56.4,53.3
 step
 goto 51.2,60.9
 .click Mao-Willow
+.|tip These look like small cluster of pink grass with a few white reeds sticking up out of them
 .get 11 Mao-Willow##82389+ |q 30964/1
 .from Rankbite Tortoise##61619+, Rankbite Ancient+w
 .get 120 Rankbite Shell Fragment##82388+ |q 30963/1
 .from Longshadow Mushan##61618+, Longshadow Bull+
 .get 5 Foll Mushan Bladder |q 30922/1
-.' You can find more Willows, Turtles, and Mushan around [61.3,54.9]
+.' You can find more Willows, Turtles, and Mushan around [Townlong Steppes,61.3,54.9]
 step
 goto 49.1,71.2
 .talk 61482
@@ -4962,11 +4981,12 @@ goto 49.1,71.2
 step
 goto 49.1,71.3
 .talk 61625
+.|tip He walks around the camp
 ..turnin 30922
 ..turnin 30963
 ..turnin 30964
 step
-'Cross the bridge |goto 48.4,68.9 <5 |c
+.' Cross the bridge |goto 48.4,68.9 <5 |c
 step
 goto 43.9,65.8
 .talk 61539
@@ -5010,10 +5030,12 @@ goto 39.3,61.2
 step
 goto 37.5,61.4
 .click Father's Shield
+.|tip It is laying on the ground, to the left of the stairs
 .' Find Father's Shield |q 30932/2
 step
 goto 37.4,60.9
 .click Father's Bedroll
+.|tip Laying on the floor inside this little building
 .' Find Father's Bedroll |q 30932/1
 step
 goto 37.7,64.0
@@ -5029,7 +5051,8 @@ goto 35.4,56.6
 ..accept 30930
 step
 goto 34.5,50.2
-'Use your Yak Lasso on Wild Townlong Yaks |use Yak Lasso##82468
+.' Use your Yak Lasso on Wild Townlong Yaks |use Yak Lasso##82468
+.|tip It will probably take a few tries to find the right Yak
 .from Wild Townlong Yak##61635
 .' Find a Suitable Yak |q 30930/1
 step
@@ -5071,9 +5094,10 @@ goto Townlong Steppes/13 55.9,20.1
 .talk 61482
 ..turnin 30926
 step
-'Before exiting the catatcombs complete the following:
+.' Before exiting the catatcombs complete the following:
 .kill 12 Dreadling##62306+ |q 30928/1
 .clicknpc Fear-Stricken Sentinel##62276+
+.|tip These are Pandaren bodies on the ground
 .' Give peace to 10 Fear-Stricken Sentinels |q 30927/1
 step
 goto Townlong Steppes 39.4,61.9
@@ -5102,22 +5126,23 @@ goto 14.2,76.8 |n
 .' Ride the rope down the wall |invehicle
 step
 goto Dread Wastes 73.2,22.5
-'Use the Shado-Pan Dragon Gun on Dreadspinner Eggs |use Shado-Pan Dragon Gun##82807
+.' Use the Shado-Pan Dragon Gun on Dreadspinner Eggs |use Shado-Pan Dragon Gun##82807
+.|tip You can move while using it, even though it is channeled
 .' Destroy 20 Dreadspinner Eggs |q 31002/1
 .kill 6 Dreadspinner Tender##61981+ |q 31002/2
 step
 goto 72.6,28.7
-'Talk to Marksman Lann |q 31001/1 |modelnpc Marksman Lann##62166
+.' Talk to Marksman Lann |q 31001/1 |modelnpc Marksman Lann##62166
 ..turnin 31001
 ..turnin 31002
 ..accept 31003
 step
-'Enter the hovel here. |goto 72.9,28.0 <5 |c
+.' Enter the hovel here. |goto 72.9,28.0 <5 |c
 step
 goto 73.1,27.7
 .kill Adjunct Kree'zot##62301 |q 31003/1
 step
-goto 73.1,27.7
+goto 73.6,27.6
 .talk 62203
 ..turnin 31003
 ..accept 31004
@@ -5136,6 +5161,7 @@ goto 66.7,29.5
 .kill 6 Vengeful Gurthani Spirit |q 31676/1
 .from Sapfly##62386+
 .get 100 Sapfly Bits##83075 |q 31005/1
+.' You can fimd more of both of these at [Dread Wastes,70.2,32.5]
 step
 goto 70.2,25.7
 .talk 62202
@@ -5154,13 +5180,13 @@ goto 55.0,34.0
 ..accept 31007
 ..accept 31660
 step
-goto 55.0,35.6
-.talk 64599
-..accept 31008
-step
 goto 54.8,34.1
 .talk 64815
 ..accept 31009
+step
+goto 55.0,35.6
+.talk 64599
+..accept 31008
 step
 goto 55.8,34.9
 .talk 63501
@@ -5178,7 +5204,7 @@ goto 40.0,39.0
 .' Use the Klaxxi Resonating Crystal on the Inactive Sonic Relay. |use Klaxxi Resonating Crystal##83276
 .' Sonic Relay activated |q 31009/1
 step
-'Click the Complete Quest box that displays on the right side of the screen under your minimap
+.' Click the Complete Quest box that displays on the right side of the screen under your minimap
 ..turnin 31009
 ..accept 31010
 step
@@ -5194,7 +5220,7 @@ step
 goto 47.8,42.0
 .from Shek'zeer Bladesworn##62563+
 .get 6 Amber Blade##83135+ |q 31008/1
-.' You can find more Bladesworn around [41.8,43.0]
+.' You can find more Bladesworn around [Dread Wastes,41.8,43.0]
 step
 goto 43.5,41.4
 .kill 6 Shek'zeer Clutch-Keeper##64559+ |q 31007/1
@@ -5232,6 +5258,7 @@ goto 58.5,16.9
 .get 4 Dread Amber Focus##86616 |q 31108/1
 .kill 6 Vor'thik Dreadsworn##62813+ |q 31689/1
 .click Vor'thik Eggs
+.|tip Small gold eggs on the ground
 .get 10 Vor'thik Eggs##86598 |q 31107/1
 step
 goto 54.8,34.1
@@ -5261,9 +5288,10 @@ step
 goto 67.2,59.3
 .kill 7 Mistblade Ripper##61970+ |q 31019/1
 .click Mantid Relic##6419
+.|tip They look like broken tablets underwater and on the shore
 .get 8 Mantid Relic##82867 |q 31023/1
 step
-'Enter the tunnel here. |goto 66.8,63.8 <5 |c
+.' Enter the tunnel here. |goto 66.8,63.8 <5 |c
 step
 goto 66.5,66.0
 .kill Mistblade Scale-Lord##63179 |q 31019/2
@@ -5272,16 +5300,17 @@ goto 66.8,65.4
 .talk 65354
 ..turnin 31019
 step
-'Next to you:
+.' Next to you:
 .talk 62232
 ..accept 31020
 ..accept 31021
 step
-'Leave the tunnel. |goto 66.8,63.8 <5 |c
+.' Leave the tunnel. |goto 66.8,63.8 <5 |c
 step
-'Go underwater to [65.5,59.1]
+.' Go underwater to [65.5,59.1]
 .click Amber Fragment
 .collect 9 Living Amber##82864 |n
+.|tip They are small golden balls on the seafloor
 .kill 8 Coldbite Crocolisk##62023 |q 31020/1
 .' Click the Living Amber in your bags |use Living Amber##82864
 .' Feed Korven the Prime 9 Living Amber |q 31021/1
@@ -5298,21 +5327,21 @@ goto 59.8,59.5
 .from Ik'thik Towerguard##63294+
 .' Korven the Prime Defended. |q 31022/2
 step
-'Next to you:
+.' Next to you:
 .talk 62232
 ..turnin 31022
 ..accept 31026
 step
-'Enter the tunnel here. |goto 58.7,59.5 <5 |c
+.' Enter the tunnel here. |goto 58.7,59.5 <5 |c
 step
 goto 57.3,57.8
 .kill Coldbite Matriarch##62008 |q 31026/1
 step
-'Next to you:
+.' Next to you:
 .talk 62232
 ..turnin 31026
 step
-'Leave the tunnel. |goto 58.7,59.5 <5 |c
+.' Leave the tunnel. |goto 58.7,59.5 <5 |c
 step
 goto 46.3,53.1
 .' Locate Amberglow Hollow |q 31087/1
@@ -5328,15 +5357,16 @@ goto 48.1,49.6
 ..accept 31088
 ..accept 31090
 step
-'Leave the building. |goto 46.3,53.1 <5 |c
+.' Leave the building. |goto 46.3,53.1 <5 |c
 step
 goto 44.9,57.4
 .kill 8 Ik'thik Harvester##63206+ |q 31088/1
 .click Amber Collector
+.|tip They're on the sides of trees
 .get 7 Amber-Filled Jar##85159 |q 31090/1
 .' You can find more Amber and Harvesters around [41.6,52.4]
 step
-'Enter the building here. |goto 46.3,53.1 <5 |c
+.' Enter the building here. |goto 46.3,53.1 <5 |c
 step
 goto 48.1,49.6
 .talk 65365
@@ -5347,10 +5377,10 @@ goto 48.2,49.8
 .click Active Beacon
 ..accept 31089
 step
-'Leave the building. |goto 46.3,53.1 <5 |c
+.' Leave the building. |goto 46.3,53.1 <5 |c
 step
 goto 43.4,63.3
-'Use the Klaxxi Tuning Fork in your bags on the Ocean Worn Rocks |use Klaxxi Tuning Fork##84119
+.' Use the Klaxxi Tuning Fork in your bags on the Ocean Worn Rocks |use Klaxxi Tuning Fork##84119
 .' Awaken Kaz'tik the Manipulator |q 31089/1
 step
 goto 43.4,63.3
@@ -5364,8 +5394,8 @@ goto 43.3,63.6
 |confirm
 step
 goto 41.8,72.0
-'Escort Kaz'tik to the Undisturbed Dirt |q 31091/1
-'Find Kaz'tik's greatest weapon |q 31091/2
+.' Escort Kaz'tik to the Undisturbed Dirt |q 31091/1
+.' Find Kaz'tik's greatest weapon |q 31091/2
 step
 goto 41.8,72.0
 .talk 64344
@@ -5410,7 +5440,11 @@ goto 51.2,11.4
 ..turnin 31730
 ..accept 31067
 step
-'Enter the building here |goto 53.6,15.6 <5 |c
+goto Dread Wastes 50.2,12.2
+.talk 63500
+..fpath The Sunset Brewgarden
+step
+.' Enter the building here |goto 53.6,15.6 <5 |c
 step
 goto 53.1,12.4
 .click Scroll of Auspice
@@ -5419,7 +5453,7 @@ step
 goto 52.7,10.1
 .kill Azzix K'tai##62843 |q 31067/1
 step
-'Leave the building here |goto 53.6,15.6 <5 |c
+.' Leave the building here |goto 53.6,15.6 <5 |c
 step
 goto 50.7,11.7
 .talk 62667
@@ -5485,16 +5519,18 @@ goto 50.7,20.8
 step
 goto 53.1,20.4
 .from Kz'Kzik##62832
+.|tip Watch out for the bombs he throws
 .get Blade of Kz'Kzik##84111 |q 31072/1
 step
 goto 55.3,18.2
 .from Dread Lurker##62751+
+.|tip You can also kill the smaller, Nagging Dreadlings as well
 .' Harvest 100 Shade |q 31069/1
 step
 goto 51.1,15.9
 .from Frightened Mushan##62760
 .get 3 Large Mushan Tooth##84107 |q 31070/1
-.' You can find more Mushan around [56.5,20.2]
+.' You can find another small group of Mushan around [Dread Wastes,56.5,20.2]
 step
 goto 50.7,11.7
 .talk 62667
@@ -5522,41 +5558,45 @@ goto 50.2,12.4
 ..accept 31133
 step
 goto 50.2,10.2
-'Meet up with Chen |q 31077/1
-'Listen to Chen's Eulogy. |q 31077/2
+.' Meet up with Chen |q 31077/1
+.' Listen to Chen's Eulogy. |q 31077/2
 step
 goto 50.2,10.2
 .talk 62779
 ..turnin 31077
 ..accept 31078
 step
-'Enter the building here |goto 44.8,15.8 <5 |c
+.' Enter the building here |goto 44.8,15.8 <5 |c
 step
 goto 44.5,16.8
-'Find the Mark of the Empress |q 31074/1
+.' Find the Mark of the Empress |q 31074/1
 step
-'Leave the building here |goto 44.8,15.8 <5 |c
+.' Leave the building |goto 44.8,15.8 <5 |c
 step
-'Enter the building here |goto 43.1,14.0 <5 |c
+.' Enter the building here |goto 43.1,14.0 <5 |c
 step
 goto 43.1,14.9
-'Find the Heartroot of Kypari Kor |q 31074/2
+.' Find the Heartroot of Kypari Kor |q 31074/2
 step
-'Leave the building here |goto 43.1,14.0 <5 |c
+.' Leave the building |goto 43.1,14.0 <5 |c
 step
-'Enter the Morrowchamber here. |goto 47.0,16.8 <5 |c
+.' Enter the Morrowchamber here. |goto 47.0,16.8 <5 |c
 step
 goto 43.7,16.7
-'Work your way around one side of the room. If you go down the ramps on either side you can go underneath the beam.
+.' Work your way around one side of the room. If you go down the ramps on either side you can go underneath the beam.
 .clicknpc Han Stormstout##62776
+.|tip He is stuck to a rock that's sitting on the floor
 .' Find Han Stormstout |q 31078/1
 step
 goto 44.4,16.8
 .talk 62779
 ..turnin 31078
 step
+.' Leave the Morrowchamber |goto 46.9,16.8 <5 |c
+step
 goto 43.6,8.2
 .clicknpc Withered Husk##62876
+.|tip They look like Tree Ent bodies laying on the ground. You can do this while mounted.
 .get 8 Fragrant Corewood##84118 |q 31073/1
 step
 goto 43.1,12.9
@@ -5602,18 +5642,21 @@ step
 goto 32.1,17.4
 .kill Ahgunoss##62765 |q 31081/1
 step
-goto 32.9,17.6
+goto 33.8,18.5
 .kill 7 Shuffling Mistlurker##65404+ |q 31079/1
 step
 goto 36.0,23.0
 .kill 2 Kyparite##63007 |q 31079/2
 .clicknpc Rikkilea Flitterling##62764
+.|tip Click them and then run behind them to catch the Dust they throw
 .get 88 Flitterling Dust##84239 |q 31080/1
 step
 goto 36.8,20.4
-'Use the Rikkitun Bell in your bags |use Rikkitun Bell##84267
-.clicknpc Motherseed##62601
-.' Bring the Motherseed to [36.9,17.4]
+.' Use the Rikkitun Bell in your bags |use Rikkitun Bell##84267
+.click Motherseed
+.|tip They look like huge acorns on the ground
+.' Bring the Motherseed to [Dread Wastes,36.9,17.4]
+.|tip You can mount while doing this but you have to bring each seed back separately
 .' Bring 3 Motherseed back to the Motherseed Pit |q 31082/1
 step
 goto 38.1,17.3
@@ -5653,20 +5696,25 @@ goto 38.2,17.2
 step
 goto 30.2,30.6
 .click Solidified Amber
+.|tip A small orange rock on the ground
 .get Chunk of Solidified Amber##84779 |q 31086/1
 step
 goto 30.0,31.1
 .click Enormous Landslide
+.|tip Looks like a big pile of rocks blocking the way
 .' Enter the building once the landslide is gone. |goto 30.5,32.0 <5 |noway |c
 step
 goto 32.4,33.7
-'Use the Ruining Fork in your bags |use Ruining Fork##84771
-.'Use the Ruining Fork on Iyyokuk the Lucid |q 31085/1
+.' Use the Ruining Fork in your bags |use Ruining Fork##84771
+.' Use the Ruining Fork on Iyyokuk the Lucid |q 31085/1
 step
-.from Adjunct G'kkal##63103, Adjunct Okzyk##63102, Adjunct Pivvika##63104
+.' Kill the 3 Adjunct mobs when they spawn
 .' Protect Iyyokuk the Lucid until he escapes |q 31085/2
+|modelnpc Adjunct G'kkal##63103
+|modelnpc Adjunct Okzyk##63102
+|modelnpc Adjunct Pivvika##63104
 step
-'Leave the building. |goto 30.5,32.0 <5 |c
+.' Leave the building. |goto 30.5,32.0 <5 |c
 step
 goto 50.3,12.1
 .talk 62667
@@ -5685,7 +5733,7 @@ goto 54.7,72.2
 ..turnin 31727
 ..accept 31265
 step
-'Use the Potion of Mazu's Breath in your bags |use Potion of Mazu's Breath##85869
+.' Use the Potion of Mazu's Breath in your bags |use Potion of Mazu's Breath##85869
 .' Drink the Potion of Mazu's Breath |q 31265/1
 step
 goto 54.7,72.2
@@ -5695,8 +5743,8 @@ goto 54.7,72.2
 ..accept 31182
 step
 goto 59.4,82.1
-'Use the Bag of Clams in your bags on Coldwhisker Otters |use Bag of Clams##85231
-'Feed Coldwhisker Otter |q 31182/1 |modelnpc Coldwhisker Otter##63376
+.' Use the Bag of Clams in your bags on Coldwhisker Otters |use Bag of Clams##85231
+.' Feed Coldwhisker Otter |q 31182/1 |modelnpc Coldwhisker Otter##63376
 .from Sea Monarch##63470+
 .collect 20 Sea Monarch Chunks##85230 |n
 .click Empty Crab Pot
@@ -5720,20 +5768,20 @@ goto 54.7,72.2
 ..accept 31188
 step
 goto 50.9,78.1
-'Use Dog's Whistle while swimming in the Shelf of Mazu. |use Dog's Whistle##85955
+.' Use Dog's Whistle while swimming in the Shelf of Mazu. |use Dog's Whistle##85955
 .' Next to you:
 .talk 63955
 ..accept 31186
 step
-'Bring Dog to the Silt Vents |goto 46.2,74.2 <5 |q 31185/1
+.' Bring Dog to the Silt Vents |goto 46.2,74.2 <5 |q 31185/1
 step
-'Bring Dog to the Wreck of the Mist-Hopper |goto 44.9,78.0 <5 |q 31185/2
+.' Bring Dog to the Wreck of the Mist-Hopper |goto 44.9,78.0 <5 |q 31185/2
 step
 goto 44.8,78.7
 .click Soggy's Footlocker
 .get Sealed Charter Tube |q 31184/1
 step
-'Bring Dog to the Whale Corpse |goto 40.2,79.1 <5 |q 31185/3
+.' Bring Dog to the Whale Corpse |goto 40.2,79.1 <5 |q 31185/3
 step
 goto 46.0,77.1
 .from Rockshell Snapclaw##63369
@@ -5745,7 +5793,7 @@ goto 46.0,77.1
 .click Full Crab Pot
 .' Send 8 Full Crab Pots to the Surface |q 31187/1
 step
-'Next to you:
+.' Next to you:
 .talk 63955
 ..turnin 31186
 step
@@ -5768,7 +5816,7 @@ goto 53.6,76.0
 .' Deck Boss said you needed some help. |q 31189/1
 step
 goto 53.7,76.0
-'Click each rod and fight the Jiao Spawns.
+.' Click each rod and fight the Jiao Spawns.
 .click Serpent Rod
 .click Improvised Rod
 .click Bamboo Rod
@@ -5792,7 +5840,7 @@ Follow Captain "Soggy" Su-Dao to [56.2,76.3]
 .' 25 Starboard Hits |q 31190/3
 .' 25 Stern Hits |q 31190/4
 step
-'Hit the yellow Leave Vehicle button on your hotbar. |outvehicle
+.' Hit the yellow Leave Vehicle button on your hotbar. |outvehicle
 step
 goto 56.6,75.9
 .talk 63317
@@ -5812,13 +5860,13 @@ goto 54.7,34.7
 ..turnin 32030
 ..accept 31782
 step
-'Witness the Klaxxi Ritual |q 31782/1
+.' Witness the Klaxxi Ritual |q 31782/1
 step
 goto 55.1,34.3
 .talk 62519
 ..turnin 31782
 step
-'From this point on you must meet the reputation requirements for The Klaxxi faction in order to accept quests.
+.' From this point on you must meet the reputation requirements for The Klaxxi faction in order to accept quests.
 |confirm
 step
 goto 55.0,35.9
@@ -5829,7 +5877,7 @@ goto 54.8,34.1
 .talk 64815
 ..accept 31605
 step
-'Swim underwater and enter this cave |goto 25.7,53.9 <5 |c
+.' Swim underwater and enter this cave |goto 25.7,53.9 <5 |c
 step
 goto 25.7,50.4
 .click Ancient Amber Chunk
@@ -5842,7 +5890,7 @@ goto 25.7,50.3
 ..accept 31177
 ..accept 31178
 step
-'Leave the cave |goto 25.7,53.9 <5 |c
+.' Leave the cave |goto 25.7,53.9 <5 |c
 step
 goto 26.3,58.8
 .from Dread Remora##63353
@@ -5852,7 +5900,7 @@ goto 26.3,58.8
 .click Spiny Starfish
 .get 12 Starfish Meat |q 31176/1
 step
-'Enter this cave |goto 25.7,53.9 <5 |c
+.' Enter this cave |goto 25.7,53.9 <5 |c
 step
 goto 25.7,50.3
 .talk 63071
@@ -5862,18 +5910,18 @@ goto 25.7,50.3
 ..accept 31179
 step
 goto 25.7,50.3
-'Fight off the waves of Muckscale.
+.' Fight off the waves of Muckscale.
 .kill 12 Muckscale Flesheater##63465+ |q 31179/1
 .kill Muckscale Serpentus##63466 |q 31179/2
 step
-'Leave the cave |goto 25.7,53.9 <5 |c
+.' Leave the cave |goto 25.7,53.9 <5 |c
 step
 goto 31.8,88.9
 .talk 65253
 ..turnin 31605
 ..accept 31606
 step
-'Kill the Zan'thik while Rik'kal recovers.
+.' Kill the Zan'thik while Rik'kal recovers.
 .from Zan'thik Impaler##65273+, Zan'thik Manipulator##65274+
 .' Paragon Wakened |q 31606/1
 step

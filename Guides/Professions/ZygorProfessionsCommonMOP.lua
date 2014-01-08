@@ -3623,6 +3623,14 @@ ZygorGuidesViewer:RegisterInclude("Gear_Collect_Fishing_Alliance",[[
 		..buy 1 Pandaren Fishing Pole##84660
 		|next "menu"
 //BIG IRON FISHING POLE
+	step
+		'This pole will require you to search crates underwater. It's suggested that you purchase some _Underwater Breathing Potions_ if you don't have the ability to breathe underwater.
+		|confirm
+	step
+		goto Desolace 20.7,80.5
+		.click Shellfish Trap |tip They are all underwater in this area.
+		..collect 1 Big Iron Fishing Pole##6367
+		|next "menu"
 //SETH'S GRAPHITE FISHING POLE
 	step
 	label "seth"
@@ -3674,4 +3682,19 @@ ZygorGuidesViewer:RegisterInclude("Gear_Collect_Fishing_Alliance",[[
 		.talk Nat Pagle##63721
 		..buy 1 Pandaren Fishing Pole##84660
 		|next "menu"
+//MASTERCRAFT KALU'AK FISHING POLE
+	step
+	label "kaluak"
+		'This fishing pole will require you to become _Exalted_ with the Kalu'ak.
+		.' You will need to complete dailies for the Kalu'ak in order to gain reputation with this faction.
+		.' Click here to be taken to the Kalu'ak reputations guide to complete quests and gain reputation with this faction. |confirm |next "Zygor's Alliance Reputations Guides\\Northrend\\Kalu'ak"
+		.' Click here to be taken to _Tanaika_ in order to purchase the Fishing Pole. |confirm |next "buykaluak"
+		.' Click here to be taken to the main menu. |confirm |next "menu"
+	step
+	label "buy kaluak"
+		goto Howling Fjord 25.4,58.6
+		.talk Tanaika##31916
+		..buy 1 Mastercraft Kalu'ak Fishing Pole##44050
+		|next "menu"
+
 ]])

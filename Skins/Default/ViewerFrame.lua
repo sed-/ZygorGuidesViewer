@@ -425,7 +425,7 @@ function ZygorGuidesViewerFrame_Step_Setup(num)
 
 end
 
- local function Spot_OnClick(self,button)
+local function Spot_OnClick(self,button)
 	ZGV:Debug("spot clicked")
 	if self.spot then self.spot:OnClick() end
 end

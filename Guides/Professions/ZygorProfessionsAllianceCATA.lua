@@ -4350,6 +4350,7 @@ goto Duskwood,23.7,36.6
 .from Rotted One##948+,Flesh Eater##3+,Bone Chewer##210+
 .collect 160 Linen Cloth##2589
 .'You can find more mobs in the crypt at [25.8,34.6]
+.' Be sure to save any _Wool Cloth_ you pick up.
 step
 label "aid_1-75_skill"
 .create Linen Bandage##3275,First Aid,40
@@ -6903,6 +6904,7 @@ goto Duskwood,23.7,36.6
 .from Rotted One##948+,Flesh Eater##3+,Bone Chewer##210+
 .collect 210 Linen Cloth##2589
 .'You can find more mobs in the crypt at [25.8,34.6]
+.' Be sure to save any _Wool Cloth_ you pick up.
 step
 label	"tl_1-75_skill"
 .create 105 Bolt of Linen Cloth##2963,Tailoring,105 total
@@ -6961,8 +6963,8 @@ label	"tl_125-200"
 .learn Bolt of Silk Cloth##3839
 step
 #include "auctioneer"
-.buy 644 Silk Cloth##4306
-.buy 480 Mageweave Cloth##4338
+.buy 808 Silk Cloth##4306
+.buy 420 Mageweave Cloth##4338
 #include go_farm_level,level="35",goto="tl_125-200_farm"
 |next "tl_125-200_skill"
 step
@@ -6971,9 +6973,13 @@ label	"tl_125-200_farm"
 'Proceeding to farm |next |only if default
 step
 label	"farming"
-goto Dustwallow Marsh,41.9,12.4
-.from Grimtotem Breaker##23592+, Grimtotem Spirit-Shifter##23593+, Grimtotem Elder##23714+
-.collect 644 Silk Cloth##4306 |tip You can also farm these by killing humanoid mobs in the Scarlet Monastery instance.
+map Eastern Plaguelands
+path	16.3,78.4	16.5,79.8	17.9,81.0
+path	19.0,82.4	18.9,80.9	19.5,78.4
+path	18.9,76.4	17.3,77.5
+.from Death's Step Putrifier##45443+
+.' Make sure you kill the enemies within the circle as well.
+.collect 808 Silk Cloth##4306 |tip You can also farm these by killing humanoid mobs in the Scarlet Monastery instance.
 step
 'Skipping next part of farming |next "tl_125-200_skill" |only if step:Find("+farming"):IsComplete()
 'Proceeding to farm |next |only if default
@@ -6981,7 +6987,7 @@ step
 label	"farming"
 goto Felwood,63.4,20.7
 .from Irontree Chopper##48453+
-.collect 480 Mageweave Cloth##4338
+.collect 420 Mageweave Cloth##4338
 step
 label	"tl_125-200_skill"
 .create 161 Bolt of Silk Cloth##3839,Tailoring,161 total
@@ -7010,7 +7016,7 @@ step
 #include "trainer_Tailoring"
 .learn Bolt of Mageweave##3865
 step
-.create 120 Bolt of Mageweave##3865,Tailoring,105 total
+.create 105 Bolt of Mageweave##3865,Tailoring,105 total
 .skill Tailoring,185
 step
 #include "trainer_Tailoring"
@@ -7029,6 +7035,8 @@ label	"tl_200-250"
 #include "trainer_Tailoring"
 .skillmax Tailoring,300 |tip You must be at least level 35.
 .learn Crimson Silk Pantaloons##8799
+step
+.' You will need the
 step
 .create 15 Crimson Silk Pantaloons##8799,Tailoring,215
 step
