@@ -18583,4 +18583,5 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [70989]="Yu'lon",
 [71107]="Xuen",
 [54499]="The Abominable Greench",
+[54558]="Bog Crocolisk",
 } end)

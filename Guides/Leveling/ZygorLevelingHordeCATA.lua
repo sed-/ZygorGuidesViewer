@@ -4391,6 +4391,7 @@ goto 39.2,47.1
 .from Naga Explorer##1907+
 .get 6 Akiris Reed |q 26487/1
 .click Naga Icon##4853+
+.|tip Small gray naga statues
 .get 6 Naga Icon |q 26450/1
 step
 ding 32
@@ -4409,6 +4410,7 @@ goto 33.6,29.2
 step
 goto 36.7,35.6
 .click Bloodsail Sapphire##9024
+.|tip Very small blue vial laying on the boxes or by the fire
 .get Bloodsail Sapphire |q 26592/2
 step
 goto 42.0,30.4 |n
@@ -4416,11 +4418,13 @@ goto 42.0,30.4 |n
 step
 goto 49.0,36.4
 .click Bloodsail Ruby##7075
+.|tip It's a small red crystal laying by the fire
 .get Bloodsail Ruby |q 26592/1
 step
 goto 58.5,29.0
-.from Thrashtail Basilisk##1550+
+.from Thrashtail Basilisk##1550+, Ironjaw Basilisk##1551+
 .get 7 Sassy's Secret Ingredient |q 26493/1
+.' You can find more Basilisk inside the cave at [The Cape of Stranglethorn,64.5,29.9]
 step
 goto 51.4,27.5 |n
 .' Follow this path |goto 51.4,27.5,0.5 |noway |c
@@ -4429,7 +4433,9 @@ goto 46.9,19.1
 .from Stranglethorn Tigress##772+
 .get 4 Supple Tigress Fur |q 26434/1
 .from Elder Shadowmaw Panther##1713+
+.|tip These are stealthed a lot of the time, so keep an eye out
 .get 4 Velvety Panther Fur |q 26434/2
+.' More of these can be found at [The Cape of Stranglethorn,48.4,12.9]
 step
 goto 34.7,29.5
 .talk 43095
@@ -4458,7 +4464,7 @@ goto 42.4,30.9 |n
 step
 goto 54.2,31.4
 .click Totem of Hir'eek##7954
-..' Place the incense at the foot of the statue
+.' Place the incense at the foot of the statue
 .' Place incense in front of Totem of Hir'eek |q 26550/1
 .' Watch as you fly as a gargoyle
 .' Spy on Zanzil |q 26550/2
@@ -4482,17 +4488,17 @@ goto 34.6,28.0
 step
 goto 35.9,30.1
 .talk 43203
-..' <Offer the murloc a drink.>
+.' <Offer the murloc a drink.>
 .' Test Gmurgl |q 26534/1
 step
 goto 35.9,30.3
 .talk 43204
-..' <Offer the ogre a drink.>
+.' <Offer the ogre a drink.>
 .' Test Orgus |q 26534/2
 step
 goto 35.7,30.3
 .talk 43205
-..' <Offer the pirate a drink.>
+.' <Offer the pirate a drink.>
 .' Test Captain Bartholomew Softbeard |q 26534/3
 step
 goto 35.2,27.5
@@ -4538,6 +4544,9 @@ goto 77.9,44.4
 ..turnin 26554
 ..accept 26555
 step
+.' Go through the big archway |goto 82.9,35.7 <5 |c
+.|tip Not going through here could cause the quest to bug
+step
 goto 84.1,36.9
 .from High Priest Venoxis##43323
 .' Deal with High Priest Venoxis |q 26555/1
@@ -4565,6 +4574,7 @@ goto 41.8,72.8
 step
 goto 42.1,73.4
 .talk 2501
+.|tip He's inside on the first floor of this building
 ..accept 26593
 step
 goto 42.0,73.6
@@ -4584,7 +4594,7 @@ goto 42.4,67.9 |n
 .' Leave Booty Bay |goto 42.4,67.9,0.5 |noway |c
 step
 goto 54.6,65.3
-.from Gorlash##1492 |tip He's a big blue giant that walks along the shore here.
+.from Gorlash##1492 |tip He's a big blue giant that walks along the shore here. Look for a white skull with red eyes on your minimap.
 .get Smotts' Chest |q 26599/1
 step
 goto 54.3,65.4
@@ -4623,7 +4633,7 @@ goto 40.3,67.8
 step
 goto 42.8,69.0
 .talk 2664
-.get Crate of Grade-E Meat |q 26600/1
+.buy 1 Crate of Grade-E Meat##59036 |q 26600/1
 step
 goto 41.8,72.8
 .talk 2486
@@ -4636,7 +4646,7 @@ goto 42.1,73.4
 step
 goto 41.0,74.0
 .talk 2491
-.get Crate of Pupellyverbos Port |q 26600/2
+.buy 1 Crate of Pupellyverbos Port##59037 |q 26600/2
 step
 goto 40.3,67.8
 .talk 2500
@@ -4653,6 +4663,7 @@ goto 59.5,79.0
 step
 goto 58.2,80.7
 .kill 5 Jaguero Stalker##2522+ |q 26604/1
+.|tip They are stealthed, keep an eye out
 step
 goto 59.5,79.1
 .talk 2634
@@ -4739,6 +4750,7 @@ goto 42.6,72.0
 step
 goto 41.1,73.3
 .talk 2487
+.|tip Get to him by going though the inn
 ..turnin 26617
 step
 goto 41.2,73.1
@@ -4752,6 +4764,7 @@ goto 40.7,73.8
 step
 goto 43.4,71.5
 .talk 2493
+.|tip He's standing outside at the side of the house
 ..accept 26614
 step
 goto 42.4,67.9 |n
@@ -4763,8 +4776,8 @@ goto 45.0,79.5
 .click Bloodsail Orders##220
 .get Bloodsail Orders |q 26612/4
 .' The Bloodsail Orders and Charts can also spawn at the following locations:
-.' at [42.0,83.2]
-.' at [40.9,82.8]
+.' at [The Cape of Stranglethorn,42.0,83.2]
+.' at [The Cape of Stranglethorn,40.9,82.8]
 .kill 8 Bloodsail Sea Dog##1565+ |q 26612/1
 .kill 8 Bloodsail Elder Magus##1653+ |q 26612/2
 .get 15 Snuff |q 26613/1
@@ -4803,12 +4816,13 @@ goto 41.1,73.3
 step
 goto 43.3,71.7
 .talk 43505
-..' Tell her you need to cut off her head, then do the deed
+.|tip She is on the second floor of this building
+.' Tell her you need to cut off her head, then do the deed
 .get Cow Head |q 26630/3
 step
 goto 42.6,69.1
 .talk 2663
-..' Tell him you need an extra-large pirate hat.  Seahorn's orders.
+.' Tell him you need an extra-large pirate hat.  Seahorn's orders.
 .get Oversized Pirate Hat |q 26630/2
 step
 goto 41.1,73.3
@@ -4836,6 +4850,7 @@ goto 51.1,69.0 |n
 step
 goto 44.5,91.4
 .talk 2548
+.|tip He is downstairs, in the back of the ship in the captain's room
 ..turnin 26631
 ..accept 26633
 step
@@ -4851,6 +4866,7 @@ goto 44.5,93.3
 step
 goto 44.5,91.9
 .talk 2549
+.|tip He is upstairs on the back of the ship, by the helm
 ..accept 26634
 step
 goto 44.5,91.6
@@ -4863,8 +4879,9 @@ goto 46.3,96.0
 step
 goto 52.5,87.9
 .click Lime Crate##2350+
+.|tip These are found at the base of trees
 .get 5 Bushel of Limes |q 26634/1
-.' You can find more Lime Crates around [56.6,80.0]
+.' You can find more Lime Crates around [The Cape of Stranglethorn,56.6,80.0]
 step
 goto 44.5,93.2
 .talk 2545
@@ -4872,18 +4889,22 @@ goto 44.5,93.2
 step
 goto 44.5,91.9
 .talk 2549
+.|tip Upstairs at the helm of the ship
 ..turnin 26634
 step
 goto 44.4,91.6
 .talk 2548
+.|tip Downstairs in the captain's room
 ..accept 26644
 step
 goto 46.7,95.3
 .talk 2546
+.|tip He is downstairs in the captain's room
 ..turnin 26644
 step
 goto 46.6,95.0
 .talk 2547
+.|tip He is in the small room between the captain's room and the stairs
 ..accept 26647
 step
 goto 46.8,94.0
@@ -4893,10 +4914,11 @@ goto 46.8,94.0
 step
 goto 46.9,93.9
 .clicknpc Ol' Blasty##43562
-.' Use the abilities on your hotbar to shoot at Smilin' Timmy Sticks |tip It looks like a target dummy floating around in a small boat in the water near the ship you're on.
+.' Use the abilities on your hotbar to shoot at Smilin' Timmy Sticks
+.|tip It looks like a target dummy floating around in a small boat in the water near the ship you're on.
 .' Hit Smilin' Timmy Sticks with 5 Cannonballs |q 26647/1
 step
-.' Click the red arrow on your hotbar to stop using Ol' Blasty |outvehicle |q 26647
+.' Click the yellow arrow on your hotbar to stop using Ol' Blasty |outvehicle |q 26647
 step
 goto 46.6,95.0
 .' Go downstairs
@@ -4926,10 +4948,12 @@ goto 57.1,82.4
 step
 goto 46.7,95.3
 .talk 2546
+.|tip Downstairs in the captain's room
 ..accept 26650
 step
 goto 50.2,91.5
-.click Captain Stillwater's Charts##222 |tip It's downstairs in this ship.
+.click Captain Stillwater's Charts##222
+.|tip It's downstairs in this ship, in the captain's room
 ..turnin 26650
 ..accept 26662
 ..accept 26663
@@ -4943,30 +4967,31 @@ step
 goto 50.6,91.5
 .' Go all the way downstairs in this ship
 .talk 43636
-..' Tell them they're mutinous dogs, and to draw steel!
+.' Tell them they're mutinous dogs, and to draw steel!
 .' Kill as many Bloodsail Corsairs as you can on this ship
 .click Grog Barrel##9095
-..' <Nudge the cork.>
+.' <Nudge the cork.>
 .' Sabotage the Grog |q 26663/1
 step
 goto 46.7,94.2
 .' Go all the way downstairs in this ship
 .talk 43660
-..' Ask him what he can tell you about the Brashtide Crew
+.' Ask him what he can tell you about the Brashtide Crew
 .' Speak with Enormous Shawn Stooker |q 26662/2
 step
 goto 46.8,93.7
 .talk 43636
-..' Tell them they're mutinous dogs, and to draw steel!
+.' Tell them they're mutinous dogs, and to draw steel!
 .' Kill as many Bloodsail Corsairs as you can on this ship, unless you've already killed 9 of them
 .click Gunpowder Barrel##9095
-..' <Pour the water onto the gunpowder.>
+.' <Pour the water onto the gunpowder.>
 .' Sabotage the Gunpowder |q 26663/2
 step
 goto 44.5,93.2
-.' Go downstairs in this ship
+.' Go downstairs one level in this ship
 .talk 43661
-..' Ask her if she knows the battle plan
+.|tip She's standing between two cannons
+.' Ask her if she knows the battle plan
 .' Speak with Wailing Mary Smitts |q 26662/3
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 26662
@@ -4974,21 +4999,23 @@ step
 goto 44.7,92.8
 .' Go all the way downstairs in this ship
 .click Cannonball Crate##9651
-..' <Grease the cannonballs.>
+.' <Grease the cannonballs.>
 .' Sabotage the Cannonballs |q 26663/3
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 26663
 step
 goto 44.8,92.9
 .talk 43636
-..' Tell them they're mutinous dogs, and to draw steel!
+.' Tell them they're mutinous dogs, and to draw steel!
 .' Accuse and kill 9 Bloodsail Corsairs |q 26664/1
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 26664
 ..accept 26665
 step
+.' Enter Booty Bay |goto 45.0,65.9 <5 |c
+step
 goto 41.2,73.1
-.' Go upstairs
+.' Go upstairs in the inn
 .talk 2496
 ..turnin 26665
 ..accept 26678
@@ -5025,12 +5052,12 @@ ding 36
 step
 goto 40.4,73.5
 .talk 737
-..' Tell him you need a wind rider to take on a special mission
+.' Tell him you need a wind rider to take on a special mission
 .' Use your Throw Handbombs ability on your hotbar on the Bloodsail mobs in the boats below
 .kill 85 Brashtide Crewman##43717+ |q 26697/1
 .' Destroy 6 Brashtide Attack Boats |q 26697/2 |tip The Brashtide Attack Boats are the small wooden boats in the water.
 step
-'Use your Return to Booty Bay ability on your hotbar
+.' Use your Return to Booty Bay ability on your hotbar
 .' Return to Booty Bay |goto 40.5,73.3,0.5 |noway |c
 step
 goto 41.2,73.1
@@ -5039,6 +5066,7 @@ goto 41.2,73.1
 step
 goto 41.5,73.0 |n
 .click Blackwater Rope##7538
+.|tip it's a small coiled up rope laying on the dock
 .' Swing over to the Bloodsail ship |goto 41.0,70.7,0.5 |noway |c
 step
 goto 41.2,70.7
@@ -5050,6 +5078,7 @@ goto 41.1,70.9 |n
 step
 goto 42.5,72.5
 .kill 10 Brashtide Raider##43716+ |q 26699/1
+.|tip You can find them standing on the docks or inside buildings
 step
 goto 41.2,73.1
 .talk 2496
@@ -5059,11 +5088,12 @@ goto 41.2,73.1
 step
 goto 40.4,73.5
 .talk 737
-..' Tell him you need another wind rider
+.' Tell him you need another wind rider
 .' You will fly onto a Bloodsail ship |goto 36.5,65.9,0.5 |noway |c
 step
 goto 35.6,66.8
-.kill Fleet Master Firallon##2546 |q 26703/1 |tip He's downstairs in the ship, in the Captain's room.
+.kill Fleet Master Firallon##2546 |q 26703/1
+.|tip He's downstairs in the ship, in the Captain's room.
 step
 goto 41.2,73.1
 .talk 2496
@@ -5110,6 +5140,7 @@ goto 28.6,45.3 |n
 step
 goto 29.9,45.1
 .kill 8 Boulderfist Ogre##2562+ |q 26053/1
+.' You can find more at [Arathi Highlands,28.1,50.1]
 step
 goto 13.3,35.9
 .talk 41949
@@ -5141,6 +5172,7 @@ step
 goto 20.2,62.0
 .from Syndicate Thief##24477+, Syndicate Conjuror##2590+, Syndicate Magus##2591+, Syndicate Prowler##2588+
 .get Sigil of Strom |q 26030/1
+.' More can be found around [Arathi Highlands,21.1,65.5]
 step
 goto 17.8,63.0 |n
 .' Walk down this road |goto 17.8,63.0,0.5 |noway |c
@@ -5195,7 +5227,9 @@ goto 13.4,34.2
 ..turnin 26029
 step
 goto 36.0,56.5
-.from Lieutenant Valorcall##2612 |tip He patrols the section of the road between Stromgarde Keep and Refuge Point, so you may need to search for him.
+.from Lieutenant Valorcall##2612
+.|tip He patrols the section of the road between Stromgarde Keep and Refuge Point, so you may need to search for him.
+.|tip Look for a white skull with red eyes on your minimap
 .get Sigil of Arathor |q 26032/1
 step
 goto 12.9,36.2
@@ -5260,18 +5294,19 @@ goto 25.4,85.3
 .talk 2766
 ..turnin 26083
 step
-'Equip your Goggles of Gem Hunting |use Goggles of Gem Hunting##4491
+.' Equip your Goggles of Gem Hunting |use Goggles of Gem Hunting##4491
 |confirm
 step
 goto 16.2,91.4
 .kill 10 Daggerspine Raider##2595+ |q 26055/1
 .kill 3 Daggerspine Sorceress##2596+ |q 26055/2
-.click Calcified Elven Gem##247+ |tip You can find them easily if you have your Goggles of Gem Hunting equipped.  You will see yellow dots on your minimap where they are located.
+.click Calcified Elven Gem##247+
+.|tip They look like gray rocks on the sea floor. You can find them easily if you have your Goggles of Gem Hunting equipped.  You will see yellow dots on your minimap where they are located.
 .get 10 Elven Gem |q 26051/1
 step
 ding 29
 step
-'Remember to equip your regular helmet, if you have one
+.' Remember to equip your regular helmet, if you have one
 |confirm
 step
 goto 27.7,83.3
@@ -5288,9 +5323,12 @@ goto 25.9,83.9
 ..turnin 26052
 ..accept 26628
 step
-goto 25.4,85.2
+goto 25.7,83.2
+.' Click the Cannon to easily defeat the incoming Naga
 .' Kill the naga that attack Faldir's Cove
 .' Defend Shakes O'Breen |q 26628/1
+.|tip This quest is known to be bugged as of 5.2. If it seems to glitch out on you, just skip this and go on.
+.|tip If you're a high level, stand right next to Shakes and let the Naga get close and start hitting him, then take them out.
 step
 goto 25.9,83.9
 .talk 2610
@@ -5301,6 +5339,7 @@ goto 27.9,82.0 |n
 step
 goto 51.3,41.6
 .from Fardel Dabyrie##4479
+.|tip He walks around this farm, you may have to look for him
 .get Fardel's Head |q 26428/3
 step
 goto 48.6,39.1
@@ -5322,6 +5361,8 @@ goto Arathi Highlands,57.2,34.6
 .click Shards of Myzrael##1667
 ..accept 26039
 step
+.' Enter Hammerfall |goto 69.7,39.3 <5 |c
+step
 goto 67.7,34.8
 .talk 42130
 ..turnin 26084
@@ -5339,6 +5380,14 @@ goto 69.0,34.8
 .talk 2771
 ..accept 26429
 ..accept 26430
+step
+goto 74.0,36.3
+.' Kill any Drywhisker mobs you see here
+.get Mote of Myzrael |q 26039/1 |n
+.' When there's no more to kill, move to the next step
+|confirm
+|modelnpc Drywhisker Digger##2574
+|modelnpc Drywhisker Surveyor##2573
 step
 goto 76.4,41.0 |n
 .' Go up this path |goto 76.4,41.0,0.5 |noway |c
@@ -5369,7 +5418,7 @@ step
 goto 63.0,35.6
 .from Highland Strider##2559+
 .get 10 Highland Raptor Eye |q 26107/1
-.' More Highland Striders can be found around 60.6,43.5
+.' More Highland Striders can be found around [Arathi Highlands,60.6,43.5]
 step
 ding 30
 step
@@ -5390,7 +5439,7 @@ goto 59.5,71.9
 .kill 10 Witherbark Axe Thrower##2554+ |q 26429/1
 .kill 10 Witherbark Headhunter##2556+ |q 26429/2
 .kill 8 Witherbark Witch Doctor##2555+ |q 26429/3
-.' More Witherbark can be found at [65.3,72.8]
+.' More Witherbark can be found at [Arathi Highlands,65.3,72.8]
 step
 goto 69.0,34.8
 .talk 2771
@@ -6404,7 +6453,8 @@ goto 4.7,35.6 |n
 .' Enter the tunnel |goto 4.7,35.6,0.5 |noway |c
 step
 goto 5.1,33.4
-.from Crypt Stalker##8555+, Crypt Horror##8557+ |tip They are big insects inside this tunnel.
+.from Crypt Stalker##8555+, Crypt Horror##8557+
+.|tip They are big insects inside this tunnel. Look for side room as you go down the tunnel, there will be more mobs in there
 .get 8 Crypt Bile |q 27368/1
 step
 goto 4.7,35.6 |n
@@ -7186,6 +7236,7 @@ goto Eastern Plaguelands,73.7,53.1
 step
 goto Eastern Plaguelands/0 73.8,53.1
 .click The Uncrashable
+.|tip It's a rocket with two seats on it. Hovering behind Gek
 .' You will fly to the Badlands. |goto Badlands 91.9,38.5 |noway |c
 step
 goto Badlands,92.6,39.0
@@ -7196,6 +7247,8 @@ step
 goto 88.0,32.5
 .' Walk into the teleporter |tip it looks like a machine with a blue circle at the bottom of it.
 .' Teleport up the mountain |goto 82.8,33.9,0.5 |noway |c
+step
+.' Follow the path up |goto 68.9,30.2 <5 |c
 step
 goto 65.1,38.4
 .talk 46652
@@ -7214,7 +7267,9 @@ goto 66.1,28.1
 .from Dustbelcher Instructor##46693+ |tip They walk around this area, so you may need to search for one.
 .get Instructor's Rod |q 27775/1
 .from Dustbelcher Instructor##46693+, Dustbelcher Trainee##46695+ |q 27774/1
-.' You can find more Dustbelcher ogres around [58.2,26.5]
+.' You can find more Dustbelcher ogres around [Badlands,58.2,26.5]
+step
+.' Follow the path back up |goto 60.6,28.0 <5 |c
 step
 goto 64.3,38.1
 .talk 46653
@@ -7226,9 +7281,11 @@ goto 65.1,38.4
 ..turnin 27774
 ..accept 27764
 step
-goto 64.6,37.1
-.' Use your Billy Goat Blaster on Billy Goats |use Billy Goat Blaster##62397 |tip They are rams all around the outskirts of this town.
+goto 63.2,34.6
+.' Use your Billy Goat Blaster on Billy Goats |use Billy Goat Blaster##62397
+.|tip They are rams all around the outskirts of this town. You can do this while mounted.
 .' Nudge 12 Billy Goats |q 27776/1
+.' You can find more at [Badlands,62.9,39.8]
 step
 goto 64.3,38.1
 .talk 46653
@@ -7246,6 +7303,7 @@ goto 65.6,51.5
 .from Scalding Whelp##2725+
 .get 10 Scalding Whelp Corpse |q 27766/1
 .click Wild Black Dragon Egg##5972+
+.|tip Small pink eggs laying on the ground
 .get 6 Wild Black Dragon Egg |q 27765/1
 step
 goto 66.4,55.5
@@ -7321,12 +7379,16 @@ step
 goto 40.6,26.1 |n
 .' Enter Angor Fortress |goto 40.6,26.1,0.5 |noway |c
 step
+.' Go into the basement |goto 40.0,23.4 <5 |c
+step
 goto 40.1,25.1
 .' Go into the basement of Angor Fortress
 .click Angor's Coffer##10
+.|tip It is on the ground in the basement, next to the fireplace
 .get Engraved Tablets of Golganneth |q 27878/1
 step
 goto 41.1,26.8
+.' All around and inside Angor Fortress:
 .from Shadowforge Tunneler##2739+, Shadowforge Darkweaver##2740+
 .get 15 Dark Iron Head |q 27877/1
 step
@@ -7379,7 +7441,7 @@ goto 48.0,53.1
 ..turnin 27886
 step
 goto 50.3,54.3
-.' Follow the path around
+.' Follow the path around, to the very back of the tomb
 .click Stone Slab##10061
 ..turnin 27883
 ..accept 27885
@@ -7393,13 +7455,13 @@ goto 50.3,54.3
 step
 goto 50.3,52.6
 .talk 46768 |tip It's a huge green stone golem.
-..' <Place the pawn in the indentation.>
+.' <Place the pawn in the indentation.>
 .from The Warden##46768
 .' Thoroughly investigate The Warden |q 27887/1
 step
 goto 50.3,51.7
 .talk 46769 |tip It's a red green stone golem.
-..' <Place the pawn in the indentation.>
+.' <Place the pawn in the indentation.>
 .from The Sentinel##46769
 .' Thoroughly investigate The Sentinel |q 27887/2
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
@@ -7441,16 +7503,16 @@ goto 26.3,62.5
 .talk 2920
 ..accept 27714
 step
-'Use your Shrink the World ability on your hotbar 5 times
+.' Use your Shrink the World ability on your hotbar 5 times
 .' Grow large enough to reach the clouds |q 27714/1
 step
 goto 29.5,57.9
-.' Use your Search Cloud ability on your hotbar on the Clouds |tip They look like big gray clouds floating in the air all around this area, even on the sides of this big trench.
+.' Use your Search Cloud ability on your hotbar on the Clouds
+.|tip They look like big gray balls of smoke floating in the air all around this area. They'll be right about at the same level as your face. You can get out the trench to look for them too, they're around almost all of the Badlands.
 .' Search 5 Clouds |q 27714/2
 step
-'Directly above you:
-.
-Click The Sun |tip It's a big orange orb that spawns floating directly above you.
+.' Directly above you:
+.' Click The Sun |tip It's a big orange orb that spawns floating directly above you.
 .' Find Deathwing |q 27714/3
 step
 goto 26.3,62.5
@@ -7463,7 +7525,7 @@ goto 26.2,62.5
 step
 goto 26.3,62.4
 .talk 47124
-..' Tell her to hop in, baby
+.' Tell her to hop in, baby
 .' Choose an admirer to save |q 27715/1
 step
 goto 42.2,43.6
@@ -7471,7 +7533,7 @@ goto 42.2,43.6
 .' Ride to the end of the canyon |q 27715/2
 step
 goto 39.9,39.2
-.' Fly to the top of this pillar
+.' Using your spacebar, fly to the top of this pillar
 .' Find Deathwing |q 27715/3
 .' His ridiculous story gets rudely interrupted, haha
 .' "Beat" Deathwing in a knife fight |q 27715/4
@@ -7497,26 +7559,26 @@ goto 18.3,42.6
 .talk 9356
 .home New Kargath
 step
-goto Badlands/0 17.2,40.1
-.talk 2861
-.fpath New Kargath
-step
 goto 18.9,43.0
 .talk 47011
 ..turnin 27890
 ..accept 27891
 step
-'Next to you:
+.' Next to you:
 .talk 47024
 ..accept 27892
 step
-'Next to you:
+.' Next to you:
 .talk 47022
 ..accept 27893
 step
 goto 17.7,43.9
 .talk 1068
 ..accept 27880
+step
+goto Badlands/0 17.2,40.1
+.talk 2861
+.fpath New Kargath
 step
 goto 17.6,45.6
 .' Use Amakkar's Kidney Shot ability on your pet bar on an enemy
@@ -7534,15 +7596,15 @@ goto 17.6,45.6
 .' Use Gargal's Shield Wall ability on your pet bar
 .' Use Gargal's Shield Wall |q 27893/1
 step
-'Next to you:
+.' Next to you:
 .talk 47021
 ..turnin 27891
 step
-'Next to you:
+.' Next to you:
 .talk 47024
 ..turnin 27892
 step
-'Next to you:
+.' Next to you:
 .talk 47022
 ..turnin 27893
 ..accept 27894
@@ -7587,7 +7649,7 @@ goto 16.0,33.4
 ..turnin 27897
 ..accept 27898
 step
-'Watch the cutscene
+.' Watch the cutscene
 .' Wait for Rhea to retrieve the egg |q 27898/1
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 27898
@@ -7606,8 +7668,10 @@ goto 11.9,71.5 |n
 step
 goto 12.6,73.4
 .click Dustbelcher Meat##10075+
+.|tip Chains hanging from the ceiling with bloody meat at the end
 .get 6 Dustbelcher Meat |q 27879/1
 .click Dustbelcher Chest##9855+
+.|tip Little chests around the inside of the cave
 .get 10 Dustbelcher Silk |q 27879/2
 step
 ding 47
@@ -7617,9 +7681,10 @@ goto 11.9,71.5 |n
 step
 goto 13.2,66.4
 .from Dustbelcher Mauler##2717+, Dustbelcher Shaman##2718+ |q 27880/1
+.|tip The mobs inside the cave don't count for this quest
 step
-goto 19.1,39.9 |n
-.' Follow the path up |goto 19.1,39.9,0.5 |noway |c
+goto 19.1,46.2 |n
+.' Follow the path up |goto 19.1,46.2,0.5 |noway |c
 step
 goto 18.5,41.5
 .talk 46660
@@ -8258,15 +8323,8 @@ goto 44.5,44.4
 ..turnin 28431
 ..accept 28432
 step
-'Use your Blackrock Disguise |use Blackrock Disguise##63357
-.' You will get a different disguise, depending on the costume you had to make:
-.' Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Orc_Male |q 28432 |or
-.' Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 28432 |or
-.' Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Male |q 28432 |or
-.' Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Female |q 28432 |or
-.' Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Goblin_Male |q 28432 |or
-.' Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Goblin_Female |q 28432 |or
-.' Wear your Blackrock Ogre Disguise |havebuff Interface\Icons\Achievement_Reputation_Ogre |q 28432 |or
+.' Use your Blackrock Disguise |use Blackrock Disguise##63357
+|confirm
 step
 goto 45.3,51.7
 .talk 48085
@@ -8283,7 +8341,7 @@ goto 39.2,56.1
 .' Use your Razor-Sharp Scorpid Barb on Worgmistress Othana |use Razor-Sharp Scorpid Barb##63350
 .kill Worgmistress Othana##48099 |q 28434/2
 step
-goto 42.1,60.1
+goto 40.1,60.5
 .' Use your Razor-Sharp Scorpid Barb on Gorlop |use Razor-Sharp Scorpid Barb##63350
 .kill Gorlop##9176 |q 28434/1 |tip He's an ogre that runs back and forth between the 2 lava pools here, so you may need to search for him.
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
@@ -8291,6 +8349,7 @@ goto 42.1,60.1
 step
 goto 39.7,55.7
 .click Blackrock Boots##10182+
+.|tip These are little pairs of boots. You can find them right outside buildings and inside buildings
 .' Polish 7 Pairs of Blackrock Boots |q 28433/1
 step
 goto 45.3,51.7
@@ -8342,15 +8401,8 @@ goto 44.5,44.4
 .talk 48568
 ..accept 28437
 step
-'Use your Blackrock Disguise |use Blackrock Disguise##63357
-.' You will get a different disguise, depending on the costume you had to make:
-.' Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Orc_Male |q 28437 |or
-.' Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 28437 |or
-.' Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Male |q 28437 |or
-.' Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Female |q 28437 |or
-.' Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Goblin_Male |q 28437 |or
-.' Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Goblin_Female |q 28437 |or
-.' Wear your Blackrock Ogre Disguise |havebuff Interface\Icons\Achievement_Reputation_Ogre |q 28437 |or
+.' Use your Blackrock Disguise |use Blackrock Disguise##63357
+|confirm
 step
 goto 30.7,33.7
 .talk 48133
@@ -8359,7 +8411,7 @@ goto 30.7,33.7
 step
 goto 30.8,33.4
 .talk 48159
-..' Tell him you'd like to challenge his magma lord to a fight
+.' Tell him you'd like to challenge his magma lord to a fight
 .kill Magma Lord Kolob##48156 |q 28438/1
 step
 goto 30.7,33.7
@@ -8406,11 +8458,13 @@ goto 54.9,31.4
 .clicknpc Fallen Flamekin##48649+
 .get 18 Fallen Flamekin |q 28444/1
 .clicknpc Flamefly##48671+
+.|tip Litle fireflies flying around this area. You can do this while mounted.
 .get 7 Flamefly |q 28491/1
 step
 goto 62.4,35.4
 .from Greater Obsidian Elemental##7032+
 .get 9 Obsidian Ashes |q 28443/1
+.' More can be found at [Burning Steppes,62.4,46.6]
 step
 goto 67.3,31.1
 .from Giant Ember Worg##9697+
@@ -8427,7 +8481,7 @@ goto 54.8,24.6
 .talk 48565
 ..accept 28446
 step
-'Next to you:
+.' Next to you:
 .talk 48567
 ..accept 28447
 ..accept 28448
@@ -8452,14 +8506,15 @@ step
 goto 64.9,59.7
 .kill Whelptamer Akumi##48287 |q 28447/1
 step
-'Next to you:
+.' Next to you:
 .talk 48567
 ..turnin 28447
 step
 goto 76.7,53.4
 .from Black Dragonspawn##7040+, Black Wyrmkin##7041+ |q 28446/1
+.' You can find more of these mobs at [Burning Steppes,76.2,42.1]
 step
-'Next to you:
+.' Next to you:
 .talk 48567
 ..turnin 28446
 ..accept 28449
@@ -8473,15 +8528,8 @@ goto 54.7,24.5
 ..accept 28451
 ..accept 28452
 step
-'Use your Blackrock Disguise |use Blackrock Disguise##63357
-.' You will get a different disguise, depending on the costume you had to make:
-.' Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Orc_Male |q 28450 |or
-.' Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 28450 |or
-.' Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Male |q 28450 |or
-.' Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Female |q 28450 |or
-.' Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Goblin_Male |q 28450 |or
-.' Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Goblin_Female |q 28450 |or
-.' Wear your Blackrock Ogre Disguise |havebuff Interface\Icons\Achievement_Reputation_Ogre |q 28450 |or
+.' Use your Blackrock Disguise |use Blackrock Disguise##63357
+|confirm
 step
 goto 70.7,38.3 |n
 .' Enter the cave |goto 70.7,38.3,0.5 |noway |c
@@ -8499,12 +8547,14 @@ goto 64.3,37.5 |n
 step
 goto 69.6,42.9
 .talk 48312
+.|tip He is inside a small cave
 ..turnin 28452
 step
 goto 65.3,46.5 |n
 .' Enter the cave |goto 65.3,46.5,0.5 |noway |c
 step
 goto 66.5,40.5
+.' Follow the left path in the cave
 .talk 48316
 ..turnin 28450
 ..accept 28453
@@ -8549,6 +8599,7 @@ goto 65.3,46.5 |n
 .' Enter the cave |goto 65.3,46.5,0.5 |noway |c
 step
 goto 66.5,40.5
+.' Follow the left path in the cave
 .kill General Thorg'izog##48316 |q 28455/1
 step
 goto 65.3,46.5 |n

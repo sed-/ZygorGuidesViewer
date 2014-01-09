@@ -3598,7 +3598,7 @@ ZygorGuidesViewer:RegisterInclude("Gear_Collect_Gathering_Horde",[[
 		..collect Forager's Gloves##86566 |tip This is a rare drop, so you may be grinding for a while.
 ]])
 
-ZygorGuidesViewer:RegisterInclude("Gear_Collect_Fishing_Alliance",[[
+ZygorGuidesViewer:RegisterInclude("Poles_Collect_Fishing_Alliance",[[
 //ROUTER
 //STRONG FISHING POLE
 	step
@@ -3696,5 +3696,273 @@ ZygorGuidesViewer:RegisterInclude("Gear_Collect_Fishing_Alliance",[[
 		.talk Tanaika##31916
 		..buy 1 Mastercraft Kalu'ak Fishing Pole##44050
 		|next "menu"
+]])
 
+ZygorGuidesViewer:RegisterInclude("Gear_Collect_Fishing_Alliance",[[
+//ROUTER
+//DARKMOON FISHING CAP
+	step
+	label "darkmooncap"
+		'This item will require the _Darkmoon Faire_ to be open. |tip The Darkmoon Faire opens on the first Sunday of each month, and lasts for one week.
+		|confirm |next
+		.' Click here to return to the main menu. |confirm |next "menu"
+	step
+		goto Darkmoon Island 51.8,91.1
+		.' Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
+		.' Use your Fishing skill to fish in the water here. |cast Fishing##131474
+		..collect Darkmoon Fishing Cap##93732 |tip This item is a rare drop, so you may be fishing for a while.
+		|next "menu"
+//NAT'S HAT
+	step
+	label "natshat"
+		'This item will require you to become _Best Friends_ with Nat Pagle.
+		.' You will need to catch rare fish in Pandaria in order to gain reputation with him.
+		.' Click here to be taken to the Nat Pagle reputations guide for assistance in finding the rare fish required for gaining reputation with Nat Pagle. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\Nat Pagle"
+		.' Click here to be taken to Nat Pagle to turn in fish and to purchase Nat's Hat. |confirm |next "buynatpagle"
+		.' Click here to be taken to the main menu. |confirm |next "menu"
+	step
+	label "buynatpagle"
+		goto Krasarang Wilds 68.4,43.5
+		.talk Nat Pagle##63721
+		..buy Nat's Hat##88710
+		|next "menu"
+//REINFORCED FISHING LINE
+	step
+	label "reinforcedline"
+		goto Westfall 46.9,59.3
+		.' Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
+		.' Use your Fishing skill to fish in the water here. |cast Fishing##131474
+		..collect Strendel's Bane##68795 |tip This item is a rare drop, so you may be fishing for a while.
+	step
+		'Use _Strendel's Bane_ in your bags to open it. |use Strendel's Bane##68795
+		.collect Reinforced Fishing Line##68976
+		|next "menu"
+//SHARPENED TUSKARR SPEAR
+	step
+	label "tuskspear"
+		'This item will require you to become _Revered_ with the Anglers.
+		.' You will need to complete dailies and catch rare fish in order to gain reputation with the Anglers faction. |only if not ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+		.' Click here to be taken to the Anglers dailies guide to complete quests and gain reputation with the faction. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Anglers Dailies" |only if ZGV.guidesets['DailiesAMOP']
+		.' Click here to be taken to the Anglers reputations guide to complete quests and gain reputation with the faction. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Anglers" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+		.' Click here to be taken to _Nat Pagle_ in order to purchase the Sharpened Tuskarr Spear. |confirm |next "buytuskspear"
+		.' Click here to be taken to the main menu. |confirm |next "menu"
+	step
+	label "buytuskspear"
+		goto Krasarang Wilds 68.4,43.4
+		.talk Nat Pagle##63721
+		..buy Sharpened Tuskarr Spear##88535
+		|next "menu"
+//ANCIENT PANDAREN FISHING CHARM
+	step
+	label "pandafishcharm"
+		goto Valley of the Four Winds 46.9,24.4
+		.talk Ghostly Pandaren Fisherman##64004 |tip This NPC is a rare spawn, so you may need to wait a while.
+		.' Tell him, "Sure, I'll take one."
+		..collect Ancient Pandaren Fishing Charm##85973
+		|next "menu"
+//WEATHER-BEATEN JOURNAL
+	step
+	label "weatherjournal"
+		map Wetlands
+		path	63.6,75.7	60.4,70.4	60.6,59.6
+		path	63.8,55.1	65.8,58.8	65.5,66.7
+		path	67.3,73.0
+		.' Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
+		.' Use your Fishing skill to fish in _Schooner Wreckage Pools_ along this path. |cast Fishing##131474
+		.' Open any _Watertight Trunks_ you fish up. |use Watertight Trunk##21113
+		..collect Weather-Beaten Journal##34109
+		|next "menu"
+//SPUN TRUESILVER FISHING LINE
+	step
+	label "truefish"
+		'You must complete the Fishing Daily quests in Terokkar Forest to obtain this item.
+		.' Click here to do the Dalaran Daily Quests. |next "terofish" |confirm
+		.' Click here to go back to the main menu. |confirm |next "menu"
+	step
+	label "terofish"
+		goto Terokkar Forest,38.7,12.8
+		.talk Old Man Barlo##25580
+		.' You will only be able to pick up 1 of 5 dailies per day.
+		.accept Crocolisks in the City##11665 |or
+		.accept Bait Bandits##11666 |or
+		.accept Felblood Fillet##11669 |or
+		.accept The One That Got Away##11667 |or
+		.accept Shrimpin' Ain't Easy##11668 |or
+	step
+		goto Stormwind City,54.9,69.7
+		.' Use your Fishing skill to fish in the water all around the wooden dock |cast Fishing##7620
+		..get Baby Crocolisk##34864 |q 11665/1
+		only if havequest(11665)
+	step
+		goto Terokkar Forest,51.8,37.2
+		.' Fish in the river here |cast Fishing##7620
+		..get Blackfin Darter##34865 |q 11666/1
+		only if havequest(11666)
+	step
+		goto Nagrand,37.4,47.1
+		.' Use your fishing ability to fish in the lake. |cast Fishing##7620
+		..get World's Largest Mudfish##34868 |q 11667/1
+		only if havequest(11667)
+	step
+		goto Zangarmarsh,77.9,79.7
+		.' Fish from the Lake here |cast Fishing##7620
+		.'Click the Bloated Barbed Gill Trout in your bags|use Bloated Barbed Gill Trout##35313
+		..get 10 Giant Freshwater Shrimp##34866 |q 11668/1
+		only if havequest(11668)
+	step
+		goto Shadowmoon Valley,18.9,22.2
+		.' Use your fishing ability in the green lava. |cast Fishing##7620
+		..get Monstrous Felblood Snapper |q 11669/1
+		only if havequest(11669)
+	step
+		goto Terokkar Forest,38.7,12.8
+		.talk Old Man Barlo##25580
+		.' You will only be able to pick up 1 of 5 dailies per day.
+		.turnin Crocolisks in the City##11665 |or
+		.turnin Bait Bandits##11666 |or
+		.turnin Felblood Fillet##11669 |or
+		.turnin The One That Got Away##11667 |or
+		.turnin Shrimpin' Ain't Easy##11668 |or
+		|next "use2"
+	step
+	label "use2"
+		'Open the Bag of Fishing Treasures in your bags |use Bag of Fishing Treasures##46007
+		.collect Spun Truesilver Fishing Line |next "menu"
+		.' Click here to go to the beginning of this daily guide. |next "truefish" |confirm
+//WEATHER-BEATEN FISHING HAT
+	step
+	label "weatherhat"
+		'You must complete the Fishing Daily quests in Stormwind City, Terokkar Forest, or Dalaran to obtain this item.
+		.' Click here to do the Stormwind Daily Quests. |next "swhat" |confirm
+		.' Click here to do the Dalaran Daily Quests. |next "dalhat" |confirm
+		.' Click here to do the Terokkar Daily Quests. |next "terohat" |confirm
+		.' Click here to return to the main menu |confirm |next "menu"
+	step
+	label "dalhat"
+		goto Dalaran,53.1,64.9
+		.talk Marcia Chase##28742
+		.' You will only be able to accept, and turn in, 1 of these 5 daily quests per day:
+		..accept Blood Is Thicker##13833 |or
+		..accept Dangerously Delicious##13834 |or
+		..accept Jewel Of The Sewers##13832 |or
+		..accept Disarmed!##13836 |or
+		..accept The Ghostfish##13830 |or
+	step
+		goto Borean Tundra,54.6,41.8
+		.from Wooly Mammoth##24614, Mammoth Calf##24613, Wooly Mammoth Bull##25743
+		.' Get the Animal Blood buff|havebuff Ability_Seal|q 13833
+		only if havequest (13833)
+	step
+		goto 53.7,42.9
+		.' Walk into the water here to create a pool of blood
+		.' Fish in the pool of blood
+		.get 5 Bloodtooth Frenzy |q 13833/1
+		only if havequest (13833)
+	step
+		goto Wintergrasp,79.9,41.8
+		.' Fish in this big lake
+		.get 10 Terrorfish |q 13834/1
+		only if havequest (13834)
+	step
+		'The entrance to the Dalaran sewers starts here|goto Dalaran,60.2,47.7,0.3|c|q 13832
+		only if havequest (13832)
+	step
+		goto 44.4,66.2
+		.' Fish in the water in the Dalaran sewers
+		.get 1 Corroded Jewelry |q 13832/1
+		only if havequest (13832)
+	step
+		'Leave the Dalaran sewers|goto Dalaran,60.2,47.7,0.3|c|q 13832
+		only if havequest (13832)
+	step
+		goto Dalaran,64.8,60.8
+		.' Stand on the this circular platform and fish in the water here
+		.collect Bloated Slippery Eel##45328|n
+		.' Click the Bloated Slippery Eel in your bags|use Bloated Slippery Eel##45328
+		.get 1 Severed Arm |q 13836/1
+		only if havequest (13836)
+	step
+		goto Sholazar Basin,49.3,61.8
+		.' Fish in the water here
+		.collect 1 Phantom Ghostfish##45902|n
+		.' Click the Phantom Ghostfish in your bags to eat it|use Phantom Ghostfish##45902
+		.' Discover the Ghostfish mystery |q 13830/1
+		only if havequest (13830)
+	step
+		goto Dalaran,53.1,64.9
+		.talk Marcia Chase##28742
+		.' You will only be able to accept, and turn in, 1 of these 5 daily quests per day:
+		..turnin Blood Is Thicker##13833
+		..turnin Dangerously Delicious##13834
+		..turnin Jewel Of The Sewers##13832
+		..turnin The Ghostfish##13830
+		|next "use2"
+	step
+		goto Dalaran,36.6,37.3
+		.talk Olisarra the Kind##28706
+		..turnin Disarmed!##13836
+		|next "use2"
+	step
+	label "use2"
+		|use Bag of Fishing Treasures##46007
+		.collect 1 Strand Crawler##44983 |next "use"
+		.' Click here to go to the beginning of this guide. |next "weatherhat" |confirm
+		|modeldisplay 1307
+	step
+	label "swfish"
+		.' In order to earn the achievement Fish or Cut Bait: Stormwind, you will need to complete 5 daily quests from the NPC Catherine Leland.
+		.' You will only be able to accept 1 of the 5 quests per day.
+		.' Click here to proceed. |confirm
+	step
+		goto Stormwind City,55.0,69.7
+		.talk Catherine Leland##5494
+		.' You will only be able to pick up one of these quests.
+		.accept Hitting a Walleye##26414 |or
+		.accept Diggin' For Worms##26420 |or
+		.accept Rock Lobster##26442 |or
+		.accept Big Gulp##26488 |or
+		.accept Thunder Falls##26536 |or
+	step
+		goto 56.5,41.6
+		.' Use your fishing ability to fish in the lake. |cast Fishing##7620
+		.get Hardened Walleye##58503 |q 26414
+		only if havequest (26414)
+	step
+		goto 58.3,13.2
+		.' Look for sparkling mounds in the grass around the pond.
+		.get Overgrown Earthworm |q 26420 |n
+		.' Use the Overgrown Earthworm |use Overgrown Earthworm##58788
+		.' Fish in Olivia's Pond |cast Fishing##7620
+		.get Crystal Bass##58787 |q 26420/1
+		only if havequest (26420)
+	step
+		goto Stormwind City,22.4,29.0
+		.' Swim around Stormwind Harbor and click The Stormwind Lobster Traps
+		.get 6 Rock Lobster##58809 |q 26442/1
+		only if havequest (26442)
+	step
+		goto Stormwind City,69.1,92.2
+		.' Use your fishing skill in the moat. |cast Fishing##7620
+		.get Royal Monkfish##58856 |n
+		.' Click the Royal Monkfish |use Royal Monkfish##58856
+		.collect Precious Locket##58864
+		only if havequest (26488)
+	step
+		goto Elwynn Forest,27.1,60.6
+		.' Use your fishing skill in the water here. |cast Fishing##7620
+		.get 4 Violet Perch##58899 |q 26536/1
+		only if havequest (26536)
+	step
+		goto Stormwind City,55.0,69.7
+		.talk Catherine Leland##5494
+		.' You will only be able to pick up one of these quests.
+		.turnin Hitting a Walleye##26414 |or
+		.turnin Diggin' For Worms##26420 |or
+		.turnin Rock Lobster##26442 |or
+		.turnin Big Gulp##26488 |or
+		.turnin Thunder Falls##26536 |or
+	step
+		|use Bag of Shiny Things##67414
+		.collect Weather-Beaten Fishing Hat##33820 |next "menu"
+		.' Click here to go to the beginning of this guide. |next "weatherhat" |confirm
 ]])

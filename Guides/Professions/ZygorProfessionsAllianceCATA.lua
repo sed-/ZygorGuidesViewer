@@ -7109,27 +7109,27 @@ goto Shattrath City,66.3,69.3
 step
 goto Shattrath City,51.0,26.5
 .talk 50143
-.buy 700 Netherweave Cloth##21877
+.buy 800 Netherweave Cloth##21877
 #include go_farm_level,level="65",goto="tl_300-350_farm"
 |next "tl_300-350_skill"
 step
 label	"auction2"
 goto Shattrath City,57.0,63.2
 .talk 50139
-.buy 700 Netherweave Cloth##21877
+.buy 800 Netherweave Cloth##21877
 #include go_farm_level,level="65",goto="tl_300-350_farm"
 |next "tl_300-350_skill"
 step
 label	"tl_300-350_farm"
 goto Netherstorm,26.3,68.1
 .from Sunfury Magister##18855+, Sunfury Astromancer##19643+, Sunfury Captain##19453+, Sunfury Bloodwarder##18853+, Sunfury Geologist##19779+, Sunfury Warp-Master##18857+
-.collect 700 Netherweave Cloth##21877
+.collect 800 Netherweave Cloth##21877
 step
 label	"tl_300-350_skill"
 #include "auctioneer"
 .buy 20 Knothide Leather##21887
 step
-.create Bolt of Netherweave##26745,Tailoring,140 total
+.create Bolt of Netherweave##26745,Tailoring,160 total
 .skill Tailoring,325
 step
 #include "trainer_Tailoring"

@@ -5744,10 +5744,12 @@ goto 54.7,72.2
 step
 goto 59.4,82.1
 .' Use the Bag of Clams in your bags on Coldwhisker Otters |use Bag of Clams##85231
+.|tip You can find them at the water's surface or diving down to the sea floor
 .' Feed Coldwhisker Otter |q 31182/1 |modelnpc Coldwhisker Otter##63376
 .from Sea Monarch##63470+
 .collect 20 Sea Monarch Chunks##85230 |n
 .click Empty Crab Pot
+.|tip They look like red and brown cages on the sea floor
 .' Bait 10 Crab Pots |q 31181/1
 step
 goto 54.7,72.2
@@ -5779,6 +5781,7 @@ step
 step
 goto 44.8,78.7
 .click Soggy's Footlocker
+.|tip It is on the wrecked ship
 .get Sealed Charter Tube |q 31184/1
 step
 .' Bring Dog to the Whale Corpse |goto 40.2,79.1 <5 |q 31185/3
@@ -5791,9 +5794,11 @@ goto 46.0,77.1
 .' Use the Thresher Jaw in your bags |use Thresher Jaw##85998
 .get 200 Thresher Teeth##85999 |q 31188/1
 .click Full Crab Pot
+.|tip These look the same as before, red and brown cages on the sea floor
 .' Send 8 Full Crab Pots to the Surface |q 31187/1
 step
 .' Next to you:
+.' If he's not next to you, use Dog's Whistle while swimming to summon him again. |use Dog's Whistle##85955
 .talk 63955
 ..turnin 31186
 step
@@ -5813,10 +5818,11 @@ goto 54.7,72.2
 step
 goto 53.6,76.0
 .talk 64259
-.' Deck Boss said you needed some help. |q 31189/1
+.' Tell him the deck Boss said you needed some help. |q 31189/1
 step
 goto 53.7,76.0
 .' Click each rod and fight the Jiao Spawns.
+.|tip The rods are on either side of him, sitting on some wood
 .click Serpent Rod
 .click Improvised Rod
 .click Bamboo Rod
@@ -5898,9 +5904,10 @@ goto 26.3,58.8
 .from Briny Clacker##63348
 .get 8 Clacker Tail |q 31177/1
 .click Spiny Starfish
+.|tip Little pink starfish all over the sea floor
 .get 12 Starfish Meat |q 31176/1
 step
-.' Enter this cave |goto 25.7,53.9 <5 |c
+.' Go underwater and enter the cave |goto 25.7,53.9 <5 |c
 step
 goto 25.7,50.3
 .talk 63071
