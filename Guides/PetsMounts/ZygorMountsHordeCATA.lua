@@ -14,8 +14,6 @@ ZygorGuidesViewer:RegisterInclude("EngSupplies",[[
 goto Orgrimmar,56.8,56.4
 .talk 3413
 ]])
-ZygorGuidesViewer:RegisterInclude("vendor_Enchanting",[[
-]])
 ZygorGuidesViewer:RegisterInclude("OrgTabard",[[
 goto Orgrimmar 50.2,58.3 |only if rep("Orgrimmar")<Exalted
 .talk 50488 |only if rep("Orgrimmar")<Exalted

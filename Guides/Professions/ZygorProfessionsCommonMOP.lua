@@ -2167,7 +2167,7 @@ ZygorGuidesViewer:RegisterInclude("Enchanting_500-600",[[
 	step
 		.create 9 Enchant Boots - Greater Haste##104407,Enchanting,575
 	step
-		#include "trainer_Enchanting"	
+		#include "trainer_Enchanting"
 		.learn Enchant Chest - Glorious Stats##104395
 	step
 		.create 5 Enchant Chest - Glorious Stats##104395,Enchanting,600
@@ -3612,14 +3612,23 @@ ZygorGuidesViewer:RegisterInclude("Poles_Collect_Fishing_Alliance",[[
 //ROUTER
 	step
 	label "menu"
-		'Click here to get the _Strong Fishing Pole_,
-		'Click here to get the _Pandaren Fishing Pole_,
-		'Click here to get the _Big Iron Fishing Pole_,
-		'Click here to get the _Seth's Graphite Fishing Pole_,
-		'Click here to get the _Nat Pagle's Extreme Angler FC-5000_,
-		'Click here to get the _Bone Fishing Pole_,
-		'Click here to get the _Dragon Fishing Pole_,
-		'Click here to get the _Mastercraft Kalu'ak Fishing Pole_,
+		'Click here to get the _Strong Fishing Pole_, which increases Fishing skill by _5_. |confirm |next "strong" |only if skill("Fishing")>=10
+		.'_
+		'Click here to get the _Pandaren Fishing Pole_, which increases Fishing skill by _10_. |confirm |next "pandaren"
+		.'_
+		'Click here to get the _Big Iron Fishing Pole_, which increases Fishing skill by _20_. |confirm |next "bigiron"
+		.'_
+		'Click here to get the _Seth's Graphite Fishing Pole_, which increases Fishing skill by _20_. |confirm |next "seth"
+		.'_
+		'Click here to get the _Nat Pagle's Extreme Angler FC-5000_, which increases Fishing skill by _20_. |confirm |next "fc5000"
+		.'_
+		'Click here to get the _Bone Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "bonejewel"
+		.'_
+		'Click here to get the _Jeweled Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "bonejewel"
+		.'_
+		'Click here to get the _Dragon Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "dragon"
+		.'_
+		'Click here to get the _Mastercraft Kalu'ak Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "kaluak"
 //STRONG FISHING POLE
 	step
 	label "strong"
@@ -3644,6 +3653,7 @@ ZygorGuidesViewer:RegisterInclude("Poles_Collect_Fishing_Alliance",[[
 		|next "menu"
 //BIG IRON FISHING POLE
 	step
+	label "bigiron"
 		'This pole will require you to search crates underwater. It's suggested that you purchase some _Underwater Breathing Potions_ if you don't have the ability to breathe underwater.
 		|confirm
 	step
@@ -3689,7 +3699,7 @@ ZygorGuidesViewer:RegisterInclude("Poles_Collect_Fishing_Alliance",[[
 		.' Click here to do the Dalaran Daily Quests. |next "dalbone" |confirm
 		.' Click here to return to the main menu |confirm |next "menu"
 	step
-	label "dalhat"
+	label "dalbone"
 		goto Dalaran,53.1,64.9
 		.talk Marcia Chase##28742
 		.' You will only be able to accept, and turn in, 1 of these 5 daily quests per day:
@@ -3759,9 +3769,9 @@ ZygorGuidesViewer:RegisterInclude("Poles_Collect_Fishing_Alliance",[[
 	label "usetreas"
 		|use Bag of Fishing Treasures##46007
 		.collect 1 Weather-Beaten Fishing Hat##33820 |next "menu"
-		.' Click here to go to the beginning of this guide. |next "weatherhat" |confirm
+		.' Click here to go to the beginning of this guide. |next "bonejewel" |confirm
 	step
-	label "swhat"
+	label "swbone"
 		goto Stormwind City,55.0,69.7
 		.talk Catherine Leland##5494
 		.' You will only be able to pick up one of these quests.
@@ -3848,28 +3858,38 @@ ZygorGuidesViewer:RegisterInclude("Poles_Collect_Fishing_Alliance",[[
 ZygorGuidesViewer:RegisterInclude("Poles_Collect_Fishing_Horde",[[
 //ROUTER
 	step
-		'Click here to get the _Strong Fishing Pole_,
-		'Click here to get the _Pandaren Fishing Pole_,
-		'Click here to get the _Big Iron Fishing Pole_,
-		'Click here to get the _Seth's Graphite Fishing Pole_,
-		'Click here to get the _Nat Pagle's Extreme Angler FC-5000_,
-		'Click here to get the _Bone Fishing Pole
-		'Click here to get the _
-		'Click here to get the _
+	label "menu"
+		'Click here to get the _Strong Fishing Pole_, which increases Fishing skill by _5_. |confirm |next "strong" |only if skill("Fishing")>=10
+		.'_
+		'Click here to get the _Pandaren Fishing Pole_, which increases Fishing skill by _10_. |confirm |next "pandaren"
+		.'_
+		'Click here to get the _Big Iron Fishing Pole_, which increases Fishing skill by _20_. |confirm |next "bigiron"
+		.'_
+		'Click here to get the _Seth's Graphite Fishing Pole_, which increases Fishing skill by _20_. |confirm |next "seth"
+		.'_
+		'Click here to get the _Nat Pagle's Extreme Angler FC-5000_, which increases Fishing skill by _20_. |confirm |next "fc5000"
+		.'_
+		'Click here to get the _Bone Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "bonejewel"
+		.'_
+		'Click here to get the _Jeweled Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "bonejewel"
+		.'_
+		'Click here to get the _Dragon Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "dragon"
+		.'_
+		'Click here to get the _Mastercraft Kalu'ak Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "kaluak"
 //STRONG FISHING POLE
 	step
 	label "strong"
-		goto Stormwind City 55.0,69.6
-		.talk Catherine Leland##5494
+		goto Orgrimmar 66.6,41.6
+		.talk Shankys##3333
 		..buy 1 Strong Fishing Pole##6365
 		|next "menu"
 //PANDAREN FISHING POLE
 	step
 	label "pandaren"
 		'This fishing pole will require you to become _Honored_ with the Anglers.
-		.' You will need to complete dailies and catch rare fish in order to gain reputation with the Anglers faction. |only if not ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
-		.' Click here to be taken to the Anglers dailies guide to complete quests and gain reputation with the faction. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Anglers Dailies" |only if ZGV.guidesets['DailiesAMOP']
-		.' Click here to be taken to the Anglers reputations guide to complete quests and gain reputation with the faction. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Anglers" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+		.' You will need to complete dailies and catch rare fish in order to gain reputation with the Anglers faction. |only if not ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
+		.' Click here to be taken to the Anglers dailies guide to complete quests and gain reputation with the faction. |confirm |next "Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Anglers Dailies" |only if ZGV.guidesets['DailiesHMOP']
+		.' Click here to be taken to the Anglers reputations guide to complete quests and gain reputation with the faction. |confirm |next "Zygor's Horde Reputations Guides\\Mists of Pandaria\\The Anglers" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
 		.' Click here to be taken to _Nat Pagle_ in order to purchase the Fishing Pole. |confirm |next "buypanda"
 		.' Click here to be taken to the main menu. |confirm |next "menu"
 	step
@@ -3880,6 +3900,7 @@ ZygorGuidesViewer:RegisterInclude("Poles_Collect_Fishing_Horde",[[
 		|next "menu"
 //BIG IRON FISHING POLE
 	step
+	label "bigiron"
 		'This pole will require you to search crates underwater. It's suggested that you purchase some _Underwater Breathing Potions_ if you don't have the ability to breathe underwater.
 		|confirm
 	step
@@ -3905,31 +3926,153 @@ ZygorGuidesViewer:RegisterInclude("Poles_Collect_Fishing_Horde",[[
 //NAT PAGLE'S EXTREME ANGLER FC-5000
 	step
 	label "fc5000"
-		goto The Hinterlands 66.2,44.2
-		.talk Dron Blastbrew##43109
-		..accept Snapjaws, Lad!##26485
+		goto The Hinterlands 80.4,81.4
+		.talk Katoom the Angler##14740
+		..accept Snapjaws, Mon!##26211
 	step
 		goto The Hinterlands 77.4,66.8
-		.from Saltwater Snapjaw##2505
-		..get 8 Snapjaw Gizzard##58867 |q 26485/1
+		.from Saltwater Snapjaw##2505 |q 26211/1
 	step
-		goto The Hinterlands 66.2,44.2
-		.talk Dron Blastbrew##43109
-		..turnin Snapjaws, Lad!##26485
+		goto The Hinterlands 80.4,81.4
+		.talk Katoom the Angler##14740
+		..turnin Snapjaws, Mon!##26211
 		..collect 1 Nat Pagle's Extreme Angler FC-5000##19022
 //BONE FISHING POLE/JEWELED FISHING POLE
 	step
 	label "bonejewel"
-		'This fishing pole is acquired by completing the fishing dailies in Stormwind and Dalaran.
-		.' Click here to be taken to the Stormwind fishing dailies guide. |confirm |next "
-		.' Click here to be taken to the Dalaran fishing dailies guide. |confirm |next "
+		'This fishing pole is acquired by completing the fishing dailies in Orgrimmar and Dalaran.
+		.' Click here to be taken to the Orgrimmar fishing dailies guide. |confirm |next "orgbone"
+		.' Click here to be taken to the Dalaran fishing dailies guide. |confirm |next "dalbone"
+	step
+	label "dalbone"
+		goto Dalaran,53.1,64.9
+		.talk Marcia Chase##28742
+		.' You will only be able to accept, and turn in, 1 of these 5 daily quests per day:
+		..accept Blood Is Thicker##13833 |or
+		..accept Dangerously Delicious##13834 |or
+		..accept Jewel Of The Sewers##13832 |or
+		..accept Disarmed!##13836 |or
+		..accept The Ghostfish##13830 |or
+	step
+		goto Borean Tundra,54.6,41.8
+		.from Wooly Mammoth##24614, Mammoth Calf##24613, Wooly Mammoth Bull##25743
+		.' Get the Animal Blood buff|havebuff Ability_Seal|q 13833
+		only if havequest (13833)
+	step
+		goto 53.7,42.9
+		.' Walk into the water here to create a pool of blood
+		.' Fish in the pool of blood
+		.get 5 Bloodtooth Frenzy |q 13833/1
+		only if havequest (13833)
+	step
+		goto Wintergrasp,79.9,41.8
+		.' Fish in this big lake
+		.get 10 Terrorfish |q 13834/1
+		only if havequest (13834)
+	step
+		'The entrance to the Dalaran sewers starts here|goto Dalaran,60.2,47.7,0.3|c|q 13832
+		only if havequest (13832)
+	step
+		goto 44.4,66.2
+		.' Fish in the water in the Dalaran sewers
+		.get 1 Corroded Jewelry |q 13832/1
+		only if havequest (13832)
+	step
+		'Leave the Dalaran sewers|goto Dalaran,60.2,47.7,0.3|c|q 13832
+		only if havequest (13832)
+	step
+		goto Dalaran,64.8,60.8
+		.' Stand on the this circular platform and fish in the water here
+		.collect Bloated Slippery Eel##45328|n
+		.' Click the Bloated Slippery Eel in your bags|use Bloated Slippery Eel##45328
+		.get 1 Severed Arm |q 13836/1
+		only if havequest (13836)
+	step
+		goto Sholazar Basin,49.3,61.8
+		.' Fish in the water here
+		.collect 1 Phantom Ghostfish##45902|n
+		.' Click the Phantom Ghostfish in your bags to eat it|use Phantom Ghostfish##45902
+		.' Discover the Ghostfish mystery |q 13830/1
+		only if havequest (13830)
+	step
+		goto Dalaran,53.1,64.9
+		.talk Marcia Chase##28742
+		.' You will only be able to accept, and turn in, 1 of these 5 daily quests per day:
+		..turnin Blood Is Thicker##13833
+		..turnin Dangerously Delicious##13834
+		..turnin Jewel Of The Sewers##13832
+		..turnin The Ghostfish##13830
+		|only if havequest(13833) or havequest(13834) or havequest(13832) or havequest(13830)
+		|next "usetreas"
+	step
+		goto Dalaran,36.6,37.3
+		.talk Olisarra the Kind##28706
+		..turnin Disarmed!##13836
+		(only if havequest(13836)
+		|next "usetreas"
+	step
+	label "usetreas"
+		|use Bag of Fishing Treasures##46007
+		.collect 1 Weather-Beaten Fishing Hat##33820 |next "menu"
+		.' Click here to go to the beginning of this guide. |next "bonejewel" |confirm
+	step
+	label "orgbone"
+		goto Orgrimmar,65.7,41.1
+		.talk Razgar##43239
+		..' You will only be able to complete 1 of the following quests per day
+		..accept A Furious Catch##26588 |or
+		..accept A Golden Opportunity##26572 |or
+		..accept A Staggering Effort##26557 |or
+		..accept Clammy Hands##26543 |or
+		..accept No Dumping Allowed##26556 |or
+	step
+		goto Durotar,37.4,16.8
+		.' Fish in the river in this spot
+		.get Giant Furious Pike |q 26588/1 |tip This fish can only be caught in Durotar, so make sure you are standing and fishing in Durotar.
+	step
+		goto 42.8,24.0
+		.' Use Razgar's Fillet Knife on a Drowned Thunder Lizard |use Razgar's Fillet Knife##58955 |tip They look like dead dinosaurs underwater around this area.
+		.collect Drowned Thunder Lizard Tail##58958 |n
+		.' Use your Drowned Thunder Lizard Tail next to Golden Stonefish |use Drowned Thunder Lizard Tail##58958 |tip They look like big yellow fish underwater around this area.
+		.get 3 Golden Stonefish |q 26572/1
+	step
+		goto 57.2,9.5
+		.' Click Monstrous Clams |tip They look like huge white clams underwater around this area.
+		.get 10 Monstrous Clam Meat |q 26543/1	
+	step
+		goto Azshara,27.6,74.5
+		.from Weakened Mosshoof Stag##35096+
+		.collect 1 Stag Eye##58949 |q 26557
+	step
+		 goto Orgrimmar,46.2,46.5
+		.' Use your Stag Eye |use Stag Eye##58949
+		.' Fish in the water off the dock in this spot
+		.get Sandy Carp |q 26557/1
+	step
+		goto 38.5,80.1
+		.' Fish in the water in this spot
+		.get 6 Toxic Puddlefish |q 26556/1
+	step
+		goto 65.7,41.1
+		.talk Razgar##43239
+		..' You will only be able to complete 1 of the following quests per day
+		..turnin A Furious Catch##26588
+		..turnin A Golden Opportunity##26572
+		..turnin A Staggering Effort##26557
+		..turnin Clammy Hands##26543
+		..turnin No Dumping Allowed##26556
+	step
+		|use Bag of Shiny Things##67414
+		.collect Bone Fishing Pole##45991 |or |next "menu"
+		.collect Jeweled Fishing Pole##45992 |or |next "menu"
+		.' Click here to go to the beginning of this guide. |next "bonejewel" |confirm
 //DRAGON FISHING POLE
 	step
 	label "dragon"
 		'This fishing pole will require you to become _Revered_ with the Anglers.
-		.' You will need to complete dailies and catch rare fish in order to gain reputation with the Anglers faction. |only if not ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
-		.' Click here to be taken to the Anglers dailies guide to complete quests and gain reputation with the faction. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Anglers Dailies" |only if ZGV.guidesets['DailiesAMOP']
-		.' Click here to be taken to the Anglers reputations guide to complete quests and gain reputation with the faction. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Anglers" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+		.' You will need to complete dailies and catch rare fish in order to gain reputation with the Anglers faction. |only if not ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
+		.' Click here to be taken to the Anglers dailies guide to complete quests and gain reputation with the faction. |confirm |next "Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Anglers Dailies" |only if ZGV.guidesets['DailiesHMOP']
+		.' Click here to be taken to the Anglers reputations guide to complete quests and gain reputation with the faction. |confirm |next "Zygor's Horde Reputations Guides\\Mists of Pandaria\\The Anglers" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
 		.' Click here to be taken to _Nat Pagle_ in order to purchase the Fishing Pole. |confirm |next "buydragon"
 		.' Click here to be taken to the main menu. |confirm |next "menu"
 	step
@@ -3943,7 +4086,7 @@ ZygorGuidesViewer:RegisterInclude("Poles_Collect_Fishing_Horde",[[
 	label "kaluak"
 		'This fishing pole will require you to become _Exalted_ with the Kalu'ak.
 		.' You will need to complete dailies for the Kalu'ak in order to gain reputation with this faction.
-		.' Click here to be taken to the Kalu'ak reputations guide to complete quests and gain reputation with this faction. |confirm |next "Zygor's Alliance Reputations Guides\\Northrend\\Kalu'ak"
+		.' Click here to be taken to the Kalu'ak reputations guide to complete quests and gain reputation with this faction. |confirm |next "Zygor's Horde Reputations Guides\\Northrend\\Kalu'ak" |only if ZGV.guidesets['ReputationsHMOP']
 		.' Click here to be taken to _Tanaika_ in order to purchase the Fishing Pole. |confirm |next "buykaluak"
 		.' Click here to be taken to the main menu. |confirm |next "menu"
 	step
@@ -4618,4 +4761,51 @@ ZygorGuidesViewer:RegisterInclude("Gear_Collect_Fishing_Horde",[[
 		|use Bag of Fishing Treasures##35348
 		.collect 1 Weather-Beaten Fishing Hat##33820 |next "menu"
 		.' Click here to go to the beginning of this guide. |next "weatherhat" |confirm
+]])
+
+ZygorGuidesViewer:RegisterInclude("Bags_Collect_Fishing_Alliance",[[
+//ROUTER
+//OTHERWORLDLY BAG
+	step
+	label "otherworldly"
+		#include "auctioneer"
+		..buy 1 Otherworldly Bag##54445 |next "menu"
+		.' Click here if you wish to make this bag yourself. |confirm |next "auctionother" |tip This bag will require _Tailoring_ to create.
+	step
+	label "auctionother"
+		#include "auctioneer"
+		..buy 9 Bolt of embersilk Cloth##53643
+		..buy 8 Hypnotic Dust##52555
+		..buy 4 Greater Cosmic Essence##34055
+		..buy 1 Dream Shard##34052
+		|next "makeother"
+		.' Click here if you wish to farm the _Bolts of Embersilk Cloth_ yourself. |confirm |next "embersilkother"
+		.' Click here if you wish to farm the _Enchanting Materials_ yourself. |confirm |next "enchmatsother"
+	step
+	label "embersilkother"
+		map Deepholm/0
+		path loop off
+		path	68.0,25.5	68.9,24.7	70.6,24.7
+		path	72.6,26.9	73.1,28.5	74.6,27.7
+		.from Verlok Pillartumbler##43513+
+		..collect 45 Embersilk Cloth##53010
+		|next "auctionother"
+	step
+	label "enchantmatsother"
+		goto The Vortex Pinnacle 54.12,16.81
+		'Run through the Vortex Pinnacle dungeon, killing all mobs along the way.
+		'Disenchant any uncommon quality (green) armor and weapons with an item level of 272-305 and 305-333.|cast Disenchant##13262
+		.collect 8 Hypnotic Dust##52555
+	step
+		goto Halls of Lightning 7.38,53.81
+		'Run through the Halls of Lightning dungeon, killing all mobs along the way.
+		'Disenchant any uncommon quality (green) armor and weapons with an item level of 130-151. |cast Disenchant##13262
+		.collect 4 Greater Cosmic Essence##34055
+	step
+	label "makeother"
+		#include "trainer_Tailoring"
+		.learn Otherworldly Bag##75265
+	step
+		.create 1 Otherworldly Bag##75265,Tailoring,1 total
+		|next "menu"
 ]])

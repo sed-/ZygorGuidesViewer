@@ -3867,6 +3867,10 @@ goto Northern Stranglethorn,38.4,50.4
 .talk 2464
 ..accept 26278
 step
+goto Northern Stranglethorn 39.0,51.2
+.talk 1387
+..fpath Grom'gol Base Camp
+step
 goto 37.4,51.9
 .talk 5814
 .home Grom'gol Base Camp
@@ -3892,8 +3896,8 @@ step
 goto 45.2,53.4
 .kill 4 Mosh'Ogg Brute##1142+ |q 26279/1
 .kill 4 Mosh'Ogg Witch Doctor##1144+ |q 26279/2
-..collect Disfigured Mosh'Ogg Hand##58491
-..' Click the Disfigured Mosh'Ogg Hand in your bags |use Disfigured Mosh'Ogg Hand##58491
+.collect Disfigured Mosh'Ogg Hand##58491 |n
+.' Click the Disfigured Mosh'Ogg Hand in your bags |use Disfigured Mosh'Ogg Hand##58491
 ..accept 26407
 step
 goto 43.1,40.9
@@ -3964,6 +3968,7 @@ step
 goto 20.7,23.5
 .' Use your Lashtail Raptor Egg Fragment |use Lashtail Raptor Egg Fragment##58165
 .' Follow your Lashtail Hatchling around
+.|tip If it stops moving then move around a bit, that means there's no Fetishes in range
 .get 8 Zuuldaian Fetish |q 26325/1
 step
 goto 20.7,25.5
@@ -4024,6 +4029,7 @@ goto 45.2,20.8
 .from River Crocolisk##1150+
 .get 2 Large River Crocolisk Skin |q 26343/1
 .get Green Hills of Stranglethorn - Page 14 |q 26269/1
+.' You can find more Crocolisks at [Northern Stranglethorn,51.1,27.3]
 step
 goto 44.2,22.1
 .talk 716
@@ -4036,20 +4042,21 @@ goto 43.6,23.4
 step
 goto 42.3,24.2
 .kill 10 Young Stranglethorn Tiger##681+ |q 185/1
-.' You can find more Young Stranglethorn Tigers around [38.7,20.3]
+.' You can find more Young Stranglethorn Tigers around [Northern Stranglethorn,38.7,20.3]
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 185
 ..accept 186
 step
 goto 52.0,23.8
 .kill 10 Young Panther##683+ |q 190/1
+.' You can find more Panthers at [Northern Stranglethorn,50.4,18.4]
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 190
 ..accept 191
 step
 goto 61.3,27.0
 .kill 10 Stranglethorn Tiger##682+ |q 186/1
-.' You can find more Stranglethorn Tigers around [56.5,28.7]
+.' You can find more Stranglethorn Tigers around [Northern Stranglethorn,56.5,28.7]
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 186
 ..accept 187
@@ -4057,7 +4064,7 @@ step
 goto 53.5,30.3
 .from Snapjaw Crocolisk##1152+
 .get 5 Snapjaw Crocolisk Skin |q 26344/1
-.' You can find more Snapjaw Crocolisks around [51.1,35.8]
+.' You can find more Snapjaw Crocolisks around [Northern Stranglethorn,51.1,35.8]
 step
 goto 43.6,23.4
 .talk 2495
@@ -4066,6 +4073,7 @@ goto 43.6,23.4
 step
 goto 38.1,30.1
 .kill 5 Elder Stranglethorn Tiger##1085+ |q 187/1
+.' You can find more at [Northern Stranglethorn,39.4,34.8]
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 187
 ..accept 188
@@ -4074,16 +4082,19 @@ ding 29
 step
 goto 38.5,32.5
 .from Sin'Dall##729
+.|tip He walks around a little, you may have to look for him. He may appear on your minimap as a white skull with red eyes.
 .get Paw of Sin'Dall |q 188/1
 step
 goto 33.8,28.2
 .kill 10 Panther##736+ |q 191/1
+.' More Panthers at [Northern Stranglethorn,34.7,21.6]
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 191
 ..accept 192
 step
 goto 31.7,28.0
 .kill 10 Stranglethorn Raptor##685+ |q 194/1
+.' You can find more Raptors at [Northern Stranglethorn,27.8,30.2]
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 194
 ..accept 195
@@ -4112,7 +4123,7 @@ goto 44.5,22.7
 step
 goto 45.8,43.1
 .kill 10 Lashtail Raptor##686+ |q 195/1
-.' You can find more Lashtail Raptors around [39.3,43.9]
+.' You can find more Lashtail Raptors around [Northern Stranglethorn,39.3,43.9]
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 195
 ..accept 196
@@ -4148,14 +4159,17 @@ goto 61.9,49.0
 step
 goto 66.0,43.4
 .from Bhag'thera##728
+.|tip It could appear on your minimap as a white skull with red eyes
 .get Fang of Bhag'thera |q 193/1
 .' Bhag'thera can also spawn
-.' at [61.7,50.6]
-.' at [64.4,36.6]
+.' at [Northern Stranglethorn,61.7,50.6]
+.' at [Northern Stranglethorn,64.4,36.6]
 step
 goto 62.5,61.3
 .from Tethis##730
+.|tip It could appear on your minimap as a white skull with red eyes
 .get Talon of Tethis |q 197/1
+.' It could also spawn at [Northern Stranglethorn,59.5,63.8]
 step
 goto 60.2,55.9
 .click Balia'mah Trophy Skulls##293
@@ -4168,6 +4182,7 @@ step
 goto 54.5,62.1
 .from Skullsplitter Warrior##667+, Skullsplitter Mystic##780+, Skullsplitter Axe Thrower##696+
 .get 6 Skullsplitter Mojo |q 26332/1
+.' More Skullsplitters can be found around [Northern Stranglethorn,60.1,55.6]
 step
 goto 38.5,48.6
 .click Bubbling Cauldron##216
@@ -4214,6 +4229,7 @@ goto 63.5,39.0
 step
 goto 62.9,40.2
 .talk 42814
+.|tip He walks around the camp, and may not be in this exact spot
 ..accept 26404
 step
 goto 63.1,41.5
@@ -4237,7 +4253,7 @@ step
 goto 58.6,49.1
 .from Jungle Stalker##687+
 .get 5 Jungle Stalker Feather |q 26351/1
-.' You can find more Jungle Stalkers around [53.7,48.8]
+.' You can find more Jungle Stalkers around [Northern Stranglethorn,53.7,48.8]
 step
 goto 63.1,41.5
 .talk 2519
@@ -4263,6 +4279,7 @@ goto 63.5,39.0
 step
 goto 63.3,38.8
 .talk 42811
+.|tip He's up on the second floor
 ..accept 26405
 step
 goto 63.3,39.8
@@ -4281,15 +4298,17 @@ step
 goto 58.1,71.7
 .from Skullsplitter Scout##782+, Skullsplitter Hunter##669+, Skullsplitter Witch Doctor##670+ |q 26405/1
 .click Zul'Mamwe Brazier##2570+
+.|tip They look like square stones with fire in the middle of them
 .' Extinguish 8 Zul'Mamwe Braziers |q 26304/1
-step
-goto 38.4,48.7
-.talk 2497
-..turnin 26305
+.' You can find more of these at [Northern Stranglethorn,62.6,72.0]
 step
 goto 47.8,59.0
 .from King Bangalash##731 |tip He's a white tiger that walks around on this big hill.
 .get Head of Bangalash |q 208/1
+step
+goto 38.4,48.7
+.talk 2497
+..turnin 26305
 step
 goto 63.5,39.0
 .talk 42812
@@ -4298,34 +4317,35 @@ goto 63.5,39.0
 step
 goto 63.5,39.0
 .talk 42812
-..' Tell her you are ready for the Mind Control ritual
+.' Tell her you are ready for the Mind Control ritual
 .' Become the Captured Lashtail Hatchling |invehicle |q 26362
 step
 goto 89.1,46.3
 .' Stay away from the trolls as you walk, or you will have to start over
 .talk 42881
-..' <Learn to bite through nets from the elder raptor.>
+.' <Learn to bite through nets from the elder raptor.>
 .' Speak with Tan'shang |q 26362/1
 step
 goto 86.9,44.6
 .' Stay away from the trolls as you walk, or you will have to start over
 .talk 42882
-..' Tell him you'll go get him some food from the sleeping trolls
+.' Tell him you'll go get him some food from the sleeping trolls
 |confirm
 step
 goto 86.9,50.0
 .' Stay away from the trolls as you walk, or you will have to start over
 .clicknpc Gurubashi Soldier##42871
+.|tip Sleeping on the ground, inside the tent
 .' Steal Raptor Food |havebuff Interface\Icons\INV_Misc_Bag_10_Blue |q 26362
 step
 goto 86.9,44.6
 .' Stay away from the trolls as you walk, or you will have to start over
 .talk 42882
-..' Tell him you've brought some food for him, then learn to light fires from the elder raptor
+.' Tell him you've brought some food for him, then learn to light fires from the elder raptor
 .' Help Tenjiyu |q 26362/2
 step
 goto 86.9,41.2
-.click Gurubashi Brazier |tip It's a square metal container with fire in it on the ground in the middle of the path.
+.' Click the Gurubashi Brazier |tip It's a square metal container with fire in it on the ground in the middle of the path.
 .' Get a Burning Twig
 .' Use the Light Tiki Fire ability on your hotbar next to the Zul'Gurub Tiki |tip It's a floating wooden mask in front of you, next to the Gurubashi Brazier.
 .' The guards blocking the path will run to put out the burning tiki
@@ -4333,37 +4353,41 @@ goto 86.9,41.2
 |confirm
 step
 goto 86.4,39.3
+.' _TIP_ As soon as you click the brazier and get the burning twig, use your Dash skill to run faster so you can make it to the Tiki
 .' Click the Gurubashi Brazier |tip It's a square metal container with fire in it on the ground in the middle of the path.
 .' Get a Burning Twig
-.' Run down the path and use the Light Tiki Fire ability on your hotbar next to the Zul'Gurub Tiki at [86.1,38.0] |tip It's a floating wooden mask in front of you, next to the Gurubashi Brazier.  You will need to use your Dash ability on your hotbar to get to the tiki in time, before you lose your Burning Twig.
+.' Run down the path and use the Light Tiki Fire ability on your hotbar next to the Zul'Gurub Tiki at [Northern Stranglethorn,86.1,38.0] |tip It's a floating wooden mask in front of you, next to the Gurubashi Brazier.  You will need to use your Dash ability on your hotbar to get to the tiki in time, before you lose your Burning Twig.
 .' The guards blocking the path will run to put out the burning tiki
 .' Run past the guards into the next area
 |confirm
 step
 goto 85.3,37.7
+.' _TIP_ As soon as you click the brazier and get the burning twig, use your Dash skill to run faster so you can make it to the Tiki
 .' Click the Gurubashi Brazier |tip It's a square metal container with fire in it on the ground in the middle of the path.
 .' Get a Burning Twig
-.' Run down the path and use the Light Tiki Fire ability on your hotbar next to the Zul'Gurub Tiki at [83.9,38.3] |tip It's a floating wooden mask in front of you, next to the Gurubashi Brazier.  You will need to use your Dash ability on your hotbar to get to the tiki in time, before you lose your Burning Twig.
+.' Run down the path and use the Light Tiki Fire ability on your hotbar next to the Zul'Gurub Tiki at [Northern Stranglethorn,83.9,38.3] |tip It's a floating wooden mask in front of you, next to the Gurubashi Brazier.  You will need to use your Dash ability on your hotbar to get to the tiki in time, before you lose your Burning Twig.
 .' The guards blocking the path will run to put out the burning tiki
 .' Run past the guards
 |confirm
 step
 goto 82.8,37.5
 .talk 42883
-..' <Learn to drop skulls from the elder raptor.>
+.' <Learn to drop skulls from the elder raptor.>
 .' Speak with Chiyu |q 26362/3
 step
 goto 82.5,33.9
+.' _TIP_ Wait until the guard is all the way on the other side of the bridge, then grab the skull and drop it in the center of the bridge. The guard will trip over it on his way back and you can run past. You dont want to aggro him even if you have a skull down.
 .' Click the Giant Skullpile |tip It looks like a big pile of skulls sitting in this small troll hut.
-.' Walk onto the bridge to [81.7,34.0]
+.' Walk onto the bridge to [Northern Stranglethorn,81.7,34]
 .' Use your Drop Skull ability to put the skull on the bridge
 .' The troll will trip on the skull and fall off the bridge
 .' Run to the other side of the bridge
 |confirm
 step
 goto 79.9,34.2
+.' _TIP_ Wait until the guard is all the way on the other side of the bridge, then grab the skull and drop it in the center of the bridge. The guard will trip over it on his way back and you can run past. You dont want to aggro him even if you have a skull down.
 .' Click the Giant Skullpile |tip It looks like a big pile of skulls sitting in this small troll hut.
-.' Walk onto the bridge to [79.0,33.5]
+.' Walk onto the bridge to [Northern Stranglethorn,79.0,33.5]
 .' Use your Drop Skull ability to put the skull on the bridge
 .' The troll will trip on the skull and fall off the bridge
 .' Run to the other side of the bridge
@@ -4372,7 +4396,7 @@ step
 goto 74.3,31.2
 .' Click the Gurubashi Brazier |tip It's a square metal container with fire in it on the ground in the middle of the path.
 .' Get a Burning Twig
-.' Use the Light Tiki Fire ability on your hotbar next to the Zul'Gurub Tiki at [74.7,32.0] |tip It's a floating wooden mask in front of you, next to the Gurubashi Brazier.  You will need to use your Dash ability on your hotbar to get to the tiki in time, before you lose your Burning Twig.
+.' Use the Light Tiki Fire ability on your hotbar next to the Zul'Gurub Tiki at [Northern Stranglethorn,74.7,32.0] |tip It's a floating wooden mask in front of you, next to the Gurubashi Brazier.  You will need to use your Dash ability on your hotbar to get to the tiki in time, before you lose your Burning Twig.
 .' The guards blocking the path will run to put out the burning tiki
 .' Run past the guards
 .' Run up the big staircase
@@ -4385,6 +4409,7 @@ goto 63.5,39.0
 step
 goto 63.2,38.8
 .talk 42811
+.|tip He is upstairs
 ..turnin 26386
 ..turnin 26405
 step
@@ -4398,7 +4423,7 @@ goto 44.0,23.3
 step
 goto 62.4,39.2
 .talk 43052
-..' Tell him Skeezy says he already paid for your flight to Hardwrench Hideaway
+.' Tell him Skeezy says he already paid for your flight to Hardwrench Hideaway
 .' You will fly to Hardwrench Hideaway |goto The Cape of Stranglethorn,35.1,29.3,0.5 |noway |c |q 26404
 step
 goto The Cape of Stranglethorn,34.7,29.5
@@ -5587,12 +5612,13 @@ goto 76.8,74.8
 .kill 10 Saltwater Snapjaw##2505+ |q 26211/1
 .click Pupellyverbos Port##225+
 .get 12 Pupellyverbos Port |q 26225/1
-.' You can find more Salt Water Snapjaw and Pupellyverbos Port all along the coast up to [81.8,49.4]
+.|tip These look like small blue bottles on the ground around this area
+.' You can find more Salt Water Snapjaw and Pupellyverbos Port all along the coast up to [The Hinterlands,81.8,49.4]
 step
 goto 77.2,70.7
 .from Gammerita##7977 |tip She's a blue turtle that walks around this area, so you may need to search for her.
 .get Katoom's Best Lure |q 26210/1
-.' Gammerita spawns at [75.5,65.1]
+.' Gammerita can also spawn at [The Hinterlands,75.5,65.1]
 step
 goto 84.5,41.2
 .click Lard's Picnic Basket##5993
@@ -5621,6 +5647,7 @@ step
 goto 71.3,50.0
 .from Wildhammer Warrior##42518+,Wildhammer Shaman##42554+ |q 26238/1
 .' Use your Revantusk War Drums on Revantusk Stalkers |use Revantusk War Drums##57920
+.|tip Marking them with shift+v will make them easier to spot (Use v to mark enemies again).
 .' Bolster 6 Revantusk Warriors |q 26240/1
 step
 goto 70.1,60.0
@@ -5661,6 +5688,7 @@ goto 57.4,41.5
 .from The Direglob##42592
 .get Direglob Sample |q 26283/1
 .click Ooze-coated Supply Crate##1988+
+.|tip Tiny wooden boxes inside this cave
 .get 5 Ooze-Coated Supply Crate |q 26268/1
 step
 goto 57.5,38.9 |n
@@ -5721,7 +5749,9 @@ goto 66.7,68.5
 .kill 5 Vilebranch Witch Doctor##2640+ |q 26306/2
 .' Use your Tiki Torch next to tiki masks |use Tiki Torch##58209 |tip They look like big wooden faces hanging on the walls all throughout Jintha'Alor.
 .' Burn 8 Tiki Masks |q 26357/1
-.clicknpc Skittering Spiderling##42689+ |tip They are really small, so keep an eye out for them.
+.clicknpc Skittering Spiderling##42689+
+.|tip They are really small, so keep an eye out for them.
+.|tip If you have enemies marked (with v), their names will pop up on your screen
 .get 8 Skittering Spiderling |q 26310/1
 step
 goto 65.2,64.9
@@ -5759,18 +5789,33 @@ ding 33
 step
 goto 67.8,66.4
 .talk 42624
-.' Ask him to teleport you to the middle terrace. |goto The Hinterlands 58.5,67.3 |noway |c
+.' Ask him to teleport you to the middle terrace |goto The Hinterlands 58.5,67.3 |noway |c
+step
+.' Go down the stairs |goto 59.0,70.2 <5 |c
 step
 goto 60.7,71.4
-.' Follow the path through Jintha'Alor to almost the top level
 .kill 5 Vilebranch Soul Eater##2647+ |q 26308/1
 .kill 5 Vilebranch Blood Drinker##2646+ |q 26308/2
-.click Vessel of Tainted Blood##216+ |tip They are rare, except on the almost top level of Jintha'Alor, so you may need to search hard for them.
+step
+.' Go back upstairs |goto 59.9,70.2 <5 |c
+step
+goto 57.3,70.7
+.click Vessel of Tainted Blood##216+
+.' These are pretty _rare_, mostly found on the higher levels. Start on this level and work your way down a level or two as you look for more.
+.|tip They look like small gray cauldrons on the ground
 .get 5 Vessel of Tainted Blood |q 26309/1
 step
 goto 62.3,75.6
 .from Ongo'longo##42815
-.' Enrage Ongo'longo |q 26367/1
+.|tip He is in a big spike pit on the second highest level
+.' Enrage Ongo'longo |q 26367
+step
+.' Go up the stairs |goto 60.0,70.2 <5 |c
+step
+goto 58.5,67.15
+.click Totem of Akil'darah
+.|tip Looks like a large stone raven statue
+.' Tell it to return you to your allies |goto 67.7,66.3 <5 |c
 step
 goto 67.6,66.6
 .talk 42622
@@ -5783,9 +5828,13 @@ goto 67.8,66.5
 ..turnin 26367
 ..accept 26363
 step
+goto 67.8,66.3
+.talk 42624
+.' Ask him to teleport you to the middle terrace |goto 58.5,67.3 <5 |c
+step
 goto 59.4,77.7
-.' Follow the path through Jintha'Alor to the top level
 .clicknpc Sacrificed Vilebranch##42857+
+.|tip They're dead trolls on the ground. You can do this while mounted.
 .get 8 Spider Idol |q 26363/1
 step
 goto 58.6,79.2 |n
@@ -5798,6 +5847,11 @@ step
 goto 58.6,79.2 |n
 .' Leave the cave |goto 58.6,79.2,0.5 |noway |c
 step
+goto 58.5,67.15
+.click Totem of Akil'darah
+.|tip Looks like a large stone raven statue
+.' Tell it to return you to your allies |goto 67.7,66.3 <5 |c
+step
 goto 67.6,66.6
 .talk 42622
 ..turnin 26368
@@ -5809,18 +5863,21 @@ goto 67.8,66.5
 step
 goto 67.8,66.4
 .talk 42624
-.' Ask him to teleport you to the middle terrace. |goto The Hinterlands 58.5,67.3 |noway |c
+.' Ask him to teleport you to the middle terrace |goto The Hinterlands 58.5,67.3 |noway |c
 step
-goto 58.6,79.2 |n
-.' Follow the path through Jintha'Alor to the top level
-.' Enter the cave |goto 58.6,79.2,0.5 |noway |c
+.' Enter the cave |goto 58.6,79.2,0.5 |c
 step
 goto 57.5,86.5
 .from Morta'gya the Keeper##42877
+.|tip Keep to the left once you enter the cave, you'll come across her towards the back of the cave.
 .get Tablet of Shadra |q 26369/1
 step
-goto 58.6,79.2 |n
-.' Leave the cave |goto 58.6,79.2,0.5 |noway |c
+.' Leave the cave |goto 58.6,79.2,0.5 |c
+step
+goto 58.5,67.15
+.click Totem of Akil'darah
+.|tip Looks like a large stone raven statue
+.' Tell it to return you to your allies |goto 67.7,66.3 <5 |c
 step
 goto 67.8,66.5
 .talk 42642
@@ -5851,10 +5908,12 @@ goto 31.8,58.6
 step
 goto 45.5,38.9
 .click Cache of Shadra##2450
+.|tip It's a gold chest inside a small tent
 .get Eye of Shadra |q 26381/1
 step
 goto 46.1,40.3
 .click Shadraspawn Egg##6171+
+.|tip They look like white eggs encased in spider webs
 .get 5 Shadraspawn Egg |q 26382/1
 step
 goto 31.9,58.4
@@ -5869,6 +5928,7 @@ goto 31.8,58.6
 step
 goto 49.5,52.1
 .click Cache of Shadra##2450
+.|tip A small gold chest sitting at this spot
 .get Fang of Shadra |q 26406/1
 .kill 6 Cocooned Victim##42907+ |q 26387/1
 step
@@ -5883,6 +5943,7 @@ goto 31.8,58.6
 step
 goto 48.4,67.8
 .from Qiaga the Keeper##42919
+.|tip She's at the top of this big stone temple
 .get Shell of Shadra |q 26418/1
 step
 goto 31.9,58.4
@@ -5909,6 +5970,7 @@ goto 35.6,68.4
 step
 goto 34.4,69.6
 .kill Shadra##43007 |q 26419/1
+.|tip If for some reason she doesn't spawn when you pick up the quest abandon it and go accept it again
 step
 goto 31.9,58.4
 .talk 42898
@@ -5920,8 +5982,12 @@ goto 31.9,58.4
 step
 goto 32.5,58.1
 .talk 43573
-..' Tell him you need a bat and you're headed to Western Plaguelands
+.' Tell him you need a bat and you're headed to Western Plaguelands
 .' You will fly to Andorhal, Western Plaguelands |goto Western Plaguelands,46.6,64.7,0.5 |noway |c
+step
+goto Western Plaguelands 47.8,65.2
+.talk 44452
+..turnin 28508
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Eastern Kingdoms 1-60\\Western Plaguelands (34-39)\\Western Plaguelands (34-39)",[[
 author support@zygorguides.com
@@ -5930,7 +5996,7 @@ next Zygor's Horde Leveling Guides\\Eastern Kingdoms 1-60\\Eastern Plaguelands (
 startlevel 34.93
 dynamic on
 step
-goto Western Plaguelands 46.6,64.6
+goto Western Plaguelands 46.6,64.7
 .talk 46004
 .fpath Andorhal
 step
@@ -5941,6 +6007,7 @@ step
 goto 47.8,65.2
 .talk 44452
 ..turnin 28508
+.|tip You may not have this breadcrumb quest to turn in
 ..accept 26921
 step
 goto 47.6,65.6
@@ -5979,8 +6046,10 @@ goto 48.3,63.8
 step
 goto 45.2,69.3
 .' Use Jearl's Hand Grenades on Stickbone Berserkers, if they spawn |use Jearl's Hand Grenades##60678
-.from Araj the Summoner##1852 |tip Don't worry that he's marked as elite, he's easy to kill.
+.from Araj the Summoner##1852
+.|tip Don't worry that he's marked as elite, he's easy to kill.
 .click Araj's Phylactery##4712
+.|tip It spawns after he's dead
 .get Araj's Phylactery Shard |q 26925/1
 step
 goto 45.3,72.8
@@ -5988,7 +6057,7 @@ goto 45.3,72.8
 .' Deal with Darkmaster Gandling |q 26924/1
 step
 goto 46.7,71.7
-.kill The Ravenian##44317 |q 27117/1 |tip Don't worry that he's marked as elite, he's easy to kill.
+.kill The Ravenian##44317 |q 27117/1 |tip Don't worry that he's marked as elite, he's easy to kill. He is inside this broken tower.
 step
 goto 47.8,65.2
 .talk 44452
@@ -6011,15 +6080,17 @@ goto 83.3,69.0
 ..accept 26930
 step
 goto Western Plaguelands,34.0,64.1
-.from Diseased Black Bear##1815+ |tip Don't kill Shaggy Black Bears, they do not count as Diseased Black Bears.  The Diseased Black Bears are literally named Diseased Black Bears.  The Diseased Black Bears are rare, so you may need to search for them around this area.
+.from Diseased Black Bear##1815+
+.|tip Don't kill Shaggy Black Bears, they do not count as Diseased Black Bears. The Diseased Black Bears are rare, so you may need to search for them around this area.
 .click Plague Tangle##7845+
+.|tip These are brown plants that spawn once you've killed a Diseased Black Bear,
 .get 20 Plague Tangle |q 26934/1
 step
 goto 38.7,64.0
 .kill 4 Alliance Fox Hunter##44432+ |q 26931/1
 .kill 4 Bullmastiff##44476+ |q 26931/2
 .kill 4 Whitetail Fox##44474+ |q 26931/3
-.' More Alliance Fox Hunters, Bullmastiffs and Whitetail Fox can be found around [40.6,56.8]
+.' More of all of these can be found around [Western Plaguelands,40.6,56.8]
 step
 goto 40.7,52.4
 .' Go to this spot
@@ -6044,11 +6115,15 @@ goto Western Plaguelands,37.3,56.4
 .' Leave a Drum near the Windmill |q 26978/1
 step
 goto 38.6,55.3
+.' Enter the barn
 .' Use Dithers' Plague Drums right inside the doorway inside this barn |use Dithers' Plague Drums##60753
+.|tip You have to physically be standing inside the barn for it to work
 .' Leave a Drum inside the Barn |q 26978/4
 step
 goto 38.1,54.5
+.' Enter the house
 .' Use Dithers' Plague Drums right inside the doorway inside this house |use Dithers' Plague Drums##60753
+.|tip You have to physically be standing inside the house for it to work
 .' Leave a Drum inside the Ranch House |q 26978/3
 step
 goto 36.9,54.6
@@ -6075,6 +6150,7 @@ goto 83.3,69.0
 step
 goto 83.2,68.5
 .talk 10839
+.|tip He's standing inside a purple tent
 ..accept 26952
 step
 goto Western Plaguelands,40.7,52.0
@@ -6090,11 +6166,13 @@ goto 38.1,55.3
 ..accept 26938
 step
 goto 37.4,55.1
-.' Use your Enthralled Val'kyr's Call to Arms ability on Forsaken Troopers
+.' Use your Enthralled Val'kyr's Call to Arms ability on Forsaken Troopers |petaction 4 |only if haveq(26938)
+.|tip Marking them with shift+v will make them easy to spot (Use v to mark enemies again).
 .' Mobilize 5 Forsaken Troopers |q 26938/1
 step
 goto 38.8,55.0
 .kill Opengut Behemoth##44562 |q 26938/2
+.|tip He is inside a barn. Don't worry that he's elite, he's easy to kill.
 step
 goto Western Plaguelands,40.7,52.0
 .talk 44466
@@ -6119,16 +6197,19 @@ goto 50.5,52.2
 step
 goto 47.4,52.9
 .click Unhealthy-Looking Pumpkin##6326+
+.|tip They're pumpkins but they're slightly bigger than the others.
 .from Thrashing Pumpkin##44487+
 .' Remove 3 Unhealthy-Looking Pumpkins |q 26956/3
 step
 goto 46.8,54.1
 .click Rotten Apple##9820+
+.|tip These are tiny red apples laying on the ground under these little trees.
 .from Pome Wraith##44488+
 .' Remove 4 Rotten Apples |q 26956/2
 step
 goto 45.8,53.4
 .click Bad Corn##9819+
+.|tip Small yellow cobs of corn laying on the ground between the rows of planted corn.
 .from Corn Stalker##44489+
 .' Remove 6 Bad Corn |q 26956/1
 step
@@ -6137,6 +6218,7 @@ goto 46.0,48.7
 .get 4 Hulking Plaguebear Sample |q 26999/3
 .from Diseased Wolf##1817+
 .get 4 Diseased Wolf Sample |q 26999/4
+.' More of both of these can be found at [Western Plaguelands,45.2,45.3]
 step
 goto 48.5,54.9
 .talk 44457
@@ -6147,9 +6229,12 @@ goto 57.0,62.7
 .get 4 Plague Lurker Sample |q 26999/1
 .from Venom Mist Lurker##1822+
 .get 4 Venom Mist Lurker Sample |q 26999/2
+.' You can find more around [Western Plaguelands,51.6,61.2]
 step
 goto 50.3,59.6
-.from Plague Lurker##1824+, Venom Mist Lurker##1822+ |tip You must do this with the troll Zen'Kiki next to you. If you lose him, return to the Menders' Stead and talk to him.
+.from Plague Lurker##1824+, Venom Mist Lurker##1822+
+.|tip You must do this with the troll Zen'Kiki next to you.
+.' If you lost Zen'Kiki, you will need to go to [Western Plaguelands,48.9,54.8] and speak with Adrine Towhide.
 .' Kill 20 Wildlife with Zen'Kiki |q 26953/1
 step
 goto 49.3,55.0
@@ -6164,11 +6249,11 @@ goto 48.9,54.8
 step
 ding 37
 step
-goto 52.4,53.2 |n
-.' The path up to A Different Approach starts here |goto 52.4,53.2,0.5 |noway |c
+.' The path up to A Different Approach starts here |goto 52.4,53.2,0.5 |c
 step
 goto 53.9,53.7
-.clicknpc Zen'Kiki##44863 |tip Keep clicking him to pull the Diseased Hawks down to you.
+.clicknpc Zen'Kiki##44863
+.|tip Click him and he'll pull a Diseased Hawk down for you. Kill it and click him again to get the next hawk.
 .kill 7 Diseased Hawk##44481+ |q 26954/1
 step
 goto 48.9,54.8
@@ -6196,6 +6281,7 @@ step
 step
 goto 46.6,30.5
 .kill 12 Rabid Fox##44551+ |q 27013/1
+.' More are at [Western Plaguelands,43.7,34.4]
 step
 goto 48.1,32.4
 .talk 11616
@@ -6214,7 +6300,7 @@ goto 47.7,31.7
 step
 goto 47.0,35.3
 .' Use your Whinny ability on your hotbar near Northridge Spiders
-.' Continuously scare the Northridge Spiders and try to make them run to [48.0,32.9]
+.' Continuously scare the Northridge Spiders and try to make them run to [Western Plaguelands,48.0,32.9]
 .' The Hearthglen Recruits will kill the Northridge Spiders
 .' Lure 10 Northridge Spiders to Lumber Mill |q 27001/1
 step
@@ -6226,8 +6312,9 @@ goto 47.6,39.0
 .from Redpine Shaman##44479+
 .get 6 Redpine Stave |q 27012/2
 .click Northridge Lumber##1248+
+.|tip These look like piles of cut wood
 .get 10 Northridge Lumber |q 27011/1
-.' You can find more Northridge Lumber around [46.6,45.4]
+.' You can find more Northridge Lumber around [Western Plaguelands,46.6,45.4]
 step
 goto 48.1,32.4
 .talk 11616
@@ -6249,7 +6336,8 @@ goto 43.2,15.9
 step
 goto 43.0,16.3
 .talk 45162
-..' Tell them Lieutenant Myner asked you to challenge them to a duel
+.' Tell them Lieutenant Myner asked you to challenge them to a duel
+.|tip You can challenge more than one at the same time.
 .' Challenge and Defeat 7 Hearthglen Trainees |q 27156/1
 step
 goto 43.2,15.9
@@ -6257,8 +6345,11 @@ goto 43.2,15.9
 ..turnin 27156
 ..accept 27157
 step
+.' Go into the fortress and take these stairs up |goto 41.8,14.7 <5 |c
+step
 goto 42.6,15.0
 .talk 44905
+.|tip He is upstairs in the main room
 ..accept 26957
 step
 goto 42.0,14.8
@@ -6290,25 +6381,30 @@ goto 53.2,23.3
 step
 ding 38
 step
+.' Follow the path up |goto 55.2,34.6 <5 |c
+step
 goto 57.7,36.1
-.kill Moldfang##45155 |q 27152/2
+.kill Moldfang##45155 |q 27152/1
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 27152
 ..accept 27153
 step
 goto 43.7,17.3
 .talk 45150
-..' Ask her if she's heard any interesting rumors lately
+.|tip She is inside the stables
+.' Ask her if she's heard any interesting rumors lately
 .' Speak with Bree Ironstock |q 27153/3
 step
 goto 42.1,18.2
 .talk 45151
-..' Ask him if he has any leads for you
+.|tip He is inside the town hall building, across from the stables
+.' Ask him if he has any leads for you
 .' Speak with High Cleric Alphus |q 27153/4
 step
 goto 44.4,13.5
 .talk 45148
-..' Ask him if he's noticed anything strange lately or any new customers in the blacksmith shop
+.|tip He is inside the forge
+.' Ask him if he's noticed anything strange lately or any new customers in the blacksmith shop
 .' Speak with Morris Vant |q 27153/1
 step
 goto 44.8,12.4
@@ -6322,15 +6418,18 @@ step
 goto 45.8,18.4
 .' Go to the top of the tower
 .talk 45152
-..' Ask him what he knows about the gnolls to the south
+.' Ask him what he knows about the gnolls to the south
 .from Magus Bisp##45152
 .' "Speak with" Magus Bisp |q 27154/1
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 27154
 ..accept 27155
 step
+.' Enter the fortress and take these stairs up |goto 41.8,14.7 <5 |c
+step
 goto 42.0,14.8
 .talk 44441
+.|tip He is upstairs in the main room
 ..turnin 27155
 step
 goto 50.6,52.6
@@ -6352,11 +6451,11 @@ goto 62.6,58.6
 ..accept 27057
 step
 goto 64.9,59.3
-.click Child's Painting##9848 |tip It's hanging above the fireplace in this house.
+.click Child's Painting##9848 |tip It's on the first floor, hanging above the fireplace in this house.
 .get Faded Finger Painting |q 27017/2
 step
 goto 64.9,59.5
-.click Prayer Book##8051 |tip It's laying on floor upstairs in this house.
+.click Prayer Book##8051 |tip It's laying on floor upstairs.
 .get Gahrron Prayer Book |q 27017/1
 step
 goto 50.6,52.6
@@ -6418,6 +6517,7 @@ goto 49.0,63.7
 step
 goto 49.0,63.7
 .talk 44451
+.|tip She is in the inn
 ..accept 27089
 step
 goto 48.4,66.4
@@ -6436,6 +6536,7 @@ goto 39.4,70.5
 step
 goto 49.0,63.7
 .talk 44451
+.|tip She is in the inn
 ..turnin 27090
 ..accept 27144
 step
@@ -6444,16 +6545,18 @@ step
 step
 goto 49.0,63.7
 .talk 44451
+.|tip She is in the inn
 ..turnin 27144
 step
 goto 48.9,54.8
 .talk 44456
 ..accept 26955
 ..accept 27683
+.|tip You won't be able to get this quest if your level is too high
 step
 goto 66.1,47.7
 .from Instructor Malicia##44442
-.get Cult Orders |q 27054/1
+.get Cult Orders##60772 |q 27054/1
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 27054
 ..accept 27055
@@ -6473,6 +6576,8 @@ goto 63.2,37.5
 .kill 2 Flesh-Cobbled Brute##44484+ |q 27055/2
 .kill 2 Flesh-Cobbled Ripper##44485+ |q 27055/3
 .kill 4 Unholy Corpuscle##44486+ |q 27055/4
+step
+.' Leave the cave |goto 64.5,38.4 <5 |c
 step
 goto 49.3,55.0
 .talk 44454
@@ -7828,6 +7933,7 @@ goto 62.2,61.3
 .from Dark Iron Geologist##5839+, Dark Iron Watchman##8637+ |q 27960/1
 .from Tempered War Golem##5853+
 .get 15 Tempered Flywheel |q 27956/1
+.' More of both of these can be found at [Searing Gorge,65.5,66.3]
 step
 goto 68.5,53.3
 .talk 47267
@@ -7857,10 +7963,13 @@ goto 58.1,62.4
 step
 goto 58.1,62.4
 .from Glassweb Spider##5856+
+.|tip Weaken the spiders, don't kill them completely. Lunk will jump on them when they're weak.
 .' Let Lunk ride 7 spiders |q 27959/1
 .clicknpc Lunk##47269
+.|tip Click Lunk after he's rode a spider, he'll give you their poison
 .get 14 Glassweb Venom |q 27958/1
 .clicknpc Ash Chicken##47278+
+.|tip Mechanical chickens that walk around this area. You can do this while mounted
 .get 8 Ash Chicken |q 27961/1
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 27959
@@ -7889,6 +7998,7 @@ goto 54.2,44.4
 .' Eventually, Dig-Boss Dinwhisker will spawn |tip You will see him yell in your chat window, asking what in hell's name is going on out here.  He spawns in the location where this step's arrow points to.
 .from Dig-Boss Dinwhisker##47271
 .click Dark Ember##5746
+.|tip He drops it after he's dead
 .get Dark Ember |q 27964/1
 step
 goto 58.2,40.6 |n
@@ -7908,6 +8018,7 @@ goto 37.7,26.6
 step
 goto 38.1,27.0
 .talk 14625
+.|tip He is up on the second floor
 ..turnin 27965
 ..accept 28099
 step
@@ -7932,6 +8043,7 @@ goto 41.0,39.6
 step
 goto 41.6,41.4
 .from Dark Iron Steamsmith##5840+
+.|tip Just weaken them, don't kill them completely.
 .' Let Lunk put 7 Dark Iron Steamsmiths to sleep |q 27983/1
 .get Smithing Tuyere |q 27977/1
 .get Lookout's Spyglass |q 27977/2
@@ -7944,16 +8056,18 @@ goto 42.6,36.6
 .' Use your Furnace Flasks on Blazing Elementals and Magma Elementals while they are alive |use Furnace Flasks##62826
 .get 10 Filled Furnace Flask |q 27981/1
 .' You can also find Rasha'krak, along with more Blazing Elementals and Magma Elementals at the following locations:
-.' at [39.3,40.5]
-.' at [31.6,43.1]
+.' at [Searing Gorge,39.3,40.5]
+.' at [Searing Gorge,31.6,43.1]
 step
 ding 48
 step
 goto 29.8,42.0
 .kill 9 Greater Lava Spider##5858+ |q 27980/1
+.' More can be found at [Searing Gorge,30.7,61.5]
 step
 goto 32.3,46.6
 .kill 12 Heavy War Golem##5854+ |q 27976/1
+.' More can be found at [Searing Gorge,44.4,42.9]
 step
 goto 40.9,36.7 |n
 .' The path up to Thorium Point starts here |goto 40.9,36.7,0.5 |noway |c
@@ -7977,8 +8091,8 @@ goto 37.7,26.6
 ..turnin 27980
 step
 goto 38.1,27.0
-.' Go to the top of the tower
 .talk 14625
+.|tip He is up on the second floor
 ..turnin 28099
 step
 goto 24.3,33.0 |n
@@ -7990,11 +8104,12 @@ goto 24.6,26.3
 step
 goto 29.5,26.4
 .talk 8436
+.|tip He is inside a metal cage
 ..accept 27984
 step
 goto 29.5,26.4
 .talk 8436
-..' Tell him you wish to hear his tale
+.' Tell him you wish to hear his tale
 .' Listen to Zamael's Story |q 27984/1
 step
 goto 29.5,26.4
@@ -8022,7 +8137,7 @@ goto 14.6,36.2
 .' Use Letherio's Spherule |use Letherio's Spherule##62823
 .get Twilight Tripetricine |q 27979/1
 step
-'All around inside this cave:
+.' All around inside this cave:
 .from Twilight Dark Shaman##5860+, Twilight Geomancer##5862+, Twilight Fire Guard##5861+
 .get 20 Twilight Collar |q 27982/1
 step
@@ -8050,6 +8165,7 @@ goto 39.4,66.3
 step
 goto 39.4,67.9
 .talk 47393
+.|tip He is up on the second floor of the tower
 ..turnin 27986
 ..accept 28028
 ..accept 28029
@@ -8065,10 +8181,12 @@ goto Searing Gorge/0 41.0,68.8
 step
 goto 35.7,60.7
 .click Sentry Brazier##524
+.|tip It is in a corner up on the second floor of the tower
 .' Set the Southwestern Tower Ablaze |q 28029/2
 step
 goto 33.3,54.5
 .click Sentry Brazier##524
+.|tip It is in a corner up on the second floor of the tower
 .' Set the Western Tower Ablaze |q 28029/1
 step
 goto 33.3,66.2
@@ -8077,6 +8195,7 @@ goto 33.3,66.2
 step
 goto 44.0,60.9
 .click Sentry Brazier##524
+.|tip It is in a corner up on the second floor of the tower
 .' Set the Southeastern Tower Ablaze |q 28029/3
 step
 goto 52.5,58.0 |n
@@ -8084,6 +8203,7 @@ goto 52.5,58.0 |n
 step
 goto 50.1,54.7
 .click Sentry Brazier##524
+.|tip It is in a corner up on the second floor of the tower
 .' Set the Eastern Tower Ablaze |q 28029/4
 step
 goto 51.4,55.6 |n
@@ -8093,6 +8213,7 @@ goto 49.6,63.0
 .kill 9 Dark Iron Marksman##8338+ |q 28028/1
 .click Dark Iron Bullet##1868+
 .get 200 Dark Iron Bullet |q 28030/1
+.' More of both of these can be found around [Searing Gorge,47.4,69.7]
 step
 goto 45.0,67.3 |n
 .' Follow the path up |goto 45.0,67.3,0.5 |noway |c
@@ -8103,6 +8224,7 @@ goto 38.8,68.9
 step
 goto 39.4,67.9
 .talk 47393
+.|tip He's up on the second floor of the tower
 ..turnin 28028
 ..turnin 28029
 ..turnin 28030
@@ -8115,11 +8237,12 @@ goto 39.8,67.9
 step
 goto 40.6,68.1
 .talk 47434
-..' Ask them if they care to join your dance
+.' Ask them if they care to join your dance
 .' Build up a three-dwarf conga line |q 28034/1
 step
 goto 39.4,67.9
 .talk 47393
+.|tip He's up on the second floor of the tower
 ..turnin 28034
 ..accept 28035
 step
@@ -8127,12 +8250,13 @@ ding 49
 step
 goto 38.1,27.0
 .talk 14625
+.|tip He's up on the second floor of the tower
 ..turnin 28035
 ..accept 28052
 step
 goto 34.8,30.9
 .talk 3305
-..' Tell her you're ready to take the flight into the Cauldron
+.' Tell her you're ready to take the flight into the Cauldron
 .' Use the Shoot ability on your hotbar on the dwarves that start shooting at you
 .' Secure entrance into the Slag Pit |q 28052/1
 step
@@ -8155,7 +8279,7 @@ goto 41.3,25.4
 step
 goto 42.1,25.1
 .talk 5843+ |tip Talk to them as you walk through The Slag Pit and do other quests.
-..' Tell them to come and get out of here
+.' Tell them to come and get out of here
 .' Free or kill 12 Slave Workers |q 28055/1
 .from Dark Iron Slaver##5844+, Dark Iron Taskmaster##5846+ |q 28054/1
 step
@@ -8177,7 +8301,7 @@ goto 42.2,34.5
 step
 goto 42.3,34.6
 .talk 14627
-..' Tell him let's take out Maltorius and Arkkus!
+.' Tell him let's take out Maltorius and Arkkus!
 .kill Overseer Maltorius##14621 |q 28060/1
 .kill Twilight-Lord Arkkus##47460 |q 28060/2
 step

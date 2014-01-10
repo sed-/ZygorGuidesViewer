@@ -5954,7 +5954,6 @@ goto 62.7,72.4
 .from Ana'thek the Cruel##1059, Skullsplitter Berserker##783, Skullsplitter Scout##782, Braddok##42858, Skullsplitter Headhunter##781, Skullsplitter Spiritchaser##672 |q 26779/1
 .click Zul'Mamwe Brazier##2570
 .' Extinguish 8 Zul'Mamwe Braziers |q 26780/1
-' |
 step
 goto 53.5,66.8
 .talk 44017
@@ -5963,30 +5962,31 @@ goto 53.5,66.8
 step
 goto 53.5,66.8
 .talk 44017
-..' Tell her you are ready for the Mind Control ritual, Hu'rala
+.' Tell her you are ready for the Mind Control ritual, Hu'rala
 .' Become the Captured Lashtail Hatchling |invehicle |q 26775
 step
 goto 89.1,46.3
 .' Stay away from the trolls as you walk, or you will have to start over
 .talk 42881
-..' <Learn to bite through nets from the elder raptor.>
+.' <Learn to bite through nets from the elder raptor.>
 .' Speak with Tan'shang |q 26775/1
 step
 goto 86.9,44.6
 .' Stay away from the trolls as you walk, or you will have to start over
 .talk 42882
-..' Tell him you'll go get him some food from the sleeping trolls
+.' Tell him you'll go get him some food from the sleeping trolls
 |confirm
 step
 goto 86.9,50.0
 .' Stay away from the trolls as you walk, or you will have to start over
-.clicknpc Gurubashi Soldier##11167
+.clicknpc Gurubashi Soldier##42871
+.|tip Sleeping on the ground, inside the tent
 .' Steal Raptor Food |havebuff Interface\Icons\INV_Misc_Bag_10_Blue |q 26775
 step
 goto 86.9,44.6
 .' Stay away from the trolls as you walk, or you will have to start over
 .talk 42882
-..' Tell him you've brought some food for him, then learn to light fires from the elder raptor
+.' Tell him you've brought some food for him, then learn to light fires from the elder raptor
 .' Help Tenjiyu |q 26775/2
 step
 goto 86.9,41.2
@@ -5998,6 +5998,7 @@ goto 86.9,41.2
 |confirm
 step
 goto 86.4,39.3
+.' _TIP_ As soon as you click the brazier and get the burning twig, use your Dash skill to run faster so you can make it to the Tiki
 .' Click the Gurubashi Brazier |tip It's a square metal container with fire in it on the ground in the middle of the path.
 .' Get a Burning Twig
 .' Run down the path and use the Light Tiki Fire ability on your hotbar next to the Zul'Gurub Tiki at [86.1,38.0] |tip It's a floating wooden mask in front of you, next to the Gurubashi Brazier.  You will need to use your Dash ability on your hotbar to get to the tiki in time, before you lose your Burning Twig.
@@ -6006,6 +6007,7 @@ goto 86.4,39.3
 |confirm
 step
 goto 85.3,37.7
+.' _TIP_ As soon as you click the brazier and get the burning twig, use your Dash skill to run faster so you can make it to the Tiki
 .' Click the Gurubashi Brazier |tip It's a square metal container with fire in it on the ground in the middle of the path.
 .' Get a Burning Twig
 .' Run down the path and use the Light Tiki Fire ability on your hotbar next to the Zul'Gurub Tiki at [83.9,38.3] |tip It's a floating wooden mask in front of you, next to the Gurubashi Brazier.  You will need to use your Dash ability on your hotbar to get to the tiki in time, before you lose your Burning Twig.
@@ -6015,10 +6017,11 @@ goto 85.3,37.7
 step
 goto 82.8,37.5
 .talk 42883
-..' <Learn to drop skulls from the elder raptor.>
+.' <Learn to drop skulls from the elder raptor.>
 .' Speak with Chiyu |q 26775/3
 step
 goto 82.5,33.9
+.' _TIP_ Wait until the guard is all the way on the other side of the bridge, then grab the skull and drop it in the center of the bridge. The guard will trip over it on his way back and you can run past. You dont want to aggro him even if you have a skull down.
 .' Click the Giant Skullpile |tip It looks like a big pile of skulls sitting in this small troll hut.
 .' Walk onto the bridge to [Northern Stranglethorn,81.7,34]
 .' Use your Drop Skull ability to put the skull on the bridge
@@ -6027,6 +6030,7 @@ goto 82.5,33.9
 |confirm
 step
 goto 79.9,34.2
+.' _TIP_ Wait until the guard is all the way on the other side of the bridge, then grab the skull and drop it in the center of the bridge. The guard will trip over it on his way back and you can run past. You dont want to aggro him even if you have a skull down.
 .' Click the Giant Skullpile |tip It looks like a big pile of skulls sitting in this small troll hut.
 .' Walk onto the bridge to [Northern Stranglethorn,79.0,33.5]
 .' Use your Drop Skull ability to put the skull on the bridge
@@ -6950,16 +6954,19 @@ goto 49.3,55.0
 step
 goto 47.4,52.9
 .click Unhealthy-Looking Pumpkin##6326
+.|tip They're pumpkins but they're slightly bigger than the others.
 .from Thrashing Pumpkin##44487+
 .' Remove 3 Unhealthy-Looking Pumpkins |q 26956/3
 step
 goto 46.8,54.1
 .click Rotten Apple##9820+
+.|tip These are tiny red apples laying on the ground under these little trees.
 .from Pome Wraith##44488+
 .' Remove 4 Rotten Apples |q 26956/2
 step
 goto 45.8,53.4
 .click Bad Corn##9819
+.|tip Small yellow cobs of corn laying on the ground between the rows of planted corn.
 .from Corn Stalker##44489+
 .' Remove 6 Bad Corn |q 26956/1
 step
@@ -6996,7 +7003,7 @@ goto 53.8,64.7
 step
 goto 54.1,65.8
 .talk 45212
-..' Tell him if he really wants to help out, he can help your friends with some combat practice
+.' Tell him if he really wants to help out, he can help your friends with some combat practice
 .' Defeat Gory |q 27174/1
 step
 goto 53.8,64.7
@@ -7025,11 +7032,11 @@ goto 50.5,52.2
 .talk 46011
 ..fpath The Menders' Stead
 step
-goto 52.4,53.2 |n
-.' The path up to A Different Approach starts here |goto 52.4,53.2,0.5 |noway |c
+.' The path up to A Different Approach starts here |goto 52.4,53.2,0.5 |c
 step
 goto 53.9,53.7
 .clicknpc Zen'Kiki##44269
+.|tip Click him and he'll pull a Diseased Hawk down for you. Kill it and click him again to get the next hawk.
 .kill 7 Diseased Hawk##44481+ |q 26954/1
 step
 goto 48.9,54.8

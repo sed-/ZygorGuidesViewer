@@ -20608,9 +20608,6 @@ ZygorGuidesViewer:RegisterInclude("vendor_Mining",[[
 		.talk Gorina##3358
 ]])
 
-ZygorGuidesViewer:RegisterInclude("vendor_Herbalism",[[
-]])
-
 ZygorGuidesViewer:RegisterInclude("vendor_Inscription",[[
 		goto Orgrimmar,55.4,56.0
 		.talk Moraka##46718
@@ -20631,12 +20628,6 @@ ZygorGuidesViewer:RegisterInclude("vendor_Tailoring",[[
 		.talk Borya##3364
 ]])
 
-ZygorGuidesViewer:RegisterInclude("vendor_FirstAid",[[
-]])
-
-ZygorGuidesViewer:RegisterInclude("vendor_Fishing",[[
-]])
-
 ZygorGuidesViewer:RegisterInclude("vendor_Enchanting",[[
 		goto Orgrimmar 53.3,48.9
 		.talk Kithas##3346
@@ -20653,12 +20644,11 @@ ZygorGuidesViewer:RegisterInclude("vendor_Leatherworking",[[
 ]])
 
 ZygorGuidesViewer:RegisterInclude("vendor_Jewelcrafting",[[
-		
 		goto Orgrimmar 72.4,34.6
 		.talk Marith Lazuria##50482
 ]])
+
 ZygorGuidesViewer:RegisterInclude("vendor_Jewelcrafting_1",[[
-		
 		goto Orgrimmar 72.4,34.6
 		.talk Taryssa Lazuria##57922
 ]])

@@ -2809,10 +2809,13 @@ goto Wailing Caverns 45.8,59.7
 'Disenchant any uncommon quality (green) weapons and armor with an item level of 5-15. |cast Disenchant##13262
 .collect 130 Strange Dust##10940
 .collect 1 Lesser Magic Essence##10938
+.' You will end up needing less Strange Dust as you gain levels via disenchanting
+..' For every gain you get while disenchanting, subtract that gain from 74.
+...' If you reach 75 enchanting, you will need 75 less _Strange Dust_.
 |tip Keep any extra Greater Magic Essences you get, you will need them later.
 step
 label "ench_1-75_skill"
-.create 1 Runed Copper Rod##7421,Enchanting,2 |tip Save the Runed Copper Rod in your bags, you will need it to enchant items.
+.create Runed Copper Rod##7421,Enchanting,1 total |tip Save the Runed Copper Rod in your bags, you will need it to enchant items.
 step
 .create 74 Enchant Bracer - Minor Health##7418,Enchanting,75 |tip You can keep enchanting the same item repeatedly.
 step
@@ -2876,10 +2879,10 @@ step
 next "ench_135-205_skill"
 step
 label "ench_135-205_farm"
-'Skipping 1st part of farming |next "+farm2" |only if step:Find("+farming"):IsComplete()
+'Skipping 1st part of farming |next "+farm2" |only if step:Find("+farmingkraul"):IsComplete()
 'Proceeding to farm |next |only if default
 step
-label "farming"
+label "farmingkraul"
 goto Razorfen Kraul 69.89,82.97
 'Run through the Razorfen Kraul dungeon, killing all mobs along the way.
 'Disenchant any uncommon quality (green) armor and weapons you loot. |cast Disenchant##13262
@@ -2887,6 +2890,7 @@ goto Razorfen Kraul 69.89,82.97
 .collect 20 Lesser Mystic Essence##11134 |n
 .collect 40 Vision Dust##11137 |n
 step
+label "farm2"
 goto Razorfen Downs 23.79,18.80
 'Run through the Razorfen Downs dungeon, killing all mobs along the way.
 'Disenchant any uncommon quality (green) armor and weapons you loot. |cast Disenchant##13262
@@ -3079,9 +3083,9 @@ label "farming"
 goto Wintergrasp,77.4,41.9
 .from Glacial Spirit##30846+, Water Revenant##30877+
 .collect 5 Crystallized Water##37705
-.' You can find more at 64.2,58.8
-.' You can find more at 44.2,56.7
-.' You can find more at 28.9,50.3
+.' You can find more at [64.2,58.8]
+.' You can find more at [44.2,56.7]
+.' You can find more at [28.9,50.3]
 step
 label "ench_351-426_skill"
 .create 25 Enchant Cloak - Speed##60609,Enchanting,375 |tip You can keep enchanting the same item repeatedly.
