@@ -8840,7 +8840,7 @@ goto Terokkar Forest,38.7,12.8
 .accept 11667 |or
 .accept 11668 |or
 step
-goto Stormwind City,54.9,69.7
+goto Orgrimmar 66.6,42.1
 .' Use your Fishing skill to fish in the water all around the wooden dock |cast Fishing##7620
 ..get Baby Crocolisk##34864 |q 11665/1
 only if havequest(11665)

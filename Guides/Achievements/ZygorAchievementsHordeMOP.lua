@@ -2074,75 +2074,93 @@ step
 goto The Jade Forest 26.2,32.4
 .click Ancient Pandaren Tea Pot##213366
 .' Loot the _Ancient Pandaren Tea Pot_ |q 31400 |future
+|confirm
 step
 goto The Jade Forest 32.0,27.8
 .click Lucky Pandaren Coin##213368
 .' Loot the _Lucky Pandaren Coin_ |q 31401 |future
+|confirm
 step
 goto The Jade Forest 23.5,35.1
 .click Pandaren Ritual Stone##213748
 .' Loot the _Pandaren Ritual Stone_ |q 31404 |future
+|confirm
 step
 goto The Jade Forest 50.8,99.8
 .' Enter the ship and go to the bottom floor towards the back to find the _Ship's Locker_.
 .click Ship's Locker##213362
 .' Loot from the _Ship's Locker_ |q 31396 |future
+|confirm
 step
 goto The Veiled Stair 74.9,76.6
 .click The Hammer of Folly##213845
 .' Loot the _Hammer of Folly_ |q 31428 |future
+|confirm
 step
 goto Valley of the Four Winds 23.7,28.3
 .click Virmen Treasure Cache##213650
 .' Loot from the _Virmen Treasure Cache_ |q 31405 |future
+|confirm
 step
 goto Valley of the Four Winds 75.1,55.1
 .click Saurok Stone Tablet##213750
 .' Loot the _Saurok Stone Tablet_ |q 31408 |future
+|confirm
 step
 goto Kun-Lai Summit 64.2,45.1
 .click Ancient Mogu Tablet##214438
 .' Loot the _Ancient Mogu Tablet_ |q 31420 |future
+|confirm
 step
 goto Kun-Lai Summit 50.4,61.8
 .click Hozen Treasure Cache##213769
 .' Loot from the _Hozen Treasure Cache_ |q 31414 |future
+|confirm
 step
 goto Kun-Lai Summit 36.7,79.7
 .click Lost Adventurer's Belongings##213774
 .' Loot from the _Lost Adventurer's Belongings_ |q 31418 |future
+|confirm
 step
 goto Kun-Lai Summit 52.6,51.5
 .click Rikktik's Tiny Chest##213793
 .' Loot from _Rikktik's Tiny Chest_ |q 31419 |future
+|confirm
 step
 goto Kun-Lai Summit 72.0,34.0
 .click Statue of Xuen##213771
 .' Loot the _Statue of Xuen_ |q 31416 |future
+|confirm
 step
 goto Kun-Lai Summit/8 41.4,43.8
 .click Stolen Sprite Treasure##213770
 .' Loot from the _Stolen Sprite Treasure_ |q 31415 |future
+|confirm
 step
 goto Kun-Lai Summit/0 59.2,73.0
 .click Terracotta Head##213782
 .' Loot the _Terracotta Head_ |q 31422 |future
+|confirm
 step
 goto Townlong Steppes 62.8,34.1
 .click Abandoned Crate of Goods##213961
 .' Loot from the _Abandoned Crate of Goods_ |q 31427 |future
+|confirm
 step
 goto Townlong Steppes 65.8,86.1
 .click Amber Encased Moth##213844
 .' Loot the _Amber Encased Moth_ |q 31426 |future
+|confirm
 step
 goto Townlong Steppes 32.5,60.1
 .click Fragment of Dread##213956
 .' Loot the _Fragment of Dread_ |q 31423 |future
+|confirm
 step
 goto Townlong Steppes 52.8,56.2
 .click Hardened Sap of Kri'vess##213959
 .' Loot the _Hardened Sap of Kri'vess_ |q 31424 |future
+|confirm
 step
 'Obtain the Riches of Pandaria achievement |achieve 7997
 .' Click here to go back to the beginning of the guide |confirm |next "start" |only if not achieved(7997)

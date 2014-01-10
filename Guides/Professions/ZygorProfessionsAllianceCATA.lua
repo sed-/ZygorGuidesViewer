@@ -7036,7 +7036,8 @@ label	"tl_200-250"
 .skillmax Tailoring,300 |tip You must be at least level 35.
 .learn Crimson Silk Pantaloons##8799
 step
-.' You will need the
+.' Save the _Bolts of Silk Cloth_ from the previous section.
+|confirm
 step
 .create 15 Crimson Silk Pantaloons##8799,Tailoring,215
 step
@@ -7157,7 +7158,7 @@ label	"tl_350-425"
 .learn Bolt of Frostweave##55899
 step
 #include "auctioneer"
-.buy 1700 Frostweave Cloth##33470
+.buy 1770 Frostweave Cloth##33470
 #include go_farm_level,level="78",goto="tl_350-425_farm"
 |next "tl_350-425_skill"
 step
@@ -7168,12 +7169,12 @@ goto Borean Tundra 57.4,72.2
 step
 goto Icecrown,61.8,20.8
 .from Dark Ritualist##34734+, Dark Zealot##34728+
-.collect 1700 Frostweave Cloth##33470
-.create Bolt of Frostweave##55899,Tailoring, 340 total |n
+.collect 1770 Frostweave Cloth##33470
+.create Bolt of Frostweave##55899,Tailoring, 354 total |n
 .skill Tailoring,375
 step
 label	"tl_350-425_skill"
-.create Bolt of Frostweave##55899,Tailoring,340 total |n
+.create Bolt of Frostweave##55899,Tailoring,354 total |n
 .skill Tailoring,375
 step
 #include "trainer_Tailoring"

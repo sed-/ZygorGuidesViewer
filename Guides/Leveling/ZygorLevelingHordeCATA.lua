@@ -829,6 +829,7 @@ goto Ghostlands,46.3,28.4
 ..turnin 9148
 ..accept 9327 |or
 ..accept 9329 |or
+.|tip You only get one of these quests
 step
 goto 45.4,30.5
 .talk 16189
@@ -914,10 +915,13 @@ goto 48.4,30.9
 .talk 16253
 ..accept 9171
 step
-goto 40.5,33.5
+.' The undead you kill for the next step have a chance to drop _Rotting Hearts_, keeping these for later will save you some time. There's a quest that you need 10 for.
+|confirm
+step
+goto 39.8,30.5
 .kill 10 Risen Hungerer##16301+ |q 9155/1
 .kill 10 Gangled Cannibal##16309+ |q 9155/2
-.' More can be found around [38.3,36.5]
+.' More can be found around [Ghostlands,38.3,36.5]
 step
 ding 14
 step
@@ -928,17 +932,18 @@ step
 goto 27.6,31.1
 .from Spindleweb Spider##16350+
 .get 5 Crunchy Spider Leg |q 9171/1
-.' You can find more around [33.5,22.2]
+.' You can find more around [Ghostlands,33.5,22.2]
 step
 goto 37.7,22.9 |n
 .' Follow the path up |goto 37.7,22.9,0.5 |noway |c
 step
 goto 35.4,12.4
-.' Go to this spot |tip Get near the intertwined tree lamp in the middle of the camp.
+.' Go toward this spot
+.|tip You'll investigate An'daroth
 .' Investigate An'daroth |q 9160/2
 .kill 12 Sentinel Spy##16330+ |q 9160/1
 step
-goto 48.0,31.0
+goto 48.4,31.0
 .talk 16253
 ..turnin 9171
 step
@@ -984,12 +989,13 @@ step
 goto 12.6,26.5
 .click Night Elf Plans: An'daroth##183
 .get Night Elf Plans: An'daroth |q 9163/1
-.' It can also spawn at [13.7,26.8]
+.' It can also spawn at [Ghostlands,13.7,26.8]
+.' Or at [Ghostlands,14.7,26.6]
 step
 goto 12.9,23.9
 .click Night Elf Plans: An'owyn##222
 .get Night Elf Plans: An'owyn |q 9163/2
-.' It can also spawn at [12.5,24.8]
+.' It can also spawn at [Ghostlands,12.7,25.2]
 step
 goto 10.5,22.6
 .click Night Elf Plans: Scrying on the Sin'dorei##164
@@ -1014,6 +1020,7 @@ goto 44.8,32.5
 step
 goto 48.9,31.3
 .talk 16205
+.|tip She is up on the second floor. Follow the ramp on the outside of the building.
 ..accept 9218
 ..accept 9216
 step
@@ -1042,6 +1049,8 @@ goto 72.3,19.1
 .talk 16201
 ..accept 9157
 step
+.' Follow the shore around and enter the Enclave from the front |goto 70.9,32.0 <5 |c
+step
 goto 72.5,32.1
 .talk 16202
 ..accept 9158
@@ -1061,12 +1070,14 @@ goto 72.2,29.8
 step
 goto 72.0,32.6
 .talk 16203
+.|tip She is up on the second floor. Follow the ramps in the back of the outpost up to get to her.
 ..accept 9161
 step
 goto 73.5,21.9
 .kill 8 Ravening Apparition##16327+ |q 9274/1
 .kill 8 Vengeful Apparition##16328+ |q 9274/2
 .click Glistening Mud##49+
+.|tip Small mounds of mud at the bottom of the water
 .get 8 Wavefront Medallion |q 9157/1
 step
 goto 72.3,19.1
@@ -1076,6 +1087,7 @@ goto 72.3,19.1
 step
 goto 71.3,15.1
 .click Altar of Tidal Mastery##4853
+.|tip It's underwater
 .kill Aquantion##16292 |q 9174/1
 step
 goto 72.3,19.1
@@ -1085,12 +1097,13 @@ step
 ding 16
 step
 goto 79.6,17.6
-.click Dusty Journal##470 |tip It's laying on the balcony platform of this building.
+.click Dusty Journal##470 |tip It's laying on the balcony platform of this building. Go inside the main entrance and follow the ramp up.
 ..turnin 9161
 ..accept 9162
 step
 goto 75.8,28.4
 .kill 10 Ghostclaw Lynx##16348+ |q 9158/1 |tip The Ghostclaw Lynx share spawn points with the bats.
+.' You can find more around [Ghostlands,69.5,39.4]
 step
 goto 72.5,32.1
 .talk 16202
@@ -1103,21 +1116,25 @@ goto 72.2,29.8
 step
 goto 72.0,32.6
 .talk 16203
+.|tip On the second floor. Follow the ramp up.
 ..turnin 9162
 ..accept 9172
 step
 goto 72.6,31.6
 .talk 16464
+.|tip He is also upstairs, on the opposite side.
 ..accept 9275
 step
 goto 73.9,38.0
 .kill 10 Vampiric Mistbat##16354+ |q 9159/1
+.' You can find more around [Ghostlands,69.5,39.4]
 step
 goto 78.6,38.1
 .kill 8 Shadowpine Shadowcaster##16469+ |q 9276/1
 .get 3 Shadowcaster Mace |q 9214/2
 .kill 8 Shadowpine Headhunter##16344+ |q 9276/2
 .get 3 Headhunter Axe |q 9214/1
+.' More of these can be found at [Ghostlands,76.1,44.0]
 step
 goto 72.3,31.3
 .talk 16463
@@ -1132,22 +1149,26 @@ ding 17
 step
 goto 39.2,36.3
 .from Risen Stalker##16302+, Risen Hungerer##16301+
+.|tip These have a fairly low drop rate, just keep killing undead and you'll get them.
+.|tip Gangled Cannibal do not drop them, don't waste your time killing them.
 .get 10 Rotting Heart |q 9216/1
-.' You can find more around [37.8,45.8]
+.' You can find more around [Ghostlands,37.8,45.8]
 step
 goto 29.8,40.9
 .kill 8 Spindleweb Lurker##16351+ |q 9159/2
-.' You can find more around [26.4,53.5]
+.' You can find more around [Ghostlands,26.4,53.5]
 step
-goto 17,59
+goto 17.3,58.2
 .kill 8 Deatholme Acolyte##16315+ |q 9173/1
 .kill 10 Fallen Ranger##16314+ |q 9173/2
 .collect The Lady's Necklace##22597 |n
 .' Click The Lady's Necklace in your bags |use The Lady's Necklace##22597
 ..accept 9175
+.' You can find more mobs at the back of the building at [Ghostlands,12.4,56.9]
 step
 goto 48.9,31.3
 .talk 16205
+.|tip She's upstairs on the second floor
 ..turnin 9216
 step
 goto 46.0,31.9
@@ -1173,6 +1194,7 @@ goto 54.9,48.5
 step
 goto 54.9,48.5
 .talk 16204
+.|tip Up on the second floor
 ..turnin 9151
 ..accept 9220
 step
@@ -1214,11 +1236,13 @@ goto 66.9,58.6
 .get 3 Catlord Claws |q 9214/3
 .kill 10 Shadowpine Hexxer##16346+ |q 9277/2
 .get 3 Hexxer Stave |q 9214/4
-.' You can find more around [63.5,67.4]
+.' You can find more around [Ghostlands,63.5,67.4]
+step
+.' Go to the road |goto 64.1,61.4 <5 |c
 step
 goto 74.6,67.0
 .talk 24851
-.fpath Zul'aman
+.fpath Zul'Aman
 step
 goto 72.5,32.1
 .talk 16202
@@ -1234,22 +1258,27 @@ goto 72.4,29.6
 step
 goto 72.6,31.6
 .talk 16464
+.|tip He is up on the second floor
 ..turnin 9275
 step
 goto 67.7,28.9 |n
 .' Follow this path |goto 67.7,28.9,0.5 |noway |c
 step
-goto Ghostlands/1 35.9,56.9
-.click Mummified Troll Remains##6804 |tip Do this as you walk.
+goto Ghostlands/1 59.9,65.3
+.' As you walk:
+.click Mummified Troll Remains##6804
+.|tip They're mummified bodies laying on the ground in this tomb
+.' The item has a 10 second cooldown
 .' Go to this spot
-.' Investigate the Amani Catacombs |q 9193/1
+.' Investigate the Amani Catacombs |q 9193/2
 step
-goto Ghostlands/1 44.0,45.4
+goto Ghostlands/1 59.6,52.3
+.' All inside this crypt:
 .from Mummified Headhunter##16342+, Shadowpine Oracle##16343+
 .get 8 Troll Juju |q 9199/1
 .click Mummified Troll Remains##6804
-.' Burn 10 Mummified Troll Remains |q 9193/2
-.' There are more Mummified Troll Remains in the hallway at [60.9,36.6]
+.' Burn 10 Mummified Troll Remains |q 9193/1
+.' There are more Mummified Troll Remains in the room at [Ghostlands,39.3,43.6]
 step
 goto Ghostlands/1 60.1,81.0
 .talk 16295
@@ -1288,18 +1317,17 @@ step
 goto 38.1,58.6
 .from Dreadbone Sentinel##16305+, Deathcage Sorcerer##16308+
 .get 10 Spinal Dust |q 9218/1
-.' You can find more around [36.3,68.8]
+.' You can find more around [Ghostlands,36.3,68.8]
 step
 goto 36.0,71.7 |n
 .' Enter Deatholme |goto 36.0,71.7,0.5 |noway |c
 step
-goto 36.9,76.1
-.kill 6 Nerubis Centurion##16319+ |q 9220/2
-.' You can find a few more around [39.2,79.7]
-step
 goto 37.8,81.3
+.' All around inside Deatholme:
 .kill 5 Eye of Dar'Khan##16320+ |q 9220/1
 .kill 6 Wailer##16321+ |q 9220/3
+.kill 6 Nerubis Centurion##16319+ |q 9220/2
+.' You can find more of all of these around [Ghostlands,33.4,87.0]
 step
 goto 46.4,56.4
 .talk 16480
@@ -1309,8 +1337,8 @@ goto 46.9,60.4
 .kill 10 Greater Spindleweb##16352+ |q 9281/1
 .kill 10 Ghostclaw Ravager##16349+ |q 9281/2
 .' You can find more:
-.' Around [56.4,59.9]
-.' Around [42.8,55.8]
+.' Around [Ghostlands,56.4,59.9]
+.' Around [Ghostlands,42.8,55.8]
 step
 goto 46.4,56.4
 .talk 16480
@@ -1322,6 +1350,7 @@ goto 55.1,48.8
 step
 goto 54.9,48.6
 .talk 16204
+.|tip He's up on the second floor
 ..turnin 9220
 ..accept 9170
 step
@@ -1338,6 +1367,7 @@ goto 47.7,34.9
 step
 goto 48.9,31.3
 .talk 16205
+.|tip She is up on the second floor
 ..turnin 9218
 step
 goto 36.0,71.7 |n
@@ -1351,7 +1381,8 @@ goto 32.1,74.3
 step
 goto 32.1,74.0
 .talk 16208
-..' <Administer the restorative draught.>
+.|tip She's laying on the floor in the bottom of the crypt
+.' <Administer the restorative draught.>
 .' Rescue Apothecary Enith |q 9164/1
 step
 goto 37.4,79.3
@@ -1359,15 +1390,16 @@ goto 37.4,79.3
 step
 goto 35.8,89.1
 .kill Masophet the Black##16249 |q 9170/4
-.' He can also spawn at [29.3,88.9]
+.' He can also spawn at [Ghostlands,29.3,88.9]
 step
 goto 32.7,90.5
 .kill Borgoth the Bloodletter##16247 |q 9170/2
-.' He can also be found at [40.9,83.1]
+.' He can also be found at [Ghostlands,40.9,83.1]
 step
 goto 32.8,89.8
 .talk 16209
-..' <Administer the restorative draught.>
+.|tip He's laying on a table downstairs in this building
+.' <Administer the restorative draught.>
 .' Rescue Ranger Vedoran |q 9164/3
 step
 goto 37.5,84.7 |n
@@ -1375,11 +1407,13 @@ goto 37.5,84.7 |n
 step
 goto 40.8,83.2
 .talk 16206
-..' <Administer the restorative draught.>
+.|tip He's laying on a table downstairs in this building
+.' <Administer the restorative draught.>
 .' Rescue Apprentice Varnis |q 9164/2
 step
 goto 54.9,48.5
 .talk 16204
+.|tip He's upstairs on the second floor
 ..turnin 9170
 step
 goto 54.8,48.4
@@ -1393,6 +1427,7 @@ goto 72.2,31.2
 step
 goto Ghostlands,65.3,79.5
 .from Kel'gash the Wicked##16358
+.|tip He is all the way at the top of this building. Go inside and use the stairs at the back.
 .get Head of Kel'gash the Wicked |q 9215/1
 step
 goto 72.4,29.7
@@ -3242,24 +3277,25 @@ goto Hillsbrad Foothills 29.2,63.3
 .talk 2215
 ..turnin 27746
 ..turnin 28089
+.|tip You may not have these breadcrumb quests to turn in
 ..accept 28096
 step
 goto 29.3,63.4
 .clicknpc Skeletal Steed##47445
 .talk 47444
-..' Tell him maybe he should go take a nap or something
+.' Tell him maybe he should go take a nap or something
 .' Dispense the First Quest |q 28096/1
 step
 goto 29.3,63.4
 .' Continue sitting on the Skeletal Steed
 .talk 47443
-..' Tell him apparently there is some trouble at Southshore
+.' Tell him apparently there is some trouble at Southshore
 .' Dispense the Second Quest |q 28096/2
 step
 goto 29.3,63.4
 .' Continue sitting on the Skeletal Steed
 .talk 47442
-..' Tell him you are having some problems at the Sludge Fields
+.' Tell him you are having some problems at the Sludge Fields
 .' Dispense the Third Quest |q 28096/3
 step
 goto 29.2,63.3
@@ -3301,10 +3337,8 @@ goto 36.6,70.2
 .talk 47681
 ..accept 28156
 step
-goto 33.5,72.0 |n
-.' Leave the mine |goto 33.5,72.0,0.5 |noway |c
-step
 goto 33.3,73.5
+.' Head out of the cave. You'll have to protect Dumass as you're leaving.
 .' Escort Dumass to Safety |q 28156/1
 step
 goto 33.3,73.5
@@ -3323,8 +3357,10 @@ step
 goto 34.3,81.1
 .from Torn Fin Coastrunner##2375+, Torn Fin Muckdweller##2374+
 .' Feed 12 Murlocs to the Hungry Mine Spider |q 28146/1
-'|If you need another spider, report to _Spider-Handler Sarus_ [33.3,73.6]
+.|tip Let your spider hit each Murloc a few times, or it may not always feed
+'|If you need another spider, report to _Spider-Handler Sarus_ [Hillsbrad Foothills,33.3,73.6]
 .click Forsaken Camp "Supplies"##9162+
+.|tip They look like brown kegs on the ground around this area
 .get 6 Forsaken Camp "Supplies" |q 28144/1
 step
 goto 33.3,73.6
@@ -3342,7 +3378,7 @@ goto 36.2,61.1
 ..turnin 28168
 ..accept 28192
 step
-'Watch the cutscene
+.' Watch the cutscene
 .' Assess the situation at the Sludge Fields |q 28192/1
 step
 goto 36.2,61.1
@@ -3373,7 +3409,9 @@ goto 39.7,63.0
 ..accept 28189
 step
 goto 39.5,63.4
-.' Use your Shovel on Human Seedlings |use Shovel##63150 |tip They look like humans buried up to their necks all around this area.  You can also simply right-click the Human Seedlings if you'd rather just free them instead of bashing their heads in.  :-)  You'll get credit for the quest either way.
+.' Use your Shovel on Human Seedlings |use Shovel##63150
+.|tip They look like humans buried up to their necks all around this area.  You can also simply right-click the Human Seedlings if you'd rather just free them instead of bashing their heads in.  :-)  You'll get credit for the quest either way.
+.|tip You can mark them with shift+v and they'll be very easy to spot (Use v to mark enemies again).
 .' "Save" 15 Human Seedlings |q 28189/1
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 28189
@@ -3413,41 +3451,43 @@ goto 40.3,59.3
 .talk 47900
 ..turnin 28209
 step
-'Next to you:
+.' Next to you:
 .talk 48020
 ..accept 28230
 step
-'Next to you:
+.' Next to you:
 .talk 48021
 ..accept 28231
 step
 goto 38.9,57.5
 .kill The Ray-Getz-Kalaba Monstrosity##47793 |q 28230/1
+.|tip Don't worry it's elite, it's easy to kill. Especially with Johnny and Lydon helping you.
 step
-'Next to you:
+.' Next to you:
 .talk 48020
 ..turnin 28230
 step
 goto 38.1,56.5
 .kill Blacksmith Verringtan##47792 |q 28231/1
 step
-'Next to you:
+.' Next to you:
 .talk 48021
 ..turnin 28231
 step
-'Next to you:
+.' Next to you:
 .talk 48020
 ..accept 28235
 step
 goto 36.6,58.0
 .kill Magistrate Burnside##47790 |q 28235/1 |tip He's floating in a purple orb in the air.  You have to get close to him in order to be able to start fighting him.
 step
-'Next to you:
+.' Next to you:
 .talk 48020
 ..turnin 28235
 ..accept 28237
 step
 goto 36.4,61.2
+.' Go to this spot and watch the dialogue
 .from Warden Stillwater##48080
 .get Head of Warden Stillwater |q 28237/1
 step
@@ -3471,10 +3511,13 @@ goto 49.1,66.3
 ..accept 28331
 ..accept 28332
 step
-goto 46.5,68.3
-.' Use Helcular's Rod on Dark Rangers |use Helcular's Rod##63508 |tip They are fighting Bloodfang Forsaken Hunters all around this area.
+goto 44.6,68.7
+.' Use Helcular's Rod on Dark Rangers |use Helcular's Rod##63508
+.|tip They are fighting Bloodfang Forsaken Hunters all around this area.
+.|tip You can mark them with shift+v and they'll be very easy to spot (Use v to mark enemies again).
 .' Empower 8 Dark Rangers |q 28331/1
 .kill 15 Bloodfang Forsaken Hunter##48272+ |q 28332/1
+.' You can find more of these at [Hillsbrad Foothills,46.4,64.5]
 step
 ding 23
 step
@@ -3485,11 +3528,13 @@ goto 49.1,66.3
 ..accept 28344
 step
 goto 49.0,68.0
-.' Use your Lethality Analyzer on Blight Slimes |use Lethality Analyzer##63426
+.' Use your Lethality Analyzer on Blight Slimes and Angry Blight Slimes |use Lethality Analyzer##63426
 .' Take 250 Blight Samples |q 28324/1
 .click Used Blight Canister##8445+
+.|tip These look like small wooden buckets and canisters with green goo in them
 .get 8 Used Blight Canister |q 28325/1
-'|modelnpc Blight Slime##48136
+|modelnpc Blight Slime##48136
+|modelnpc Angry Blight Slime##48319
 step
 goto 48.7,71.5
 .from Angry Blight Slime##48319
@@ -3497,6 +3542,7 @@ goto 48.7,71.5
 step
 goto 48.7,71.5
 .kill 5 Angry Blight Slime##48319+ |q 28329/1
+.|tip More of them become angry as you take Blight Samples
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 28329
 ..accept 28330
@@ -3506,12 +3552,13 @@ goto 47.9,72.4
 step
 goto 49.6,74.4
 .talk 48218
+.|tip He's in the water, drowning
 ..turnin 28344
 ..accept 28345
 step
 goto 49.6,74.4
 .talk 48218
-..' Tell him his feet are touching the ground and to just stand up and walk to shore
+.' Tell him his feet are touching the ground and to just stand up and walk to shore
 .' Safely Escort Orkus Out of the Water |q 28345/1
 step
 goto 50.0,74.3
@@ -3519,7 +3566,7 @@ goto 50.0,74.3
 ..turnin 28345
 ..accept 28348
 step
-'Watch the cutscene
+.' Watch the cutscene
 .' Learn about the Stormpike rendezvous |q 28348/1
 step
 goto 50.0,74.3
@@ -3534,6 +3581,7 @@ step
 goto 57.2,74.6
 .from Mudsnout Gnoll##2372+, Mudsnout Shaman##2373+ |q 28355/1
 .click Mudsnout Blossom##389+
+.|tip Big blue mushrooms
 .get 8 Mudsnout Blossom |q 28354/1
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 28355
@@ -3551,10 +3599,10 @@ goto 50.0,74.3
 ..turnin 28354
 ..accept 28375
 step
-'Watch the cutscene
+.' Watch the cutscene
 .' Take The Road to Purgation |q 28375/1
 step
-'Next to you:
+.' Next to you:
 .talk 48470
 ..turnin 28375
 ..accept 28397
@@ -3563,7 +3611,7 @@ goto 28.6,84.2
 .from Stormpike Mountaineer##48482+, Stormpike Ram Rider##48483+ |q 28397/1
 .kill 8 Bloodfang Sentry##48484+ |q 28397/2
 step
-'Next to you:
+.' Next to you:
 .talk 48470
 ..turnin 28397
 ..accept 28400
@@ -3571,13 +3619,13 @@ step
 goto 27.4,87.3
 .' Run up the path to this spot
 .talk 48503
-..' Tell him you're ready, let's do this!
+.' Tell him you're ready, let's do this!
 .' Kingslayer Orkus will instantly kill the Stormpike Battle Master
 .' Loot the Stormpike Battle Master
-.get Alliance Battle Plans |q 28400/2
+.get Alliance Battle Plans |q 28400/1
 step
-'You will automatically fly to Tarren Mill, watch the dialogue
-.' Become Heroes of the Horde |q 28400/1
+.' You will automatically fly to Tarren Mill, watch the dialogue
+.' Become Heroes of the Horde |q 28400/2
 step
 goto Hillsbrad Foothills/0 56.1,46.1
 .talk 2389
@@ -3606,6 +3654,7 @@ goto 57.0,45.7
 step
 goto 57.2,45.5
 .talk 2419
+.|tip He is on the second floor
 ..accept 28487
 step
 goto 56.7,47.5
@@ -3617,6 +3666,7 @@ goto 49.2,55.0
 .' "Save" 10 Hill Fawns |q 28495/1
 .from Hill Stag##48184+
 .get 8 Stag Meat |q 28489/1
+.' You can find more of these around [Hillsbrad Foothills,44.6,58.6]
 step
 goto 46.5,54.4 |n
 .' Enter the cave |goto 46.5,54.4,0.5 |noway |c
@@ -3647,6 +3697,7 @@ goto 57.0,45.7
 step
 goto 57.2,45.5
 .talk 2419
+.|tip Up on the second floor
 ..turnin 28487
 step
 goto 57.7,45.2
@@ -3655,16 +3706,17 @@ goto 57.7,45.2
 step
 ding 25
 step
-goto 56.5,47.1
+goto 56.5,47.0
 .click Warchief's Command Board##10241
 ..accept 28619
+.|tip You may not be able to get this quest if you're level is too high
 step
 goto 58.7,34.3
 .talk 13817
 ..turnin 28587
 ..accept 28600
 step
-'Watch the cutscene
+.' Watch the cutscene
 .' Learn of Matter's of Loyalty |q 28600/1
 step
 goto Hillsbrad Foothills/0 58.2,26.5
@@ -3676,7 +3728,7 @@ goto 57.1,46.3
 ..turnin 28600
 ..accept 28506
 step
-'Watch the cutscene
+.' Watch the cutscene
 .' See the March of the Stormpike |q 28506/1
 step
 goto 57.1,46.3
@@ -3692,6 +3744,7 @@ goto 55.5,38.2
 .from SI:7 Assassin##48742+, SI:7 Operative##48741+
 .' Use your Banshee Mirror |use Banshee Mirror##64445 |tip You will see a message on your screen telling you when to use it.
 .' Capture 10 SI:7 Agents |q 28538/1
+.' You can find more Agent along the cliff at [Hillsbrad Foothills,55.3,40.4]
 .' Click the Quest Completion box that appears under the mini map
 ..turnin 28538
 ..accept 28566
@@ -3709,23 +3762,24 @@ goto 49.4,46.8
 ..turnin 28566
 ..accept 28603
 step
-'Next to you:
+.' Next to you:
 .talk 49035
 ..accept 28604
 step
 goto 44.5,49.1
 .talk 48922
-..' Coerce him into fighting you
+.|tip He's a dwarf standing on top of a pile of boxes
+.' Coerce him into fighting you
 .kill Instructor Rufus##48922 |q 28603/1
 step
-goto 44.1,50.5
+goto 44.3,50.4
 .talk 48924
-..' Coerce him into fighting you
+.' Coerce him into fighting you
 .kill Captain Crudbeard##48924 |q 28603/3
 step
 goto 43.4,49.9
 .talk 48923
-..' Coerce him into fighting you
+.' Coerce him into fighting you
 .kill Drill Sergeant Magnus |q 28603/2
 .' Click the Quest Completion box that appears under the mini map
 ..turnin 28603
@@ -3734,9 +3788,10 @@ goto 44.0,49.1
 .' Use the Goblin Pocket-Nuke while standing in the campsite |use Goblin Pocket-Nuke##64471
 .' Arm the Pocket-Nuke at The Headland |q 28556/3
 .' Use Water Barrel next to Stormpike Trainees |use Water Barrel##64583
+.|tip You can mark them with shift+v to make them easier to spot (Use v to mark enemies again).
 .' Poison 30 Stormpike Trainees |q 28604/1
 step
-'Next to you:
+.' Next to you:
 .talk 49035
 ..turnin 28604
 ..accept 28605
@@ -6499,12 +6554,13 @@ goto 9.0,66.5
 step
 goto 8.8,66.6
 .clicknpc Fiona's Caravan##45400
-..' Choose 1 of the 3 buffs you can choose from |tip All of the buffs only work while you're in Eastern Plaguelands.  Fiona's Lucky Charm gives you a chance to loot extra gold or items from enemies.  Gidwin's Weapon Oil gives you a chance to do extra Holy damage on melee and ranged attacks.  Tarenar's Talisman gives you a chance to do extra Holy damage on successful spell attacks.
+.' Choose 1 of the 3 buffs you can choose from
+.|tip All of the buffs only work while you're in Eastern Plaguelands.  Fiona's Lucky Charm gives you a chance to loot extra gold or items from enemies.  Gidwin's Weapon Oil gives you a chance to do extra Holy damage on melee and ranged attacks.  Tarenar's Talisman gives you a chance to do extra Holy damage on successful spell attacks.
 |confirm |confirm
 step
 goto 8.8,66.6
 .clicknpc Fiona's Caravan##45400
-..' Choose to go to the next destination
+.' Choose to go to the next destination
 .' Ride Fiona's Caravan |q 27373/1
 step
 goto 34.9,67.9
@@ -6530,7 +6586,7 @@ step
 goto 35.9,69.3
 .' Go to the top of the tower
 .talk 45451
-..' Ask him if he's interested in joining your caravan
+.' Ask him if he's interested in joining your caravan
 .' Find a traveling companion |q 27381/1
 step
 goto 35.9,69.3
@@ -6548,15 +6604,21 @@ goto 32.4,83.7
 ..accept 27392
 step
 goto 35.5,83.0
-.' You can find the doll parts in all of the buildings
 .click Pamela's Doll's Right Side##4233
+.|tip It is sitting on the floor inside the building
 .collect Pamela's Doll's Right Side##12888 |q 27384
+step
+goto 34.2,84.9
 .click Pamela's Doll's Left Side##4232
+.|tip It is upstairs on the second floor, on the ground in the corner
 .collect Pamela's Doll's Left Side##12887 |q 27384
+step
+goto 35.5,85.3
 .click Pamela's Doll's Head##4231
+.|tip It is on the floor inside the destroyed building
 .collect Pamela's Doll's Head##12886 |q 27384
 step
-'Use Pamela's Doll's Head |use Pamela's Doll's Head##12886
+.' Use Pamela's Doll's Head |use Pamela's Doll's Head##12886
 .get Pamela's Doll |q 27384/1
 step
 goto 40.3,83.8
@@ -6587,7 +6649,7 @@ goto 35.0,68.1
 step
 goto 35.6,68.9
 .talk 11063
-..' Ask him if he has the extended Annals of Darrowshire
+.' Ask him if he has the extended Annals of Darrowshire
 .get Extended Annals of Darrowshire |q 27388/1
 step
 goto 39.8,72.4
@@ -6613,6 +6675,7 @@ goto 23.8,77.9
 step
 goto 22.1,68.2
 .click Redpath's Shield##4172
+.|tip On the first floor, back by the fireplace
 .get Redpath's Shield |q 27388/3
 step
 goto 22.3,68.3
@@ -6661,6 +6724,7 @@ goto 36.4,46.0
 .from Shadowmage##8550+, Dark Adept##8546+
 .collect Plague Disseminator Control Rune##61037 |n
 .' Use your Overcharged Mote when you have a Plague Disseminator Control Rune |use Overcharged Mote##61038
+.|tip You have to be near a Plague Disseminator. They are flying above you.
 .' Destroy 3 Plague Disseminators |q 27420/1
 step
 goto 30.2,56.9
@@ -6678,7 +6742,7 @@ goto 35.1,84.0
 .' Use your Relic Bundle |use Relic Bundle##15209
 .' Fight in the battle and follow the instructions that appear on your screen
 .from Redpath the Corrupted##10938
-.' Joseph Redpath will appear after the battle at [35.1,84.0]
+.' Joseph Redpath will appear after the battle at [Eastern Plaguelands,35.1,84.0]
 .talk 10936
 .' Accept Redpath's Forgiveness |q 27390/1
 step
@@ -6699,7 +6763,7 @@ goto 34.9,69.2
 step
 goto 35.0,69.3
 .clicknpc Fiona's Caravan##45400
-..' Choose to go to the next destination
+.' Choose to go to the next destination
 .' Ride in Fiona's Caravan |q 27448/1
 step
 goto 52.8,53.6
@@ -6713,7 +6777,8 @@ goto 52.9,53.1
 step
 goto 53.0,53.1
 .clicknpc Fiona's Caravan##45400
-.' Complete the Argus' Journal quest |tip This will give you a 2% experience bonus while in Eastern Plaguelands, so will allow you to level faster.
+.' Choose the Argus' Journal quest
+.|tip This will give you a 2% experience bonus while in Eastern Plaguelands, so will allow you to level faster.
 |confirm |confirm
 step
 goto 53.2,54.6
@@ -6736,11 +6801,16 @@ goto 52.8,51.4
 ..turnin 27449
 step
 goto 50.2,61.3
-.clicknpc Plague Puffer##45650+ |tip They look like small blowfish swimming underwater around this area.
+.' All of these are at the bottom of this pool of water:
+.clicknpc Plague Puffer##45650+
+.|tip They look like small blowfish swimming underwater around this area.
+.|tip Clicking these will refill your breath bar and give you water breathing for a few seconds. Get these as you get the Infectis Inchers and Infectis Scuttlers and you won't run out of breath.
 .get 8 Plague Puffer |q 27450/1
-.clicknpc Infectis Incher##45655+ |tip They look like small brown snails on the ground underwater around this area.
+.clicknpc Infectis Incher##45655+
+.|tip They look like small brown snails on the ground underwater around this area.
 .get 8 Infectis Incher |q 27450/2
-.clicknpc Infectis Scuttler##45657+ |tip They look like small brown crabs walking around underwater around this area.
+.clicknpc Infectis Scuttler##45657+
+.|tip They look like small brown crabs walking around underwater around this area.
 .get 8 Infectis Scuttler |q 27450/3
 step
 goto 53.7,62.3
@@ -6772,7 +6842,7 @@ goto 61.7,75.5
 step
 goto 62.4,76.4
 .click Mereldar Plague Cauldron##4331
-..' Choose to throw in an entire flask
+.' Choose to throw in an entire flask
 .' Disturb the Mereldar Plague Cauldron |q 27454/1
 step
 goto 53.2,54.6
@@ -6797,9 +6867,9 @@ goto 74.9,53.5
 .talk 11033
 ..accept 27458
 step
-goto 75.8,53.4
-.talk 12617
-.fpath Light's Hope Chapel
+goto Eastern Plaguelands 75.8,53.3
+.talk 12636
+..fpath Light's Hope Chapel
 step
 goto 75.6,52.4
 .talk 16256
@@ -6824,6 +6894,8 @@ goto 77.2,51.4
 .from Lord Raymond George##45707
 .' Complete the Trial of the Crypt |q 27464/1
 step
+.' Leave the crypt |goto 77.3,50.8 <5 |c
+step
 goto 75.9,52.0
 .talk 11034
 ..turnin 27464
@@ -6844,6 +6916,7 @@ goto 77.4,37.3
 .from Diseased Flayer##8532+, Dread Weaver##8528+, Death Singer##8542+ |q 27465/1
 .from Skullmage##45691+, Noxious Assassin##45692+ |q 27465/2
 .clicknpc Slain Scourge Trooper##45695+
+.|tip Look for skeleton bodies laying on the ground
 .' Bury 10 Blades |q 27467/1
 step
 goto 75.7,52.0
@@ -6863,7 +6936,7 @@ step
 goto 71.1,60.6
 .from Carrion Grub##8603+
 .get 15 Slab of Carrion Worm Meat |q 27456/1
-.' More Carrion Grubs can be found [69.7,67.2]
+.' More Carrion Grubs can be found [Eastern Plaguelands,69.7,67.2]
 step
 goto 72.6,74.8
 .talk 16116
@@ -6887,32 +6960,48 @@ goto 75.3,76.2
 ..accept 27616
 ..accept 27619
 step
+.' Enter the fortress |goto 75.2,77.1 <5 |c
+step
+.' Go into this small room |goto 74.7,77.0 <5 |c
+step
 goto 74.8,76.7
 .click Battered Chest##10
 .get Crimson Boar |q 27614/1
+step
+.' Go into this room |goto 74.4,77.8 <5 |c
 step
 goto 74.2,78.3
 .click Battered Chest##10
 .get Lihanna's Strand |q 27614/2
 step
+.' Head across to this room |goto 75.4,78.5 <5 |c
+step
 goto 75.1,79.0
 .click Battered Chest##10
 .get Shroud of Uther |q 27614/3
+step
+.' Go to this last room |goto 75.6,77.8 <5 |c
 step
 goto 75.9,77.5
 .click Battered Chest##10
 .get Gavinrad's Sigil |q 27614/4
 step
+.' Take the stairs down to the basement |goto 74.8,78.0 <5 |c
+step
 goto 75.0,78.3
-.' Go into the basement of the fortress
 .kill Mataus the Wrathcaster##46093 |q 27615/1
 step
+.' Go back upstairs |goto 74.6,78.5 <5 |c
+step
+.' Follow these stairs up to the next level |goto 74.8,78.6 <5 |c
+step
 goto 74.9,78.3
-.' Go upstairs into the big main room in the fortress
+.' Follow the way around and up into the big main room in the fortress
 .kill Scarlet Commander Marjhan##46092 |q 27619/1
 step
+.' Follow these stairs up to the roof |goto 74.4,78.1 <5 |c
+step
 goto 74.5,77.5
-.' Go down the hall and up more stairs
 .kill Huntsman Leopold##46094 |q 27616/1
 step
 goto 75.3,76.2
@@ -6941,9 +7030,11 @@ goto 78.6,72.9
 .' Click the Argent Portal |tip It looks like a swirling portal on this round table in a side room inside the building.
 .' Open the Portal within the Hall of Arms |q 27612/1
 step
+.' Follow the spiral stairs up |goto 77.9,72.7 <5 |c
+step
 goto 77.6,72.7
-.' Follow the big spiral stairs up to the top of the bell tower in the building
 .kill Rohan the Assassin##46095 |q 27613/1
+.|tip He is all the way at the top of the tower, standing stealthed in the back of the room. You'll go up two flights of stairs to get to him.
 step
 goto 76.7,73.1
 .talk 16115
@@ -6958,6 +7049,7 @@ goto 76.1,75.3
 step
 goto 82.3,79.4
 .kill Crusader Lord Valdelmar##46096 |q 27620/1
+.|tip He's inside the chapel building
 step
 goto 75.6,52.0
 .talk 11036
@@ -6974,11 +7066,13 @@ goto 73.8,51.9
 step
 goto 60.6,43.3
 .talk 45574
+.|tip He walks around the camp, you may have to look for him
+.' Check here [Eastern Plaguelands,61.7,41.3]
 ..accept 27481
 step
 goto 61.6,44.5
 .talk 45736
-.' He walks around the front side of the Tower, some searching may be required
+.|tip He walks around the front side of the Tower, some searching may be required
 ..accept 27479
 step
 goto 61.6,43.1
@@ -6999,7 +7093,8 @@ goto 61.6,43.8
 .fpath Eastwall Tower
 step
 goto 61.8,35.7
-.kill Ix'lar the Underlord##45744 |q 27487/1 |tip He walks around this area, so you may need to search for him.
+.kill Ix'lar the Underlord##45744 |q 27487/1
+.|tip He walks around this area, so you may need to search for him. He could appear on your minimap as a white skull with red eyes.
 .from Scourge Guard##8527+, Gangled Golem##8544+, Nerubian Sycophant##45743+ |q 27487/2
 step
 ding 43
@@ -7011,7 +7106,7 @@ goto 58.9,20.4 |n
 .' Run up this path |goto 58.9,20.4,0.5 |noway |c
 step
 goto 66.8,9.9
-.' Don't walk over the dirt piles on the ground, they spawn more enemies
+.' Be careful of walking over the dirt piles on the ground, they spawn more enemies
 .from Warlord Thresh'jin##10822 |tip Don't worry that he's elite, you can kill him easily
 .get Body of Warlord Thresh'jin |q 27481/1
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
@@ -7025,13 +7120,13 @@ goto 67.4,9.0
 ..turnin 27482
 step
 goto 64.5,13.7
-.' Don't walk over the dirt piles on the ground, they spawn more enemies
-.from Mossflayer Cannibal##8562+, Mossflayer Scout##8560+, Mossflayer Shadowhunter##8561+
+.' Be careful of walking over the dirt piles on the ground, they spawn more enemies
+.from Mossflayer Cannibal##8562+, Mossflayer Scout##8560+, Mossflayer Shadowhunter##8561+, Infected Mossflayer##12261+
 .get 30 Mossflayer Eye |q 27479/1
 step
 goto 61.3,44.5
 .talk 45736
-.' He walks around the front side of the Tower, some searching may be required
+.|tip He walks around the front side of the Tower, some searching may be required
 ..turnin 27479
 step
 goto 61.6,43.1
@@ -7048,6 +7143,7 @@ goto 61.6,43.2
 step
 goto 65.5,24.4
 .click Open Prayer Book##254
+.|tip Outside laying on the ground at the front of the house
 .get Gidwin's Prayer Book |q 27488/1
 step
 goto 61.6,43.2
@@ -7057,7 +7153,7 @@ goto 61.6,43.2
 step
 goto 61.6,42.5
 .clicknpc Fiona's Caravan##45400
-..' Choose to go to the next destination
+.' Choose to go to the next destination
 .' Ride Fiona's Caravan to Northpass Tower |q 27489/1
 step
 goto 51.4,21.3
@@ -7078,16 +7174,19 @@ goto 54.6,19.1
 .' Beat 6 Scourge Siege Engineers |q 27522/1
 .' Discover Gidwin's Location |q 27522/2
 .' Discover Gidwin's Captor |q 27522/3
+.|tip Every time you kill a Siege Engineer you have a chance to uncover the location or the captor. If you kill all 6 but haven't uncovered both secrets keep killing Engineers until you get both.
 step
 goto 47.0,17.4
 .from Wretched Pathstrider##8565+, Wretched Woodsman##8563+, Wretched Ranger##8564+ |q 27521/1
+.' You can find more Wretched mobs at [Eastern Plaguelands,48.5,11.9]
 step
 goto 48.0,23.0
 .talk 45816
 ..accept 27523
 step
 goto 46.4,33.8
-.' Use The Corpseburner's Flare in this spot |use The Corpseburner's Flare##61334
+.' Standing at this spot you'll see Duskwing flying in a circle above you.
+.' Use The Corpseburner's Flare when he's directly above you |use The Corpseburner's Flare##61334
 .from Duskwing##11897
 .get Patch of Duskwing's Fur |q 27523/1
 step
@@ -7139,6 +7238,8 @@ goto 28.4,25.9
 ..turnin 27526
 ..accept 27527
 step
+.' Follow the stairs up and leave the building |goto 28.8,26.1 <5 |c
+step
 goto 25.4,19.8
 .kill Omasum Blighthoof##45867 |q 27525/1
 step
@@ -7152,6 +7253,7 @@ goto 31.4,20.3
 .from Cannibal Ghoul##8530+
 .talk 11064 |tip They spawn after you kill Cannibal Ghouls.
 .' Free 8 Darrowshire Spirits |q 27529/1
+.' You can find more of all of these around [Eastern Plaguelands,37.1,24.9]
 step
 ding 44
 step
@@ -7167,7 +7269,8 @@ goto 27.6,20.9
 ..accept 27530
 step
 goto 28.3,32.3
-.' Use your Argent Lightwell Charm next to the big brown monster corpses |use Argent Lightwell Charm##61375 |tip You will have to put 3 around each corpse, and you can't put them too close together.
+.' Use your Argent Lightwell Charm next to the big brown monster corpses |use Argent Lightwell Charm##61375
+.|tip You will have to put 3 around each corpse, and you can't put them too close together. Try making a big triangle with the Lightwells.
 .' Destroy 3 Corpsebeasts |q 27530/1
 step
 goto 27.6,20.9
@@ -7190,9 +7293,13 @@ goto 25.1,34.5
 step
 goto 23.5,22.4
 .click Rotberry Bush##28+
+.|tip These look like small green bushes with tiny red berries. They emit a red glow.
 .get 20 Rotberry |q 27531/1
-.click Disembodied Arm##8373+ |tip They are really hard to see, so just look for the sparkles floating around them.
+.click Disembodied Arm##8373+
+.|tip They are really hard to see, so just look for the sparkles floating around them.
 .get 5 Disembodied Arm |q 27531/2
+.' You can find more Rotberries around [Eastern Plaguelands,24.3,28.7]
+.' Look for more Disembodied Arms around the big brown monster corpses at [Eastern Plaguelands,26.8,33.9]
 step
 goto 17.7,28.0
 .talk 45828
@@ -7210,13 +7317,14 @@ goto 14.2,26.3
 step
 goto 14.4,28.5
 .kill 9 Plagued Swine##16117+ |q 27533/1
+.' More can be found at [Eastern Plaguelands,12.0,28.3]
 step
 goto 11.3,28.6
 .talk 12384
 ..turnin 27533
 ..turnin 27534
 step
-'Use Gidwin's Hearthstone |use Gidwin's Hearthstone##61379
+.' Use Gidwin's Hearthstone |use Gidwin's Hearthstone##61379
 .' Teleport to Light's Hope Chapel |goto 75.6,52.4,0.5 |noway |c
 step
 goto 73.7,52.1

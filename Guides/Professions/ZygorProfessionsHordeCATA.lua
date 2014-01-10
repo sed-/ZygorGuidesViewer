@@ -6781,8 +6781,8 @@ label	"tl_125-200"
 .learn Bolt of Silk Cloth##3839
 step
 #include "auctioneer"
-.buy 644 Silk Cloth##4306
-.buy 480 Mageweave Cloth##4338
+.buy 808 Silk Cloth##4306
+.buy 420 Mageweave Cloth##4338
 #include go_farm_level,level="35",goto="tl_125-200_farm"
 |next "tl_125-200_skill"
 step
@@ -6791,9 +6791,13 @@ label	"tl_125-200_farm"
 'Proceeding to farm |next |only if default
 step
 label	"farming"
-goto Dustwallow Marsh,41.9,12.4
-.from Grimtotem Breaker##23592+, Grimtotem Spirit-Shifter##23593+, Grimtotem Elder##23714+
-.collect 644 Silk Cloth##4306 |tip You can also farm these by killing humanoid mobs in the Scarlet Monastery instance.
+map Eastern Plaguelands
+path	16.3,78.4	16.5,79.8	17.9,81.0
+path	19.0,82.4	18.9,80.9	19.5,78.4
+path	18.9,76.4	17.3,77.5
+.from Death's Step Putrifier##45443+
+.' Make sure you kill the enemies within the circle as well.
+.collect 808 Silk Cloth##4306 |tip You can also farm these by killing humanoid mobs in the Scarlet Monastery instance.
 step
 'Skipping next part of farming |next "exit" |only if step:Find("+farming"):IsComplete()
 'Proceeding to farm |next |only if default
@@ -6801,7 +6805,7 @@ step
 label	"farming"
 goto Felwood,63.4,20.7
 .from Irontree Chopper##48452+
-.collect 480 Mageweave Cloth##4338
+.collect 420 Mageweave Cloth##4338
 step
 label	"tl_125-200_skill"
 .create 161 Bolt of Silk Cloth##3839,Tailoring,161 total
@@ -6850,12 +6854,15 @@ label	"tl_200-250"
 .skillmax Tailoring,300 |tip You must be at least level 35.
 .learn Crimson Silk Pantaloons##8799
 step
-.create 5 Crimson Silk Pantaloons##8799,Tailoring,205
+.' Save the _Bolts of Silk Cloth_ from the previous section.
+|confirm
+step
+.create 15 Crimson Silk Pantaloons##8799,Tailoring,215
 step
 #include "trainer_Tailoring"
 .learn Black Mageweave Leggings##12049
 step
-.create 15 Black Mageweave Leggings##12049,Tailoring,220
+.create 5 Black Mageweave Leggings##12049,Tailoring,220
 step
 #include "trainer_Tailoring"
 .learn Black Mageweave Gloves##12053
@@ -6921,21 +6928,21 @@ goto Shattrath City,66.3,69.3
 step
 goto Shattrath City,51.0,26.5
 .talk 50143
-.buy 700 Netherweave Cloth##21877
+.buy 800 Netherweave Cloth##21877
 #include go_farm_level,level="65",goto="tl_300-350_farm"
 |next "tl_300-350_skill"
 step
 label	"auction2"
 goto Shattrath City,57.0,63.2
 .talk 50139
-.buy 700 Netherweave Cloth##21877
+.buy 800 Netherweave Cloth##21877
 #include go_farm_level,level="65",goto="tl_300-350_farm"
 |next "tl_300-350_skill"
 step
 label	"tl_300-350_farm"
 goto Netherstorm,26.3,68.1
 .from Sunfury Magister##18855+, Sunfury Astromancer##19643+, Sunfury Captain##19453+, Sunfury Bloodwarder##18853+, Sunfury Geologist##19779+, Sunfury Warp-Master##18857+
-.collect 700 Netherweave Cloth##21877
+.collect 800 Netherweave Cloth##21877
 step
 label	"tl_300-350_skill"
 #include "auctioneer"
@@ -6985,7 +6992,7 @@ goto Icecrown,61.8,20.8
 .skill Tailoring,375
 step
 label	"tl_350-425_skill"
-.create Bolt of Frostweave##55899,Tailoring,340 total |n
+.create Bolt of Frostweave##55899,Tailoring,354 total |n
 .skill Tailoring,375
 step
 #include "trainer_Tailoring"
