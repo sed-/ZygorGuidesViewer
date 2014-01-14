@@ -4323,7 +4323,7 @@ ZygorGuidesViewer:RegisterInclude("A_Icecrown_Argent_Crusade_Rep",[[
 		.buy 1 Tabard of the Argent Crusade##43154
 	step
 		.' Equip this Tabard in your bags |equipped Tabard of the Argent Crusade##43154 |use Tabard of the Argent Crusade##43154
-		.' You can run any dungeon that grants experience to gain reputation for the Argent Crusade.
+		.' You can run _any dungeon in Northrend_ to gain reputation for the Argent Crusade.
 		.' Friendly with Argent Crusade |condition rep("Argent Crusade")>=Friendly
 		.' Honored with Argent Crusade |condition rep("Argent Crusade")>=Honored
 		.' Revered with Argent Crusade |condition rep("Argent Crusade")>=Revered
@@ -15998,7 +15998,7 @@ ZygorGuidesViewer:RegisterInclude("A_The_Scavenger",[[
 		.' Look for Steam Pump Flotsam in the water around this area and fish from it |cast Fishing##7620
 		.' Fish from Steam Pump Flotsam |achieve 1257/1
 	step
-		goto Northern Stranglethorn 55.0,64.0
+		goto Northern Stranglethorn 31.0,37.7
 		.' Look for Schooner Wreckage around this area |tip You may need to fish from other pools to get this to show up |cast Fishing##7620
 		.' Fish from Schooner Wreckage |achieve 1257/3
 	step

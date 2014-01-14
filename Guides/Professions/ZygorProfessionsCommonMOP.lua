@@ -3612,23 +3612,23 @@ ZygorGuidesViewer:RegisterInclude("Poles_Collect_Fishing_Alliance",[[
 //ROUTER
 	step
 	label "menu"
-		'Click here to get the _Strong Fishing Pole_, which increases Fishing skill by _5_. |confirm |next "strong" |only if skill("Fishing")>=10
-		.'_
-		'Click here to get the _Pandaren Fishing Pole_, which increases Fishing skill by _10_. |confirm |next "pandaren"
-		.'_
-		'Click here to get the _Big Iron Fishing Pole_, which increases Fishing skill by _20_. |confirm |next "bigiron"
-		.'_
-		'Click here to get the _Seth's Graphite Fishing Pole_, which increases Fishing skill by _20_. |confirm |next "seth"
-		.'_
-		'Click here to get the _Nat Pagle's Extreme Angler FC-5000_, which increases Fishing skill by _20_. |confirm |next "fc5000"
-		.'_
-		'Click here to get the _Bone Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "bonejewel"
-		.'_
-		'Click here to get the _Jeweled Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "bonejewel"
-		.'_
-		'Click here to get the _Dragon Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "dragon"
-		.'_
-		'Click here to get the _Mastercraft Kalu'ak Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "kaluak"
+		'Click here to get the _Strong Fishing Pole_, which increases Fishing skill by _5_. |confirm |next "strong" |only if skill("Fishing")>=10 and itemcount(6365)==0
+		.'_ |only if level>=85 and itemcount(84660)==0
+		'Click here to get the _Pandaren Fishing Pole_, which increases Fishing skill by _10_. |confirm |next "pandaren" |only if level>=85 and itemcount(84660)==0
+		.'_ |only if skill("Fishing")>=100 and itemcount(6367)==0
+		'Click here to get the _Big Iron Fishing Pole_, which increases Fishing skill by _20_. |confirm |next "bigiron" |only if skill("Fishing")>=100 and itemcount(6367)==0
+		.'_ |only if skill("Fishing")>=200 and level>=62 and itemcount(25978)==0
+		'Click here to get the _Seth's Graphite Fishing Pole_, which increases Fishing skill by _20_. |confirm |next "seth" |only if skill("Fishing")>=200 and level>=62 and itemcount(25978)==0
+		.'_ |only if skill("Fishing")>=100 and level=>29 and itemcount(19022)==0
+		'Click here to get the _Nat Pagle's Extreme Angler FC-5000_, which increases Fishing skill by _20_. |confirm |next "fc5000" |only if skill("Fishing")>=100 and level=>29 and itemcount(19022)==0
+		.'_ |only if skill("Fishing")>=300 and level>=10 and itemcount(45991)==0
+		'Click here to get the _Bone Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "bonejewel" |only if skill("Fishing")>=300 and level>=10 and itemcount(45991)==0
+		.'_ |only if skill("Fishing")>=300 and level>=10 and itemcount(45992)==0
+		'Click here to get the _Jeweled Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "bonejewel" |only if skill("Fishing")>=300 and level>=10 and itemcount(45992)==0
+		.'_ |only if skill("Fishing")>=525 and level>=85 and itemcount(84661)==0
+		'Click here to get the _Dragon Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "dragon" |only if skill("Fishing")>=525 and level>=85 and itemcount(84661)==0
+		.'_ |only if skill("Fishing")>=300 and level>=68 and itemcount(44050)==0
+		'Click here to get the _Mastercraft Kalu'ak Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "kaluak" |only if skill("Fishing")>=300 and level>=68 and itemcount(44050)==0
 //STRONG FISHING POLE
 	step
 	label "strong"
@@ -3859,23 +3859,23 @@ ZygorGuidesViewer:RegisterInclude("Poles_Collect_Fishing_Horde",[[
 //ROUTER
 	step
 	label "menu"
-		'Click here to get the _Strong Fishing Pole_, which increases Fishing skill by _5_. |confirm |next "strong" |only if skill("Fishing")>=10
-		.'_
-		'Click here to get the _Pandaren Fishing Pole_, which increases Fishing skill by _10_. |confirm |next "pandaren"
-		.'_
-		'Click here to get the _Big Iron Fishing Pole_, which increases Fishing skill by _20_. |confirm |next "bigiron"
-		.'_
-		'Click here to get the _Seth's Graphite Fishing Pole_, which increases Fishing skill by _20_. |confirm |next "seth"
-		.'_
-		'Click here to get the _Nat Pagle's Extreme Angler FC-5000_, which increases Fishing skill by _20_. |confirm |next "fc5000"
-		.'_
-		'Click here to get the _Bone Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "bonejewel"
-		.'_
-		'Click here to get the _Jeweled Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "bonejewel"
-		.'_
-		'Click here to get the _Dragon Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "dragon"
-		.'_
-		'Click here to get the _Mastercraft Kalu'ak Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "kaluak"
+		'Click here to get the _Strong Fishing Pole_, which increases Fishing skill by _5_. |confirm |next "strong" |only if skill("Fishing")>=10 and itemcount(6365)==0
+		.'_ |only if level>=85 and itemcount(84660)==0
+		'Click here to get the _Pandaren Fishing Pole_, which increases Fishing skill by _10_. |confirm |next "pandaren" |only if level>=85 and itemcount(84660)==0
+		.'_ |only if skill("Fishing")>=100 and itemcount(6367)==0
+		'Click here to get the _Big Iron Fishing Pole_, which increases Fishing skill by _20_. |confirm |next "bigiron" |only if skill("Fishing")>=100 and itemcount(6367)==0
+		.'_ |only if skill("Fishing")>=200 and level>=62 and itemcount(25978)==0
+		'Click here to get the _Seth's Graphite Fishing Pole_, which increases Fishing skill by _20_. |confirm |next "seth" |only if skill("Fishing")>=200 and level>=62 and itemcount(25978)==0
+		.'_ |only if skill("Fishing")>=100 and level=>29 and itemcount(19022)==0
+		'Click here to get the _Nat Pagle's Extreme Angler FC-5000_, which increases Fishing skill by _20_. |confirm |next "fc5000" |only if skill("Fishing")>=100 and level=>29 and itemcount(19022)==0
+		.'_ |only if skill("Fishing")>=300 and level>=10 and itemcount(45991)==0
+		'Click here to get the _Bone Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "bonejewel" |only if skill("Fishing")>=300 and level>=10 and itemcount(45991)==0
+		.'_ |only if skill("Fishing")>=300 and level>=10 and itemcount(45992)==0
+		'Click here to get the _Jeweled Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "bonejewel" |only if skill("Fishing")>=300 and level>=10 and itemcount(45992)==0
+		.'_ |only if skill("Fishing")>=525 and level>=85 and itemcount(84661)==0
+		'Click here to get the _Dragon Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "dragon" |only if skill("Fishing")>=525 and level>=85 and itemcount(84661)==0
+		.'_ |only if skill("Fishing")>=300 and level>=68 and itemcount(44050)==0
+		'Click here to get the _Mastercraft Kalu'ak Fishing Pole_, which increases Fishing skill by _30_. |confirm |next "kaluak" |only if skill("Fishing")>=300 and level>=68 and itemcount(44050)==0
 //STRONG FISHING POLE
 	step
 	label "strong"
@@ -4101,14 +4101,21 @@ ZygorGuidesViewer:RegisterInclude("Gear_Collect_Fishing_Alliance",[[
 //ROUTER
 	step
 	label "menu"
-		'Click here to get the _Darkmoon Fishing Cap_, which increases your Fishing skill by 5, and will spawn a pool of Shipwrecked Debris while on Darkmoon Island. |confirm |next "darkmoonhat"
-		'Click here to get _Nat's Hat_, which increases your Fishing skill by 5, and doubles as a 150 Fishing lure. |confirm |next "natshat"
+		'Click here to get the _Darkmoon Fishing Cap_, which increases your Fishing skill by 5, and will spawn a pool of Shipwrecked Debris while on Darkmoon Island. |confirm |next "darkmoonhat" and itemcount(93732)==0
+		.'_ |only if level>=85 and itemcount(88710)==0
+		'Click here to get _Nat's Hat_, which increases your Fishing skill by 5, and doubles as a 150 Fishing lure. |confirm |next "natshat" |only if level>=85 and itemcount(88710)==0
+		.'_
 		'Click here to get the _Weather-Beaten Fishing Hat_, which increases your Fishing skill by 5, and doubles as a 75 Fishing lure. |confirm |next "weatherhat"
+		.'_
 		'Click here to get the _Reinforced Fishing Line_, which gives a permanent +1 boost to Fishing skill on your Fishing Pole. |confirm |next "reinforcedline"
-		'Click here to get the _Spun Truesilver Fishing Line_, which grants a permanent +1 boost to Fishing skill on your Fishing Pole. |confirm |next "truefish"
-		'Click here to get the _Sharpened Tuskarr Spear_, which can be planted in the ground, and increases Fishing skill by 15 for anyone who remains within 15 yds for 2 minutes. |confirm |next "buytuskspear"
-		'Click here to get the _Ancient Pandaren Fishing Charm_, which grants you a chance to find additional fish from pools in Pandaria. |confirm |next "pandafishcharm"
-		'Click here to get the _Weather-Beaten Journal_, which grants you the ability to _Find Fish_. |confirm |next "weatherjournal"
+		.'_ |only if skill("Fishing")>=300
+		'Click here to get the _Spun Truesilver Fishing Line_, which grants a permanent +3 boost to Fishing skill on your Fishing Pole. |confirm |next "truefish" |only if skill("Fishing")>=300
+		.'_ |only if level>=85 and itemcount(88535)==0
+		'Click here to get the _Sharpened Tuskarr Spear_, which can be planted in the ground, and increases Fishing skill by 15 for anyone who remains within 15 yds for 2 minutes. |confirm |next "tuskspear" |only if level>=85 and itemcount(88535)==0
+		.'_ |only if level>=85 and itemcount(85973)==0
+		'Click here to get the _Ancient Pandaren Fishing Charm_, which grants you a chance to find additional fish from pools in Pandaria. |confirm |next "pandafishcharm" |only if level>=85 and itemcount(85973)==0
+		.'_ |only if skill("Fishing")>=100 and not _G.IsSpellKnown(43308)
+		'Click here to get the _Weather-Beaten Journal_, which grants you the ability to _Find Fish_. |confirm |next "weatherjournal" |only if skill("Fishing")>=100 and not _G.IsSpellKnown(43308)
 //DARKMOON FISHING CAP
 	step
 	label "darkmooncap"
@@ -4432,21 +4439,21 @@ ZygorGuidesViewer:RegisterInclude("Gear_Collect_Fishing_Horde",[[
 //ROUTER
 	step
 	label "menu"
-		'Click here to get the _Darkmoon Fishing Cap_, which increases your Fishing skill by 5, and will spawn a pool of Shipwrecked Debris while on Darkmoon Island. |confirm |next "darkmoonhat"
-		.'_
-		'Click here to get _Nat's Hat_, which increases your Fishing skill by 5, and doubles as a 150 Fishing lure. |confirm |next "natshat"
+		'Click here to get the _Darkmoon Fishing Cap_, which increases your Fishing skill by 5, and will spawn a pool of Shipwrecked Debris while on Darkmoon Island. |confirm |next "darkmoonhat" and itemcount(93732)==0
+		.'_ |only if level>=85 and itemcount(88710)==0
+		'Click here to get _Nat's Hat_, which increases your Fishing skill by 5, and doubles as a 150 Fishing lure. |confirm |next "natshat" |only if level>=85 and itemcount(88710)==0
 		.'_
 		'Click here to get the _Weather-Beaten Fishing Hat_, which increases your Fishing skill by 5, and doubles as a 75 Fishing lure. |confirm |next "weatherhat"
 		.'_
 		'Click here to get the _Reinforced Fishing Line_, which gives a permanent +1 boost to Fishing skill on your Fishing Pole. |confirm |next "reinforcedline"
-		.'_
-		'Click here to get the _Spun Truesilver Fishing Line_, which grants a permanent +1 boost to Fishing skill on your Fishing Pole. |confirm |next "truefish"
-		.'_
-		'Click here to get the _Sharpened Tuskarr Spear_, which can be planted in the ground, and increases Fishing skill by 15 for anyone who remains within 15 yds for 2 minutes. |confirm |next "buytuskspear"
-		.'_
-		'Click here to get the _Ancient Pandaren Fishing Charm_, which grants you a chance to find additional fish from pools in Pandaria. |confirm |next "pandafishcharm"
-		.'_
-		'Click here to get the _Weather-Beaten Journal_, which grants you the ability to _Find Fish_. |confirm |next "weatherjournal"
+		.'_ |only if skill("Fishing")>=300
+		'Click here to get the _Spun Truesilver Fishing Line_, which grants a permanent +3 boost to Fishing skill on your Fishing Pole. |confirm |next "truefish" |only if skill("Fishing")>=300
+		.'_ |only if level>=85 and itemcount(88535)==0
+		'Click here to get the _Sharpened Tuskarr Spear_, which can be planted in the ground, and increases Fishing skill by 15 for anyone who remains within 15 yds for 2 minutes. |confirm |next "tuskspear" |only if level>=85 and itemcount(88535)==0
+		.'_ |only if level>=85 and itemcount(85973)==0
+		'Click here to get the _Ancient Pandaren Fishing Charm_, which grants you a chance to find additional fish from pools in Pandaria. |confirm |next "pandafishcharm" |only if level>=85 and itemcount(85973)==0
+		.'_ |only if skill("Fishing")>=100 and not _G.IsSpellKnown(43308)
+		'Click here to get the _Weather-Beaten Journal_, which grants you the ability to _Find Fish_. |confirm |next "weatherjournal" |only if skill("Fishing")>=100 and not _G.IsSpellKnown(43308)
 //DARKMOON FISHING CAP
 	step
 	label "darkmooncap"
@@ -4770,11 +4777,11 @@ ZygorGuidesViewer:RegisterInclude("Bags_Collect_Fishing_Alliance",[[
 	label "otherworldly"
 		#include "auctioneer"
 		..buy 1 Otherworldly Bag##54445 |next "menu"
-		.' Click here if you wish to make this bag yourself. |confirm |next "auctionother" |tip This bag will require _Tailoring_ to create.
+		.' Click here if you wish to make this bag yourself. |confirm |next "auctionother" |tip This bag will require _Tailoring_ to create. |only if skill("Tailoring")>=480
 	step
 	label "auctionother"
 		#include "auctioneer"
-		..buy 9 Bolt of embersilk Cloth##53643
+		..buy 9 Bolt of Embersilk Cloth##53643
 		..buy 8 Hypnotic Dust##52555
 		..buy 4 Greater Cosmic Essence##34055
 		..buy 1 Dream Shard##34052
@@ -4801,6 +4808,9 @@ ZygorGuidesViewer:RegisterInclude("Bags_Collect_Fishing_Alliance",[[
 		'Run through the Halls of Lightning dungeon, killing all mobs along the way.
 		'Disenchant any uncommon quality (green) armor and weapons with an item level of 130-151. |cast Disenchant##13262
 		.collect 4 Greater Cosmic Essence##34055
+		'Disenchant any uncommon quality (green) armor and weapons with an item level of 130-151. |cast Disenchant##13262
+		.collect 1 Dream Shard##34052
+		|next "auctionother"
 	step
 	label "makeother"
 		#include "trainer_Tailoring"
@@ -4808,4 +4818,15 @@ ZygorGuidesViewer:RegisterInclude("Bags_Collect_Fishing_Alliance",[[
 	step
 		.create 1 Otherworldly Bag##75265,Tailoring,1 total
 		|next "menu"
+//MYSTERIOUS BAG
+	step
+	label "mysterybag"
+		#include "auctioneer"
+		..buy 1 Mysterious Bag##41598
+		.' Click here if you wish to make this bag yourself. |confirm |next "auctionmystery" |tip This bag will require _Tailoring_ to create. |only if skill("Tailoring")>=440
+	step
+	label "auctionmystery"
+		#include "auctioneer"
+		..buy 4 Spellweave##41595
+		..buy 2 Moonshroud##41594
 ]])

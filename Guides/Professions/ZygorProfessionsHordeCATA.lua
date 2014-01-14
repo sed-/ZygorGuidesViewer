@@ -2924,7 +2924,7 @@ label "ench_205-300"
 step
 goto Orgrimmar,55.3,46.1
 .talk 3348
-.buy 15 Crystal Vial##3371
+.buy 20 Crystal Vial##3371
 step
 #include "auctioneer"
 .buy 15 Lesser Nether Essence##11174
@@ -2996,11 +2996,11 @@ label "ench_300-351"
 .skillmax Enchanting,375
 step
 #include "auctioneer"
-.buy 165 Arcane Dust##22445
+.buy 195 Arcane Dust##22445
 .buy 20 Greater Planar Essence##22446
 .buy 10 Large Prismatic Shard##22449
 .buy 40 Lesser Planar Essence##22447
-.buy 15 Nightmare Vine##22792 |tip You will need to buy this item. It cannot be aquired through Disenchanting.
+.buy 20 Nightmare Vine##22792 |tip You will need to buy this item. It cannot be aquired through Disenchanting.
 #include "go_disenchant",skill="Enchanting",req="1",goto="ench_300-351_farm"
 next "ench_300-351_skill"
 step

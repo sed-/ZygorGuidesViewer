@@ -36,6 +36,19 @@ local arm_ids = {"MISCARM","CLOTH","LEATHER","MAIL","PLATE","COSMETIC","SHIELD",
 
 ItemScore.ItemClassData={itemclasses,itemweapsubclasses,itemarmsubclasses,class_ids,weap_ids,arm_ids}
 
+local exceptionsList = {
+	[50287] = 1,	-- Boots of the Bay
+	[19972] = 1,	-- Lucky Fishing Hat
+	[19969] = 1,	-- Nat Pagle's Extreme Anglin' Boots
+	[93732] = 1,	-- Darkmoon Fishing Cap
+	[88710] = 1,	-- Nat's Hat
+	[33820] = 1,	-- Weather-Beaten Fishing Hat
+	[7349] = 1,	-- Herbalist's Gloves
+	[85777] = 1,	-- Ancient Pandaren Mining Pick
+	[85663] = 1,	-- Herbalist's Spade
+	[86566] = 1,	-- Forager's Gloves
+}
+
 -- Offhands are MISCARM.
 -- Twohanders are "TH" and not "2H".
 -- Last stat update. 06/30/2013
@@ -778,6 +791,21 @@ function ItemScore:IsFishingPole(itemid)
 	local cl = weap_ids[itemweapsubclasses[item.info.subclass] or 0]
 	
 	return cl == "FISHPOLE"
+end
+
+--[[
+	If the itemid is in the exceptions list then return true
+
+	Parameters:
+		itemid - itemid
+	Return
+		yes/no
+--]]
+
+function ItemScore:IsException(itemid)
+	if not itemid then return end
+	
+	return exceptionsList[itemid]
 end
 
 -- Helper Functions

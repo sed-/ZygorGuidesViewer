@@ -2183,43 +2183,43 @@ step
 |confirm
 step
 goto Durotar/0 38.8,38.5
-.' Southfury Watershed in Durotar /7
+|achieve 4827/7
 step
 goto Ashenvale/0 48.2,53.5
-.' Thunder Peak in Ashenvale /6
+|achieve 4827/6
 step
 goto Darkshore/0 38.6,45.3
-.' The Ruins of Auberdine in Darkshore /4
+|achieve 4827/4
 step
 goto Southern Barrens/0 45.5,70.3
-.' The Battlescar in Southern Barrens /1
+|achieve 4827/1
 step
 goto Desolace/0 57.5,54.3
-.' Cenarion Wildlands in Desolace /8
+|achieve 4827/8
 step
 goto Thousand Needles/0 74.4,82.1
-.' The Shimmering Deep in Thousand Needles /9
+|achieve 4827/9
 step
 goto Tanaris/0 37.7,78.9
-.' The Valley of the Watchers in Tanaris /5
+|achieve 4827/5
 step
 goto Northern Stranglethorn 50.4,66.5
-.' The Sundering in Stranglethorn |achieve 4827/2
+|achieve 4827/2
 step
 goto Westfall/0 38.5,42.3
-.' The Raging Chasm in Westfall |achieve 4827/11
+|achieve 4827/11
 step
 goto Badlands/0 43.4,42.5
-.' The Scar of the Worldbreaker in Badlands /3
+|achieve 4827/3
 step
 goto Loch Modan/0 42.0,11.3
-.' The Stonewrought Dam in Loch Modan /12
+|achieve 4827/12
 step
 goto Hillsbrad Foothills/0 51.3,71.4
-.' Ruins of Southshore in Hillsbrad Foothills /13
+|achieve 4827/13
 step
 goto Ruins of Gilneas/0 60.2,10.5
-.' The Greymane Wall in Silverpine /10
+|achieve 4827/10
 step
 .' Congratulations, you have earned the _Surveying the Damage_ achievement.
 ]])
@@ -8669,7 +8669,7 @@ goto Feralas,63.1,51.5
 .' Look for Waterlogged Wreckage around this area |tip You may have to fish from other pools to get this to show up |cast Fishing##7620
 .' Fish from Waterlogged Wreckage |achieve 1257/4
 step
-goto Northern Stranglethorn 55.0,64.0
+goto Northern Stranglethorn 31.0,37.7
 .' Look for Schooner Wreckage around this area |tip You may need to fish from other pools to get this to show up |cast Fishing##7620
 .' Fish from Schooner Wreckage |achieve 1257/3
 step
@@ -8868,7 +8868,7 @@ only if havequest(11669)
 step
 goto Terokkar Forest,38.7,12.8
 .talk 25580
-.' You will only be able to pick up 1 of 5 dailies per day.
+.' You will only be able to turn in 1 of 5 dailies per day.
 .turnin 11665 |or
 .turnin 11666 |or
 .turnin 11669 |or
@@ -8917,7 +8917,7 @@ path	 47.2,44.4	48.7,45.3	51.1,43.2
 path	 50.9,47.6	48.8,48.1	47.4,48.6
 path	 46.5,47.6
 .' Follow the stream until you find a Bluefish and a Mudfish School.
-.' Use your fishing  skill to fish from either Bluefish and a Mudfish School |cast Fishing##7620
+.' Use your fishing  skill to fish from a Bluefish and a Mudfish School |cast Fishing##7620
 .' Fish from a Bluefish School |achieve 1225/2
 .' Fish from a Mudfish School |achieve 1225/3
 step
@@ -9278,6 +9278,7 @@ goto Darkshore,48.6,18.0
 .' Use your fishing skill to fish along Mist's Edge. |cast Fishing##7620
 .' Catch Darkshore Grouper. |achieve 5479/6
 step
+goto Moonglade 52.4,46.9
 .' Use your fishing skills at Lake Elune'ara.
 .' Catch a Nightfin Snapper.  They can only be caught at night. |achieve 5478/33
 .' Catch a Sunscale Salmon. They canonly be caught during the day. |achieve 5479/29

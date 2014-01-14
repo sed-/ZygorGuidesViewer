@@ -2687,8 +2687,10 @@ goto 57.0,14.2
 .from Ferocious Grizzled Bear##1778+, Worg##1765+
 .get 6 "Clean" Beast Guts |q 26995/1
 .click Ferocious Doomweed##4112+
+.|tip These look like small blue and purple plants on the ground around this area
 .get 8 Ferocious Doomweed |q 26992/1
-.' More can be found around [60.6,13.5]
+.' More of all of these can be found around [Silverpine Forest,60.6,13.5]
+.' And also at [Silverpine Forest,55.7,20.2]
 step
 goto 57.4,10.1
 .talk 44615
@@ -2707,7 +2709,7 @@ ding 12
 step
 goto 57.9,8.7
 .talk 44825
-..' Tell him you need to take a bat to the Dawning Isles
+.' Tell him you need to take a bat to the Dawning Isles
 .' Use the Blight Concoction ability on your hotbar on the murlocs you fly over
 .kill 50 Vile Fin Murloc##1541+ |q 26998/2
 step
@@ -2762,15 +2764,16 @@ step
 goto 47.4,20.5
 .from Giant Rabid Bear##1797+, Rabid Worg##1766+
 .get 8 Diseased Organ |q 27082/1
-.' More Wolves and Bears can be found around [50.6,17.5]
+.' More Wolves and Bears can be found around [Silverpine Forest,50.6,17.5]
 step
 goto 44.8,20.9
 .talk 44912
 ..turnin 27082
 ..accept 27088
 step
-goto 47.0,25.3
+goto 43.0,29.4
 .' Use your Mutant Bush Chicken Cage on a Forest Ettin |use Mutant Bush Chicken Cage##60808
+.|tip They walk around this area. They may appear on your minimap as a white skull with red eyes.
 .kill Forest Ettin##44367+ |q 27088/1
 step
 goto 44.8,20.9
@@ -2784,6 +2787,7 @@ step
 goto 40.0,26.9
 .kill 10 Bloodfang Scavenger##44549+ |q 27073/1
 .click Sea Dog Crate##7635+
+.|tip Small brown boxes with the Horde insignia on it
 .' Recover 5 Sea Dog Crates |q 27069/1
 step
 goto 44.0,21.4
@@ -2792,14 +2796,14 @@ goto 44.0,21.4
 step
 ding 13
 step
+goto 44.0,21.4
+.talk 44916
+..accept 27093
+step
 goto 44.0,21.3
 .talk 44917
 ..turnin 27073
 ..accept 27095
-step
-goto 44.0,21.4
-.talk 44916
-..accept 27093
 step
 goto 38.5,16.0
 .from Skitterweb Striker##1780+, Skitterweb Lurker##1781+ |q 27095/1
@@ -2813,7 +2817,7 @@ goto 35.6,13.5 |n
 .' Enter the mine |goto Silverpine Forest,35.6,13.5,0.5 |noway |c
 step
 goto 36.0,8.8
-.' Follow the path to the back of the mine
+.' Stay to the left and follow the path to the back of the mine
 .kill Skitterweb Matriarch##44906 |q 27094/1 |tip She's hanging upside down on the ceiling.
 step
 goto 44.0,21.3
@@ -2841,12 +2845,14 @@ ding 14
 step
 goto 65.7,24.5
 .' Go to the top room of the fortress
+.' Watch the cutscene
 .' Find the Human Leaders |q 27099/1
 step
 goto 57.4,10.2
 .talk 44365
 ..turnin 27099
 ..accept 27098
+.' Watch the cutscene
 .' Accompany Lady Sylvanas Windrunner to the Sepulcher |q 27098/1
 step
 goto 44.9,41.6
@@ -2872,16 +2878,19 @@ goto 46.4,42.7
 step
 goto 52.0,33.6
 .kill 10 Hillsbrad Worgen##45255+ |q 27231/1
-.' Use your Barrel of Explosive Ale on Orc Sea Dogs |use Barrel of Explosive Ale##60870 |tip They look like dead orcs on the ground around this area.
+.' Use your Barrel of Explosive Ale on Orc Sea Dogs |use Barrel of Explosive Ale##60870
+.|tip They look like dead orcs on the ground around this area. You can mark them with shit+v (Use v to mark enemies again).
 .' Rouse 8 Orc Sea Dogs |q 27226/1
 step
 goto 59.2,34.2
 .click Horde Communication Panel##356
+.|tip It's out on a dock
 ..turnin 27231
 ..accept 27232
 step
 goto 59.9,34.1
 .clicknpc Horde Cannon##45263
+.' Click and hold the right mouse button to aim
 .' Use your Rocket Blast ability on your hotbar on the worgens swimming in the water
 .kill 50 Hillsbrad Worgen##45255+ |q 27232/1
 step
@@ -2900,6 +2909,7 @@ step
 goto 46.9,49.7
 .kill 10 Bloodfang Stalker##45195+ |q 27181/1
 .clicknpc Veteran Forsaken Trooper##45197+
+.|tip These are undead bodies laying on the ground
 .get 6 Forsaken Insignia |q 27180/1
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 27181
@@ -2957,6 +2967,7 @@ goto 58.3,22.2 |n
 step
 goto 64.0,24.7
 .click Wolfsbane##9883+
+.|tip Small green plants with pink berries
 .get 6 Wolfsbane |q 27342/1
 step
 goto 59.2,21.8 |n
@@ -3011,26 +3022,29 @@ goto 73.0,30.1
 ..turnin 27405
 ..accept 27406
 step
-goto 73.4,31.2
+goto 72.1,28.3
 .' Go to this spot
 ..accept 27423
+.' If it doesn't automatically give it to you, try this spot [Ruins of Gilneas,73.4,31.2]
 step
 goto 75.4,63.1
-.'Walk south and southeast along the road:
+.' Walk south and southeast along the road:
 .from Bloodfang Scout##45481+, Gilnean Warhound##45499+, Worgen Battlemage##45483+ |q 27423/1
 step
-'Next to you:
+.' Next to you:
 .talk 45474
 ..turnin 27423
 step
 goto 81.8,64.8 |n
 .' The path down to Lord Godfrey starts here |goto Ruins of Gilneas,81.8,64.8,0.5 |noway |c
 step
+.' Follow this path down |goto 76.4,75.9 <5 |c
+step
 goto 79.7,75.7
 .clicknpc Lord Godfrey##44369
 .' Find Lord Vincent Godfrey's Corpse |q 27406/1
 step
-'Next to you:
+.' Next to you:
 .talk 45474
 ..turnin 27406
 step
@@ -3079,6 +3093,7 @@ goto 51.9,65.0
 step
 goto 47.1,43.2
 .talk 1938
+.|tip He's inside the inn
 ..turnin 27476
 ..accept 27478
 ..accept 27483
@@ -3129,7 +3144,7 @@ goto 51.7,67.2
 step
 goto 56.1,76.7
 .kill 10 Inconspicuous Bear##45750+ |q 27510/1
-.' There are more Inconspicuous Bears around [55.3,70.6]
+.' There are more Inconspicuous Bears around [Silverpine Forest,55.3,70.6]
 step
 goto 60.4,74.7 |n
 .' The path up to the Ambermill Dimensional Portal starts here |goto Silverpine Forest,60.4,74.7,0.5 |noway |c
@@ -3141,7 +3156,7 @@ goto 58.1,69.9
 step
 goto 58.1,69.9
 .clicknpc Ambermill Dimensional Portal##45752
-..' <Use the Ambermill Dimensional Portal.>
+.' <Use the Ambermill Dimensional Portal.>
 .' Enter the Transdimensional Shift |havebuff INTERFACE\ICONS\spell_arcane_rune |q 27513
 step
 goto 62.5,64.1
@@ -3162,11 +3177,11 @@ goto 51.9,65.0
 ..turnin 27518
 ..accept 27542 |instant
 step
-'Next to you:
+.' Next to you:
 .talk 45880
 ..accept 27547
 step
-'Next to you:
+.' Next to you:
 .talk 45879
 ..accept 27548
 step
@@ -3178,6 +3193,7 @@ goto 51.7,67.2
 .talk 45631
 ..turnin 27510
 ..accept 28089
+.|tip You won't be able to accept this quest if your level is too high
 step
 goto 46.6,72.7
 .' Use your Bundle of Torches in this spot |use Bundle of Torches##61374
@@ -3191,33 +3207,35 @@ goto 44.2,73.2
 .' Use your Bundle of Torches in this spot |use Bundle of Torches##61374
 .' Torch the Pyrewood Town Hall |q 27550/3
 step
-'Next to you:
+.' Next to you:
 .talk 45878
 ..turnin 27550
 step
 goto 45.0,73.5
 .' All around Pyrewood Village:
 .kill 12 7th Legion Scout##45883+ |q 27548/1
+.|tip They are stealthed, so keep an eye out
 .talk 45910+
+.|tip They're hiding behind and inside buildings. Mark them with shift+v to find them easier (Use v to mark enemies again).
 .' Rescue 8 Cowering Trooper |q 27547/1
 step
-'Next to you:
+.' Next to you:
 .talk 45880
 ..turnin 27547
 step
-'Next to you:
+.' Next to you:
 .talk 45879
 ..turnin 27548
 ..accept 27577
 step
-'Next to you:
+.' Next to you:
 .talk 45878
 ..accept 27580
 step
 goto 42.4,79.2
 .kill General Marstone##45995 |q 27580/1
 step
-'Next to you:
+.' Next to you:
 .talk 45878
 ..turnin 27580
 step
@@ -3225,17 +3243,18 @@ goto 42.9,81.0
 .from Dwarven Infantry##45855+
 .get 7th Legion Battle Plan |q 27577/1
 step
-'Next to you:
+.' Next to you:
 .talk 45879
 ..turnin 27577
 step
 ding 20
 step
-'Next to you:
+.' Next to you:
 .talk 45878
 ..accept 27594
 step
 goto 50.3,88.3
+.' Go here and watch the dialogue
 .from Commander Lorna Crowley##45997
 .' Capture Commander Lorna Crowley |q 27594/1
 step
@@ -3244,7 +3263,8 @@ goto 51.9,65.0
 ..turnin 27594
 ..accept 27601
 step
-'Follow Lady Sylvanas Windrunner through the battle
+goto 50.6,72.7
+.' Follow Lady Sylvanas Windrunner through the battle
 .' Defeat the Alliance!
 .' Fight Lord Walden, Baron Ashbury, and Lord Godfrey until they retreat
 .from Lord Walden##46029
@@ -3256,6 +3276,10 @@ goto 45.3,84.5
 .talk 46124
 ..turnin 27601
 ..accept 27746
+step
+goto Hillsbrad Foothills 29.2,63.4
+.talk 2215
+..turnin 27746
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Eastern Kingdoms 1-60\\Hillsbrad Foothills (20-26)\\Hillsbrad Foothills (20-26)",[[
 author support@zygorguides.com
@@ -8269,11 +8293,12 @@ goto 40.8,51.7
 step
 goto 41.3,25.4
 .' Follow the path in The Slag Pit
+.' You'll go through the Quarry Gate at [Searing Gorge,37.9,44.4]
 .talk 5843 |tip Talk to them as you walk through The Slag Pit and do other quests.
-..' Tell them to come and get out of here
+.' Tell them to come and get out of here
 .from Dark Iron Slaver##5844+, Dark Iron Taskmaster##5846+
 .click Altar of Suntara##328
-..' Touch the Suntara stone and call forth Lathoric the Black and his guardian, Obsidion
+.' Touch the Suntara stone and call forth Lathoric the Black and his guardian, Obsidion
 .kill Obsidion##8400 |q 28056/1
 .kill Lathoric the Black##8391 |q 28056/2
 step
@@ -8291,7 +8316,9 @@ goto 43.8,28.7
 ..accept 28057
 step
 goto 46.2,27.1
-.click Dark Iron Pillow##5911+ |tip A big group of dwarves runs up and down the hallway once you steal some pillows. You can kill them easily, though, they have low hit points.
+.click Dark Iron Pillow##5911+
+.|tip They are white pillows inside the sleeping bunks up against both walls
+.|tip A big group of dwarves runs up and down the hallway once you steal some pillows. You can kill them easily, though, they have low hit points.
 .get 16 Dark Iron Pillow |q 28057/1
 step
 goto 42.2,34.5
@@ -8302,6 +8329,7 @@ step
 goto 42.3,34.6
 .talk 14627
 .' Tell him let's take out Maltorius and Arkkus!
+.' Follow him to a nearby balcony
 .kill Overseer Maltorius##14621 |q 28060/1
 .kill Twilight-Lord Arkkus##47460 |q 28060/2
 step
@@ -8327,7 +8355,7 @@ goto 42.7,30.3
 ..turnin 28062
 ..accept 28064
 step
-.'Use your hearthstone to exit the cave.
+.' Use your hearthstone to exit the cave.
 |confirm
 step
 goto 39.0,26.0
@@ -8336,14 +8364,13 @@ goto 39.0,26.0
 step
 goto 38.1,27.0
 .talk 14625
+.|tip He is up on the second level of the tower
 ..turnin 28064
 ..accept 28515
 step
-goto Searing Gorge,34.8,85.4 |n
-.' Enter Blackrock Mountain
-|confirm
+.' Enter Blackrock Mountain |goto 34.8,85.4 <5 |c
 step
-'Follow the path to the other side to Burning Steppes |goto Burning Steppes |noway |c
+.' Follow the path to the other side to Burning Steppes |goto Burning Steppes |noway |c
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Eastern Kingdoms 1-60\\Burning Steppes (49-52)\\Burning Steppes (49-52)",[[
 author support@zygorguides.com
@@ -8860,7 +8887,7 @@ goto Burning Steppes 54.9,22.5
 step
 goto 78.3,58.8
 .talk 48948
-..' Tell her let's head down to the Swamp of Sorrows
+.' Tell her let's head down to the Swamp of Sorrows
 .' Ride the rocket to Swamp of Sorrows |goto Swamp of Sorrows,75.3,13.3,0.5 |noway |c
 step
 goto Swamp of Sorrows,73.2,14.9
@@ -8881,7 +8908,7 @@ goto 73.6,9.2
 ..accept 27592
 step
 goto 75.2,5.4
-'Use the Silversnap Swim Tonic in your bags to allow you to breathe underwater |use Silversnap Swim Tonic##62795
+.' Use the Silversnap Swim Tonic in your bags to allow you to breathe underwater |use Silversnap Swim Tonic##62795
 .from Swampshore Makrura##45809+
 .get 6 Intact Swampshore Tail |q 27587/1
 .from Silt Crawler##922+
@@ -8899,7 +8926,7 @@ goto 73.2,14.9
 step
 goto 73.2,14.9
 .talk 45786
-.' Tell him to "give you more of that swim tonic!"
+.' Tell him to "Gimme more of that swim tonic!"
 ..collect 3 Silversnap Swim Tonic##62795 |tip You can use these for any quest that involves going underwater in the Swamp of Sorrows.
 step
 goto 74.2,12.2
@@ -8911,6 +8938,8 @@ goto 80.5,26.8
 .from Swampstrider##45825+
 .get 9 Jumbo Swampstrider Drumstick |q 27663/1
 .click Stray Land Mine##8586+
+.|tip Small circular mines on the ground. Kind of hard to see, look for the typical quest item glitter.
+.|tip Getting too close to them will cause them to explode, hurting you and knocking you backwards.
 .get 8 Disarmed Land Mine |q 27536/1
 step
 goto 73.2,14.9
@@ -8930,8 +8959,10 @@ goto 84.0,40.1
 ..accept 27599
 step
 goto 89.8,29.9
+.' Use one of your Silversnap Swim Tonics in your bags to allow you to breathe underwater |use Silversnap Swim Tonic##62795
 .kill 7 Gilblin Stalker##45701+ |q 27598/1
 .clicknpc Deceased Bogpaddle Privateer##46014+
+.|tip They're drowned bodies floating in the water. Use shift+v to mark them and they'll be easy to spot (Use v to mark enemies again).
 .get 6 Steamwheedle Ditty Bag |q 27599/1
 step
 ding 53
@@ -8944,7 +8975,7 @@ goto 84.0,40.1
 step
 goto 83.6,37.9
 .talk 46245
-..' Tell him to load you into that cannon, boy!
+.' Tell him to load you into that cannon, boy!
 .' You will get launched onto a ship |goto 98.8,27.8,0.5 |noway |c
 step
 goto 97.9,25.0
@@ -8964,7 +8995,7 @@ step
 goto 98.1,26.0
 .' Go upstairs
 .click the Landward Cannon##9925
-..' Get in and fire it!
+.' Get in and fire it!
 .' You will be launched to shore |goto 83.9,37.2,0.5 |noway |c
 step
 goto 84.0,40.1
@@ -8974,7 +9005,7 @@ goto 84.0,40.1
 step
 goto 82.8,41.1
 .talk 46503
-..' Tell her that her dad says to fire you across the bay
+.' Tell her that her dad says to fire you across the bay
 .' You will be launched to Stagalbog |goto 69.5,75.6,1.5 |noway |c
 step
 goto 69.1,76.5
@@ -9013,7 +9044,7 @@ step
 goto 72.3,79.3
 .from Stagalbog Serpent##46146+
 .get 5 Intact Stagalbog Serpent Heart |q 27818/1
-.' You can find more Stagalbog Serpents around [84.0,63.1]
+.' You can find more Stagalbog Serpents around [Swamp of Sorrows,84.0,63.1]
 step
 goto 69.1,76.5
 .talk 46172
@@ -9072,13 +9103,14 @@ goto Swamp of Sorrows,69.5,54.5
 step
 goto 49.4,55.3
 .talk 7623
+.|tip He is upstairs in this building
 ..turnin 27871
 ..accept 27852
 ..accept 27853
 step
 goto 63.6,34.8
 .kill 5 Marshtide Peasant##46487+ |q 27853/1
-.' You can find more Marshtide Peasants around [70.5,31.1]
+.' You can find more Marshtide Peasants around [Swamp of Sorrows,70.5,31.1]
 step
 goto 59.6,42.5
 .kill 10 Marshtide Footman##46164+ |q 27852/1
@@ -9100,8 +9132,10 @@ step
 goto 61.8,41.9
 .kill 3 Marshtide Mage##46775+ |q 27855/1
 .kill 6 Marshtide Knight##46414+ |q 27854/1
-.' Use your Banner of the Fallen next to Fallen Stonard Warriors |use Banner of the Fallen##62548 |tip They look like dead orcs laying on the ground around this area.
+.' Use your Banner of the Fallen next to Fallen Stonard Warriors |use Banner of the Fallen##62548
+.|tip They look like dead orcs laying on the ground around this area.
 .' Mark 7 Fallen Stonard Warriors |q 27856/1
+.' You can find Mages at [Swamp of Sorrows,62.7,42.5]
 step
 goto 49.4,55.3
 .talk 7623
@@ -9120,14 +9154,16 @@ goto 49.4,55.3
 step
 goto 21.2,51.7
 .talk 47041
+.|tip She is at the very top of the tower
 ..turnin 27906
 ..accept 27907
 ..accept 27908
 step
 goto 27.6,48.3
 .click Prayerbloom##7791+
+.|tip They look like petals with flower blooming out of them
 .get 10 Prayerblossom |q 27907/1
-.from Shifting Mireglob##46997+ |tip They are blobs in the water all around this area.
+.from Shifting Mireglob##46997+
 .get 10 Invigorated Silt |q 27908/1
 step
 goto 21.2,51.7
@@ -9175,7 +9211,7 @@ goto Azshara,14.4,65.0
 .talk 36728
 .fpath Valormok
 step
-'Go west to Ashenvale |goto Ashenvale |noway |c
+.' Go west to Ashenvale |goto Ashenvale |noway |c
 step
 goto Ashenvale 73.2,61.6
 .talk 12616

@@ -205,7 +205,7 @@ function GearFinder:UpdateCharacterFramePane()
 		if  (slot=="INVTYPE_SHIELD" and not types.SHIELD)
 		or (slot=="INVTYPE_HOLDABLE" and not types.MISCARM)
 		or (slot=="INVTYPE_WEAPONOFFHAND" and not ItemScore.playerdualwield)
-		or (slot=="INVTYPE_WEAPONMAINHAND" and not (types.WAND or types.DAGGER or types.MACE or types.SWORD) )	-- If you use a MH then one can use one of these
+		or (slot=="INVTYPE_WEAPONMAINHAND" and not (types.WAND or types.DAGGER or types.MACE or types.SWORD or types.BOW) )	-- If you use a MH then one can use one of these
 		or (slot=="INVTYPE_2HWEAPON" and not (types.TH_STAFF or types.TH_SWORD) ) --all 2h users can use swords/staffs
 		then
 			-- That slot doesn't apply to us.
@@ -533,6 +533,7 @@ local function getItemButton(name,parent)
 
 		function but:SetSlot(slot)
 			if slot=="INVTYPE_SHIELD" then slot="SHIELDSLOT" end
+			if slot=="INVTYPE_WEAPONMAINHAND" and ItemScore.playerclass == "HUNTER" then slot="INVTYPE_RANGED" end	-- Ranged weapons are stored in WMH, but show the label as ranged for hunters
 			self.Slot:SetText(_G[slot]:upper())
 		end
 
@@ -721,6 +722,7 @@ end
 function GearFinder:AddItem(id,item)
 	if not id then return end
 	if itembase.all[id] then return end --already known
+
 	local slot,slot2 = ItemScore:GetCommonInvType(item.info.equipslot)
 	itembase.all[id]=1
 

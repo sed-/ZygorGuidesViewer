@@ -259,8 +259,10 @@ function AutoEquip:IsItemUpgrade(item)
 	local curBest1 = poss[item.slot1] or cur[item.slot1]
 	local curBest2 = poss[item.slot2] or cur[item.slot2]
 	local myslot
-
-	if ItemScore:IsFishingPole(curBest1 and curBest1.itemid) then return nil end	-- TODO remove this once notification center hits the trunk
+	
+	-- if the current item is a fishing pole or in our exception list just return so we don't suggest those.
+	if ItemScore:IsFishingPole(cur[item.slot1] and cur[item.slot1].itemid) then return nil end	-- TODO remove this once notification center hits the trunk
+	if ItemScore:IsException(cur[item.slot1] and cur[item.slot1].itemid) then return nil end
 
 	-- Time to check if the item is actually better
 	if not item.slot2 then

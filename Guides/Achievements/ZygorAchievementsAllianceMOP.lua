@@ -8496,7 +8496,7 @@ goto Crypt of Forgotten Kings/2 48.7,38.7
 .' He will create red clouds on the ground that move around during the fight which should also be avoided.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Pet Battle System\\The Longest Day",[[
-description This achievement requires that you complete
+description This achievement requires that you complete all of the pet battle daily quests in a single day.
 description
 condition end achieved(8348)
 step
