@@ -3388,6 +3388,11 @@ ZygorGuidesViewer:RegisterInclude("Pandarian_Mining_Herbalism_1-600",[[
 
 
 ZygorGuidesViewer:RegisterInclude("Gear_Collect_Gathering_Alliance",[[
+//ROUTER
+	step
+	label "menu"
+		'Click here to make _Herbalist's Gloves_, which gives you a _+5 bonus to Herbalism_.
+		'Click here to make _Ancient Pandaren Mining Pick_, which gives you 
 //HERBALIST'S GLOVES (ALLIANCE)
 	step
 	label "herbgloves"
@@ -3491,11 +3496,13 @@ ZygorGuidesViewer:RegisterInclude("Gear_Collect_Gathering_Alliance",[[
 	step
 	label "makearmy"
 		.create 1 Gnomish Army Knife##56462,Engineering,1 total
+		|next "menu"
 //FORAGER'S GLOVES
 	step
 		goto Timeless Isle/0 68.5,39.9
 		.from Burning Berserker##72895+
 		..collect Forager's Gloves##86566 |tip This is a rare drop, so you may be grinding for a while.
+		|next "menu"
 ]])
 
 ZygorGuidesViewer:RegisterInclude("Gear_Collect_Gathering_Horde",[[

@@ -12514,6 +12514,7 @@ goto 27.4,74.6
 .click the Runaway Shredder to control it
 .' Capture the Runaway Shredder |q 14129/1
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
+|modelnpc Runaway Shredder##35111
 ..turnin 14129
 ..accept 14134
 step
@@ -12536,6 +12537,7 @@ goto 30.0,76.6
 step
 goto 27.0,77.2
 .' Use your abilities on your hotbar to kill Talrendis Raiders that are attacking
+.|tip You can also use the yellow arrow on your hot bar to get out of the Shredder and kill them normally.
 .kill 20 Talrendis Raider##35177+ |q 14146/1
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 14146
@@ -12545,14 +12547,14 @@ goto 21.5,75.9
 .' Use your abilities on your hotbar to kill the Talrendis Ancient
 .kill Talrendis Ancient##35198 |q 14155/1
 step
-goto 25.5,74.8 |n
-.click the red arrow to stop controlling the Runaway Shredder |outvehicle |c |q 14155
+.' Click the yellow arrow to stop controlling the Runaway Shredder |outvehicle
 step
 goto 25.5,74.8
 .from Weakened Mosshoof Stag##35096+
 .get 15 Slab of Venison |q 14118/1
 .kill 8 Talrendis Scout##35095+ |q 14117/1 |tip They are stealthed all around this area, so keep an eye out for them.
-.' You can find more Talrendis Scouts at [29.8,72.5]
+.' You can find more Talrendis Scouts at [Azshara,29.8,72.5]
+.' And also at [Azshara,31.3,77.2]
 .collect Scout's Orders##47039 |n
 .click the Scout's Orders in your bags |use Scout's Orders##47039
 ..accept 14127
@@ -12582,7 +12584,7 @@ goto Azshara,29.7,66.9
 .talk 35087
 ..turnin 14128 |tip You may not have this breadcrumb quest to turn in, depending on which guides you completed.
 step
-goto 29.2,66.3
+goto 29.3,66.5
 .talk 35085
 ..accept 14197
 step
@@ -12592,15 +12594,16 @@ goto 29.1,66.2
 ..accept 14161
 ..accept 14165
 step
+.' Head down into the mining area |goto 28.1,71.3 <5 |c
+step
 goto 26.7,70.1
 .kill 10 Greystone Basilisk##35245+ |q 14161/1
 .click Iron Ingots |tip They look like silver bars laying on the ground and in the carts around this area.
 .get 20 Mountainfoot Iron |q 14197/1
-.click a Mountainfoot Miner |tip They look like darker goblins standing in place around this area.  Not all of them are clickable, so just search around until you find one you can click.
+.click a Mountainfoot Miner |tip You only need one. They look like darker goblins standing in place around this area.  Not all of them are clickable, so just search around until you find one you can click.
 .' Carry the Mountainfoot Miner |havebuff Interface\Icons\Ability_Warrior_IntensifyRage |q 14165
 step
-goto 25.8,68.6 |n
-.' Follow the path down |goto Azshara,25.8,68.6,0.5 |noway |c
+.' Follow the path up and out |goto Azshara,25.8,68.6,0.5 |c
 step
 goto 29.1,66.2
 .' Stand next to Horzak Zignibble
@@ -12631,7 +12634,9 @@ goto 20.0,70.0
 ..accept 14194
 step
 goto 22.1,68.8
-.' Use The Refleshifier on Mountainfoot Miners |use The Refleshifier##48104 |tip They look like darker goblins standing in place around this area.  You won't be able to select all of them.
+.' Use The Refleshifier on Mountainfoot Miners |use The Refleshifier##48104
+.|tip Use shift+v to mark them and they'll be a lot easier to find (Use v to mark enemies again).
+.|tip They look like darker goblins standing in place around this area.  You won't be able to select all of them.
 .' Destone 8 Mountainfoot Miners |q 14194/1
 step
 ding 13
@@ -12660,20 +12665,22 @@ goto 29.1,57.9
 .talk 36746
 ..accept 14471
 step
-goto 31.3,57.9
+goto 31.2,57.4
+.' This quest is a little buggy.
+.' Get into the Mortar at this location
 .clicknpc Bligewater Mortar##36768 |tip They look like red and white cannons.
-.' Use the Mortar Round ability on your hotbar to shoot the Spitelash Myrmidon nagas to the east, in the valley.
+.' Click and hold the right mouse button, then drag to aim. Use the Mortar Round ability on your hotbar to shoot the Spitelash Myrmidon nagas to the east, in the valley.
+.|tip It will take multiple mortar shots to kill the naga. Fire in the same spot as fast as you can, because the naga will automatically start regenerating health.
 .' Blow 60 Spitelash Attackers to bits |q 14471/1
 step
-.click the red arrow in your hotbar
-|outvehicle |q 14471
+.' Click the yellow arrow on your hotbar |outvehicle
 step
 goto 29.1,57.9
 .talk 36746
 ..turnin 14471
 step
 goto 28.2,55.3
-.clicknpc Dead Soldier##36756+ |tip They look like dead orcs on the ground amongst a ton of land mines. Don't step on the land mines.
+.clicknpc Dead Soldier##36756+ |tip They look like dead orcs and goblins on the ground amongst a ton of land mines. Don't step on the land mines.
 .get 12 Military Supplies |q 14469/1
 step
 goto 27.6,51.9
@@ -12691,7 +12698,9 @@ goto 29.5,57.7
 ..turnin 14469
 step
 goto 31.4,60.6
-.' Use your SFG on an Enslaved Son of Arkkoroc |use SFG##49700 |tip They are walking back and forth around this area.
+.' Use your SFG on an Enslaved Son of Arkkoroc |use SFG##49700
+.|tip They are walking back and forth around this area.
+.|tip Watch out for the lind mines
 .kill Enslaved Son of Arkkoroc##36868 |q 14472/1
 step
 goto 29.4,57.6
@@ -12726,19 +12735,23 @@ step
 goto 34.7,71.6
 .click Ancient Debris Piles and get Recovered Artifacts |tip The Ancient Debris Piles look like half buried pots with green stripes on them around the lake.
 .' Stand next to the Survey Equipment |tip It looks like a small pole with a red handle on it.
+.' Protect the goblin surveyor while the test is conducted
 .' Survey the North Marker |q 14202/2
 step
 goto 37.4,74.6
 .click Ancient Debris Piles and get Recovered Artifacts |tip The Ancient Debris Piles look like half buried pots with green stripes on them around the lake.
 .' Stand next to the Survey Equipment |tip It looks like a small pole with a red handle on it.
+.' Protect the goblin surveyor while the test is conducted
 .' Survey the East Marker |q 14202/3
 step
 goto 34.3,76.7
 .click Ancient Debris Piles and get Recovered Artifacts |tip The Ancient Debris Piles look like half buried pots with green stripes on them around the lake.
 .' Stand next to the Survey Equipment |tip It looks like a small pole with a red handle on it.
+.' Protect the goblin surveyor while the test is conducted
 .' Survey the West Marker |q 14202/1
 step
-'Make sure you have 5 Recovered Artifacts
+.' Make sure you have 5 Recovered Artifacts
+.|tip They look like half buried pots with green stripes on them. You can find them around the lake.
 .get 5 Recovered Artifacts |q 14201/1
 step
 goto 29.7,66.9
@@ -12775,28 +12788,30 @@ goto 29.6,66.9
 step
 goto Azshara,36.4,72.4
 .talk 35567
-..' <Merge with the spirit.>
+.' <Merge with the spirit.>
 .' Explore the Memories of Kalytha |havebuff Interface\Icons\Spell_Shadow_Twilight |q 14215
 step
 goto Azshara,37.5,74.5
 .talk 35595
-..' Tell her you will hide the stone
+.' Tell her you will hide the stone
 .' Learn Kalytha's Secret |q 14215/1
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 14215
 ..accept 14216
 step
 goto Azshara,35.6,75.3
-.click the Ancient Stone Cask |tip It's a half-buried stone box underwater.
+.click the Ancient Stone Cask |tip It's underwater in a a half-buried stone box.
 .get Sarcen Stone |q 14216/1
 step
 goto Azshara,29.7,66.9
 .talk 35087
 ..turnin 14216
 step
+.' Wait for the elevator and ride it up to the top of this tower |goto 29.4,66.6 <5 |c
+step
 goto Azshara,29.5,66.2
 .talk 43217
-..' Tell him Southern Rocketway Terminus, please
+.' Tell him Southern Rocketway Terminus please
 .' Ride the rocket to the Southern Rocketway Terminus |goto Azshara,51.0,74.1,1.5 |noway |c
 step
 goto Azshara,50.4,74.3
@@ -12899,6 +12914,7 @@ goto Azshara,39.7,77.9
 .get 5 Azsharite Sample |q 14370/1
 .from Mistwing Cliffdweller##36304+
 .get 8 Mutilated Mistwing Carcass |q 14371/1
+.' You can find more of both of these around [Azshara,43.0,81.5]
 step
 goto Azshara,50.4,74.3
 .talk 39199
@@ -12908,7 +12924,7 @@ goto Azshara,50.4,74.3
 step
 goto Azshara,47.7,75.5
 .talk 36297
-..' Tell him you brought him something to eat.
+.' Tell him you brought him something to eat.
 .' Discover the Secret of Azsharite |q 14377/1
 step
 goto Azshara,50.4,74.3
@@ -12940,7 +12956,7 @@ step
 goto Azshara,56.8,76.0
 .kill 6 Spitelash Stormfury##35831+ |q 14262/1
 .kill 6 Spitelash Seacaller##35832+ |q 14262/2
-.' You can find more around [55.1,76.9]
+.' You can find more around [Azshara,55.1,76.9]
 step
 goto Azshara,50.7,75.3
 .talk 35657
@@ -12950,10 +12966,12 @@ goto Azshara,50.7,75.3
 step
 goto Azshara,63.2,75.9
 .clicknpc Silisthra's Power Stone##35892
+.|tip Clicking this makes Silisthra no longer elite. Run past her and click it.
 .kill Lady Silisthra##35880 |q 14295/1
 step
 goto Azshara,63.7,79.4
 .clicknpc Vesthra's Power Stone##35968
+.|tip Clicking this makes Vesthra no longer elite. Run past her and click it.
 .kill Lady Vesthra##35881 |q 14295/2
 step
 ding 16
@@ -12962,15 +12980,16 @@ goto Azshara,50.7,75.3
 .talk 35657
 ..turnin 14295
 step
-goto 47.1,79.8 |n
-.' Follow the path down |goto 47.1,79.8,0.5 |noway |c
+.' Follow the path down |goto 45.8,81.8,0.5 |c
 step
 goto Azshara,39.8,84.7
 .kill Bingham Gadgetspring##36407 |q 14383/1
+.|tip He is inside this weird tower building
 step
 goto Azshara,39.9,84.8
 .' Ride the elevator up
 .click Giant-Sized Laxative##9118
+.|tip It's a large brown box sitting on a table
 .get Giant-Sized Laxative |q 14385/2
 step
 goto Azshara,40.1,84.0
@@ -12982,7 +13001,7 @@ goto Azshara,41.1,83.8 |n
 step
 goto Azshara,47.7,75.5
 .talk 36297
-..' Tell him to eat the special chocolate rock
+.' Tell him to eat the special chocolate rock
 .' Try to Feed Gormungan |q 14385/1
 step
 goto Azshara,50.4,74.3
@@ -12992,16 +13011,16 @@ goto Azshara,50.4,74.3
 step
 goto Azshara,50.4,74.3
 .talk 39199
-..' Tell her to shrink you
+.' Tell her to shrink you
 .' Become mouse-sized! |havebuff Interface\Icons\Spell_Fire_ElementalDevastation
 step
 goto Azshara,50.3,74.4
-.clicknpc Rocketway Rat##36437
-|invehicle |q 14388
+.' Click Rocketway Rat |invehicle
+|modelnpc Rocketway Rat##36437
 step
 goto Azshara,47.7,75.5
 .talk 36297
-..' SQUEAK!!
+.' SQUEAK!!
 .' Scare Gormungan |q 14388/1
 step
 goto Azshara,50.4,74.3
@@ -13015,6 +13034,7 @@ goto Azshara,50.5,74.7
 step
 goto 57.0,50.1
 .click Wrenchmen Recruitment Poster##9584
+.|tip It is hanging on the wall inside this big building
 ..accept 14478
 step
 goto Azshara,57.1,50.4
@@ -13041,6 +13061,7 @@ goto Azshara,58.1,52.3
 step
 goto Azshara,55.5,52.1
 .talk 35867
+.|tip He is standing underneath a small bridge
 ..turnin 14407
 ..accept 14130
 step
@@ -13069,7 +13090,7 @@ goto Azshara,43.9,59.9
 .' Use your Flag of Territorial Claim in the blue light |use Flag of Territorial Claim##49685
 .' Claim the Southern Pagoda |q 24437/1
 step
-goto Azshara,41.2,52.0
+goto Azshara,40.0,51.8
 .' Use your Sanctified Flaregun on Wounded Soldier |use Sanctified Flaregun##49679 |tip They look like dead goblins on the ground around this area.
 .' Rescue 8 Wounded Soldier |q 24436/1
 |modelnpc Wounded Soldier##36922
@@ -13082,7 +13103,7 @@ goto Azshara,45.5,38.5
 .' Use your Flag of Territorial Claim in the blue light |use Flag of Territorial Claim##49685
 .' Claim the Northern Vista |q 24437/3
 step
-goto Azshara,41.2,52.0
+goto Azshara,44.6,39.9
 .from Spitelash Warrior##6190+, Spitelash Siren##6195+ |q 24435/1
 step
 ding 17
@@ -13126,14 +13147,15 @@ goto Azshara,36.0,47.6
 .' Stand next to the Spitelash Runestone |tip It looks like a tall stone statue with pink light at the base of it.
 .' Destroy the Spitelash Runestone
 .' You can find 2 more Spitelash Runestones:
-.' at [34.3,48.2]
-.' at [34.1,51.6]
+.' at [Azshara,34.3,48.2]
+.' at [Azshara,34.1,51.6]
 .' Destroy 3 Spitelash Runestones |q 14485/1
 .click Highborne Tablet##2651+
 step
 goto Azshara,33.3,49.9
 .' Use your Gob Squad Flare to get a team of goblins to help you |use Gob Squad Flare##49629 |tip You can use your Gob Squad Flare every minute, so you'll always have a team helping you.
 .click Highborne Tablet##2651+
+.|tip Small square rock tablets sticking out of the ground
 .get 12 Highborne Tablet |q 14486/1
 step
 goto Azshara,31.9,50.1
@@ -13171,6 +13193,10 @@ goto Azshara,34.3,44.9
 .talk 36745
 ..accept 24449
 step
+goto 34.5,44.6
+.clicknpc Military Gyrocopter##37145
+.' Ride the Gyrocopter back to Bilgewater Harbor |goto 60.1,50.3 <5 |c
+step
 goto Azshara,60.6,50.5
 .talk 36959
 ..turnin 24449
@@ -13179,8 +13205,15 @@ ding 18
 step
 goto 50.7,74.2
 .talk 43217
-..' Tell him Northern Rocketway Terminus, please
+.' Tell him Northern Rocketway Terminus, please
+.|tip Doing this will give you an achievement for riding the Rocketway
 .' Ride the rocket to the Northern Rocketway Terminus |goto 66.5,21.0,0.5 |noway |c
+step
+.' Wait for the elevator and ride it to the top |goto 66.2,21.3 <5 |c
+step
+goto Azshara 66.5,20.9
+.talk 43328
+..fpath Bitter Reaches
 step
 goto 69.7,26.2 |n
 .' Follow the path down |goto 69.7,26.2,0.5 |noway |c
@@ -13194,6 +13227,7 @@ goto Azshara,70.4,36.2
 step
 goto Azshara,77.6,36.5
 .' Run around and get near to Vile Splashes to absorb them |modelnpc Vile Splash##36131
+.|tip They are small water elementals all around this area.
 .get 20 Simmering Water Droplet |q 14323/1
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 14323
@@ -13206,8 +13240,10 @@ goto Azshara,81.3,30.7
 step
 goto Azshara,71.9,36.1
 .click Kawphi Plant##7816+
+.|tip Small green and brown plants
 .get 10 Kawphi Bean |q 14131/1
 .from Makrinni Scrabbler##6370+ |q 14132/1
+.' You can find more of these at [Azshara,70.0,31.1]
 step
 goto Azshara,70.4,36.2
 .talk 35142
@@ -13233,6 +13269,7 @@ step
 goto 38.4,26.6
 .kill 8 Talrendis Biologist##36611+ |q 14431/1
 .get Blackmaw Intelligence |q 14431/2
+.' You can find more at [Azshara,37.3,33.8]
 step
 goto 42.4,23.6
 .talk 8586
@@ -13243,7 +13280,7 @@ step
 goto 47.7,18.6 |n
 .' Follow the path up |goto 47.7,18.6,0.5 |noway |c
 step
-'Put on your Dingy Wizard Hat |use Dingy Wizard Hat##49201
+.' Put on your Dingy Wizard Hat |use Dingy Wizard Hat##49201
 .' Convey the appearance of quite a convincing mage |havebuff INTERFACE\ICONS\inv_helmet_29 |q 14340
 step
 goto Azshara,47.2,20.9
@@ -13263,14 +13300,20 @@ goto Azshara,47.3,21.2
 .talk 35755
 ..accept 14250
 step
+.' Don't forget to equip your headpiece again, if you have one
+|confirm
+step
 goto Azshara,49.2,18.8
 .from Thunderhead Hippogryph##6375+, Thunderhead Stagwing##6377+
 .get 80 Pristine Thunderhead Feather |q 14249/1
 .click Living Ire Thyme##7844+
+.|tip These are small clusters of golden leaves on the ground
 .get 8 Living Ire Thyme |q 14263/1
+.' You can find more of both of these at [Azshara,44.1,16.6]
 step
-goto Azshara,48.7,18.4
+goto Azshara,46.8,16.2
 .' Find Balboa |modelnpc Balboa##35759
+.|tip He walks up and down this road. If he's not in view just head east along the road.
 .' Use your Arcane Charge in the road in front of Balboa |use Arcane Charge##49038 |tip Balboa will walk over the charge and spawn 5 Animate Besalt Chunks.
 .click Animate Besalt Chunks##312
 .get 5 Animate Besalt |q 14250/1
@@ -13297,7 +13340,7 @@ goto Azshara,53.0,29.0
 step
 goto Azshara,53.0,30.0
 .talk 36599
-..' Tell it Al'teth ... la c'tolgar
+.' Tell it Al'teth ... la c'tolgar
 .' Hack the Arcane Construct |q 14430/1
 step
 goto 48.4,19.8 |n
@@ -13326,10 +13369,12 @@ step
 goto 55.2,25.2
 .click Stolen Manual##6908
 .get Abjurer's Manual |q 14230/1
-.' Use the Personal Arcane Assistant's Polymorph Insect ability on the Legashi satyrs around this area
+.' Use the Personal Arcane Assistant's Polymorph Insect ability on the Legashi satyrs around this area |petaction 1
 .kill 12 Polymorphed Cockroach##35628+ |q 14226/1
+.' You can find more satyrs to polymorph at [Azshara,53.1,20.9]
 step
-'Use the Personal Arcane Assistant's Return to Camp ability to return to Xylem's camp |goto Azshara,47.1,20.3,0.5 |noway |c |q 14226
+.' Use the Personal Arcane Assistant's Return to Camp ability to return to Xylem's camp |cast Return to Camp##68945
+.' Return to camp |goto Azshara,47.1,20.3,0.5 |noway |c
 step
 goto Azshara,47.2,20.9
 .talk 35187
@@ -13354,7 +13399,7 @@ goto Azshara,55.7,14.8
 .' Get the Energized buff 6 times
 |confirm
 step
-'Run to the sparkling circles on the ground |tip You will shoot up to another ledge on the island.
+.' Run to the sparkling circles on the ground |tip You will shoot up to another ledge on the island.
 .' Keep running to the sparkling circles on the ground and click the Energy Conduits on some of the ledges to keep your Energized buff at 6 charges
 .' Reach the top of the island
 .' Complete the Arcane Trial |q 14296/1
@@ -13367,55 +13412,59 @@ goto Azshara,55.9,12.2
 ..accept 24479
 step
 goto Azshara,56.0,11.9
-.click the Frost Portal Stone |tip It's a floating crystal with a blue ring around it.
-.click the Icy Morality swirling portal next to you |goto Azshara,62.1,21.2,0.5 |noway |c |q 24478
-|confirm
+.' Click the Frost Portal Stone |tip It's the floating crystal on the left.
+.' Click the Icy Morality swirling portal next to you |goto Azshara,62.1,21.2,0.5 |noway |c
+.|tip It's the big portal next to the crystals
 step
-'Run around on top of the mountain and get next to the floating white orbs. |tip Don't step on the snowy ground and try not to let the blue mist hit you, if you can.  It will help to dismiss your pet, if you have one.  Take your time and stay on the outskirts, don't go in the middle at all.
-.' Gather 20 of the white orbs |tip You'll see how many you've gathered as a buff that stacks.
+.' Run around on top of the mountain and get next to the floating white orbs. |tip Don't step on the snowy ground and try not to let the blue mist hit you, if you can.  It will help to dismiss your pet, if you have one.  Take your time and stay on the outskirts, don't go in the middle at all.
+.' Gather 20 of the white orbs |tip You'll see how many you've gathered as a debuff that stacks.
 .' Complete the Trial of Frost |q 24478/1
 step
 goto Azshara,62.2,21.1
 .talk 36336
 ..turnin 24478
 step
-goto Azshara,62.1,21.2 |n
-.click the Waning Sanity swirling portal |goto Azshara,56.2,12.1,0.5 |noway |c
-step
-goto Azshara,56.1,11.9
-.click the Fire Portal Stone |tip It's a floating crystal with an orange ring around it.
-.click the Burning Determination swirling portal next to you |goto Azshara,32.9,23.4,0.5 |noway |c |q 14300
+goto 62.1,21.2
+.' Click the Waning Sanity swirling portal to leave the Trial of Frost
 |confirm
 step
-'You have to stand on the red fire runes without getting hit by fire 10 times in a row. |tip You can see which runes will shoot fire up because they will have a little flame in their center a few seconds before the fire shoots up.  You need to run to a fire rune that doesn't have the little flame in the center.  Do this 10 times.
+goto Azshara,56.1,11.9
+.' Click the Fire Portal Stone |tip It's the floating crystal in the middle.
+.' Click the Burning Determination swirling portal next to you |goto Azshara,32.9,23.4,0.5 |noway |c
+.|tip It's the big portal next to the crystals
+step
+.' You have to stand on the red fire runes without getting hit by fire 10 times in a row.
+.' You should see an npc, Darwin, dancing around the fire runes. You can follow him around too, he's pretty good at this Trial.
+.|tip You can see which runes will shoot fire up because they will have a little flame in their center a few seconds before the fire shoots up.  You need to run to a fire rune that doesn't have the little flame in the center.  Do this 10 times.
 .' Complete the Trial of Fire |q 14300/1
+|modelnpc Darwin##36368
 step
 goto Azshara,33.0,23.6
 .talk 36335
 ..turnin 14300
 step
-goto Azshara,32.8,23.4 |n
-.click the Waning Sanity swirling portal |goto Azshara,56.2,12.1,0.5 |noway |c
+goto 32.9,23.4
+.' Click the Waning Sanity swirling portal to leave the Trial of Fire
 |confirm
 step
 ding 20
 step
 goto Azshara,56.1,11.9
-.click the Shadow Portal Stone |tip It's a floating crystal with a purple ring around it.
-.click the Grim Intention swirling portal next to you |goto Azshara,31.2,26.7,0.5 |noway |c |q 24479
-|confirm
+.' Click the Shadow Portal Stone |tip It's the floating crystal on the right.
+.' Click the Grim Intention swirling portal next to you |goto Azshara,31.2,26.7,0.5 |noway |c
+.|tip It's the big portal next to the crystals
 step
 goto Azshara,30.8,27.3
-.click the Touch to Begin crystal |tip It's a big floating purple crystal.
-.' You have to lure 20 Weeping Souls into the purple shadow runes on the ground without getting hit. |tip A shadow will shoot out of you and you can see it on the ground heading to one of the portals.  Position yourself so that the Weeping Souls that come out of the portals have to walk over the shadow runes on the ground in order to get to you.  You'll have to move every so often to make sure they have to walk over the runes.
+.' Click the Touch to Begin crystal |tip It's a big floating purple crystal.
+.' You have to lure 20 Weeping Souls into the purple shadow runes on the ground without getting hit. |tip A shadow will shoot out of you and you can see it on the ground heading to one of the portals.  Position yourself so that the Weeping Souls that come out of the portals have to walk over the shadow runes on the ground in order to get to you.  You'll have to move fairly often because more than one will come at you at the same time.
 .' Complete the Trial of Shadow |q 24479/1
 step
 goto Azshara,31.1,26.8
 .talk 36337
 ..turnin 24479
 step
-goto Azshara,31.2,26.6 |n
-.click the Waning Sanity swirling portal |goto Azshara,56.2,12.1,0.5 |noway |c
+goto 31.2,26.7
+.' Click the Waning Sanity swirling portal to leave the Trial of Shadow
 |confirm
 step
 goto Azshara,55.9,12.2
@@ -13423,7 +13472,7 @@ goto Azshara,55.9,12.2
 ..accept 14299
 step
 goto Azshara,56.2,12.1 |n
-.click the Xylem's Retreat swirling portal |goto Azshara,22.5,43.6,0.5 |noway |c |q 14299
+.' Click the Xylem's Retreat swirling portal |goto Azshara,22.5,43.6,0.5 |noway |c |q 14299
 step
 goto 22.6,41.7 |n
 .' Follow the path up |goto 22.6,41.7,0.5 |noway |c
@@ -13434,7 +13483,7 @@ goto Azshara,25.6,38.0
 ..accept 14389
 step
 goto Azshara,25.7,38.0 |n
-.click the Ambitious Reach portal |goto Azshara,27.8,41.0,0.5 |noway |c |tip You will die, it's part of the quest.
+.' Click the Ambitious Reach portal |goto Azshara,27.8,41.0,0.5 |noway |c |tip You will die, it's part of the quest.
 step
 goto Azshara,27.8,40.6
 .' Find Anara, and hopefully, Azuregos |q 14389/1
@@ -13446,7 +13495,7 @@ goto Azshara,27.9,40.1
 step
 goto Azshara,27.9,40.1
 .talk 36436
-..' Tell him Kalec sent you
+.' Tell him Kalec sent you
 .' Convince Azuregos to meet with Kalecgos |q 14390/1
 step
 goto Azshara,27.9,40.1
@@ -13456,11 +13505,12 @@ goto Azshara,27.9,40.1
 step
 goto Azshara,27.6,39.6
 .talk 37040
-..' Ask her to return you back to life
+.' Ask her to return you back to life
 .' Return back to life |nobuff Interface\Icons\Ability_Vanish |c |q 14391
 step
 goto Azshara,29.8,38.6
 .click the Important Documents##9130
+.|tip They are sitting on a cage
 .get Blackmaw Meeting Agenda |q 14433/1
 step
 goto Azshara,30.2,38.6
@@ -13470,9 +13520,11 @@ goto Azshara,30.2,38.6
 .click Briaroot Brews |tip They look like bowls with yellow liquid in them all around this village.
 .get 10 Briaroot Brew |q 14432/1
 step
+.' Wait for the elevator and then ride it to the top |goto 26.3,49.6 <5 |c
+step
 goto Azshara,25.9,49.6
 .talk 43217
-..' Ask him to go to the Northern Rocketway Exchange, please |goto Azshara,42.8,24.7,3.0 |noway |c
+.' Ask him to go to the Northern Rocketway Exchange, please |goto Azshara,42.8,24.7,3.0 |noway |c
 step
 goto Azshara,42.6,23.7
 .talk 36596
@@ -13487,11 +13539,11 @@ step
 goto Azshara,42.6,23.7
 .' Use your Ambassador Disguise |use Ambassador Disguise##49368
 .talk 36596
-..' Tell him you are ready to teleport to Blackmaw Hold |goto Azshara,31.2,29.9,0.5 |noway |c |q 14435
+.' Tell him you are ready to teleport to Blackmaw Hold |goto Azshara,31.2,29.9,0.5 |noway |c |q 14435
 step
 goto Azshara,31.0,30.0
 .talk 36618
-..' Choose any of the funny conversation options
+.' Choose any of the funny conversation options
 .' Sabotage the Negotiations |q 14435/1
 step
 goto Azshara,32.5,31.8
@@ -13505,11 +13557,7 @@ goto Azshara,42.4,23.6
 step
 goto Azshara,42.5,24.6
 .talk 43217
-..' Ask him to go to the Northern Rocketway Terminus, please |goto Azshara,66.3,20.8,3.0 |noway |c
-step
-goto Azshara 66.4,20.8
-.talk 43328
-.fpath Northern Rocketway Terminus
+.' Ask him to go to the Northern Rocketway Terminus, please |goto Azshara,66.3,20.8,3.0 |noway |c
 step
 goto Azshara,66.6,20.4
 .talk 35867
@@ -13529,6 +13577,7 @@ goto Azshara,69.1,15.3 |n
 step
 goto Azshara,71.6,16.7
 .kill Twilight Lord Katrana##36638 |q 24467/1
+.|tip If you're a high level, don't kill her too fast. If you do Azuregos will not come.
 .kill Malicion##36649 |q 24467/2 |tip Azuregos will come and kill Malicion for you, don't worry.
 step
 goto Azshara,71.8,16.7
@@ -13555,6 +13604,12 @@ step
 goto Azshara,67.0,20.5
 .talk 36676
 ..accept 14392
+step
+.' Wait for the elevator and take it up |goto 66.2,21.4 <5 |c
+step
+goto Azshara 66.5,21.0
+.talk 43328
+.' Take a flight to Bilgewater Harbor |goto 53.0,49.9 <5 |c
 step
 goto Azshara,53.3,50.0
 .talk 36210
@@ -13600,6 +13655,7 @@ goto Azshara,11.8,68.2
 .from Captain Grunwald##36680
 .get Grunwald's Head |q 14464/1
 .click Sharshiv's Parachute after the fight
+.|tip Slinky is wearing it on her back.
 .' You'll parachute down to the ground |goto Azshara,14.1,65.2,0.5 |noway |c |q 14464
 step
 goto Azshara,14.0,64.8
@@ -13616,14 +13672,17 @@ goto Azshara,14.5,75.6
 step
 goto Azshara,15.0,74.3
 .click Detonator Charge 1##6811
+.|tip Outside on the ground, to the left of the main door.
 .' Arm Detonator Charge 1 |q 14476/1
 step
 goto Azshara,15.5,73.7
 .click Detonator Charge 2##6811
+.|tip Outside, sitting at the back of the building
 .' Arm Detonator Charge 2 |q 14476/2
 step
 goto Azshara,15.6,74.5
 .click Detonator Charge 3##6811
+.|tip Outside, sitting on the right side of the building
 .' Arm Detonator Charge 3 |q 14476/3
 step
 goto Azshara,14.5,75.6
@@ -13664,8 +13723,7 @@ step
 ding 22
 step
 goto Azshara,14.4,65.8
-.click the Grounded Wind Rider to ride it |invehicle |c |q 24430
-|confirm
+.' Click the Grounded Wind Rider to ride it |invehicle
 step
 goto Azshara,15.9,69.9
 .' Fly high so they won't shoot at you
@@ -13674,11 +13732,11 @@ goto Azshara,15.9,69.9
 step
 goto Azshara,9.2,72.9
 .' Fly high so they won't shoot at you
-.' Use your Bomb Toss ability on your hotbar to bomb the Command Center |tip It's a big building with a pink-ish roof.
+.' Use your Bomb Toss ability on your hotbar to bomb the Command Center |tip It's a big building with a purple roof.
 .' Bomb the Command Center |q 24430/2
 step
 goto Azshara,14.5,65.7
-.click the red arrow on your hotbar to stop riding the Wind Rider |outvehicle |c |q 24430
+.' Click the red arrow on your hotbar to stop riding the Wind Rider |outvehicle
 step
 goto Azshara,14.5,65.7
 .talk 36903
@@ -13690,12 +13748,13 @@ goto Azshara,14.0,64.8
 step
 goto Azshara,9.1,72.8
 .from Commander Jarrodenus##36884
+.|tip He is upstairs in this building
 .get The Head of Jarrodenus |q 24439/1
 step
 goto Azshara,10.5,69.9
 .clicknpc Lorekeeper's Summoning Stone##36918
-..' <Use the stone to teleport back to Valormok.>
-..' Teleport back to Valormok |goto Azshara,13.9,64.9,0.5 |noway |c
+.' <Use the stone to teleport back to Valormok.>
+.' Teleport back to Valormok |goto Azshara,13.9,64.9,0.5 |noway |c
 step
 goto Azshara,14.0,64.8
 .talk 36730
@@ -13709,10 +13768,11 @@ goto Ashenvale,94.4,46.8
 .talk 34195
 ..turnin 24463
 ..accept 13866
+.|tip You won't be able to get this quest if your level is too high
 step
 goto Ashenvale,94.4,46.8
 .talk 34195
-..' Ask him to send you to the Mor'shan Ramparts |goto Northern Barrens,42.7,15.3,0.5 |noway |c |q 13866
+.' Ask him to send you to the Mor'shan Ramparts |goto Northern Barrens,42.7,15.3,0.5 |noway |c |q 13866
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Kalimdor 1-60\\Ashenvale (20-26)\\Ashenvale (20-23)",[[
 author support@zygorguides.com
@@ -14927,6 +14987,7 @@ goto 69.2,21.2
 step
 goto 62.3,24.1
 .click Element 116##384
+.|tip Small pink rocks with a dust cloud around them
 .get 7 Element 116 |q 14254/1
 step
 goto 61.0,29.0
@@ -14966,7 +15027,9 @@ ding 32
 step
 goto 78.7,18.7
 .click Melonfruit##434
+.|tip Small green fruits. They fall down from trees and lay on the ground.
 .collect 8 Melonfruit##48106 |q 14360
+.' If you can't find enough try looking around the trees at [Desolace,73.4,16.1]
 step
 goto 77.0,18.1
 .' Use your Melonfruit |use Melonfruit##48106
@@ -14976,9 +15039,11 @@ goto 77.0,18.1
 ..accept 14195
 step
 goto 76.3,23.7
+.from .from Hatefury Trickster##4671+, Hatefury Felsworn##4672+, Hatefury Betrayer##4673+
 .click Weapon Rack##130+
+.|tip Wooden racks with spears on them. You can find them around the Satyr camps in this area.
 .collect 20 Satyr Saber##48943 |q 14219
-.' You can find more Weapon Racks around [72.1,19.1]
+.' You can find more Weapon Racks around [Desolace,72.1,19.1]
 step
 goto 76.3,23.7
 .from Hatefury Trickster##4671+, Hatefury Felsworn##4672+, Hatefury Betrayer##4673+, Hatefury Rogue##4670+, Hatefury Hellcaller##4675+, Hatefury Shadowstalker##4674+
@@ -14999,8 +15064,8 @@ step
 goto 75.2,17.6
 .' Use your Vortex Gem |use Vortex Gem##48110
 .from Disciple of Elune##35384+
-.' Create Raging Vortex |q 14196/1 |tip You need to kill 7 Disciples of Elune while your Vortex is out to make it grow into a Raging Vortex.
-.' You can find more Disciples of Elune around [77.1,18.1]
+.' Create Raging Vortex |q 14196/1 |tip You need to kill Disciples of Elune while your Vortex is out to make it grow into a Raging Vortex.
+.' You can find more Disciples of Elune around [Desolace,77.1,18.1]
 .click on the Complete Quest Box that appears under your mini map.
 ..turnin 14196
 ..accept 14198
@@ -15029,8 +15094,8 @@ goto 67.7,17.1
 .' Slay 15 Nijel's Point Merchants |q 14198/2
 .' Slay 40 Nijel's Point Defenders |q 14198/1
 step
-'Use your Calm the Storm spell to exit the Raging Vortex
-.' You will fly back to Furien's Post |outvehicle |c |q 14198
+.' Use your Calm the Storm spell to exit the Raging Vortex |cast Calm the Storm##67692
+.' You will fly back to Furien's Post |outvehicle
 step
 goto 44.6,29.4
 .talk 35295
@@ -15065,7 +15130,9 @@ goto 52.9,29.0
 ..accept 14227
 step
 goto 55.0,26.7
+.' Head into this building. There are many piles of skulls in the main room.
 .click Bleached Skullpiles##293
+.|tip Piles of skulls on the ground
 .collect 100 Bleached Skull##48953 |q 14227
 step
 goto 55.0,26.7
@@ -15094,7 +15161,7 @@ goto 38.8,27.0
 step
 goto 38.8,27.0
 .talk 35773
-..' Tell him you are ready to be shown the threat he speaks of.
+.' Tell him you are ready to be shown the threat he speaks of.
 .' Scout the Naga Forces |q 14256/1
 step
 goto 38.8,27.0
@@ -15104,7 +15171,7 @@ goto 38.8,27.0
 step
 goto Desolace/0 39.1,27.0
 .talk 35562
-.fpath Ether Rethor
+.fpath Ethel Rethor
 step
 ding 33
 step
@@ -15115,7 +15182,8 @@ goto 41.6,25.4
 .get 30 Slitherblade Scale |q 14257/2
 .from Slitherblade Warrior##4713+
 .get 4 Slitherblade Fin |q 14257/3
-.' You can find more of these around [37.5,24.9]
+.' You can find more of these around [Desolace,37.5,24.9]
+.' And also around [Desolace,38.0,32.6]
 step
 goto 41.1,29.0 |n
 .' Follow the path up |goto 41.1,29.0,0.5 |noway |c
@@ -15137,6 +15205,7 @@ goto 30.9,30.9
 step
 goto 33.1,16.7
 .from Servant of Neptulon##35842+
+.|tip Keep them rooted with your Entangle ability, and then spam Throw Trident to kill them
 .' Defeat 5 Servants of Neptulon |q 14264/1
 step
 goto 30.9,30.9
@@ -15146,13 +15215,19 @@ goto 30.9,30.9
 step
 goto 29.2,15.0
 .' Use your Shatter Rubble ability to shoot Piles of Rubble around this area |tip Just spam your 4 key, you don't have to target the rubble.
+.' Swim between these two points while you spam your 4 key [Desolace,36.9,13.3]
+.' You'll know you shattered rubble if you see your character throw an ice trident
 .collect 4 Ancient Tablet Fragment##49102 |q 14268
+.|tip You won't get a working one every time you click on the fragments
 .' Use your Ancient Tablet Fragments |use Ancient Tablet Fragment##49102
 .get Ancient Engravings of Neptulon |q 14268/1
 .click on the Complete Quest Box that appears under your mini map.
 ..turnin 14268
 ..accept 14282
 |model Ancient Tablet Fragment
+step
+.' You can right click the Naga Disguise buff in the upper right coner of your screen to remove it
+|confirm
 step
 goto 41.1,29.0 |n
 .' Follow this path up |goto 41.1,29.0,0.5 |noway |c
@@ -15174,7 +15249,8 @@ step
 .' Use your abilities to kill Valishj
 .from Valishj##35898
 .' Slay Valishj |q 14284/1
-.click the red arrow on your hotbar to stop controling Lord Hydronis |outvehicle |c
+step
+.' Click the red arrow on your hotbar to stop controling Lord Hydronis |outvehicle
 step
 goto 29.1,8.1
 .talk 35902
@@ -15219,18 +15295,22 @@ goto 58.8,46.4
 ..accept 14304
 step
 goto 57.4,39.3
-.' Use your Bottle of Leeches on Rejuvenated Thunder Lizards in this area, then kill them to spawn Blood-Filled Leeches |use Bottle of Leeches##49138
+.' Use your Bottle of Leeches on Rejuvenated Thunder Lizards |use Bottle of Leeches##49138
+.|tip Use the Bottles of Leeches on the Lizards, then kill them to spawn a Blood-Filled Leech
+.kill Rejuvenated Thunder Lizard##35412
+.click Blood-Filled Leech##49136
 .collect 10 Blood-Filled Leech##49136 |q 14304
-.' You can find more Rejuvenated Thunder Lizards around here [52.8,45.1]
-|modelnpc Rejuvenated Thunder Lizard##35412
+.' You can find more Rejuvenated Thunder Lizards around here [Desolace,52.8,45.1]
 step
 goto 51.6,45.6
 .from Uprooted Lasher##36062+
 .' Slay 7 Uprooted Lashers |q 14306/1
+.' More Lashers can be found at [Desolace,58.9,40.1]
 step
 goto 48.1,40.2
 .from Whirlwind Stormwalker##11577+
 .' Destroy 5 Whirlwind Stormwalkers |q 14307/1
+.' More can be found at [Desolace,45.5,46.3]
 step
 ding 34
 step
@@ -15251,9 +15331,9 @@ goto 56.2,59.6
 ..accept 5581
 step
 goto 53.5,59.6
-.click on Aloe Thistle |tip They look like dark green spiny plants around this area.
+.click on Aloe Thistle |tip They look like blue-green spiny plants around this area.
 .get 10 Aloe Thistle |q 14305/1
-.' You can find more Aloe Thistle around here [53.6,46.8]
+.' You can find more Aloe Thistle around here [Desolace,53.6,46.8]
 .from Dying Kodo##4701+
 .get 3 Hollow Kodo Horn |q 14339/1
 step
@@ -15273,15 +15353,15 @@ goto 57.5,47.7
 step
 goto 57.6,47.7
 .clicknpc Grimfeather##36227
-.' Mount Grimfeather |invehicle |c
+.' Mount Grimfeather |invehicle
 step
-'As you fly:
+.' As you fly:
 .' Use your Throw Concoction ability on the mobs below
 .' Defeat 10 Slitherblade Sirens |q 14346/2
 .' Defeat 3 Sea Giants |q 14346/3
 .' Defeat 10 Slitherblade Invaders |q 14346/4
 step
-'Use your Fly Home ability to return to Karnum's Grove |outvehicle |c |q 14346
+.' Use your Fly Home ability to return to Karnum's Grove |goto 57.0,47.8 <5 |c
 step
 goto 57.5,47.7
 .talk 36034
@@ -15304,10 +15384,11 @@ goto 62.3,39.0
 step
 goto 60.9,58.7
 .click on your Cenarion Seeds while standing next to patches of dirt in this area |use Cenarion Seeds##49150
+.|tip They look like small brown mounds of dirt
 .' Plant Cenarion Seeds |q 14311/1
 .' Use Soothing Broth near Enraged Kodo in this area |use Soothing Broth##49144
 .' Calm 5 Enraged Kodo |q 14309/1
-.' You can find more Enraged Kodo here [58.0,58.9]
+.' You can find more Enraged Kodo here [Desolace,63.8,57.0]
 |modelnpc Enraged Kodo##36094
 step
 goto 60.9,61.9
@@ -15315,16 +15396,16 @@ goto 60.9,61.9
 ..turnin 14341
 ..accept 5561
 step
-goto 54.3,52.8 |n
-.' Enter the Kodo Graveyard here |goto 54.3,52.8,0.5 |noway |c
+.' Enter the Kodo Graveyard here |goto 54.3,52.8,0.5 |c
 step
 goto 52.2,58.6
 .click Kodo Bone##4453
+.|tip They are big bone skulls
 .get 10 Kodo Bone |q 5501/1
 step
 goto 52.2,58.6
 .' Use your Kodo Kombobulator on Ancient or Aged Kodo |use Kodo Kombobulator##13892
-.' Lead the kodo to [60.8,61.9] |tip They will follow you here once you get here you will need to inspect the Kodo
+.' Lead the kodo to [Desolace,60.8,61.9] |tip They will follow you here once you get here you will need to inspect the Kodo
 .' Tame 3 Kodo |q 5561/1
 |modelnpc Aged Kodo##4700
 |modelnpc Ancient Kodo##4702
@@ -15360,6 +15441,7 @@ goto 62.3,39.0
 step
 goto 70.0,48.2
 .click Cenarion Supply Crate##6035+
+.|tip You can tell if a tent has a Crate in it by mousing over the tent. Your cursor will still turn into the cog even through the tent.
 .get 7 Cenarion Supply Crate |q 14316/1
 step
 goto 71.5,56.0
@@ -15382,10 +15464,10 @@ goto 58.3,50.1
 step
 goto 58.3,50.1
 .talk 36056
-.' Tell him you are ready to do battle with the Magram Clan! |invehicle |c
+.' Tell him you are ready to do battle with the Magram Clan! |invehicle
 step
 goto 71.1,45.3
-.' Use your Place Spear ability when you get to the Fatherstone |outvehicle |c
+.' Use the Place Spear ability on your quickbar when you get to the Fatherstone |outvehicle
 step
 goto 71.1,45.5
 .' Defend the Spear to break the will of the Magram |q 14318/1
@@ -15401,6 +15483,7 @@ goto 62.6,37.4
 step
 goto 73.3,41.6
 .talk 36163
+.|tip He is inside this big tent
 ..turnin 14325
 ..accept 14327
 step
@@ -15417,6 +15500,7 @@ goto 53.2,79.8
 step
 goto 53.2,79.8
 .click Demon Portal##4713
+.kill Demon Portal Guardian##11937
 .' Banish 6 Portals |q 5581/1
 .from Lesser Infernal##35591+
 .' Destroy 10 Lesser Infernals |q 14342/1
@@ -15438,32 +15522,30 @@ goto 35.5,81.4
 step
 goto 35.6,92.3
 .from Jorreth##36183
+.|tip He is inside this big tent
 .' Defeat Jorreth |q 14328/3
 step
-goto 36.9,91.3 |n
-.' Follow this path down |goto 36.9,91.3,0.5 |noway |c
+.' Follow this path down |goto 36.9,91.3,0.5 |c
 step
-goto 37.6,85.7 |n
-.' Follow this path up and to the cave |goto 37.6,85.7,0.5 |noway |c
+.' Follow this path up and to the cave |goto 37.6,85.7,0.5 |c
 step
-goto 38.5,90.9 |n
-.' Enter the cave here |goto 38.5,90.9 |noway |c
+.' Enter the cave here |goto 38.5,90.9 |c
 step
 goto 40.5,95.5
 .talk 36185
 ..turnin 14328
 ..accept 14329
 step
-goto 57.6,56.3 |n
-.' Follow this path up |goto 57.6,56.3,0.5 |noway |c
+.' Leave the cave |goto 38.5,91.1 <5 |c
+step
+.' Follow this path up |goto 57.6,56.3,0.5 |c
 step
 goto 56.2,59.6
 .talk 5395
 ..turnin 14342
 ..turnin 5581
 step
-goto 38.4,61.0 |n
-.' Go into the Valley of Spears |goto 38.4,61.0,0.5 |noway |c
+.' Go into the Valley of Spears |goto 38.4,61.0,0.5 |c
 step
 goto 32.8,53.7
 .from Maraudine Mauler##4656
@@ -15481,7 +15563,7 @@ goto 27.2,63.1
 ..turnin 14330
 ..accept 14332
 step
-goto 27.2,63.4
+.' To the left of the cage, sitting next to two braziers:
 .click the Broken Relic##406
 ..accept 14333
 step
@@ -15491,6 +15573,7 @@ goto 29.0,62.6
 step
 goto 31.9,60.9
 .click Defiled Relic##406
+.|tip Tiny white relics on the ground and in tents
 .collect 6 Defiled Relic##49194 |q 14333
 .click on Defiled Relic in your bags |use Defiled Relic##49194
 .' Destroy Defiled Relic |q 14333/1
@@ -15507,7 +15590,7 @@ step
 goto 33.9,53.5
 .talk 12277
 .accept 6132
-.' Escort Melizza Brimbuzzle through the Valley of Spears |q 6132
+.' Escort Melizza Brimbuzzle through the Valley of Spears |goto 40.4,61.6 <5 |c
 step
 goto 47.8,61.8
 .talk 6019
@@ -15521,7 +15604,7 @@ step
 goto 72.3,67.4
 .talk 36398
 .' Tell him you are ready and want to join in the battle!
-.' You will ride on a Centaur Commander |invehicle |c |q 14393
+.' You will ride on a Centaur Commander |invehicle
 step
 goto 69.3,75.8
 .' Use the abilities on your action bar to fight
@@ -15549,7 +15632,7 @@ goto 82.4,80.9
 .talk 36444
 ..turnin 14394
 step
-.click the red button on your hotbar to stop riding the Centaur Commander |outvehicle |c
+.' Click the red button on your hotbar to stop riding the Centaur Commander |outvehicle
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Kalimdor 1-60\\Desolace (31-36)\\Shadowprey Village Quests (33-34)",[[
 author support@zygorguides.com
@@ -15571,10 +15654,10 @@ goto 22.4,73.1
 .accept 5421
 step
 goto 23.4,77.0
-.kill Blubbergut##10973 |q 14334/1 |tip He swims around the pier of Shadowmoon Village.
+.kill Blubbergut##36206 |q 14334/1 |tip He is a big orca that swims around the pier of Shadowmoon Village.
 step
 goto 23.4,77
-.collect 5 Shellfish##13545 |q 5421/1 |tip They are underwater in cages
+.collect 5 Shellfish##13545 |q 5421/1 |tip They are underwater in cages. You probably won't get some every time you open a cage.
 step
 goto Desolace,22.4,73.1
 .talk 11317
@@ -15589,11 +15672,10 @@ goto Desolace,25.8,68.2
 .accept 14335
 step
 goto 18.9,80.6
-.kill 5 Drysnap Pincer##11563+ |q 14335/1 |tip They are underwater, along the bottom.
-.' You can find more around [19.8,75.2]
-step
-goto 26.2,79.3
-.kill 5 Drysnap Crawler##11562+ |q 14335/2 |tip They are along the shore line and in the water.
+.kill 5 Drysnap Pincer##11563+ |q 14335/1
+.kill 5 Drysnap Crawler##11562+ |q 14335/2
+.|tip They are underwater, along the bottom.
+.' You can find more around [Desolace,19.8,75.2]
 step
 goto Desolace,25.8,68.2
 .talk 11624
@@ -15630,13 +15712,14 @@ goto 41.3,11.2
 .collect Horn of Hatetalon##9530 |q 25340
 step
 goto 40.6,8.5
-.' Use your Horn of Hatetalon next to the Hatetalon Stones |use Horn of Hatetalon##9530 |tip They look like 2 big tall rocks.
+.' Use your Horn of Hatetalon next to the Hatetalon Stones |use Horn of Hatetalon##9530 |tip They are two big tall rocks.
 .from Edana Hatetalon##8075
 .get Edana's Dark Heart |q 25340/1
 step
 goto 40.5,10.1
 .kill 6 Northspring Harpy##5362+ |q 25339/1
 .kill 6 Northspring Windcaller##5366+ |q 25339/2
+.' More of these harpies can be found at [Feralas,39.7,14.9]
 step
 goto Feralas,41.6,15.2
 .talk 7776
@@ -15648,13 +15731,14 @@ step
 goto 40.7,18.2
 .from Sharphorn Stag##40193+
 .get 8 Infected Stag Antler |q 25210/1
+.' You can find more Stags at [Feralas,43.2,21.9]
 step
 goto 41.4,15.4
 .talk 39377
 ..turnin 25210
 ..accept 25230
 step
-goto 46.1,9.2
+goto 47.6,10.0
 .kill 10 Noxious Whelp##39384+ |q 25230/1
 step
 goto 41.4,15.4
@@ -15669,6 +15753,7 @@ step
 goto 39.5,21.6
 .kill 7 Corrupted Cliff Giant##40972+ |q 25241/1
 .click Stonetear##9514
+.|tip Small teal rocks, sitting in piles of three
 .get 7 Stonetear |q 25237/1
 step
 goto 41.4,15.4
@@ -15716,6 +15801,7 @@ step
 goto 58.8,64.6
 .from Gordunni Shaman##5236+, Gordunni Warlock##5240+, Gordunni Mauler##5234+
 .' Slay 16 Gordunni Ogres |q 25209/1
+.' You can find more Ogres at [Feralas,60.5,67.6]
 .get Gordunni Orb |q 25341/1
 .' Use your Beast Muisek Vessel on any Beasts you kill |use Beast Muisek Vessel##9618
 step
@@ -15733,6 +15819,7 @@ goto 46.5,55.4
 .get 6 Miniaturization Residue |q 25465/1
 .from Sea Spray##5462+
 .get 10 Water Elemental Core |q 25466/1
+.' More of both of these can be found at [Feralas,45.0,67.1]
 step
 goto 50.6,51.5 |n
 .' Follow the path up |goto 50.6,51.5,0.5 |noway |c
@@ -15754,6 +15841,7 @@ goto 52.7,46.6 |n
 step
 goto 51.9,46.7
 .talk 39840
+.|tip He is all the way at the top of the tower
 ..turnin 25342
 ..accept 25344
 step
@@ -15771,6 +15859,8 @@ step
 goto 52.1,31.7
 .from Rage Scar Yeti##40224+
 .get 10 Thick Yeti Hide |q 25452/1
+.' More can be found at [Feralas,51.3,33.1]
+.' And also in the cave at [Feralas,53.1,31.8]
 step
 goto 48.2,38.7 |n
 .' Follow the path back to the road |goto 48.2,38.7,0.5 |noway |c
@@ -15791,11 +15881,15 @@ step
 goto 55.6,56.4
 .from Feral Scar Yeti##39896+
 .get 10 Feral Scar Yeti Hide |q 25453/1
+.collect Perfect Yeti Hide##55167 |n
+.click Perfect Yeti Hide in your bags |use Perfect Yeti Hide##55167
+..accept 25454
 step
 goto 55.2,65.0
 .from Frayfeather Stagwing##5304+, Frayfeather Hippogryph##5300+
 .' Use your Hippogryph Muisek Vessel on their corpses |use Hippogryph Muisek Vessel##9619
 .get 10 Hippogryph Muisek |q 25337/1
+.' You can find more at [Feralas,54.6,70.3]
 step
 goto 51.9,48.0
 .talk 39656
@@ -15816,6 +15910,7 @@ goto 52.7,46.6 |n
 step
 goto 51.9,46.7
 .talk 39840
+.|tip He is at the top of the tower
 ..turnin 25344
 step
 goto 51.9,48.0
@@ -15888,6 +15983,7 @@ goto 75.5,34.2
 step
 goto 75.5,37.0
 .kill 7 Corrupted Dryad##40168+ |q 25349/1
+.' You can find more at [Feralas,79.9,39.1]
 step
 goto 74.4,43.4
 .talk 8115
@@ -15919,6 +16015,7 @@ goto 70.8,46.0
 .get 10 Iridescent Sprite Darter Wing |q 25361/1
 .' Use your Faerie Dragon Muisek Vessel on Sprite Darter corpses |use Faerie Dragon Muisek Vessel##9620
 .get 8 Faerie Dragon Muisek |q 25345/1
+.' You can find more Sprites at [Feralas,72.0,40.9]
 step
 goto 68.0,53.6 |n
 .' Follow the path up |goto 68.0,53.6,0.5 |noway |c
@@ -15947,6 +16044,7 @@ goto 65.3,61.0
 .from Highborne Poltergeist##40059+
 .get 6 Soul Essence |q 25423/1
 .click Loose Soil##49
+.|tip Small brown piles of dirt
 .get 6 Glowing Soil |q 25422/1
 step
 goto 65.9,62.8
@@ -16005,19 +16103,23 @@ step
 goto 70.2,38.9
 .from Grimtotem Naturalist##7726+, Grimtotem Raider##7725+, Grimtotem Shaman##7727+
 .get 20 Grimtotem Horn |q 25362/1
+.' More mobs can be found at [Feralas,68.7,39.7]
 step
 goto 69.9,58.9
 .from Mountain Giant##40026+
 .' Use your Mountain Giant Muisek Vessel on their corpses |use Mountain Giant Muisek Vessel##9621
 .get 7 Mountain Giant Muisek |q 25346/1
+.' More Giants are at [Feralas,70.0,62.5]
 step
 goto 74.5,62.5
 .from Stinglasher##14661
+.|tip He walks around this area, including patrolling the hives. He may appear on your minimap as a white skull with red eyes.
 .get Stinglasher's Glands |q 25369/1
 step
 goto 74.1,61.4
 .from Zukk'ash Worker##5246+, Zukk'ash Wasp##5245+
 .get 20 Zukk'ash Carapace |q 25367/1
+.' You can find more inside the hive at [Feralas,76.9,61.5]
 step
 goto 74.4,43.4
 .talk 8115
@@ -16066,7 +16168,7 @@ goto 74.6,42.9
 step
 goto 75.4,44.4
 .talk 39898
-..' Tell her you need to get to Westreach Summit!
+.' Tell her you need to get to Westreach Summit!
 .' Fly on the Windrider |q 25356/1
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Kalimdor 1-60\\Southern Barrens (31-35)\\Southern Barrens (31-34)",[[
@@ -19915,6 +20017,7 @@ goto 55.5,36.8
 step
 goto 55.4,36.3
 .talk 15189
+.|tip She is upstairs in the inn
 ..accept 8277
 step
 goto 53.0,34.6
@@ -19938,6 +20041,7 @@ goto 45.4,41.3
 .get 10 Encrypted Twilight Text |q 8318/1
 .collect 20 Encrypted Twilight Text##20404 |q 8323 |future |tip You need 10 extra Encrypted Twilight Text for a future quest.
 .kill 10 Twilight Geolord##11881+ |q 8320/1
+.' You can find another camp of Twilight mobs at [Silithus,34.2,31.8]
 step
 goto 46.2,34.8
 .from Sand Skitterer##11738+
@@ -19945,9 +20049,12 @@ goto 46.2,34.8
 .from Stonelash Scorpid##11735+
 .get 8 Stonelash Scorpid Stinger |q 8277/1
 .kill 15 Dredge Striker##11740+ |q 8280/1
+.' More of these can be found at [Silithus,42.9,28.3]
+.' And also at [Silithus,43.2,17.9]
 step
 goto 55.4,36.3
 .talk 15189
+.|tip She is upstairs in the inn
 ..turnin 8277
 ..accept 8278
 step
@@ -19959,6 +20066,7 @@ step
 goto 53.2,35.1
 .talk 15306
 ..turnin 8318
+.|tip Be careful to only turn it in once
 step
 goto 53.2,35.2
 .talk 15270
@@ -19980,6 +20088,7 @@ goto 53.6,35.3
 step
 goto 31.0,13.6
 .click Twilight Tablet Fragments##6419
+.|tip Broken stone tablets laying on the ground around this area. They are surrounded by blue smoke.
 .get 8 Twilight Tablet Fragment |q 8284/1
 step
 goto 53.6,35.3
@@ -19989,6 +20098,7 @@ goto 53.6,35.3
 step
 goto 68.7,63.0
 .talk 15194
+.|tip He is inside a small cave
 ..turnin 8285
 ..accept 8279
 step
@@ -20006,7 +20116,8 @@ goto 33.9,34.1
 step
 goto 44.9,48.7
 .kill 20 Dredge Crusher##11741+ |q 8281/1
-.' You can find more Dredge Crushers around [37.9,32.4]
+.' You can find more Dredge Crushers around [Silithus,37.9,32.4]
+.' And also around [Silithus,34.8,40.7]
 step
 ding 56
 step
@@ -20019,12 +20130,13 @@ goto 50.0,49.9
 .click Silithyst Geyser##6862 |tip They look like small pink rocks with holes in the top of them.  They have smoke floating out of their tops, and they blow up a stream of orange steam occasionally.  You can find them all around Silithus.
 .' Surround yourself in Silithyst Dust |havebuff Interface\Icons\Spell_Holiday_ToW_SpiceCloud |c |q 9422
 .' They spawn in various locations, you find more at:
-.' [53.2,41.6]
-.' [57.1,47.2]
-.' [60.0,41.1]
+.' [Silithus,53.2,41.6]
+.' [Silithus,57.1,47.2]
+.' [Silithus,60.0,41.1]
 step
 goto 54.9,63.4
 .' Stand inside the big red-glowing metal machine
+.|tip You can't mount or use any speed boosts while carrying the Silithyst
 .' Deliver Silithyst |q 9422/1
 step
 goto 54.5,62.9
@@ -20036,6 +20148,7 @@ goto 51.7,64.7
 .get 3 Stonelash Flayer Stinger |q 8278/1
 .from Rock Stalker##11739+
 .get 3 Rock Stalker Fang |q 8278/3
+.' More of both of these can be found at [Silithus,49.5,72.5]
 step
 goto 54.9,36.0
 .talk 15191
@@ -20055,12 +20168,12 @@ goto 53.2,32.5
 step
 goto 46.0,79.4
 .talk 15171
-..' Tell him you've heard he might have some information as to the whereabouts of Mistress Natalia Mar'alith
+.' Tell him you've heard he might have some information as to the whereabouts of Mistress Natalia Mar'alith
 .' Question Frankal |q 8304/1
 step
 goto 46.4,79.1
 .talk 15170
-..' Tell him the Commander has sent you here to gather some information about his missing wife
+.' Tell him the Commander has sent you here to gather some information about his missing wife
 .' Question Rutgar |q 8304/2
 step
 .' Click the Quest Complete Box under your minimap
@@ -20084,6 +20197,7 @@ goto 24.8,77.3
 step
 goto 55.3,36.2
 .talk 15190
+.|tip He is upstairs in the inn
 ..turnin 8282
 step
 goto 54.3,34.0 |n
@@ -20091,6 +20205,7 @@ goto 54.3,34.0 |n
 step
 goto 54.5,32.0
 .talk 15182
+.|tip He is at the very top of the tower
 ..turnin 8283
 step
 goto 46.0,79.4
@@ -20119,7 +20234,7 @@ goto 55.6,90.6
 step
 goto 55.6,90.5
 .click Hive'Regal Glyphed Crystal##6414
-..' <Use the transcription device to gather a rubbing.>
+.' <Use the transcription device to gather a rubbing.>
 .get Hive'Regal Rubbing |q 8309/1
 step
 goto 56.1,87.8 |n
@@ -20144,6 +20259,7 @@ step
 goto 68.7,63.0
 .talk 15194
 ..turnin 8279
+..turnin 8323
 ..accept 8287
 ..accept 8323
 step
@@ -20151,10 +20267,6 @@ goto 53.2,32.5
 .talk 15181
 ..turnin 8306
 ..turnin 8287
-step
-goto 45.4,41.3
-.from Twilight Avenger##11880+, Twilight Geolord##11881+, Twilight Stonecaller##11882+
-.get 10 Encrypted Twilight Text |q 8323/1
 step
 goto 46.0,79.4
 .talk 15171
@@ -20167,10 +20279,6 @@ goto 46.4,79.1
 ..turnin 8308
 ..turnin 8309
 ..accept 8314
-step
-goto 68.7,63.0
-.talk 15194
-..turnin 8323
 step
 goto 53.6,35.3
 .talk 15183
@@ -36366,10 +36474,10 @@ condition end achieved(4978)
 startlevel 00.00
 dynamic on
 step
-'If you have completed the scenario, "Theramore's Fall," then you will have to visit Zidormi at [Dustwallow Marsh 55.9,49.6] to travel back to Theramore's past.
+.' If you have completed the scenario, "Theramore's Fall," then you will have to visit Zidormi at [Dustwallow Marsh 55.9,49.6] to travel back to Theramore's past.
 |confirm
 step
-'You must complete the Dustwallow Marsh Leveling Guide before completing this guide section. |tip We recommend being at least level 60 before trying to complete this guide. |script ZGV:SetGuide("Zygor's Horde Leveling Guides\\Kalimdor 1-60\\Dustwallow Marsh (35-39)\\Dustwallow Marsh (35-39)")
+.' You must complete the Dustwallow Marsh Leveling Guide before completing this guide section. |tip We recommend being at least level 60 before trying to complete this guide. |script ZGV:SetGuide("Zygor's Horde Leveling Guides\\Kalimdor 1-60\\Dustwallow Marsh (35-39)\\Dustwallow Marsh (35-39)")
 |confirm
 step
 goto Dustwallow Marsh,35.2,30.7
@@ -36396,6 +36504,7 @@ goto 36.9,32.4
 step
 goto 71.5,51.2
 .click Captain's Footlocker##8
+.|tip It is underwater
 .get Captain's Documents |q 1202/1
 step
 goto 35.2,30.7
@@ -36419,6 +36528,7 @@ goto 42.9,14.3
 .click the Grimtotem Notes |use Grimtotem Note##33050
 .get Grimtotem Battle Plan |q 27293/1
 .click Blackhoof Armaments##7425
+.|tip Wooden weapon racks with spears, found around their camp and inside tents.
 .get 7 Blackhoof Armaments |q 27294/1
 step
 goto 36.4,31.9
@@ -36433,15 +36543,15 @@ goto 46.0,57.1
 ..accept 27296
 step
 goto 47.4,47.5
-.' Use Tabetha's Torch inside this tent house |use Tabetha's Torch##33072
+.' Use Tabetha's Torch inside this tent |use Tabetha's Torch##33072
 .' Burn the East Tent |q 27296/3
 step
 goto 47.2,46.6
-.' Use Tabetha's Torch inside this tent house |use Tabetha's Torch##33072
+.' Use Tabetha's Torch inside this tent |use Tabetha's Torch##33072
 .' Burn the Northeast Tent |q 27296/2
 step
 goto 46.6,46.0
-.' Use Tabetha's Torch inside this tent house |use Tabetha's Torch##33072
+.' Use Tabetha's Torch inside this tent |use Tabetha's Torch##33072
 .' Burn the North Tent |q 27296/1
 step
 goto 46.0,57.1
@@ -36535,7 +36645,7 @@ startlevel 00.00
 dynamic on
 leechsteps "Zygor's Horde Leveling Guides\\Outland 60-70\\Hellfire Peninsula (60-62)"
 step
-'We recommend being at least level 80 before trying to complete this guide.
+.' We recommend being at least level 80 before trying to complete this guide.
 |confirm
 step
 goto Hellfire Peninsula,55.0,36.0
@@ -36579,7 +36689,8 @@ goto 16.0,51.6
 ..accept 10351
 step
 goto 13.6,39.1
-.' Use your Seed of Revitalization while standing on the Earthbinder's Circle |use Seed of Revitalization##29478 |tip It's a bright green symbol on the ground.
+.' Use your Seed of Revitalization while standing on the Earthbinder's Circle |use Seed of Revitalization##29478
+.|tip It's a bright green symbol on the ground.
 .from Goliathon##19305
 .' Revitalize Fallen Sky Ridge |q 10351/1
 step
@@ -36610,8 +36721,7 @@ goto Shattrath City,48.2,18.7
 step
 goto 58.0,15.2
 .talk 19045
-..accept 10180 |or
-..accept 10097 |or
+..accept 10180
 step
 goto Terokkar Forest,50.2,17.4
 .from Shienor Talonite##18449+, Shienor Sorcerer##18450+
@@ -36619,6 +36729,7 @@ goto Terokkar Forest,50.2,17.4
 step
 goto 73.9,35.2
 .talk 18760
+.|tip She is inside the building
 ..accept 10052
 .' Follow her as she walks and protect her
 .' Escort Isla Starmane to safety |q 10052/1
@@ -36639,9 +36750,12 @@ goto 37.0,49.5
 .talk 18675
 ..accept 10030
 step
-goto 32.4,56.5
-.click Restless Bones##6328 |tip They look like white-glowing bones laying on the ground all around this area.  They are kind of rare, so you may need to search around a little for them.
+goto 36.1,51.0
+.click Restless Bones##6328
+.|tip They look like white bones with white smoke around them, laying on the ground all around this area.  They are kind of rare, so you may need to search around a little for them.
 .get 10 Restless Bones |q 10030/1
+.' You can find more around [Terokkar Forest,32.6,53.7]
+.' And also at [Terokkar Forest,29.9,59.6]
 step
 goto 26.9,55.6
 .' Use Trachela's Carcass next to Torgos's Bane |use Trachela's Carcass##30618 |tip It's a big blue-glowing bird scarecrow.
@@ -36656,11 +36770,12 @@ goto 30.6,49.1
 ..accept 10887
 step
 goto 33.8,51.6 |n
-.' Protect Akuno and escort him to this spot |goto 33.8,51.6,0.5 |noway |c |q 10887
+.' Protect Akuno as he escapes the Tomb
 .' Help Akuno find his way to the Refugee Caravan |q 10887/1
 step
 goto 38.1,51.8
 .talk 22370
+.|tip He walks around the camp, and may not be in this exact spot
 ..turnin 10887
 step
 goto 37.3,65.6 |n
@@ -36676,6 +36791,8 @@ goto 35.1,66.3
 ..accept 10031
 ..turnin 10227
 ..accept 10228
+step
+.' Leave Auchenai Crypts and fly up out of the Ring of Observance |goto 36.0,65.6 <5 |c
 step
 goto 31.7,64.9
 .kill 10 Lost Spirit##18460+ |q 10031/1
@@ -36700,7 +36817,7 @@ goto 31.0,76.2
 step
 goto 40.1,77.5
 .kill 10 Broken Skeleton##16805+ |q 10031/2
-.' You can find more around [48.2,71.9]
+.' You can find more around [Terokkar Forest,48.2,71.9]
 step
 goto 48.0,75.1
 .from Decrepit Clefthoof##22105+
@@ -36722,6 +36839,8 @@ goto 49.7,76.2
 step
 goto 53.7,72.3
 .talk 22424
+.|tip If he isn't here then another player is currently doing this quest, just wait for them to finish. Skywing will reappear.
+.|tip He has about a 10-13 minute respawn timer.
 ..accept 10898
 .' Follow Skywing and protect him
 .' Escort Skywing |q 10898/1
@@ -36729,6 +36848,8 @@ step
 goto 50.0,67.8
 .from Auchenai Death-Speaker##21242+, Auchenai Doomsayer##21285+
 .collect 20 Doom Skull##31812 |q 10923
+.' If you've run out of mobs to kill you can find another group herer [Terokkar Forest,34.1,73.9]
+.|tip Auchenai Initiates don't drop Doom Skulls so don't waste your time killing those mobs
 step
 goto 48.7,67.2
 .' Use your Dread Relic on the Writhing Mound Summoning Circle |use Dread Relic##31811 |tip It looks like a purple glowing symbol on the ground.
@@ -36738,13 +36859,13 @@ goto 42.1,65.6 |n
 .' Fly into the Ring of Observance and follow this path |goto 42.1,65.6,0.5 |noway |c
 step
 goto Terokkar Forest 44.9,65.6 |n
-.' Enter Sethekk Halls here. |goto Sethekk Halls |noway |c
+.' Enter the Sethekk Halls dungeon here. |goto Sethekk Halls |noway |c
 step
 goto 72.2,35.5
 .talk 18933
 ..turnin 10180
 step
-goto 31.4,75.7
+goto Terokkar Forest 31.4,75.7
 .talk 22364
 ..turnin 10926
 step
@@ -36765,7 +36886,7 @@ goto 49.3,45.9
 ..turnin 10036
 step
 goto Shattrath City,53.7,32.6
-.talk 19715 |tip He walks all around the building, some searching may be necessary.
+.talk 19715 |tip He walks all around the building, some searching may be necessary. Fly around the Terrace of Light and look for a gold question mark.
 ..turnin 10228
 ..accept 10231
 step
@@ -36775,7 +36896,11 @@ goto 52.6,21.0
 step
 goto 50.3,18.3
 .talk 22429
+.|tip He is up in the tree structure above Lower City
 ..turnin 10917
+step
+.' The following quest chain take place in Nagrand but the last quest counts as Terokkar Forest quests for Loremaster
+|confirm
 step
 goto Nagrand,55.2,36
 .talk 18301
@@ -36786,7 +36911,7 @@ goto 27.3,43.1
 ..turnin 9983
 ..accept 9991 |tip Make sure you dismount before accepting this quest, or you will have to abandon it, and pick it back up.
 step
-'You will fly off on a nether drake:
+.' You will fly off on a nether drake:
 .' Survey the Forge Camps |q 9991/1
 step
 goto 27.3,43.1
@@ -36815,7 +36940,8 @@ goto 27.3,43.1
 step
 goto Shattrath City,77.3,34.9
 .talk 18584
-..' Tell him Altruis sent you
+.|tip He is inside at the back of this building
+.' Tell him Altruis sent you
 .from Sal'salabim##18584
 .' Persuade Sal'salabim |q 10004/1
 step
@@ -36826,19 +36952,19 @@ goto 77.3,34.9
 step
 goto 75.0,31.4
 .talk 18585
-..' Tell him you've been sent by Sal'salabim to collect a debt that you owe
+.' Tell him you've been sent by Sal'salabim to collect a debt that you owe
 .from Raliq the Drunk##18585
 .get Raliq's Debt |q 10009/1
 step
 goto Zangarmarsh,80.8,91.2
 .talk 18586
-..' Tell him you've been sent by Sal'salabim to collect a debt that you owe
+.' Tell him you've been sent by Sal'salabim to collect a debt that you owe
 .from Coosh'coosh##18586
 .get Coosh'coosh's Debt |q 10009/2
 step
 goto Terokkar Forest,27.6,58.1
 .talk 18588
-..' Tell him you've been sent by Sal'salabim to collect a debt that you owe
+.' Tell him you've been sent by Sal'salabim to collect a debt that you owe
 .from Floon##18588
 .get Floon's Debt |q 10009/3
 step

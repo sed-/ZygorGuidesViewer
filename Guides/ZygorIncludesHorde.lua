@@ -6957,8 +6957,7 @@ ZygorGuidesViewer:RegisterInclude("H_Outland_Angler",[[
 		path follow loose;loop off;ants straight // this stays until the end of the guide.
 		path	 60.5,51.9	62.9,48.1	63.6,45.0
 		path	 60.0,36.5
-		.' Follow the stream until you find a School of Darters or Brackish Mixed School in the river.
-		.' Use your fishing skill to fish from either Brackish Mixed or School of Darters
+		.' Use your fishing skill to fish from both a Brackish Mixed and a School of Darters
 		.' Fish from a School of Darters |achieve 1225/4
 		.' Fish from a Brackish Mixed School |achieve 1225/1
 	step
@@ -6967,8 +6966,7 @@ ZygorGuidesViewer:RegisterInclude("H_Outland_Angler",[[
 		path	 47.2,44.4	48.7,45.3	51.1,43.2
 		path	 50.9,47.6	48.8,48.1	47.4,48.6
 		path	 46.5,47.6
-		.' Follow the stream until you find a Bluefish and a Mudfish School.
-		.' Use your fishing skill to fish from either Bluefish and a Mudfish School |cast Fishing##7620
+		.' Use your fishing skill to fish from both a Bluefish and a Mudfish School |cast Fishing##7620
 		.' Fish from a Bluefish School |achieve 1225/2
 		.' Fish from a Mudfish School |achieve 1225/3
 	step
