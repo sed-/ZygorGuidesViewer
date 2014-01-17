@@ -18584,4 +18584,6 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [71107]="Xuen",
 [54499]="The Abominable Greench",
 [54558]="Bog Crocolisk",
+[30450]="Wailing Winds",
+[40728]="Whale Shark",
 } end)

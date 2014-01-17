@@ -25744,10 +25744,14 @@ goto 30.4,37.0
 .from Felfire Diemetradon##21408+
 .get 8 Felfire Spleen |q 10660/1
 .click Ever-burning Ash##7256
+.|tip These look like green and grey mounds of dirt on the ground
 .get 15 Ever-Burning Ash |q 10624/1
+.' More of both of these can be found at [Shadowmoon Valley,32.7,40.5]
+.' And also at [Shadowmoon Valley,37.8,42.4]
 step
 goto 34.1,39.0
 .from Felboar##21878+, Vilewing Chimaera##21879+ |q 10702/1
+.' More can be found at [Shadowmoon Valley,35.5,46.4]
 step
 goto 36.4,33.5
 .from Dark Conclave Ravenguard##19827+, Dark Conclave Shadowmancer##19826+, Dark Conclave Hawkeye##21386+
@@ -25784,15 +25788,20 @@ step
 goto 28.7,26.9
 .' Use your Spectrecles to equip them |use Spectrecles##30719
 .kill 12 Shadowmoon Zealot##21788+ |q 10625/1 |tip They are all around Shadowmoon Village. You must be wearing the Spectrecles to see them.
+.' You can find more at [Shadowmoon Valley,30.2,32.4]
 step
 goto 29.9,27.7
 .talk 21772
 ..turnin 10625
 ..accept 10633
 step
+.' Don't forget to equip your headpiece
+|confirm
+step
 goto 23.6,36.8
 .' Fly up onto the platform
 .click the Box o' Tricks in your bag while standing next to the Legion Communication Device |use Box o' Tricks##30638
+.' Watch the dialogue
 .' Discover Legion's Plans |q 10596/1
 step
 goto 30.4,32.4
@@ -25823,7 +25832,7 @@ goto 39.8,29.8
 .get Sketh'lon War Totem |q 10777/1
 step
 goto 35.2,39.1
-.talk 22024
+.talk 22024 |tip He walks up and down this path, so you may need to search for him.
 ..turnin 10777
 ..accept 10778
 step
@@ -25850,6 +25859,7 @@ goto 46.5,65.6
 step
 goto 47.5,71.7
 .click Lianthe's Strongbox##41
+.|tip It is a wooden box inside a little tent
 .get Rod of Lianthe |q 10778/2
 step
 goto 54.7,58.2
@@ -25864,18 +25874,23 @@ goto Shadowmoon Valley,58.2,70.8
 step
 goto 63.9,47.0
 .' Use your Spectrecles to equip them |use Spectrecles##30721
+.' If you lost them, go talk to Chief Apothecary Hildagard at [Shadowmoon Valley,29.9,27.7]
 .from Cleric of Karabor##21815
 .get Gorefiend's Cloak |q 10635/1
+step
+.' Don't forget to equip your headpiece again
+|confirm
 step
 goto 58.8,36.5
 .kill 3 Ashtongue Handler##21803+ |q 10807/1
 .kill 4 Ashtongue Warrior##21454+ |q 10807/2
 .kill 6 Ashtongue Shaman##21453+ |q 10807/3
+.' You can find more at [Shadowmoon Valley,55.9,36.1]
 only if rep ('The Scryers') >= Neutral
 step
 goto 62.2,40.3
 .click Arcano Control Unit##6466
-.' Use the Tag Greater Felfire Diemetradon ability on Diemetradons
+.' Use the Tag Greater Felfire Diemetradon ability on Diemetradons |cast Tag Greater Felfire Dimetradon##37851
 .' Tag 8 Greater Felfire Diemetradons |q 10672/1
 step
 goto 50.6,24.3
@@ -25900,7 +25915,9 @@ goto 42.2,45.1
 step
 goto 43.0,56.6
 .click Sketh'lon Feather##6962+
+.|tip They are red and orange feathers laying on the ground
 .get 8 Sketh'lon Feather |q 10780/1
+.' You can find more around [Shadowmoon Valley,43.6,60.4]
 step
 goto 35.4,37.6
 .talk 22024 |tip He walks up and down this path, so you may need to search for him.
@@ -25939,6 +25956,7 @@ goto 59.9,69.1
 .' Use your Totem of Spirits |use Totem of Spirits##30094 |tip Kill the mobs near the totems you plant.
 .from Enraged Air Spirit##21060+
 .' Capture 10 Air Souls |q 10481/1
+.' More Air Spirits can be found at [Shadowmoon Valley,62.4,61.9]
 step
 goto 56.1,44.4
 .from Felspine the Greater##21897
@@ -25948,6 +25966,7 @@ goto 67.4,37.6
 .kill 8 Shadowmoon Slayer##22082+ |q 10817/1
 .kill 8 Shadowmoon Chosen##22084+ |q 10817/2
 .kill 4 Shadowmoon Darkweaver##22081+ |q 10817/3
+.' You can find more Chosen and Darkweavers at [Shadowmoon Valley,71.4,37.9]
 only if rep ('The Scryers') >= Neutral
 step
 goto 30.1,28.3
@@ -25965,16 +25984,18 @@ goto 30.4,32.4
 step
 goto 38.6,38.2
 .talk 21475
+.|tip He is at the top of a big stone building
 ..turnin 10599
 ..accept 10600
 step
 goto 38.9,35.4
 .kill 10 Deathforge Guardian##20878+ |q 10600/1
 .kill 5 Deathforge Summoner##20872+ |q 10600/2
-.' More can be found around [40.3,38.0]
+.' More can be found inside the forge at [Shadowmoon Valley,40.3,38.0]
 step
 goto 38.6,38.2
 .talk 21475
+.|tip He is at the top of a big stone building
 ..turnin 10600
 ..accept 10601
 ..accept 10602
@@ -25988,7 +26009,8 @@ goto 37.6,41.3
 step
 goto 35.2,40.2
 .clicknpc Kagrosh##21725
-..' Search Kagrosh's corpse for his pack
+.' Search Kagrosh's corpse for his pack
+.|tip He is a dead orc laying on the ground inside the Deathforge
 .get Kagrosh's Pack |q 10601/1
 step
 goto 40.1,38.2 |n
@@ -26007,6 +26029,7 @@ goto 40.4,39.4 |n
 step
 goto 38.6,38.2
 .talk 21475
+.|tip He is at the top of a big stone building
 ..turnin 10601
 ..turnin 10602
 ..accept 10603
@@ -26016,7 +26039,7 @@ goto 40.1,38.2 |n
 step
 goto 37.4,42.7
 .click the Heavy Iron Portcullis
-.' Continue through gate to [39.1,46.6]
+.' Continue through the gate to [Shadowmoon Valley,39.1,46.6]
 .kill Warbringer Razuun##21287 |q 10603/1
 .get Razuun's Orders |q 10603/2
 step
@@ -26058,9 +26081,13 @@ goto 27.5,21.2
 step
 goto 27.8,19.7
 .click the Fel Reaver Control Console to take control of a Fel Reaver Sentinel |tip It looks like a metal box with a bunch of levers on it.  If you are a death knight, hunter or warlock you will have to dismiss your pet first.
-.' Use the abilities on your hotbar to do the following:
+.' Go to this spot and use the abilities on your hotbar to do the following:
 .from Deathforged Infernal##21316+
 .' Destroy 60 Deathforged Infernals |q 10613/1 |tip If your character gains too much aggro, exit out of the Fel Reaver and run up the hill and go through the green skull teleporter. When you come back you won't have any aggro and you can continue the quest.
+step
+.' Stay in the Fel Reaver and go back to Nakansi. Once you are next to him use the red "x" on your quickbar to leave the Fel Reaver. You must get back and turn the quest in before the timer expires.
+|confirm
+.|tip He is at the top of the hill to the west
 step
 goto 27.5,21.2
 .talk 21789
@@ -26083,7 +26110,7 @@ only if rep ('The Scryers') >= Neutral
 step
 goto 53.9,23.5
 .talk 21183
-.' If he or his Domesticated Felboar are being attacked, you will have to kill the Ravenous Flayers before you can talk to him.
+.|tip If he or his Domesticated Felboar are being attacked, you will have to kill the Ravenous Flayers before you can talk to him.
 ..turnin 10513
 ..accept 10514
 step
@@ -26110,7 +26137,7 @@ goto 53.9,23.5
 step
 goto 53.9,23.5
 .talk 21183
-..' Tell him you are ready to listen to his story
+.' Tell him you are ready to listen to his story
 .' Listen to the Cipher of Damnation - History and Truth |q 10519/1
 step
 goto 53.9,23.5
@@ -26130,6 +26157,7 @@ goto 52.6,27.4
 .collect Coilskar Chest Key##30426 |n
 .click Coilskar Chest##1387+ |tip They look like big gray stone containers around this area.
 .get First Fragment of the Cipher of Damnation |q 10522/1
+.' You can find more mobs and chests inside the cave at [Shadowmoon Valley,53.1,25.2]
 step
 goto 44.5,23.6
 .talk 21291
@@ -26182,7 +26210,9 @@ goto 47.6,57.2
 ..accept 10547
 step
 goto 44.8,58.2
-.click a Rotten Arakkoa Egg |tip They look like small pink-ish eggs with green steam rising off of them on the ground around this area.
+.click a Rotten Arakkoa Egg
+.|tip They look like small pink-ish eggs with green steam rising off of them, found inside the Arakkoa nests around this area.
+.|tip It may take multiple tries to get an intact egg
 .get Rotten Arakkoa Egg |q 10547/1
 step
 goto 53.9,23.5
@@ -26339,7 +26369,8 @@ goto 57.3,49.6
 only if rep ('The Aldor') >= Neutral
 step
 goto 57.4,49.4 |n
-.' Go back to the top of "Warden's Cage" |goto 57.4,49.4,0.5 |noway |c
+.' Leave the Warden's Cage
+|confirm
 only if rep ('The Aldor') >= Neutral
 step
 goto 57.1,48.6
@@ -26367,8 +26398,8 @@ only if rep ('The Aldor') >= Neutral
 step
 goto Shattrath City,64.0,70.0
 .talk 21411
-..accept 10550
 ..turnin 10547
+..accept 10550
 only if rep ('The Scryers') >= Neutral
 step
 goto Shadowmoon Valley,47.6,57.2
@@ -26378,6 +26409,7 @@ goto Shadowmoon Valley,47.6,57.2
 step
 goto 49.0,57.5
 .' Use your Bundle of Bloodthistle at the other end of the bridge |use Bundle of Bloodthistle##30616
+.|tip Wait for his guard to go away
 .from Envoy Icarius##21409
 .get Stormrage Missive |q 10570/1
 step
@@ -26389,6 +26421,7 @@ step
 goto 49.3,60.5
 .from Eclipsion Centurion##19792+, Eclipsion Blood Knight##19795+, Eclipsion Archmage##19796+, Eclipsion Bloodwarder##19806+
 .get 6 Eclipsion Armor |q 10576/1
+.' You can find more mobs at [Shadowmoon Valley,47.1,66.0]
 step
 goto 47.6,57.2
 .talk 21293
@@ -26458,16 +26491,19 @@ only if rep ('The Scryers') >= Neutral
 step
 goto 64.3,60.9
 .talk 21657
+.|tip He flies high up in the sky, you may have to look for him. Watch for a gold question mark on your mini map
 ..turnin 10811
 ..accept 10814
 step
 goto 64.3,60.9
 .talk 21657
-..' Listen to his story
+.|tip He flies high up in the sky, you may have to look for him.
+.' Listen to his story
 .' Listen to the Tale of Neltharaku |q 10814/1
 step
 goto 64.3,60.9
 .talk 21657
+.|tip He flies high up in the sky, you may have to look for him. Watch for a gold question mark on your mini map
 ..turnin 10814
 ..accept 10836
 step
@@ -26488,24 +26524,29 @@ only if rep ('The Scryers') >= Neutral
 step
 goto 64.3,60.9
 .talk 21657
+.|tip He flies high up in the sky, you may have to look for him. Watch for a gold question mark on your mini map
 ..turnin 10836
 ..accept 10837
 step
 goto 73.9,84.9
 .click Nethervine Crystal##5691+
+.|tip They look like large brown, thorny, curling roots coming out of the ground
 .get 12 Nethervine Crystal |q 10837/1
 step
 goto 63.5,60.9
 .talk 21657
+.|tip He flies high up in the sky, you may have to look for him. Watch for a gold question mark on your mini map
 ..turnin 10837
 ..accept 10854
 step
 goto 68.7,61.4
 .' Use your Enchanted Nethervine Crystal on Enslaved Netherwing Drakes |use Enchanted Nethervine Crystal##31652
-.' Free 5 Enslaved Netherwing Drakes |q 10854/1 |tip If the Enslaved Netherwing Drake begins attacking the Dragonmaw Subjugator after you use the crystal on them, you may need to help them so they don't die. Be careful not to make the Drake attack you though.
+.' You cannot use it while in combat, so be careful to use it before pulling.
+.' Free 5 Enslaved Netherwing Drakes |q 10854/1 |tip If the Enslaved Netherwing Drake begins attacking the Dragonmaw Subjugator after you use the crystal on them, you may need to help them so they don't die.
 step
 goto 63.5,60.9
 .talk 21657
+.|tip He flies high up in the sky, you may have to look for him. Watch for a gold question mark on your mini map
 ..turnin 10854
 step
 goto 70.0,51.4
@@ -26523,8 +26564,10 @@ only if rep ('The Scryers') >= Neutral
 step
 goto 57.1,38.4
 .click Baa'ri Tablet Fragment##6419+
+.|tip They look like broken tablets with green aura around them
 .from Ashtongue Worker##21455+
 .get 12 Baa'ri Tablet Fragment |q 10683/1
+.' More Tablets and Workers can be found at [Shadowmoon Valley,59.1,35.9]
 only if rep ('The Scryers') >= Neutral
 step
 goto 56.3,59.6
@@ -26581,7 +26624,8 @@ goto 57.3,49.6
 only if rep ('The Scryers') >= Friendly
 step
 goto 57.4,49.7 |n
-.' Go back to the top of "Warden's Cage" |goto 57.4,49.7,0.5 |noway |c
+.' Leave the Warden's Cage
+|confirm
 only if rep ('The Scryers') >= Friendly
 step
 goto 57.1,48.6
@@ -27582,7 +27626,7 @@ step
 goto 65.3,47.2
 .kill 12 Kvaldir Raider##25760+ |q 11949/1
 .click Kaskala Supplies##644
-.|tip They look like small square baskets on the ground233
+.|tip They look like small square baskets on the ground
 .get 8 Kaskala Supplies|q 11945/1
 .' You can find more of both of these at [Borean Tundra,69.0,48.7]
 step
@@ -28261,8 +28305,9 @@ next Zygor's Horde Leveling Guides\\Northrend 70-80\\Dragonblight (71-74)
 startlevel 70.00
 dynamic on
 step
-'Go down the zeppelin tower to 78.5,29 |goto Howling Fjord,78.5,29
+goto Howling Fjord 78.5,29
 .talk 24126
+.|tip He is on the ground outside the tower
 ..accept 11167
 step
 goto 79.7,30.8
@@ -28278,16 +28323,19 @@ goto 78.6,31.2
 ..accept 11270
 step
 goto 75.8,31.5
-.' Use your Burning Torch on Alliance and Forsaken Corpses |use Burning Torch##33278
-.' Burn 10 Fallen Combatants |q 11270/1
 .' Use your Plaguehound Cage |use Plaguehound Cage##33221
 .from Fjord Crow##23945+ |tip They are flying overhead around this area.
 .collect 5 Crow Meat##33238|q 11227 |n
 .click the Crow Meat in your bags|use Crow Meat##33238
 .' Feed your Plaguehound 5 times |q 11227/1
+.' Use your Burning Torch on Alliance and Forsaken Corpses |use Burning Torch##33278
+.|tip They are dead bodies laying on the ground
+.' Burn 10 Fallen Combatants |q 11270/1
 step
 goto 81,35.5
 .click Plague Containers##7470
+.|tip Found on the top and bottom decks of this ship. Also found on the shore next to the ship.
+.|tip The bottom deck is flooded and will require you to swim underwater to get to
 .get 10 Intact Plague Container|q 11167/1
 step
 goto 78.6,31.2
@@ -28311,6 +28359,7 @@ goto 77.6,34.7
 step
 goto 80.1,37.8
 .talk 23778
+.' If she's not there fighting undead, look here [Howling Fjord,78.7,37.1]
 .' Listen to Lyana's Report |q 11221/2
 step
 goto 78.6,31.2
@@ -28326,8 +28375,9 @@ goto 79.2,31.2
 |modelnpc Pontius##23938
 |modelnpc Plaguehound Tracker##24156
 step
-'Go inside the cave to 75.9,19.7 |goto 75.9,19.7
+goto 75.9,19.7
 .click Dragonskin Scroll##163
+.|tip It is inside the cave
 ..turnin 11253
 ..accept 11254
 step
@@ -28358,11 +28408,13 @@ goto 78.5,29
 step
 goto 84.7,36.5
 .talk 24037
+.|tip He is standing  on deck up by the helm
 ..turnin 11229
 ..accept 11230
 step
 goto 84.7,36.5
 .kill 15 North Fleet Marine##23983+ |q 11230/1
+.' You can find more on the other ship at [Howling Fjord,83.5,37.9]
 step
 goto 84.7,36.5
 .talk 24037
@@ -28409,7 +28461,10 @@ goto 78.5,29
 .talk 24126
 ..turnin 11241
 step
-'Go southwest up the huge lift to 71.1,39.1 |goto 71.1,39.1
+.' Take the lift up |goto 73.4,35.3 <5 |c
+|only if not achieved(890)
+step
+goto 71.1,39.1
 .talk 24027
 ..turnin 11295
 ..accept 11282
@@ -28453,7 +28508,7 @@ goto 66.2,39.6
 .' Use Gorth's Torch while standing next to this bridge |use Gorth's Torch##33472
 .' Burn the Winterskorn Bridge |q 11285/3
 step
-goto 63.8,40
+goto 64.0,40.8
 .' Use Gorth's Torch while standing next to this building |use Gorth's Torch##33472
 .' Burn the Winterskorn Barracks |q 11285/4
 step
@@ -28461,8 +28516,9 @@ goto 64.9,40.9
 .' Use Gorth's Torch while standing next to this building |use Gorth's Torch##33472
 .' Burn the Winterskorn Dwelling |q 11285/1
 step
-'Kill Winterskorn Vrykuls all around this town
-.get Baleheim Bodycount to 16 |q 11283/1
+goto 64.9,40.9
+.' Kill Winterskorn Vrykuls all around this town
+.' Bring the Baleheim Bodycount to 16 |q 11283/1
 step
 goto 71.1,39.1
 .talk 24027
@@ -28495,21 +28551,24 @@ goto 67.3,60.3
 .talk 24548
 ..accept 11423
 step
-goto 69.6,57.1
+goto 67.9,54.0
 .kill 5 Dragonflayer Warrior##23654+ |q 12482/1
 .kill 4 Dragonflayer Rune-Seer##23656+ |q 12482/2
 .kill 4 Dragonflayer Hunting Hound##23994+ |q 12482/3
 step
 goto 67.4,57.2
 .click Saga of the Val'kyr##525
+.|tip On the floor inside this building
 .get Saga of the Val'kyr |q 11423/2
 step
 goto 68.9,52.6
 .click the Saga of the Winter Curse##525
+.|tip On the floor inside this building
 .get Saga of the Winter Curse|q 11423/3
 step
 goto 64.7,53.6
 .click the Saga of the Twins##525
+.|tip On the floor inside this building
 .get Saga of the Twins|q 11423/1
 step
 goto 67.4,60.6
@@ -28544,6 +28603,7 @@ step
 goto 57.6,76.5
 .from Risen Vrykul Ancestor##24871+
 .get 5 Ancient Vrykul Bone|q 11424/1
+.' You can find more mobs to kill at [Howling Fjord,60.8,78.6]
 step
 goto 46.8,68.1
 .from Thorvald##27926
@@ -28554,16 +28614,18 @@ goto 40.3,60.3
 ..accept 11504
 step
 goto 42,54.4
-.' Use Tillinghast's Plague Canister on Proto-Drake Eggs |use Tillinghast's Plague Canister##33418 |tip They look like big eggs sitting next to trees.
+.' Use Tillinghast's Plague Canister on Proto-Drake Eggs |use Tillinghast's Plague Canister##33418
+.|tip They look like big eggs sitting next to trees. You can kill them accidentally, so be careful.
 .from Plagued Proto-Whelp##24160+
 .get 10 Plagued Proto-Whelp Specimen|q 11279/1
+.' More Eggs can be found at [Howling Fjord,39.5,51.1]
 |modelnpc Proto-Drake Egg##23777
 step
 goto 37.4,51.9
 .talk 23870
 ..accept 11182
 step
-goto 40.6,51.5
+goto 41.1,53.0
 .kill 5 Dragonflayer Handler##23871+ |q 11182/1
 step
 goto 41.5,52.3
@@ -28591,9 +28653,9 @@ goto 53.6,66.5
 .' Stand next to the cauldron
 .' Use the Empty Apothecary's Flask in your bags |use Empty Apothecary's Flask##34023
 .collect 1 Flask of Vrykul Blood##33615|q 11306 |n
-.' Stand next to the table at [53.5,66.3] |n
+.' Stand next to the table at [Howling Fjord,53.5,66.3] |n
 .' Use the Flask of Vrykul Blood in your bags |use Flask of Vrykul Blood##34024
-.' Keep filling the Empty Apothecary's Flasks at the cauldron |use Empty Apothecary's Flask##33614
+.' Keep filling the Empty Apothecary's Flasks back at the cauldron |use Empty Apothecary's Flask##33614
 .' And then use the Flask of Vrykul Blood next to the table |use Flask of Vrykul Blood##33615
 .get 1 Balanced Concoction|q 11306/1
 step
@@ -28604,21 +28666,25 @@ goto 53.6,66.4
 step
 goto 57.7,77.5
 .click Mound of Debris##20
+.|tip It's a small pile of dirt next to a grave
 .get Fengir's Clue |q 11504/1
 step
 goto 59.2,77
 .click Unlocked Chest##5743
+.|tip It's a small chest in this grave
 .get Rodin's Clue |q 11504/2
 step
 goto 59.8,79.4
 .click Long Tail Feather##3651
+.|tip It's a small feather on a broken casket in this grave
 .get Isuldof's Clue |q 11504/3
 step
 goto 62,80
 .click Cannonball##153
+.|tip A grey ball inside this grave
 .get Windan's Clue |q 11504/4
 step
-goto 48.5,57.4
+goto 49.8,57.3
 .' Use your Plague Spray on Plagued Dragonflayer mobs |use Plague Spray##33621
 .' Spray 10 Plagued Vrykul |q 11307/1
 |modelnpc Plagued Dragonflayer Handler##24199
@@ -28655,7 +28721,7 @@ goto 50.3,65.8
 step
 goto 49.4,74.3
 .talk 24291
-..buy 1 Fresh Pound of Flesh|q 11309/2
+..buy 1 Fresh Pound of Flesh##33612 |q 11309/2
 step
 goto 53.7,65.2
 .talk 24252
@@ -28676,7 +28742,7 @@ goto 53.7,65.2
 .talk 24252
 ..turnin 11310
 step
-'Go northwest across the Ancient Lift to 25.0,57.0 |goto 25.0,57.0
+goto 25.0,57.0
 .talk 24755
 ..turnin 11507
 ..accept 11508
@@ -28757,21 +28823,21 @@ goto 36.3,80.5
 step
 goto 35.1,80.9
 .talk 24539
-..'Tell him to pay up
-..'Fight him until he surrenders
-..get "Silvermoon" Harry's Debt |q 11464/1 |q 11464/1
+.' Tell him to pay up
+.' Fight him until he surrenders
+.get "Silvermoon" Harry's Debt |q 11464/1 |q 11464/1
 step
 goto 36.3,80.5
 .talk 24541
 ..turnin 11464
 ..accept 11466
 step
-'Go inside the long building to 35.3,79.6 |goto 35.3,79.6
+goto 35.3,79.6
 .talk 24639
-..' Pay 1 gold to bribe her into giving Jack Adams a drink
+.' Pay 1 gold to bribe her into giving Jack Adams a drink
 .' He passes out on the table
 .talk 24788
-..'Search his pockets
+.'Search his pockets
 ..get Jack Adams' Debt |q 11466/1 |q 11466/1
 step
 goto 36.3,80.5
@@ -28793,12 +28859,12 @@ goto 37.2,74.8
 .from Mutinous Sea Dog##25026+
 .get 5 Barrel of Blasting Powder|q 11527/1
 step
-'Go upstairs to the ship deck to 37.2,74.8 |goto 37.2,74.8
+goto 37.2,74.8
 .talk 24910
 ..turnin 11527
 ..accept 11529
 step
-'Run to the other end of the ship deck to the big cannon
+.' Run to the other end of the ship deck to the big cannon
 .' Keep clicking The Big Gun until Sorlof is dead
 .' Sorlof will drop a big pile of gold on the shore
 .' Jump off the ship and click Sorlof's Booty
@@ -28816,18 +28882,20 @@ goto 34.1,76.9
 .from Rabid Brown Bear##24633+
 .get 4 Bear Musk|q 11455/1
 step
-'Go down into the cave to 33.5,75.4 |goto 33.5,75.4,0.5 |c
+.' Go down into the cave |goto 33.5,75.4,0.5 |c
 step
-'Go down the hill and into the cave to 32.3,78.7 |goto 32.3,78.7
+goto 32.3,78.7
 .' Hug the wall to the left inside the cave to avoid fighting "Mad" Jonah Sterling
 .' Follow the path around past the big white sleeping bear, he won't attack you if he's asleep
 .click The Frozen Heart of Isuldof##7554
 .get The Frozen Heart of Isuldof|q 11512/1
 step
-'Leave the cave and go north to 33.2,63.9 |goto 33.2,63.9
+.' Leave the cave and go north to this spot |goto 33.2,63.9 <5 |c
+step
+goto 33.2,63.9
 .kill 8 Crazed Northsea Slaver##24676+ |q 11458/1
 step
-'Go onto the ship to 35.3,64.8 |goto 35.3,64.8
+goto 35.3,64.8
 .' Wait for Abdul the Insane to walk up to the top deck, then run downstairs
 .click The Staff of Storm's Fury##1708 |tip On the very bottom floor of this ship.
 .get The Staff of Storm's Fury |q 11511/1
@@ -28903,16 +28971,16 @@ goto 35.6,80.2
 ..turnin 11479
 ..accept 11480
 step
-'Go inside the long building to 35.4,79.4 |goto 35.4,79.4
+goto 35.4,79.4
 .talk 24741
 ..turnin 11480
 step
 goto 36.1,81.6
 .talk 27933
-..'Tell her to want to fly to Bael'gun's
+.'Tell her to want to fly to Bael'gun's
 .' You will land near a ship |goto 80.9,75.1,0.3 |noway |c
 step
-'Go onto the ship and downstairs to 81.8,73.9 |goto 81.8,73.9
+goto 81.8,73.9
 .click The Ancient Armor of the Kvaldir##7624 |tip Inside this ship, on the very bottom floor in the very back of the room.
 .get The Ancient Armor of the Kvaldir|q 11567/1
 step
@@ -28920,7 +28988,7 @@ goto 80.9,75.1
 .click Harry's Bomber |n |tip It's a plane on the water's edge.
 .' Go back to Scalawag Point |goto 36.1,81.7,0.3 |noway |c
 step
-'Ride the big lift to the top of the cliff and go to 40.3,60.3 |goto 40.3,60.3
+goto 40.3,60.3
 .talk 23804
 ..turnin 11567
 ..turnin 11512
@@ -28949,7 +29017,7 @@ goto 40.3,60.3
 ..turnin 11568
 ..accept 11572
 step
-'Go across the Ancient Lift to 25.0,57.0 |goto 25.0,57.0
+goto 25.0,57.0
 .talk 24755
 ..turnin 11572
 step
@@ -28957,7 +29025,7 @@ goto 24.6,58.9
 .talk 24810
 ..turnin 11472
 step
-'Go back across the Ancient Lift and north to 31.3,24.4 |goto 31.3,24.4
+goto 31.3,24.4
 .talk 24209
 ..accept 11296
 step
@@ -28980,7 +29048,7 @@ goto 31.8,25.6
 .click Steel Gate Artifact##6420+
 .get 10 Steel Gate Artifact|q 11286/1
 step
-'Go back up the hill to 31.2,24.5 |goto 31.2,24.5
+goto 31.2,24.5
 .talk 24186
 ..turnin 11286
 ..accept 11317
@@ -29005,7 +29073,7 @@ goto 33.8,33.7|n
 .' The path down to Brains! Brains! Brains! and What's in That Brew? starts here |goto 33.8,33.7,0.5 |noway |c
 |only if not achieved(890)
 step
-'Go down the hill to 33.3,36.5 |goto 33.3,36.5
+goto 33.3,36.5
 .click Dwarven Kegs##7490
 .get 5 Dwarven Keg|q 11298/1
 .from Deranged Explorer##23967+
@@ -29046,7 +29114,7 @@ goto 23.7,21.8|n
 .' The path back up from the coast starts here |goto 23.7,21.8 |noway |c
 |only if not achieved(890)
 step
-'Go up the path and south to 26.1,24.7 |goto 26.1,24.7
+goto 26.1,24.7
 .talk 24359
 ..turnin 11397
 ..turnin 11398
@@ -29056,7 +29124,7 @@ goto 25.5,20.1|n
 .' The path down to the coast starts here |goto 25.5,20.1,0.3 |noway |c
 |only if not achieved(890)
 step
-'Go down the path to 22.9,20.1 |goto 22.9,20.1
+goto 22.9,20.1
 .' Use your Scourging Crystal Controller on the Scourge Crystal |use Scourging Crystal Controller##33960
 .' Attack the Scourge Crystal when the purple bubble shield disappears
 .' Destroy 3 Scourge Crystals |q 11399/1
@@ -29068,7 +29136,7 @@ goto 23.7,21.8|n
 .' The path back up from the coast starts here |goto 23.7,21.8 |noway |c
 |only if not achieved(890)
 step
-'Go up the path and south to 26.1,24.7 |goto 26.1,24.7
+goto 26.1,24.7
 .talk 24359
 ..turnin 11399
 step
@@ -29207,11 +29275,11 @@ goto 71.2,28.7
 .click Iron Rune Carving Tools##318
 .get Iron Rune Carving Tools|q 11351/1
 .' If they are not there, they can also spawn at the following 5 locations as well:
-..' at [67.5,23.5]
-..' at [69.1,22.8]
-..' at [72.4,17.8]
-..' at [73.4,24.9]
-..' at [67.5,29.2]
+.' at [Howling Fjord,67.5,23.5]
+.' at [Howling Fjord,69.1,22.8]
+.' at [Howling Fjord,72.4,17.8]
+.' at [Howling Fjord,73.4,24.9]
+.' at [Howling Fjord,67.5,29.2]
 step
 goto 49.2,12.2
 .talk 24362
@@ -29275,7 +29343,7 @@ goto 46.4,28.2
 .' Use the Brave's Torch inside this house |use Brave's Torch##33343
 .' Set the Northeast Longhouse Ablaze |q 11258/2
 step
-'Use your Winterhoof Emblem in your bags |use Winterhoof Emblem##33340
+.' Use your Winterhoof Emblem in your bags |use Winterhoof Emblem##33340
 .talk 24130
 ..turnin 11257
 ..turnin 11258
@@ -29452,7 +29520,7 @@ goto 52,67.4
 ..turnin 12181
 ..accept 12182
 step
-'He will fly you to Dragonblight |goto Dragonblight,76.6,62.4,0.3 |noway |c
+.' He will fly you to Dragonblight |goto Dragonblight,76.6,62.4,0.3 |noway |c
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Northrend 70-80\\Dragonblight (71-74)",[[
 author support@zygorguides.com
@@ -36979,7 +37047,7 @@ startlevel 00.00
 dynamic on
 leechsteps "Zygor's Horde Leveling Guides\\Outland 60-70\\Nagrand (66-67)"
 step
-'We recommend being at least level 80 before trying to complete this guide.
+.' We recommend being at least level 80 before trying to complete this guide.
 |confirm
 step
 goto Nagrand,71.6,40.5
@@ -37005,6 +37073,7 @@ step
 goto 47.0,23.8
 .from Warmaul Shaman##18064+, Warmaul Reaver##17138+
 .collect 7 Warmaul Skull##24502 |q 9853
+.' You can find more Warmaul mobs at [Nagrand,43.3,21.6]
 step
 goto 42.8,20.7
 .talk 18471
@@ -37084,7 +37153,7 @@ goto 29.1,25.0
 .get Gurok's Earthen Head |q 9853/1
 step
 goto 31.5,31.4
-.from Gutripper##18257 |tip He's a big black bird that flies around this area.
+.from Gutripper##18257 |tip He's a big black bird that flies up in the area around this area.
 .get Eye of Gutripper |q 9856/1
 step
 goto 32.3,36.1
@@ -37099,6 +37168,8 @@ goto 25.9,13.7
 .from Cho'war the Pillager##18423
 .get Head of Cho'war |q 9946/1
 step
+.' Leave the cave |goto 27.6,11.3,0.5 |c
+step
 goto 32.3,36.1
 .talk 18414
 ..turnin 9946
@@ -37108,7 +37179,7 @@ goto 27.3,43.1
 ..turnin 9983
 ..accept 9991
 step
-'You will fly off on a nether drake:
+.' You will fly off on a nether drake:
 .' Survey the Forge Camps |q 9991/1
 step
 goto 27.3,43.1
@@ -37138,10 +37209,10 @@ step
 goto 25.8,53.8
 .from Bach'lor##18258 |tip He is a talbuk that walks around following these points:
 .get Hoof of Bach'lor |q 9859/1
-.' Point 1: [25.8,53.8]
-.' Point 2: [24.0,44.0]
-.' Point 3: [28.8,34.6]
-.' Point 4: [30.8,36.6]
+.' Point 1: [Nagrand,25.8,53.8]
+.' Point 2: [Nagrand,24.0,44.0]
+.' Point 3: [Nagrand,28.8,34.6]
+.' Point 4: [Nagrand,30.8,36.6]
 step
 goto 31.3,44.1
 .from Murkblood Brute##18211+
@@ -37199,7 +37270,7 @@ goto 71.5,40.8
 step
 goto Shattrath City,77.3,34.9
 .talk 18584
-..' Tell him Altruis sent you
+.' Tell him Altruis sent you
 .from Sal'salabim##18584
 .' Persuade Sal'salabim |q 10004/1
 step
@@ -37210,19 +37281,19 @@ goto 77.3,34.9
 step
 goto 75.0,31.4
 .talk 18585
-..' Tell him you've been sent by Sal'salabim to collect a debt that you owe
+.' Tell him you've been sent by Sal'salabim to collect a debt that you owe
 .from Raliq the Drunk##18585
 .get Raliq's Debt |q 10009/1
 step
 goto Zangarmarsh,80.8,91.2
 .talk 18586
-..' Tell him you've been sent by Sal'salabim to collect a debt that you owe
+.' Tell him you've been sent by Sal'salabim to collect a debt that you owe
 .from Coosh'coosh##18586
 .get Coosh'coosh's Debt |q 10009/2
 step
 goto Terokkar Forest,27.6,58.1
 .talk 18588
-..' Tell him you've been sent by Sal'salabim to collect a debt that you owe
+.' Tell him you've been sent by Sal'salabim to collect a debt that you owe
 .from Floon##18588
 .get Floon's Debt |q 10009/3
 step
@@ -37249,14 +37320,17 @@ step
 goto Nagrand 32.4,77.7
 .from Aged Clefthoof##17133+
 ..get Aged Clefthoof Blubber |q 10252/3
+.' You can find more at [Nagrand,39.7,79.7]
 step
 goto Nagrand 28.0,30.2
 .from Mountain Gronn##19201+
+.|tip You'll usually find them fighting Warmaul mobs
 ..get Mountain Gronn Eyeball |q 10252/1
 step
 goto Nagrand 33.4,25.8
 .from Greater Windroc##17129+
 ..get Flawless Greater Windroc Beak |q 10252/2
+.' You can find more Windrocs at [Nagrand,35.7,28.9]
 step
 goto Nagrand 51.8,56.9
 .talk 19844
@@ -37273,7 +37347,7 @@ goto 27.3,43.1
 ..accept 10011
 step
 goto 25.0,36.1
-.from Demos, Overseer of Hate##18535
+.from Demos Overseer of Hate##18535
 .collect Fel Cannon Activator##25770 |q 10011
 step
 goto 25.1,36.0
@@ -37306,7 +37380,7 @@ goto 55.4,37.6
 step
 goto 56.7,34.3
 .talk 18141
-..' Tell her Garrosh told you she wanted to speak to you
+.' Tell her Garrosh told you she wanted to speak to you
 .' Listen to Greatmother Geyah |q 10044/1
 step
 goto 56.7,34.3
@@ -37316,6 +37390,7 @@ goto 56.7,34.3
 step
 goto 58.7,53.8
 .click Telaari Frond##701
+.|tip A green bush found around this area
 .get Telaari Frond |q 10045/3
 step
 goto Terokkar Forest 32.7,38.5
@@ -37337,6 +37412,10 @@ goto Nagrand 56.7,34.3
 step
 goto 46.4,63.7
 .kill Durn the Hungerer##18411 |q 9937/1 |tip He walks all around this area.  You will probably need to search for him.
+.' Follow this path as you search for him:
+.' [Nagrand,40.1,76.9]
+.' [Nagrand,32.2,78.2]
+.' [Nagrand,30.0,62.6]
 step
 goto 26.1,60.6
 .talk 18687
@@ -37375,9 +37454,13 @@ goto Terokkar Forest 39.6,71.4
 .from Levixus##19847+
 ..get The Book of the Dead |q 10253/1
 step
+.' Fly down to Auchenai Crypts |goto 36.4,65.5 <5 |c
+step
 goto Terokkar Forest 35.1,66.2
 .talk 19417
 ..turnin 10253
+step
+.' Fly up and out of the Auchenai Crypts |goto 36.2,65.6 <5 |c
 step
 goto Terokkar Forest,20.0,63.0
 .' Go to this spot
@@ -37392,7 +37475,7 @@ goto 61.2,29.2
 ..accept 10587
 only if rep ('The Aldor') >= Neutral
 step
-goto 71.1,52.0
+goto 68.8,52.4
 .from Demon Hunter Initiate##21180+, Demon Hunter Supplicant##21179+
 .get 8 Sunfury Glaive |q 10587/1
 only if rep ('The Aldor') >= Neutral
@@ -37419,12 +37502,17 @@ goto 61.2,29.2
 ..accept 10640
 only if rep ('The Aldor') >= Neutral
 step
+goto Shadowmoon Valley 56.3,57.9
+.talk 21766
+..fpath Sanctum of the Stars
+only if rep ('The Scryers') >= Neutral
+step
 goto 55.7,58.2
 .talk 21954
 ..accept 10687
 only if rep ('The Scryers') >= Neutral
 step
-goto 71.1,52.0
+goto 68.8,52.4
 .from Demon Hunter Initiate##21180+, Demon Hunter Supplicant##21179+
 .get 8 Sunfury Glaive |q 10687/1
 only if rep ('The Scryers') >= Neutral
@@ -37484,7 +37572,7 @@ step
 goto Netherstorm 39.6,20.5
 .from Wrath Priestess##18859+
 .collect Freshly Drawn Blood##30850 |n
-.' Use the Freshly Drawn Blood immediately |use Freshly Drawn Blood##30850 |tip It only last 1 minute, then it disappears if you don't use it in time.
+.' Use the Freshly Drawn Blood immediately |use Freshly Drawn Blood##30850 |tip It only lasts 1 minute, then it disappears if you don't use it in time.
 .kill Avatar of Sathal##21925 |q 10641/1
 step
 goto Shattrath City 54.1,44.7
@@ -37503,11 +37591,14 @@ goto Auchenai Crypts/2 74.2,49.9
 .click a Soul Mirror |tip They look like big pink floating crystals near the walls inside the Auchenai Crypts dungeon.
 .get Soul Mirror |q 10168/2
 step
+.' Go back through the dungeon and exit through the portal
+|confirm
+step
 goto Shadowmoon Valley 28.3,49.5
 .kill Lothros##21928 |q 10668/1 |tip He walks around this area, so you may need to search for him.
 step
 goto Nagrand 35.9,66.3
-.' Use your Soul Mirror on Ancient Orc Ancestors |use Soul Mirror##28283 |tip They are ghosts that walk from all around this area to the entrance of this cave.  You can find them quickly by searching all around this area.
+.' Use your Soul Mirror on Ancient Orc Ancestors |use Soul Mirror##28283 |tip They are ghosts that walk from all around this area to the entrance of this cave.
 .kill 15 Darkened Spirit##19480+ |q 10168/1
 |modelnpc Ancient Orc Ancestor##18688
 step
@@ -37525,7 +37616,7 @@ goto 27.3,43.1
 step
 goto 27.3,43.1
 .talk 18417
-..' Ask him to tell you about the demon hunter training grounds at the Ruins of Karabor
+.' Ask him to tell you about the demon hunter training grounds at the Ruins of Karabor
 .' Listen to Illidan's Pupil |q 10646/1
 step
 goto 27.3,43.1
@@ -37544,14 +37635,14 @@ goto 55.4,37.6
 step
 goto 56.7,34.3
 .talk 18141
-..' Tell her that Garrosh is beyond redemption
+.' Tell her that Garrosh is beyond redemption
 .' Speak to Greatmother Geyah |q 10172/1
 step
 goto 56.7,34.3
 .talk 18141
 ..turnin 10172
 step
-'Kill any type of mob in Nagrand, except ogres
+.' Kill any type of mob in Nagrand, except ogres
 .collect 10 Oshu'gun Crystal Powder Sample##26042 |future |q 10074
 step
 goto 41.2,44.3
@@ -37566,7 +37657,7 @@ startlevel 00.00
 dynamic on
 leechsteps "Zygor's Horde Leveling Guides\\Outland 60-70\\Blade's Edge Mountains (67-68)"
 step
-'We recommend being at least level 80 before trying to complete this guide.
+.' We recommend being at least level 80 before trying to complete this guide.
 |confirm
 step
 goto Blade's Edge Mountains,51.8,58.3
@@ -37579,6 +37670,7 @@ goto 55.4,45.3
 step
 goto 55.5,44.9
 .talk 22941
+.|tip He is at the top of this tower
 ..turnin 10989
 ..accept 10995
 ..accept 10996
@@ -37601,7 +37693,8 @@ goto 55.5,44.9
 step
 goto 62.2,40.1
 .talk 22127
-..' Ask him if he has another Felsworn Gas Mask
+.|tip He walks around the camp, you may need to look for him
+.' Ask him if he has another Felsworn Gas Mask
 .collect Felsworn Gas Mask##31366 |future |q 10821
 step
 goto 73.3,40.1
@@ -37636,12 +37729,17 @@ goto 74.0,39.9
 .click Legion Obelisk##7017
 |confirm
 step
+.' Don't forget to equip your headpiece
+|confirm
+step
 goto 74.3,42.5
 .kill Doomcryer##19963 |q 10821/1
+.|tip It usually takes a few seconds for her to spawn
 step
 goto 62.1,20.3
 .from Bladespire Enforcer##19997+
 .collect Wyvern Cage Key##31755 |q 10724
+.' You can find more Enforcers at [Blade's Edge Mountains,65.3,22.3]
 step
 goto 65.7,20.2
 .' Go to this spot
@@ -37650,6 +37748,7 @@ goto 65.7,20.2
 step
 goto 62.4,38.4
 .talk 22127
+.|tip He walks around the camp, you may need to look for him
 ..turnin 10821
 ..accept 10910
 step
@@ -37663,23 +37762,27 @@ goto 63.8,66.5
 .from Death's Might##21519+, Deathforge Over-Smith##19978+, Death's Watch##21516+
 .get 5 Fel Cannonball |q 10904/1
 step
-'Use your Druid Signal anywhere in Death's Door |use Druid Signal##31763
+goto 63.9,66.8
+.' Use your Druid Signal anywhere in Death's Door |use Druid Signal##31763
 .talk 22423
 ..turnin 10904
 ..accept 10911
 step
 goto 64.8,68.3
 .' Use your Naturalized Ammunition next to the Death's Door Fel Cannon |use Naturalized Ammunition##31807 |tip It looks like a big metal green-glowing bullet shaped machine.
-.' Use the Artillery on the Warp-Gate ability 7 times
+.' It's easiest if you stand at [Blade's Edge Mountains,65.2,67.3] and kill the mobs as they spawn from the teleporter. Use the pet skill as soon as it comes off cooldown to destroy the Warp-Gate.
+.' Use the Artillery on the Warp-Gate ability 7 times |petaction 4
 .' Destroy the South Warp-Gate |q 10911/1
 |modelnpc Death's Door Fel Cannon##22443
 step
 goto 62.0,60.3
 .' Use your Naturalized Ammunition next to the Death's Door Fel Cannon |use Naturalized Ammunition##31807 |tip It looks like a big metal green-glowing bullet shaped machine.
-.' Use the Artillery on the Warp-Gate ability 7 times
+.' It's easiest if you stand at [Blade's Edge Mountains,62.3,61.2] and kill the mobs as they spawn from the teleporter. Use the pet skill as soon as it comes off cooldown to destroy the Warp-Gate.
+.' Use the Artillery on the Warp-Gate ability 7 times |petaction 4
 .' Destroy the North Warp-Gate |q 10911/2
 step
-'Use your Druid Signal anywhere in Death's Door |use Druid Signal##31763
+goto 62.4,61.1
+.' Use your Druid Signal anywhere in Death's Door |use Druid Signal##31763
 .talk 22423
 ..turnin 10911
 ..accept 10912
@@ -37697,7 +37800,7 @@ goto 62.7,39.4
 ..turnin 10912
 step
 goto 64.2,18.6
-.' Use Rexxar's Battle Horn next to the Altar of Goc |tip It looks like a large gray stone table on the ground.
+.' Use Rexxar's Battle Horn next to the Altar of Goc |use Rexxar's Battle Horn##31146 |tip It looks like a large gray stone table on the ground.
 .kill Goc##20555 |q 10742/1
 step
 goto 51.8,58.3
@@ -37711,11 +37814,12 @@ goto Terokkar Forest 20.5,17.7
 step
 goto Blade's Edge Mountains 55.5,44.9
 .talk 22941
+.|tip He is at the top of the tower
 ..turnin 10997
 ..accept 10998
 step
 goto 77.5,30.5
-.' Stand in this ring of fire on the ground
+.' _Stand_ in this ring of fire on the ground
 .from Vim'gol the Vile##22911
 .click Vim'gol's Vile Grimoire##255 |tip It's a red book that spawns on Vim'gol the Vile's stomach after you kill him.
 .get Vim'gol's Vile Grimoire |q 10998/1
@@ -37744,7 +37848,8 @@ goto 28.8,57.4
 ..accept 11025
 step
 goto 29.2,65.2
-.click Apexis Shard Formation##7210+ |tip They are tucked away amongst the many huge blue crystal bunches around this area, so you just move your mouse around in the bunches of big blue crystals until you highlight over the Apexis Shard Formations.
+.click Apexis Shard Formation##7210+
+.|tip They are tucked away amongst the many huge blue crystal bunches around this area, so you just move your mouse around in the bunches of big blue crystals until you highlight over the Apexis Shard Formations.
 .' You can also kill any type of mob around this whole area
 .get 5 Apexis Shard |q 11025/1
 step
@@ -37758,16 +37863,17 @@ goto 28.4,57.6
 ..accept 11030
 step
 goto 29.2,65.2
-.click Apexis Shard Formation##7210+ |tip They are tucked away amongst the many huge blue crystal bunches around this area, so you just move your mouse around in the bunches of big blue crystals until you highlight over the Apexis Shard Formations.
+.click Apexis Shard Formation##7210+
+.|tip They are tucked away amongst the many huge blue crystal bunches around this area, so you just move your mouse around in the bunches of big blue crystals until you highlight over the Apexis Shard Formations.
 .' You can also kill any type of mob around this whole area
 .collect Apexis Shard##32569 |q 11058
 step
 goto 31.5,63.4
 .click Apexis Relic##7378 |tip It looks like a smaller floating crystal hovering over a white orb on the ground.
-..' Insert an Apexis Shard, and begin!
+.' Insert an Apexis Shard, and begin!
 .' Repeat the color patterns that are shown |tip Ignore the floating crystal now, focus on the crystals on the ground.  You will be shown a color sequence.  Once the sequence is done, you have to click the stones on the ground in the same order.  It's random every time, and you'll have to repeat 6 sequences.  It helps to stand directly under the floating crystal and move your camera up so you are looking down at the top of your head.
 .' Attain the Apexis Vibrations |q 11058/1
-.' If you fail, get another Apexis Shard around 29.2,65.2
+.' If you fail, get another Apexis Shard around [Blade's Edge Mountains,29.2,65.2]
 step
 goto 28.8,57.4
 .talk 23233
@@ -37775,29 +37881,31 @@ goto 28.8,57.4
 ..accept 11080
 step
 goto 29.2,65.2
-.click Apexis Shard Formation##7210+ |tip They are tucked away amongst the many huge blue crystal bunches around this area, so you just move your mouse around in the bunches of big blue crystals until you highlight over the Apexis Shard Formations.
+.click Apexis Shard Formation##7210+
+.|tip They are tucked away amongst the many huge blue crystal bunches around this area, so you just move your mouse around in the bunches of big blue crystals until you highlight over the Apexis Shard Formations.
 .' You can also kill any type of mob around this whole area
 .collect Apexis Shard##32569 |q 11080
 step
 goto 31.5,63.4
 .click Apexis Relic##7378 |tip It looks like a smaller floating crystal hovering over a white orb on the ground.
-..' Insert an Apexis Shard, and begin!
+.' Insert an Apexis Shard, and begin!
 .' Repeat the color patterns that are shown |tip Ignore the floating crystal now, focus on the crystals on the ground.  You will be shown a color sequence.  Once the sequence is done, you have to click the stones on the ground in the same order.  It's random every time, and you'll have to repeat 8 sequences.  It helps to stand directly under the floating crystal and move your camera up so you are looking down at the top of your head.
 .' Attain the Apexis Vibrations |q 11080/1
-.' If you fail, get another Apexis Shard around 29.2,65.2
+.' If you fail, get another Apexis Shard around [Blade's Edge Mountains,29.2,65.2]
 step
 goto 28.8,57.4
 .talk 23233
 ..turnin 11080
 step
 goto 31.2,52.2
-.click Apexis Shard Formation##7210+ |tip They are tucked away amongst the many huge blue crystal bunches around this area, so you just move your mouse around in the bunches of big blue crystals until you highlight over the Apexis Shard Formations.
+.click Apexis Shard Formation##7210+
+.|tip They are tucked away amongst the many huge blue crystal bunches around this area, so you just move your mouse around in the bunches of big blue crystals until you highlight over the Apexis Shard Formations.
 .' You can also kill any type of mob around this whole area
 .collect 10 Apexis Shard##32569 |q 11030
 step
 goto 32.8,40.5
 .click a Fel Crystalforge##7391 |tip It looks like a metal machine with green bubbling floating out of it quickly.
-..' Purchase 1 Unstable Flask of the Beast for the cost of 10 Apexis Shards
+.' Purchase 1 Unstable Flask of the Beast for the cost of 10 Apexis Shards
 .get Unstable Flask of the Beast |q 11030/1
 step
 goto 28.4,57.6
@@ -37849,19 +37957,31 @@ goto 31.6,56.4
 .from Aether Ray##22181+
 .' Use your Wrangling Rope on Aether Rays when they are ready to be wrangled |use Wrangling Rope##32698 |tip You will see a message in your chat window.  It may help to take off some of your gear if you are high level.
 .' Wrangle 5 Aether Rays |q 11065/1
+.' You can find more Aether Rays around [Blade's Edge Mountains,29.3,50.3]
 step
 goto 28.8,57.4
 .talk 23233
 ..accept 11059
 step
+goto 28.0,51.5
+.talk 23335
+..turnin 11065
+step
 goto 31.2,52.2
-.click Apexis Shard Formation##7210+ |tip They are tucked away amongst the many huge blue crystal bunches around this area, so you just move your mouse around in the bunches of big blue crystals until you highlight over the Apexis Shard Formations.
+.click Apexis Shard Formation##7210+
+.|tip They are tucked away amongst the many huge blue crystal bunches around this area, so you just move your mouse around in the bunches of big blue crystals until you highlight over the Apexis Shard Formations.
 .' You can also kill any type of mob around this whole area
+.' _TIP_ Two previous quests are still available and able to be completed one more time.
+.' The bombing quest you did earlier is available, and doing it again will give you 15 Apexis Shards. The quest giver is at [Blade's Edge Mountains,27.6,52.8]
+.' Use Skyguard Bomb |use Skyguard Bombs##32456
+.' The Aether Ray roundup quest is available, and gives 15 Apexis Shards. That quest giver is at [Blade's Edge Mountains,28.0,51.6]
+.' Use Wrangling Rope |use Wrangling Rope##32698
+.' Perform any of these tasks to obtain 35 Apexis Shards.
 .collect 35 Apexis Shard##32569 |q 11059
 step
 goto 31.8,63.8
 .click the Apexis Monument |tip It's a huge floating crystal that changes colors.
-..' Insert 35 Apexis Shards, and begin!
+.' Insert 35 Apexis Shards, and begin!
 .click any of the 4 big colored buttons on the ground |tip You will get hit for 7,000 damage, but if you are high level, it shouldn't be a big deal.  This will make the quest mob spawn faster.
 .from Apexis Guardian##22275
 .get Apexis Guardian's Head |q 11059/1
@@ -37870,27 +37990,25 @@ goto 28.8,57.4
 .talk 23233
 ..turnin 11059
 step
-goto 28.0,51.5
-.talk 23335
-..turnin 11065
-step
 goto 27.4,52.7
 .talk 23334
 ..accept 11078
 step
 goto 31.2,52.2
-.click Apexis Shard Formation##7210+ |tip They are tucked away amongst the many huge blue crystal bunches around this area, so you just move your mouse around in the bunches of big blue crystals until you highlight over the Apexis Shard Formations.
+.click Apexis Shard Formation##7210+
+.|tip They are tucked away amongst the many huge blue crystal bunches around this area, so you just move your mouse around in the bunches of big blue crystals until you highlight over the Apexis Shard Formations.
 .' You can also kill any type of mob around this whole area
 .collect 35 Apexis Shard##32569 |q 11078
 step
 goto 27.2,64.8
 .click Rivendark's Egg |tip It looks like a big brown spiked egg sitting in a nest on the ground.
-..' Place 35 Apexis Shards near the dragon egg to crack it open
+.' Place 35 Apexis Shards near the dragon egg to crack it open
 .from Rivendark##23061
 .get Dragon Teeth |q 11078/1
 step
 goto 31.2,52.2
-.click Apexis Shard Formation##7210+ |tip They are tucked away amongst the many huge blue crystal bunches around this area, so you just move your mouse around in the bunches of big blue crystals until you highlight over the Apexis Shard Formations.
+.click Apexis Shard Formation##7210+
+.|tip They are tucked away amongst the many huge blue crystal bunches around this area, so you just move your mouse around in the bunches of big blue crystals until you highlight over the Apexis Shard Formations.
 .' You can also kill any type of mob around this whole area
 .collect 10 Apexis Shard##32569 |q 11061
 step
@@ -37900,7 +38018,7 @@ goto 27.4,52.7
 step
 goto 54.4,10.8
 .click Bash'ir Crystalforge##7392
-..' Purchase 1 Unstable Flask of the Sorcerer for the cost of 10 Apexis Shards
+.' Purchase 1 Unstable Flask of the Sorcerer for the cost of 10 Apexis Shards
 .get Unstable Flask of the Sorcerer |q 11061/1
 step
 goto 28.4,57.6
@@ -37912,13 +38030,14 @@ goto 28.5,58.1
 ..accept 11079
 step
 goto 31.2,52.2
-.click Apexis Shard Formation##7210+ |tip They are tucked away amongst the many huge blue crystal bunches around this area, so you just move your mouse around in the bunches of big blue crystals until you highlight over the Apexis Shard Formations.
+.click Apexis Shard Formation##7210+
+.|tip They are tucked away amongst the many huge blue crystal bunches around this area, so you just move your mouse around in the bunches of big blue crystals until you highlight over the Apexis Shard Formations.
 .' You can also kill any type of mob around this whole area
 .collect 35 Apexis Shard##32569 |q 11079
 step
 goto 33.9,44.2
 .click the Fel Crystal Prism |tip It's a big green crystal floating in green smoke above 4 metal vents.
-..' Place 35 Apexis Shards into the prism
+.' Place 35 Apexis Shards into the prism
 .' There are 4 different demons that can spawn:
 .from Mo'arg Incinerator##23354
 .from Braxxus##23353
@@ -37943,7 +38062,7 @@ author support@zygorguides.com
 condition end achieved(1194)
 leechsteps "Zygor's Horde Leveling Guides\\Outland 60-70\\Netherstorm (68-70)"
 step
-'We recommend being at least level 80 before trying to complete this guide.
+.' We recommend being at least level 80 before trying to complete this guide.
 |confirm
 step
 goto Netherstorm,57.5,86.4
@@ -37952,6 +38071,7 @@ goto Netherstorm,57.5,86.4
 step
 goto 58.3,86.4
 .talk 19481
+.|tip He is all the way at the top of the tower
 ..accept 10256
 step
 goto 62.8,78.9
@@ -37967,6 +38087,7 @@ goto 57.5,86.4
 step
 goto 58.4,86.3
 .' Use Apex's Crystal Focus next to Archmage Vargoth's Orb |use Apex's Crystal Focus##28786
+.|tip It is a small golden winged statue sitting behind him
 .' Discover the Keymaster's identity |q 10256/1
 step
 goto 58.3,86.4
@@ -38020,12 +38141,14 @@ goto 32.1,64.7
 step
 goto 32.0,64.2
 .talk 19467
+.|tip She is inside the inn
 ..accept 10323
 ..accept 10407
 only if rep ('The Aldor') >= Neutral
 step
 goto 32.0,64.1
 .talk 19468
+.|tip He is inside the inn
 ..accept 10365
 only if rep ('The Scryers') >= Neutral
 step
@@ -38045,7 +38168,8 @@ goto 33.0,64.7
 .talk 19645
 ..turnin 10261
 step
-.' Go inside of Manaforge Ara to 26.7,36.8 |goto 26.7,36.8
+goto 26.7,36.8
+.' Go inside the Manaforge Ara to this spot
 .from Overseer Azarad##20685 |tip He walks around inside Manaforge Ara and stops in at this small side room.
 .get Ara Access Crystal##29411 |q 10323/2
 only if rep ('The Aldor') >= Neutral
@@ -38054,11 +38178,12 @@ goto 26.0,38.8
 .click Ara Control Console##7076
 .click "<Begin emergency shutdown>"
 .' Kill the technicians as they come to try to save the Manaforge
-..'Only takes 2 minutes
+.'Only takes 2 minutes
 .' Shut Down Manaforge Duro |q 10323/1
 only if rep ('The Aldor') >= Neutral
 step
-.' Go inside of Manaforge Ara to 26.7,36.8 |goto 26.7,36.8
+goto 26.7,36.8
+.' Go inside the Manaforge Ara to this spot
 .from Overseer Azarad##20685 |tip He walks around inside Manaforge Ara and stops in at this small side room.
 .get Ara Access Crystal##29411 |q 10365/2
 only if rep ('The Scryers') >= Neutral
@@ -38067,7 +38192,7 @@ goto 26.0,38.8
 .click Ara Control Console##7076
 .click "<Begin emergency shutdown>"
 .' Kill the technicians as they come to try to save the Manaforge
-..'Only takes 2 minutes
+.'Only takes 2 minutes
 .' Shut Down Manaforge Duro |q 10365/1
 only if rep ('The Scryers') >= Neutral
 step
@@ -38083,6 +38208,7 @@ only if rep ('The Aldor') >= Neutral
 step
 goto 32.0,64.2
 .talk 19467
+.|tip She is inside the inn
 ..turnin 10323
 ..turnin 10407
 ..accept 10410
@@ -38113,8 +38239,10 @@ goto 60.6,32.1
 .' Speak to Captain Saeed |q 10439/2
 .' Tell him, "Let's go!"
 step
-.' Follow Captain Saeed and his men to 60.8,39.3 |goto 60.8,39.3
+goto 60.8,39.3
+.' Follow Captain Saeed and his men
 .talk 20985
+.|tip He will wait until you are ready to proceed
 .' Tell him, "I am ready"
 .kill Dimensius the All-Devouring##19554 |q 10439/1
 step
@@ -38144,10 +38272,17 @@ step
 goto 45.9,36.0
 .talk 20084
 ..turnin 10276
+step
+goto 45.8,36.0
+.' Watch the dialogue
+.kill Ambassador Solannas##20163
+.kill Ambassador's Honor Guard##20199+
+.talk 20084
 ..accept 10280
 step
 goto 49.7,17.5
 .from Cragskaar##20202
+.|tip He is a huge stone giant that walks east and west along this spot
 .get Farahlite Core |q 10293/1
 step
 goto 44.1,36.0
@@ -38168,7 +38303,7 @@ author support@zygorguides.com
 condition end achieved(1195)
 leechsteps "Zygor's Horde Leveling Guides\\Outland 60-70\\Shadowmoon Valley (68-70)"
 step
-'We recommend being at least level 80 before trying to complete this guide.
+.' We recommend being at least level 80 before trying to complete this guide.
 |confirm
 step
 goto Shadowmoon Valley,28.5,26.5
@@ -38186,7 +38321,7 @@ step
 goto 51.4,63.4
 .' Discover the Path of Conquest |q 10750/1 |tip You should receive a message saying you discovered the Path of Conquest just by going to this spot.
 step
-'Use your Kor'kron Flare Gun in your bag |use Kor'kron Flare Gun##31108
+.' Use your Kor'kron Flare Gun in your bag |use Kor'kron Flare Gun##31108
 .talk 21998
 ..turnin 10750
 ..accept 10751
@@ -38195,8 +38330,9 @@ goto 51.7,65.0
 .kill 20 Eclipsion Soldier##22016+ |q 10751/1
 .kill 10 Eclipsion Cavalier##22018+ |q 10751/2
 .kill 10 Eclipsion Spellbinder##22017+ |q 10751/3
+.' You can find more mobs at [Shadowmoon Valley,52.6,69.7]
 step
-'Use your Kor'kron Flare Gun in your bag |use Kor'kron Flare Gun##31108
+.' Use your Kor'kron Flare Gun in your bag |use Kor'kron Flare Gun##31108
 .talk 21998
 ..turnin 10751
 ..accept 10765
@@ -38206,7 +38342,7 @@ goto 52.9,69.8
 .kill Chancellor Bloodleaf##22012 |q 10765/1
 .get Illidan's Command |q 10765/3
 step
-'Use your Kor'kron Flare Gun in your bag |use Kor'kron Flare Gun##31108
+.' Use your Kor'kron Flare Gun in your bag |use Kor'kron Flare Gun##31108
 .talk 21998
 ..turnin 10765
 ..accept 10768
@@ -38215,7 +38351,7 @@ goto 51.7,65.0
 .from 20 Eclipsion Soldier##22016+, Eclipsion Cavalier##22018, Eclipsion Spellbinder##22017+
 .get 10 Illidari Tabard |q 10768/1
 step
-'Use your Kor'kron Flare Gun in your bag |use Kor'kron Flare Gun##31108
+.' Use your Kor'kron Flare Gun in your bag |use Kor'kron Flare Gun##31108
 .talk 21998
 ..turnin 10768
 ..accept 10769
@@ -38231,6 +38367,7 @@ goto 28.5,26.5
 step
 goto 61.4,57.0
 .from Ruul the Darkener##21315
+.' He rides around on a drake, walking between that spot and this one [Shadowmoon Valley,67.6,60.9]
 .get Third Fragment of the Cipher of Damnation |q 10578/1
 step
 goto 47.6,57.2
@@ -38242,12 +38379,11 @@ goto 53.9,23.5
 .talk 21183
 ..turnin 10579
 step
-goto 53.1,25.3
-.' Go into the Coilskar Cistern |goto 53.1,25.3,0.3 |noway |c
+.' Go into the Coilskar Cistern |goto 53.1,25.3,0.3 |c
 step
 goto Shadowmoon Valley,51.7,17.6
 .from Keeper of the Cistern##20795
-.' Walk to [52.1,18.8]
+.' Walk to [Shadowmoon Valley,52.1,18.8]
 .talk 21027
 ..accept 10451
 .' Escort Earthmender Wilda to Safety |q 10451/1
@@ -38299,6 +38435,7 @@ goto 58.2,70.8
 step
 goto 69.8,85.9
 .' Use your Spectrecles to equip them while standing on this hill |use Spectrecles##30721
+.' If you lost them, go talk to Chief Apothecary Hildagard at [Shadowmoon Valley,29.9,27.7]
 .from Vhel'kur##21801 |tip He is a dragon flying around in the sky. If he does not show up as attackable try unequiping and re-equipping your Spectrecles. You will need to stand on the tallest hill and pull him to you. If you can't reach him you may need to ask someone for help.
 .get Gorefiend's Armor |q 10634/1
 step
@@ -38308,9 +38445,13 @@ goto 58.3,70.8
 step
 goto 52.5,57.3
 .' Use your Spectrecles to equip them |use Spectrecles##30721
+.' If you lost them, go talk to Chief Apothecary Hildagard at [Shadowmoon Valley,29.9,27.7]
 .' Starting from this bridge, follow the main road clockwise around Shadowmoon Valley
 .from Ghostrider of Karabor##21784 |tip You will only be able to see them if you have your Spectrecles equipped.  If they do not show up as attackable try unequipping and re-equipping your Spectrecles.
 .get Gorefiend's Truncheon |q 10636/1
+step
+.' Don't forget to equip your headpiece again
+|confirm
 step
 goto 58.2,70.8
 .talk 21797
@@ -38336,9 +38477,9 @@ goto 53.9,23.5
 step
 goto 43.1,44.9
 .' Use the Cipher of Damnation while standing in front of the altar |use Cipher of Damnation##30657
-.' Go to [42.8,44.7]
+.' Go to [Shadowmoon Valley,42.9,45.0]
 .talk 21685 |tip It will take a minute for him to show up.
-..' Tell him you are ready.
+.' Tell him you are ready.
 .' Follow Oronok Torn-heart
 .kill Cyrukh the Firelord##21181 |q 10588/1
 step
@@ -38348,6 +38489,10 @@ goto 42.2,45.1
 step
 goto 53.3,59.0
 .from Val'zareq the Conqueror##21979
+.' He walks all around the Path of Conquest. Check these locations if you need to find him:
+.' [Shadowmoon Valley,51.2,61.2]
+.' [Shadowmoon Valley,52.1,67.7]
+.' [Shadowmoon Valley,53.1,64.2]
 .collect The Journal of Val'zareq##31345 |n
 .click The Journal of Val'zareq in your bags |use The Journal of Val'zareq##31345
 ..accept 10793
@@ -38358,6 +38503,7 @@ goto 51.4,72.8
 step
 goto 60.0,53.8
 .talk 21657+
+.|tip He is a dragon the flies high up in the sky. You may have to look for him. If you have low-level quests tracked, watch for a gold exclamation mark on your mini map.
 ..accept 10858
 step
 goto 69.9,61.5
@@ -38378,7 +38524,7 @@ goto 69.9,61.5
 ..turnin 10866
 ..accept 10870
 step
-goto 62.9,59.5
+goto 59.3,58.7
 .talk 22113
 ..turnin 10870
 ..accept 11012 |instant
@@ -38412,7 +38558,7 @@ author support@zygorguides.com
 condition end achieved(1359)
 leechsteps "Zygor's Horde Leveling Guides\\Northrend 70-80\\Dragonblight (71-74)"
 step
-'We recommend being at least level 85 before trying to complete this guide.
+.' We recommend being at least level 85 before trying to complete this guide.
 |confirm
 step
 goto Dragonblight 60,55.2
@@ -38491,7 +38637,7 @@ author support@zygorguides.com
 condition end achieved(36)
 leechsteps "Zygor's Horde Leveling Guides\\Northrend 70-80\\Zul'Drak (75-77)"
 step
-'We recommend being at least level 85 before trying to complete this guide.
+.' We recommend being at least level 85 before trying to complete this guide.
 |confirm
 step
 goto Zul'Drak,58.1,72.0
@@ -38629,7 +38775,7 @@ author support@zygorguides.com
 condition end achieved(39)
 leechsteps "Zygor's Horde Leveling Guides\\Northrend 70-80\\Sholazar Basin (77-78)"
 step
-'We recommend being at least level 85 before trying to complete the remainder of this guide.
+.' We recommend being at least level 85 before trying to complete the remainder of this guide.
 |confirm
 step
 goto Sholazar Basin 54.5,56.6
@@ -38669,7 +38815,7 @@ condition end achieved(40)
 map Icecrown
 leechsteps "Zygor's Horde Leveling Guides\\Northrend 70-80\\Icecrown (78-80)"
 step
-'We recommend being at least level 85 before trying to complete this guide.
+.' We recommend being at least level 85 before trying to complete this guide.
 |confirm
 step
 'Orgrim's Hammer flies in a triangular pattern using these points:

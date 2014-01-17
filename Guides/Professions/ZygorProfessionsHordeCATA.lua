@@ -2914,7 +2914,7 @@ step
 #include "trainer_Enchanting"
 .learn Enchant Bracer - Strength##13661
 step
-.create 40 Enchant Bracer - Strength##13661,Enchanting,220 |tip You can keep enchanting the same item repeatedly.
+.create 35 Enchant Bracer - Strength##13661,Enchanting,220 |tip You can keep enchanting the same item repeatedly.
 step
 title +Enchanting 205-300
 label "ench_205-300"
@@ -3008,7 +3008,7 @@ label "ench_300-351_farm"
 goto The Shattered Halls/1 61.14,92.81
 'Run through the Shattered Halls dungeon, killing all mobs along the way.
 'Disenchant any uncommon quality (green) armor and weapons with an item level of 80-99. |cast Disenchant##13262
-.collect 165 Arcane Dust##22445
+.collect 195 Arcane Dust##22445
 .collect 40 Lesser Planar Essence##22447
 .collect 20 Greater Planar Essence##22446
 .collect 10 Large Prismatic Shard##22449

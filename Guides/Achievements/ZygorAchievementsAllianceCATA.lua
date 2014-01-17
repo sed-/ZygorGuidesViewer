@@ -1676,7 +1676,8 @@ step
 goto Shimmering Expanse 70.6,55.0
 .' The _Whale Shark_ swims in a circle around Nespirah. Some searching may be required.
 .' When fighting the whale shark, it is important to know that you cannot use melee attacks, as he will kill you rather quickly. The best strategy is to use ranged attacks to kite him around and just slowly drain his health to 0.
-.from Whale Shark##40728 |achieve 4975
+.from Whale Shark##40728
+|achieve 4975
 step
 'Congratulations!  You've earned the From Hell's Heart I Stab At Thee achievement!
 ]])
@@ -11991,8 +11992,8 @@ goto Darkshore,48.6,18.0
 step
 goto Moonglade 52.4,46.9
 .' Use your fishing skills at Lake Elune'ara.
-.' Catch a Nightfin Snapper.  They can only be caught at night. |achieve 5478/33
-.' Catch a Sunscale Salmon. They canonly be caught during the day. |achieve 5479/29
+.' Catch a Nightfin Snapper. They can be caught most times of the day but there is a higher chance to get it between midnight and 6am server time and can't be caught from noon to 6pm server time. |achieve 5478/33
+.' Catch a Sunscale Salmon. They can only be caught during the day. |achieve 5479/29
 .' Catch a Raw Redgill. |achieve 5479/22
 step
 goto Mount Hyjal,60.6,23.7

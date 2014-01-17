@@ -29672,7 +29672,7 @@ step
 goto 37.2,65.5
 .from Indu'le Mystic##26336, Indu'le Warrior##26344
 .' Put 15 Indu'le spirits to rest |q 12031/1
-.' YOu can find more mobs at [Dragonblight,39.5,70.4]
+.' You can find more mobs at [Dragonblight,39.5,70.4]
 step
 goto 36.4,65
 .' Talk to Elder Mana'loa
@@ -36483,9 +36483,9 @@ condition end achieved(1189)
 startlevel 00.00
 dynamic on
 step
-'Click here if you have already completed the Hellfire Peninsula Leveling Guide. |confirm |next "compl"
+.' Click here if you have already completed the Hellfire Peninsula Leveling Guide. |confirm |next "compl"
 .'_
-'Click here if you have not already completed the Hellfire Peninsula Leveing Guide. |confirm |next
+.' Click here if you have not already completed the Hellfire Peninsula Leveing Guide. |confirm |next
 step
 leechsteps "Zygor's Alliance Leveling Guides\\Outland 60-70\\Hellfire Peninsula (60-62)"
 step
@@ -36628,7 +36628,7 @@ startlevel 68.97
 dynamic on
 leechsteps "Zygor's Alliance Leveling Guides\\Outland 60-70\\Terokkar Forest (64-65)"
 step
-'You must complete the Terokkar Forest Leveling Guide before completing this guide section. |tip We recommend being at least level 68 before trying to complete this guide.
+.' You must complete the Terokkar Forest Leveling Guide before completing this guide section. |tip We recommend being at least level 68 before trying to complete this guide.
 |confirm
 step
 goto Shattrath City,48.2,18.7
@@ -37429,7 +37429,7 @@ startlevel 00.00
 dynamic on
 leechsteps "Zygor's Alliance Leveling Guides\\Outland 60-70\\Blade's Edge Mountains (67-68)"
 step
-'We recommend being at least level 80 before trying to complete this guide.
+.' We recommend being at least level 80 before trying to complete this guide.
 |confirm
 step
 goto Blade's Edge Mountains,55.4,45.3
@@ -37629,7 +37629,7 @@ goto 29.2,65.2
 step
 goto 27.7,68.1
 .' Click the Apexis Relic |tip It looks like a smaller floating crystal hovering over a white orb on the ground.
-..' Insert an Apexis Shard, and begin!
+.' Insert an Apexis Shard, and begin!
 .' Repeat the color patterns that are shown |tip Ignore the floating crystal now, focus on the crystals on the ground.  You will be shown a color sequence.  Once the sequence is done, you have to click the stones on the ground in the same order.  It's random every time, and you'll have to repeat 6 sequences.  It helps to stand directly under the floating crystal and move your camera up so you are looking down at the top of your head.
 .' Attain the Apexis Vibrations |q 11058/1
 .' If you fail, get another Apexis Shard around [29.2,65.2]
@@ -37646,7 +37646,7 @@ goto 29.2,65.2
 step
 goto 31.5,63.4
 .' Click the Apexis Relic |tip It looks like a smaller floating crystal hovering over a white orb on the ground.
-..' Insert an Apexis Shard, and begin!
+.' Insert an Apexis Shard, and begin!
 .' Repeat the color patterns that are shown |tip Ignore the floating crystal now, focus on the crystals on the ground.  You will be shown a color sequence.  Once the sequence is done, you have to click the stones on the ground in the same order.  It's random every time, and you'll have to repeat 8 sequences.  It helps to stand directly under the floating crystal and move your camera up so you are looking down at the top of your head.
 .' Attain the Apexis Vibrations |q 11080/1
 .' If you fail, get another Apexis Shard around [29.2,65.2]
@@ -37662,7 +37662,7 @@ goto 29.2,65.2
 step
 goto 32.8,40.5
 .' Click a Fel Crystalforge |tip It looks like a metal machine with green bubbling floating out of it quickly.
-..' Purchase 1 Unstable Flask of the Beast for the cost of 10 Apexis Shards
+.' Purchase 1 Unstable Flask of the Beast for the cost of 10 Apexis Shards
 .get Unstable Flask of the Beast |q 11030/1
 step
 goto 28.4,57.6
@@ -37719,15 +37719,25 @@ goto 28.8,57.4
 .talk 23233
 ..accept 11059
 step
-goto 29.2,65.2
-.from Apexis Flayer##22175+, Shard-Hide Boar##22180+, Aether Ray##22181+
-.click Apexis Shard Formations
-.collect Apexis Shard##32569 |q 11080
+goto 28.0,51.5
+.talk 23335
+..turnin 11065
+step
+goto 31.2,52.2
+.click Apexis Shard Formation##7210+
+.|tip They are tucked away amongst the many huge blue crystal bunches around this area, so you just move your mouse around in the bunches of big blue crystals until you highlight over the Apexis Shard Formations.
+.' You can also kill any type of mob around this whole area
+.' _TIP_ Two previous quests are still available and able to be completed one more time.
+.' The bombing quest you did earlier is available, and doing it again will give you 15 Apexis Shards. The quest giver is at [Blade's Edge Mountains,27.6,52.8]
+.' Use Skyguard Bomb |use Skyguard Bombs##32456
+.' The Aether Ray roundup quest is available, and gives 15 Apexis Shards. That quest giver is at [Blade's Edge Mountains,28.0,51.6]
+.' Use Wrangling Rope |use Wrangling Rope##32698
+.' Perform any of these tasks to obtain 35 Apexis Shards.
 .collect 35 Apexis Shard##32569 |q 11059
 step
 goto 31.8,63.8
 .' Click the Apexis Monument |tip It's a huge floating crystal that changes colors.
-..' Insert 35 Apexis Shards, and begin!
+.' Insert 35 Apexis Shards, and begin!
 .' Click any of the 4 big colored buttons on the ground |tip You will get hit for 7,000 damage, but if you are high level, it shouldn't be a big deal.  This will make the quest mob spawn faster.
 .from Apexis Guardian##22275
 .get Apexis Guardian's Head |q 11059/1
@@ -37735,10 +37745,6 @@ step
 goto 28.8,57.4
 .talk 23233
 ..turnin 11059
-step
-goto 28.0,51.5
-.talk 23335
-..turnin 11065
 step
 goto 27.4,52.7
 .talk 23334
@@ -37752,7 +37758,7 @@ goto 29.2,65.2
 step
 goto 27.2,64.8
 .' Click Rivendark's Egg |tip It looks like a big brown spiked egg sitting in a nest on the ground.
-..' Place 35 Apexis Shards near the dragon egg to crack it open
+.' Place 35 Apexis Shards near the dragon egg to crack it open
 .from Rivendark##23061
 .get Dragon Teeth |q 11078/1
 step
@@ -37768,7 +37774,7 @@ goto 27.4,52.7
 step
 goto 54.4,10.8
 .' Click the Bash'ir Crystalforge |tip It looks like a 3-layered well sitting on the ground in the middle of a big circular pink glowing symbol.
-..' Purchase 1 Unstable Flask of the Sorcerer for the cost of 10 Apexis Shards
+.' Purchase 1 Unstable Flask of the Sorcerer for the cost of 10 Apexis Shards
 .get Unstable Flask of the Sorcerer |q 11061/1
 step
 goto 28.4,57.6
@@ -37787,7 +37793,7 @@ goto 31.2,52.2
 step
 goto 33.9,44.2
 .' Click the Fel Crystal Prism |tip It's a big green crystal floating in green smoke above 4 metal vents.
-..' Place 35 Apexis Shards into the prism
+.' Place 35 Apexis Shards into the prism
 .' There are 4 different demons that can spawn:
 .from Mo'arg Incinerator##23354
 .from Braxxus##23353
@@ -37814,7 +37820,7 @@ startlevel 00.00
 dynamic on
 leechsteps "Zygor's Alliance Leveling Guides\\Outland 60-70\\Netherstorm (68-70)"
 step
-'We recommend being at least level 80 before trying to complete the rest of this guide.
+.' We recommend being at least level 80 before trying to complete the rest of this guide.
 |confirm
 step
 goto Netherstorm,57.5,86.4
@@ -38080,7 +38086,7 @@ startlevel 68.97
 dynamic on
 leechsteps "Zygor's Alliance Leveling Guides\\Outland 60-70\\Shadowmoon Valley (68-70)"
 step
-'You must complete all previous Outland Loremaster Guides. |tip We recommend being at least level 80 before trying to complete the remainder of this guide.
+.' You must complete all previous Outland Loremaster Guides. |tip We recommend being at least level 80 before trying to complete the remainder of this guide.
 |confirm
 step
 goto Shadowmoon Valley,38.2,54.0
@@ -38344,7 +38350,7 @@ author support@zygorguides.com
 condition end achieved(35)
 leechsteps "Zygor's Alliance Leveling Guides\\Northrend 70-80\\Dragonblight (72-74)"
 step
-'You must complete the Dragonblight Leveling Guide before completing this guide section. |tip We recommend being at least level 85 before trying to complete this guide.
+.' You must complete the Dragonblight Leveling Guide before completing this guide section. |tip We recommend being at least level 85 before trying to complete this guide.
 |confirm
 step
 goto Dragonblight,60.0,55.2

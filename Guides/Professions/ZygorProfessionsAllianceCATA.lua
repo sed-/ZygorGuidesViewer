@@ -3077,6 +3077,7 @@ goto Razorfen Kraul 69.89,82.97
 .collect 20 Lesser Mystic Essence##11134 |n
 .collect 40 Vision Dust##11137 |n
 step
+label "farm2"
 goto Razorfen Downs 23.79,18.80
 'Run through the Razorfen Downs dungeon, killing all mobs along the way.
 'Disenchant any uncommon quality (green) armor and weapons you loot. |cast Disenchant##13262
@@ -3099,7 +3100,7 @@ step
 #include "trainer_Enchanting"
 .learn Enchant Bracer - Strength##13661
 step
-.create 22 Enchant Bracer - Strength##13661,Enchanting,220 |tip You can keep enchanting the same item repeatedly.
+.create 35 Enchant Bracer - Strength##13661,Enchanting,220 |tip You can keep enchanting the same item repeatedly.
 step
 title +Enchanting 205-300
 label "ench_205-300"
@@ -3109,7 +3110,7 @@ label "ench_205-300"
 step
 goto Stormwind City,62.8,75.1
 .talk 1257
-.buy 15 Crystal Vial##3371
+.buy 20 Crystal Vial##3371
 step
 #include "auctioneer"
 .buy 15 Lesser Nether Essence##11174
@@ -3181,11 +3182,11 @@ label "ench_300-351"
 .skillmax Enchanting,375
 step
 #include "auctioneer"
-.buy 165 Arcane Dust##22445
+.buy 195 Arcane Dust##22445
 .buy 20 Greater Planar Essence##22446
 .buy 10 Large Prismatic Shard##22449
 .buy 40 Lesser Planar Essence##22447
-.buy 15 Nightmare Vine##22792 |tip You will need to buy this item. It cannot be aquired through Disenchanting.
+.buy 20 Nightmare Vine##22792 |tip You will need to buy this item. It cannot be aquired through Disenchanting.
 #include "go_disenchant",skill="Enchanting",req="1",goto="ench_300-351_farm"
 next "ench_300-351_skill"
 step
@@ -3193,7 +3194,7 @@ label "ench_300-351_farm"
 goto The Shattered Halls/1 61.14,92.81
 'Run through the Shattered Halls dungeon, killing all mobs along the way.
 'Disenchant any uncommon quality (green) armor and weapons with an item level of 80-99. |cast Disenchant##13262
-.collect 165 Arcane Dust##22445
+.collect 195 Arcane Dust##22445
 .collect 40 Lesser Planar Essence##22447
 .collect 20 Greater Planar Essence##22446
 .collect 10 Large Prismatic Shard##22449
@@ -3268,9 +3269,9 @@ label "farming"
 goto Wintergrasp,77.4,41.9
 .from Glacial Spirit##30846+, Water Revenant##30877+
 .collect 5 Crystallized Water##37705
-.' You can find more at 64.2,58.8
-.' You can find more at 44.2,56.7
-.' You can find more at 28.9,50.3
+.' You can find more at [64.2,58.8]
+.' You can find more at [44.2,56.7]
+.' You can find more at [28.9,50.3]
 step
 label "ench_351-426_skill"
 .create 25 Enchant Cloak - Speed##60609,Enchanting,375 |tip You can keep enchanting the same item repeatedly.
@@ -3283,22 +3284,22 @@ step
 #include "trainer_Enchanting"
 .learn Enchant Bracers - Exceptional Intellect##44555
 step
-.create 5 Enchant Bracers - Exceptional Intellect##44555,Enchanting,386 |tip You can keep enchanting the same item repeatedly.
+.create 3 Enchant Bracers - Exceptional Intellect##44555,Enchanting,386 |tip You can keep enchanting the same item repeatedly.
 step
 #include "trainer_Enchanting"
 .learn Enchant Boots - Icewalker##60623
 step
-.create 10 Enchant Boots - Icewalker##60623,Enchanting,396 |tip You can keep enchanting the same item repeatedly.
+.create 5 Enchant Boots - Icewalker##60623,Enchanting,396 |tip You can keep enchanting the same item repeatedly.
 step
 #include "trainer_Enchanting"
 .learn Enchant Cloak - Superior Agility##44500
 step
-.create 18 Enchant Cloak - Superior Agility##44500,Enchanting,405 |tip You can keep enchanting the same item repeatedly.
+.create 3 Enchant Cloak - Superior Agility##44500,Enchanting,405 |tip You can keep enchanting the same item repeatedly.
 step
 #include "trainer_Enchanting"
 .learn Enchant Gloves - Expertise##44484
 step
-.create 5 Enchant Gloves - Expertise##44484,Enchanting,417 |tip You can keep enchanting the same item repeatedly.
+.create 4 Enchant Gloves - Expertise##44484,Enchanting,417 |tip You can keep enchanting the same item repeatedly.
 step
 #include "trainer_Enchanting"
 .learn Enchant Gloves - Precision##44488
@@ -8902,7 +8903,7 @@ path 64.7,37.9	63.3,46.2	62.0,53.0
 path 55.1,56.0	49.9,60.4	46.2,53.9
 path 43.2,48.7	37.2,51.9
 #include "follow_path_mine"
-.'Click here to pick a different ore. |confirm |next "start"
+.' Click here to pick a different ore. |confirm |next "start"
 step "tin"
 map Northern Stranglethorn
 path	44.9,19.0	37.5,14.8	34.4,17.3
@@ -8913,7 +8914,7 @@ path	54.2,55.8	60.5,51.8	67.2,49.1
 path	67.3,36.9	66.4,25.8	59.9,18.9
 path	51.0,17.4
 #include "follow_path_mine"
-.'Click here to pick a different ore. |confirm |next "start"
+.' Click here to pick a different ore. |confirm |next "start"
 step "iron"
 map Feralas
 path	74.9,48.6	84.0,45.6
@@ -8929,7 +8930,7 @@ path	60.8,75.8	62.0,55.0	63.7,61.0
 path	66.4,51.3	68.2,51.3
 path	68.1,61.5	71.6,65.1	77.2,62.1
 #include "follow_path_mine"
-.'Click here to pick a different ore. |confirm |next "start"
+.' Click here to pick a different ore. |confirm |next "start"
 step "mithril"
 map Felwood
 path	63.5,24.5	62.6,6.9	55.7,18.6
@@ -8944,7 +8945,7 @@ path	52.5,88.8	57.7,86.5	58.6,84.8
 path	55.9,81.1	49.6,76.6	43.5,60.9
 path	42.9,50.8	52.9,31.6	59.6,27.2
 #include "follow_path_mine"
-.'Click here to pick a different ore. |confirm |next "start"
+.' Click here to pick a different ore. |confirm |next "start"
 step "thorium"
 map Winterspring
 path	52.8,46.2	58.3,41.2	59.7,45.0
@@ -8986,7 +8987,7 @@ path	65.0,59.8	65.6,56.0	75.0,63.9
 path	78.4,80.2	80.7,77.5	77.3,63.7
 path	72.7,60.2	71.5,53.1	68.3,52.0
 #include "follow_path_mine"
-.'Click here to pick a different ore. |confirm |next "start"
+.' Click here to pick a different ore. |confirm |next "start"
 step "adamantite"
 map Nagrand
 path	72.7,64.7	74.3,60.5	69.1,48.6
@@ -9003,7 +9004,7 @@ path	38.8,36.9	45.5,43.9	42.4,50.9
 path	48.0,57.5	51.5,55.6	60.5,56.9
 path	56.7,64.0	70.1,83.3	69.8,72.5
 #include "follow_path_mine"
-.'Click here to pick a different ore. |confirm |next "start"
+.' Click here to pick a different ore. |confirm |next "start"
 step "cobalt"
 map Howling Fjord
 path 83.0,44.8	78.1,39.4	72.7,38.3
@@ -9019,7 +9020,7 @@ path 64.4,67.8	64.4,72.4	67.9,76.5
 path 71.3,73.6	72.5,67.9	77.3,67.2
 path 77.2,60.8	74.9,55.3	79.1,50.4
 #include "follow_path_mine"
-.'Click here to pick a different ore. |confirm |next "start"
+.' Click here to pick a different ore. |confirm |next "start"
 step "saronite"
 map Sholazar Basin
 path	28.7,61.7	35.8,67.6
