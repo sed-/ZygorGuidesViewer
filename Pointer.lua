@@ -3076,6 +3076,7 @@ function Pointer:MinimapNodeFlashOff()
 end
 
 local q=0
+
 do
 	local F = CreateFrame("FRAME","ZGVPointerExtraFrame")
 	local ant_last=GetTime()
@@ -3083,7 +3084,7 @@ do
 	F:SetScript("OnUpdate",function(self,elapsed)
 		if not ZGV.db then error("WTF? No ZGV.db when there's already OnUpdates running!?") end
 		local t=GetTime()
-
+		
 		-- ant_last and flash_last need to be increments of their respective intervals
 
 		ant_interval = (ZGV.db.profile.antspeed>900) and 0.001 or (ZGV.db.profile.antspeed==0) and 999 or (1/ZGV.db.profile.antspeed)
@@ -3092,10 +3093,10 @@ do
 			if ZGV.db.profile.waypointaddon=="internal" then
 				ZGV.Pointer:AnimateAnts()
 			end
-			ant_last=t-(t-ant_last)%ant_interval
+			ant_last=t-(t-ant_last)%ant_interval  -- make sure ant_last advances in exactly ant_interval increments.
 		end
 
-		-- Flashing node dots. Prettier than the standard, too. And slightly bigger.
+		-- Flashing node dots. Prettier than the standard, too. And slightly bigger.  Also, s/ode do/ude ti/.
 		if ZGV.db.profile.flashmapnodes then
 			if t-flash_last>=flash_interval then
 				ZGV.Pointer:MinimapNodeFlash()
@@ -3103,10 +3104,12 @@ do
 			end
 		end
 	end)
-
+	
 	local CHAIN = ZGV.ChainCall
 	F:SetPoint("CENTER",UIParent)
 	F:Show()
+
+	-- these make sure the flashing dots don't blink-glitch when their texture changes.
 	CHAIN(F:CreateTexture("ZGVPointerDotOn","OVERLAY")) :SetTexture(ZGV.DIR.."\\Skins\\objecticons_on") :SetSize(50,50) :SetPoint("CENTER") :SetNonBlocking(true) :Show()
 	CHAIN(F:CreateTexture("ZGVPointerDotOff","OVERLAY")) :SetTexture(ZGV.DIR.."\\Skins\\objecticons_off") :SetSize(50,50) :SetPoint("RIGHT") :SetNonBlocking(true) :Show()
 end

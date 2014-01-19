@@ -346,6 +346,7 @@ ZGV.ObjectModelsExtra={
 	[08392]={camscale=0.40},
 	[08393]={cz=-0.60,camscale=2.00},
 	[08441]={camscale=1.90},
+	[08452]={scale=0.30},
 	[08487]={cz=0.20,camscale=0.40},
 	[08513]={camscale=0.40},
 	[08544]={cz=4.60,facing=40,camscale=2.00,scale=1.50,portrait=0.60},

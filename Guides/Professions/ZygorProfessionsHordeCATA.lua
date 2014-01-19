@@ -9787,7 +9787,7 @@ step
 goto Valley of the Four Winds/0 59.0,50.3
 .' Equip your Fishing Pole |use Fishing Pole##6256
 .' Use your _Bright Baubles_. |use Bright Baubles##6532
-..Collect 5 Krasarang Paddlefish##74865
+..collect 5 Krasarang Paddlefish##74865
 ..collect 55 Emperor Salmon##74859
 .' Save any fish you get.
 .' Level your fishing to 600. |skill Fishing,600

@@ -6190,7 +6190,7 @@ goto 38.1,55.3
 ..accept 26938
 step
 goto 37.4,55.1
-.' Use your Enthralled Val'kyr's Call to Arms ability on Forsaken Troopers |petaction 4 |only if haveq(26938)
+.' Use your Enthralled Val'kyr's Call to Arms ability on Forsaken Troopers |petaction 4 |only if havequest(26938)
 .|tip Marking them with shift+v will make them easy to spot (Use v to mark enemies again).
 .' Mobilize 5 Forsaken Troopers |q 26938/1
 step
@@ -28718,9 +28718,12 @@ step
 goto 50.3,65.8
 .from Shoveltusk##23690+
 .get 6 Shoveltusk Ligament|q 11309/1
+.' You can find more Shoveltusks around [Howling Fjord,46.1,64.3]
 step
 goto 49.4,74.3
 .talk 24291
+.|tip He walks along this road
+.' If he's not there, follow the road west and then north to this spot [Howling Fjord,45.3,66.2] and look for him
 ..buy 1 Fresh Pound of Flesh##33612 |q 11309/2
 step
 goto 53.7,65.2
@@ -28755,6 +28758,8 @@ step
 goto 29.1,58.8
 .from Island Shoveltusk##24681+
 .get 6 Island Shoveltusk Meat|q 11456/1
+.' More can be found at [Howling Fjord,30.6,62.1]
+.' And also at [Howling Fjord,27.0,62.8]
 step
 goto 25.0,57.0
 .talk 24755
@@ -28772,11 +28777,13 @@ goto 25.0,57.0
 step
 goto 23.1,62.7
 .talk 24643
+.|tip He is in a small wooden boat
 ..turnin 11508
 ..accept 11509
 step
 goto 35.1,80.9
 .talk 24539
+.|tip He is inside a tiny tent
 ..turnin 11509
 ..accept 11510
 step
@@ -28793,11 +28800,11 @@ goto 38.3,83.4
 .get Sin'dorei Scrying Crystal |q 11510/1
 step
 goto 37.8,84.6
-.click Eagle Figurine##6925 |tip It's inside the sunken ship at the bottom of the ocean.
+.click Eagle Figurine##6925 |tip It's inside a sunken ship at the bottom of the ocean.
 .get Eagle Figurine|q 11434/2
 step
 goto 37.1,85.5
-.click Amani Vase##7495
+.click Amani Vase##7495 |tip It's inside a sunken ship at the bottom of the ocean.
 .get Amani Vase|q 11434/1
 step
 goto 31.4,77.9
@@ -28806,6 +28813,7 @@ goto 31.4,77.9
 step
 goto 35.1,80.9
 .talk 24539
+.|tip He is inside a tiny tent
 ..turnin 11510
 ..accept 11567
 ..accept 11512
@@ -28823,8 +28831,11 @@ goto 36.3,80.5
 step
 goto 35.1,80.9
 .talk 24539
+.|tip He is inside a tiny tent
 .' Tell him to pay up
 .' Fight him until he surrenders
+.|tip Be careful not to actually kill him
+.' Tell him Pay up Harry!
 .get "Silvermoon" Harry's Debt |q 11464/1 |q 11464/1
 step
 goto 36.3,80.5
@@ -28834,6 +28845,7 @@ goto 36.3,80.5
 step
 goto 35.3,79.6
 .talk 24639
+.|tip She is in a room all the way at the back of this building
 .' Pay 1 gold to bribe her into giving Jack Adams a drink
 .' He passes out on the table
 .talk 24788
@@ -28857,10 +28869,12 @@ step
 goto 37.2,74.8
 .' Go downstairs in the ship
 .from Mutinous Sea Dog##25026+
+.|tip They are all the way down on the bottom level of the ship
 .get 5 Barrel of Blasting Powder|q 11527/1
 step
 goto 37.2,74.8
 .talk 24910
+.|tip He is at the helm of the ship
 ..turnin 11527
 ..accept 11529
 step
@@ -28875,12 +28889,14 @@ step
 step
 goto 37.2,74.8
 .talk 24910
+.|tip He is at the helm of the ship
 ..turnin 11529
 ..accept 11530
 step
 goto 34.1,76.9
 .from Rabid Brown Bear##24633+
 .get 4 Bear Musk|q 11455/1
+.' You can find more bears at [Howling Fjord,33.5,80.8]
 step
 .' Go down into the cave |goto 33.5,75.4,0.5 |c
 step
@@ -28890,7 +28906,7 @@ goto 32.3,78.7
 .click The Frozen Heart of Isuldof##7554
 .get The Frozen Heart of Isuldof|q 11512/1
 step
-.' Leave the cave and go north to this spot |goto 33.2,63.9 <5 |c
+.' Leave the cave |goto 33.6,75.6 <5 |c
 step
 goto 33.2,63.9
 .kill 8 Crazed Northsea Slaver##24676+ |q 11458/1
@@ -28918,14 +28934,14 @@ goto 24.6,58.9
 ..accept 11472
 step
 goto 28.9,74.8
-.' Use Anuniaq's Net on the Schools of Tasty Reef Fish |use Anuniaq's Net##40946 |tip They look like swarms of fish in the water.
+.' Use Anuniaq's Net on the Schools of Tasty Reef Fish |use Anuniaq's Net##40946 |tip They look like glittering swarms of fish in the water.
 .from Great Reef Shark##24637+
 .collect 10 Tasty Reef Fish##34127|q 11472
 step
 goto 31,74.4
 .' Use your Tasty Reef Fish on a Reef Bull as far away as you can |use Tasty Reef Fish##34127
 .' He will come to the spot where you're standing
-.' Keep doing this |tip The goal is to lead the Reef Bull to the other side of the water to a Reef Cow.
+.' Keep doing this, the goal is to lead the Reef Bull to the other side of the water to a Reef Cow at [Howling Fjord,31.5,71.5]
 .' Lead the Reef Bull to a Reef Cow on the other side of the water |q 11472/1
 |modelnpc Reef Bull##24786
 |modelnpc Reef Cow##24797
@@ -28947,10 +28963,12 @@ goto 35.6,80.2
 step
 goto 35.1,80.9
 .talk 24539
-..buy 1 Shiny Knife|q 11476/2
+.|tip He is inside a tiny tent
+.buy 1 Shiny Knife##35813 |q 11476/2
 step
 goto 35.6,81.7
 .clicknpc Scalawag Frog##26503
+.|tip Little frogs hopping around the camp
 .get Scalawag Frog|q 11476/1
 step
 goto 35.6,80.6
@@ -28963,7 +28981,8 @@ goto 36.3,80.5
 ..turnin 11467
 step
 goto 35.9,83.6
-.talk 24713 |tip Tell him that the frog says he's a traitor.
+.talk 24713 |tip He is standing up at the helm
+.' Tell him that the frog says he's a traitor.
 .kill "Crowleg" Dan |q 11479/1
 step
 goto 35.6,80.2
@@ -28973,11 +28992,12 @@ goto 35.6,80.2
 step
 goto 35.4,79.4
 .talk 24741
+.|tip She is upstairs in a room at the very back of this building
 ..turnin 11480
 step
 goto 36.1,81.6
 .talk 27933
-.'Tell her to want to fly to Bael'gun's
+.' Tell her to want to fly to Bael'gun's
 .' You will land near a ship |goto 80.9,75.1,0.3 |noway |c
 step
 goto 81.8,73.9
@@ -28988,6 +29008,9 @@ goto 80.9,75.1
 .click Harry's Bomber |n |tip It's a plane on the water's edge.
 .' Go back to Scalawag Point |goto 36.1,81.7,0.3 |noway |c
 step
+.' Take the left up |goto 42.0,67.8 <5 |c
+|only if not achieved(890)
+step
 goto 40.3,60.3
 .talk 23804
 ..turnin 11567
@@ -28997,25 +29020,28 @@ goto 40.3,60.3
 ..accept 11568
 step
 goto 57.6,77.4
-.' Use your Bundle of Vrykul Artifacts while standing near the skeleton |use Bundle of Vrykul Artifacts##34624
+.' Use your Bundle of Vrykul Artifacts at the grave |use Bundle of Vrykul Artifacts##34624
 .' Return the Shield of Aesirites |q 11568/1
 step
 goto 59.2,77
-.' Use your Bundle of Vrykul Artifacts while standing near the skeleton |use Bundle of Vrykul Artifacts##34624
+.' Use your Bundle of Vrykul Artifacts at the grave |use Bundle of Vrykul Artifacts##34624
 .' Return the Staff of Storm's Fury |q 11568/2
 step
 goto 59.7,79.4
-.' Use your Bundle of Vrykul Artifacts while standing near the skeleton |use Bundle of Vrykul Artifacts##34624
+.' Use your Bundle of Vrykul Artifacts at the grave |use Bundle of Vrykul Artifacts##34624
 .' Return the Frozen Heart of Isuldof |q 11568/3
 step
 goto 61.9,80.2
-.' Use your Bundle of Vrykul Artifacts while standing near the skeleton |use Bundle of Vrykul Artifacts##34624
+.' Use your Bundle of Vrykul Artifacts at the grave |use Bundle of Vrykul Artifacts##34624
 .' Return the Ancient Armor of the Kvaldir |q 11568/4
 step
 goto 40.3,60.3
 .talk 23804
 ..turnin 11568
 ..accept 11572
+step
+.' Wait here for the boat lift to return and ride it down |goto 40.1,60.4 <5 |c
+|only if not achieved(890)
 step
 goto 25.0,57.0
 .talk 24755
@@ -29024,6 +29050,9 @@ step
 goto 24.6,58.9
 .talk 24810
 ..turnin 11472
+step
+.' Wait for a boat lift to return and ride it back across |goto 24.7,62.1 <5 |c
+|only if not achieved(890)
 step
 goto 31.3,24.4
 .talk 24209
@@ -29038,6 +29067,7 @@ step
 goto 31.1,20.9
 .' Attack Riven Widow Cocoons |tip They look like big squirming white cocoons.
 .' Free 7 Winterhoof Longrunners |q 11296/1
+.' More cocoons can be found around [Howling Fjord,29.1,15.9]
 |modelnpc Riven Widow Cocoon##24210
 step
 goto 31.3,24.4
@@ -29046,6 +29076,7 @@ goto 31.3,24.4
 step
 goto 31.8,25.6
 .click Steel Gate Artifact##6420+
+.|tip Broken tablets laying on the ground and in the pools of water
 .get 10 Steel Gate Artifact|q 11286/1
 step
 goto 31.2,24.5
@@ -29069,12 +29100,11 @@ goto 26.4,24.5
 .talk 24152
 ..accept 11298
 step
-goto 33.8,33.7|n
-.' The path down to Brains! Brains! Brains! and What's in That Brew? starts here |goto 33.8,33.7,0.5 |noway |c
-|only if not achieved(890)
+.' Follow the path down |goto 33.8,33.5 <5 |c
 step
 goto 33.3,36.5
 .click Dwarven Kegs##7490
+.|tip Big wooden kegs found in this area
 .get 5 Dwarven Keg|q 11298/1
 .from Deranged Explorer##23967+
 .' Use Grick's Bonesaw on their corpses |use Grick's Bonesaw##33554
@@ -29100,14 +29130,17 @@ goto 23,21.9
 step
 goto 19.8,22.2
 .talk 24544
+.|tip He's a friendly murloc on this little island
 ..accept 11422
 step
 goto 23.7,35.2
 .from Rotgill##24546
+.|tip He's a large murloc carrying a trident that walks along the beach. You may have to search for him.
 .get Rotgill's Trident |q 11422/1
 step
 goto 19.8,22.2
 .talk 24544
+.|tip He's a friendly murloc on this little island
 ..turnin 11422
 step
 goto 23.7,21.8|n
@@ -29128,8 +29161,8 @@ goto 22.9,20.1
 .' Use your Scourging Crystal Controller on the Scourge Crystal |use Scourging Crystal Controller##33960
 .' Attack the Scourge Crystal when the purple bubble shield disappears
 .' Destroy 3 Scourge Crystals |q 11399/1
-.' The second Scourge Crystal can be found at [22.6,17.6]
-.' The third Scourge Crystal can be found at [21.8,22.5]
+.' The second Scourge Crystal can be found at [Howling Fjord,22.6,17.6]
+.' The third Scourge Crystal can be found at [Howling Fjord,21.8,22.5]
 |modelnpc Scourge Crystal##24464
 step
 goto 23.7,21.8|n
@@ -29160,15 +29193,20 @@ goto 48,10.7
 .talk 24129
 ..turnin 12566
 step
-goto 50.9,11
+goto 53.0,14.8
 .click Spotted Hippogryph Down feathers on the ground |tip They look like brown feathers on the ground all around this area.
 .get 10 Spotted Hippogryph Down|q 11271/1
+.' You can find more feathers around [Howling Fjord,56.5,21.1]
+.' Kill Frosthorn Rams at [Howling Fjord,51.8,10.8]
 .from Frosthorn Ram##23740+
 .get 6 Undamaged Ram Horn|q 11275/1
+.' You can find more Rams at:
+.' [Howling Fjord,47.4,16.4]
+.' [Howling Fjord,56.0,14.2]
 step
 goto 52.5,6.5
 .kill 8 Howling Cyclone##24229+ |q 11311/1
-.' You can find more Elementals around [51.2,2.9]
+.' You can find more Elementals around [Howling Fjord,51.2,2.9]
 |modelnpc Iceshard Elemental##24228
 step
 goto 48.4,11
@@ -29199,7 +29237,7 @@ goto 54.1,8.2 |n
 |only if not achieved(890)
 step
 goto 61.1,2
-.click Frostblade Shrine##4291 |tip It's a big blue glowing altar table thing.
+.click Frostblade Shrine##4291 |tip It's a big blue glowing altar at the very top of this huge mountain
 .from Your Inner Turmoil
 .' Become Cleansed of Your Inner Turmoil |q 11317/1
 step
@@ -29211,6 +29249,7 @@ step
 goto 60.6,22.4
 .from Ice Elemental##23919+
 .get 15 Icy Core|q 11313/1
+.' More elementals can be found at [Howling Fjord,63.0,23.3]
 step
 goto 61.5,22.8
 .talk 24117
@@ -29219,7 +29258,7 @@ goto 61.5,22.8
 ..accept 11315
 step
 goto 53.3,27.8
-.' Use Lurielle's Pendant on Chill Nymphs when they are weak |use Lurielle's Pendant##33606 |tip Walk up to them until you're in combat and then use Lurielle's Pendant, you don't have to hit them.
+.' Use Lurielle's Pendant on Chill Nymphs |use Lurielle's Pendant##33606 |tip Walk up to them until you're in combat and then use Lurielle's Pendant, you don't have to hit them.
 .' Free 7 Chill Nymphs |q 11314/1
 .kill 8 Scarlet Ivy##23763+ |q 11315/1
 |modelnpc Chill Nymph##23678
@@ -29286,9 +29325,9 @@ goto 49.2,12.2
 ..turnin 11351
 ..accept 11352
 step
-goto 71.9,24.6
+goto 71.9,23.3
 .' Use your Rune of Command on a Stone Giant around this area to control it |use Rune of Command##33796
-.' Once you are controlling the Stone Giant, come here
+.' Once you are controlling the Stone Giant, come here [Howling Fjord,71.9,24.6]
 .kill Binder Murdis##24334 |q 11352/2
 step
 goto 49.2,12.2
@@ -29343,7 +29382,8 @@ goto 46.4,28.2
 .' Use the Brave's Torch inside this house |use Brave's Torch##33343
 .' Set the Northeast Longhouse Ablaze |q 11258/2
 step
-.' Use your Winterhoof Emblem in your bags |use Winterhoof Emblem##33340
+.' Next to you:
+.' If he's not with you anymore use your Winterhoof Emblem again |use Winterhoof Emblem##33340
 .talk 24130
 ..turnin 11257
 ..turnin 11258
@@ -29374,18 +29414,25 @@ goto 29.7,5.7
 ..turnin 11323
 ..accept 11415
 step
+.' Exit the cave and right click the Worg Disguise buff in the top right of your screen to remove it
+|confirm
+step
 goto 28.3,23.9
 .kill Bjomolf##24516 |q 11415/1 |tip He walks around this area.
+.' He patrols between that spot and this one [Howling Fjord,26.0,20.9]
 step
 goto 33.8,29.3
 .kill Varg##24517 |q 11415/2 |tip He walks around this area.
+.' He patrols beteen that spot and this one [Howling Fjord,35.3,32.6]
 step
 goto 35.1,16
 .kill 15 Gjalerbron Warrior##23991+ |q 11263/1
 .kill 8 Gjalerbron Rune-Caster##23990+ |q 11263/2
 .kill 8 Gjalerbron Sleep-Watcher##23989+ |q 11263/3
-.collect 10 Gjalerbron Cage Key##33284 |n
+.collect 1 Gjalerbron Cage Key##33284 |n
+.|tip You can only loot these one at a time so make sure you use it when you get one. You'll need 10 in total.
 .click Gjalerbron Cages
+.|tip Brown cages found around this area. Kill Gjalerbron mobs to loot a key to unlock them.
 .' Free 10 Gjalerbron Prisoners |q 11265/1
 .get Gjalerbron Attack Plans|n
 .click the Gjalerbron Attack Plans in your bags|use Gjalerbron Attack Plans##33347
@@ -29396,6 +29443,9 @@ goto 29.7,5.7
 .talk 24261
 ..turnin 11415
 ..accept 11417
+step
+.' Exit the cave and right click the Worg Disguise buff in the top right of your screen to remove it
+|confirm
 step
 goto 41.4,37.7
 .click Talonshrike's Egg##1867
@@ -29408,8 +29458,12 @@ goto 29.7,5.7
 ..turnin 11417
 ..accept 11324
 step
+.' Exit the cave and right click the Worg Disguise buff in the top right of your screen to remove it
+|confirm
+step
 goto 26.3,12.8
 .kill Garwal##24277 |q 11324/1 |tip He walks around this area.
+.' He walks between that spot and this one [Howling Fjord,27.1,7.2]
 step
 goto 31.2,24.5
 .talk 24186
@@ -29452,7 +29506,7 @@ goto 39.8,7.6 |n
 .' Enter this building |goto 39.8,7.6,0.3 |noway |c |tip Go up the big ramp to this spot.
 step
 goto 40.9,6.5
-.kill Queen Angerboda##24023 |q 11453/1 |tip She's standing up on the platform.
+.kill Queen Angerboda##24023 |q 11453/1 |tip She's standing up on the platform. You may have to wait a minute for her to spawn.
 step
 goto 39.8,7.6 |n
 .' Leave this building |goto 39.8,7.6,0.3 |noway |c
@@ -29464,8 +29518,10 @@ goto 35,11.9
 .kill 4 Fearsome Horror##24073+ |q 11268/2
 .from Necrolord##24014+
 .collect 5 Awakening Rod##34083|q 11433 |n
-.' Use your Awakening Rods on Dormant Vrykul |use Awakening Rod##34083 |tip They are sleeping upright inside the walls, like mummies.
+.' Use your Awakening Rods on Dormant Vrykul |use Awakening Rod##34083 |tip They are sleeping upright inside the walls, like mummies. You can mark them with shift+v and they'll be easier to spot (Use v to mark enemies again).
 .kill 5 Dormant Vrykul##24669+ |q 11433/1
+step
+.' Leave the Walking Halls |goto 34.5,13.2,0.5 |c
 step
 goto 48.4,11
 .talk 24127
@@ -29485,9 +29541,10 @@ goto 48.1,10.5
 ..accept 11365
 step
 goto 68.5,23.8
-.from Runed Stone Giant##23725 |tip The Giants you need to kill will be aggressive, don't try and attack the elite mobs.
+.from Runed Stone Giants |tip The Runed Stone Giants you need to kill will be aggressive, don't try and attack the elite mobs.
 .' Use your Runeseeking Pick on Runed Stone Giants. |use Runeseeking Pick##33806
 .' Analyze 4 Runed Stone Giant Corpses |q 11365/1
+|modelnpc Runed Stone Giant##23725
 step
 goto 48.1,10.5
 .talk 24390
@@ -34947,8 +35004,10 @@ goto 87.1,79.1
 step
 goto 79.0,67.4
 .' Use the Grab Captured Crusader ability near Captured Crusaders to pick them up |petaction Grab Captured Crusader
+.' _TIP_ Use shift+v to mark these, they'll be a lot easier to spot as you fly
+.|tip Use v to mark enemies again
 .' Once you pick up a Captured Crusader, fly to [86.9,76.5] |n
-.' Use the Drop Off Captured Crusader ability near the tents to drop off the crusaders
+.' Use the Drop Off Captured Crusader ability near the tents to drop off the crusaders |petaction Drop Off Captured Crusader
 .' Repeat this process 2 more times
 .' Rescue 3 Captured Crusaders |q 13045/1
 |modelnpc Captured Crusader##30407
@@ -34962,18 +35021,25 @@ goto 87.5,75.8
 step
 goto 85.6,76.0
 .talk 30657
+.|tip He is inside a tiny house
 ..turnin 13070
 ..accept 13086
 step
 goto 85.3,75.9
 .' Click the Argent Cannon to get on it |invehicle |c
+.|tip It is at the top of this tower
 |modelnpc Argent Cannon##30236
 step
-'Use the skills on your hotbar to kill scourge mobs and dragons
+goto 84.5,75.5
+.' Use the skills on your hotbar to kill scourge mobs and dragons
 .from Forgotten Depths Slayer##30593+ |q 13086/1
 .kill 3 Frostbrood Destroyer##30575+ |q 13086/2
+.' If your cannon dies during the fight use the cannons at any of these locations to finish the quest:
+.' [Icecrown,85.9,74.9]
+.' [Icecrown,85.9,76.7]
+.' [Icecrown,85.8,78.0]
 step
-.' Click the red arrow on your vehicle hot bar to stop using the cannon |outvehicle |c
+.' Click the yellow arrow on your vehicle hot bar to stop using the cannon |outvehicle |c
 step
 goto 85.6,76.0
 .talk 30657
@@ -35051,7 +35117,6 @@ step
 goto 73.8,53.0
 .click Ancient Elven Masonry |tip They look like blue stone pieces of a building on the ground around this area.
 .get 10 Ancient Elven Masonry |q 13130/2
-.' You can find more Ancient Elven Masonry around [79.6,61.3] |n
 |model Ancient Elven Masonry##8353
 |model Ancient Elven Masonry##8354
 |model Ancient Elven Masonry##8355
@@ -38563,6 +38628,7 @@ step
 step
 goto Dragonblight 60,55.2
 .talk 26983
+.|tip She is on the ground floor
 ..accept 12148
 step
 goto Dragonblight 51.2,59.5
@@ -38571,6 +38637,7 @@ goto Dragonblight 51.2,59.5
 step
 goto 60,55.2
 .talk 26983
+.|tip She is on the ground floor
 ..turnin 12148
 ..accept 12149
 step
@@ -38585,6 +38652,7 @@ goto Dragonblight 68.1,37.0
 step
 goto 60,55.2
 .talk 26983
+.|tip She is on the ground floor
 ..turnin 12149
 ..accept 12150
 step
@@ -38594,6 +38662,7 @@ goto 72.2,49.5
 step
 goto 60,55.2
 .talk 26983
+.|tip She is on the ground floor
 ..turnin 12150
 ..accept 12151
 step
@@ -38604,6 +38673,7 @@ goto 57.1,76.2
 step
 goto 60,55.2
 .talk 26983
+.|tip She is on the ground floor
 ..turnin 12151
 step
 goto Dragonblight,37.7,46.6
@@ -38617,6 +38687,7 @@ goto 45.2,44.3
 step
 goto 46.8,62.6
 .kill Gigantaur##26836 |q 12090/1 |tip He walks around this area.
+.' He may spawn at [Dragonblight,50.4,65.0]
 step
 goto 21.1,64.0
 .kill Magister Keldonus##26828 |q 12089/1
@@ -38659,10 +38730,12 @@ step
 goto 72.6,58.0
 .from Altar Warden##28784+
 .get Gusty Essence of the Warden |q 12729/2
+.' You can find a few more at [Zul'Drak,70.3,63.0]
 step
 goto 58.3,46.6
 .from Guardian of Zim'Rhuk##28597+
 .get Unblemished Heart of the Guardian |q 12729/1
+.' More can be found at [Zul'Drak,60.5,42.8]
 step
 goto 70.0,21.0
 .talk 33025
@@ -38671,7 +38744,11 @@ step
 goto 71.5,21.0
 .from Gundrak Raptor##29334+
 .click Gundrak Raptor Egg##3851
+.|tip Small brown and yellow eggs found at the base of trees around this area
 .get 12 Gundrak Raptor Egg |q 13556/1
+.' More eggs can be found by the trees at:
+.' [Zul'Drak,73.6,26.9]
+.' [Zul'Drak,74.4,36.5]
 step
 goto 70.0,21.0
 .talk 33025
@@ -38683,7 +38760,7 @@ goto 60.3,57.8
 step
 goto 48.4,56.4
 .talk 30007
-..accept 12932
+..accept 12954
 step
 goto 47.9,56.9
 .from Yggdras##30014
@@ -38691,7 +38768,7 @@ goto 47.9,56.9
 step
 goto 48.5,56.4
 .talk 30009
-..turnin 12932
+..turnin 12954
 step
 goto 48.4,56.4
 .talk 30007
@@ -38711,7 +38788,7 @@ goto 48.4,56.4
 step
 goto 47.9,56.9
 .' You will have to fight one of these 4 mobs:
-.from Az'Barin, Prince of the Gust##30026
+.from Az'Barin Prince of the Gust##30026
 .from Duke Singen##30019
 .from Erathius, King of Dirt##30025
 .from Gargoral the Water Lord##30024
@@ -38764,6 +38841,7 @@ goto 60.1,57.7
 step
 goto 77.6,36.6
 .' Use your Prophet of Akali Convocation in this spot |use Prophet of Akali Convocation##39566
+.|tip Stand in the green circle
 ..kill Prophet of Akali##28996 |q 12730/1
 step
 goto 60.1,57.7
@@ -38782,10 +38860,18 @@ goto Sholazar Basin 54.5,56.6
 .talk 28122
 ..accept 12581
 step
+.' Enter the cave |goto 70.9,58.8 <5 |c
+step
 goto 72.1,57.5
-..kill Artruis the Heartless##28659 |q 12581/1 |tip During this fight, you will have to choose to kill one of the two minions. You are free to pick which one you prefer.
-.' From here, talk to the NPC that you saved and complete their quest.
-|confirm
+.kill Artruis the Heartless##28659 |q 12581/1 |tip During this fight, you will have to choose to kill one of the two minions. You are free to pick which one you prefer.
+step
+goto 72.1,57.5
+.click Artruis' Phylactery
+.|tip It looks like a green jar with a pink pointy lid
+..turnin 12581
+|model Artruis Phylactery##4712
+step
+.' Leave the cave |goto 70.9,58.8 <5 |c
 step
 goto 64.6,48.6
 .talk 27801
@@ -38793,12 +38879,19 @@ goto 64.6,48.6
 step
 goto 71.2,43.2
 .' Use the Omega Rune in your bag in this spot. |use Omega Rune##38709
+.' Take control of the Etymidian |invehicle
 step
-'Use the abilities on your toolbar and fight your way up to the top of the mountain.
+.' Use the abilities on your toolbar and fight your way up to the top of the mountain.
+.' If you are a high level you can do this without using the Etymidian
 .kill 200 Scourge Minions |q 12546/1
 .kill Bythius the Flesh-Shaper##28212 |q 12546/2
+.' He patrols a large area, moving between these two spots:
+.' [Sholazar Basin,69.7,38.1]
+.' [Sholazar Basin,74.2,41.1]
 .kill Urgreth of the Thousand Tombs##28103 |q 12546/3
+.' He is at [Sholazar Basin,70.2,37.1]
 .kill Hailscorn##28208 |q 12546/4
+.' He is at [Sholazar Basin,70.4,34.3]
 step
 goto 64.6,48.6
 .talk 27801
@@ -38818,7 +38911,7 @@ step
 .' We recommend being at least level 85 before trying to complete this guide.
 |confirm
 step
-'Orgrim's Hammer flies in a triangular pattern using these points:
+.' Orgrim's Hammer flies in a triangular pattern using these points:
 .' Point 1: [60.6,34.9]
 .' Point 2: [68.0,52.5]
 .' Point 3: [68.9,27.0]

@@ -38398,7 +38398,7 @@ author support@zygorguides.com
 condition end achieved(36)
 leechsteps "Zygor's Alliance Leveling Guides\\Northrend 70-80\\Zul'Drak (75-77)"
 step
-'We recommend being at least level 85 before trying to complete the other quests in this guide.
+.' We recommend being at least level 85 before trying to complete the other quests in this guide.
 |confirm
 step
 goto Zul'Drak,58.1,72.0
@@ -38561,7 +38561,7 @@ goto 28.4,44.9
 .' Use your Ensorcelled Choker to become a ghoul |use Ensorcelled Choker##38699
 .' Stand on this blue circle
 .' If you've lost your Choker, you can get a new one at [Zul'Drak,14.1,73.8]
-.'Get teleported up to Overlord Drakuru |goto Zul'Drak,28.1,45.2,0.5 |noway |c
+.' Get teleported up to Overlord Drakuru |goto Zul'Drak,28.1,45.2,0.5 |noway |c
 step
 goto 27.1,46.2
 .talk 28503
@@ -38594,13 +38594,13 @@ condition end achieved(40)
 map Icecrown
 leechsteps "Zygor's Alliance Leveling Guides\\Northrend 70-80\\Icecrown (78-80)"
 step
-'We recommend being at least level 85 before trying to complete the other quests in this guide.
+.' We recommend being at least level 85 before trying to complete the other quests in this guide.
 |confirm
 step
-'The Skybreaker flies in a circular pattern using these points:
+.' The Skybreaker flies in a circular pattern using these points:
 .' Point 1: [57.4,37.2]
 .' Point 2: [64.4,55.4]
-.'Find The Skybreaker flying around in the sky |tip On you world map, it looks like a blue ship icon with 2 spiky balls on either side of it.
+.' Find The Skybreaker flying around in the sky |tip On you world map, it looks like a blue ship icon with 2 spiky balls on either side of it.
 .talk 29799
 ..accept 13294
 ..accept 13346
@@ -38629,7 +38629,7 @@ goto 53.0,29.0
 .' Click Alumeth's Robes |tip It looks like a metal chest with a white skull on the front of it, sitting on the ground next to long table.
 .collect Alumeth's Robes##44479 |q 13346
 step
-'Use Alumeth's Skull |use Alumeth's Skull##44476
+.' Use Alumeth's Skull |use Alumeth's Skull##44476
 .collect Alumeth's Remains##44480 |q 13346
 step
 goto 51.9,28.7
@@ -38637,10 +38637,10 @@ goto 51.9,28.7
 .from Alumeth the Ascended##32300
 .' Defeat Alumeth the Ascended |q 13346/1
 step
-'The Skybreaker flies in a circular pattern using these points:
+.' The Skybreaker flies in a circular pattern using these points:
 .' Point 1: [57.4,37.2]
 .' Point 2: [64.4,55.4]
-.'Find The Skybreaker flying around in the sky |tip On you world map, it looks like a blue ship icon with 2 spiky balls on either side of it.
+.' Find The Skybreaker flying around in the sky |tip On you world map, it looks like a blue ship icon with 2 spiky balls on either side of it.
 .talk 29799
 ..turnin 13294
 ..accept 13295
@@ -38664,10 +38664,10 @@ goto 61.5,63.8
 .' Continue using your Pustulant Spinal Fluid next to the Plague Cauldron in between fights
 .' Neutralize the Plague Cauldron |q 13295/1
 step
-'The Skybreaker flies in a circular pattern using these points:
+.' The Skybreaker flies in a circular pattern using these points:
 .' Point 1: [57.4,37.2]
 .' Point 2: [64.4,55.4]
-.'Find The Skybreaker flying around in the sky |tip On you world map, it looks like a blue ship icon with 2 spiky balls on either side of it.
+.' Find The Skybreaker flying around in the sky |tip On you world map, it looks like a blue ship icon with 2 spiky balls on either side of it.
 .talk 29799
 ..turnin 13295
 ..turnin 13298
@@ -38679,10 +38679,10 @@ goto 47.3,63.4
 .' Use your Volatile Acid on their corpses |use Volatile Acid##44653
 .' Dissolve 6 Skeletal Reaver Bones |q 13335/1
 step
-'The Skybreaker flies in a circular pattern using these points:
+.' The Skybreaker flies in a circular pattern using these points:
 .' Point 1: [57.4,37.2]
 .' Point 2: [64.4,55.4]
-.'Find The Skybreaker flying around in the sky |tip On you world map, it looks like a blue ship icon with 2 spiky balls on either side of it.
+.' Find The Skybreaker flying around in the sky |tip On you world map, it looks like a blue ship icon with 2 spiky balls on either side of it.
 .talk 29799
 ..turnin 13335
 ..accept 13338
@@ -38738,10 +38738,10 @@ goto 54.1,71.2
 .talk 30944
 ..turnin 13164
 step
-'The Skybreaker flies in a circular pattern using these points:
+.' The Skybreaker flies in a circular pattern using these points:
 .' Point 1: [57.4,37.2]
 .' Point 2: [64.4,55.4]
-.'Find The Skybreaker flying around in the sky |tip On you world map, it looks like a blue ship icon with 2 spiky balls on either side of it.
+.' Find The Skybreaker flying around in the sky |tip On you world map, it looks like a blue ship icon with 2 spiky balls on either side of it.
 .talk 29799
 ..turnin 13338
 ..turnin 13339
