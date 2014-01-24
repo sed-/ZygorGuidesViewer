@@ -6090,7 +6090,7 @@ label "jc_50-150"
 step
 #include "auctioneer"
 .buy 100 Bronze Bar##2841
-.buy 20 Silver Bar##2842
+.buy 30 Silver Bar##2842
 .buy 20 Shadowgem##1210
 .buy 80 Heavy Stone##2838
 .buy 30 Moss Agate##1206
@@ -6119,7 +6119,7 @@ path	51.0,17.4
 #include "follow_path_mine"
 .collect 20 Shadowgem##1210 |tip You can use the prospect ability on the Tin Ore in your bags to get this item. |cast Prospecting##31252
 .collect 30 Moss Agate##1206 |tip You can use the prospect ability on the Tin Ore in your bags to get this item. |cast Prospecting##31252
-.collect 40 Silver Ore##2775
+.collect 60 Silver Ore##2775
 .collect 50 Tin Ore##2771 |tip After you've collected all the gems, collect the ore you need.
 .collect Citrine##3864 |n |tip These will be used later.
 .collect Aquamarine##7909 |n |tip These will be used later.

@@ -1199,8 +1199,8 @@ ZygorGuidesViewer:RegisterInclude("H_Lunar_Festival_Elders",[[
 		.talk Elder Skychaser##15577
 		..accept Skychaser the Elder##8675 |instant
 	step
-		goto Swamp of Sorrows,69.7,54.1
-		.' Follow the steps down and go to the swirling portal at [76.1,45.2]
+		goto Swamp of Sorrows,69.7,54.1 |n
+		.' Follow the steps down and go to the swirling portal at [76.1,45.2] |n
 		.' Enter the Swirling Portal to The Temple of Atal'Hakkar|goto The Temple of Atal'Hakkar|noway|c
 	step
 		goto The Temple of Atal'Hakkar,62.9,34.4

@@ -4192,12 +4192,12 @@ goto 41.2,73.1
 ..accept 26612
 step
 goto 45.0,79.7
-.click Bloodsail Orders##220
-.get Bloodsail Orders##220 |q 26612/4
-step
-goto 40.7,82.2
 .click Bloodsail Charts##222
 .get Bloodsail Charts |q 26612/3
+step
+goto 40.7,82.2
+.click Bloodsail Orders##220
+.get Bloodsail Orders##220 |q 26612/4
 .kill 8 Bloodsail Sea Dog##1565 |q 26612/1
 .kill 8 Bloodsail Elder Magus##1653+ |q 26612/2
 step
@@ -4532,22 +4532,22 @@ label	"Steam_Menu2"
 .' You are currently _Honored_ with Booty Bay |only if rep('Booty Bay')==Honored
 .' You are currently _Revered_ with Booty Bay |only if rep('Booty Bay')==Revered
 .' Become Exalted with Booty Bay |condition rep('Booty Bay')==Exalted
-.' Click here to raise your Reputation with Booty Bay |confirm always |next "gadget" |only if rep('Booty Bay')<=Revered
+.' Click here to raise your Reputation with Booty Bay |tip You can use this regardless of your current reputation. |confirm always |next "gadget" |only if rep('Booty Bay')<=Revered
 .' You are currently _Friendly_ with Gadgetzan |only if rep('Gadgetzan')==Friendly
 .' You are currently _Honored_ with Gadgetzan |only if rep('Gadgetzan')==Honored
 .' You are currently _Revered_ with Gadgetzan |only if rep('Gadgetzan')==Revered
 .' Become Exalted with Gadgetzan |condition rep('Gadgetzan')==Exalted
-.' Click here to raise your Reputation with Gadgetzan |confirm always |next "gadget" |only if rep('Gadgetzan')<=Revered
+.' Click here to raise your Reputation with Gadgetzan |tip You can use this regardless of your current reputation. |confirm always |next "gadget" |only if rep('Gadgetzan')<=Revered
 .' You are currently _Friendly_ with Everlook |only if rep('Everlook')==Friendly
 .' You are currently _Honored_ with Everlook |only if rep('Everlook')==Honored
 .' You are currently _Revered_ with Everlook |only if rep('Everlook')==Revered
 .' Become Exalted with Everlook |condition rep('Everlook')==Exalted
-.' Click here to raise your Reputation with Everlook |confirm always |next "ratchet" |only if rep('Everlook')<=Revered
+.' Click here to raise your Reputation with Everlook |tip You can use this regardless of your current reputation. |confirm always |next "ratchet" |only if rep('Everlook')<=Revered
 .' You are currently _Friendly_ with Ratchet |only if rep('Ratchet')==Friendly
 .' You are currently _Honored_ with Ratchet |only if rep('Ratchet')==Honored
 .' You are currently _Revered_ with Ratchet |only if rep('Ratchet')==Revered
 .' Become Exalted with Ratchet |condition rep('Ratchet')==Exalted
-.' Click here to raise your Reputation with Ratchet |confirm always |next "ratchet" |only if rep('Ratchet')<=Revered
+.' Click here to raise your Reputation with Ratchet |tip You can use this regardless of your current reputation. |confirm always |next "ratchet" |only if rep('Ratchet')<=Revered
 |next "end" |only if default
 step
 label	"gadget"

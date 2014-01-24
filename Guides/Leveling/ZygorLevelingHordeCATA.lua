@@ -35141,7 +35141,7 @@ goto 86.0,75.8
 step
 goto 80.1,72.0
 .' Use your Blessed Banner of the Crusade |use Blessed Banner of the Crusade##43243
-.' Watch the Battle for Crusaders' Pinnacle |q 13141/1
+.' Battle for Crusaders' Pinnacle |q 13141/1
 step
 goto 82.9,72.8
 .talk 30683
@@ -35155,7 +35155,12 @@ goto 79.8,71.8
 step
 goto 79.5,72.7
 .talk 31240
+.|tip He is sleeping on a bed on the first floor
 ..accept 13224
+step
+goto Icecrown 79.4,72.3
+.talk 31069
+..fpath Crusaders' Pinnacle
 step
 goto 79.8,30.8
 .talk 30562
@@ -35169,8 +35174,8 @@ goto 79.8,71.8
 step
 goto 87.1,77.0
 .talk 30630
-..' Ask her for a portal to Moonglade
-.. 'Click the Moonglade Portal that appears next to you |goto Moonglade |noway |c
+.' Ask her for a portal to Moonglade
+.' Click the Moonglade Portal that appears next to you |goto Moonglade |noway |c
 step
 goto Moonglade 44.2,45.6
 .talk 11798
@@ -35188,9 +35193,10 @@ goto Moonglade,36.2,41.8
 step
 goto 33.7,44.1
 .click Emerald Acorn##424
+.|tip Small green acorns on the ground, you'll have to look carefully
 .get 3 Emerald Acorn|q 13074/1
 step
-'Right click your Fitfull Dream buff to awaken from the nightmare |nobuff Spell_Nature_Sleep |q 13074 |tip The Fitfull Dream buff icon looks like a closed eye.
+.' Right click your Fitfull Dream buff to awaken from the nightmare |nobuff Spell_Nature_Sleep |q 13074 |tip The Fitfull Dream buff icon looks like a closed eye.
 step
 goto 36.2,41.8
 .talk 11832
@@ -35198,8 +35204,8 @@ goto 36.2,41.8
 ..accept 13075
 step
 .talk 11832
-..' Tell him you wish to return to Arch Druid Lilliandra.
-..' Click the Moonglade Return Portal that appears next to you|goto Icecrown |noway |c
+.' Tell him you wish to return to Arch Druid Lilliandra.
+.' Click the Moonglade Return Portal that appears next to you|goto Icecrown |noway |c
 step
 goto 79.8,30.8
 .talk 30562
@@ -35213,7 +35219,7 @@ goto 79.8,71.8
 step
 goto Dragonblight,57.9,54.2|n
 .talk 26443
-..'Tell him you need to go to the top of the temple |goto Dragonblight,59.7,53.1,0.1 |noway |c
+.' Tell him you need to go to the top of the temple |goto Dragonblight,59.7,53.1,0.1 |noway |c
 step
 goto 59.8,54.7
 .talk 26917
@@ -35222,18 +35228,18 @@ goto 59.8,54.7
 step
 goto 59.5,53.3|n
 .talk 26949
-..'Tell him you want to go to the ground level of the temple |goto Dragonblight,58.0,55.2,0.1 |noway |c
+.' Tell him you want to go to the ground level of the temple |goto Dragonblight,58.0,55.2,0.1 |noway |c
 step
 goto 43.2,51.7
 .' There should be a fight happening, so just wait around until the fight is over |tip If there isn't fight happening, just wait until the fighters spawn again, and there should be some red dragon Ruby Watchers flying above the fight.
-..' At the end of the fight, a Ruby Watcher will blow a lot of fire on the ground and the Dahlia's Tears will spawn
+.' At the end of the fight, a Ruby Watcher will blow a lot of fire on the ground and the Dahlia's Tears will spawn
 ..click Dahlia's Tears##8329
 ..get Dahlia's Tears |q 13078/1
-..' You can try to find more around [51.8,47.4]
+.' You can try to find more around [Icecrown,51.8,47.4]
 step
 goto 57.9,54.2|n
 .talk 26443
-..'Tell him you need to go to the top of the temple |goto Dragonblight,59.7,53.1,0.1 |noway |c
+.' Tell him you need to go to the top of the temple |goto Dragonblight,59.7,53.1,0.1 |noway |c
 step
 goto 59.8,54.7
 .talk 26917
@@ -35242,7 +35248,7 @@ goto 59.8,54.7
 step
 goto 59.5,53.3|n
 .talk 26949
-..'Tell him you want to go to the ground level of the temple |goto Dragonblight,58.0,55.2,0.1 |noway |c
+.' Tell him you want to go to the ground level of the temple |goto Dragonblight,58.0,55.2,0.1 |noway |c
 step
 goto Icecrown 79.8,30.8
 .talk 30562
@@ -35271,30 +35277,35 @@ goto 79.8,71.8
 .talk 31044
 ..turnin 13083
 step
-'Orgrim's Hammer flies in a triangular pattern using these points:
-.' Point 1: [60.6,34.9]
-.' Point 2: [68.0,52.5]
-.' Point 3: [68.9,27.0]
-.'Find Orgrim's Hammer flying around in the sky |tip On you world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
+.' Orgrim's Hammer flies in a triangular pattern using these points:
+.' Point 1: [Icecrown,60.6,34.9]
+.' Point 2: [Icecrown,68.0,52.5]
+.' Point 3: [Icecrown,68.9,27.0]
+.' Find Orgrim's Hammer flying around in the sky |tip On your world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
 ..talk 30824
+.|tip He is in the main room on the upper level of the airship
 ...turnin 13224
 ...accept 13228
 step
-'On the Orgrim's Hammer airship:
+.' On the Orgrim's Hammer airship:
 .talk 29795
+.|tip He is in the main room on the upper level of the airship
 ..accept 12892
 step
-'On the Orgrim's Hammer airship:
+.' On the Orgrim's Hammer airship:
 .talk 32301
+.|tip He walks around the top and bottom levels of the airship
 ..accept 13330
 ..accept 13340
 step
-'On the Orgrim's Hammer airship:
+.' On the Orgrim's Hammer airship:
 .talk 31261
+.|tip He walks around the front of the ship, going upstairs and downstairs
 ..accept 13302
 step
-'On the Orgrim's Hammer airship:
+.' On the Orgrim's Hammer airship:
 .talk 30825
+.|tip He is on the bottom level of the airship, in the back
 ..accept 13293
 step
 goto 58.3,46.0
@@ -35304,27 +35315,31 @@ goto 58.3,46.0
 step
 goto 58.2,45.9
 .talk 31833
+.|tip He walks around the camp, you may have to look for him
 ..accept 13301
 step
-'Follow the Horde troops up the mountain and help them fight
-.'Escort the Horde troops into Ymirheim |q 13301/1 |tip At least 4 Horde troops must survive.
+.' Follow the Horde troops up the mountain and help them fight
+.' Escort the Horde troops into Ymirheim |q 13301/1 |tip At least 4 Horde troops must survive.
 |modelnpc Kor'kron Squad Leader##31833
 |modelnpc Kor'kron Infantry##31832
 step
-'The entrance to the cave starts here, go inside the cave |goto 57.0,57.3,0.3 |c
+.' The entrance to the cave starts here, go inside the cave |goto 57.0,57.3,0.3 |c
 step
 goto 56.0,57.6
 .talk 31397+
-..' Tell them they're free, get out of here!
+.|tip You can mark them with shift+v to make them easier to spot (Use v to mark enemies again).
+.' Tell them they're free, get out of here!
+.|tip It probably won't be successful every time
 .' Rescue 10 Saronite Mine Slaves |q 13302/1
 step
-'Go outside the cave |goto 57.0,57.3,0.3 |c
+.' Go outside the cave |goto 57.0,57.3,0.3 |c
 step
 goto 57.3,57.0
 .from Ymirjar Element Shaper##31267+, Blight Falconer##31262+, Ymirheim Chosen Warrior##31258+ |q 13330/1
 step
 goto 51.9,57.6
 .talk 31781
+.|tip He is a little Goblin working behind this building
 ..turnin 13293
 ..accept 13283
 step
@@ -35336,7 +35351,7 @@ goto 54.9,60.1
 .' Use your Plant Horde Battle Standard ability next to the Ymirheim Peak Skulls |petaction Plant Horde Battle Standard |tip The Ymirheim Peak Skulls look like a big pile of skulls at the peak of the mountain, next to 2 blue flame torch lights.
 .' Plant the Horde Battle Standard |q 13283/1
 step
-.' Click the red arrow button on your vehicle hotbar to get out of the robot |outvehicle |c
+.' Click the yellow arrow button on your vehicle hotbar to get out of the robot |outvehicle |c
 step
 goto 51.9,57.6
 .talk 31781
@@ -35349,7 +35364,7 @@ step
 goto 59.5,45.9
 .' Click the Kor'kron Suppression Turret to control the gun on the airplane |invehicle |c
 step
-'You will fly off in the airplane:
+.' You will fly off in the airplane:
 .' Use your Suppression Charge ability on the cannons on the ground to stun them as you fly around |petaction Suppression Charge
 .' Drop 4 Kor'kron Infiltrators |q 13310/1
 |modelnpc Ymirheim Spear Gun##31280
@@ -35360,7 +35375,8 @@ goto 58.3,46.0
 step
 goto 69.0,67.3
 .talk 31273
-..' Ask him what happened here
+.|tip It's an orc body laying on the ground
+.' Ask him what happened here
 .' Question the Dying Berserker |q 13228/1
 step
 goto 69.0,67.3
@@ -35371,32 +35387,37 @@ goto 68.8,67.2
 .from Dying Soldier##31304
 .' Kill 5 Dying Alliance Soldiers |q 13230/1
 step
-'Orgrim's Hammer flies in a triangular pattern using these points:
-.' Point 1: [60.6,34.9]
-.' Point 2: [68.0,52.5]
-.' Point 3: [68.9,27.0]
-.'Find Orgrim's Hammer flying around in the sky |tip On you world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
+.' Orgrim's Hammer flies in a triangular pattern using these points:
+.' Point 1: [Icecrown,60.6,34.9]
+.' Point 2: [Icecrown,68.0,52.5]
+.' Point 3: [Icecrown,68.9,27.0]
+.' Find Orgrim's Hammer flying around in the sky |tip On your world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
 ..talk 30824
+.|tip He is in the main room on the upper level of the airship
 ...turnin 13228
 ...turnin 13230
 ...accept 13238
 ...accept 13260
 step
-'On the Orgrim's Hammer airship:
+.' On the Orgrim's Hammer airship:
 .talk 29795
+.|tip He is in the main room on the upper level of the airship
 ..turnin 13260
 ..accept 13237
 step
-'On the Orgrim's Hammer airship:
+.' On the Orgrim's Hammer airship:
 .talk 32301
+.|tip He walks around the top and bottom levels of the airship
 ..turnin 13330
 step
-'On the Orgrim's Hammer airship:
+.' On the Orgrim's Hammer airship:
 .talk 31261
+.|tip He walks around the front of the ship, going upstairs and downstairs
 ..turnin 13302
 step
-'On the Orgrim's Hammer airship:
+.' On the Orgrim's Hammer airship:
 .talk 30825
+.|tip He is on the bottom level of the airship, in the back
 ..turnin 13238
 ..accept 13239
 step
@@ -35416,18 +35437,21 @@ goto 68.8,66.6
 .' Kill 5 Hulking Abominations |q 13237/1
 .' Kill 5 Malefic Necromancer |q 13237/2
 .' Kill 5 Shadow Adept |q 13237/3
+.' You can find more Shadow Adepts at [Icecrown,67.5,65.5]
 step
-'Orgrim's Hammer flies in a triangular pattern using these points:
-.' Point 1: [60.6,34.9]
-.' Point 2: [68.0,52.5]
-.' Point 3: [68.9,27.0]
-.'Find Orgrim's Hammer flying around in the sky |tip On you world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
+.' Orgrim's Hammer flies in a triangular pattern using these points:
+.' Point 1: [Icecrown,60.6,34.9]
+.' Point 2: [Icecrown,68.0,52.5]
+.' Point 3: [Icecrown,68.9,27.0]
+.' Find Orgrim's Hammer flying around in the sky |tip On your world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
 .talk 29795
+.|tip He is in the main room on the upper level of the airship
 ..turnin 13237
 ..accept 13264
 step
-'On the Orgrim's Hammer airship:
+.' On the Orgrim's Hammer airship:
 .talk 30825
+.|tip He is on the bottom level of the airship, in the back
 ..turnin 13239
 step
 goto 69.8,62.4
@@ -35441,12 +35465,13 @@ goto 69.8,62.4
 .' Explode 15 Vicious Geists |q 13264/2
 .' Explode 15 Risen Alliance Soldiers |q 13264/3
 step
-'Orgrim's Hammer flies in a triangular pattern using these points:
-.' Point 1: [60.6,34.9]
-.' Point 2: [68.0,52.5]
-.' Point 3: [68.9,27.0]
-.'Find Orgrim's Hammer flying around in the sky |tip On you world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
+.' Orgrim's Hammer flies in a triangular pattern using these points:
+.' Point 1: [Icecrown,60.6,34.9]
+.' Point 2: [Icecrown,68.0,52.5]
+.' Point 3: [Icecrown,68.9,27.0]
+.' Find Orgrim's Hammer flying around in the sky |tip On your world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
 .talk 29795
+.|tip He is in the main room on the upper level of the airship
 ..turnin 13264
 ..accept 13351
 step
@@ -35480,6 +35505,7 @@ goto 43.7,24.8
 .get 1 Geist Rope |q 12891/3
 .from Morbid Carcass##29719+, Vault Geist##29720+, Rabid Cannibal##29722+, Death Knight Master##29738+
 .get 5 Scourge Essence |q 12891/4
+.' More of these mobs can be found inside the building at [Icecrown,44.4,21.5]
 step
 goto 44.1,24.7
 .talk 29804
@@ -35506,20 +35532,21 @@ goto 44.1,24.7
 ..turnin 12893
 ..accept 12897
 step
-'The entrance to the Shadow Vault starts here |goto Icecrown,43.7,23.6,0.5 |c
+.' Enter the Shadow Vault |goto Icecrown,43.7,23.6,0.5 |c
 step
 goto 44.9,19.9
 .click General's Weapon Rack##7950
 .kill General Lightsbane##29851 |q 12897/1
 step
-'Leave the Shadow Vault |goto 43.7,23.6,0.5 |c
+.' Leave the Shadow Vault |goto 43.7,23.6,0.5 |c
 step
-'Orgrim's Hammer flies in a triangular pattern using these points:
-.' Point 1: [60.6,34.9]
-.' Point 2: [68.0,52.5]
-.' Point 3: [68.9,27.0]
-.'Find Orgrim's Hammer flying around in the sky |tip On you world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
+.' Orgrim's Hammer flies in a triangular pattern using these points:
+.' Point 1: [Icecrown,60.6,34.9]
+.' Point 2: [Icecrown,68.0,52.5]
+.' Point 3: [Icecrown,68.9,27.0]
+.' Find Orgrim's Hammer flying around in the sky |tip On your world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
 .talk 29795
+.|tip He is in the main room on the upper level of the airship
 ..turnin 12897
 ..accept 12899
 ..turnin 13351
@@ -35586,26 +35613,26 @@ goto 43.6,24.7
 step
 goto 37.9,22.9
 .talk 30180
-..' Tell him you have bad news for him
+.' Tell him you have bad news for him
 .' Defeat Onu'zun |q 12955/3
 step
 goto 37.9,25.1
 .talk 30081
-..' Challenge him to a duel
+.' Challenge him to a duel
 .' Defeat Efrem the Faithful |q 12955/2
 step
 goto 37.5,24.6
 .' Use your Challenge Flag on Mjordin Combatants to challenge them |use Challenge Flag##41372
-..' Challenge and defeat 6 Mjordin Combatants |q 12939/1
+.' Challenge and defeat 6 Mjordin Combatants |q 12939/1
 step
 goto 37.1,22.5
 .talk 30086
-..' Tell her you heard vrykul women cannot fight at all
+.' Tell her you heard vrykul women cannot fight at all
 .' Defeat Sigrid Iceborn |q 12955/1
 step
 goto 36.2,23.6
 .talk 30162
-..' Tell her you can't afford her as a distraction
+.' Tell her you can't afford her as a distraction
 .' Defeat Tinky Wickwhistle |q 12955/4
 step
 goto 44.7,20.3
@@ -35618,7 +35645,7 @@ goto 43.6,24.7
 ..turnin 12955
 ..accept 12999
 step
-'The entrance to the Ufrang's Hall starts here |goto 38.8,24.0,0.5 |c
+.' The entrance to the Ufrang's Hall starts here |goto 38.8,24.0,0.5 |c
 step
 goto 41.0,23.9
 .talk 30056
@@ -35628,20 +35655,21 @@ goto 40.3,23.9
 .' Use your Shadow Vault Decree on Thane Ufrang the Mighty |use Shadow Vault Decree##41776
 .kill Thane Ufrang the Mighty##29919 |q 12943/1
 step
-'Leave Ufrang's Hall |goto 38.8,24.0,0.5 |c
+.' Leave Ufrang's Hall |goto 38.8,24.0,0.5 |c
 step
 goto 36.5,23.6
 .from Instructor Hroegar##29915
+.|tip He walks around this small area, you may have to look for him
 .get Key to Vaelan's Chains |q 12949/1
 step
-'The entrance to the Ufrang's Hall starts here |goto 38.8,24.0,0.5 |c
+.' The entrance to the Ufrang's Hall starts here |goto 38.8,24.0,0.5 |c
 step
 goto 41.0,23.9
 .talk 30056
 ..turnin 12949
 ..accept 12951
 step
-'Leave Ufrang's Hall |goto 38.8,24.0,0.3 |c
+.' Leave Ufrang's Hall |goto 38.8,24.0,0.3 |c
 step
 goto 42.8,24.9
 .talk 29343
@@ -35655,6 +35683,7 @@ goto 43.3,24.8
 step
 goto 43.1,21.1
 .talk 30218
+.|tip He is inside The Shadow Vault
 ..turnin 13085
 ..accept 12982
 step
@@ -35663,19 +35692,21 @@ goto 44.7,20.3
 ..turnin 12943
 ..accept 13084
 step
-'Orgrim's Hammer flies in a triangular pattern using these points:
-.' Point 1: [60.6,34.9]
-.' Point 2: [68.0,52.5]
-.' Point 3: [68.9,27.0]
-.'Find Orgrim's Hammer flying around in the sky |tip On you world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
+.' Orgrim's Hammer flies in a triangular pattern using these points:
+.' Point 1: [Icecrown,60.6,34.9]
+.' Point 2: [Icecrown,68.0,52.5]
+.' Point 3: [Icecrown,68.9,27.0]
+.' Find Orgrim's Hammer flying around in the sky |tip On your world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
 .talk 29795
+.|tip He is in the main room on the upper level of the airship
 ..turnin 13352
 ..turnin 13354
 ..accept 13258
 ..accept 13358
 step
-'On the Orgrim's Hammer airship:
+.' On the Orgrim's Hammer airship:
 .talk 30825
+.|tip He is on the bottom level of the airship, in the back
 ..turnin 13355
 ..accept 13356
 step
@@ -35697,20 +35728,22 @@ goto 49.1,34.2
 .' Use your Writhing Mass next to the big cauldron |use Writhing Mass##44304
 .' Banish the Writhing Mass |q 13356/1
 step
-'Orgrim's Hammer flies in a triangular pattern using these points:
-.' Point 1: [60.6,34.9]
-.' Point 2: [68.0,52.5]
-.' Point 3: [68.9,27.0]
-.'Find Orgrim's Hammer flying around in the sky |tip On you world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
+.' Orgrim's Hammer flies in a triangular pattern using these points:
+.' Point 1: [Icecrown,60.6,34.9]
+.' Point 2: [Icecrown,68.0,52.5]
+.' Point 3: [Icecrown,68.9,27.0]
+.' Find Orgrim's Hammer flying around in the sky |tip On your world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
 .talk 29795
+.|tip He is in the main room on the upper level of the airship
 ..turnin 13358
 ..accept 13366
 step
-'On the Orgrim's Hammer airship:
+.' On the Orgrim's Hammer airship:
 .talk 30825
+.|tip He is on the bottom level of the airship, in the back
 ..turnin 13356
 step
-.' Go into the building at [51.9,32.7] |goto 51.9,32.7,0.5 |c |q 13366
+.' Go into the building at [Icecrown,51.9,32.7] |goto 51.9,32.7,0.5 |c |q 13366
 step
 goto 51.9,30.8
 .from Cult Researcher##32297+
@@ -35738,14 +35771,14 @@ goto 32.5,42.9
 ..turnin 13092
 ..accept 13042
 step
-'The entrance to The Underhalls starts here |goto 32.6,32.1,0.3 |c
+.' The entrance to The Underhalls starts here |goto 32.6,32.1,0.3 |c
 step
 goto 36.1,33.0
 .talk 30406
 ..accept 13059
 step
 goto 33.1,37.7
-.' Use Bethod's Sword in the middle of the room |use Bethod's Sword##42928
+.' Use Bethods Sword in the middle of the room |use Bethod's Sword##42928
 .' Issue a challenge using Bethod's Sword |q 13059/1
 .kill Thane Illskar##30475 |q 13059/2
 step
@@ -35758,14 +35791,14 @@ goto 34.0,36.3
 step
 goto 33.4,33.2
 .click Nergeld to control him |tip He's a big undead monster.
-.'Use Nergeld's abilities to kill Dr. Terrible |tip The best way to kill Dr. Terrible is to knock him, and all the other mobs, away using Nergeld's shout ability.  Then, target Dr. Terrible and pull him close with Nergeld's chain ability.  When Dr. Terrible is close to you, use Nergeld's punch ability to get his health down quickly.  When Dr. Terrible tries to heal, use Nergeld's shout ability to interrupt him, then pull him close again and resume punching him.
+.' Use Nergeld's abilities to kill Dr. Terrible |tip The best way to kill Dr. Terrible is to knock him, and all the other mobs, away using Nergeld's shout ability.  Then, target Dr. Terrible and pull him close with Nergeld's chain ability.  When Dr. Terrible is close to you, use Nergeld's punch ability to get his health down quickly.  When Dr. Terrible tries to heal, use Nergeld's shout ability to interrupt him, then pull him close again and resume punching him.
 .kill Dr. Terrible##30404 |q 13043/1
 step
 goto 36.1,33.0
 .talk 30406
 ..turnin 13059
 step
-'Leave The Underhalls |goto 32.6,32.1,0.3 |c
+.' Leave The Underhalls |goto 32.6,32.1,0.3 |c
 step
 goto 32.5,42.9
 .talk 30232
@@ -35785,25 +35818,26 @@ goto 32.5,42.9
 ..turnin 13091
 ..accept 13121
 step
-'The entrance to Kul'galar Keep starts here |goto 25.1,61.3,0.3 |c
+.' The entrance to Kul'galar Keep starts here |goto 25.1,61.3,0.3 |c
 step
 goto 26.2,62.3
 .click the Eye of the Lich King |tip It's a blue floating ball up on a stage.
 .' Grasp the Eye of the Lich King and focus
 .' Gain information for The Bone Witch |q 13121/1
 step
-'Leave Kul'galar Keep |goto 25.1,61.3,0.3 |c
+.' Leave Kul'galar Keep |goto 25.1,61.3,0.3 |c
 step
 goto 32.5,42.9
 .talk 30232
 ..turnin 13121
 ..accept 13133
 step
-'The entrance to the Halls of the Ancestors starts here |goto 27.9,47.2,0.3 |c
+.' The entrance to the Halls of the Ancestors starts here |goto 27.9,47.2,0.3 |c
 step
 goto 27.4,47.9
 .talk 30718
-..' Waken them to see if it is Iskalder
+.|tip Marking them with shift+v will make them easy to spot (Use v to mark enemies again).
+.' Waken them to see if it is Iskalder
 .' Use The Bone Witch's Amulet on Iskalder |use The Bone Witch's Amulet##43166
 .' Bring Iskalder back to The Bone Witch at [32.5,42.9] |n
 .' Deliver Iskalder to The Bone Witch |q 13133/1
@@ -35814,6 +35848,7 @@ goto 32.5,42.9
 step
 goto 35.4,66.3
 .talk 30631
+.|tip She is on top of the mountains
 ..turnin 13106
 ..accept 13117
 step
@@ -35823,6 +35858,7 @@ goto 36.8,70.7
 step
 goto 35.4,66.3
 .talk 30631
+.|tip She is on top of the mountains
 ..turnin 13117
 ..accept 13119
 ..accept 13120
@@ -35861,6 +35897,7 @@ goto 37.8,70.7
 step
 goto 35.4,66.3
 .talk 30631
+.|tip She is on top of the mountains
 ..turnin 13119
 ..turnin 13120
 ..accept 13134
@@ -35877,11 +35914,12 @@ goto 34.0,70.0
 step
 goto 34.4,68.9
 .from Spiked Ghoul##30597+ |tip You can find them all around this area.
-.' You can find more spiked Ghouls on this lower platform [32.3,69.3]
+.' You can find more spiked Ghouls on this lower platform [Icecrown,32.3,69.3]
 .get 10 Jagged Shard|q 13136/1
 step
 goto 35.4,66.3
 .talk 30631
+.|tip She is on top of the mountains
 ..turnin 13134
 step
 goto 35.5,66.4
@@ -35892,6 +35930,7 @@ goto 35.5,66.4
 step
 goto 54.9,84.2
 .talk 31440
+.|tip She is down on the ground
 ..turnin 13258
 ..accept 13259
 step
@@ -35929,7 +35968,7 @@ goto 53.8,86.9
 step
 goto 53.8,86.8
 .click the Surface Portal |tip It looks like a small round green and black portal underground in Naz'anak: The Forgotten Depths.
-..' Go to the surface |goto Icecrown,49.1,71.6,0.5 |noway |c
+.' Go to the surface |goto Icecrown,49.1,71.6,0.5 |noway |c
 step
 goto 58.1,70.9
 .' Use your Bag of Jagged Shards while standing on the big platform with fire shooting out of it |use Bag of Jagged Shards##43289
@@ -35939,12 +35978,13 @@ goto 58.9,73.3
 .from Skeletal Runesmith##30921+
 .get 5 Runed Saronite Plate |q 13140/1
 step
-'Orgrim's Hammer flies in a triangular pattern using these points:
-.' Point 1: [60.6,34.9]
-.' Point 2: [68.0,52.5]
-.' Point 3: [68.9,27.0]
-.'Find Orgrim's Hammer flying around in the sky |tip On you world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
+.' Orgrim's Hammer flies in a triangular pattern using these points:
+.' Point 1: [Icecrown,60.6,34.9]
+.' Point 2: [Icecrown,68.0,52.5]
+.' Point 3: [Icecrown,68.9,27.0]
+.' Find Orgrim's Hammer flying around in the sky |tip On your world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
 .talk 29795
+.|tip He is in the main room on the upper level of the airship
 ..turnin 13282
 ..accept 13304
 ..turnin 13366
@@ -35971,7 +36011,7 @@ goto 65.4,47.9
 .kill 20 Frostskull Magus##31813+ |q 13305/2
 .kill 2 Bone Giant##31815+ |q 13305/3
 step
-.' Click the red arrow on your vehicle hot bar to stop controlling the Refurbished Demolisher |outvehicle |c
+.' Click the yellow arrow on your vehicle hot bar to stop controlling the Refurbished Demolisher |outvehicle |c
 step
 goto 64.5,44.0
 .talk 32404
@@ -35989,12 +36029,13 @@ goto 64.5,44.0
 ..turnin 13236
 ..accept 13348
 step
-'Orgrim's Hammer flies in a triangular pattern using these points:
-.' Point 1: [60.6,34.9]
-.' Point 2: [68.0,52.5]
-.' Point 3: [68.9,27.0]
-.'Find Orgrim's Hammer flying around in the sky |tip On you world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
+.' Orgrim's Hammer flies in a triangular pattern using these points:
+.' Point 1: [Icecrown,60.6,34.9]
+.' Point 2: [Icecrown,68.0,52.5]
+.' Point 3: [Icecrown,68.9,27.0]
+.' Find Orgrim's Hammer flying around in the sky |tip On your world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
 .talk 29795
+.|tip He is in the main room on the upper level of the airship
 ..turnin 13348
 ..accept 13349
 ..accept 13306
@@ -36017,29 +36058,32 @@ step
 goto 72.3,36.7
 .kill 5 Wyrm Reanimator##31731+ |q 13349/1
 step
-'Orgrim's Hammer flies in a triangular pattern using these points:
-.' Point 1: [60.6,34.9]
-.' Point 2: [68.0,52.5]
-.' Point 3: [68.9,27.0]
-.'Find Orgrim's Hammer flying around in the sky |tip On you world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
+.' Orgrim's Hammer flies in a triangular pattern using these points:
+.' Point 1: [Icecrown,60.6,34.9]
+.' Point 2: [Icecrown,68.0,52.5]
+.' Point 3: [Icecrown,68.9,27.0]
+.' Find Orgrim's Hammer flying around in the sky |tip On your world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
 .talk 29795
+.|tip He is in the main room on the upper level of the airship
 ..turnin 13349
 step
 goto 51.1,39.6
 .' Use your Barricade Construction Kit next to the pink and purple orbs |use Barricade Construction Kit##44127 |tip They look like pink and purple orbs that flash and disappear around this area.
 .' Construct 8 Barricades |q 13306/1
 step
-'Orgrim's Hammer flies in a triangular pattern using these points:
-.' Point 1: [60.6,34.9]
-.' Point 2: [68.0,52.5]
-.' Point 3: [68.9,27.0]
-.'Find Orgrim's Hammer flying around in the sky |tip On you world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
+.' Orgrim's Hammer flies in a triangular pattern using these points:
+.' Point 1: [Icecrown,60.6,34.9]
+.' Point 2: [Icecrown,68.0,52.5]
+.' Point 3: [Icecrown,68.9,27.0]
+.' Find Orgrim's Hammer flying around in the sky |tip On your world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
 .talk 29795
+.|tip He is in the main room on the upper level of the airship
 ..turnin 13306
 ..accept 13307
 step
-'On the Orgrim's Hammer airship:
+.' On the Orgrim's Hammer airship:
 .talk 30824
+.|tip He is in the main room on the upper level of the airship
 ..accept 13313
 step
 goto 49.4,39.3
@@ -36050,22 +36094,27 @@ step
 goto 46.2,49.9
 .kill 5 Scourge Banner-Bearer##31900+ |q 13307/1
 .kill 20 Converted Hero##32255+ |q 13307/2
+.'  You can find more at [Icecrown,43.7,53.7]
 step
-'Orgrim's Hammer flies in a triangular pattern using these points:
-.' Point 1: [60.6,34.9]
-.' Point 2: [68.0,52.5]
-.' Point 3: [68.9,27.0]
-.'Find Orgrim's Hammer flying around in the sky |tip On you world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
+.' Orgrim's Hammer flies in a triangular pattern using these points:
+.' Point 1: [Icecrown,60.6,34.9]
+.' Point 2: [Icecrown,68.0,52.5]
+.' Point 3: [Icecrown,68.9,27.0]
+.' Find Orgrim's Hammer flying around in the sky |tip On your world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
 .talk 30824
+.|tip He is in the main room on the upper level of the airship
 ..turnin 13313
 step
-'Orgrim's Hammer flies in a triangular pattern using these points:
-.' Point 1: [60.6,34.9]
-.' Point 2: [68.0,52.5]
-.' Point 3: [68.9,27.0]
-.'Find Orgrim's Hammer flying around in the sky |tip On you world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
+.' Orgrim's Hammer flies in a triangular pattern using these points:
+.' Point 1: [Icecrown,60.6,34.9]
+.' Point 2: [Icecrown,68.0,52.5]
+.' Point 3: [Icecrown,68.9,27.0]
+.' Find Orgrim's Hammer flying around in the sky |tip On your world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
 .talk 29795
+.|tip He is in the main room on the upper level of the airship
 ..turnin 13307
+step
+.' Enter The Shadow Vault |goto 43.7,23.9 <5 |c
 step
 goto 43.1,21.1
 .talk 30218
@@ -36124,9 +36173,9 @@ goto 44.1,24.5
 step
 goto 44.1,24.5
 .talk 30946
-..' Tell him you are prepared to join the assault |invehicle
+.' Tell him you are prepared to join the assault |invehicle
 step
-'Use your Firebomb ability as you fly around to:
+.' Use your Firebomb ability as you fly around to:
 .' Slaughter 80 Weeping Quarry Undead |q 13172/1
 step
 .' Click the red arrow on your vehicle hot bar to stop riding the skeleton mount |outvehicle |c
@@ -36254,13 +36303,13 @@ goto 19.5,48.2
 step
 goto 12.5,44.4
 .' Use your Bone Gryphon in your bags |use Bone Gryphon##40600
-.' Ride a Bone Gryphon |invehicle |q 12815
+.' Ride a Bone Gryphon |invehicle
 step
 goto 10.2,41.9
 .' Use your Bone Gryphon abilities to:
 .kill 10 Onslaught Gryphon Rider##29333+ |q 12815/1
 step
-'Get to a safe place and click the red arrow on your vehicle hot bar to stop riding the Bone Gryphon |outvehicle |c
+.' Get to a safe place and click the red arrow on your vehicle hot bar to stop riding the Bone Gryphon |outvehicle |c
 step
 goto 19.6,47.8
 .talk 29405
@@ -36276,7 +36325,7 @@ goto 35.4,66.3
 .talk 30631
 ..accept 13152
 step
-'The entrance to the Sanctum of Reanimation starts here |goto 34.4,68.4,0.3 |c
+.' The entrance to the Sanctum of Reanimation starts here |goto 34.4,68.4,0.3 |c
 step
 goto 34.6,67.7
 .' Use Olakin's Torch on Festering Corpses |use Olakin's Torch##43524 |tip They look like dead soldiers on the ground inside this cave.
@@ -36288,7 +36337,7 @@ goto 35.8,67.0
 .' Free Patches |q 13152/1
 .' Help Patches kill Doctor Sabnok |q 13152/2
 step
-'Leave the Sanctum of Reanimation |goto 34.4,68.4,0.3 |c
+.' Leave the Sanctum of Reanimation |goto 34.4,68.4,0.3 |c
 step
 goto 35.4,66.3
 .talk 30631
@@ -36322,13 +36371,14 @@ goto 34.0,69.2
 .get Olakin's Legs |q 13212/2
 .get Olakin's Left Arm |q 13212/3
 .get Olakin's Right Arm |q 13212/4
+.' You can find more Corpulent Horrors at [Icecrown,32.3,70.2]
 step
 goto 35.4,66.3
 .talk 30631
 ..turnin 13212
 ..accept 13220
 step
-'The entrance to the Sanctum of Reanimation starts here |goto 34.4,68.4,0.3 |c
+.' The entrance to the Sanctum of Reanimation starts here |goto 34.4,68.4,0.3 |c
 step
 goto 34.7,66.0
 .click Spool of Thread##1747
@@ -36345,7 +36395,7 @@ goto 35.6,66.7
 .' Revive Crusader Olakin Sainrith |q 13220/1
 |modelnpc Crusader Olakin Sainrith##31235
 step
-'Leave the Sanctum of Reanimation |goto 34.4,68.4,0.3 |c
+.' Leave the Sanctum of Reanimation |goto 34.4,68.4,0.3 |c
 step
 goto 35.4,66.3
 .talk 30631
@@ -36354,7 +36404,7 @@ goto 35.4,66.3
 step
 goto 29.8,61.3
 .talk 31306
-..' Tell him let's kill this... thing... and get this over with
+.' Tell him let's kill this... thing... and get this over with
 .kill Morbidus##30698 |q 13235/1
 step
 goto 35.4,66.3
@@ -36389,7 +36439,7 @@ step
 goto 55.5,71.5
 .' Fight a Lithe Stalker until you see a message in your chat that it's weak |tip You can find Lithe Stalkers up on this high bridge.
 .' Use your Sigil of the Ebon Blade on a weakened Lithe Stalker |use Sigil of the Ebon Blade##43315
-.' Bring the Lithe Stalker off the bridge to [55.4,70.8] |tip If you cannot get this quest to complete, pull two Lithe Stalkers to this point, subdue one then kill the other.
+.' Bring the Lithe Stalker off the bridge to [Icecrown,55.4,70.8] |tip If you cannot get this quest to complete, pull two Lithe Stalkers to this point, subdue one then kill the other.
 .' Return the Subdued Lithe Stalker |q 13143/1
 |modelnpc Lithe Stalker##31323
 step
@@ -36439,17 +36489,19 @@ goto 54.1,71.2
 ..turnin 13147
 ..turnin 13160
 step
-'Orgrim's Hammer flies in a triangular pattern using these points:
-.' Point 1: [60.6,34.9]
-.' Point 2: [68.0,52.5]
-.' Point 3: [68.9,27.0]
-.'Find Orgrim's Hammer flying around in the sky |tip On you world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
+.' Orgrim's Hammer flies in a triangular pattern using these points:
+.' Point 1: [Icecrown,60.6,34.9]
+.' Point 2: [Icecrown,68.0,52.5]
+.' Point 3: [Icecrown,68.9,27.0]
+.' Find Orgrim's Hammer flying around in the sky |tip On your world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
 .talk 29795
+.|tip He is in the main room on the upper level of the airship
 ..turnin 13362
 ..accept 13363
 step
-'On the Orgrim's Hammer airship:
+.' On the Orgrim's Hammer airship:
 .talk 31261
+.|tip He walks around the front of the ship, going upstairs and downstairs
 ..turnin 13481
 step
 goto 79.8,71.8
@@ -36465,7 +36517,7 @@ goto 45.2,77.0
 step
 goto 44.4,76.2
 .talk 32239
-..' Tell him you're ready and follow him into the cathedral
+.' Tell him you're ready and follow him into the cathedral
 .' Watch the cutscene
 .' See Tirion's Gambit |q 13364/1
 step
@@ -38912,11 +38964,12 @@ step
 |confirm
 step
 .' Orgrim's Hammer flies in a triangular pattern using these points:
-.' Point 1: [60.6,34.9]
-.' Point 2: [68.0,52.5]
-.' Point 3: [68.9,27.0]
-.'Find Orgrim's Hammer flying around in the sky |tip On you world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
+.' Point 1: [Icecrown,60.6,34.9]
+.' Point 2: [Icecrown,68.0,52.5]
+.' Point 3: [Icecrown,68.9,27.0]
+.' Find Orgrim's Hammer flying around in the sky |tip On your world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
 .talk 29795
+.|tip He is in the main room on the upper level of the airship
 ..accept 13367
 ..accept 13277
 step
@@ -38943,7 +38996,7 @@ goto 53.0,29.0
 .click Alumeth's Robes##8508
 .collect Alumeth's Robes##44479 |q 13367
 step
-'Use Alumeth's Skull |use Alumeth's Skull##44476
+.' Use Alumeth's Skull |use Alumeth's Skull##44476
 .collect Alumeth's Remains##44480 |q 13367
 step
 goto 51.9,28.7
@@ -38951,12 +39004,13 @@ goto 51.9,28.7
 .from Alumeth the Ascended##32300
 .' Defeat Alumeth the Ascended |q 13367/1
 step
-'Orgrim's Hammer flies in a triangular pattern using these points:
-.' Point 1: [60.6,34.9]
-.' Point 2: [68.0,52.5]
-.' Point 3: [68.9,27.0]
-.'Find Orgrim's Hammer flying around in the sky |tip On you world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
+.' Orgrim's Hammer flies in a triangular pattern using these points:
+.' Point 1: [Icecrown,60.6,34.9]
+.' Point 2: [Icecrown,68.0,52.5]
+.' Point 3: [Icecrown,68.9,27.0]
+.' Find Orgrim's Hammer flying around in the sky |tip On your world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
 .talk 29795
+.|tip He is in the main room on the upper level of the airship
 ..turnin 13367
 ..turnin 13277
 ..accept 13279
@@ -38979,12 +39033,13 @@ goto 61.5,63.8
 .' Continue using your Pustulant Spinal Fluid next to the Plague Cauldron in between fights
 .' Neutralize the Plague Cauldron |q 13279/1
 step
-'Orgrim's Hammer flies in a triangular pattern using these points:
-.' Point 1: [60.6,34.9]
-.' Point 2: [68.0,52.5]
-.' Point 3: [68.9,27.0]
-.'Find Orgrim's Hammer flying around in the sky |tip On you world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
+.' Orgrim's Hammer flies in a triangular pattern using these points:
+.' Point 1: [Icecrown,60.6,34.9]
+.' Point 2: [Icecrown,68.0,52.5]
+.' Point 3: [Icecrown,68.9,27.0]
+.' Find Orgrim's Hammer flying around in the sky |tip On your world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
 .talk 29795
+.|tip He is in the main room on the upper level of the airship
 ..turnin 13279
 ..turnin 13312
 ..turnin 13278
@@ -38995,12 +39050,13 @@ goto 47.3,63.4
 .' Use your Volatile Acid on their corpses |use Volatile Acid##44653
 .' Dissolve 6 Skeletal Reaver Bones |q 13329/1
 step
-'Orgrim's Hammer flies in a triangular pattern using these points:
-.' Point 1: [60.6,34.9]
-.' Point 2: [68.0,52.5]
-.' Point 3: [68.9,27.0]
-.'Find Orgrim's Hammer flying around in the sky |tip On you world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
+.' Orgrim's Hammer flies in a triangular pattern using these points:
+.' Point 1: [Icecrown,60.6,34.9]
+.' Point 2: [Icecrown,68.0,52.5]
+.' Point 3: [Icecrown,68.9,27.0]
+.' Find Orgrim's Hammer flying around in the sky |tip On your world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
 .talk 29795
+.|tip He is in the main room on the upper level of the airship
 ..turnin 13329
 ..accept 13316
 ..accept 13328
@@ -39015,6 +39071,7 @@ goto 45.8,69.5
 step
 goto 47.8,68.1
 .click the Shard of Horror##8122
+.|tip It is on the top level
 .get Broken Shard of Horror |q 13328/1
 step
 goto 44.6,70.5
@@ -39053,12 +39110,13 @@ goto 54.1,71.2
 .talk 30944
 ..turnin 13164
 step
-'Orgrim's Hammer flies in a triangular pattern using these points:
-.' Point 1: [60.6,34.9]
-.' Point 2: [68.0,52.5]
-.' Point 3: [68.9,27.0]
-.'Find Orgrim's Hammer flying around in the sky |tip On you world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
+.' Orgrim's Hammer flies in a triangular pattern using these points:
+.' Point 1: [Icecrown,60.6,34.9]
+.' Point 2: [Icecrown,68.0,52.5]
+.' Point 3: [Icecrown,68.9,27.0]
+.' Find Orgrim's Hammer flying around in the sky |tip On your world map, it looks like a ship icon with 2 long red-ish balloons on either side of it.
 .talk 29795
+.|tip He is in the main room on the upper level of the airship
 ..turnin 13316
 ..turnin 13328
 step
@@ -39078,6 +39136,7 @@ goto 32.5,42.9
 step
 goto 18.2,56.4
 .click War Horn of Jotunheim##7352
+.|tip It is all the way at the top of this big tower
 .kill Overthane Balargarde##31016 |q 13142/1
 step
 goto 32.5,42.9
@@ -39090,7 +39149,7 @@ goto 30.7,28.9
 ..turnin 13213
 ..accept 13214
 step
-'Geirrvif will announce the start of the quest, a few seconds later six scourge come out and you fight them all. |tip Kill Father Jhadras first as he heals the rest of the scourge.
+.' Geirrvif will announce the start of the quest, a few seconds later six scourge come out and you fight them all. |tip Kill Father Jhadras first as he heals the rest of the scourge.
 .' Defeat the Fallen Heroes |q 13214/1
 |modelnpc Eldreth##31195
 |modelnpc Geness Half-Soul##31193
@@ -39102,6 +39161,74 @@ step
 goto 31.6,31.0
 .talk 31154
 ..turnin 13214
+step
+goto 30.8,29.0
+.talk 31135
+..accept 13215
+|only if completedq(13214)
+step
+goto 30.8,28.6
+.kill Khit'rix the Dark Master##31222
+.' Defeat Khit'rix the Dark Master |q 13215/1
+step
+goto 31.6,31.1
+.talk 31154
+..turnin 13215
+step
+goto 30.8,29.0
+.talk 31135
+..accept 13216
+|only if completedq(13215)
+step
+goto 30.7,29.0
+.kill Sigrid Iceborn##30086
+.' Defeat Sigrid Iceborn |q 13216/1
+step
+goto 31.6,31.0
+.talk 31154
+..turnin 13216
+step
+goto 30.8,29.0
+.talk 31135
+..accept 13217
+|only if completedq(13216)
+step
+goto 30.7,29.1
+.kill Carnage
+.' Defeat Carnage |q 13217/1
+|modelnpc Carnage##31271
+step
+goto 31.6,31.1
+.talk 31154
+..turnin 13217
+step
+goto 30.8,29.1
+.talk 31135
+..accept 13218
+|only if completedq(13217)
+step
+goto 31,29.1
+.kill Thane Banahogg <The Deathblow>
+.' Defeat Thane Banahogg |q 13218/1
+|modelnpc Thane Banahogg##31277
+step
+goto 31.6,31.1
+.talk 31154
+..turnin 13218
+step
+goto 30.8,29.1
+.talk 31135
+..accept 13219
+|only if completedq(13218)
+step
+goto 31,29.1
+.kill Prince Sandoval
+.' Defeat Prince Sandoval |q 13219/1
+|modelnpc Prince Sandoval##14688
+step
+goto 31.6,31.0
+.talk 31154
+..turnin 13219
 step
 goto 19.5,48.1
 .talk 29344
@@ -39116,6 +39243,7 @@ goto 9.5,46.6 |n
 .' Use Arete's gate in your bags next to Archbishop Landgren's corpse |use Arete's gate##40730
 .' Summon Arete's Gate |q 12847/2
 step
+goto 9.6,47.4
 .' Watch the short cutscene before turning in the quest
 .talk 29560
 ..turnin 12847
@@ -41836,6 +41964,7 @@ goto Kelp'thar Forest,38.7,31.7
 step
 goto 42.1,31.3
 .click Saltwater Star##9991+
+.|tip These loook like yellow starfish on the sea floor
 .get 3 Saltwater Starfish |q 25929/1
 .click Conch Shell##9440
 .get Conch Shell |q 25929/2
@@ -41846,7 +41975,9 @@ goto 38.7,31.7
 ..accept 25936
 step
 goto 42.4,31.4
-.' Use your Enchanted Conch on Drowning Warriors |use Enchanted Conch##56227 |tip They are swimming above the ground, holding their throats.
+.' Use your Enchanted Conch on Drowning Warriors |use Enchanted Conch##56227
+.|tip They are swimming above the ground, holding their throats.
+.|tip You can mark them with shift+v (Use v to mark enemies again).
 .' Rescue 6 Drowning Warriors |q 25936/1
 step
 goto 38.7,31.7
@@ -41986,7 +42117,7 @@ goto 54.4,33.7 |n
 step
 goto 48.3,39.6
 .talk 39669
-..' Tell him to make for that cave to the west
+.' Tell him to make for that cave to the west
 .' Rescue Mack and Samir |q 25598/1
 step
 goto 49.7,40.9
@@ -42017,6 +42148,7 @@ goto 51.7,42.3
 .' Use your Tattered Treasure Map in your bags |use Tattered Treasure Map##53053
 ..accept 25377
 .click Adarrah's Jewelry Box##1+
+.|tip Small brown boxes on the sea floor
 .get 6 Adarrah's Keepsake |q 25390/1
 step
 goto 55.5,38.8
@@ -42099,7 +42231,7 @@ goto 46.3,46.9
 ..turnin 25638
 ..accept 25794
 step
-'Use Erunak's Scrying Orb |use Erunak's Scrying Orb##56020 |q 25794/1
+.' Use Erunak's Scrying Orb |use Erunak's Scrying Orb##56020 |q 25794/1
 step
 goto 46.3,46.9
 .talk 40105
@@ -42140,7 +42272,7 @@ goto 63.9,59.9
 step
 goto 64.0,59.8
 .talk 41885
-..' Ask him to tell you his name
+.' Ask him to tell you his name
 .' Debrief Gurrok |q 26007/1
 step
 goto 63.9,59.9
@@ -42162,7 +42294,8 @@ goto 58.4,48.7
 ..turnin 25732
 ..accept 25743
 step
-'Use The Pewter Pounder |use The Pewter Pounder##55806
+goto 58.4,48.8
+.' Use The Pewter Pounder |use The Pewter Pounder##55806
 .' Destroy The Pewter Prophet |q 25743/1
 step
 goto 58.4,48.6
@@ -42171,6 +42304,7 @@ goto 58.4,48.6
 step
 goto 58.7,72.4
 .' Use your Orb of Suggestion on a Famished Great Shark |use Orb of Suggestion##56576
+.|tip It may take more than one try to control the shark
 .' Take control of a Famished Great Shark |invehicle |q 25887
 step
 goto 57.5,72.4
@@ -42219,16 +42353,19 @@ goto 57.7,75.4
 .click Naga Tridents##9552+
 .' Destroy 6 Naga Weapons |q 25883/1
 step
-'Click the Quest Complete box that displays on the right side of the screen under your minimap
+.' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 25884
 ..accept 27708
 step
-'Click the Quest Complete box that displays on the right side of the screen under your minimap
+.' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 25883
 step
 goto 60.1,81.2
 .from Warden Azjakir##41530
+.|tip He is up on the highest level of the Naga Holding Pens
 .' Slay the Zin'jatar Warden |q 27708/1
+step
+.' Enter the cave |goto 61.1,63.9,0.5 |c
 step
 goto 63.9,59.9
 .talk 41341
@@ -42244,7 +42381,7 @@ goto 63.9,59.4
 ..turnin 26008
 step
 goto 48.3,72.5 |n
-.' Enter the cave |goto 48.3,72.5,0.5 |noway |c
+.' Enter this cave |goto 48.3,72.5,0.5 |noway |c
 step
 goto Shimmering Expanse,56.0,13.7
 .talk 39226
@@ -42253,10 +42390,10 @@ goto Shimmering Expanse,56.0,13.7
 step
 goto 56.0,13.7
 .talk 39226
-..' Tell him you are ready to join him in the vision
+.' Tell him you are ready to join him in the vision
 .' Share in Farseer Gadra's Spirit Vision |q 25334/1
 step
-'Next to you:
+.' Next to you:
 .talk 40398
 ..turnin 25334
 step
@@ -42278,9 +42415,13 @@ goto 55.5,12.5
 .talk 39877
 ..accept 25221
 step
+.' Follow this path in the cave towards the west |goto 54.6,11.6 <5 |c
+step
+.' Exit the cave |goto 51.8,14.8 <5 |c
+step
 goto 52.0,18.0
-.' Follow the path outside the cave
 .' Use Toshe's Hunting Spears near Fleeing Zin'jatar Fathom-Stalkers |use Toshe's Hunting Spears##54466
+.|tip You can do this while mounted and you don't have to target the mobs
 .kill 20 Fleeing Zin'jatar Fathom-Stalker##40174+ |q 25221/1
 step
 goto 53.3,33.1
@@ -42297,6 +42438,7 @@ goto 49.5,41.2
 step
 goto 49.4,42.6
 .talk 39876
+.|tip She walks around a little and may not be in this exact spot
 ..turnin 25222
 ..accept 25215
 ..accept 25216
@@ -42315,13 +42457,16 @@ goto 49.1,42.0
 step
 goto 50.3,41.1
 .clicknpc Dead Zin'jatar Raider##39911+
+.|tip You can click them while mounted
 .' Bring them to [50.8,45.9] |tip You have to drag them one at a time.
 .' Dispose of 3 Dead Zin'jatar Raiders |q 25215/1
 step
 goto 59.6,40.1
 .kill 12 Spiketooth Eel##40200+ |q 25220/1
 .clicknpc Coilshell Sifter##39422+
+.|tip These are little snails on the seafloor
 .get 10 Coilshell Sifter |q 25219/1
+.' More of these can be found around [Shimmering Expanse,53.0,40.2]
 step
 goto 50.1,39.1 |n
 .' Enter the cave |goto 50.1,39.1,0.5 |noway |c
@@ -42348,7 +42493,9 @@ goto 41.3,34.1
 ..accept 25360
 step
 goto 40.5,35.5
-.' Use Sambino's Air Balloon next to the bubbling objects |use Sambino's Air Balloon##54608 |tip They look like green bubbling watermelon looking plants with a holes in the tops of them, and big blue bubbling snail shells.  You'll have to do this 10 times.
+.' Use Sambino's Air Balloon next to the bubbling objects |use Sambino's Air Balloon##54608
+.|tip They look like green bubbling watermelon looking plants with a holes in the tops of them, and big blue bubbling snail shells.  You'll have to do this 10 times.
+.|tip You'll have a stacking debuff that'll show how close you are to 10
 .' Fill Sambino's Air Balloon |q 25218/1
 .kill 10 Green Sand Crab##39418+ |q 25360/1
 .get Sambino's Air Valve |q 25218/2
@@ -42418,10 +42565,11 @@ goto 49.2,42.6
 step
 goto Shimmering Expanse/0 49.5,41.3
 .talk 40873
-.' Tell him you need to go to Nespirah.
-|confirm
+.' Tell him you need to go to Nespirah |goto 51.8,48.5 <5 |c
 step
-'Run up the spiral ramp and follow Earthmender Duarn around after he spawns:
+goto 53.0,50.5
+.' Run up the spiral ramp and follow Earthmender Duarn around after he spawns:
+.' He will go to this room [Shimmering Expanse,51.6,52.2]
 .' Find a way to communicate with Nespirah |q 25890/1
 step
 goto 51.6,52.2
@@ -42431,7 +42579,7 @@ goto 51.6,52.2
 step
 goto 51.6,52.2
 .talk 41531
-..' Tell him whenever he's ready
+.' Tell him whenever he's ready
 .' Speak with Earthmender Duarn |q 25900/1
 step
 goto 51.6,52.2
@@ -42464,7 +42612,7 @@ goto 51.6,52.2
 step
 goto 51.6,52.2
 .talk 41531
-..' Tell him let's speak with Nespirah
+.' Tell him let's speak with Nespirah
 .' Speak with Earthmender Duarn |q 25990/1
 step
 goto 51.6,52.2
@@ -42561,14 +42709,18 @@ goto 49.4,62.2
 .from Snapjaw Grouper##40912+
 .get 8 Snapjaw Grouper Meat |q 25595/1
 .clicknpc Spiralung##39745+
+.|tip Mark them with shift+v and they'll be very easy to find (Use v to mark enemies again).
 .collect Spiralung##55141 |q 25593 |n
-.' Use your Spiralungs on Nespirah Survivors |use Spiralung##55141 |tip They look like Horde mobs swimming in place around the rock air bubble cracks around this area.
+.' Use your Spiralungs on Nespirah Survivors |use Spiralung##55141
+.|tip Mark them with shift+v and they'll be very easy to find (Use v to mark enemies again).
+.|tip They look like Horde mobs swimming in place around the rock air bubble cracks around this area.
 .' Rescue 8 Shell Survivors |q 25593/1
 .click Fiasco's Stray Part##6314+
+.|tip Very small mechanical pieces laying in little clusters on the ground
 .get 12 Fiasco's Stray Parts |q 25594/1
 step
 goto 59.6,69.0
-.kill 10 Redgill Scavenger##40911+ |q 25592/1 |tip They swim above the plants pretty high from the ground.
+.kill 10 Redgill Scavenger##40911+ |q 25592/1 |tip They swim above the plants.
 step
 goto 49.5,64.8 |n
 .' Swim down under the big stone slab
@@ -42695,9 +42847,11 @@ goto 35.6,60.4
 .from Kvaldir Pillager##41102+, Kvladir Plunderer##41108+, Kvaldir Wasteroamer##41106+
 .' Kill 16 Kvaldir invaders on the terrace |q 25637/1
 .click Nar'shola Ward##6913+
+.|tip These look like stone tables with blue liquid in them
 .' Activate 6 Nar'shola Wards |q 25658/1
 step
 goto 37.2,77.5
+.' Go to the middle level of these ruins
 .talk 41050
 ..turnin 25658
 step
@@ -42735,13 +42889,16 @@ goto 39.5,54.7
 ..accept 25962
 step
 goto 40.4,55.8
-.' Use your Box of Crossbow Bolts on Horde Lookouts |use Box of Crossbow Bolts##56247 |tip They look like Horde mobs either standing or on sea horses around this area with crossbows.
+.' Use your Box of Crossbow Bolts on Horde Lookouts |use Box of Crossbow Bolts##56247
+.|tip They look like Horde mobs either standing or on sea horses around this area with crossbows.
+.|tip You can mark them with shift+v to make them easier to find (Use v to mark enemies again).
 .' Restock 8 Horde Lookouts |q 25960/1
 step
 goto 37.5,78.4
 .from Azsh'ir Abyss Priestess##42453+, Azsh'ir Infantry##41227+, Naz'jar Serpent Guard##41228+
 .' Slay 10 Southern Naga Forces |q 25959/1
 .click Bloated Kelp Bulb##9535+
+.|tip These are green fruits growing from the kelp hanging from the ceiling in these ruins
 .get 8 Bloated Kelp Bulb |q 25962/1
 step
 goto 39.5,54.7
@@ -42759,7 +42916,7 @@ goto 39.8,54.0
 step
 goto 39.5,54.7
 .talk 40918
-..' Tell him you're ready to begin the assault on the terrace
+.' Tell him you're ready to begin the assault on the terrace
 .' Use the Improvised Explosives ability on your hotbar on the nagas on the ground as you ride the seahorse
 .kill 100 Azsh'ir Soldier##41249+ |q 25963/2
 .kill 20 Azsh'ir Wave Screamer##41250+ |q 25963/3
@@ -42783,8 +42940,10 @@ goto 31.0,72.2
 .' Scout the Northwestern Terrace |q 25965/2
 step
 goto 36.0,75.0
-.talk 41784 |tip They look like Horde mobs spread out on the ground around this whole area.
-..' Tell them they should get moving.
+.talk 41784
+.|tip Mark them with shift+v and they'll be easy to spot (Use v to mark enemies again).
+.|tip They look like Horde mobs spread out on the ground around this whole area.
+.' Tell them they should get moving.
 .' Rescue 6 Injured Assault Volunteers |q 25964/1
 step
 goto 39.1,78.7
@@ -42809,17 +42968,17 @@ goto 29.0,78.5
 step
 goto 34.4,78.7
 .talk 42072
-..' Tell you are to hunt the Crucible of Nazsharin
+.' Tell you are to hunt the Crucible of Nazsharin
 .' Speak to Fathom-Lord Zin'jatar |q 25858/1
 step
 goto 36.8,79.8
 .talk 41455
-..' Tell you are to hunt the Crucible of Nazsharin
+.' Tell you are to hunt the Crucible of Nazsharin
 .' Speak to Overseer Idra'kess |q 25858/3
 step
 goto 39.2,78.0
 .talk 42071
-..' Tell you are to hunt the Crucible of Nazsharin
+.' Tell you are to hunt the Crucible of Nazsharin
 .' Speak to Lady Sira'kess |q 25858/2
 step
 goto 46.2,79.6
@@ -42868,6 +43027,7 @@ goto 46.4,79.0
 step
 goto 29.6,78.9
 .talk 40919
+.|tip She is on the middle level of the ruins
 ..turnin 25966
 ..accept 25967
 step
@@ -42892,6 +43052,7 @@ goto 50.4,79.0
 step
 goto 48.4,84.0
 .click Horde Survival Kit##7539
+.|tip It is inside the wrecked ship
 .get Horde Survival Kit |q 25970/1
 step
 goto 48.4,83.8
@@ -42901,6 +43062,7 @@ goto 51.3,84.3
 .from Kvaldir Fleshcarver##41569+, Kvaldir Seahorror##41606+
 .click Coil of Kvaldir Rope##7548+
 .get 8 Coil of Kvaldir Rope |q 25971/1
+.' You can find more mobs at [Shimmering Expanse,57.2,85.0]
 step
 goto 50.4,79.0
 .talk 41770
@@ -42918,8 +43080,11 @@ goto 50.4,79.1
 step
 goto 50.4,79.1
 .talk 40921
+.|tip He's an orc at the surface of the water
 ..turnin 25972
 ..accept 25973
+step
+.' Enter the cave |goto 49.3,65.1 <5 |c
 step
 goto 51.2,63.0
 .talk 40917
@@ -42948,12 +43113,13 @@ goto 33.1,75.9
 step
 goto 33.1,61.0
 .talk 41980
-..' Tell him the mistress awaits
+.' Tell him the mistress awaits
 .' Gather Fathom-Caller Azrajar |q 25896/2
 step
-goto 33.1,73.0
+goto 35.2,77.1
+.' You can find these all around this level of the ruins:
 .talk 41985 |tip They look like pink and yellow nagas with pink shields around them all around this area.
-..' Tell them they are needed for the ritual
+.' Tell them they are needed for the ritual
 .' Gather 6 Sira'kess Tide Priestesses |q 25896/1
 .' Kill all the Kvaldir mobs attacking Naz'jar Honor Guards around this area
 .' Relieve 8 Naz'jar Honor Guards |q 25629/1
@@ -42967,7 +43133,8 @@ goto 33.1,77.9
 ..turnin 25896
 ..accept 25860
 step
-goto 33.1,76.9
+goto 33.1,76.1
+.' Fight the mobs outside the door, standing right in the doorway usually causes them to evade
 .' Use the abilities on your hotbar
 .from Kvladir Sandreaper##42058+, Kvaldir Bonesnapper##42057+ |q 25860/1
 step
@@ -42991,19 +43158,24 @@ goto 42.5,78.6
 ..turnin 25951
 .' Witness the Concluding Story of the Battlemaiden |q 26135/2
 step
+.' Enter the cave |goto 49.2,65.2 <5 |c
+step
 goto 51.6,62.8
 .talk 40919
 ..turnin 26135
 ..accept 26006
 step
-goto 49.6,65.1
-.' Use your Boom Boots to get to the water surface quickly |use Boom Boots##57412
-.clicknpc Rope Ladder##41020
-.' Jump up onto the boat |goto 64.7,68.7,0.5 |noway |c
+.' Exit the cave and use your Boom Boots to get to the water surface quickly |use Boom Boots##57412
+|confirm
 step
 goto 49.5,65.6
-.talk 43225
-.fpath Stygian Bounty
+.talk 43293
+.|tip It is at the water surface
+.fpath Shimmering Expanse
+step
+goto 49.6,65.9
+.clicknpc Rope Ladder##41020
+.' Jump up onto the boat |goto 49.6,65.9,0.3 |noway |c
 step
 goto Vashj'ir 64.5,68.8
 .talk 42410
@@ -43014,10 +43186,15 @@ goto 64.4,68.7
 .talk 45460
 ..accept 27442
 step
+goto Vashj'ir 64.9,68.1
+.talk 43225
+..fpath Stygian Bounty
+step
 goto 64.6,68.7
 .' Board the Verne once it arrives |q 26221/1 |tip It's a boat, so you may have a to wait a few minutes for it.
 step
-'Ride the boat
+.' Go inside and down into the boat
+.' Ride the boat
 .' Secure Tenebrous Cavern |q 26221/2
 step
 goto Abyssal Depths,53.9,59.6
@@ -43037,10 +43214,10 @@ goto 51.2,60.5
 .home Tenebrous Cavern
 step
 goto 56.7,58.1 |n
-.' Leave the Tenebrous Cavern |goto 56.7,58.1,0.5 |noway |c
+.' Leave Tenebrous Cavern |goto 56.7,58.1,0.5 |noway |c
 step
 goto 55.8,46.6
-.from Seabrush Terrapin##42108+, Scourgut Remora##42112+, Spinescale Hammerhead##42113+ |tip They Scourgut Remoras swim in place beneath the big purple ledge plants that grow out of the sides of the tall rock formations around this area.
+.from Seabrush Terrapin##42108+, Scourgut Remora##42112+, Spinescale Hammerhead##42113+ |tip The Scourgut Remoras swim in place beneath the big purple ledge plants that grow out of the sides of the tall rock formations around this area.
 .' Use your Oil Extrusion Pump on their corpses |use Oil Extrusion Pump##56821
 .get 4 Terrapin Oil |q 26122/1
 .get 4 Remora Oil |q 26122/2
@@ -43056,7 +43233,7 @@ goto 51.5,60.8
 step
 goto 51.5,60.5
 .click Fuel Sampling Station##3491
-..' Click "Let's get started!"
+.' Click "Let's get started!"
 .' Choose the Hammerhead Oil Sample 3 Times
 .' Choose the Remora Oil Sample 2 Times
 .' Mix the samples together!
@@ -43064,7 +43241,7 @@ goto 51.5,60.5
 step
 goto 51.5,60.8
 .talk 41669
-..' Tell him you made a Promising Fuel Sample
+.' Tell him you made a Promising Fuel Sample
 .' Create the perfect bio-fuel |q 26126/1
 step
 goto 51.5,60.8
@@ -43093,7 +43270,7 @@ goto 42.9,51.0
 ..accept 26088
 ..accept 26089
 step
-'Use your Fish Hat |use Fish Hat##56813
+.' Use your Fish Hat |use Fish Hat##56813
 .' Get the Lure buff |havebuff Interface\Icons\Ability_Vehicle_ElectroCharge |q 26088
 step
 goto 46.4,54.9
@@ -43102,8 +43279,11 @@ goto 46.4,54.9
 .collect Enormous Eel Egg##56812 |n
 .' Click your Enormous Eel Egg in your bags |use Enormous Eel Egg##56812
 ..accept 26090
-.' Get near Coldlight Nibblers |tip They look like small fish that hang out in the tips of the huge tube plants around this area.
+.' Get near Coldlight Nibblers
+.|tip You can mark them with shift+v to make them easy to find (Use v to mark enemies again).
+.|tip They look like small fish that hang out in the tips of the huge tube plants around this area.
 .get 30 Underlight Nibbler |q 26088/1
+.' More of all of these can be found at [Abyssal Depths,44.6,67.0]
 step
 goto 42.9,51.0
 .talk 41908
@@ -43121,6 +43301,8 @@ step
 goto 42.9,51.0
 .talk 41908
 ..turnin 26091
+step
+.' Enter Tenebrous Cavern |goto 56.7,58.1,0.5 |c
 step
 goto 51.4,61.5
 .talk 41663
@@ -43204,6 +43386,7 @@ goto 46.4,35.0
 .' Confine 5 Faceless Defiler Energies |q 26072/1
 .from Crushing Eel##41646+, Trench Stalker##41645+, Deep Remora##41647+ |q 26071/1
 .click Scalding Shroom##10057+
+.|tip Large yellow and blue mushrooms on the sea floor
 .get 5 Scalding Shroom |q 26096/1
 step
 goto 42.7,37.8
@@ -43224,7 +43407,7 @@ goto 42.7,37.9
 step
 goto 47.0,28.0
 .click Stonespeaker's Luring Totem##9575
-.from Ick'thys the Unfathomable##41648
+.from Ickthys the Unfathomable##41648
 .get The Brain of the Unfathomable |q 26111/1
 step
 goto 52.6,27.8
@@ -43274,7 +43457,8 @@ goto 42.7,37.9
 ..accept 26140
 step
 goto 36.6,42.1 |n
-.' Enter L'ghorek |goto 36.6,42.1,0.5 |noway |c
+.' Enter L'ghorek through this pipe |goto 36.6,42.1,0.5 |noway |c
+.|tip You enter through circular "pipes" that are above the cave entrance
 step
 goto 38.5,45.3
 .talk 42197
@@ -43290,6 +43474,7 @@ goto 27.0,54.0
 step
 goto 27.5,55.7
 .click Ancient Conduit##9639+
+.|tip These are small machines on the ground with a large purple beam shooting straight up out of them
 .' Destroy 5 Ancient Conduits |q 26142/1
 .from Twilight Candidate##41657+
 .get 7 Runestone of Binding |q 26141/1
@@ -43325,6 +43510,10 @@ goto 38.5,45.3
 ..turnin 26143
 ..accept 26182
 step
+.' Follow the path down and exit L'ghorek |goto 36.1,44.1 <5 |c
+step
+.' Enter Tenebrous Cavern |goto 56.7,58.1,0.5 |c
+step
 goto 51.6,60.9
 .talk 41600
 ..turnin 26182
@@ -43332,7 +43521,7 @@ goto 51.6,60.9
 step
 goto 51.6,60.9
 .talk 41600
-..' Tell him you are prepared
+.' Tell him you are prepared
 .' Ride the boat until it stops
 .' Fight in the Battle for Abyssal Breach |q 26194/1
 step

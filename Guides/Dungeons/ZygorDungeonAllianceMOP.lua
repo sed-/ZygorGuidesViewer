@@ -3267,7 +3267,7 @@ author support@zygorguides.com
 step
 label	"normal"
 goto Dire Maul 71.7,92.2
-.talk 45040+
+.talk 45040
 ..accept 27125
 step
 goto 69.8,75.5

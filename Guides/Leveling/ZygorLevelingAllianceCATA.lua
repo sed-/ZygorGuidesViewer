@@ -41154,7 +41154,7 @@ goto Stormwind City,62.9,71.6
 .click Hero's Call Board##10016
 ..accept 27724
 step
-'When you enter Stormwind City:
+.' When you enter Stormwind City:
 .' You will automatically accept a quest
 ..accept 28825
 step

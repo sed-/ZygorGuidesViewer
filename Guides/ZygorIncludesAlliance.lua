@@ -12262,22 +12262,14 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		.talk Elder Ironband##15567
 		..accept Ironband the Elder##8651 |instant
 	step
-		  goto Burning Steppes/14 65.9,41.9 |n
-		  .' Enter the swirling portal to Blackrock Spire. |goto Blackrock Spire |noway|c
-	step
 		goto Blackrock Spire/3 61.8,40.0
 		.talk Elder Stonefort##15560
 		..accept Stonefort the Elder##8644
 	step
-		.' Enter the Blackrock Depths here. |goto Searing Gorge/16 39.0,18.2 |c
-	step
 		goto Blackrock Depths 50.5,62.9
-		.' Follow the path to _Elder Morndeep_.
+		.' Follow the path around and up to _Elder Morndeep_.
 		.talk Elder Morndeep##15549
 		..accept Morndeep the Elder##8619
-	step
-		goto Blackrock Depths,34.5,77.8 |n
-		.' Leave Blackrock Depths. |goto Searing Gorge|noway|c
 	step
 		goto Burning Steppes/0 52.4,23.9
 		.talk Elder Dawnstrider##15585
@@ -12311,16 +12303,13 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		.talk Elder Bellowrage##15563
 		..accept Bellowrage the Elder##8647 |instant
 	step
-		goto Swamp of Sorrows,69.7,54.1
-		.' Follow the steps down and go to the swirling portal at [76.1,45.2]
+		goto Swamp of Sorrows,69.7,54.1 |n
+		.' Follow the steps down and go to the swirling portal at [Swamp of Sorrows,76.1,45.2] |n
 		.' Enter the Swirling Portal to The Temple of Atal'Hakkar|goto The Temple of Atal'Hakkar|noway|c
 	step
 		goto The Temple of Atal'Hakkar,62.9,34.4
 		.talk Elder Starsong##15593
 		..accept Starsong the Elder##8713
-	step
-		goto 50.0,14.5
-		.' Leave the instance. |goto Swamp of Sorrows|noway|c
 	step
 		goto Northern Stranglethorn,71.0,34.3
 		.talk Elder Starglade##15596
@@ -12351,14 +12340,10 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		.talk Elder Ezra Wheathoof##15580
 		..accept Wheathoof the Elder##8678 |instant |tip If you die trying to leave Thunder Bluff, just resurrect at the spirit healer you get sent to.
 	step
-		goto Desolace,29.1,62.5 |n
-		.' Enter the doorway to Maraudon. |goto Desolace,29.1,62.5 |noway|c
-	step
 		goto Maraudon/2 51.5,93.8
+		.' Make your way through the dungeon
 		.talk Elder Splitrock##15556
 		..accept Splitrock the Elder##8635
-	step
-		.' Leave Maruadon. |goto Desolace|noway|c
 	step
 		goto Feralas/0 62.6,31.1
 		.talk Elder Mistwalker##15587
@@ -12396,15 +12381,9 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		.talk Elder Dreamseer##15586
 		..accept Dreamseer the Elder##8684 |instant
 	step
-		goto 39.2,21.3 |n
-		.' Enter Zul'Farrak. |goto Zul'Farrak |noway|c
-	step
 		goto Zul'Farrak,34.5,39.4
 		.talk Elder Wildmane##15578
 		..accept Wildmane the Elder##8676
-	step
-		goto 56.6,91.2 |n
-		.' Leave Zul'Farrak. |goto Tanaris |noway|c
 	step
 		goto Thousand Needles,77.1,75.6
 		.talk Elder Morningdew##15604
@@ -12500,7 +12479,7 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		..accept Wanikaya the Elder##13024 |instant
 	step
 		goto Wintergrasp,49.0,13.9
-		.' Click the Defender's Portal
+		.' Click the Defender's Portal at [Wintergrasp,50.4,16.5] |n
 		.' Go to the upper level of the Wintergrasp Fortress |goto Wintergrasp,50.4,15.9,0.1 |noway |c
 	step
 		goto 49.0,13.9
@@ -12511,9 +12490,9 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		.' Enter Azjol-Nerub here |goto Azjol-Nerub/3 |noway |c
 	step
 		goto Azjol-Nerub/3 72.6,30.9
-		.' Follow this path down |goto Azjol-Nerub/2 |noway |c
+		.' Follow this path down |goto 72.7,30.8 <5 |noway |c
 	step
-		goto Azjol-Nerub/2 51.1,61.8
+		goto Azjol-Nerub/2 51.1,61.8 |n
 		.' Jump down this hole into the water below |goto Azjol-Nerub |noway |c
 	step
 		goto 21.8,43.6
@@ -12618,7 +12597,7 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		path 68.3,68.4		 68.8,56.4	68.9,36.1
 		.' Follow the path, clicking here to continue. |confirm
 	step
-		goto Utgarde Pinnacle,48.7,23.1
+		goto Utgarde Pinnacle,48.7,23.1 
 		.talk Elder Chogan'gada##30538
 		..accept Chogan'gada the Elder##13067
 ]])
@@ -12648,6 +12627,7 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Achievement",[[
 	step
 		goto Moonglade,53.6,35.3
 		.talk Valadar Starsong##15864
+		.' Buy one of the following items
 		.buy Festive Green Dress##21157 |or
 		.buy Festive Pink Dress##21538 |or
 		.buy Festive Purple Dress##21539 |or
@@ -12659,6 +12639,10 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Achievement",[[
 		goto 53.6,35.3
 		.talk Valadar Starsong##15864
 		..accept Elune's Blessing##8868
+	step
+		goto Moonglade 36.6,58.3
+		.talk Lunar Festival Vendor##15898
+		.buy 1 Green Rocket Cluster##21574
 	step
 		goto 63.7,62.4
 		.' Use your Green Rocket Clusters until Omen spawns |use Green Rocket Cluster##21574
@@ -43362,6 +43346,125 @@ ZygorGuidesViewer:RegisterInclude("new_mining_a",[[
 		path	27.1,25.8
 		#include "follow_path_herbs"
 		skill Herbalism,50
+]])
+
+ZygorGuidesViewer:RegisterInclude("celestial_tournament",[[
+	step
+		goto Timeless Isle/0 34.7,59.6
+		.talk Master Li##73082
+		..accept The Celestial Tournament##33137
+	step
+		goto Timeless Isle/0 34.7,59.6
+		.talk Master Li##73082
+		.' Tell him you'd like to enter the Celestial Tournament. |goto Celestial Tournament/0 34.0,55.2 |noway |c
+	step
+		'Once you enter the _Celestial Tournament_ you will notice there are 3 main NPCs that you need to talk to.
+		.' Click here if those 3 NPCs are _Chen Stormstout_, _Wrathion_, and _Taran Zhu_. |confirm |next "chen"
+		.' OR
+		.' Click here if those 3 NPCs are _Shademaster Kiryn_, _Blingtron 4000_, and _Wise Mari_. |confirm |next "shademaster"
+		.' OR
+		.' Click here if those 3 NPCs are _Sully "The Pickle" McLeary_, _Dr. Ion Goldbloom_, and _Lorewalker Cho_. |confirm |next "thepickle"
+//Scenario (option 1)
+	step
+	label "chen"
+		goto Celestial Tournament/0 37.8,57.3
+		.talk Chen Stormstout##71927
+		.' Tell him, "Let's do this!"
+		|tip Chen Stormstout has a Beast Pet, a Critter Pet and an Elemental Pet. Use Mechanical type attacks on his Beast, Beast type attacks on his Critter, and Aquatic type attacks on his Elemental. Your pets should all be level 25.
+		.' Defeat Chen Stormstout in a pet battle |q 33137
+		|confirm
+	step
+		goto Celestial Tournament/0 40.3,56.5
+		.talk Wrathion##71924
+		.' Tell him, "Let's do this!"
+		|tip Wrathion has an Undead Pet, and two Dragonkin Pets. Use Critter type attacks on his Critters, and Humanoid type attacks on his Dragonkin. Your pets should all be level 25.
+		.' Defeat Wrathion in a pet battle |q 33137
+		|confirm
+	step
+		goto Celestial Tournament/0 40.1,52.6
+		.talk Taran Zhu##71931
+		.' Tell him, "Let's do this!"
+		|tip Taran Zhu has three Humanoid Pets. Use Undead type attacks on his Humanoids. Your pets should all be level 25.
+		.' Defeat Taran Zhu in a pet battle |q 33137
+		|confirm |next "phasetwo"
+//Scenario (option 2)
+	step
+	label "shademaster"
+		goto Celestial Tournament/0 37.8,57.3
+		.talk Shademaster Kiryn##71930
+		.' Tell her, "Let's do this!"
+		|tip Shademaster Kiryn has a Humanoid Pet, a Beast Pet and a Mechanical Pet. Use Undead type attacks on her Humanoid, Mechanical type attacks on her Beast, and Elemental type attacks on her Mechanical. Your pets should all be level 25.
+		.' Defeat Shademaster Kiryn in a pet battle |q 33137
+		|confirm
+	step
+		goto Celestial Tournament/0 40.4,56.5
+		.talk Blingtron 4000##71933
+		.' Tell him, "Let's do this!"
+		|tip Blingtron 4000 has an Elemental Pet, a Critter Pet and a Mechanical Pet. Use Aquatic type attacks on his Elemental, Beast type attacks on his Critter, and Elemental type attacks on his Mechanical. Your pets should all be level 25.
+		.' Defeat Blingtron 4000 in a pet battle |q 33137
+		|confirm
+	step
+		goto Celestial Tournament/0 40.0,52.7
+		.talk Wise Mari##71932
+		.' Tell him, "Let's do this!"
+		|tip Wise Mari has an Aquatic Pet, a Magic Pet and an Elemental Pet. Use Flying type attacks on his Beast, Dragonkin type attacks on his Magic, and Aquatic type attacks on his Elemental. Your pets should all be level 25.
+		.' Defeat Wise Mari in a pet battle |q 33137
+		|confirm |next "phasetwo"
+//Scenario (option 3)
+	step
+	label "thepickle"
+		goto Celestial Tournament/0 37.8,57.4
+		.talk Sully "The Pickle" McLeary##71929
+		.' Tell him, "Let's do this!"
+		|tip Sully "The Pickle" McLeary has an Undead Pet, a Critter Pet and an Aquatic Pet. Use Critter type attacks on his Undead, Beast type attacks on his Critter, and Flying type attacks on his Aquatic. Your pets should all be level 25.
+		.' Defeat Sully "The Pickle" McLeary in a pet battle |q 33137
+		|confirm
+	step
+		goto Celestial Tournament/0 40.4,56.4
+		.talk Dr. Ion Goldbloom##71934
+		.' Tell him, "Let's do this!"
+		|tip Dr. Ion Goldbloom has an Flying Pet, a Magic Pet and a Beast Pet. Use Magic type attacks on his Flying, Dragonkin type attacks on his Magic, and Mechanical type attacks on his Beast. Your pets should all be level 25.
+		.' Defeat Dr. Ion Goldbloom in a pet battle |q 33137
+		|confirm
+	step
+		goto Celestial Tournament/0 40.1,52.4
+		.talk Lorewalker Cho##71926
+		.' Tell him, "Let's do this!"
+		|tip Lorewalker Cho has a Flying Pet, a Magic Pet and a Dragonkin Pet. Use Magic type attacks on his Flying, Dragonkin type attacks on his Magic, and Humanoid type attacks on his Dragonkin. Your pets should all be level 25.
+		.' Defeat Lorewalker Cho in a pet battle |q 33137
+		|confirm |next "phasetwo"
+//Second part
+	step
+	label "phasetwo"
+		goto Celestial Tournament/0 38.9,56.7
+		.talk Yu'la, Broodling of Yu'lon##73507
+		.' Tell him, "Let's do this!"
+		|tip Yu'la is a Dragonkin type pet. Use Humanoid attacks against him in order to defeat him. Your pets should all be level 25.
+		.' Defeat Yu'la, Broodling of Yu'lon in a pet battle |q 33137
+		|confirm
+	step
+		goto Celestial Tournament/0 40.0,55.2
+		.talk Xu-Fu, Cub of Xuen##73505
+		.' Tell him, "Let's do this!"
+		|tip Xu-Fu is a Beast type pet. Use Mechanical attacks against him in order to defeat him. Your pets should all be level 25.
+		.' Defeat Xu-Fu, Cub of Xuen in a pet battle |q 33137
+		|confirm
+	step
+		goto Celestial Tournament/0 39.0,53.8
+		.talk Zao, Calfling of Niuzao##73506
+		.' Tell him, "Let's do this!"
+		|tip Zao is a Beast type pet. Use Mechanical attacks against him in order to defeat him. Your pets should all be level 25.
+		.' Defeat Zao, Calfling of Niuzao in a pet battle |q 33137
+		|confirm
+	step
+		goto Celestial Tournament/0 38.0,55.2
+		.talk Chi-Chi, Hatchling of Chi-Ji##73503
+		.' Tell him, "Let's do this!"
+		|tip Chi-Chi is a Flying type pet. Use Magic attacks against him in order to defeat him. Your pets should all be level 25.
+		.' Defeat Chi-Chi, Hatchling of Chi-Ji in a pet battle |q 33137
+		|confirm
+	step
+		'Complete The Celestial Tournament |q 33137/1
 ]])
 
 ZygorGuidesViewer:RegisterInclude("timeless_isle_prequests",[[

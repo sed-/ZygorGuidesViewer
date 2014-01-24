@@ -3346,7 +3346,7 @@ step
 label	"start"
 .' Click here to do a Tribute run, which skips killing any bosses and gives you treasure and quests at the end. |confirm always |next "tribute" |or
 .' or
-.' Click here to run the durngon normally |confirm always |next "normal" |or
+.' Click here to run the dungeon normally |confirm always |next "normal" |or
 step
 label	"normal"
 goto Dire Maul 71.7,92.2

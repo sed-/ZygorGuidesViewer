@@ -681,7 +681,7 @@ goto 58.9,81.7
 .talk 60970
 ..turnin 29901
 step
-goto 58.9,81.5
+goto 58.0,80.6
 .talk 54960
 ..accept 29922
 step
@@ -6237,7 +6237,7 @@ goto 55.0,35.9
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Peak of Serenity\\Monk Daily",[[
 description This guide will walk you through the Monk daily for extra experience.
 author support@zygorguides.com
-image Serenity_Peak
+image WanderingIsle
 monkquest 1
 condition invalid not raceclass('Monk') !!Monk only.
 condition suggested raceclass('Monk') and not completedq(31840) or not completedq(31841) or not completedq(31842) or not completedq(31843) or not completedq(31844) or not completedq(31845) or not completedq(31846) and level>=1

@@ -5945,8 +5945,8 @@ author support@zygorguides.com
 image JadeForest
 condition end achieved(6534)
 step
-'You must complete The Jade Forest Leveling Guide before completing this guide section.
-.'Click here to continue. |confirm
+.' You must complete The Jade Forest Leveling Guide before completing this guide section.
+|confirm
 step
 goto The Jade Forest 43.5,75.9
 .talk 54697
@@ -5962,9 +5962,11 @@ goto 44.5,72.9
 .kill 8 Gormali Incinerator##54703+ |q 29578/2
 .kill 8 Gormali Raider##54702+ |q 29578/1
 .talk 54763
+.|tip You can mark them with shift+v and they'll be easier to find (Use v to mark enemies again).
 .' Tell them to get to Hanae's house
 .' Rescue 5 Survivors |q 29579/1
 .click Orchard Tool
+.|tip Small shovels and rakes laying on the ground around this area
 .get 6 Orchard Tool##72133 |q 29580/1
 .' Use the Nectarbreeze Cider in your bags on fires around town |use Nectarbreeze Cider##72578 |tip You must be facing the fire for this to work.
 .' 12 Orchard Fires Put Out |q 29585/1
@@ -5997,6 +5999,7 @@ goto 37.8,76.2
 step
 goto 39.8,74.8
 .clicknpc Captured Nectarbreeze Farmer##54990
+.|tip You can use shift+v to mark them (Use v to mark enemies again).
 .' Free 10 Farmers |q 29587/1
 step
 goto 41.0,74.0
@@ -6037,7 +6040,7 @@ leechsteps "Zygor's Horde Leveling Guides\\Pandaria 85-90\\Dread Wastes (89-90)"
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Peak of Serenity\\Monk Daily",[[
 description This guide will walk you through the Monk daily for extra experience.
 author support@zygorguides.com
-image Serenity_Peak
+image WanderingIsle
 monkquest 1
 condition invalid not raceclass('Monk') !!Monk only.
 condition suggested raceclass('Monk') and not completedq(31840) or not completedq(31841) or not completedq(31842) or not completedq(31843) or not completedq(31844) or not completedq(31845) or not completedq(31846) and level>=1
