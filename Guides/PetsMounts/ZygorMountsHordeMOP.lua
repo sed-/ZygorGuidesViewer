@@ -2004,3 +2004,60 @@ step
 'Use the _Reins of Galakras_ in your bags |use Reins of Galakras##104208
 .learnmount Spawn of Galakras##148392
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Mists of Pandaria\\Flying Mounts\\Sky Golem",[[
+description This guide will help you acquire the Sky Golem Mount.
+sugGroup 5.4 Mounts
+condition end hasmount(134359)
+step
+'This pet requires you to have level 600 in _Engineering_.
+|confirm
+step
+'Kill any mob in the _Vale of Eternal Blossoms_
+..collect 1 Schematic: Chief Engineer Jard's Journal##100910
+step
+'Use the _Schematic: Chief Engineer Jard's Journal_ in your bags. |use Schematic: Chief Engineer Jard's Journal##100910
+..accept 32630 |instant
+step
+label a
+'You can either _buy_ these _materials_ from the _ Auction House_ or _farm_ to obtain them:
+.collect 30 Living Steel##72104
+.collect 30 Jard's Peculiar Energy Source##94113
+|next "create"
+.' Click here to farm these materials yourself |confirm |next
+step
+map Townlong Steppes
+path	61.6,76.3	59.6,68.3	59.2,58.7
+path	63.3,51.7	62.2,44.1	66.8,39.5
+path	73.2,46.9	73.2,55.5	75.0,62.7
+path	70.5,67.1	68.5,70.7
+.' Follow the provided path.
+.' You will need fewer ores for the _Riddle of Steel_ path. The trade off is you will need to find an alchemist with 90 _Spirit of Harmony_
+.collect 180 Black Trillium Ore##72094
+.collect 180 White Trillium Ore##72103
+.' or
+.' You will need to search for multiple alchemists if you take this route. You will only be able to use _Transmute: Living Steel_ once per day with each.
+.collect 360 Black Trillium Ore##72094
+.collect 360 White Trillium Ore##72103
+.collect 600 Ghost Iron Ore##72092
+|confirm always
+step
+goto Vale of Eternal Blossoms/3 71.5,51.0
+.create 90 Trillium Bar##102167
+.create 180 Trillium Bar##102167
+.' Click here if you choose the _Spirit of Harmony_ route. |confirm
+step
+.' For this next part, you will either need to have level _600 Alchemy_, or know someone who does.
+|confirm
+step
+.create 30 Living Steel##130326,Alchemy,30 total |tip This is for those using the Riddle of Steel spell.
+.create 30 Living Steel##114780,Alchemy,30 total |tip This is for those using Transmute: Living Steel
+.create 300 Ghost Iron Bar##102165
+step
+.create 30 Jard's Peculiar Energy Source##139176,Engineering,30 total |tip This is a daily cooldown, so you will have to wait to do it once every day.
+step
+.create 1 Sky Golem##139192,Engineering,1 total
+.' Use the _Sky Golem_ in your bags! |use Sky Golem##95416
+.learnmount Sky Golem##134359
+step
+.' Congratulations, you have learned the _Sky Golem_ mount!
+]])

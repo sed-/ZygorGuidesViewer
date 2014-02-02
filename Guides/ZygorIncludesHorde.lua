@@ -18047,6 +18047,7 @@ ZygorGuidesViewer:RegisterInclude("H_Klaxxi",[[
 		goto 24.2,86.2
 		.click Zan'thik Resonating Crystal##214455
 		.kill Adjunct Sek'ot##64995 |q 31510/1
+		|only if havequest(31510)
 	step
 		goto 50.8,41.3
 		.clicknpc Kovok##63765

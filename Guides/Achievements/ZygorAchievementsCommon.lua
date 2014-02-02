@@ -2453,7 +2453,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achiev
 		'Skipping next part of guide |next "+duskwood" |only if step:Find("+westfall1"):IsComplete()
 		'Proceeding next step |next |only if default
 	step
-		goto 44.9,82.0
+		goto Westfall 44.9,82.0
 		.' Discover The Dagger Hills |achieve 802/12
 	step
 		goto 30.0,86.8

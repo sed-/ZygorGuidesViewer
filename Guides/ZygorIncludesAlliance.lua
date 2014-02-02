@@ -26112,11 +26112,11 @@ ZygorGuidesViewer:RegisterInclude("Kirin_Tor_Offensive",[[
 	label start
 		'Moving to the Kirin Tor Offensive Dailies |next "dailies" |only if default
 		'Moving to the Kirin Tor Offensive prequests. |next |only if not completedq(32681)
-		'Moving to the First Scenario |next "scenario1" |only if thunderstage()>=2 and not completedq(32644)
-		'Moving to the Second Scenario |next "scenario2" |only if thunderstage()>=3 and not completedq(32654)
-		'Moving to the Third Scenario |next "scenario3" |only if thunderstage()>=4 and not completedq(32652)
-		'Moving to the Fourth Scenario |next "scenario4" |only if thunderstage()>=5 and not completedq(32655)
-		'Moving to the Fifth Scenario |next "post5" |only if thunderstage()>5 and not completedq(32656)
+		'Moving to the First Scenario |next "scenario1" |only if not completedq(32644)
+		'Moving to the Second Scenario |next "scenario2" |only if completedq(32644) and not completedq(32654)
+		'Moving to the Third Scenario |next "scenario3" |only if completedq(32654) and not completedq(32652)
+		'Moving to the Fourth Scenario |next "scenario4" |only if completedq(32652) and not completedq(32655)
+		'Moving to the Fifth Scenario |next "post5" |only if completedq(32655) and not completedq(32656)
 ///prequests
 	step
 	label prequests
@@ -26413,61 +26413,16 @@ ZygorGuidesViewer:RegisterInclude("Kirin_Tor_Offensive",[[
 //dailies
 	step
 	label dailies
-		goto Isle of Thunder 34.6,89.5
-		.talk Lady Jaina Proudmoore##67992
-		..accept Za'Tual##32733 |or
-		..accept Competing Magic##32576 |or
-		|noquest
-		|only if thunderstage()==1
-	step
-		goto 34.5,89.5
-		.talk Captain Elleane Wavecrest##67995
-		..accept Ihgaluk Crag##32732
-		|noquest
-		|only if thunderstage()==1
-	step
-		goto 34.7,89.2
-		.talk Vereesa Windrunner##67993
-		..accept The Court of Bones##32731
-		|noquest
-		|only if thunderstage()==1
-	step
-		goto 31.6,83.1
-		.talk Archmage Lan'dalock##70517
-		..turnin Za'Tual##32733
-		..accept Harbingers of the Loa##32540 |or 2
-		..accept Dangers of Za'Tual##32543 |or 2
-		..accept Surgical Strike##32542 |or 2
-		|noquest
-		|only if havequest(32733) or completedq(32733)
-		|only if thunderstage()==1
-	step
-		goto 31.5,83.2
-		.talk Ako##69673
-		..accept Pterrible Ptorment##32544
-		..accept Preventing a Future Threat##32541
-		|noquest
-		|only if thunderstage()==1
-	step
-		goto 31.7,83.2
-		.talk Dalvin Jaacor##69674
-		..accept Dark Offerings##32539
-		..accept Heinous Sacrifice##32538
-		|noquest
-		|only if thunderstage()==1
-
------------------------------ STAGE 2
-	step
 		goto 63.2,72.2
 		.clicknpc Assignment Map##70567
 		..'Click PvE at the assignment screen. |questchoice 26 64 -- PvE
-		|only if thunderstage()>=2 and completedq(32644)
+		|only if completedq(32644)
 	step
 		goto Isle of Thunder/0 63.2,72.2
 		.talk Lady Jaina Proudmoore##67992
 		..accept Za'Tual##32733
 		|noquest
-		|only if thunderstage()>=2 and completedq(32644)
+		|only if completedq(32644)
 	step
 		goto 63.2,72.1
 		.talk Vereesa Windrunner##67993
@@ -26475,13 +26430,13 @@ ZygorGuidesViewer:RegisterInclude("Kirin_Tor_Offensive",[[
 		..accept The Shuddering Moor##32574 |or 2
 		..accept The Zandalari Colossus##32575 |or 2
 		|noquest
-		|only if thunderstage()>=2 and completedq(32644)
+		|only if completedq(32644)
 	step
 		goto 63.5,73.6
 		.talk Warmage Yurias##67994
 		..accept A Wing to Fly On##32571
 		|noquest
-		|only if thunderstage()>=2 and completedq(32644)
+		|only if completedq(32644)
 	step
 		goto 62.7,73.6
 		.talk Captain Elleane Wavecrest##67995
@@ -26489,33 +26444,8 @@ ZygorGuidesViewer:RegisterInclude("Kirin_Tor_Offensive",[[
 		..accept The Sleepless Legion##32572 |or 2
 		..accept Enemies Beneath the Tower##32573 |or 2
 		|noquest
-		|only if thunderstage()>=2 and completedq(32644)
+		|only if completedq(32644)
 // Ihgaluk Crag
-	step
-		goto Isle of Thunder 42.4,75.0
-		.talk Archmage Modera##67996
-		..turnin Ihgaluk Crag##32732
-		..accept Subtle Encouragement##32606
-		..accept De-Constructed##32537
-		..accept Manipulating the Saurok##32536
-		..accept The Skumblade Threat##32535
-		|noquest
-		|only if havequest(32732) or completedq(32732)
-		|only if thunderstage()==1
-	step
-		goto Isle of Thunder 42.3,75.2
-		.talk Lyalia##69675
-		..accept The Residents of Ihgaluk##32545
-		|noquest
-		|only if completedq(32732) and thunderstage()==1
-	step
-		goto Isle of Thunder 42.4,74.9
-		.talk Sanitation Sorcerer Stephen Litmatch##69677
-		..accept The Creeping Carpet of Ihgaluk##32547
-		..accept Just Some Light Clean-Up Work##32546
-		..accept Left To Rot##32548
-		|noquest
-		|only if completedq(32732) and thunderstage()==1
 	step
 		goto Isle of Thunder 55.7,74.4
 		.talk Archmage Modera##67996
@@ -26525,13 +26455,13 @@ ZygorGuidesViewer:RegisterInclude("Kirin_Tor_Offensive",[[
 		..accept Manipulating the Saurok##32536
 		..accept The Skumblade Threat##32535
 		|noquest
-		|only if thunderstage()>=2 and completedq(32644) and (havequest(32732) or completedq(32732))
+		|only if completedq(32644) and (havequest(32732) or completedq(32732))
 	step
 		goto 55.9,74.4
 		.talk Lyalia##69675
 		..accept The Residents of Ihgaluk##32545
 		|noquest
-		|only if completedq(32732) and thunderstage()>=2
+		|only if completedq(32732)
 	step
 		goto 55.5,74.5
 		.talk Sanitation Sorcerer Stephen Litmatch##69677
@@ -26539,12 +26469,12 @@ ZygorGuidesViewer:RegisterInclude("Kirin_Tor_Offensive",[[
 		..accept Just Some Light Clean-Up Work##32546
 		..accept Left To Rot##32548
 		|noquest
-		|only if completedq(32732) and thunderstage()>=2 and completedq(32644)
+		|only if completedq(32732) and completedq(32644)
 	step
 		goto Isle of Thunder 42.3,75.0
 		.talk Image of Archmage Vargoth##69678
 		..accept Skin of the Saurok##32549 |tip NOTE: This quest will give you the ability to disguise yourself as a saurok. This spell will happen automatically whenever you are outside of combat and inside Ihgaluk Crag. If you try to attack another saurok, the disguise will vanish and all saurok will be hostile to you until you are out of combat again.
-		|only if not completedq(32549) and thunderstage()==1
+		|only if not completedq(32549)
 	step
 		goto Isle of Thunder 47.2,79.6
 		.from Skumblade Filthmonger##69228+, Skumblade Brute##69338+, Skumblade Scavenger##69227+ |q 32549/1
@@ -26681,21 +26611,21 @@ ZygorGuidesViewer:RegisterInclude("Kirin_Tor_Offensive",[[
 		..accept Dangers of Za'Tual##32543
 		..accept Surgical Strike##32542
 		|noquest
-		|only if thunderstage()>=2 and completedq(32644) and (havequest(32733) or completedq(32733))
+		|only if completedq(32644) and (havequest(32733) or completedq(32733))
 	step
 		goto 42.3,66.3
 		.talk Dalvin Jaacor##69674
 		..accept Dark Offerings##32539
 		..accept Heinous Sacrifice##32538
 		|noquest
-		|only if completedq(32733) and thunderstage()>=2
+		|only if completedq(32733)
 	step
 		goto 42.1,66.5
 		.talk Ako##69673
 		..accept Pterrible Ptorment##32544
 		..accept Preventing a Future Threat##32541
 		|noquest
-		|only if completedq(32733) and thunderstage()>=2
+		|only if completedq(32733)
 	step
 		goto Isle of Thunder 39.8,65.3
 		.click Tec'uat's Sacrificial Altar##13502
@@ -26830,20 +26760,18 @@ ZygorGuidesViewer:RegisterInclude("Kirin_Tor_Offensive",[[
 		..accept Imposing Threat##32581
 		|noquest
 		|next beast_pens |only if havequest(32567)
-		|only if thunderstage()>=3 and completedq(32731)
+		|only if completedq(32731)
 // Ihgaluk Crag Turnins
 	step
 		goto 42.1,66.5
 		.talk Ako##69673
 		..turnin Pterrible Ptorment##32544
 		..turnin Preventing a Future Threat##32541
-		|only if thunderstage()>=2
 	step
 		goto 42.3,66.3
 		.talk Dalvin Jaacor##69674
 		..turnin Dark Offerings##32539
 		..turnin Heinous Sacrifice##32538
-		|only if thunderstage()>=2
 	step
 		goto Isle of Thunder/0 42.2,66.3
 		.talk Archmage Lan'dalock##70517
@@ -26855,19 +26783,19 @@ ZygorGuidesViewer:RegisterInclude("Kirin_Tor_Offensive",[[
 		..accept Encroaching Force##32580
 		..accept The Beast Pens##32567
 		|noquest
-		|only if thunderstage()>=2 and (havequest(32733) or completedq(32733))
+		|only if havequest(32733) or completedq(32733)
 	step
 		goto Isle of Thunder 55.5,74.4
 		.talk Sanitation Sorcerer Stephen Litmatch##69677
 		..turnin The Creeping Carpet of Ihgaluk##32547
 		..turnin Just Some Light Clean-Up Work##32546
 		..turnin Left To Rot##32548
-		|only if thunderstage()>=2 and completedq(32732)
+		|only if completedq(32732)
 	step
 		goto Isle of Thunder 55.9,74.4
 		.talk Lyalia##69675
 		..turnin The Residents of Ihgaluk##32545
-		|only if thunderstage()>=2 and completedq(32732)
+		|only if completedq(32732)
 	step
 		goto Isle of Thunder 55.8,74.4
 		.talk Archmage Modera##67996
@@ -26875,7 +26803,7 @@ ZygorGuidesViewer:RegisterInclude("Kirin_Tor_Offensive",[[
 		..turnin The Skumblade Threat##32535
 		..turnin De-Constructed##32537
 		..turnin Manipulating the Saurok##32536
-		|only if thunderstage()>=2 and (havequest(32732) or completedq(32732))
+		|only if havequest(32732) or completedq(32732)
 	step
 		goto Isle of Thunder 55.8,74.4
 		.talk Archmage Modera##67996
@@ -26886,48 +26814,7 @@ ZygorGuidesViewer:RegisterInclude("Kirin_Tor_Offensive",[[
 		..accept The Beast Pens##32567
 		..accept Competing Magic##32579
 		|noquest
-		|only if thunderstage()>=2 and (havequest(32732) or completedq(32732))
-// Za'Tual
-	step
-		goto Isle of Thunder 42.4,75.0
-		.talk Archmage Modera##67996
-		..turnin Subtle Encouragement##32606
-		..turnin De-Constructed##32537
-		..turnin Manipulating the Saurok##32536
-		..turnin The Skumblade Threat##32535
-		|only if thunderstage()==1 and (havequest(32606) or havequest(32537) or havequest(32536) or havequest(32535))
-	step
-		goto Isle of Thunder 42.3,75.2
-		.talk Lyalia##69675
-		..turnin The Residents of Ihgaluk##32545
-		|only if havequest(32545) and thunderstage()==1
-	step
-		goto Isle of Thunder 42.4,74.9
-		.talk Sanitation Sorcerer Stephen Litmatch##69677
-		..turnin The Creeping Carpet of Ihgaluk##32547
-		..turnin Just Some Light Clean-Up Work##32546
-		..turnin Left To Rot##32548
-		|only if completedq(32732) and thunderstage()==1
-	step
-		goto Isle of Thunder/0 31.6,83.1
-		.talk Archmage Lan'dalock##70517
-		..turnin Harbingers of the Loa##32540
-		..turnin Dangers of Za'Tual##32543
-		..turnin Surgical Strike##32542
-		|only if havequest(32540) or havequest(32543) or havequest(32542)
-		|only if thunderstage()==1
-	step
-		goto Isle of Thunder/0 31.5,83.2
-		.talk Ako##69673
-		..turnin Pterrible Ptorment##32544
-		..turnin Preventing a Future Threat##32541
-		|only if thunderstage()==1
-	step
-		goto Isle of Thunder/0 31.7,83.2
-		.talk Dalvin Jaacor##69674
-		..turnin Dark Offerings##32539
-		..turnin Heinous Sacrifice##32538
-		|only if thunderstage()==1
+		|only if havequest(32732) or completedq(32732)
 // Violet Rise Turnin
 	step
 		goto Isle of Thunder/0 62.7,73.6
@@ -26957,20 +26844,7 @@ ZygorGuidesViewer:RegisterInclude("Kirin_Tor_Offensive",[[
 		..accept Among the Bones##32578 |or 2
 		..accept Competing Magic##32579 |or 2
 		|noquest
-		|only if thunderstage()>=2 and (completedq(32572) or completedq(32573) or completedq(32571) or completedq(32574) or completedq(32575))
-	step
-		goto Isle of Thunder 34.6,89.5
-		.talk Lady Jaina Proudmoore##67992
-		..accept The Beast Pens##32567 |or
-		..accept Imposing Threat##32581 |or
-		..accept Imposing Threat##32577 |or
-		..accept Encroaching Force##32580 |or
-		..accept No Time To Rest##32568 |or
-		..accept Among the Bones##32578 |or
-		..accept Competing Magic##32576 |or
-		..accept Competing Magic##32579 |or
-		|noquest
-		|only if thunderstage()==1
+		|only if completedq(32572) or completedq(32573) or completedq(32571) or completedq(32574) or completedq(32575)
 // Conqueror's Terrace
 	step
 		goto Isle of Thunder 61.8,61.4
@@ -27333,32 +27207,12 @@ ZygorGuidesViewer:RegisterInclude("Kirin_Tor_Offensive",[[
 		..turnin Extended Shore Leave##32607
 		..turnin Competing Magic##32576 |or
 		..turnin Competing Magic##32579 |or
-		|only if thunderstage()>=2
-	step
-		goto Isle of Thunder 34.6,89.5
-		.talk Lady Jaina Proudmoore##67992
-		..turnin Imposing Threat##32581 |or
-		..turnin Imposing Threat##32577 |or
-		..turnin Encroaching Force##32580 |or
-		..turnin Encroaching Force##32584 |or
-		..turnin Among the Bones##32578 |or
-		..turnin Competing Magic##32576 |or
-		..turnin Competing Magic##32579 |or
-		|noquest
-		|only if thunderstage()==1
 	step
 	label "end"
 		'You have reached the end of the dailies for today.
 		.' Click here to go back to the beginning of the guide. |confirm |next "start"
 		.' Congratulations, you are now _Exalted_ with the _Kirin Tor Offensive_! |only if rep("Kirin Tor Offensive")==Exalted
-
 ]])
-
-
-ZygorGuidesViewer:RegisterInclude("Kirin_Tor_Offensive_STAGE_1",[[
-
-]])
-
 
 
 --------------------------------------------------------------------------------------------------------------------------------------

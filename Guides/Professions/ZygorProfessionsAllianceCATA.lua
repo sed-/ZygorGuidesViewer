@@ -1312,7 +1312,7 @@ step
 #include "home_DwarvenDistrict"
 step
 #include "auctioneer_dwarven"
-.buy 75 Rough Stone##2835
+.buy 95 Rough Stone##2835
 .buy 150 Copper Bar##2840
 #include go_farm,skill="Mining",req="1",goto="bla_1-75_farm"
 next "bla_1-75_skill"
@@ -1351,13 +1351,13 @@ step
 .learn Rough Grinding Stone##3320
 step
 #include "maincity_anvil"
-.create 30 Rough Grinding Stone##3320,Blacksmithing,60 |tip Save 10 Rough Grinding Stones, you will need them later.
+.create Rough Grinding Stone##3320,Blacksmithing,60 |tip Save 10 Rough Grinding Stones, you will need them later.
 step
 #include "trainer_Blacksmithing"
 .learn Copper Chain Belt##2661
 step
 #include "maincity_anvil"
-.create 25 Copper Chain Belt##2661,Blacksmithing,75
+.create Copper Chain Belt##2661,Blacksmithing,75
 step
 title + Blacksmithing 75-125
 label "bla_75-125"
@@ -1397,7 +1397,7 @@ path 64.7,37.9	63.3,46.2	62.0,53.0
 path 55.1,56.0	49.9,60.4	46.2,53.9
 path 43.2,48.7	37.2,51.9
 #include "follow_path_mine"
-.collect 150 Copper Ore##2770 |only if itemcount("Copper Bar")<235
+.collect 210 Copper Ore##2770 |only if itemcount("Copper Bar")<235
 #include "max_skill_warning",skill="Mining",goto="bla_75-125_farm"
 step
 label "farm2"
@@ -1411,21 +1411,21 @@ path	67.3,36.9	66.4,25.8	59.9,18.9
 path	51.0,17.4
 #include "follow_path_mine"
 .collect 60 Coarse Stone##2836
-.collect 70 Tin Ore##2771
+.collect 60 Tin Ore##2771
 skill Mining,125
 #include "max_skill_warning",skill="Mining",goto="bla_75-125_farm"
 step
 #include "maincity_anvil"
 .create Copper Bar##2657,Mining,150 total |n
-.collect 150 Copper Bar##2840
+.collect 210 Copper Bar##2840
 step
 #include "maincity_anvil"
 .create Tin Bar##3304,Mining,70 total
-.collect 70 Tin Bar##3576
+.collect 60 Tin Bar##3576
 step
 #include "maincity_anvil"
 .create Bronze Bar##2659,Mining,90 total
-.collect 90 Bronze Bar##2841
+.collect 120 Bronze Bar##2841
 step
 label "bla_75-125_skill"
 #include "trainer_Blacksmithing"
@@ -1439,24 +1439,29 @@ step
 .learn Runed Copper Belt##2666
 step
 #include "maincity_anvil"
-.create 15 Runed Copper Belt##2666, Blacksmithing,110
+.create Runed Copper Belt##2666, Blacksmithing,110
 step
 #include "trainer_Blacksmithing"
 .learn Rough Bronze Leggings##2668
 step
 #include "maincity_anvil"
-.create 15 Rough Bronze Leggings##2668,Blacksmithing,125
+.create Rough Bronze Leggings##2668,Blacksmithing,125
 step
 title + Blacksmithing 125-210
 label "bla_125-210"
 #include "trainer_Blacksmithing"
 .skillmax Blacksmithing,225
 step
+.' If you plan on farming your own materials, you will need to keep any _Copper Bars_ you have left over from the previous section.
+.' You will need at least 20 _Copper Bars_.
+..collect 20 Copper Bar##2840 |n
+|confirm
+step
 #include "auctioneer_dwarven"
 .buy 150 Heavy Stone##2838
 .buy 230 Iron Bar##3575
 .buy 100 Steel Bar##3859
-.buy 50 Bronze Bar##2841
+.buy 40 Bronze Bar##2841
 .buy 60 Coarse Stone##2836 |only if itemcount("Coarse Grinding Stone")<30
 #include go_farm,skill="Mining",req="125",goto="bla_125-210_farm"
 next "bla_125-210_skill"
@@ -1485,7 +1490,7 @@ path 64.7,37.9	63.3,46.2	62.0,53.0
 path 55.1,56.0	49.9,60.4	46.2,53.9
 path 43.2,48.7	37.2,51.9
 #include "follow_path_mine"
-.collect 25 Copper Ore##2770
+.collect 20 Copper Ore##2770
 #include "max_skill_warning",skill="Mining",goto="bla_125-210_farm"
 step
 label "farm2"
@@ -1504,7 +1509,7 @@ path	67.3,36.9	66.4,25.8	59.9,18.9
 path	51.0,17.4
 #include "follow_path_mine"
 .collect 60 Coarse Stone##2836 |only if itemcount("Coarse Grinding Stone")<30
-.collect 25 Tin Ore##2771
+.collect 20 Tin Ore##2771
 #include "max_skill_warning",skill="Mining",goto="bla_125-210_farm"
 step
 label "farm3"
@@ -1533,7 +1538,7 @@ step
 step
 #include "maincity_anvil"
 .create Bronze Bar##2659,Mining,50 total |n
-.collect 50 Bronze Bar##2841 |tip You will need to smelt your Copper and Tin to create this.
+.collect 20 Bronze Bar##2841 |tip You will need to smelt your Copper and Tin to create this.
 step
 #include "maincity_anvil"
 .create Coarse Grinding Stone##3326,Blacksmithing,30 total |n

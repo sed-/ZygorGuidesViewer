@@ -208,16 +208,16 @@ goto 50.1,90.8
 .clicknpc Alliance Banner##55167 |tip Underwater in the ship, hanging from the ceiling.
 .' Clues found |q 29555/1
 step
+goto 50.3,90.8
+.from Hozen Diver##66148
+.get Encoded Captain's Log |q 29555/2
+.|tip He is swimming around underwater inside the back of the wrecked ship
+step
 goto The Jade Forest 49.8,89.2
 ..kill 15 Hozen |q 29556/1
 .|tip Their "Banana Toss" ability will stun you, move while they're casting it to avoid the getting stunned
 '|modelnpc 66106
 '|modelnpc 57119
-step
-goto 50.3,90.8
-.from Hozen Diver##66148
-.get Encoded Captain's Log |q 29555/2
-.|tip He is swimming around underwater inside the back of the wrecked ship
 step
 goto 50.4,88.2
 .talk 54615
@@ -821,13 +821,13 @@ step
 goto 54.1,38.5
 'Only one of these mobs will be available at a time.
 .talk 56209
-.' Challenge the Pandriarch |q 29920/2
+.' Challenge Pandriarch Bramblestaff  |q 29920/2
 .' You can find Pandiarch Goldendraft at [53.6,36.7]
 .talk 56210
-.' Challenge the Pandriarch |q 29920/3
+.' Challenge Pandriarch Goldendraft |q 29920/3
 .' You can find Pandiarch Windfur at [52.5,35.5]
 .talk 56206
-.' Challenge the Pandriarch |q 29920/1
+.' Challenge Pandriarch Windfur |q 29920/1
 step
 goto 52.6,38.12
 .talk 55788
@@ -1102,21 +1102,20 @@ goto 38.0,23.8
 .talk 55094
 ..accept 29631
 step
-goto 37.8,17.5
-.click Boiling Cauldron##10823
-.' Boiling Cauldron Obtain |q 29628/1 |tip Do not mount once you get this, you will lose the cauldron if you do. You can't mount until you turn the quest in.
-step
-goto 37.9,18.7
-.kill 10 Greenwood Trickster##54987 |q 29630/1
-.' You can find more Tricksters to kill at [The Jade Forest,37.2,21.8]
-step
 goto 35.1,22.1
-.' Reminder: you still can't mount
 .kill 6 Waxwood Hunter##54988 |q 29631/1
 .click Blushleaf Cluster
 .|tip They look like small red plants; you channel as you collect them
 .get 80 Blushleaf Extract##73193 |q 29629/1
 '|modelnpc 55238
+step
+goto 37.9,18.7
+.kill 10 Greenwood Trickster##54987 |q 29630/1
+.' You can find more Tricksters to kill at [The Jade Forest,37.2,21.8]
+step
+goto 37.8,17.5
+.click Boiling Cauldron##10823
+.' Boiling Cauldron Obtain |q 29628/1 |tip Do not mount once you get this, you will lose the cauldron if you do. You can't mount until you turn the quest in.
 step
 goto 38.0,23.8
 .' Reminder: you still can't mount
@@ -1949,6 +1948,10 @@ goto 51.3,26.9
 .kill Succula##67099 |q 32045/3
 .|tip It usually stays stealthed
 step
+goto 55.1,47.4
+.talk 64315
+..turnin 32045
+step
 goto 48.3,33.5
 .talk 62377
 ..accept 30050
@@ -2027,10 +2030,6 @@ step
 .talk 56133
 ..turnin 30172
 ..turnin 30055
-step
-goto 55.1,47.4
-.talk 64315
-..turnin 32045
 step
 goto 52.7,62.8
 .talk 56138

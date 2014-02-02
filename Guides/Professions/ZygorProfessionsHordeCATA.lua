@@ -1315,7 +1315,7 @@ step
 #include "home_ValleyofStrength"
 step
 #include "auctioneer"
-.buy 75 Rough Stone##2835
+.buy 95 Rough Stone##2835
 .buy 150 Copper Bar##2840
 #include go_farm,skill="Mining",req="1",goto="bla_1-75_farm"
 next "bla_1-75_skill"
@@ -1331,7 +1331,7 @@ path +	50.7,63.3	54.9,67.0	56.2,49.8
 path +	55.0,36.9	53.0,29.7	57.9,30.0
 path +	54.8,19.0	50.0,17.2	44.2,23.6
 #include "follow_path_mine"
-.collect 75 Rough Stone##2835
+.collect 95 Rough Stone##2835
 .collect 150 Copper Ore##2770
 .skill Mining,50
 #include "max_skill_warning",skill="Mining",goto="bla_1-75_farm"
@@ -1361,6 +1361,10 @@ label "bla_75-125"
 #include "trainer_Blacksmithing"
 .skillmax Blacksmithing,150
 step
+.' You will need the 70 _Copper Bars_ that you saved from previous stage of Blacksmithing for the current section.
+..collect 76 Copper Bar##2840 |n
+|confirm
+step
 #include "auctioneer"
 .buy 60 Coarse Stone##2836
 .buy 150 Copper Bar##2840
@@ -1388,7 +1392,7 @@ path +	50.7,63.3	54.9,67.0	56.2,49.8
 path +	55.0,36.9	53.0,29.7	57.9,30.0
 path +	54.8,19.0	50.0,17.2	44.2,23.6
 #include "follow_path_mine"
-.collect 150 Copper Ore##2770 |only if itemcount("Copper Bar")<235
+.collect 210 Copper Ore##2770 |only if itemcount("Copper Bar")<235
 #include "max_skill_warning",skill="Mining",goto="bla_1-75_farm"
 step
 label "farm2"
@@ -1408,21 +1412,21 @@ path +	62.7,64.6	67.0,69.1	75.6,69.2
 path +	82.4,71.8	86.5,79.1	90.1,76.6
 #include "follow_path_mine"
 .collect 60 Coarse Stone##2836
-.collect 70 Tin Ore##2771
+.collect 60 Tin Ore##2771
 skill Mining,125
 #include "max_skill_warning",skill="Mining",goto="bla_75-125_farm"
 step
 #include "maincity_forge2"
 .create Copper Bar##2657,Mining,205 total |n
-.collect 150 Copper Bar##2840
+.collect 210 Copper Bar##2840
 step
 #include "maincity_forge2"
 .create Tin Bar##3304,Mining,85 total |n
-.collect 70 Tin Bar##3576
+.collect 60 Tin Bar##3576
 step
 #include "maincity_forge2"
 .create Bronze Bar##2659,Mining,170 total |n
-.collect 90 Bronze Bar##2841
+.collect 120 Bronze Bar##2841
 step
 label "bla_75-125_skill"
 #include "trainer_Blacksmithing"
@@ -1449,11 +1453,16 @@ label "bla_125-210"
 #include "trainer_Blacksmithing"
 .skillmax Blacksmithing,225
 step
+.' If you plan on farming your own materials, you will need to keep any _Copper Bars_ you have left over from the previous section.
+.' You will need at least 20 _Copper Bars_.
+..collect 20 Copper Bar##2840 |n
+|confirm
+step
 #include "auctioneer"
 .buy 150 Heavy Stone##2838
 .buy 230 Iron Bar##3575
 .buy 100 Steel Bar##3859
-.buy 50 Bronze Bar##2841
+.buy 40 Bronze Bar##2841
 .buy 60 Coarse Stone##2836 |only if itemcount("Coarse Grinding Stone")<30
 #include go_farm,skill="Mining",req="125",goto="bla_125-210_farm"
 next "bla_125-210_skill"
@@ -1476,8 +1485,8 @@ path +	50.7,63.3	54.9,67.0	56.2,49.8
 path +	55.0,36.9	53.0,29.7	57.9,30.0
 path +	54.8,19.0	50.0,17.2	44.2,23.6
 #include "follow_path_mine"
-.collect 25 Copper Ore##2770
-#include "max_skill_warning",skill="Mining",goto="bla_125-210_farm"
+.collect 20 Copper Ore##2770
+#include max_skill_warning",skill="Mining",goto="bla_125-210_farm"
 step
 label "farm2"
 'Skipping 2nd part of farming |next "+farm3" |only if itemcount("Bronze Bar")>=50 and itemcount("Coarse Grinding Stone")>=30
@@ -1501,7 +1510,7 @@ path	62.7,64.6	67.0,69.1	75.6,69.2
 path	82.4,71.8	86.5,79.1	90.1,76.6
 #include "follow_path_mine"
 .collect 60 Coarse Stone##2836 |only if itemcount("Coarse Grinding Stone")<30
-.collect 25 Tin Ore##2771
+.collect 20 Tin Ore##2771
 #include "max_skill_warning",skill="Mining",goto="bla_75-125_farm"
 step
 label "farm3"
@@ -1530,11 +1539,11 @@ step
 step
 #include "maincity_forge2"
 .create Copper Bar##2657,Mining,25 total |n
-.collect 25 Copper Bar##2840
+.collect 20 Copper Bar##2840
 step
 #include "maincity_forge2"
 .create Tin Bar##3304,Mining,25 total |n
-.collect 25 Tin Bar##3576
+.collect 20 Tin Bar##3576
 step
 #include "maincity_anvil"
 .create Bronze Bar##2659,Mining,50 total |n
@@ -1595,6 +1604,10 @@ title + Blacksmithing 210-300
 label "bla_210-300"
 #include "trainer_Blacksmithing"
 .skillmax Blacksmithing,300
+step
+.' You don't need to save anything from the previous section.
+.' Sell what you have on the auctionhouse.
+|confirm
 step
 #include "auctioneer"
 .buy 320 Mithril Bar##3860
@@ -1723,6 +1736,10 @@ label "bla_300-325"
 #include "trainer_Blacksmithing"
 .skillmax Blacksmithing,375
 step
+.' You don't need to save anything from the previous section.
+.' Sell what you have on the auctionhouse.
+|confirm
+step
 #include "auctioneer"
 .buy 165 Fel Iron Bar##23445
 #include go_farm,skill="Mining",req="275",goto="bla_300-325_farm"
@@ -1799,6 +1816,8 @@ step
 goto 53.1,38.1
 .create Fel Iron Plate Boots##29548,Blacksmithing,325
 step
+.' Keep any Fel Iron
+step
 label	"bla_325-350"
 #include "shatt_auctioneer"
 .buy 90 Adamantite Bar##23446
@@ -1827,8 +1846,9 @@ path	56.7,64.0	70.1,83.3	69.8,72.5
 step
 label "bla_325-350_skill"
 #include "shatt_anvil"
-.create Adamantite Bar##29358,Mining,85 total
+.create Adamantite Bar##29358,Mining,90 total
 .collect 90 Adamantite Bar##23446
+|only if skill("Mining")>=1
 step
 #include "trainer_Blacksmithing_Shatt"
 .learn Lesser Rune of Warding##32284
@@ -1864,6 +1884,10 @@ title + Blacksmithing 350-425
 label "bla_350-425"
 #include "trainer_Blacksmithing"
 .skillmax Blacksmithing,450
+step
+.' You don't need to save anything from the previous section.
+.' Sell what you have on the auctionhouse.
+|confirm
 step
 #include "auctioneer"
 .buy 320 Cobalt Bar##36916
@@ -2011,6 +2035,9 @@ label "bla_425-475"
 #include "trainer_Blacksmithing"
 .skillmax Blacksmithing,525
 step
+.' Save any Volatile Earth you don't use in this section.
+|confirm
+step
 #include "auctioneer"
 .buy 160 Obsidium Bar##54849
 .buy 15 Volatile Earth##52327
@@ -2083,6 +2110,11 @@ step
 step
 #include "maincity_anvil"
 .create Redsteel Boots##76265,Blacksmithing,475
+step
+.'You will need to save any Volatile Earth from the previous section.
+..collect Volatile Earth##52327 |n
+..collect Folded Obsidium##65365 |n
+|confirm
 step
 title + Blacksmithing 475-500
 label "bla_475-500"

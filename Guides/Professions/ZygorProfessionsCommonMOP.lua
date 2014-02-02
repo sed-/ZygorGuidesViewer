@@ -1042,7 +1042,7 @@ ZygorGuidesViewer:RegisterInclude("Cooking_Wok",[[
 	step
 	label	create_stir_fry
 		#include cooking_fire
-		.create Fire Spirit Salmon##104308,Cooking,13 total |n
+		.create Valley Stir Fry##104302,Cooking,13 total |n
 		.skill Way of the Wok,575 |only if skill('Way of the Wok')>=575
 		.' Achieve Way of the Wok 575 |confirm |only if skill("Way of the Wok")<=574
 	step
@@ -2856,13 +2856,13 @@ ZygorGuidesViewer:RegisterInclude("Jewelcrafting_500-600",[[
 		.skillmax Jewelcrafting,600 	
 	step
 		#include "auctioneer"
-		.buy Lapis Lazuli##76133 |n
-		.buy Sunstone##76134 |n
-		.buy Tiger Opal##76130 |n
-		.buy Alexandrite##76137 |n
-		.buy Pandarian Garnet##76136 |n
-		.buy Roguestone##76135 |n
-		.' You'll need about {_G.max(0 , (55-itemcount(76133,76134,76130,76137,76136,76135))*1)} more of the gems above. |condition itemcount(76133,76134,76130,76137,76136,76135)>=55 
+		.buy 5 Lapis Lazuli##76133
+		.buy 5 Sunstone##76134
+		.buy 5 Tiger Opal##76130
+		.buy 5 Alexandrite##76137 
+		.buy 5 Pandarian Garnet##76136 
+		.buy 5 Roguestone##76135 
+		.' You'll need about {_G.max(0 , (58-itemcount(76133,76134,76130,76137,76136,76135))*1)} more of the gems above. |condition itemcount(76133,76134,76130,76137,76136,76135)>=58 
 		.' You will also need 5 additional gems of each kind listed above.
 		.buy 13 Sun's Radiance##76142
 		#include go_farm,skill="Mining",req="500",goto="jc_500-600_farm"
@@ -2884,26 +2884,29 @@ ZygorGuidesViewer:RegisterInclude("Jewelcrafting_500-600",[[
 		path	79.8,17.9	82.3,17.8	85.3,21.4				
 		path	86.8,26.6	88.2,23.8	85.0,9.9
 		#include "follow_path_mine"
-		.collect Lapis Lazuli##76133 |n |cast Prospecting##31252
-		.collect Sunstone##76134 |n |cast Prospecting##31252
-		.collect Tiger Opal##76130 |n |cast Prospecting##31252
-		.collect Alexandrite##76137 |n |cast Prospecting##31252
-		.collect Pandarian Garnet##76136 |n |cast Prospecting##31252
-		.collect Roguestone##76135 |n |cast Prospecting##31252
-		.' You'll need about {_G.max(0 , (55-itemcount(76133,76134,76130,76137,76136,76135))*1)} more of the gems above. |condition itemcount(76133,76134,76130,76137,76136,76135)>=55
+		.collect 5 Lapis Lazuli##76133 |cast Prospecting##31252
+		.collect 5 Sunstone##76134 |cast Prospecting##31252
+		.collect 5 Tiger Opal##76130 |cast Prospecting##31252
+		.collect 5 Alexandrite##76137|cast Prospecting##31252
+		.collect 5 Pandarian Garnet##76136 |cast Prospecting##31252
+		.collect 5 Roguestone##76135 |cast Prospecting##31252
+		.' You'll need about {_G.max(0 , (58-itemcount(76133,76134,76130,76137,76136,76135))*1)} more of the gems above. |condition itemcount(76133,76134,76130,76137,76136,76135)>=58
 		.' You will also need 5 additional gems of each kind listed above.
 		.collect 13 Sun's Radiance##76142 |cast Prospecting##31252	
 	step
 	label "jc_500-600_skill"
 		#include "trainer_Jewelcrafting"
 		.learn Ornate Band##122661
+	step	
+		#include "vendor_Jewelcrafting"
+		.buy 9 Jeweler's Setting##52188
 	step
 		.create Ornate Band##122661,Jewelcrafting,512
 	step
 		#include "trainer_Jewelcrafting"
 		.learn Shadowfire Necklace##122662
 	step
-		.create Shadowfire Necklace##122662,Jewelcrafting,525
+		.create Shadowfire Necklace##122662,Jewelcrafting,527
 	step
 		#include "trainer_Jewelcrafting"
 		.learn Artful Tiger Opal##107646
@@ -2931,12 +2934,12 @@ ZygorGuidesViewer:RegisterInclude("Jewelcrafting_500-600",[[
 		.learn Fractured Sunstone##107640
 	step
 		'Create any of the following:
-		.create Artful Tiger Opal##107646,Jewelcrafting,577
-		.create Etched Roguestone##107630,Jewelcrafting,577
-		.create Lightning Alexandrite##107604,Jewelcrafting,577
-		.create Rigid Lapis Lazuli##107617,Jewelcrafting,577
-		.create Delicate Pandarian Garnet##107624,Jewelcrafting,577
-		.create Fractured Sunstone##107640,Jewelcrafting,577
+		.create Artful Tiger Opal##107646,Jewelcrafting,580
+		.create Etched Roguestone##107630,Jewelcrafting,580
+		.create Lightning Alexandrite##107604,Jewelcrafting,580
+		.create Rigid Lapis Lazuli##107617,Jewelcrafting,580
+		.create Delicate Pandarian Garnet##107624,Jewelcrafting,580
+		.create Fractured Sunstone##107640,Jewelcrafting,580
 	step
 		#include "trainer_Jewelcrafting"
 		.learn Sun's Radiance##131695

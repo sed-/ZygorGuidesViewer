@@ -18639,5 +18639,7 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [50332]="Korda Torros",
 [50333]="Lon the Bull",
 [50334]="Dak the Breaker",
-[50336]="Yorik Sharpeye",
+[59714]="Riverblade Raider",
+[64034]="Riverblade Thief",
+[56543]="Brittle Greenstone Gorger",
 } end)
