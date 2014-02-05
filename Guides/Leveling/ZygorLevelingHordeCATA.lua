@@ -45925,7 +45925,7 @@ goto 75.4,55.5
 .' Watch the dialogue
 .' Conclude the Negotiations |q 26549/1
 step
-goto 73.8,53.9
+goto 76.6,49.4
 .talk 43190
 ..turnin 26549
 ..accept 26608

@@ -2437,7 +2437,7 @@ label	"end"
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Insane in the Membrane\\Bloodsail Buccaneers Solo",[[
 step
 .' You can only kill NPC's in one place alone now as Booty Bay Bruisers require a 5 man group to kill.
-.' Click here to farm the small cove with NPC's for Bloodsail Buccaneer Reputation. |confirm always
+.' Click here to farm the small cove with NPC's for Bloodsail Buccaneer Reputation. |confirm always "Zygor's Alliance Titles\\Insane in the Membrane\\Bloodsail Buccaneers Group"
 .' or |only if not completedq(26679)
 .' You can click here to run the pirate questline and farm Booty Bay NPC's without level 85 guards attacking you. |only if not completedq(26679)
 .' Click here if you would rather run the questline and farm Booty Bay while in a phased zone |confirm always |only if not completedq(26679)

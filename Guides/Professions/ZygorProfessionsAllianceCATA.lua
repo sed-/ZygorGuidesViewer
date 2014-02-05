@@ -1364,6 +1364,10 @@ label "bla_75-125"
 #include "trainer_Blacksmithing"
 .skillmax Blacksmithing,150
 step
+.' You will need the 70 _Copper Bars_ that you saved from previous stage of Blacksmithing for the current section.
+..collect 76 Copper Bar##2840 |n
+|confirm
+step
 #include "auctioneer_dwarven"
 .buy 60 Coarse Stone##2836
 .buy 150 Copper Bar##2840
@@ -1439,7 +1443,7 @@ step
 .learn Runed Copper Belt##2666
 step
 #include "maincity_anvil"
-.create Runed Copper Belt##2666, Blacksmithing,110
+.create Runed Copper Belt##2666, Blacksmithing,105
 step
 #include "trainer_Blacksmithing"
 .learn Rough Bronze Leggings##2668
@@ -1536,9 +1540,17 @@ step
 .learn Smelt Iron##3307
 .learn Smelt Steel##3569
 step
+#include "maincity_forge2"
+.create Copper Bar##2657,Mining,25 total |n
+.collect 20 Copper Bar##2840
+step
+#include "maincity_forge2"
+.create Tin Bar##3304,Mining,25 total |n
+.collect 20 Tin Bar##3576
+step
 #include "maincity_anvil"
 .create Bronze Bar##2659,Mining,50 total |n
-.collect 20 Bronze Bar##2841 |tip You will need to smelt your Copper and Tin to create this.
+.collect 50 Bronze Bar##2841 |tip You will need to smelt your Copper and Tin to create this.
 step
 #include "maincity_anvil"
 .create Coarse Grinding Stone##3326,Blacksmithing,30 total |n
@@ -1570,7 +1582,7 @@ step
 .learn Patterned Bronze Bracers##2672
 step
 #include "maincity_anvil"
-.create 10 Patterned Bronze Bracers##2672,Blacksmithing,155
+.create Patterned Bronze Bracers##2672,Blacksmithing,155
 step
 #include "trainer_Blacksmithing"
 .learn Green Iron Leggings##3506
@@ -1582,18 +1594,22 @@ step
 .learn Green Iron Bracers##3501
 step
 #include "maincity_anvil"
-.create 25 Green Iron Bracers##3501,Blacksmithing,190
+.create Green Iron Bracers##3501,Blacksmithing,190
 step
 #include "trainer_Blacksmithing"
 .learn Golden Scale Bracers##7223
 step
 #include "maincity_anvil"
-.create 20 Golden Scale Bracers##7223,Blacksmithing,210
+.create Golden Scale Bracers##7223,Blacksmithing,210
 step
 title + Blacksmithing 210-300
 label "bla_210-300"
 #include "trainer_Blacksmithing"
 .skillmax Blacksmithing,300
+step
+.' You don't need to save anything from the previous section.
+.' Sell what you have on the auctionhouse.
+|confirm
 step
 #include "auctioneer_dwarven"
 .buy 320 Mithril Bar##3860
@@ -1685,7 +1701,7 @@ label "bla_210-300_skill"
 .learn Heavy Mithril Gauntlet##9928
 step
 #include "maincity_anvil"
-.create 15 Heavy Mithril Gauntlet##9928,Blacksmithing,235
+.create 15 Heavy Mithril Gauntlet##9928,Blacksmithing,230
 step
 #include "trainer_Blacksmithing"
 .learn Mithril Coif##9961
@@ -1721,6 +1737,10 @@ title + Blacksmithing 300-325
 label "bla_300-325"
 #include "trainer_Blacksmithing"
 .skillmax Blacksmithing,375
+step
+.' You don't need to save anything from the previous section.
+.' Sell what you have on the auctionhouse.
+|confirm
 step
 #include "auctioneer_dwarven"
 .buy 165 Fel Iron Bar##23445
@@ -1824,6 +1844,7 @@ label "bla_325-350_skill"
 #include "shatt_anvil"
 .create Adamantite Bar##29358,Mining,90 total
 .collect 90 Adamantite Bar##23446
+|only if skill("Mining")>=1
 step
 #include "trainer_Blacksmithing_Shatt"
 .learn Lesser Rune of Warding##32284
@@ -1859,6 +1880,10 @@ title + Blacksmithing 350-425
 label "bla_350-425"
 #include "trainer_Blacksmithing"
 .skillmax Blacksmithing,450
+step
+.' You don't need to save anything from the previous section.
+.' Sell what you have on the auctionhouse.
+|confirm
 step
 #include "auctioneer_dwarven"
 .buy 320 Cobalt Bar##36916
@@ -2070,6 +2095,11 @@ step
 step
 #include "maincity_anvil"
 .create Redsteel Boots##76265,Blacksmithing,475
+step
+.'You will need to save any Volatile Earth from the previous section.
+..collect Volatile Earth##52327 |n
+..collect Folded Obsidium##65365 |n
+|confirm
 step
 title + Blacksmithing 475-500
 label "bla_475-500"

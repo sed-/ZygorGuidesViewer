@@ -135,7 +135,7 @@ goto Krasarang Wilds 64.6,29.3
 step
 label	create_stir_fry
 .' Stand next to a fire, or create one yourself |cast Cooking fire##818
-.create 5 Valley Stir Fry##74647,Cooking,5 total
+.create 5 Valley Stir Fry##104302,Cooking,5 total
 |next turnin1
 step
 label gifts
