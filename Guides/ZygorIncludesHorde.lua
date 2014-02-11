@@ -260,6 +260,18 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Quests",[[
 		..accept Putting the Crunch in the Frog##29509
 		|only if skill("Cooking")>74
 	step
+		goto Darkmoon Island,52.7,68.1
+		.' Click the Plump Frogs in your bags |use Plump Frogs##72056
+		.collect 5 Breaded Frog##72057 |n
+		.' Throw the Breaded Frogs in the cauldron |use Breaded Frog##72057
+		.' Fry 5 Crunchy Frogs |q 29509/1
+		|only if skill("Cooking")>74
+	step
+		goto Darkmoon Island,52.9,68.0
+		.talk Stamp Thunderhorn##14845
+		..turnin Putting the Crunch in the Frog##29509
+		|only if skill("Cooking")>74
+	step
 		goto Darkmoon Island,52.9,68.0
 		.talk Stamp Thunderhorn##14845		
 		..accept Spoilin' for Salty Sea Dogs##29513
@@ -372,13 +384,6 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Quests",[[
 		.' Use the Darkmoon Banner Kit in your bags to plant a banner here. |use Darkmoon Banner Kit##72048
 		.' Plant a Darkmoon Banner |q 29520/1
 	step
-		goto Darkmoon Island,52.7,68.1
-		.' Click the Plump Frogs in your bags |use Plump Frogs##72056
-		.collect 5 Breaded Frog##72057 |n
-		.' Throw the Breaded Frogs in the cauldron |use Breaded Frog##72057
-		.' Fry 5 Crunchy Frogs |q 29509/1
-		|only if skill("Cooking")>74
-	step
 		goto 55.3,71.7
 		.' Use the Iron Stock in your bags to make Horseshoes |use Iron Stock##71964
 		.collect 4 Horseshoes##71967 |q 29508
@@ -396,11 +401,6 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Quests",[[
 	step
 		goto Darkmoon Island,52.9,68.0
 		.talk Stamp Thunderhorn##14845
-		..turnin Putting the Crunch in the Frog##29509
-		|only if skill("Cooking")>74
-	step
-		goto Darkmoon Island,52.9,68.0
-		.talk Stamp Thunderhorn##14845		
 		..turnin Spoilin' for Salty Sea Dogs##29513
 		|only if skill("Fishing")>74
 	step
@@ -1116,7 +1116,11 @@ ZygorGuidesViewer:RegisterInclude("H_Lunar_Festival_Elders",[[
 		goto 27.7,11.7|n
 		.' Enter the swirling portal to Stratholme. |goto Stratholme |noway|c
 	step
-		goto Stratholme/1 78.8,21.9
+		map Stratholme
+		path follow loose;loop off;ants straight
+		path	66.2,76.8	67.3,58.1	60.1,48.7
+		path	59.9,31.9	68.3,22.9	78.7,22.1
+		.' Follow the path to _Elder Farwhisper_.
 		.talk Elder Farwhisper##15607
 		..accept Farwhisper the Elder##8727
 	step
@@ -10580,7 +10584,7 @@ ZygorGuidesViewer:RegisterInclude("H_Icecrown_Argent_Crusade_Rep",[[
 	step
 		goto 43.2,51.7
 		.' There should be a fight happening, so just wait around until the fight is over |tip If there isn't fight happening, just wait until the fighters spawn again, and there should be some red dragon Ruby Watchers flying above the fight.
-		..' At the end of the fight, a Ruby Watcher will blow alot of fire on the ground and the Dahlia's Tears will spawn
+		..' At the end of the fight, a Ruby Watcher will blow a lot of fire on the ground and the Dahlia's Tears will spawn
 		.click Dahlia's Tears##8329 
 		..get Dahlia's Tears|q 13078/1
 	step
@@ -37737,7 +37741,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 		|tip You will not be able to challenge Major Payne if you have the "Pet Recovery" debuff, wait for it to fall off. 	
 		.' Let's fight!
 		|tip Major Payne has a Beast Pet, a Mechanical Pet, and an Elemental Pet. Use Mechanical type attacks on his Beast, Elemental type attacks on his Mechanical, and Aquatic type attacks on his Elemental. Your pets should be level 25 for this fight.
-		.' Defeat Major Payne |q 31928/4
+		.' Defeat Major Payne |q 31928/1
 	step
 		goto 77.4,19.6
 		.talk Major Payne##66675

@@ -9123,6 +9123,7 @@ path 68.5,37.9
 .'Click here to pick a different ore. |confirm |next "start"
 step "ghost_iron"
 map Krasarang Wilds
+path follow strict
 path	70.3,9.7	66.1,18.5	64.5,21.5
 path	61.6,21.9	52.0,30.2	40.2,27.5
 path	38.0,28.1	33.4,32.1	33.0,28.9
@@ -9693,7 +9694,7 @@ description This guide will walk you through leveling
 description Cooking combined with Fishing.
 step
 .' For this guide to work, you will need to have do your _Cooking_ daily quests from non MoP Expansions.
-.' Collect 23 Epicurean's Awards |currcount=23
+.' Collect 23 Epicurean's Awards |condition curcount(81)>=23
 |confirm
 step
 goto Elwynn Forest 41.9,67.1
@@ -9949,11 +9950,11 @@ goto Dalaran/1 40.7,66.0
 step
 goto Borean Tundra/0 57.9,71.5
 .talk 26989
-.skillmax,Cooking,450
+.skillmax Cooking,450
 step
 goto Borean Tundra/0 57.9,71.6
 .talk 26993
-.skillmax,Fishing,450
+.skillmax Fishing,450
 step
 goto Borean Tundra/0 57.9,71.6
 .talk 26993
@@ -9968,7 +9969,7 @@ goto Borean Tundra/0 54.0,73.4
 step
 goto Borean Tundra/0 57.9,71.6
 .talk 26993
-.skillmax,Fishing,525
+.skillmax Fishing,525
 step
 goto Borean Tundra/0 54.0,73.4
 .' Equip your Fishing Pole |use Fishing Pole##6256
@@ -10007,7 +10008,7 @@ step
 step
 goto Borean Tundra/0 57.9,71.5
 .talk 26989
-.skillmax,Cooking,525
+.skillmax Cooking,525
 step
 goto Stormwind City/0 50.4,71.9
 .talk 49701
@@ -10032,7 +10033,7 @@ goto Twilight Highlands/0 56.1,37.3
 step
 goto Stormwind City/0 54.8,69.6
 .talk 5493
-.skillmax,Fishing,600
+.skillmax Fishing,600
 step
 goto Stormwind City/0 77.5,52.9
 .create Lightly Fried Lurker##88028,Cooking,475
@@ -10050,7 +10051,7 @@ step
 step
 goto Stormwind City/0 77.3,53.2
 .talk 5482
-.skillmax,Cooking,600
+.skillmax Cooking,600
 step
 goto Stormwind City/0 55.0,69.7
 .talk 5494

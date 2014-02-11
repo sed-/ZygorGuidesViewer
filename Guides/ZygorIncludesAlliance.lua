@@ -4275,7 +4275,7 @@ ZygorGuidesViewer:RegisterInclude("A_Icecrown_Argent_Crusade_Rep",[[
 	step
 		goto 43.2,51.7
 		.' There should be a fight happening, so just wait around until the fight is over|tip If there isn't fight happening, just wait until the fighters spawn again, and there should be some red dragon Ruby Watchers flying above the fight.
-		.' At the end of the fight, a Ruby Watcher will blow alot of fire on the ground and the Dahlia's Tears will spawn
+		.' At the end of the fight, a Ruby Watcher will blow a lot of fire on the ground and the Dahlia's Tears will spawn
 		.click Dahlia's Tears##8329
 		.get Dahlia's Tears|q 13078/1
 	step
@@ -9798,6 +9798,18 @@ ZygorGuidesViewer:RegisterInclude("A_Darkmoon_Faire_Quests",[[
 		..accept Putting the Crunch in the Frog##29509
 		|only if skill("Cooking")>74
 	step
+		goto Darkmoon Island,52.7,68.1
+		.' Click the Plump Frogs in your bags |use Plump Frogs##72056
+		.collect 5 Breaded Frog##72057 |n
+		.' Throw the Breaded Frogs in the cauldron |use Breaded Frog##72057
+		.' Fry 5 Crunchy Frogs |q 29509/1
+		|only if skill("Cooking")>74
+	step
+		goto Darkmoon Island,52.9,68.0
+		.talk Stamp Thunderhorn##14845
+		..turnin Putting the Crunch in the Frog##29509
+		|only if skill("Cooking")>74
+	step
 		goto Darkmoon Island,52.9,68.0
 		.talk Stamp Thunderhorn##14845
 		..accept Spoilin' for Salty Sea Dogs##29513
@@ -9932,13 +9944,6 @@ ZygorGuidesViewer:RegisterInclude("A_Darkmoon_Faire_Quests",[[
 		.' Plant a Darkmoon Banner |q 29520/1
 		|only if skill("Tailoring")>74
 	step
-		goto Darkmoon Island,52.7,68.1
-		.' Click the Plump Frogs in your bags |use Plump Frogs##72056
-		.collect 5 Breaded Frog##72057 |n
-		.' Throw the Breaded Frogs in the cauldron |use Breaded Frog##72057
-		.' Fry 5 Crunchy Frogs |q 29509/1
-		|only if skill("Cooking")>74
-	step
 		goto 55.3,71.7
 		.' Use the Iron Stock in your bags to make Horseshoes |use Iron Stock##71964
 		.collect 4 Horseshoes##71967 |q 29508
@@ -9958,11 +9963,6 @@ ZygorGuidesViewer:RegisterInclude("A_Darkmoon_Faire_Quests",[[
 		.talk Professor Thaddeus Paleo##14847
 		..turnin Fun for the Little Ones##29507
 		|only if skill("Archaeology")>74
-	step
-		goto Darkmoon Island,52.9,68.0
-		.talk Stamp Thunderhorn##14845
-		..turnin Putting the Crunch in the Frog##29509
-		|only if skill("Cooking")>74
 	step
 		goto Darkmoon Island,52.9,68.0
 		.talk Stamp Thunderhorn##14845
@@ -12761,7 +12761,7 @@ ZygorGuidesViewer:RegisterInclude("Love is in the Air Dailies",[[
 		|only if havequest(24658)
 	step
 		'This step depends on your character's level and what you want to do.
-		.' If you don't have alot of money, or don't want to spend any more, do this: |tip Go to a place where the mobs are at least green to you, they cannot be grey to you, or they won't drop the items you need.  Now, just kill the mobs until you collect 40 Lovely Charms.  You won't get a Lovely Charm from every mob you kill, so be prepared to grind for a while.
+		.' If you don't have a lot of money, or don't want to spend any more, do this: |tip Go to a place where the mobs are at least green to you, they cannot be grey to you, or they won't drop the items you need.  Now, just kill the mobs until you collect 40 Lovely Charms.  You won't get a Lovely Charm from every mob you kill, so be prepared to grind for a while.
 		..collect 40 Lovely Charm##49655 |n
 		.' If you have a lot of money, or don't care about spending money and just want to do the quests very quickly, do this: |tip Go to the Auction House and buy 4 Lovely Charm Bracelets.
 		.' If you chose to kill mobs, use your Lovely Charms to create 4 Lovely Charm Bracelets |use Lovely Charm##49655

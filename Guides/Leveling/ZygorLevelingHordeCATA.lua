@@ -10,6 +10,10 @@ condition suggested !exclusive
 next Zygor's Horde Leveling Guides\\Eastern Kingdoms 1-60\\Eversong Woods (1-12)\\Eversong Woods (5-12)
 startlevel 1.00
 step
+next "bestart" |only BloodElf
+next "nonbestart" |only !BloodElf
+step
+label	"bestart"
 goto Sunstrider Isle 61.0,45.1
 .talk 15278
 ..accept 8325
@@ -38,12 +42,10 @@ step
 goto 61.8,39.3
 .talk 15296
 ..accept 8336
-only BloodElf
 step
 goto 58.5,38.8
 .talk 15297
 ..accept 8346
-only BloodElf
 step
 goto 54.8,39.7
 .' Use your Arcane Torrent ability on a Mana Wyrm |cast Arcane Torrent |tip Make sure to be within 8 yards of the Wyrm when casting the spell.
@@ -265,6 +267,8 @@ step
 goto 58.5,38.8
 .talk 15297
 ..turnin 8338
+step
+label	"nonbestart"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Eastern Kingdoms 1-60\\Eversong Woods (1-12)\\Eversong Woods (5-12)",[[
 author support@zygorguides.com
@@ -1944,13 +1948,16 @@ step
 goto Deathknell 40.7,78.5
 .talk 49044
 ..accept 24959
+|only Scourge
 step
 goto 43.4,79.9
 .talk 1568
 ..turnin 24959
 ..accept 28608
+|only Scourge
 step
 .' Enter the crypt |goto 44.5,82.9 <5 |c
+|only Scourge
 step
 goto 41.9,82.9
 .' Darnell will spawn and greet you.  Lead him into the crypt.
@@ -1958,39 +1965,48 @@ goto 41.9,82.9
 .get Thick Embalming Fluid |q 28608/1
 .click Corpse-Stitching Twine##9943
 .get Corpse-Stitching Twine |q 28608/2
+|only Scourge
 step
 .' Leave the crypt |goto 44.5,82.9 <5 |c
+|only Scourge
 step
 goto 43.4,79.9
 .talk 1568
 ..turnin 28608
 ..accept 26799
+|only Scourge
 step
 goto 45.9,80.5
 .talk 2307
 ..accept 24960
+|only Scourge
 step
 goto 40.6,73.0
 .talk 49231
 ..' Tell him he died.
 .' Speak with Valdred Moray |q 24960/3
+|only Scourge
 step
 goto 44.2,70.5
 .talk 38895
 ..' Tell her you want to speak with her.
 .' Speak with Lilian Voss |q 24960/1
+|only Scourge
 step
 goto  46.5,71.2
 .talk 49230
 ..' Tell him you're not here to fight.
 .' Speak with Marshal Redpath |q 24960/2
+|only Scourge
 step
 goto 44.0,73.7
 .kill 6 Mindless Zombie##1501+ |q 26799/1
+|only Scourge
 step
 goto 43.4,79.9
 .talk 1568
 ..turnin 26799
+|only Scourge
 step
 ding 2
 step
@@ -1998,11 +2014,13 @@ goto 45.9,80.5
 .talk 2307
 ..turnin 24960
 ..accept 25089
+|only Scourge
 step
 goto 49.7,56.5
 .talk 1740
 ..turnin 25089
 ..accept 26800
+|only Scourge
 step
 goto 46.7,58.8
 .talk 1569
@@ -2010,12 +2028,13 @@ goto 46.7,58.8
 step
 goto 52.3,44.3
 .from Rattlecage Skeleton##1890+, Wretched Ghoul##1502+ |q 26801/1
-.clicknpc Scarlet Corpse##49340+
-.' Gather 6 Scarlet Corpses |q 26800/1
+.clicknpc Scarlet Corpse##49340+ |only Scourge
+.' Gather 6 Scarlet Corpses |q 26800/1 |only Scourge
 step
 goto 49.7,56.5
 .talk 1740
 ..turnin 26800
+|only Scourge
 step
 goto 46.7,58.8
 .talk 1569
@@ -2509,6 +2528,7 @@ step
 goto 52.1,29.8
 .kill 8 Wailing Ancestor##1534+ |q 25003/1
 .kill 8 Rotting Ancestor##1530+ |q 25003/2
+.' More of both of these can be found inside the crypt at [Tirisfal Glades,52.2,27.2]
 step
 goto 54.6,29.9
 .talk 1500
@@ -2524,8 +2544,9 @@ goto 45.6,29.6
 .from Gregor Agamand##1654
 .get Gregor's Remains |q 25029/2
 step
-goto 49.4,36.0
+goto 49.6,36.2
 .from Nissa Agamand##1655
+.|tip She walks around upstairs
 .get Nissa's Remains |q 25029/1
 step
 goto 48.9,34.0
@@ -10468,6 +10489,10 @@ goto 52.0,52.0
 ..accept 31163
 only Troll Monk
 step
+next "normalstart" |only Hunter,Warrior,Rogue,Priest,Druid,Warlock,Mage,Shaman,Monk
+next "pallydkstart" |only Paladin,DeathKnight
+step
+label	"normalstart"
 goto 61.5,65.91
 .talk 38966
 ..turnin 24781 |only Troll Hunter
@@ -10585,6 +10610,8 @@ goto 61.6,65.91
 .talk 10540
 ..turnin 24814
 ..accept 25073
+step
+label	"pallydkstart"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Kalimdor 1-60\\Durotar (1-11)\\Durotar (5-8)",[[
 author support@zygorguides.com

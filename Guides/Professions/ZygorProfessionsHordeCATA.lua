@@ -8871,6 +8871,7 @@ path 68.5,37.9
 .'Click here to pick a different ore. |confirm |next "start"
 step "ghost_iron"
 map Krasarang Wilds
+path follow strict
 path	70.3,9.7	66.1,18.5	64.5,21.5
 path	61.6,21.9	52.0,30.2	40.2,27.5
 path	38.0,28.1	33.4,32.1	33.0,28.9
@@ -9436,7 +9437,7 @@ description This guide will walk you through leveling
 description Cooking combined with Fishing.
 step
 .' For this guide to work, you will need to have do your _Cooking_ daily quests from non MoP Expansions.
-.' Collect 23 Epicurean's Awards |currcount=23
+.' Collect 23 Epicurean's Awards |condition curcount(81)>=23
 |confirm
 step
 goto The Cape of Stranglethorn 42.8,69.0
@@ -9693,11 +9694,11 @@ goto Dalaran/1 70.0,39.0
 step
 goto Howling Fjord/0 79.5,27.1
 .talk 26957
-.skillmax,Fishing,450
+.skillmax Fishing,450
 step
 goto Howling Fjord/0 78.6,29.5
 .talk 26953
-.skillmax,Cooking,450
+.skillmax Cooking,450
 step
 goto Howling Fjord/0 78.6,29.5
 .talk 26953
@@ -9711,7 +9712,7 @@ goto Howling Fjord/0 81.3,37.9
 step
 goto Howling Fjord/0 79.5,27.1
 .talk 26957z
-.skillmax,Fishing,525
+.skillmax Fishing,525
 step
 goto Howling Fjord/0 81.3,37.9
 .' Equip your Fishing Pole |use Fishing Pole##6256
@@ -9748,7 +9749,7 @@ step
 step
 goto Howling Fjord/0 78.6,29.5
 .talk 26953
-.skillmax,Cooking,525
+.skillmax Cooking,525
 step
 goto Orgrimmar 56.8,62.6
 .talk 49737
@@ -9773,7 +9774,7 @@ goto Twilight Highlands/0 56.1,37.3
 step
 goto Orgrimmar/1 66.5,41.9
 .talk 3332
-.skillmax,Fishing,600
+.skillmax Fishing,600
 step
 goto Orgrimmar/1 56.2,61.3
 .create Lightly Fried Lurker##88028,Cooking,475
@@ -9791,7 +9792,7 @@ step
 step
 goto Orgrimmar/1 56.6,62.5
 .talk 42506
-.skillmax,Cooking,600
+.skillmax Cooking,600
 step
 goto Orgrimmar/1 66.7,41.9
 .talk 3333

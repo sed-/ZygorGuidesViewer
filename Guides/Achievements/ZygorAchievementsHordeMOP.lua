@@ -9951,20 +9951,17 @@ goto Timeless Isle/0 26.3,29.7
 step
 goto Timeless Isle/0 18.8,56.5
 .from Ancient Spineclaw##72766+
-..collect Scuttler's Shell##104293
-|achieve 8728/33
+..collect Scuttler's Shell##104293 |achieve 8728/33
 step
 goto Timeless Isle/0 26.9,76.4
 .from Monstrous Spineclaw##73166 |tip This mob is a rare spawn, so you may need to wait a while for it to spawn.
-..collect 1 Spineclaw Crab##104168
-|achieve 8728/49
+..collect 1 Spineclaw Crab##104168 |achieve 8728/49
 step
 map Timeless Isle
 path	32.6,69.4	29.7,67.2	31.6,64.6
 path	33.1,66.2	43.2,66.0	41.4,69.6
 .click Crane Nest |tip This item is a rare drop, so you may be searching for a while.
-..collect 1 Azure Crane Chick##104157
-|achieve 8728/56
+..collect 1 Azure Crane Chick##104157 |achieve 8728/56
 step
 goto Timeless Isle 44.4,65.5
 .from Imperial Python##73163 |tip This mob is a rare spawn, so you may need to wait a while for it to spawn.
@@ -9973,8 +9970,7 @@ goto Timeless Isle 44.4,65.5
 step
 goto Timeless Isle/0 38.0,77.6
 .from Spectral Windwalker##73021+
-..collect Bubbling Pi'jiu Brew##104336 |tip This item is a rare drop, so you may need to grind for a while.
-|achieve 8728/11
+..collect Bubbling Pi'jiu Brew##104336 |tip This item is a rare drop, so you may need to grind for a while. |achieve 8728/11
 step
 goto Timeless Isle/0 38.0,77.6
 .from Spectral Brewmaster##73018+
@@ -9991,69 +9987,57 @@ goto Timeless Isle/0 38.0,77.6
 step
 goto Timeless Isle/0 38.0,77.6
 .from Zhu-Gon the Sour##71919+
-..collect 1 Skunky Almental##104167
-|achieve 8728/50
+..collect 1 Skunky Almental##104167 |achieve 8728/50
 step
 goto Timeless Isle/0 40.4,78.0
 .from Gu'chi the Swarmbringer##72909 |tip He walks around the village here, so some searching may be necessary.
-.collect 1 Gu'chi Swarmling##104291
-|achieve 8728/35
+.collect 1 Gu'chi Swarmling##104291 |achieve 8728/35
 step
 goto Timeless Isle/0 40.5,76.2
 .from Spotted Swarmer##72908+
-..collect Sticky Silkworm Goo##104290
+..collect Sticky Silkworm Goo##104290 |achieve 8728/36
 .' You can also find groups of them at the following locations:
 .' [39.0,83.2]
 .' [32.7,75.2]
 .' [33.8,77.7]
-|achieve 8728/36
 step
 goto Timeless Isle/0 34.2,84.7
 .from Karkanos##72193 |tip This mob is a rare spawn, so you may need to wait a while for it to spawn.
-..collect Giant Purse of Timeless Coins##104035
-|achieve 8728/3
+..collect Giant Purse of Timeless Coins##104035 |achieve 8728/3
 step
 goto Timeless Isle/0 40.4,93.1
 .from Cursed Swabby##71920+ |tip They are underwater near the sunken ship
 ..collect Barnacle Encrusted Key##104015 |n
 .click Sunken Chest
-..collect 1 Cursed Swabby Helmet##104038
-|achieve 8728/1
+..collect 1 Cursed Swabby Helmet##104038 |achieve 8728/1
 step
 goto Timeless Isle/0 47.6,87.3
 .from Zesqua##72245
-..collect Rain Stone##104303
-|achieve 8728/26
+..collect Rain Stone##104303 |achieve 8728/26
 step
 goto Timeless Isle/0 60.7,88.0
 .from Rattleskew##72048
-..collect Captain Zvezdan's Lost Leg##104321
-|achieve 8728/17
+..collect Captain Zvezdan's Lost Leg##104321 |achieve 8728/17
 step
 goto Timeless Isle/0 62.7,74.6
 .from Bufo##72775 |tip Bufo can spawn in the place of any Gulp Frog in this area.
-..collect 1 Gulp Froglet##104169
-|achieve 8728/48
+..collect 1 Gulp Froglet##104169 |achieve 8728/48
 step
 goto Timeless Isle/0 62.7,74.6
 .from Gulp Frog##72777+
-..collect 1 Overgrown Lilypad##86580
-|achieve 8728/9
+..collect 1 Overgrown Lilypad##86580 |achieve 8728/9
 step
 goto Timeless Isle/0 62.5,63.5
 .from Golganarr##72970
-..collect Odd Polished Stone##104262
-|achieve 8728/44
+..collect Odd Polished Stone##104262 |achieve 8728/44
 step
 goto Timeless Isle/0 56.6,52.3
 .from Eroded Cliffdweller##72809+
-..collect Glinting Pile of Stone##104263
-|achieve 8728/43
+..collect Glinting Pile of Stone##104263 |achieve 8728/43
 step
 goto Timeless Isle/0 62.0,53.1
 .from Primal Stalker##72805+
-..collect Pristine Stalker Hide##104268
-|achieve 8728/42
+..collect Pristine Stalker Hide##104268 |achieve 8728/42
 step
 goto Timeless Isle/0 59.2,48.3
 .' Wait for the cave-in, then click the hammer that spawns here. It may take a minute for the hammer to spawn, but it shouldn't be too long.
@@ -10062,7 +10046,7 @@ step
 goto Timeless Isle/0 59.1,48.6
 .click Cave-In
 .from Spelurk##71864+
-..collect Cursed Talisman##
+..collect Cursed Talisman##104320 |achieve 8728/18
 step
 'This pet requires you to have a lot of Timeless coins, as it is a random drop from a chest.
 |confirm
@@ -10079,13 +10063,11 @@ goto Timeless Isle/0 59.1,40.6
 step
 'Pick one of the many chests in this room and use your key to open it.
 .click Timeless Chest
-..collect 1 Bonkers##104202 |tip This will most likely not drop on your first try. You will need to keep buying keys and opening chests until this drops.
-|achieve 8728/47
+..collect 1 Bonkers##104202 |tip This will most likely not drop on your first try. You will need to keep buying keys and opening chests until this drops. |achieve 8728/47
 step
 goto Timeless Isle/22 54.2,66.4
 .click Eerie Crystal |tip They can be found all around inside this cave.
-..collect Crystal of Insanity##86569
-|achieve 8728/4
+..collect Crystal of Insanity##86569 |achieve 8728/4
 step
 goto Timeless Isle/22 56.0,30.7
 .from Spirit of Jadefire##72769 |tip This is a rare spawn, so you may need to wait for it to respawn.
@@ -10094,13 +10076,11 @@ goto Timeless Isle/22 56.0,30.7
 step
 goto Timeless Isle/22 45.4,29.4
 .from Rock Moss##73157 |tip This mob is a rare spawn, so you may need to wait a while.
-..collect Golden Moss##104313
-|achieve 8728/19
+..collect Golden Moss##104313 |achieve 8728/19
 step
 goto Timeless Isle/22 45.2,30.5
 .from Damp Shambler##72771+
-..collect Strange Glowing Mushroom##104312
-|achieve 8728/20
+..collect Strange Glowing Mushroom##104312 |achieve 8728/20
 step
 goto Timeless Isle/22 53.3,66.0
 .from Foreboding Flame##73162+
@@ -10109,13 +10089,11 @@ goto Timeless Isle/22 53.3,66.0
 step
 goto Timeless Isle/0 37.7,43.0
 .from Brilliant Windfeather##72762
-..collect Wildfeather Plume##104287
-|achieve 8728/39
+..collect Wildfeather Plume##104287 |achieve 8728/39
 step
 goto Timeless Isle/0 51.5,83.3
 .from Jakur of Ordon##73169
-..collect Warning Sign##104331
-|achieve 8728/14
+..collect Warning Sign##104331 |achieve 8728/14
 step
 goto Timeless Isle/0 53.7,79.9
 .from Ordon Candlekeeper##72875+, Ordon Oathguard##72892+, Ordon Fire-Watcher##72894+
@@ -10130,39 +10108,32 @@ goto Timeless Isle/0 57.5,77.1
 step
 goto Timeless Isle/0 68.6,58.2
 .from Ashleaf Sprite##72877
-..collect Faintly-Glowing##104289
-|achieve 8728/37
+..collect Faintly-Glowing##104289 |achieve 8728/37
 step
 goto Timeless Isle/0 68.6,58.2
 .from Crimsonscale Firestorm##72876
-..collect Quivering Firestorm Egg##10428
-|achieve 8728/40
+..collect Quivering Firestorm Egg##10428 |achieve 8728/40
 step
 goto Timeless Isle/0 72.9,48.7
 .from Huolon##73167 |tip He is a rare spawn.
 .' Note that he flies around the entire island, but this is the easiest place to reach him.
-.collect Reins of the Thundering Onyx Cloud Serpent##104269
-|achieve 8728/41
+.collect Reins of the Thundering Onyx Cloud Serpent##104269 |achieve 8728/41
 step
 goto Timeless Isle/0 70.9,49.9
 .from Champion of the Black Flame##73171 |tip The all 3 walk up and down this path here, some searching may be necessary.
-..collect Blackflame Daggers##104302
-|achieve 8728/27
+..collect Blackflame Daggers##104302 |achieve 8728/27
 step
 goto Timeless Isle 67.3,44.1
 .from Leafmender##73277 |tip This mob is a rare spawn, so you may need to wait a while for it to spawn.
-..collect 1 Ashleaf Spriteling##104156
-|achieve 8728/57
+..collect 1 Ashleaf Spriteling##104156 |achieve 8728/57
 step
 goto Timeless Isle/0 68.5,36.5
 .from Eternal Kilnmaster##72896
-..collect 1 Eternal Kiln##104309
-|achieve 8728/21
+..collect 1 Eternal Kiln##104309 |achieve 8728/21
 step
 goto Timeless Isle/0 68.5,36.5
 .from Blazebound Chanter##72897
-..collect Blizzard Stone##104304
-|achieve 8728/25
+..collect Blizzard Stone##104304 |achieve 8728/25
 step
 goto Timeless Isle/0 68.5,39.9
 .from Eternal Kilnmaster##72896+, Burning Berserker##72895+, Blazebound Chanter##72897+
@@ -10177,33 +10148,27 @@ goto Timeless Isle/0 54.0,52.4
 step
 goto Timeless Isle
 .from Flintlord Gairan##73172
-..collect Ordon Death Chime##104298
-|achieve 8728/29
+..collect Ordon Death Chime##104298 |achieve 8728/29
 step
 goto Timeless Isle/0 48.2,38.4
 .from High Priest of Ordos##72898+
-..collect 1 Ash-Covered Horn##104329
-|achieve 8728/15
+..collect 1 Ash-Covered Horn##104329 |achieve 8728/15
 step
 goto Timeless Isle/0 45.4,26.6
 .from Urdur the Cauterizer##73173
-..collect Sunset Stone##104306
-|achieve 8728/23
+..collect Sunset Stone##104306 |achieve 8728/23
 step
 goto Timeless Isle/0 64.8,28.8
 .from Garnia##73282
-..collect Ruby Droplet##104159
-|achieve 8728/55
+..collect Ruby Droplet##104159 |achieve 8728/55
 step
 goto Timeless Isle/0 26.2,23.8
 .from Dread Ship Vazuvius##73281+
-..collect Rime of the Time-Lost Mariner##104294
-|achieve 8728/32
+..collect Rime of the Time-Lost Mariner##104294 |achieve 8728/32
 step
 goto Timeless Isle/0 58.1,25.5
 .from Archiereus of Flame##73174
-..collect 1 Elixir of Ancient Knowledge##86574
-|achieve 8728/6
+..collect 1 Elixir of Ancient Knowledge##86574 |achieve 8728/6
 .' You can also find him at the following coordinates:
 .' [56.9,35.9]
 .' [48.6,33.7]
@@ -10211,8 +10176,7 @@ goto Timeless Isle/0 58.1,25.5
 step
 goto Timeless Isle/0 25.6,55.5
 .from Great Turtle Furyshell##73161 |tip This mob is a rare spawn, so you may need to wait a while for it to spawn.
-.collect 1 Hardened Shell##86584
-|achieve 8728/10
+.collect 1 Hardened Shell##86584 |achieve 8728/10
 step
 goto Timeless Isle 47.7,73.7
 .click Neverlasting Crystal
@@ -10224,10 +10188,9 @@ goto Timeless Isle 45.5,73.4
 .from Nice Sprite##71823+, Angry Sprite##71824+
 |tip Kill enough of these in the time allotment and a Scary Sprite will spawn.
 .from Scary Sprite##71826
-..collect 1 Dandelion Frolicker##104160
-|achieve 8728/54
+..collect 1 Dandelion Frolicker##104160 |achieve 8728/54
 step
-.' Congratulations, you have obtained the _Celestial Family_ achievement!
+.' Congratulations, you have obtained the _Going to Need a Bigger Bag_ achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Timeless Champion",[[
 description Defeat all of the rare creatures of the Timeless Isle listed below.

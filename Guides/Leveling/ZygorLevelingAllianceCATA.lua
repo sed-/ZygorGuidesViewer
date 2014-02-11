@@ -31,6 +31,7 @@ goto 69.3,55.2
 .kill 3 Rockjaw Goon##37073+ |q 24470/1
 .' Use Sten's First Aid Kit on Wounded Coldridge Mountaineers |use Sten's First Aid Kit##49743
 .|tip They look like dwarves kneeling in the snow around this area
+.|tip You can use Shift+v to mark them and they'll be easier to spot (Use v to mark enemies again).
 .' Aid 4 Wounded Coldridge Mountaineers |q 24471/1
 step
 ding 2
@@ -79,10 +80,11 @@ goto 40.0,29.1
 .click Keg of Theramore Pale Ale##319
 .get Cask of Theramore Pale Ale |q 24474/2
 step
-goto 44.5,30.9
+goto 25.9,35.4
 .click Forgotten Dwarven Artifacts |tip They look like little mounds of snow on the ground.
 .get 5 Forgotten Dwarven Artifact |q 24477/1
-.' You can find more around [72.8,24.5]
+.' You can find more at [Coldridge Valley,44.5,30.9]
+.' And also at [Coldridge Valley,72.8,24.5]
 step
 goto 61.7,22.1
 .talk 1104
@@ -105,6 +107,7 @@ goto 49.5,57.7
 .get 4 Ragged Wolf Hide |q 24475/2
 .from Small Crag Boar##708+
 .get 3 Boar Haunch |q 24475/1
+.' You can find more of both of these at [Coldridge Valley,35.9,67.1]
 step
 goto 61.7,22.1
 .talk 1104
@@ -382,8 +385,7 @@ step
 goto 69.9,44.21
 .talk 37113
 ..turnin 24492
-.' You will fly to Kharanos
-|confirm
+.' You will fly to Kharanos |goto Dun Morogh,53.3,49.8
 step
 goto Dun Morogh 53.1,50.0
 .talk 1872
@@ -397,6 +399,10 @@ next Zygor's Alliance Leveling Guides\\Eastern Kingdoms 1-60\\Dun Morogh (1-10)\
 startlevel 1
 dynamic on
 step
+next "normalstart" |only Gnome
+next "oddstart" |only !Gnome
+step
+label	"normalstart"
 goto Dun Morogh/10 34.0,32.2
 .talk 45966
 ..accept 27670
@@ -730,7 +736,7 @@ goto 48.7,52.9
 step
 goto 57.2,47.5
 .talk 42849
-..' Tell him you're ready to start the assault
+.' Tell him you're ready to start the assault
 .' Use your Orbital Targeting Device to direct attacks onto Razlo Crushcog |use Orbital Targeting Device##58253
 .' Defeat Razlo Crushcog |q 26364/1
 |modelnpc Razlo Crushcog##42839
@@ -740,6 +746,7 @@ goto 48.7,52.9
 ..turnin 26364
 ..accept 26373
 step
+label	"oddstart"
 goto Dun Morogh,49.9,45.0
 .talk 42933
 ..accept 26380
@@ -763,6 +770,7 @@ goto Northshire 33.6,53.0
 ..accept 28766 |only Human Warrior
 ..accept 28767 |only Human Hunter
 ..accept 31139 |only Human Monk
+..accept 29078 |only !Human
 step
 goto 29.0,42.9
 .kill 6 Blackrock Battle Worg##49871+ |q 28757/1 |only Human Mage
@@ -773,6 +781,7 @@ goto 29.0,42.9
 .kill 6 Blackrock Battle Worg##49871+ |q 28766/1 |only Human Warrior
 .kill 6 Blackrock Battle Worg##49871+ |q 28767/1 |only Human Hunter
 .kill 6 Blackrock Battle Worg##49871+ |q 31139/1 |only Human Monk
+.kill 6 Blackrock Battle Worg##49871+ |q 29078/1 |only !Human
 step
 goto 33.6,53.0
 .talk 197
@@ -792,6 +801,8 @@ goto 33.6,53.0
 ..accept 28759 |only Human Hunter
 ..turnin 31139 |only Human Monk
 ..accept 31140 |only Human Monk
+..turnin 29078 |only !Human
+..accept 29079 |only !Human
 step
 ding 2
 step
@@ -804,6 +815,7 @@ goto 25.4,41.1
 .kill 8 Blackrock Spy##49874+ |q 28774/1 |only Human Warrior |tip They creep around near the trees around this area.
 .kill 8 Blackrock Spy##49874+ |q 28759/1 |only Human Hunter |tip They creep around near the trees around this area.
 .kill 8 Blackrock Spy##49874+ |q 31140/1 |only Human Monk |tip They creep around near the trees around this area.
+.kill 8 Blackrock Spy##49874+ |q 29079/1 |only !Human |tip They creep around near the trees around this area.
 step
 goto 33.6,53.0
 .talk 197
@@ -823,6 +835,8 @@ goto 33.6,53.0
 ..accept 26910 |only Human Hunter |tip You need to be at level 3 to get this quest.
 ..turnin 31140 |only Human Monk
 ..accept 31141 |only Human Monk |tip You need to be at level 3 to get this quest.
+..turnin 29079 |only !Human
+..accept 29080 |only !Human
 step
 ding 3
 step
@@ -986,6 +1000,8 @@ goto 35.7,39.8
 ..accept 28795 |only Human Rogue
 ..turnin 31143 |only Human Monk
 ..accept 31144 |only Human Monk
+..turnin 29080 |only !Human
+..accept 29081 |only !Human
 step
 goto 34.7,38.8
 .talk 951
@@ -996,6 +1012,7 @@ goto 34.7,38.8
 ..accept 28812 |only Human Warlock
 ..accept 28808 |only Human Mage
 ..accept 28811 |only Human Rogue
+..accept 29082 |only !Human
 |only !Monk
 step
 goto 30.7,29.1
@@ -1007,6 +1024,7 @@ goto 30.7,29.1
 .kill 8 Goblin Assassin##50039+ |q 28792/1 |only Human Mage
 .kill 8 Goblin Assassin##50039+ |q 28795/1 |only Human Rogue
 .kill 8 Goblin Assassin##50039+ |q 31144/1 |only Human Monk
+.kill 8 Goblin Assassin##55039+ |q 29081/1 |only !Human
 .clicknpc Injured Stormwind Infantry##50047 |only !Monk
 .' Revive 4 Injured Soldiers |q 28813/1 |only Human Warrior
 .' Revive 4 Injured Soldiers |q 28809/1 |only Human Paladin
@@ -1015,6 +1033,7 @@ goto 30.7,29.1
 .' Revive 4 Injured Soldiers |q 28812/1 |only Human Warlock
 .' Revive 4 Injured Soldiers |q 28808/1 |only Human Mage
 .' Revive 4 Injured Soldiers |q 28811/1 |only Human Rogue
+.' Revive 4 Injured Soldiers |q 29082/1 |only !Human
 step
 goto 34.7,38.8
 .talk 951
@@ -1025,6 +1044,7 @@ goto 34.7,38.8
 ..turnin 28812 |only Human Warlock
 ..turnin 28808 |only Human Mage
 ..turnin 28811 |only Human Rogue
+..turnin 29082 |only !Human
 |only !Monk
 step
 goto 35.7,39.8
@@ -1037,6 +1057,7 @@ goto 35.7,39.8
 ..turnin 28792 |only Human Mage
 ..turnin 28795 |only Human Rogue
 ..turnin 31144 |only Human Monk
+..turnin 29081 |only !Human
 ..accept 28823 |only Human Warrior
 ..accept 28819 |only Human Paladin
 ..accept 28817 |only Human Hunter
@@ -1045,6 +1066,7 @@ goto 35.7,39.8
 ..accept 28818 |only Human Mage
 ..accept 28821 |only Human Rogue
 ..accept 31145 |only Human Monk
+..accept 29083 |only !Human
 step
 ding 4
 step
@@ -1058,6 +1080,7 @@ goto 33.6,53.0
 ..turnin 28818 |only Human Mage
 ..turnin 28821 |only Human Rogue
 ..turnin 31145 |only Human Monk
+..turnin 29083 |only !Human
 ..accept 26389
 step
 goto 33.4,54.7
@@ -1812,7 +1835,7 @@ goto 72.7,60.3
 ..accept 45
 |only if completedq(35)
 step
-goto 75.1,56.3
+goto 74.5,51.6
 .from Rogue Wizard##474+
 .get 6 Linen Scrap |q 83/1
 step
@@ -1834,7 +1857,9 @@ goto 80.9,61.5
 .click Bundles of Wood##1248+
 .get 8 Bundle of Wood |q 5545/1
 .' You can find more Prowlers and Young Forest Bears around [Elwynn Forest,87.8,64.7]
-|modelnpc Gray Forest Wolf##1922, Greypaw##44256, Gonzalez##43294
+|modelnpc Gray Forest Wolf##1922
+|modelnpc Greypaw##44256
+|modelnpc Gonzalez##43294
 step
 goto 81.4,66.1
 .talk 10616
@@ -2330,7 +2355,7 @@ step
 goto 54.5,50.8
 .talk 1247
 .buy 1 Rhapsody Malt##2894 |q 384/2
-.home Kharanos
+.home Thunderbrew Distillery
 step
 goto 54.2,51.2
 .talk 1374
@@ -2389,19 +2414,19 @@ step
 goto Dun Morogh/7 51.7,48.8
 .click Pilfered Supplies##335
 .talk 40991
-..' Tell him Captain Tharran wants him to deploy his remote observation bots and withdraw to Kharanos
+.' Tell him Captain Tharran wants him to deploy his remote observation bots and withdraw to Kharanos
 .' Convey orders to Mountaineer Dunstan |q 313/1
 step
 goto Dun Morogh/7 60.4,55.9
 .click Pilfered Supplies##335
 .talk 40994
-..' Tell him Captain Tharran wants him to deploy his remote observation bots and withdraw to Kharanos
+.' Tell him Captain Tharran wants him to deploy his remote observation bots and withdraw to Kharanos
 .' Convey orders to Mountaineer Lewin |q 313/2
 step
 goto Dun Morogh/7 61.4,22.6
 .click Pilfered Supplies##335
 .talk 41056
-..' Tell him Captain Tharran wants him to deploy his remote observation bots and withdraw to Kharanos
+.' Tell him Captain Tharran wants him to deploy his remote observation bots and withdraw to Kharanos
 .' Convey orders to Mountaineer Valgrum |q 313/3
 step
 goto Dun Morogh/7 53.8,48.1
@@ -2687,17 +2712,20 @@ step
 goto 54.7,50.8
 .talk 1699 |tip He's in the back room of the Thunderbrew Distillery.
 ..accept 6387
+|only Dwarf or Gnome
 step
 goto 53.8,52.8
 .talk 43701
 ..turnin 6387
 ..accept 6391
+|only Dwarf or Gnome
 .' Fly to Ironforge, Dun Morogh |goto Ironforge,55.9,47.9,0.5 |noway |c
 step
 goto 51.6,26.4
 .talk 4256
 ..turnin 6391
 ..accept 6388
+|only Dwarf or Gnome
 step
 goto Ironforge,41.4,52.3
 .talk 1959
@@ -2722,6 +2750,7 @@ goto 55.5,47.7
 .talk 1573
 ..turnin 6388
 ..accept 6392
+|only Dwarf or Gnome
 .' Fly to Kharanos |goto Dun Morogh 53.7,52.7 <5 |noway |c
 step
 goto 54.8,50.7
@@ -10939,28 +10968,34 @@ step
 goto Ammen Vale 61.2,29.5
 .talk 16475
 ..accept 9279
+|only Draenei
 step
 goto 52.8,35.9
 .talk 16477
-..turnin 9279
-..accept 9280
+..turnin 9279 |only Draenei
+..accept 9280 |only Draenei
+..accept 9369 |only !Draenei
 step
 goto 50.9,28.8
 .from Vale Moth##16520+
-.get 6 Vial of Moth Blood##22889 |q 9280/1
+.get 6 Vial of Moth Blood##22889 |q 9280/1 |only Draenei
+.get 6 Vial of Moth Blood##22899 |q 9369/1 |only !Draenei
 step
 goto 52.8,35.9
 .talk 16477
-..turnin 9280
-..accept 9409
+..turnin 9280 |only Draenei
+..accept 9409 |only Draenei
+..turnin 9369 |only !Draenei
+..accept 9409 |only !Draenei
 step
 ding 2
 step
 goto 52.5,41.2
 .talk 16502
-..turnin 9409
-..accept 9283
+..turnin 9409 |only Draenei
+..accept 9283 |only Draenei
 ..accept 26970 |only Draenei Priest
+..turnin 9409 |only !Draenei
 step
 goto 52.8,35.9
 .talk 16477
@@ -11214,6 +11249,7 @@ step
 goto Azuremyst Isle,48.4,51.8
 .talk 17214
 ..accept 9463
+|only Draenei
 step
 goto Azuremyst Isle,48.7,50.3
 .talk 16551
@@ -11230,8 +11266,8 @@ step
 goto Azuremyst Isle,50.3,56.6
 .from Moongraze Stag##17200+
 .get 6 Moongraze Stag Tenderloin##23676 |q 9454/1
-.from Root Trapper##17196+
-.get 8 Root Trapper Vine##23685 |q 9463/1
+.from Root Trapper##17196+ |only if havequest(9463)
+.get 8 Root Trapper Vine##23685 |q 9463/1 |only if havequest(9463)
 step
 ding 6
 step
@@ -11305,10 +11341,12 @@ step
 goto 48.4,51.8
 .talk 17214
 ..turnin 9463
+|only Draenei
 step
 goto 48.4,51.5
 .talk 17215
 ..accept 9473
+|only Draenei
 step
 goto Azuremyst Isle,49.8,51.9
 .talk 17110
@@ -11336,6 +11374,7 @@ step
 goto Azuremyst Isle,48.4,51.5
 .talk 17215
 ..turnin 9473
+|only Draenei
 step
 goto Azuremyst Isle,47.1,50.6
 .talk 17116
@@ -11607,8 +11646,8 @@ goto 35.1,43.4
 .talk 17584
 ..turnin 9623
 step
-goto 55.1,88.4 |n
-.' Go through the pink portal to Darnassus |goto Darnassus |noway |c
+goto The Exodar 47.6,62.1 |n
+.' Click the portal to Darnassus |goto Darnassus |noway |c
 step
 goto 43.9,76.1
 .talk 42936
@@ -12497,60 +12536,73 @@ goto 42.5,50.6
 .talk 49479
 ..turnin 28723
 ..accept 28724
+|only NightElf
 step
 goto 40.1,52.6
 .click Moonpetal Lily##253+
 .get 7 Moonpetal Lily |q 28724/1
+|only if havequest(28724)
 step
 goto 42.5,50.6
 .talk 49479
 ..turnin 28724
 ..accept 28725
+|only NightElf
 step
 goto Teldrassil/2 44.5,82.2
 .' Go to the entrance of this cave to make Tarindrella appear
 .talk 49480
 ..turnin 28725
 ..accept 28726
+|only NightElf
 step
 goto Teldrassil/2 46.3,46.3
 .kill 12 Webwood Spider##1986+ |q 28726/1
+|only if havequest(28726)
 step
 ding 4
 step
-'Next to you:
+.' Next to you:
 .talk 49480
 ..turnin 28726
 ..accept 28727
+|only NightElf
 step
 goto Teldrassil/2 44.9,28.1
 .kill Githyiss the Vile##1994+ |q 28727/1
+|only if havequest(28727)
 step
-'Next to you:
+.' Next to you:
 .talk 49480
 ..turnin 28727
 ..accept 28728
+|only NightElf
 step
 goto Shadowglen/0 42.5,50.2
 .talk 49479
 ..turnin 28728
 ..accept 28729
+|only NightElf
 step
 goto 50.3,33.7
 .' Use your Crystal Phial while standing in the water |use Crystal Phial##5185
 .get Filled Crystal Phial |q 28729/1
+|only if havequest(28729)
 step
 goto 42.5,50.6
 .talk 49479
 ..turnin 28729
 ..accept 28730
+|only NightElf
 step
 .' Follow the ramp up |goto 42.1,63.6 <5 |c
+|only NightElf
 step
 goto 47.2,55.9
 .talk 3514
 ..turnin 28730
 ..accept 28731
+|only NightElf
 step
 ding 5
 step
@@ -12599,6 +12651,7 @@ goto 55.8,53.9
 .talk 3515
 ..turnin 28731
 ..accept 929
+|only NightElf
 step
 goto 53.9,57.0
 .click Fel Cone##10405+
@@ -12611,6 +12664,7 @@ step
 goto 62.1,50.8
 .' Use your Jade Phial while standing in the water |use Jade Phial##5619
 .get Filled Jade Phial |q 929/1
+|only if havequest(929)
 step
 goto 64.6,51.2
 .' Go upstairs in the house
@@ -12636,6 +12690,7 @@ step
 goto 55.8,53.9
 .talk 3515
 ..turnin 929
+|only NightElf
 step
 goto 55.8,50.4
 .talk 2083
@@ -12688,45 +12743,45 @@ goto Teldrassil/4 42.3,83.0
 .talk 7317
 ..accept 2541
 step
-'Next to you:
+.' Next to you:
 .talk 34249
-..' _Ask her_ where the Rune of Nesting is |tip You can ask her as many times as you need.
+.' _Ask her_ where the Rune of Nesting is |tip You can ask her as many times as you need.
 .' _Follow the green mist_
 .click Chest of Nesting##10
 .get Rune of Nesting |q 483/4
 .from Gnarlpine Shaman##2009+
 .' Keep an eye out for the Shaman Voodoo Charm that drops from Gnarlpine Shamans
 step
-'Next to you:
+.' Next to you:
 .talk 34249
-..' _Ask her_ where the Black Feather Quill is |tip You can ask her as many times as you need.
+.' _Ask her_ where the Black Feather Quill is |tip You can ask her as many times as you need.
 .' _Follow the green mist_
 .click Chest of the Black Feather##10
 .get Black Feather Quill |q 483/2
 .from Gnarlpine Shaman##2009+
 .' Keep an eye out for the Shaman Voodoo Charm that drops from Gnarlpine Shamans
 step
-'Next to you:
+.' Next to you:
 .talk 34249
-..' _Ask her_ where the Sapphire of Sky is |tip You can ask her as many times as you need.
+.' _Ask her_ where the Sapphire of Sky is |tip You can ask her as many times as you need.
 .' _Follow the green mist_
 .click Chest of the Sky##10
 .get Sapphire of Sky |q 483/3
 .from Gnarlpine Shaman##2009+
 .' Keep an eye out for the Shaman Voodoo Charm that drops from Gnarlpine Shamans
 step
-'Next to you:
+.' Next to you:
 .talk 34249
-..' _Ask her_ where the Raven Claw Talisman is |tip You can ask her as many times as you need.
+.' _Ask her_ where the Raven Claw Talisman is |tip You can ask her as many times as you need.
 .' _Follow the green mist_
 .click Chest of the Raven Claw##10
 .get Raven Claw Talisman |q 483/1
 .from Gnarlpine Shaman##2009+
 .get Shaman Voodoo Charm |q 2541/1
 step
-'Next to you:
+.' Next to you:
 .talk 34249
-..' _Ask her_ where the exit is |tip You can ask her as many times as you need.
+.' _Ask her_ where the exit is |tip You can ask her as many times as you need.
 .' _Follow the green mist_ until you see an area with 2 bridges |tip Don't actually leave the cave.
 .talk 7317
 ..turnin 2541
@@ -12741,7 +12796,7 @@ goto Teldrassil/4 42.3,83.0
 .talk 7317
 ..turnin 2561
 step
-'Inside of the Den:
+.' Inside of the Den:
 .from Gnarlpine Defender##2010+, Gnarlpine Shaman##009+, Gnarlpine Shaman##2009+, Gnarlpine Augur##2011+ |q 13945/1
 step
 goto Teldrassil 55.7,52.0
@@ -12756,25 +12811,30 @@ step
 goto 56.7,53.5
 .talk 4265
 ..accept 6344
+|only NightElf
 step
 goto 55.5,50.4
 .talk 40553
 ..turnin 6344
 ..accept 6341
+|only NightElf
 step
 goto Darnassus,36.1,53.5
 .talk 7316
 ..turnin 6341
 ..accept 6342
+|only NightElf
 step
 goto 36.6,47.9
 .talk 40552
 ..turnin 6342
 ..accept 6343
+|only NightElf
 step
 goto Teldrassil,56.7,53.5
 .talk 4265
 ..turnin 6343
+|only NightElf
 step
 goto 49.4,44.7
 .talk 2151
@@ -12928,7 +12988,7 @@ step
 goto Darnassus,45.0,49.9
 .click Hero's Call Board##10016
 ..accept 28490
-only Draenei,Dwarf,Gnome Human
+only Draenei,Dwarf,Gnome,Human
 step
 goto 43.9,76.1
 .talk 42936

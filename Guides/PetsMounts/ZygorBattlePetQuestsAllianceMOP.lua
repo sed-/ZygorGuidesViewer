@@ -628,3 +628,11 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Beasts of
 step
 #include "A_Beasts_of_Fable"
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Beasts of Fable Dailies",[[
+step
+label "start"
+#include "A_Beasts_of_Fable_D"
+step
+'You have completed the Beasts of Fable Dailies for the day.
+.' Click here to return to the beginning of the guide. |confirm |next "start"
+]])

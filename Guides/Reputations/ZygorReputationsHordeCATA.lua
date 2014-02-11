@@ -1502,23 +1502,160 @@ label	"exalted"
 .' Congratulations, you are now Exalted with Timbermaw Hold!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Azeroth\\The Steamwheedle Cartel",[[
+description This Guide will help you get Reputation with the Steamwheedle Cartel to earn the title _The Insane_.
+author support@zygorguides.com
 step
+label	"Steam_Menu"
 .' To earn the Insane Title, you will need to get your reputation to Exalted with all the
-.' Steamwheedle Cartel factions: _Booty Bay_, _Gadgetzan_, _Everlook_, and _Ratchet_. While raising your reputation with these factions you will need to keep Honored status with the _Bloodsail Buccaneers_.
-.' If you want the Insane Title, we suggest you get your Bloodsail Buccaneers rep to Revered before working in this guide.
-.' You must also become Exalted with the _Darkmoon Faire_ and _Ravenholdt_. For information on these two refer to the Azeroth section of the Zygor Reputation Guides.
-.' Click here to continue |confirm
+.' Steamwheedle Cartel factions: _Booty Bay_, _Gadgetzan_, _Everlook_, and _Ratchet_. While raising your reputation with these factions
+.' you will need to keep Honored status with the _Bloodsail Buccaneers_.
+.' Click here to continue |confirm always
 step
 label	"Steam_Menu2"
+'Click here to work on _Booty Bay_ reputation. |confirm |next "bootybaymenu" |only if rep('Booty Bay')<Exalted
+'Click here to work on _Gadgetzan_ reputation. |confirm |next "gadgetmenu" |only if rep('Gadgetzan')<Exalted
+'Click here to work on _Everlook_ reputation. |confirm |next "everlookmenu" |only if rep('Everlook')<Exalted
+'Click here to work on _Ratchet_ reputation. |confirm |next "ratchetmenu" |only if rep('Ratchet')<Exalted
+step
+label "bootybaymenu"
+'You are currently _Friendly_ with Booty Bay |only if rep('Booty Bay')==Friendly
+'You are currently _Honored_ with Booty Bay |only if rep('Booty Bay')==Honored
+'You are currently _Revered_ with Booty Bay |only if rep('Booty Bay')==Revered
 .' Become Exalted with Booty Bay |condition rep('Booty Bay')==Exalted
-.' Click here to raise your Reputation with Booty Bay |confirm |next "gadget" |only if rep('Booty Bay')<=Revered |tip
+.' Click here to raise your Reputation with Booty Bay by _killing Southsea Mobs_. |tip You can use this regardless of your current reputation. |confirm always |next "gadget" |only if rep('Booty Bay')<=Revered
+.' Click here to raise your Reputation with Booty Bay by _turning in stacks of cloth_. |tip This will only work from Hated up to Neutral |confirm always |next "bbcloth" |only if rep('Booty Bay')<Neutral
+step
+label "gadgetmenu"
+'You are currently _Friendly_ with Gadgetzan |only if rep('Gadgetzan')==Friendly
+'You are currently _Honored_ with Gadgetzan |only if rep('Gadgetzan')==Honored
+'You are currently _Revered_ with Gadgetzan |only if rep('Gadgetzan')==Revered
 .' Become Exalted with Gadgetzan |condition rep('Gadgetzan')==Exalted
-.' Click here to raise your Reputation with Gadgetzan |confirm |next "gadget" |only if rep('Gadgetzan')<=Revered |tip
+.' Click here to raise your Reputation with Gadgetzan by _killing Southsea Mobs_. |tip You can use this regardless of your current reputation. |confirm always |next "gadget" |only if rep('Gadgetzan')<=Revered
+.' Click here to raise your Reputation with Gadgetzan by _turning in stacks of cloth_. |tip This will only work from Hated up to Neutral |confirm always |next "gadgetcloth" |only if rep('Booty Bay')<Neutral
+step
+label "everlookmenu"
+'You are currently _Friendly_ with Everlook |only if rep('Everlook')==Friendly
+'You are currently _Honored_ with Everlook |only if rep('Everlook')==Honored
+'You are currently _Revered_ with Everlook |only if rep('Everlook')==Revered
 .' Become Exalted with Everlook |condition rep('Everlook')==Exalted
-.' Click here to raise your Reputation with Everlook |confirm |next "ratchet3" |only if rep('Everlook')<=Revered |tip
+.' Click here to raise your Reputation with Everlook by _killing Southsea Mobs_. |tip You can use this regardless of your current reputation. |confirm always |next "ratchet" |only if rep('Everlook')<=Revered
+.' Click here to raise your Reputation with Everlook by _turning in stacks of cloth_. |tip This will only work from Hated up to Neutral |confirm always |next "everlookcloth" |only if rep('Booty Bay')<Neutral
+step
+label "ratchetmenu"
+'You are currently _Friendly_ with Ratchet |only if rep('Ratchet')==Friendly
+'You are currently _Honored_ with Ratchet |only if rep('Ratchet')==Honored
+'You are currently _Revered_ with Ratchet |only if rep('Ratchet')==Revered
 .' Become Exalted with Ratchet |condition rep('Ratchet')==Exalted
-.' Click here to raise your Reputation with Ratchet |confirm |next "ratchet3" |only if rep('Ratchet')<=Revered |tip
+.' Click here to raise your Reputation with Ratchet by _killing Southsea Mobs_. |tip You can use this regardless of your current reputation. |confirm always |next "ratchet" |only if rep('Ratchet')<=Revered
+.' Click here to raise your Reputation with Ratchet by _turning in stacks of cloth_. |tip This will only work from Hated up to Neutral |confirm always |next "ratchetcloth" |only if rep('Booty Bay')<Neutral
 |next "end" |only if default
+step
+label "bbcloth"
+#include "auctioneer"
+.buy 40 Silk Cloth##4306 |n |tip Each stack of 40 cloth will grant you 500 rep, up to Neutral.
+.' Click here to farm the cloth yourself. |confirm |next "farmbbcloth"
+.' Click here to turn in the Silk Cloth for reputation. |confirm |next "turninbbcloth"
+step
+label "farmbbcloth"
+map Thousand Needles
+path	10.7,9.2	11.6,9.4
+path	13.7,7.9	12.6,4.9
+.from Grimtotem Pillager##39947+
+..collect 40 Silk Cloth##4306 |n |tip Each stack of 40 cloth will grant you 500 rep, up to Neutral.
+.' Click here to turn in the Silk Cloth for reputation. |confirm |next "turninbbcloth"
+step
+label "turninbbcloth"
+#include "vendor_Tailoring"
+.buy 4 Red Dye##2604 |n |tip You will need 4 Red Dye for every 40 Silk Cloth.
+|confirm
+step
+goto The Cape of Stranglethorn 48.6,63.2
+.talk 16399
+..accept 9259 |n
+..turnin 9259 |n
+.' Turn this quest in until you are Neutral with Booty Bay |condition rep('Booty Bay')>=Neutral
+.' Click here to continue gathering cloth for turn-ins. |confirm |next "bbcloth"
+.' Click here to go back to the main menu. |confirm |next "Steam_Menu2"
+step
+label "gadgetcloth"
+#include "auctioneer"
+.buy 40 Mageweave Cloth##4338 |n |tip Each stack of 40 cloth will grant you 500 rep, up to Neutral.
+.' Click here to farm the cloth yourself. |confirm |next "farmgadgetcloth"
+.' Click here to turn in the Mageweave Cloth for reputation. |confirm |next "turningadgetcloth"
+step
+label "farmgadgetcloth"
+goto Stratholme/1 33.4,33.0
+.from Risen Guardsman##10418+, Risen Initiate##10420+, Risen Defender##10421+, Risen Sorcerer##10422+, Willey Hopebreaker##10997+, Risen Gallant##10424+, Risen Inquisitor##10426+, Risen Monk##11043+, Instructor Galford##10811+
+..collect 40 Mageweave Cloth##4338 |n |tip Each stack of 40 cloth will grant you 500 rep, up to Neutral.
+.' Click here to turn in the Mageweave Cloth for reputation. |confirm |next "turningadgetcloth"
+step
+label "turningadgetcloth"
+#include "vendor_Blacksmithing"
+.buy 4 Strong Flux##3466 |n |tip You will need 4 Strong Flux for every 40 Mageweave Cloth.
+|confirm
+step
+goto Tanaris 50.4,27.2
+.talk 16417
+..accept 9268 |n
+..turnin 9268 |n
+.' Turn this quest in until you are Neutral with Gadgetzan. |condition rep('Gadgetzan')>=Neutral
+.' Click here to continue gathering cloth for turn-ins. |confirm |next "gadgetcloth"
+.' Click here to go back to the main menu. |confirm |next "Steam_Menu2"
+step
+label "everlookcloth"
+#include "auctioneer"
+.buy 40 Runecloth##14047 |n |tip Each stack of 40 cloth will grant you 500 rep, up to Neutral.
+.' Click here to farm the cloth yourself. |confirm |next "farmbbcloth"
+.' Click here to turn in the Runecloth for reputation. |confirm |next "turninevercloth"
+step
+label "farmevercloth"
+map Silithus
+path	44.5,38.0	46.5,40.4	44.9,44.7
+path	42.9,41.4	34.2,33.7	31.6,32.1
+path	32.9,30.1	35.2,29.9
+.from Twilight Avenger##11880+
+.from Twilight Geolord##11881+ |tip AVOID Twilight Stonecaller##11882+
+..collect 40 Runecloth##14047 |n |tip Each stack of 40 cloth will grant you 500 rep, up to Neutral.
+.' Click here to turn in the Silk Cloth for reputation. |confirm |next "turninevercloth"
+step
+label "turninevercloth"
+#include "vendor_Blacksmithing"
+.buy 4 Coal##3857 |n |tip You will need 4 Coal for every 40 Runecloth.
+|confirm
+step
+goto Winterspring 58.0,52.5
+.talk 16416
+..accept 9266 |n
+..turnin 9266 |n
+.' Turn this quest in until you are Neutral with Everlook. |condition rep('Everlook')>=Neutral
+.' Click here to continue gathering cloth for turn-ins. |confirm |next "everlookcloth"
+.' Click here to go back to the main menu. |confirm |next "Steam_Menu2"
+step
+label "ratchetcloth"
+#include "auctioneer"
+.buy 40  Linen Cloth##2589 |n |tip Each stack of 40 cloth will grant you 500 rep, up to Neutral.
+.' Click here to farm the cloth yourself. |confirm |next "farmratchetcloth"
+.' Click here to turn in the Linen Cloth for reputation. |confirm |next "turninratchetcloth"
+step
+label "farmratchetcloth"
+goto Wetlands/0 67.3,47.3
+.from Dragonmaw Whelpstealer##42041+
+.from Ebon Slavehunter##42043+
+..collect 40 Linen Cloth##2589 |n |tip Each stack of 40 cloth will grant you 500 rep, up to Neutral.
+.' Click here to turn in the Silk Cloth for reputation. |confirm |next "turninratchetcloth"
+step
+label "turninratchetcloth"
+#include "vendor_Alchemy"
+.buy 4 Crystal Vial##3371 |n |tip You will need 4 Crystal Vials for every 40 Linen Cloth.
+|confirm
+step
+goto Northern Barrens 65.8,72.0
+.talk 16418
+..accept 9267 |n
+..turnin 9267 |n
+.' Turn this quest in until you are Neutral with Ratchet |condition rep('Ratchet')>=Neutral
+.' Click here to continue gathering cloth for turn-ins. |confirm |next "ratchetcloth"
+.' Click here to go back to the main menu. |confirm |next "Steam_Menu2"
 step
 label	"gadget"
 goto Tanaris,72.3,47.1
@@ -1540,10 +1677,11 @@ goto Tanaris,72.3,47.1
 .' Friendly |condition rep('Booty Bay')>=Friendly |only if rep('Booty Bay')>=Friendly and rep('Booty Bay')<=Friendly
 .' Honored |condition rep('Booty Bay')>=Honored |only if rep('Booty Bay')>=Honored and rep('Booty Bay')<=Honored
 .' Revered |condition rep('Booty Bay')>=Revered |only if rep('Booty Bay')>=Revered and rep('Booty Bay')<=Revered
-.' Gain Exalted reputation with Booty Bay |condition rep('Booty Bay')==Exalted |tip
-.' Click to go back to the Steamwheedle Menu |confirm |next "Steam_Menu2"
+.' Gain Exalted reputation with Booty Bay |condition rep('Booty Bay')==Exalted
+.' Click to go back to the Steamwheedle Menu |confirm always |next "Steam_Menu2"
+|next "Steam_Menu2"
 step
-label	"ratchet3"
+label	"ratchet"
 goto Northern Barrens,77.5,90.1
 .from Southsea Privateer##3384+, Southsea Cutthroat##3383+, Glomp##34747, Southsea Recruit##44168+
 .' Hated |condition rep('Ratchet')>=Hated |only if rep('Ratchet')>=Hated and rep('Ratchet')<=Hated
@@ -1562,12 +1700,12 @@ goto Northern Barrens,77.5,90.1
 .' Friendly |condition rep('Everlook')>=Friendly |only if rep('Everlook')>=Friendly and rep('Everlook')<=Friendly
 .' Honored |condition rep('Everlook')>=Honored |only if rep('Everlook')>=Honored and rep('Everlook')<=Honored
 .' Revered |condition rep('Everlook')>=Revered |only if rep('Everlook')>=Revered and rep('Everlook')<=Revered
-.' Gain Exalted reputation with Everlook |condition rep('Everlook')==Exalted |tip
-.' Click to go back to the Steamwheedle Menu |confirm |next "Steam_Menu2"
+.' Gain Exalted reputation with Everlook |condition rep('Everlook')==Exalted
+.' Click to go back to the Steamwheedle Menu |confirm always |next "Steam_Menu2"
 |next "Steam_Menu2"
 step
 label	"end"
-.' Congratulations, you are Exalted with the Steamwheedle Cartel!
+.' Congratulations! You are honored with the Steamwheedle Cartel!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Azeroth\\Darkmoon Faire",[[
 description This Guide will help you get Reputation with The Darkmoon Faire to earn the title _The Insane_.

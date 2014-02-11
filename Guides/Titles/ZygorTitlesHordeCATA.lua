@@ -4572,7 +4572,7 @@ label "bbcloth"
 .' Click here to farm the cloth yourself. |confirm |next "farmbbcloth"
 .' Click here to turn in the Silk Cloth for reputation. |confirm |next "turninbbcloth"
 step
-label "farmbbcloth
+label "farmbbcloth"
 map Thousand Needles
 path	10.7,9.2	11.6,9.4
 path	13.7,7.9	12.6,4.9
@@ -4581,7 +4581,7 @@ path	13.7,7.9	12.6,4.9
 .' Click here to turn in the Silk Cloth for reputation. |confirm |next "turninbbcloth"
 step
 label "turninbbcloth"
-#include "vendor_tailoring"
+#include "vendor_Tailoring"
 .buy 4 Red Dye##2604 |n |tip You will need 4 Red Dye for every 40 Silk Cloth.
 |confirm
 step
@@ -4599,14 +4599,14 @@ label "gadgetcloth"
 .' Click here to farm the cloth yourself. |confirm |next "farmgadgetcloth"
 .' Click here to turn in the Mageweave Cloth for reputation. |confirm |next "turningadgetcloth"
 step
-label "farmbbcloth
+label "farmgadgetcloth"
 goto Stratholme/1 33.4,33.0
 .from Risen Guardsman##10418+, Risen Initiate##10420+, Risen Defender##10421+, Risen Sorcerer##10422+, Willey Hopebreaker##10997+, Risen Gallant##10424+, Risen Inquisitor##10426+, Risen Monk##11043+, Instructor Galford##10811+
 ..collect 40 Mageweave Cloth##4338 |n |tip Each stack of 40 cloth will grant you 500 rep, up to Neutral.
 .' Click here to turn in the Mageweave Cloth for reputation. |confirm |next "turningadgetcloth"
 step
 label "turningadgetcloth"
-#include "vendor_blacksmithing"
+#include "vendor_Blacksmithing"
 .buy 4 Strong Flux##3466 |n |tip You will need 4 Strong Flux for every 40 Mageweave Cloth.
 |confirm
 step
@@ -4620,21 +4620,23 @@ goto Tanaris 50.4,27.2
 step
 label "everlookcloth"
 #include "auctioneer"
-.buy 40 Silk Cloth##4306 |n |tip Each stack of 40 cloth will grant you 500 rep, up to Neutral.
+.buy 40 Runecloth##14047 |n |tip Each stack of 40 cloth will grant you 500 rep, up to Neutral.
 .' Click here to farm the cloth yourself. |confirm |next "farmbbcloth"
-.' Click here to turn in the Silk Cloth for reputation. |confirm |next "turninevercloth"
+.' Click here to turn in the Runecloth for reputation. |confirm |next "turninevercloth"
 step
-label "farmevercloth
-map Thousand Needles
-path	10.7,9.2	11.6,9.4
-path	13.7,7.9	12.6,4.9
-.from Grimtotem Pillager##39947+
-..collect 40 Silk Cloth##4306 |n |tip Each stack of 40 cloth will grant you 500 rep, up to Neutral.
+label "farmevercloth"
+map Silithus
+path	44.5,38.0	46.5,40.4	44.9,44.7
+path	42.9,41.4	34.2,33.7	31.6,32.1
+path	32.9,30.1	35.2,29.9
+.from Twilight Avenger##11880+
+.from Twilight Geolord##11881+ |tip AVOID Twilight Stonecaller##11882+
+..collect 40 Runecloth##14047 |n |tip Each stack of 40 cloth will grant you 500 rep, up to Neutral.
 .' Click here to turn in the Silk Cloth for reputation. |confirm |next "turninevercloth"
 step
 label "turninevercloth"
-#include "vendor_tailoring"
-.buy 4 Red Dye##2604 |n |tip You will need 4 Red Dye for every 40 Silk Cloth.
+#include "vendor_Blacksmithing"
+.buy 4 Coal##3857 |n |tip You will need 4 Coal for every 40 Runecloth.
 |confirm
 step
 goto Winterspring 58.0,52.5
@@ -4645,31 +4647,30 @@ goto Winterspring 58.0,52.5
 .' Click here to continue gathering cloth for turn-ins. |confirm |next "everlookcloth"
 .' Click here to go back to the main menu. |confirm |next "Steam_Menu2"
 step
-label "bbcloth"
+label "ratchetcloth"
 #include "auctioneer"
-.buy 40 Silk Cloth##4306 |n |tip Each stack of 40 cloth will grant you 500 rep, up to Neutral.
-.' Click here to farm the cloth yourself. |confirm |next "farmbbcloth"
-.' Click here to turn in the Silk Cloth for reputation. |confirm |next "turninbbcloth"
+.buy 40  Linen Cloth##2589 |n |tip Each stack of 40 cloth will grant you 500 rep, up to Neutral.
+.' Click here to farm the cloth yourself. |confirm |next "farmratchetcloth"
+.' Click here to turn in the Linen Cloth for reputation. |confirm |next "turninratchetcloth"
 step
-label "farmbbcloth
-map Thousand Needles
-path	10.7,9.2	11.6,9.4
-path	13.7,7.9	12.6,4.9
-.from Grimtotem Pillager##39947+
-..collect 40 Silk Cloth##4306 |n |tip Each stack of 40 cloth will grant you 500 rep, up to Neutral.
-.' Click here to turn in the Silk Cloth for reputation. |confirm |next "turninbbcloth"
+label "farmratchetcloth"
+goto Wetlands/0 67.3,47.3
+.from Dragonmaw Whelpstealer##42041+
+.from Ebon Slavehunter##42043+
+..collect 40 Linen Cloth##2589 |n |tip Each stack of 40 cloth will grant you 500 rep, up to Neutral.
+.' Click here to turn in the Silk Cloth for reputation. |confirm |next "turninratchetcloth"
 step
-label "turninbbcloth"
-#include "vendor_tailoring"
-.buy 4 Red Dye##2604 |n |tip You will need 4 Red Dye for every 40 Silk Cloth.
+label "turninratchetcloth"
+#include "vendor_Alchemy"
+.buy 4 Crystal Vial##3371 |n |tip You will need 4 Crystal Vials for every 40 Linen Cloth.
 |confirm
 step
-goto The Cape of Stranglethorn 48.6,63.2
-.talk 16399
-..accept 9259 |n
-..turnin 9259 |n
-.' Turn this quest in until you are Neutral with Booty Bay |condition rep('Booty Bay')>=Neutral
-.' Click here to continue gathering cloth for turn-ins. |confirm |next "bbcloth"
+goto Northern Barrens 65.8,72.0
+.talk 16418
+..accept 9267 |n
+..turnin 9267 |n
+.' Turn this quest in until you are Neutral with Ratchet |condition rep('Ratchet')>=Neutral
+.' Click here to continue gathering cloth for turn-ins. |confirm |next "ratchetcloth"
 .' Click here to go back to the main menu. |confirm |next "Steam_Menu2"
 step
 label	"gadget"
