@@ -541,7 +541,7 @@ goto Kun-Lai Summit 35.8,73.8
 .talk 66738
 |tip You will not be able to challenge Courageous Yon if you have the "Pet Recovery" debuff, wait for it to fall off.
 .' Let's fight!
-|tip Courageous Yon has a Flying Pet, and two Critter Pets. Use Beast type attacks on his Critters, and Magic type attacks on his Flying. Your pets should all be level 25.
+|tip Courageous Yon has a Flying Pet, a Critter Pet, and a Beast Pet. Use Beast type attacks on his Critter, Mechanical type attacks on his Beast, and Magic type attacks on his Flying. Your pets should all be level 25.
 .' Defeat Courageous Yon |q 31956/1
 .' He can also be found at [44.7,52.4]
 |only if completedq(31970)
@@ -561,7 +561,7 @@ goto Townlong Steppes 36.3,52.2
 |tip You will not be able to challenge Seeker Zusshi if you have the "Pet Recovery" debuff, wait for it to fall off.
 .' Let's fight!
 |tip Seeker Zusshi has an Aquatic Pet, a Critter Pet, and an Elemental Pet. Use Flying type attacks on his Aquatic, Aquatic type attacks on his Elemental, and Beast type attacks on his Critter. Your pets should all be level 25.
-.' Defeat Seeker Zusshi |q 31991/5
+.' Defeat Seeker Zusshi |q 31991/1
 |only if completedq(31970)
 step
 goto Townlong Steppes 36.3,52.2

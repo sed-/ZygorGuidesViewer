@@ -12711,9 +12711,6 @@ ZygorGuidesViewer:RegisterInclude("Love is in the Air Main Quest",[[
 		..turnin A Friendly Chat...##24657
 ]])
 ZygorGuidesViewer:RegisterInclude("Love is in the Air Dailies",[[
-		goto Ironforge,33.5,65.6
-		.talk Kwee Q. Peddlefeet##16075
-		..accept A Gift for the Lord of Ironforge##24609
 	step
 		goto Stormwind City,61.6,75.3
 		.talk Inspector Snip Snagglebolt##38066
@@ -12797,10 +12794,6 @@ ZygorGuidesViewer:RegisterInclude("Love is in the Air Dailies",[[
 		goto 32.8,54.5
 		.talk Prophet Velen##17468
 		..turnin A Gift for the Prophet##24611
-	step
-		goto Ironforge,40.0,55.1
-		.talk King Magni Bronzebeard##2784
-		..turnin A Gift for the Lord of Ironforge##24609
 	step
 		goto Stormwind City,80,38.4
 		.talk King Varian Wrynn##29611
@@ -12886,6 +12879,14 @@ ZygorGuidesViewer:RegisterInclude("Love is in the Air Dailies",[[
 		.talk Inspector Snip Snagglebolt##38066
 		..turnin Crushing the Crown##28934
 		only if level >= 81
+	step
+		goto Ironforge,33.5,65.6
+		.talk Kwee Q. Peddlefeet##16075
+		..accept A Gift for the Lord of Ironforge##24609
+	step
+		goto Ironforge,40.0,55.1
+		.talk King Magni Bronzebeard##2784
+		..turnin A Gift for the Lord of Ironforge##24609
 ]])
 ZygorGuidesViewer:RegisterInclude("Love is in the Air Achievement",[[
 		'You will need Love Tokens in order to purchase items from vendors in this guide section.
@@ -42246,7 +42247,7 @@ ZygorGuidesViewer:RegisterInclude("Alliance_Battlepet_Quests",[[
 		.talk Courageous Yon##66738
 		|tip You will not be able to challenge Courageous Yon if you have the "Pet Recovery" debuff, wait for it to fall off.
 		.' Let's fight!
-		|tip Courageous Yon has a Flying Pet, and two Critter Pets. Use Beast type attacks on his Critters, and Magic type attacks on his Flying. Your pets should all be level 25.
+		|tip Courageous Yon has a Flying Pet, a Critter Pet, and a Beast Pet. Use Beast type attacks on his Critter, Mechanical type attacks on his Beast, and Magic type attacks on his Flying. Your pets should all be level 25.
 		.' Defeat Courageous Yon |q 31930/4
 		.' He can also be found at [44.7,52.4]
 	step

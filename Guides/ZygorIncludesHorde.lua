@@ -37831,7 +37831,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 		.talk Courageous Yon##66738
 		|tip You will not be able to challenge Courageous Yon if you have the "Pet Recovery" debuff, wait for it to fall off.
 		.' Let's fight!
-		|tip Courageous Yon has a Flying Pet, and two Critter Pets. Use Beast type attacks on his Critters, and Magic type attacks on his Flying. Your pets should all be level 25.
+		|tip Courageous Yon has a Flying Pet, a Critter Pet, and a Beast Pet. Use Beast type attacks on his Critter, Mechanical type attacks on his Beast, and Magic type attacks on his Flying. Your pets should all be level 25.
 		.' Defeat Courageous Yon |q 31952/4
 		.' He can also be found at [44.7,52.4]
 	step
