@@ -4964,7 +4964,7 @@ goto 77.7,65.5
 ..turnin 26651
 ..accept 26668
 step
-'Watch the cutscene
+.' Watch the cutscene
 .' Blow up Render's Valley |q 26668/1
 step
 ding 20
@@ -4989,17 +4989,16 @@ goto 67.6,31.1
 ..turnin 26693
 ..accept 26694
 step
-goto 68.3,34.6
-.kill 20 Shadowhide Gnoll##433+ |q 26692/1
-.' You can find more Shadowhide Gnolls around [Redridge Mountains,75.4,51.5]
-step
 goto Redridge Mountains 72.1,44.9
 .click Ward of Ilgalar##8121
-|confirm
-step
+.|tip It is a purple bubble blocking the doorway to this tower
 .' Enter the tower and head to the top
 .from Grand Magus Doane##397
 .' Confront Grand Magus Doane |q 26694/1
+step
+goto 68.3,34.6
+.kill 20 Shadowhide Gnoll##433+ |q 26692/1
+.' You can find more Shadowhide Gnolls around [Redridge Mountains,75.4,51.5]
 step
 goto 77.1,51.5 |n
 .' Follow the path up |goto 77.1,51.5,0.5 |noway |c

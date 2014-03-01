@@ -3251,7 +3251,7 @@ goto 71.6,92.9
 step
 goto 71.5,93.1
 .talk 59441
-.|tip She is upstairs in this building
+.|tip He is upstairs in this building
 ..turnin 30508
 ..accept 30512
 step
