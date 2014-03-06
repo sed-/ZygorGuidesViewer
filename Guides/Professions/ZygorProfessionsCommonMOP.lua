@@ -1844,18 +1844,18 @@ ZygorGuidesViewer:RegisterInclude("Cooking_520-600",[[
 	label	cooking_mastery_start
 		'Here is where you will start your Mastery Cooking:
 		.' Remember to open your Cooking Window |cast Cooking##2550
+		.' Click here for Way of the Grill - Strength Food |confirm |next Cooking_Grill |only if skill('Way of the Grill')<600
+		.' You have maxed out Way of the Grill |only if skill('Way of the Grill')==600
+		.' Click here for Way of the Wok - Agility Food |confirm |next Cooking_Wok |only if skill('Way of the Wok')<600
+		.' You have maxed out Way of the Wok |only if skill('Way of the Wok')==600
+		.' Click here for Way of the Pot - Intellect Food |confirm |next Cooking_Pot |only if skill('Way of the Pot')<600
+		.' You have maxed out Way of the Pot |only if skill('Way of the Pot')==600
+		.' Click here for Way of the Steamer - Spirit Food |confirm |next Cooking_Steamer |only if skill('Way of the Steamer')<600
+		.' You have maxed out Way of the Steamer |only if skill('Way of the Steamer')==600
 		.' Click here for Way of the Oven - Stamina Food |confirm |next Cooking_Oven |only if skill('Way of the Oven')<600
 		.' You have maxed out Way of the Oven |only if skill('Way of the Oven')==600
 		.' Click here for Way of the Brew - Mana drinks and Random Food buffs |confirm |next Cooking_Brew |only if skill('Way of the Brew')<600
 		.' You have maxed out Way of the Brew |only if skill('Way of the Brew')==600
-		.' Click here for Way of the Wok - Agility Food |confirm |next Cooking_Wok |only if skill('Way of the Wok')<600
-		.' You have maxed out Way of the Wok |only if skill('Way of the Wok')==600
-		.' Click here for Way of the Steamer - Spirit Food |confirm |next Cooking_Steamer |only if skill('Way of the Steamer')<600
-		.' You have maxed out Way of the Steamer |only if skill('Way of the Steamer')==600
-		.' Click here for Way of the Pot - Intellect Food |confirm |next Cooking_Pot |only if skill('Way of the Pot')<600
-		.' You have maxed out Way of the Pot |only if skill('Way of the Pot')==600
-		.' Click here for Way of the Grill - Strength Food |confirm |next Cooking_Grill |only if skill('Way of the Grill')<600
-		.' You have maxed out Way of the Grill |only if skill('Way of the Grill')==600
 		|next mastery_end
 
 //Way of the Oven

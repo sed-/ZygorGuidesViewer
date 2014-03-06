@@ -2995,7 +2995,7 @@ do
 							SetMapToCurrentZone()
 							return true
 						end
-					elseif ( textureIndex == 82 ) then
+					elseif ( textureIndex == 80 ) then
 						if UnitFactionGroup("player")=="Alliance" then
 							SetMapToCurrentZone()
 							return true

@@ -999,10 +999,7 @@ label menu
 '_Nat Pagle_ is your _Friend_. |only if rep("Nat Pagle")==Friend
 '_Nat Pagle_ is your _Good Friend_. |only if rep("Nat Pagle")==GoodFriend
 '_Nat Pagle_ is your _Best Friend_. |only if rep("Nat Pagle")==BestFriend
-.' You have maxed out your reputation with this individual. Please select a different guide. |only if rep("Nat Pagle")==BestFriend
-|confirm |next "end" |only if rep("Nat Pagle")==BestFriend
-|modelnpc Nat Pagle##63721
-|confirm |only if rep("Nat Pagle")<BestFriend
+|confirm
 step
 label menu2
 'In order to successfully gain rep with Nat Pagle you have to catch fish, so we recommend that you are at least 525 in Fishing.
@@ -1010,36 +1007,28 @@ label menu2
 |confirm
 step
 label menu3
-'Click here to be taken to catch the _Flying Tiger Gourami_. |confirm |next tiger
-.'_
-'Click here to be taken to catch the _Mimic Octopus_. |confirm |next octo
-.'_
-'Click here to be taken to catch the _Spinefish Alpha_. |confirm |next alpha
+'Click here to start fishing! |confirm |next fishrun
 .'_
 'Click here to turn in the fish to Nat Pagle for daily reputation gains. |confirm |next turnin
 step
-label tiger
-goto Krasarang Wilds 64.0,28.3
+label fishrun
+goto Kun-Lai Summit 72.7,93.1
 .' Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
-.' Use your Fishing skill to fish in the water here. You can look for fishing pools around the beach also. |cast Fishing##7620.
+.' Use your Fishing skill to fish in the water here. You can look for fishing pools around the beach also |cast fishing##131474
 .collect 1 Flying Tiger Gourami##86542
 ..accept 31443 |use Flying Tiger Gourami##86542
-|next menu3
 step
-label octo
-goto Kun-Lai Summit 74.0,29.0
+goto Kun-Lai Summit 70.8,84.2
 .' Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
-.' Use your Fishing skill to fish in the water here. You can look for fishing pools around the area to increase your chances. |cast Fishing##7620.
-.collect 1 Mimic Octopus##86545
-..accept 31446 |use Mimic Octopus##86545
-|next menu3
-step
-label alpha
-goto Kun-Lai Summit 72.5,86.4
-.' Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
-.' Use your Fishing skill to fish in the water here. You can look for fishing pools around the area to increase your chances. |cast Fishing##7620.
+.' Use your Fishing skill to fish in the water here. You can look for fishing pools too |cast fishing##131474.
 .collect 1 Spinefish Alpha##86544
 ..accept 31444 |use Spinefish Alpha##86544
+step
+goto Kun-Lai Summit 57.9,21.9
+.' Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
+.' Use your Fishing skill to fish in the water here. You can look for fishing pools too |cast fishing##131474.
+.collect 1 Mimic Octopus##86545
+..accept 31446 |use Mimic Octopus##86545
 |next menu3
 step
 label turnin
@@ -1049,10 +1038,6 @@ goto Krasarang Wilds 68.4,43.5
 ..turnin 31446
 ..turnin 31443
 |next menu
-step
-label "end"
-'You have reached the end of the guide.
-.' Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Mists of Pandaria\\Lorewalkers",[[
 description This guide will help you become Exalted with the Lorewalkers.

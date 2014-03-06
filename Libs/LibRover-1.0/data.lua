@@ -1250,8 +1250,8 @@ data.basenodes.travel = {
 -- == PORTALS == --
 
 	-- PANDARIA
-		"Stormwind City,68.8,17.1 -x- The Jade Forest,46.23,85.17 (A:PORTAL) {cond:PlayerCompletedQuest(29548)}",
-		"Orgrimmar 68.7,40.7 -x-  The Jade Forest,28.5,14.0 (H:PORTAL) {cond:PlayerCompletedQuest(29690)}",
+		"Stormwind City,68.8,17.1 -x- The Jade Forest,46.23,85.17 <title:Paw'don Village> (A:PORTAL) {cond:PlayerCompletedQuest(29548)}",
+		"Orgrimmar 68.7,40.7 -x-  The Jade Forest,28.5,14.0  <title:Honeydew Village> (H:PORTAL) {cond:PlayerCompletedQuest(29690)}",
 
 		"Vale of Eternal Blossoms/4,61.6,39.6 -to- Dalaran,55.86,46.81 (A:PORTAL)",
 		"Vale of Eternal Blossoms/4,68.5,52.8 -to- Shattrath City,54.97,40.23 (A:PORTAL)",
@@ -1274,8 +1274,8 @@ data.basenodes.travel = {
 		"Isle of Thunder/0 31.7,83.6 -to- Isle of Thunder/0 34.8,89.5 (A:PORTAL) {cond:not PlayerCompletedQuest(32644) and (ZGV:GetThunderStage()==1 or ZGV:GetThunderStage()==6)} {template:portal}",
 		"Isle of Thunder/0 52.02,45.04 -x- Isle of Thunder/0 62.86,32.36 (B:PORTAL)",
 
-		"Townlong Steppes 50.66,73.41 -x- Isle of Thunder/0 28.4,53.0 (H:PORTAL) {cond:PlayerCompletedQuest(32680) and not PlayerCompletedQuest(32212)} {template:portal}",
-		"Townlong Steppes 50.66,73.41 -x- Isle of Thunder/0 33.2,32.7 (H:PORTAL) {cond:PlayerCompletedQuest(32212)} {template:portal}",
+		"Townlong Steppes 50.66,73.41 <title:Shado-Pan Garrison> -x- Isle of Thunder/0 28.4,53.0 (H:PORTAL) {cond:PlayerCompletedQuest(32680) and not PlayerCompletedQuest(32212)} {template:portal}",
+		"Townlong Steppes 50.66,73.41 <title:Shado-Pan Garrison> -x- Isle of Thunder/0 33.2,32.7 (H:PORTAL) {cond:PlayerCompletedQuest(32212)} {template:portal}",
 
 		"Isle of Thunder/0 28.6,52.8 -to- Isle of Thunder/0 33.1,52.8 (H:PORTAL) {cond:not PlayerCompletedQuest(32212)} {template:portal}",
 		"Isle of Thunder/0 28.5,51.7 -to- Isle of Thunder/0 33.1,52.8 (H:PORTAL) {cond:not PlayerCompletedQuest(32212)} {template:portal}",
@@ -1357,8 +1357,8 @@ data.basenodes.travel = {
 	-- Orc -> Mulgore portal -> Darkmoon portal -> Mulgore
 
 	--You can enter anywhere, but only exit at one place
-	"Elwynn Forest 41.8,69.5 -to- Darkmoon Island 51.2,23.1 (B:PORTAL) {cond:ZGV:FindEvent('DARKMOON FAIRE')}",
-	"Mulgore 36.9,35.9 -to- Darkmoon Island 51.2,23.2 (B:PORTAL) {cond:ZGV:FindEvent('DARKMOON FAIRE')}",
+	"Elwynn Forest 41.8,69.5 -to- Darkmoon Island 51.2,23.1 <title:Darkmoon Faire> (B:PORTAL) {cond:ZGV:FindEvent('DARKMOON FAIRE')}",
+	"Mulgore 36.9,35.9 -to- Darkmoon Island 51.2,23.2 <title:Darkmoon Faire> (B:PORTAL) {cond:ZGV:FindEvent('DARKMOON FAIRE')}",
 
 	"Darkmoon Island 51.2,23.1 -to- Elwynn Forest 41.8,69.5 (A:PORTAL)",
 	"Darkmoon Island 50.6,90.6 -to- Elwynn Forest 41.8,69.5 (A:PORTAL)",

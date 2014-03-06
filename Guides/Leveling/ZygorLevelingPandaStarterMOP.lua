@@ -183,7 +183,7 @@ goto 54.0,21.0
 .|tip Just walking up to the Cart Driver will scare off the Amberleafs
 .from Amberleaf Scamp##54130+
 ..get 6 Stolen Training Supplies##72071 |q 29424/1
-'|modelnpc Min Dimwind##56503
+'|modelnpc Min Dimwind##54855
 step
 goto 55.1,32.4
 .talk 54943
@@ -648,7 +648,7 @@ goto 36.4,72.5
 ..accept 29793
 step
 goto 38.3,74.1
-.click Packed Explosion Charge##+ |tip They are smal bundles of red dynamite on the ground around this area.
+.click Packed Explosion Charge##9539+ |tip They are smal bundles of red dynamite on the ground around this area.
 ..get 6 Packed Explosion Charge##74955+ |q 30590/1
 .from Darkened Terror##56008+, Darkened Horror##56007+
 .' Kill #8# Darkened Terrors or Horrors |q 29793/1

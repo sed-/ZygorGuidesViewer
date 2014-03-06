@@ -81,7 +81,7 @@ goto 40.0,29.1
 .get Cask of Theramore Pale Ale |q 24474/2
 step
 goto 25.9,35.4
-.click Forgotten Dwarven Artifacts |tip They look like little mounds of snow on the ground.
+.click Forgotten Dwarven Artifacts##5333 |tip They look like little mounds of snow on the ground.
 .get 5 Forgotten Dwarven Artifact |q 24477/1
 .' You can find more at [Coldridge Valley,44.5,30.9]
 .' And also at [Coldridge Valley,72.8,24.5]
@@ -1024,7 +1024,7 @@ goto 30.7,29.1
 .kill 8 Goblin Assassin##50039+ |q 28792/1 |only Human Mage
 .kill 8 Goblin Assassin##50039+ |q 28795/1 |only Human Rogue
 .kill 8 Goblin Assassin##50039+ |q 31144/1 |only Human Monk
-.kill 8 Goblin Assassin##55039+ |q 29081/1 |only !Human
+.kill 8 Goblin Assassin##50039+ |q 29081/1 |only !Human
 .clicknpc Injured Stormwind Infantry##50047 |only !Monk
 .' Revive 4 Injured Soldiers |q 28813/1 |only Human Warrior
 .' Revive 4 Injured Soldiers |q 28809/1 |only Human Paladin
@@ -1146,6 +1146,7 @@ step
 goto 47.4,31
 .' Use your Runeforging ability while standing near the Runeforge |cast Runeforging |tip They look like big skull furnaces.
 .' Engrave your sword with the rune of your choice |q 12842/1
+'|model 8176
 step
 goto 48,28.5
 .talk 28357
@@ -1156,7 +1157,7 @@ goto 48.9,28.7
 .' Equip the Runed Soulblade |use Runed Soulblade##38707
 .click Acherus Soul Prison##8115
 .|tip It looks like a horned skull on the wall, chaining the prisoners
-.from Unworthy Initiate##29565, Unworthy Initiate##29565, Unworthy Initiate##29567, Unworthy Initiate##29566
+.from Unworthy Initiate##29519, Unworthy Initiate##29565, Unworthy Initiate##29567, Unworthy Initiate##29566, Unworthy Initiate##29520
 .' Dominate an Unworthy Initiate |q 12848/1
 step
 goto 48,28.5
@@ -1234,6 +1235,7 @@ step
 goto 51.7,35.1
 .' Walk around Death's Breach
 .' Challenge Death Knight Initiates to duel
+.from Death Knight Initiate##28392+, Death Knight Initiate##28394+
 .' Defeat 5 Death Knights in a duel |q 12733/1
 step
 goto 54.6,34.2
@@ -1267,6 +1269,7 @@ goto 55.6,43.2
 .' Use your Deliver Stolen Horse ability on your bar when standing next to Salanar the Horseman |petaction Deliver Stolen Horse
 step
 goto 52.5,34.6
+.talk 28653
 ..turnin 12680
 ..accept 12687
 step
@@ -1304,6 +1307,8 @@ goto 58.2,31
 .|tip It has a pretty low success rate, just keep trying
 .' Create 5 Scarlet Ghouls to follow you
 |confirm
+'|modelnpc 28819
+'|modelnpc 28897
 step
 goto 54.1,35
 .' Stand next to Gothik the Harvester |tip He is standing in front of a small roundish stone altar thing.  He has a goat skull on his head.
@@ -1409,6 +1414,10 @@ goto 55.8,65.8
 .' Attack Scarlet soldiers and stop hitting them when they start talking, so you don't kill them too fast
 .' Repeat until a soldier gives you information
 .' Reveal the "Crimson Dawn" |q 12720/1
+'|modelnpc Scarlet Commander##54386
+'|modelnpc Scarlet Preacher##28939
+'|modelnpc Scarlet Crusader##28940
+'|modelnpc Scarlet Marksman##28610
 step
 .' Go down into the crypt |goto 54.3,58.1 <5 |c
 step
@@ -1434,7 +1443,7 @@ step
 'Koltira Deathweaver forms a bubble and you have to fight the mobs as the come in waves
 .' Stay inside the bubble, it reduces spell damage done to you, so you'll live
 .from High Inquisitor Valroth##29001
-.click High Inquisitor Valroth's Remains
+.click High Inquisitor Valroth's Remains##2951
 .get Valroth's Head |q 12727/1
 step
 ding 57
@@ -2087,6 +2096,7 @@ step
 goto 49.8,34.4
 .' Use Harvest Watcher Heart on an Overloaded Harvest Golem |use Harvest Watcher Heart##57954
 .' Enable an Overloaded Harvest Golem |q 26257/1
+'|modelnpc Overloaded Harvest Golem##42601
 step
 goto 47.5,35.0
 .' Use the abilities on your action bar to do the following:
@@ -2132,6 +2142,7 @@ goto 56.9,57.6
 .' Use Westfall Stew next to Homeless Stormwind Citizens, West Plains Drifters, and Transients |use Westfall Stew##57991
 .' Feed 20 Westfall Homeless |q 26271/1
 .' You can find more at [58.2,40.2]
+'|modelnpc Homeless Stormwind Citizen##42386
 step
 goto 56.3,47.5
 .talk 234
@@ -2215,7 +2226,7 @@ goto 41.3,66.5
 .get Mysterious Propaganda |q 26295/4
 step
 goto 43.3,69.9
-.click The Moonbrook Times##204015
+.click The Moonbrook Times##9130
 .get Issue of the Moonbrook Times |q 26295/2
 step
 goto 43.5,66.6
@@ -2252,6 +2263,7 @@ goto Westfall/17 26.0,51.1 |n
 .' Enter the Defias Hideout and follow the trail of homeless people to this spot
 .' Go through the swirling portal into the Deadmines
 |confirm
+'|model Deadmines Portal##1327
 step
 'Inside the Deadmines, right at the entrance, do the following:
 .' Use your Incense Burner |use Incense Burner##58147
@@ -2259,6 +2271,7 @@ step
 step
 'Go back through the dungeon portal out of the Deadmines dungeon
 |confirm
+'|model Deadmines Portal##1327
 step
 goto Westfall,42.6,71.7
 .' Follow the trail of homeless people to leave The Deadmines
@@ -3052,8 +3065,9 @@ goto 49.9,57.7
 step
 goto 50.5,55.9
 .' While disgued as the plant:
-.' Use your Potent Murloc Pheromones on the Mosshide Representative |use Potent Murloc Pheromones##60503 |tip He's a gnoll.
+.' Use your Potent Murloc Pheromones on the Mosshide Representative |use Potent Murloc Pheromones##60503
 .' Tag the Mosshide |q 26868/1
+'|modelnpc Mosshide Representative##44262
 step
 goto 45.7,64.1 |n
 .' Follow the path up |goto 45.7,64.1,0.5 |noway |c
@@ -3072,6 +3086,7 @@ goto 56.4,66.0
 .' Find Huldar, Miran, and Saean |q 13639/1
 |modelnpc Huldar##2057
 |modelnpc Miran##1379
+|modelnpc Saean##1380
 step
 goto 56.4,66.0
 .talk 2057
@@ -3184,7 +3199,7 @@ goto 74.9,44.6
 .' Click Stabthistle Seed
 .|tip You can find a lot of these around the base of trees
 .get 6 Stabthistle Seed |q 27025/1
-|modelnpc Stabthistle Seed##190459
+|model Stabthistle Seed##7918
 step
 goto 53.7,38.1
 .click Stolen Explorers' League Document##8032
@@ -3879,7 +3894,8 @@ goto 40.3,49.1
 step
 goto 27.3,30.9
 .kill 10 Syndicate Mercenary##2589+ |q 26093/1
-|modelnpc Syndicate Pathstalker##2587+, Syndicate Highwayman##2586+
+|modelnpc Syndicate Pathstalker##2587+
+|modelnpc Syndicate Highwayman##2586+
 step
 goto 40.0,48.9
 .talk 2700
@@ -3963,7 +3979,8 @@ goto 25.9,83.9
 ..accept 26628
 step
 goto 25.7,83.2
-.' Click the Cannon to easily defeat the incoming Naga
+.click the Cannon##245
+.' Defeat the incoming Naga
 .' Kill the naga that attack Faldir's Cove
 .' Defend Shakes O'Breen |q 26628/1
 .|tip This quest is known to be bugged as of 5.2. If it seems to glitch out on you, just skip this and go on.
@@ -4370,7 +4387,7 @@ goto 54.4,67.6 |n
 .' Enter the tunnel |goto 54.4,67.6,0.5 |noway |c
 step
 goto 59.4,77.7
-.clicknpc Sacrificed Vilebranch##42857+
+.clicknpc Sacrificed Vilebranch##42857
 .|tip You can do this while mounted
 .get 8 Spider Idol |q 26517/1
 step
@@ -6793,16 +6810,6 @@ step
 goto 41.2,73.1
 .talk 2496
 ..turnin 26703
-step
-goto 41.5,74.4
-.talk 49635
-..accept 28749
-step
-goto 41.5,74.4
-.talk 49635
-..' Ask him to prepare the portal
-.click Portal to Andorhal##34252
-.' You will teleport to Andorhal |goto Western Plaguelands,40.8,70.3,0.5 |noway |c
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Eastern Kingdoms 1-60\\Western Plaguelands (34-39)\\Western Plaguelands (34-39)",[[
 author support@zygorguides.com
@@ -6810,6 +6817,18 @@ image Western Plaguelands
 next Zygor's Alliance Leveling Guides\\Eastern Kingdoms 1-60\\Eastern Plaguelands (39-44)\\Eastern Plaguelands (39-44)
 startlevel 34
 dynamic on
+step
+goto The Cape of Stranglethorn 41.5,74.4
+.talk 49635
+..accept 28749
+|only if completedq(26703)
+step
+goto 41.5,74.4
+.talk 49635
+..' Ask him to prepare the portal
+.click Portal to Andorhal##34252
+.' You will teleport to Andorhal |goto Western Plaguelands,40.8,70.3,0.5 |noway |c
+|only if completedq(26703)
 step
 goto Western Plaguelands,42.9,85.1
 .talk 12596
@@ -6929,6 +6948,7 @@ step
 goto 52.1,83.5
 .' Use your Chillwind Tribute next to Uther's Tomb |use Chillwind Tribute##61920 |tip It looks like a stone statue of a paladin.
 .' Receive Uther's Blessing |q 27169/1
+|model Uther's Tomb##6815
 step
 goto 52.0,82.8
 .talk 1854
@@ -7349,7 +7369,9 @@ step
 goto 44.9,67.2
 .kill 20 Forsaken Trooper |q 27202/1
 .kill 9 Lesser Val'kyr |q 27201/1
-|modelnpc Forsaken Trooper##45241, Forsaken Trooper##45242, Forsaken Trooper##45243
+|modelnpc Forsaken Trooper##45241
+|modelnpc Forsaken Trooper##45242
+|modelnpc Forsaken Trooper##45243
 |modelnpc Lesser Val'kyr##45239
 step
 goto 39.9,69.5

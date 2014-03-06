@@ -7491,7 +7491,7 @@ label "start"
 'Moving to the Second Scenario |next "scenario2" |only if thunderstage()>=3 and not completedq(32654)
 'Moving to the Third Scenario |next "scenario3" |only if thunderstage()>=4 and not completedq(32652)
 'Moving to the Fourth Scenario |next "scenario4" |only if thunderstage()>=5 and not completedq(32655)
-'Moving to the Fifth Scenario |next "post5" |only if thunderstage()>5
+'Moving to the Fifth Scenario |next "post5" |only if thunderstage()>5 and not achieved(8099)
 'Achievement complete |next "end" |only if achieved(8099)
 'You are currently {thunderprogress()}% into Stage {thunderstage()}
 'If a quest is not offered today, your realm has not unlocked the next stage yet.

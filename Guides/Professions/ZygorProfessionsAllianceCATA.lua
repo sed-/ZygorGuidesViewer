@@ -9697,8 +9697,8 @@ step
 .' Collect 23 Epicurean's Awards |condition curcount(81)>=23
 |confirm
 step
-goto Elwynn Forest 41.9,67.1
-.talk 66
+goto Stormwind City 55.0,69.6
+.talk 5494
 ..buy Fishing Pole##6256
 ..buy 5 Shiny Bauble##6529
 ..buy 1 Recipe: Brilliant Smallfish##6325
@@ -9710,15 +9710,15 @@ goto The Cape of Stranglethorn 42.8,69.0
 step
 .learn Brilliant Smallfish##7751 |use Recipe: Brilliant Smallfish##6325
 step
-goto Elwynn Forest/0 44.4,66.0
-.talk 1430
+goto Stormwind City 77.2,53.3
+.talk 5482
 .skillmax Cooking,75
 step
-goto Elwynn Forest 47.6,62.3
-.talk 1651
+goto Stormwind City 54.8,69.6
+.talk 5493
 .skillmax Fishing,75
 step
-goto Elwynn Forest/0 47.7,62.6
+goto Stormwind City 54.6,69.0
 .' Equip your Fishing Pole |use Fishing Pole##6256
 .' Use your _Shiny Bauble_ until you have level 25 Fishing. |use Shiny Bauble##6529
 .' Use your Fishing skill to fish in the water all around the wooden dock |cast Fishing##131474
@@ -9728,11 +9728,11 @@ goto Elwynn Forest/0 47.7,62.6
 ..collect 25 Raw Bristle Whisker Catfish##6308 |n
 .' You will need at least _35 Raw Brilliant Smallfish_ and _20 Raw Longjaw Mud Snappers_.
 step
-goto Elwynn Forest 47.6,62.3
-.talk 1651
+goto Stormwind City 54.8,69.6
+.talk 5493
 .skillmax Fishing,150
 step
-goto Elwynn Forest/0 47.7,62.6
+goto Stormwind City 54.6,69.0
 .' Equip your Fishing Pole |use Fishing Pole##6256
 .' Use your _Shiny Bauble_. |use Shiny Bauble##6529
 .' Use your Fishing skill to fish in the water all around the wooden dock |cast Fishing##131474
@@ -9741,21 +9741,21 @@ goto Elwynn Forest/0 47.7,62.6
 ..collect 25 Raw Bristle Whisker Catfish##6308
 .' Get your Fishing skill to level 150 |skill Fishing,150
 step
-goto Elwynn Forest 47.6,62.3
-.talk 1651
+goto Stormwind City 54.6,69.0
+.talk 5493
 .skillmax Fishing,225
 step
-goto Elwynn Forest 44.3,66.0
+goto Stormwind City 77.3,53.3
 .create 50 Brilliant Smallfish,Cooking,50
 .' If you didn't reach 50 Cooking, you will need to fish up more _Raw Brilliant Smallfish_.
 step
-goto Elwynn Forest 44.4,66.0
-.talk 1430
+goto Stormwind City 77.2,53.3
+.talk 5482
 .skillmax Cooking,150
 step
 .learn Longjaw Mud Snapper##7753 |use Recipe: Longjaw Mud Snapper##6328
 step
-goto Elwynn Forest 44.3,66.0
+goto Stormwind City 77.3,53.3
 .create Longjaw Mud Snapper##7753,Cooking,100
 .' If you didn't reach 100 Cooking, you will need to fish up more _Raw Longjaw Mud Snappers_.
 step
@@ -9870,6 +9870,11 @@ goto Stormwind City/0 77.3,53.2
 .learn Nightfin Soup##18243
 .learn Poached Sunscale Salmon##18244
 step
+goto Blasted Lands 44.4,87.7
+.talk 44334
+.buy 50 Refreshing Spring Water##159 |or
+.collect 50 Refreshing Spring Water##159
+step
 goto Blasted Lands/0 40.7,77.1
 .' Depending on the time of day, you will catch either Sunscale Salmon or Nightfin Snappers.
 .' Equip your Fishing Pole |use Fishing Pole##6256
@@ -9890,8 +9895,10 @@ goto Blasted Lands/0 40.7,77.1
 ..collect 55 Raw Nightfin Snapper##13759 |or
 ..collect 30 Raw Whitescale Salmon##13889
 step
+goto Blasted Lands 40.5,77.0
 .' Create a Cooking Fire |cast Cooking Fire##818
 .create Nightfin Soup##18243,Cooking,285
+.' This recipe also requires Refreshing Spring Water to make. If You run out you can buy more from the innkeeper at [Blasted Lands,44.4,87.7]
 .create Poached Sunscale Salmon##18244,Cooking,285
 step
 .learn Baked Salmon##18247 |use Recipe: Baked Salmon##13949

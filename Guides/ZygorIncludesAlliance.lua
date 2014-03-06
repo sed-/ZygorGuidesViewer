@@ -21172,13 +21172,6 @@ ZygorGuidesViewer:RegisterInclude("A_Anglers", [[
 		.'_
 		.' If these quests are unavailable today, click here. |confirm
 	step
-		goto 67.5,44.6
-		.talk Fiznix##60136
-		..accept Like Bombing Fish In A Barrel##30678 |or
-		..accept Scavenger Hunt##30698 |or
-		.'_
-		.' If this quest is unavailable today, click here. |confirm
-	step
 		goto 67.5,43.5
 		.talk Angler Shen##59586
 		..accept Snapclaw##30700 |or
@@ -21213,6 +21206,24 @@ ZygorGuidesViewer:RegisterInclude("A_Anglers", [[
 		..accept Viseclaw Soup##30701 |or
 		.'_
 		.' If these quests are unavailable today, click here. |confirm
+	step
+		goto 67.5,44.6
+		.talk Fiznix##60136
+		..accept Like Bombing Fish In A Barrel##30678 |or
+		..accept Scavenger Hunt##30698 |or
+		.'_
+		.' If this quest is unavailable today, click here. |confirm
+	step
+		goto 67.5,44.8
+		.click Goblin Fishing Raft
+		.' Ride a Goblin Fishing Raft |havebuff Rafting
+		|only if havequest(30698)
+	step
+		goto 64.3,50.7
+		'Use your fishing skill in the Shipwreck Debris pools to fish up 15 Rusty Shipwreck Debris.
+		.get 15 Shipwreck Debris |q 30698/1
+		.' You can find more Debris at [64.3,50.6]
+		|only if havequest(30698)
 	step
 		goto 68.4,43.1
 		.clicknpc Frenzied Reef Shark##60408
@@ -21280,17 +21291,6 @@ ZygorGuidesViewer:RegisterInclude("A_Anglers", [[
 		.from Prickly Puffer##60037
 		.get 5 Prickly Puffer Spine##80529 |q 30658/1
 		|only if havequest(30658)
-	step
-		goto 67.5,44.8
-		.click Goblin Fishing Raft
-		.' Ride a Goblin Fishing Raft |havebuff Rafting
-		|only if havequest(30698)
-	step
-		goto 64.3,50.7
-		'Use your fishing skill in the Shipwreck Debris pools to fish up 15 Rusty Shipwreck Debris.
-		.get 15 Shipwreck Debris |q 30698/1
-		.' You can find more Debris at [64.3,50.6]
-		|only if havequest(30698)
 	step
 		goto 65.2,47.5
 		.click Pristine Crane Egg##1867

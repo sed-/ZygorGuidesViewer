@@ -73,7 +73,7 @@ ZygorGuidesViewer:RegisterInclude("h_begin_pandaria",[[
 	step
 		.' Use your abilities on your action bar.
 		.kill 80 Thunder Hold Troops |q 31765/1
-		.kill 9 Thunder Hold Cannons |q 31765/2 
+		.kill 9 Thunder Hold Cannons |q 31765/2
 		|modelnpc 66203
 		|modelnpc 66348
 		|modelnpc 66506
@@ -143,7 +143,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Dailies",[[
 		'Wait for the Cannon to Launch you |havebuff Interface\Icons\Spell_Magic_FeatherFall
 	step
 		goto Darkmoon Island,56.4,93.3
-		.' You will be launched throught the air. 
+		.' You will be launched throught the air.
 		.' You the __ to drop in the water in the target. You will gain more points for getting closer to the middle.
 		.' Earn 5 Target Points |q 29436/1
 		.' Click here to try again |confirm |next "target"
@@ -162,11 +162,11 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Dailies",[[
 		..accept He Shoots, He Scores!##29438
 	step
 		goto 49.3,60.8
-		.talk Rinling##14841	
+		.talk Rinling##14841
 		.' Tell him:
 		.' <Let's shoot!> |havebuff Interface\Icons\INV_Weapon_Rifle_05
 	step
-		'Shoot at the 3 targets. 
+		'Shoot at the 3 targets.
 		.' When you see a green marker appear over a target, make sure that you are aimed at it and _shoot_ |tip To aim, simply move the camera to face your current target.
 		.' Shoot 25 Targets |q 29438/1
 	step
@@ -197,7 +197,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Dailies",[[
 	step
 		goto 51.6,77.8
 		.talk Jessica Rogers##54485
-		.' Tell her: 
+		.' Tell her:
 		.' <Ready to play!> |havebuff Interface\Icons\INV_Jewelry_Ring_03
 	step
 		'Use your _Ring Toss_ ability to throw rings on the turtle.  |tip When aiming, move the marker over the middle of the turtle.
@@ -209,7 +209,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Dailies",[[
 		..turnin Target: Turtle##29455
 ]])
 
-ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Quests",[[ 
+ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Quests",[[
 	step
 		goto Mulgore,46.8,60.4
 		.talk Innkeeper Kauth##6747
@@ -273,7 +273,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Quests",[[
 		|only if skill("Cooking")>74
 	step
 		goto Darkmoon Island,52.9,68.0
-		.talk Stamp Thunderhorn##14845		
+		.talk Stamp Thunderhorn##14845
 		..accept Spoilin' for Salty Sea Dogs##29513
 		|only if skill("Fishing")>74
 	step
@@ -474,7 +474,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Quests",[[
 ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Achievements",[[
 	step
 	label	"main"
-		'To earn Achievements for the Darkmoon Faire, you will need to complete Dailies, Quests and other things. 
+		'To earn Achievements for the Darkmoon Faire, you will need to complete Dailies, Quests and other things.
 		.' Click here to do the Dailies Achievments |confirm always |next "dailies" |or
 		.' or
 		.' Click here to do the Profession Quests Achievements |confirm always |next "professions" |or
@@ -532,7 +532,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Achievements",[[
 		'Wait for the Cannon to Launch you |havebuff Interface\Icons\Spell_Magic_FeatherFall
 	step
 		goto Darkmoon Island,56.4,93.3
-		.' You will be launched throught the air. 
+		.' You will be launched throught the air.
 		.' You the __ to drop in the water in the target. You will gain more points for getting closer to the middle.
 		.' Earn 5 Target Points |q 29436/1
 		.' Score a Bullseye by landing in the middle of the target
@@ -553,11 +553,11 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Achievements",[[
 		..accept He Shoots, He Scores!##29438
 	step
 		goto 49.3,60.8
-		.talk Rinling##14841	
+		.talk Rinling##14841
 		.' Tell him:
 		.' <Let's shoot!> |havebuff Interface\Icons\INV_Weapon_Rifle_05
 	step
-		'Shoot at the 3 targets. 
+		'Shoot at the 3 targets.
 		.' When you see a green marker appear over a target, make sure that you are aimed at it and _shoot_ |tip To aim, simply move the camera to face your current target.
 		.' Shoot 25 Targets |q 29438/1
 		.' Shoot your gunt and hit a target very fast
@@ -590,7 +590,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Achievements",[[
 	step
 		goto 51.6,77.8
 		.talk Jessica Rogers##54485
-		.' Tell her: 
+		.' Tell her:
 		.' <Ready to play!> |havebuff Interface\Icons\INV_Jewelry_Ring_03
 	step
 		'Use your _Ring Toss_ ability to throw rings on the turtle.  |tip When aiming, move the marker over the middle of the turtle.
@@ -611,7 +611,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Achievements",[[
 		.' You have earned the Achievement Darkmoon Defender |achieve 6028 |only if achieved(6028)
 		.' You still need to earn the Achievement Darkmoon Defender |achieve 6028 |only if not achieved(6028)
 		.' You have earned the Achievement Darkmoon Despoiler |achieve 6029 |only if achieved(6029)
-		.' You still need to earn the Achievement Darkmoon Despoiler |achieve 6029 |only if not achieved(6029)   
+		.' You still need to earn the Achievement Darkmoon Despoiler |achieve 6029 |only if not achieved(6029)
 		|confirm always
 	step
 		goto Darkmoon Island 55.4,54.8
@@ -645,7 +645,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Achievements",[[
 		|only if skill("Cooking")>74
 	step
 		goto Darkmoon Island,52.9,68.0
-		.talk Stamp Thunderhorn##14845		
+		.talk Stamp Thunderhorn##14845
 		..accept Spoilin' for Salty Sea Dogs##29513
 		|only if skill("Fishing")>74
 	step
@@ -746,7 +746,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Achievements",[[
 		|only if skill("Cooking")>74 or skill("Alchemy")>74 or skill("Archaeology")>74
 	step
 		'Open your world map, find dig sites in Kalimdor and go to them |tip They look like small shovel icons on your world map that spawn in random places.  Once you get to the zone where the dig site is located, you will see the dig site on your map as a red highlighted area.
-		.' You can find _Fossil Fragments_ in these locations: 
+		.' You can find _Fossil Fragments_ in these locations:
 		.' Desolace
 		.' Dustwallow Marsh
 		.' Stonetalon Mountains
@@ -821,7 +821,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Achievements",[[
 		|only if skill("Cooking")>74
 	step
 		goto Darkmoon Island,52.9,68.0
-		.talk Stamp Thunderhorn##14845		
+		.talk Stamp Thunderhorn##14845
 		..turnin Spoilin' for Salty Sea Dogs##29513
 		|only if skill("Fishing")>74
 	step
@@ -953,7 +953,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Achievements",[[
 		'You have earned the Achievement Taking the Show on the Road! |achieve 6031 |only if achieved(6031)
 		.' You still need to earn the Taking the Show on the Road! |achieve 6031 |only if not achieved(6031)
 		'You have earned the Achievement I Was Promised a Pony! |achieve 6025 |only if achieved(6025)
-		.' You still need to earn the I Was Promised a Pony! |achieve 6025 |only if not achieved(6025)    
+		.' You still need to earn the I Was Promised a Pony! |achieve 6025 |only if not achieved(6025)
 		|confirm always
 	step
 		goto Darkmoon Island,50.5,69.5
@@ -990,7 +990,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Achievements",[[
 		.buy Deep Fried Candybar##19225 |n
 		.' Eat Deep Fried Candybar |achieve 6026/4 |use Deep Fried Candybar##19225
 		.buy Funnel Cake##33246 |n
-		.' Eat Funnel Cake |achieve 6026/6 |use Funnel Cake##33246 
+		.' Eat Funnel Cake |achieve 6026/6 |use Funnel Cake##33246
 		.buy Forest Strider Drumstick##33254 |n
 		.' Eat Forest Strider Drumstick |achieve 6026/5 |use Forest Strider Drumstick##33254
 		.buy Corn-Breaded Sausage##44940 |n
@@ -1021,7 +1021,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Achievements",[[
 		.' Use your Darkmoon Firework |achieve 6031/6 |use Darkmoon Firework##74142
 	step
 		goto Silvermoon City,50.7,16.4
-		.' Use your Darkmoon Firework |achieve 6031/4 |use Darkmoon Firework##74142	
+		.' Use your Darkmoon Firework |achieve 6031/4 |use Darkmoon Firework##74142
 	step
 		goto Tirisfal Glades,59.1,59.0 |n
 		.' Ride the Zeplin to Howling Fjord |goto Howling Fjord |noway |c
@@ -1528,7 +1528,7 @@ ZygorGuidesViewer:RegisterInclude("H_Lunar_Festival_Elders",[[
 		path 68.3,68.4		 68.8,56.4	68.9,36.1
 		.' Follow the path, clicking here to continue. |confirm
 	step
-		goto Utgarde Pinnacle,48.7,23.1 
+		goto Utgarde Pinnacle,48.7,23.1
 		.talk Elder Chogan'gada##30538
 		..accept Chogan'gada the Elder##13067
 ]])
@@ -1740,7 +1740,7 @@ ZygorGuidesViewer:RegisterInclude("H_Love_Is_In_The_Air_Dailies",[[
 		.talk Kwee Q. Peddlefeet##38042
 		..accept A Gift for the Regent Lord of Quel'Thalas##24615
 	step
-		'This step depends on your character's level and what you want to do.  
+		'This step depends on your character's level and what you want to do.
 		.' If you don't have a lot of money, or don't want to spend any more, do this: |tip Go to a place where the mobs are at least green to you, they cannot be grey to you, or they won't drop the items you need.  Now, just kill the mobs until you collect 40 Lovely Charms.  You won't get a Lovely Charm from every mob you kill, so be prepared to grind for a while.
 		..collect 40 Lovely Charm##49655 |n
 		.' If you have a lot of money, or don't care about spending money and just want to do the quests very quickly, do this: |tip Go to the Auction House and buy 4 Lovely Charm Bracelets.
@@ -1803,7 +1803,7 @@ ZygorGuidesViewer:RegisterInclude("H_Love_Is_In_The_Air_Dailies",[[
 
 ZygorGuidesViewer:RegisterInclude("H_Love_Is_In_The_Air_Achievements",[[
 	step
-		'You will need _Love Tokens_ in order to purchase items from vendors in this guide section. |tip You can get Love Tokens by completing the dailies in the Love is in the Air Dailies section. 
+		'You will need _Love Tokens_ in order to purchase items from vendors in this guide section. |tip You can get Love Tokens by completing the dailies in the Love is in the Air Dailies section.
 		|confirm always
 	step
 		goto Orgrimmar,53.1,77.0
@@ -1917,15 +1917,15 @@ ZygorGuidesViewer:RegisterInclude("H_Love_Is_In_The_Air_Achievements",[[
 		.' Create 12 Lovely Charm Bracelets |achieve 260
 	step
 		'Kill these certain bosses in any of the following dungeons: |tip You can enter either Normal or Heroic difficulty, it doesn't matter.
-		.' _Drahga Shadowburner_ in Grim Batol: 
-		.' _Corla, Herald of Twilight_ in Blackrock Caverns: 
+		.' _Drahga Shadowburner_ in Grim Batol:
+		.' _Corla, Herald of Twilight_ in Blackrock Caverns:
 		.' _High Priestess_ Azil in The Stonecore:
 		.' _Admiral Ripsnarl_ in Deadmines: And
 		.' _Lord Godfrey_ in Shadowfang Keep
 		.' Get either of these 2 items as a random drop from these bosses:
 		.collect 1 Bouquet of Red Roses##22206 |n
 		.collect 1 Bouquet of Ebon Roses##44731 |n
-		.' Obtain a Bouquet of Red or Ebon Roses during the Love is in the Air celebration |achieve 1703 
+		.' Obtain a Bouquet of Red or Ebon Roses during the Love is in the Air celebration |achieve 1703
 	step
 		'Congratulations, you are a Fool For Love!
 ]])
@@ -1936,7 +1936,7 @@ ZygorGuidesViewer:RegisterInclude("H_Noblegarden_Achievements",[[
 		|confirm
 	step
 		goto Mulgore,47.2,59.3
-		.click Brightly Colored Eggs##1407+ 
+		.click Brightly Colored Eggs##1407+
 		|tip There is at least one available at all times. If Bloodhoof Village is too crowded with other players looking for eggs, you can also find them at Razor Hill, Falconwing Square, and Brill.
 		.collect Brightly Colored Egg##45072+ |n
 		.' Click Brightly Colored Eggs in your bags |use Brightly Colored Egg##45072
@@ -1944,7 +1944,7 @@ ZygorGuidesViewer:RegisterInclude("H_Noblegarden_Achievements",[[
 		.' Eat 100 Noblegarden Chocolates |achieve 2418 |use Noblegarden Chocolate##44791
 		.' Discover a White Tuxedo Shirt by opening Brightly Colored Eggs |achieve 248/1
 		.' Discover Black Tuxedo Pants by opening Brightly Colored Eggs |achieve 248/2
-		.' Discover an Elegant Dress by opening Brightly Colored Eggs |achieve 249                                              
+		.' Discover an Elegant Dress by opening Brightly Colored Eggs |achieve 249
 		.' If you've eaten 100 chocolates and want to buy these items to continue, click here to continue |confirm
 	step
 		'If you don't already have these items, collect Noblegarden Chocolates and purchase them from the Noblegarden Merchant at [47.1,59.9]:
@@ -1957,7 +1957,7 @@ ZygorGuidesViewer:RegisterInclude("H_Noblegarden_Achievements",[[
 		goto 47.2,59.3
 		.' Use your Spring Rabbit's Foot in your bags to get a Spring Rabbit companion |use Spring Rabbit's Foot##44794
 		.' Bring out your Spring Rabbit companion |tip Press P to bring up your Spellbook and click on the Companions ribbon, then click the Spring Rabbit icon.
-		.' Find a player with a Spring Rabbit next to them around Bloodhoof Village  
+		.' Find a player with a Spring Rabbit next to them around Bloodhoof Village
 		.' Find your Spring Rabbit another one to love in Bloodhoof Village |achieve 2497/1
 		|modelnpc Spring Rabbit##32791
 	step
@@ -1988,13 +1988,13 @@ ZygorGuidesViewer:RegisterInclude("H_Noblegarden_Achievements",[[
 	step
 		goto Durotar,52.5,42.7
 		.' Bring out your Spring Rabbit companion |tip Press P to bring up your Spellbook and click on the Companions ribbon, then click the Spring Rabbit icon.
-		.' Find a player with a Spring Rabbit next to them around Razor Hill 
+		.' Find a player with a Spring Rabbit next to them around Razor Hill
 		.' Find your Spring Rabbit another one to love in Razor Hill |achieve 2497/4
 		|modelnpc Spring Rabbit##32791
 	step
 		goto Tirisfal Glades,61.0,52.7
 		.' Bring out your Spring Rabbit companion |tip Press P to bring up your Spellbook and click on the Companions ribbon, then click the Spring Rabbit icon.
-		.' Find a player with a Spring Rabbit next to them around Brill 
+		.' Find a player with a Spring Rabbit next to them around Brill
 		.' Find your Spring Rabbit another one to love in Brill |achieve 2497/2
 		|modelnpc Spring Rabbit##32791
 	step
@@ -2004,7 +2004,7 @@ ZygorGuidesViewer:RegisterInclude("H_Noblegarden_Achievements",[[
 	step
 		goto Eversong Woods,47.5,46.5
 		.' Bring out your Spring Rabbit companion |tip Press P to bring up your Spellbook and click on the Companions ribbon, then click the Spring Rabbit icon.
-		.' Find a player with a Spring Rabbit next to them around Falconwing Square 
+		.' Find a player with a Spring Rabbit next to them around Falconwing Square
 		.' Find your Spring Rabbit another one to love in Falconwing Square |achieve 2497/3
 		|modelnpc Spring Rabbit##32791
 	step
@@ -2052,7 +2052,7 @@ ZygorGuidesViewer:RegisterInclude("H_Noblegarden_Quests_Dailies",[[
 		..accept A Tisket, a Tasket, a Noblegarden Basket##13503
 	step
 		'Search around Bloodhoof Village for Brightly Colored Eggs and click them:
-		.click Brightly Colored Egg##1407+ 
+		.click Brightly Colored Egg##1407+
 		|tip There is at least one available at all times. If Bloodhoof Village is too crowded with other players looking for eggs, you can also find them at Razor Hill, Falconwing Square, and Brill.
 		.collect Brightly Colored Egg##45072+ |n
 		.' Click Brightly Colored Eggs in your bags |use Brightly Colored Egg##45072
@@ -2155,7 +2155,7 @@ ZygorGuidesViewer:RegisterInclude("H_Children's_Week_Shattrath_Quests",[[
 		..turnin Children's Week##10942
 		..accept Hch'uu and the Mushroom People##10945
 		..accept A Trip to the Dark Portal##10951
-		..accept Visit the Throne of the Elements##10953 
+		..accept Visit the Throne of the Elements##10953
 	step
 		goto Nagrand,60.7,22.3
 		.' Use your Blood Elf Orphan Whistle to summon your Blood Elf Orphan |use Blood Elf Orphan Whistle##31880
@@ -2225,7 +2225,7 @@ ZygorGuidesViewer:RegisterInclude("H_Children's_Week_Oracle_Quests",[[
 		..turnin Little Orphan Roo Of The Oracles##13926
 		..accept The Biggest Tree Ever!##13929
 		..accept The Bronze Dragonshrine##13933
-		..accept Playmates!##13950 
+		..accept Playmates!##13950
 	step
 		goto Grizzly Hills,50.8,42.8
 		.' Use your Oracle Orphan Whistle to summon your Oracle Orphan |use Oracle Orphan Whistle##46397
@@ -2300,7 +2300,7 @@ ZygorGuidesViewer:RegisterInclude("H_Children's_Week_Wolvar_Quests",[[
 		..turnin Little Orphan Kekek Of The Wolvar##13927
 		..accept Home Of The Bear-Men##13930
 		..accept The Bronze Dragonshrine##13934
-		..accept Playmates!##13951 
+		..accept Playmates!##13951
 	step
 		goto Grizzly Hills,50.8,42.8
 		.' Use your Wolvar Orphan Whistle to summon your Wolvar Orphan |use Wolvar Orphan Whistle##46396
@@ -2342,7 +2342,7 @@ ZygorGuidesViewer:RegisterInclude("H_Children's_Week_Wolvar_Quests",[[
 	step
 		'Use your Wolvar Orphan Whistle to summon your Wolvar Orphan |use Wolvar Orphan Whistle##46396
 		.talk Wolvar Orphan##33532
-		..turnin The Mighty Hemet Nesingwary##13957	
+		..turnin The Mighty Hemet Nesingwary##13957
 		..accept A Trip To The Wonderworks##13938
 	step
 		goto Dalaran,44.9,45.6
@@ -2402,7 +2402,7 @@ ZygorGuidesViewer:RegisterInclude("H_Children's_Week_Achievements",[[
 		'Use your Hearthstone while your Orphan is standing next to you |use Hearthstone##6948
 		.' Get the Home Alone Achievement |achieve 1791
 	step
-		'The following achievements are a little more dynamic, so we cannot walk you step-by-step through getting them. 
+		'The following achievements are a little more dynamic, so we cannot walk you step-by-step through getting them.
 		|confirm
 	step
 		'Find a group, run the Utgarde Pinnacle dungeon, and defeat King Ymiron |tip Make sure your Orphan is standing next to you when you defeat King Ymiron, or else you won't get credit for the achievement.
@@ -2420,7 +2420,7 @@ ZygorGuidesViewer:RegisterInclude("H_Children's_Week_Achievements",[[
 		'Enter the Warsong Gulch battleground and return a fallen flag |tip Make sure your Orphan is standing next to you when you return the fallen flag, or else you won't get credit for the achievement.
 		.' Return a fallen flag in Warsong Gulch |achieve 1786/4
 	step
-		'Congratulations, you do it For The Children! |achieve 1793/1 
+		'Congratulations, you do it For The Children! |achieve 1793/1
 ]])
 -- WINTERS VEIL --
 
@@ -2485,7 +2485,7 @@ ZygorGuidesViewer:RegisterInclude("H_Winterveil_Quests",[[
 	step
 		goto Hillsbrad Foothills,42.3,41.1
 		.talk Strange Snowman##13636
-		..accept You're a Mean One...##6983 
+		..accept You're a Mean One...##6983
 		|only if level>=80 and not havequest(6983)
 	step
 		goto Hillsbrad Foothills,43.6,39.0
@@ -2505,7 +2505,7 @@ ZygorGuidesViewer:RegisterInclude("H_Winterveil_Quests",[[
 	step
 		goto 49.6,78.0
 		.talk Great-father Winter##13445
-		..turnin A Smokywood Pastures' Thank You!##6984	
+		..turnin A Smokywood Pastures' Thank You!##6984
 ]])
 
 ZygorGuidesViewer:RegisterInclude("H_Winterveil_Achievements",[[
@@ -2545,7 +2545,7 @@ ZygorGuidesViewer:RegisterInclude("H_Winterveil_Achievements",[[
 		.learn Recipe: Egg Nog##21144 |use Recipe: Egg Nog##17201
 		|tip Requires a cooking skill of 325.
 		|only if not achieved(1688)
-		
+
 	step
 		#include "cooking_fire"
 		.create Egg Nog##21144,Cooking,1 total |achieve 1688/2
@@ -2736,7 +2736,7 @@ ZygorGuidesViewer:RegisterInclude("H_Winterveil_Achievements",[[
 	step
 		goto 51.1,15.6
 		.from Bash'ir Arcanist##22243+, Bash'ir Spell-Thief##22242+, Bash'ir Raider##22241+
-		.collect 10 Apexis Shard##32569 
+		.collect 10 Apexis Shard##32569
 	step
 		goto 32.8,40.5
 		.' Click the Fel Crystalforge |tip It looks like a big metal machine with green smoke coming out of it.
@@ -2824,18 +2824,18 @@ ZygorGuidesViewer:RegisterInclude("H_Winterveil_Achievements",[[
 		.' Open one of the presents underneath the Winter Veil tree once they are available. |achieve 1689
 		.' Earn the Achievement and Title Merrymaker! |achieve 1691
 	step
-		.' Click the presents under the tree on _December 25th_ and receive 
+		.' Click the presents under the tree on _December 25th_ and receive
 		.collect Gaudy Winter Veil Sweater##70923 |future |achieve 5854
 		.' Go to Stormwind, use your Sweater to sing carol's |achieve 5854/4
 		.' Go to Ironforge, use your Sweater to sing carol's |achieve 5854/3
 		.' Go to The Exodar, use your Sweater to sing carol's |achieve 5854/2
 		.' Go to Darnassus, use your Sweater to sing carol's |achieve 5854/1
 	step
-		.' Click the presents under the tree on _December 25th_ and receive 
-		.' Crashin' Thrashin' Racer. 
+		.' Click the presents under the tree on _December 25th_ and receive
+		.' Crashin' Thrashin' Racer.
 		.' Gain 25 crashes with your racer |achieve 1295
 	step
-		.' Congratulations, you have earned the _Merrymaker_ achievement! 
+		.' Congratulations, you have earned the _Merrymaker_ achievement!
 		|only if achieved(1691)
 ]])
 
@@ -3085,7 +3085,7 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Dailies_Horde",[[
 		goto 68.8,7.8
 		.talk Candace Fenlow##53763
 		..accept Clean Up in Undercity##29375
-		..accept Stink Bombs Away!##29374  
+		..accept Stink Bombs Away!##29374
 	step
 		'All around Undercity
 		Run to the Orange Smoke and clean up the stink bombs |use Arcane Cleanser##70727
@@ -3185,7 +3185,7 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Achievements_Horde",[[
 		..' Complete the Candy Bucket quest |tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. |use Handful of Treats##37586
 		.' Visit the Candy Bucket in Stonetalon Mountains, Grol'dom Farm |achieve 965/17 |use Handful of Treats##37586
 	step
-		goto Northern Barrens,49.5,57.9 
+		goto Northern Barrens,49.5,57.9
 		.click Candy Bucket##6404
 		..' Complete the Candy Bucket quest |tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. |use Handful of Treats##37586
 		.' Visit the Candy Bucket in Barrens, The Crossroads |achieve 965/16
@@ -4056,9 +4056,9 @@ ZygorGuidesViewer:RegisterInclude("Pilgrims_Bounty_Achievements_Horde",[[
 	step
 		goto 63.9,11.1
 		.talk Rose Standish##34683
-		.buy 20 Ripe Tirisfal Pumpkin##46796 
+		.buy 20 Ripe Tirisfal Pumpkin##46796
 		.buy 20 Simple Flour##30817
-		.buy 20 Mild Spices##2678 
+		.buy 20 Mild Spices##2678
 		.buy 20 Autumnal Herbs##44835
 	step
 		goto Tirisfal Glades,62.2,56.4
@@ -4155,7 +4155,7 @@ ZygorGuidesViewer:RegisterInclude("Pilgrims_Bounty_Achievements_Horde",[[
 	step
 		.' Fight to the end of the Instance.
 		.' Before Engaging Talon King Ikiss, equip
-		.' Equip Pilgrim's Attire |equipped Pilgrim's Attire##46800 |use Pilgrim's Attire##46800 |or 
+		.' Equip Pilgrim's Attire |equipped Pilgrim's Attire##46800 |use Pilgrim's Attire##46800 |or
 		.' Equip Pilgrim's Dress |equipped Pilgrim's Dress##44785 |use Pilgrim's Dress##44785 |or
 		.' Equip Pilgrim's Robe |equipped Pilgrim's Robe##46824 |use Pilgrim's Robe##46824  |or
 		.' Equip Pilgrim's Hat |equipped Pilgrim's Hat##46723 |use Pilgrim's Hat##46723
@@ -4164,28 +4164,28 @@ ZygorGuidesViewer:RegisterInclude("Pilgrims_Bounty_Achievements_Horde",[[
 		.' Earn the Terokkar Turkey Time Achievement. |achieve 3582
 	step
 		goto Durotar 46.4,14.6
-		.' Equip Pilgrim's Attire |equipped Pilgrim's Attire##46800 |use Pilgrim's Attire##46800 |or 
+		.' Equip Pilgrim's Attire |equipped Pilgrim's Attire##46800 |use Pilgrim's Attire##46800 |or
 		.' Equip Pilgrim's Dress |equipped Pilgrim's Dress##44785 |use Pilgrim's Dress##44785 |or
 		.' Equip Pilgrim's Robe |equipped Pilgrim's Robe##46824 |use Pilgrim's Robe##46824  |or
 		.clicknpc The Turkey Chair##34812
 		.' Take a seat at a Orgrimmar Bountiful Table. |achieve 3557/1
 	step
 		goto Thunder Bluff,29.1,62.5
-		.' Equip Pilgrim's Attire |equipped Pilgrim's Attire##46800 |use Pilgrim's Attire##46800 |or 
+		.' Equip Pilgrim's Attire |equipped Pilgrim's Attire##46800 |use Pilgrim's Attire##46800 |or
 		.' Equip Pilgrim's Dress |equipped Pilgrim's Dress##44785 |use Pilgrim's Dress##44785 |or
 		.' Equip Pilgrim's Robe |equipped Pilgrim's Robe##46824 |use Pilgrim's Robe##46824  |or
 		.clicknpc The Turkey Chair##34812
 		.' Take a seat at the Thunder Bluff Bountiful Table. |achieve 3557/3
 	step
 		goto Eversong Woods/0 55.5,53.1
-		.' Equip Pilgrim's Attire |equipped Pilgrim's Attire##46800 |use Pilgrim's Attire##46800 |or 
+		.' Equip Pilgrim's Attire |equipped Pilgrim's Attire##46800 |use Pilgrim's Attire##46800 |or
 		.' Equip Pilgrim's Dress |equipped Pilgrim's Dress##44785 |use Pilgrim's Dress##44785 |or
 		.' Equip Pilgrim's Robe |equipped Pilgrim's Robe##46824 |use Pilgrim's Robe##46824  |or
 		.clicknpc The Turkey Chair##34812
 		.' Take a seat at the Silvermoon City Bountiful Table. |achieve 3557/2
 	step
 		goto Undercity/0 67.6,14.5
-		.' Equip Pilgrim's Attire |equipped Pilgrim's Attire##46800 |use Pilgrim's Attire##46800 |or 
+		.' Equip Pilgrim's Attire |equipped Pilgrim's Attire##46800 |use Pilgrim's Attire##46800 |or
 		.' Equip Pilgrim's Dress |equipped Pilgrim's Dress##44785 |use Pilgrim's Dress##44785 |or
 		.' Equip Pilgrim's Robe |equipped Pilgrim's Robe##46824 |use Pilgrim's Robe##46824  |or
 		.clicknpc The Turkey Chair##34812
@@ -4390,7 +4390,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##28927 |instant
 	step
 		goto 48.3,72.4
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##28913 |instant
 	step
 		goto Dustwallow Marsh 33.5,30.9
@@ -4402,7 +4402,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##11847 |instant
 	step
 		goto 62.1,40.3
-		.click Alliance Bonfire##7734 
+		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11744 |instant
 	step
 		goto Tanaris 49.8,27.9
@@ -4410,7 +4410,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##11838 |instant
 	step
 		goto 52.7,30.1
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11762 |instant
 	step
 		goto Un'Goro Crater 60.0,62.9
@@ -4426,7 +4426,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##11836 |instant
 	step
 		goto 60.6,33.2
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11760 |instant
 	step
 		goto Feralas 72.4,47.8
@@ -4434,7 +4434,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##11849 |instant
 	step
 		goto 46.6,43.8
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11746 |instant
 	step
 		goto Desolace,26.2,76.9
@@ -4442,7 +4442,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##11845 |instant
 	step
 		goto 65.8,16.9
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11741 |instant
 	step
 		goto Stonetalon Mountains,38.2,68.3 |n
@@ -4465,7 +4465,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##11839 |instant
 	step
 		goto 61.3,47.1
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11763 |instant
 	step
 		 goto Ashenvale 51.4,66.2
@@ -4473,7 +4473,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##11841 |instant
 	step
 		goto 86.8,41.4
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11734 |instant
 	step
 		goto Ashenvale 15.3,20.1
@@ -4502,7 +4502,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Inform the Elder##12012
 	step
 		goto Darkshore 48.9,22.6
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11740 |instant
 	step
 		goto 40.0,12.7 |noway
@@ -4510,7 +4510,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		goto Teldrassil,57.6,89.6 |c
 	step
 		goto Teldrassil 54.7,52.9
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11753 |instant
 	step
 		goto Darnassus 64,47.1
@@ -4526,11 +4526,11 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Stealing the Exodar's Flame##11933 |tip It is recommended that you be level 80 when attempting to complete this guide step.
 	step
 		goto Azuremyst Isle 44.7,52.7
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11735 |instant
 	step
 		goto Bloodmyst Isle 55.9,68.6
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11738 |instant
 	step
 		goto The Cape of Stranglethorn 50.4,70.4
@@ -4538,7 +4538,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##11837 |instant
 	step
 		goto 51.8,67.4
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11761 |instant
 	step
 		goto Northern Stranglethorn 40.6,50.9
@@ -4546,11 +4546,11 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##28924 |instant
 	step
 		goto 51.7,63.3
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##28910 |instant
 	step
 		goto Blasted Lands 55.3,15.2
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11737 |instant
 	step
 		goto Blasted Lands 46.2,13.8
@@ -4562,19 +4562,19 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##11857 |instant
 	step
 		goto 70.3,14.4
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##28916 |instant
 	step
 		goto Duskwood 73.4,55.0
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11743 |instant
 	step
 		goto Westfall 45.1,62.3
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11581 |instant
 	step
 		goto Elwynn Forest 43.1,63.0
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11745 |instant
 	step
 		goto Stormwind City 50.0,72.6
@@ -4584,11 +4584,11 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Stealing Stormwind's Flame##9330 |tip It is recommended that you be level 80 when attempting to complete this guide step.
 	step
 		goto Redridge Mountains 24.5,53.8
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11751 |instant
 	step
 		goto Burning Steppes 68.7,60.1
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11739 |instant
 	step
 		goto 51.1,29.2
@@ -4596,7 +4596,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##11844 |instant
 	step
 		goto Badlands 18.7,56.0
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##28912 |instant
 	step
 		goto 23.1,37.4
@@ -4604,11 +4604,11 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##11842 |instant
 	step
 		goto Loch Modan 32.4,40.2
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11749 |instant
 	step
 		goto Dun Morogh 53.6,44.8
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11742 |instant
 	step
 		goto Ironforge 64.3,26.0
@@ -4618,11 +4618,11 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Stealing Ironforge's Flame##9331 |tip It is recommended that you be level 80 when attempting to complete this guide step.
 	step
 		goto Wetlands 13.2,47.1
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11757 |instant
 	step
 		goto Arathi Highlands 44.6,46.1
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11732 |instant
 	step
 		goto 69.3,42.6
@@ -4662,11 +4662,11 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##11860 |instant
 	step
 		goto 14.5,49.9
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11755 |instant
 	step
 		goto Western Plaguelands 43.6,82.5
-		.click Alliance Bonfire##7734 
+		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11756 |instant
 	step
 		goto Western Plaguelands 29.2,57.4
@@ -4678,7 +4678,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##11862 |instant
 	step
 		goto Hellfire Peninsula 61.9,58.5
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11747 |instant
 	step
 		goto Hellfire Peninsula 57.1,42.0
@@ -4690,7 +4690,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##11835 |instant
 	step
 		goto Netherstorm 31.1,62.9
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11759 |instant
 	step
 		goto Blade's Edge Mountains 49.9,58.7
@@ -4698,7 +4698,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##11843 |instant
 	step
 		goto Blade's Edge Mountains 41.8,66.0
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11736 |instant
 	step
 		goto Zangarmarsh 35.4,51.6
@@ -4706,7 +4706,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##11863 |instant
 	step
 		goto Zangarmarsh 68.6,52.1
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11758 |instant
 	step
 		goto Nagrand 50.9,34.1
@@ -4714,7 +4714,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##11854 |instant
 	step
 		goto Nagrand 49.7,69.7
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11750 |instant
 	step
 		goto Terokkar Forest 52.0,42.9
@@ -4722,7 +4722,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##11858 |instant
 	step
 		goto Terokkar Forest 54.2,55.5
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11754 |instant
 	step
 		goto Shadowmoon Valley 33.4,30.5
@@ -4730,11 +4730,11 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##11855 |instant
 	step
 		goto Shadowmoon Valley 39.5,54.4
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##11752 |instant
 	step
 		goto Borean Tundra 55.2,20.2
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##13440 |instant
 	step
 		goto Borean Tundra 51.1,11.5
@@ -4742,7 +4742,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##13493 |instant
 	step
 		goto Sholazar Basin 47.9,66.2
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##13442 |instant
 	step
 		goto Sholazar Basin 47.1,61.5
@@ -4754,11 +4754,11 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##13495 |instant
 	step
 		goto Dragonblight 75.1,43.8
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##13443 |instant
 	step
 		goto Crystalsong Forest 77.6,75.2
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##13447 |instant
 	step
 		goto Crystalsong Forest 80.0,53.2
@@ -4770,11 +4770,11 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##13498 |instant
 	step
 		goto The Storm Peaks 41.4,87.0
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##13446 |instant
 	step
 		goto Zul'Drak 40.5,61.0
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##13449 |instant
 	step
 		goto Zul'Drak 43.4,71.7
@@ -4786,7 +4786,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##13497 |instant
 	step
 		goto Grizzly Hills 34.2,60.6
- 		.click Alliance Bonfire##7734 
+ 		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##13445 |instant
 	step
 		goto Howling Fjord 48.6,13.1
@@ -4794,7 +4794,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Quests",[[
 		..accept Honor the Flame##13496 |instant
 	step
 		goto Howling Fjord 57.8,15.8
-		.click Alliance Bonfire##7734 
+		.click Alliance Bonfire##7734
 		..accept Desecrate this Fire!##13444 |instant
 	step
 		goto Shimmering Expanse 49.4,42.0
@@ -4901,7 +4901,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Achievements",[[
 		.buy 1 Mantle of the Fire Festival##23324
 		.buy 1 Vestment of Summer##34685
 		.buy 1 Sandals of Summer##34683
-	step 
+	step
 		goto Silvermoon City,70.6,43.2
 		.' Equip your Mantle of the Fire Festival |use Mantle of the Fire Festival##23324
 		'
@@ -5090,22 +5090,22 @@ ZygorGuidesViewer:RegisterInclude("H_Brewfest_Dailies",[[
 		.' Go to this spot
 		.' Bark in the Valley of Spirits |q 11407/4
 	step
-		goto Orgrimmar,52.9,66.5 
+		goto Orgrimmar,52.9,66.5
 		.' Use your Ram Racing Reins as you run |use Ram Racing Reins##33306 |tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
 		.' Go to this spot
 		.' Bark Outside the Auction House |q 11408/1
 	step
-		goto 71.5,34.8 
+		goto 71.5,34.8
 		.' Use your Ram Racing Reins as you run |use Ram Racing Reins##33306 |tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
 		.' Go to this spot
 		.' Bark in the Valley of Honor |q 11408/2
 	step
-		goto 43.8,36.5 
+		goto 43.8,36.5
 		.' Use your Ram Racing Reins as you run |use Ram Racing Reins##33306 |tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
 		.' Go to this spot
 		.' Bark in the Valley of Wisdom |q 11408/3
 	step
-		goto 37.0,74.3 
+		goto 37.0,74.3
 		.' Use your Ram Racing Reins as you run |use Ram Racing Reins##33306 |tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
 		.' Go to this spot
 		.' Bark in the Valley of Spirits |q 11408/4
@@ -5309,7 +5309,7 @@ ZygorGuidesViewer:RegisterInclude("H_TB_Cooking_Dailies",[[
 		.get Savory Spices##70001 |q 29365/2 |tip It looks like a bag with weeds in it
 		|only if havequest(29365)
 	step
-		goto 56.1,44.9 
+		goto 56.1,44.9
 		.get Fresh-Caught Fish##70002 |q 29365/3 |tip It looks like a rope hanging down with a bunch of fish on it
 		.get Fresh-Hunted Fowl##70003 |q 29365/4
 		|only if havequest(29365)
@@ -5362,23 +5362,23 @@ ZygorGuidesViewer:RegisterInclude("H_The_Northrend_Gourmet",[[
 	step
 	title +Wrath of the Lich King Recipes
 		#include trainCooking
-		.learn Dalaran Clam Chowder##58065 
-		.learn Grilled Sculpin##45563 
-		.learn Mammoth Meal##45549 
-		.learn Pickled Fangtooth##45566 
-		.learn Poached Nettlefish##45565 
-		.learn Rhino Dogs##45553 
-		.learn Roasted Worg##45552 
+		.learn Dalaran Clam Chowder##58065
+		.learn Grilled Sculpin##45563
+		.learn Mammoth Meal##45549
+		.learn Pickled Fangtooth##45566
+		.learn Poached Nettlefish##45565
+		.learn Rhino Dogs##45553
+		.learn Roasted Worg##45552
 	step
 		#include trainCooking
-		.learn Shoveltusk Steak##45550 
-		.learn Smoked Salmon##45564 
-		.learn Worm Delight##45551 
-		.learn Fisherman's Feast##42302 
-		.learn Hot Buttered Trout##42305 
-		.learn Great Feast##45554 
-		.learn Black Jelly##64358 
-		.learn Darkbrew Lager##88015 
+		.learn Shoveltusk Steak##45550
+		.learn Smoked Salmon##45564
+		.learn Worm Delight##45551
+		.learn Fisherman's Feast##42302
+		.learn Hot Buttered Trout##42305
+		.learn Great Feast##45554
+		.learn Black Jelly##64358
+		.learn Darkbrew Lager##88015
 		.learn Blackened Surprise##88006
 	step
 		//alliance
@@ -5467,23 +5467,23 @@ ZygorGuidesViewer:RegisterInclude("H_The_Northrend_Gourmet",[[
 	step
 		'You can use the Professions section of this guide to get to 450 cooking |only if skill("Cooking")<450
 		'You can use the Dalaran Cooking Dailies section of this guide to earn Dalaran Cooking Awards to buy the following recipes: |tip You will need a total of 74 Dalaran Cooking Awards to get all of the recipes
-		goto Dalaran,70.1,38.2 
-		.talk Misensi##31031 
-		.buy 1 Recipe: Mega Mammoth Meal##43018 
-		.buy 1 Recipe: Tender Shoveltusk Steak##43019 
-		.buy 1 Recipe: Spiced Worm Burger##43020 
-		.buy 1 Recipe: Very Burnt Worg##43021 
-		.buy 1 Recipe: Worg Tartare##44954 
-		.buy 1 Recipe: Mighty Rhino Dogs##43022 
+		goto Dalaran,70.1,38.2
+		.talk Misensi##31031
+		.buy 1 Recipe: Mega Mammoth Meal##43018
+		.buy 1 Recipe: Tender Shoveltusk Steak##43019
+		.buy 1 Recipe: Spiced Worm Burger##43020
+		.buy 1 Recipe: Very Burnt Worg##43021
+		.buy 1 Recipe: Worg Tartare##44954
+		.buy 1 Recipe: Mighty Rhino Dogs##43022
 		.buy 1 Recipe: Poached Northern Sculpin##43023 //50
-		.buy 1 Recipe: Firecracker Salmon##43024 
-		.buy 1 Recipe: Spicy Blue Nettlefish##43025 
-		.buy 1 Recipe: Imperial Manta Steak##43026 
-		.buy 1 Recipe: Spicy Fried Herring##43027 
+		.buy 1 Recipe: Firecracker Salmon##43024
+		.buy 1 Recipe: Spicy Blue Nettlefish##43025
+		.buy 1 Recipe: Imperial Manta Steak##43026
+		.buy 1 Recipe: Spicy Fried Herring##43027
 		.buy 1 Recipe: Rhinolicious Wormsteak##43028
 	step
 		'Use the Professions section of this guide to get to 450 cooking |only if skill("Cooking")<450
-		.learn Mega Mammoth Meal##45555 |use Recipe: Mega Mammoth Meal##43018 
+		.learn Mega Mammoth Meal##45555 |use Recipe: Mega Mammoth Meal##43018
 		.learn Tender Shoveltusk Steak##45556 |use Recipe: Tender Shoveltusk Steak##43019
 		.learn Spiced Worm Burger##45557 |use Recipe: Spiced Worm Burger##43020
 		.learn Very Burnt Worg##45558 |use Recipe: Very Burnt Worg##43021
@@ -5498,20 +5498,20 @@ ZygorGuidesViewer:RegisterInclude("H_The_Northrend_Gourmet",[[
 	step
 		'Use the Professions section of this guide to get to 450 cooking |only if skill("Cooking")<450
 		'Use the Dalaran Cooking Dailies section of this guide to earn Dalaran Cooking Awards to buy the following recipes: |tip You will need a total of 74 Dalaran Cooking Awards to get all of the recipes
-		goto Dalaran,70.1,38.2 
-		.talk Misensi##31031 
-		.buy 1 Recipe: Critter Bites##43029 
-		.buy 1 Recipe: Hearty Rhino##43030 
-		.buy 1 Recipe: Snapper Extreme##43031 
-		.buy 1 Recipe: Blackened Worg Steak##43032 
-		.buy 1 Recipe: Cuttlesteak##43033 
-		.buy 1 Recipe: Spiced Mammoth Treats##43034 
-		.buy 1 Recipe: Blackened Dragonfin##43035 
-		.buy 1 Recipe: Dragonfin Fillet##43036 
-		.buy 1 Recipe: Tracker Snacks##43037 
-		.buy 1 Recipe: Gigantic Feast##43505 
-		.buy 1 Recipe: Small Feast##43506 
-		.buy 1 Recipe: Fish Feast##43017 
+		goto Dalaran,70.1,38.2
+		.talk Misensi##31031
+		.buy 1 Recipe: Critter Bites##43029
+		.buy 1 Recipe: Hearty Rhino##43030
+		.buy 1 Recipe: Snapper Extreme##43031
+		.buy 1 Recipe: Blackened Worg Steak##43032
+		.buy 1 Recipe: Cuttlesteak##43033
+		.buy 1 Recipe: Spiced Mammoth Treats##43034
+		.buy 1 Recipe: Blackened Dragonfin##43035
+		.buy 1 Recipe: Dragonfin Fillet##43036
+		.buy 1 Recipe: Tracker Snacks##43037
+		.buy 1 Recipe: Gigantic Feast##43505
+		.buy 1 Recipe: Small Feast##43506
+		.buy 1 Recipe: Fish Feast##43017
 	step
 		'Use the Professions section of this guide to get to 450 cooking |only if skill("Cooking")<450
 		.learn Critter Bites##57435 |use Recipe: Critter Bites##43029
@@ -5524,7 +5524,7 @@ ZygorGuidesViewer:RegisterInclude("H_The_Northrend_Gourmet",[[
 		.learn Dragonfin Fillet##57442 |use Recipe: Dragonfin Fillet##43036
 		.learn Tracker Snacks##57443 |use Recipe: Tracker Snacks##43037
 		.learn Gigantic Feast##58527 |use Recipe: Gigantic Feast##43505
-		.learn Small Feast##58528 |use Recipe: Small Feast##43506 
+		.learn Small Feast##58528 |use Recipe: Small Feast##43506
 		.learn Fish Feast##57423 |use Recipe: Fish Feast##43017
 	step
 		'You can either buy these from the Auction House or farm them
@@ -5708,9 +5708,9 @@ ZygorGuidesViewer:RegisterInclude("H_The_Outland_Gourmet",[[
 	step
 	title +The Burning Crusade Recipes
 		#include trainCooking
-		.learn Stewed Trout##42296 		
-		.learn Fisherman's Feast##42302 
-		.learn Hot Buttered Trout##42305 
+		.learn Stewed Trout##42296
+		.learn Fisherman's Feast##42302
+		.learn Hot Buttered Trout##42305
 	//300 Buzzard Bites TBC
 	step
 		goto Hellfire Peninsula,49.2,74.8
@@ -5755,7 +5755,7 @@ ZygorGuidesViewer:RegisterInclude("H_The_Outland_Gourmet",[[
 		.learn Buzzard Bites##33279 |use Recipe: Buzzard Bites##27684
 		//300 Ravager Dog TBC
 	step
-		//alliance: 
+		//alliance:
 		//goto Hellfire Peninsula,54.2,63.6
 		//.talk Sid Limbardi##16826
 		//horde:
@@ -5777,7 +5777,7 @@ ZygorGuidesViewer:RegisterInclude("H_The_Outland_Gourmet",[[
 		goto Zangarmarsh 31.6,49.2
 		.talk Gambarinka##18015
 		.buy Recipe: Blackened Trout##27694 |n
-		.learn Blackened Trout##33290 |use Recipe: Blackened Trout##27694 
+		.learn Blackened Trout##33290 |use Recipe: Blackened Trout##27694
 	//300 Clam Bar TBC
 	step
 		goto Zangarmarsh,17.8,51.2
@@ -5798,7 +5798,7 @@ ZygorGuidesViewer:RegisterInclude("H_The_Outland_Gourmet",[[
 		//goto Nagrand,56.2,73.2
 		//.talk Uriku##20096
 		//horde
-		goto Nagrand,58.0,35.6 
+		goto Nagrand,58.0,35.6
 		.talk Nula the Butcher##20097
 		.buy 1 Recipe: Grilled Mudfish##27697
 		.buy 1 Recipe: Talbuk Steak##27693
@@ -5820,7 +5820,7 @@ ZygorGuidesViewer:RegisterInclude("H_The_Outland_Gourmet",[[
 		.buy 1 Recipe: Golden Fish Sticks##27699 |n
 		.buy 1 Recipe: Spicy Crawdad##27700 |n
 		.learn Golden Fish Sticks##33295 |use Recipe: Golden Fish Sticks##27699
-		.learn Spicy Crawdad##33296 |use Recipe: Spicy Crawdad##27700 
+		.learn Spicy Crawdad##33296 |use Recipe: Spicy Crawdad##27700
 	//315 Blackened Basilisk TBC + warp burger
 	step
 		//allaince
@@ -5850,7 +5850,7 @@ ZygorGuidesViewer:RegisterInclude("H_The_Outland_Gourmet",[[
 		.learn Spicy Hot Talbuk##43765 |use Recipe: Spicy Hot Talbuk##33873
 	//300 Broiled Bloodfin TBC + Skullfish Soup TBC
 	step
-		//Barrel of fish 
+		//Barrel of fish
 		'Use the Shattrath Cooking Dailies section of this guide to get these recipes: |tip It's not always guarenteed to come from these daily prizes so be patient
 		'Make sure to choose the Barrel of Fish
 		.collect 1 Recipe: Broiled Bloodfin##33869
@@ -5861,7 +5861,7 @@ ZygorGuidesViewer:RegisterInclude("H_The_Outland_Gourmet",[[
 	//300 Kibler's Bits TBC
 	step
 		'Use the Shattrath Cooking Dailies section of this guide to get this recipe: |tip It's not always guarenteed to come from these daily prizes so be patient
-		'You can choose either the Crate of Meat of Barrel of Fish 
+		'You can choose either the Crate of Meat of Barrel of Fish
 		.collect 1 Recipe: Kibler's Bits##33875
 	step
 		.learn Kibler's Bits##43772 |use Recipe: Kibler's Bits##33875
@@ -5913,7 +5913,7 @@ ZygorGuidesViewer:RegisterInclude("H_The_Outland_Gourmet",[[
 		goto Orgrimmar,56.5,61.2
 		.talk Suja##46708
 		.buy 8 Simple Flour##30817
-		.buy 4 Mild Spices##2678 
+		.buy 4 Mild Spices##2678
 	step
 		fly Fizzle & Pozzik's Speedbarge
 	step
@@ -6002,7 +6002,7 @@ ZygorGuidesViewer:RegisterInclude("H_The_Outland_Gourmet",[[
 		Congratulations! You're earned The Outland Gourmet achievement!
 ]])
 
-ZygorGuidesViewer:RegisterInclude("H_Kickin'_It_Up_a_Notch",[[ 
+ZygorGuidesViewer:RegisterInclude("H_Kickin'_It_Up_a_Notch",[[
 	step
 	label "warning"
 		.' The following quests are random and you can only do one per day. Click to proceed. |confirm always
@@ -6090,7 +6090,7 @@ ZygorGuidesViewer:RegisterInclude("H_Kickin'_It_Up_a_Notch",[[
 		.talk The Rokk##24393
 		..turnin Soup for the Soul##11381
 		..turnin Super Hot Stew##11379
-		..turnin Manalicious##11380 
+		..turnin Manalicious##11380
 		..turnin Revenge is Tasty##11377
 	step
 		'You've completed all the dailies you can do today. Click to go back to the dailies hub. |confirm |next "-warning" |only if not step:Find("+check"):IsComplete()
@@ -6175,7 +6175,7 @@ ZygorGuidesViewer:RegisterInclude("H_Our_Daily_Bread",[[
 		.get 1 Mustard Dog Basket! |q 13116/1
 	step
 		goto Crystalsong Forest,26.7,44.1
-		.click Crystalsong Carrot##4652+ 
+		.click Crystalsong Carrot##4652+
 		.collect 4 Crystalsong Carrot##43148 |q 13114
 	step
 		'Create a basic campfire |cast Basic Campfire##818
@@ -6189,7 +6189,7 @@ ZygorGuidesViewer:RegisterInclude("H_Our_Daily_Bread",[[
 	step
 		goto Dalaran,48.6,37.5
 		.talk Arille Azuregaze##29049
-		..turnin Convention at the Legerdemain##13113 
+		..turnin Convention at the Legerdemain##13113
 		.' Completed Daily "Conventrion at the Legermain" |achieve 1783/2
 	step
 		goto Dalaran,52.3,55.6
@@ -6249,7 +6249,7 @@ ZygorGuidesViewer:RegisterInclude("H_Critter_Gitter",[[
 	step
 	label make
 	title +Critter Gitter
-		'Get someone to make your 10 Critter Bites |tip Ask in your guild or in trade for someone to make these. Be sure to tip well! 
+		'Get someone to make your 10 Critter Bites |tip Ask in your guild or in trade for someone to make these. Be sure to tip well!
 		.' Or... |only if skill("Cooking")>=400
 		'Build a Basic Campfire |cast Basic Campfire##818 |only if skill("Cooking")>=400
 		.create Critter Bites##57435,Cooking,10 total |only if skill("Cooking")>=400
@@ -6259,7 +6259,7 @@ ZygorGuidesViewer:RegisterInclude("H_Critter_Gitter",[[
 	step
 	label recipe
 		'Use the Dalaran Cooking Dailies section of this guide to earn 3 Dalaran Cooking Awards
-		.earn 3 Dalaran Cooking Award##81 
+		.earn 3 Dalaran Cooking Award##81
 	step
 		goto Dalaran,70.2,37.2
 		.talk Misensi##31031
@@ -6267,8 +6267,8 @@ ZygorGuidesViewer:RegisterInclude("H_Critter_Gitter",[[
 	step
 		.learn Critter Bites##57435
 	step
-		'Build a Basic Campfire |cast Basic Campfire##818 
-		.create Critter Bites##57435,Cooking,10 total 
+		'Build a Basic Campfire |cast Basic Campfire##818
+		.create Critter Bites##57435,Cooking,10 total
 		.collect 10 Critter Bites##43004
 	step
 	label gitter
@@ -6292,29 +6292,29 @@ ZygorGuidesViewer:RegisterInclude("H_Dinner_Impossible",[[
 		.learn Great Feast##45554
 	step
 	label farm1
-		'You can either buy these items from the auction house or farm them 
-		.collect 5 Chunk o'Mammoth##34736 
-		.collect 5 Shoveltusk Flank##43009 
-		.collect 5 Worm Meat##43010 
-		.collect 10 Chilled Meat##43013 
+		'You can either buy these items from the auction house or farm them
+		.collect 5 Chunk o'Mammoth##34736
+		.collect 5 Shoveltusk Flank##43009
+		.collect 5 Worm Meat##43010
+		.collect 10 Chilled Meat##43013
 		.' Click here to go farm these materials |confirm |next "farm2"
 		|next makefeast
 	step
 	label farm2
 		goto Borean Tundra 78.2,24.0
 		.from Scourged Mammoth##25452+
-		.collect 5 Chunk o'Mammoth##34736 
-		.collect 10 Chilled Meat##43013 
+		.collect 5 Chunk o'Mammoth##34736
+		.collect 10 Chilled Meat##43013
 	step
 		goto 76.2,23.0
 		.from Tundra Crawler##25454+
-		.collect 5 Worm Meat##43010 
+		.collect 5 Worm Meat##43010
 	step
 		fly Vengeance Landing
 	step
 		goto Howling Fjord 73.6,40.0
 		.from Shoveltusk##23690+
-		.collect 5 Shoveltusk Flank##43009 
+		.collect 5 Shoveltusk Flank##43009
 	step
 	label makefeast
 		'Have someone make the Great Feasts for you |tip Ask in your guild or in trade for someone to make these |only if skill("Cooking")<375
@@ -6323,45 +6323,45 @@ ZygorGuidesViewer:RegisterInclude("H_Dinner_Impossible",[[
 		.collect 5 Great Feast##34753
 	step
 	label usefeast
-		'Push [H] on your keyboard to open your Player vs. Player interface 
+		'Push [H] on your keyboard to open your Player vs. Player interface
 		.' Click on Alterac Valley and then click on the Join Battle button on the lower left-hand corner of the Player vs. Player interface
-		..' Wait for the que to pop-up in the middle of your screen and click on accept	
+		..' Wait for the que to pop-up in the middle of your screen and click on accept
 		..' Go to Alterac Valley |goto Alterac Valley |noway |c
 	step
-		'Use one of your Great Feasts |use Great Feast##34753 
+		'Use one of your Great Feasts |use Great Feast##34753
 		.' Present a Great Feast in Alterac Valley |achieve 1784/1 |tip You can leave the battleground now, but you will have to wait 15 minutes to complete the next step
 	step
-		'Push [H] on your keyboard to open your Player vs. Player interface 
+		'Push [H] on your keyboard to open your Player vs. Player interface
 		.' Click on Arathi Basin and then click on the Join Battle button on the lower left-hand corner of the Player vs. Player interface
-		..' Wait for the que to pop-up in the middle of your screen and click on accept	
+		..' Wait for the que to pop-up in the middle of your screen and click on accept
 		..' Go to Arathi Basin |goto Arathi Basin |noway |c
 	step
-		'Use one of your Great Feasts |use Great Feast##34753 
+		'Use one of your Great Feasts |use Great Feast##34753
 		.' Present a Great Feast in Arathi Basin |achieve 1784/2 |tip You can leave the battleground now, but you will have to wait 15 minutes to complete the next step
 	step
-		'Push the [H] key on your keyboard to open your Player vs. Player interface 
+		'Push the [H] key on your keyboard to open your Player vs. Player interface
 		.' Click on Warsong Gulch and then click on the Join Battle button on the lower left-hand corner of the Player vs. Player interface
-		..' Wait for the que to pop-up in the middle of your screen and click on accept	
+		..' Wait for the que to pop-up in the middle of your screen and click on accept
 		..' Go to Warsong Gulch |goto Warsong Gulch |noway |c
 	step
-		'Use one of your Great Feasts |use Great Feast##34753 
+		'Use one of your Great Feasts |use Great Feast##34753
 		.' Present a Great Feast in Warsong Gulch |achieve 1784/3 |tip You can leave the battleground now, but you will have to wait 15 minutes to complete the next step
 	step
-		'Push [H] on your keyboard to open your Player vs. Player interface 
+		'Push [H] on your keyboard to open your Player vs. Player interface
 		.' Click on Strand of the Ancients and then click on the Join Battle button on the lower left-hand corner of the Player vs. Player interface
-		..' Wait for the que to pop-up in the middle of your screen and click on accept	
+		..' Wait for the que to pop-up in the middle of your screen and click on accept
 		..' Go to Strand of the Ancients |goto Strand of the Ancients |noway |c
 	step
-		'Use one of your Great Feasts |use Great Feast##34753 
+		'Use one of your Great Feasts |use Great Feast##34753
 		.' Present a Great Feast in Strand of the Ancients |achieve 1784/4 |tip You can leave the battleground now, but you will have to wait 15 minutes to complete the next step
 	step
-		'Push [H] on your keyboard to open your Player vs. Player interface 
+		'Push [H] on your keyboard to open your Player vs. Player interface
 		.' Click on Arathi Basin and then click on the Join Battle button on the lower left-hand corner of the Player vs. Player interface
-		..' Wait for the que to pop-up in the middle of your screen and click on accept	
+		..' Wait for the que to pop-up in the middle of your screen and click on accept
 		..' Go to Eye of the Storm |goto Arathi Basin |noway |c
 	step
-		'Use one of your Great Feasts |use Great Feast##34753 
-		.' Present a Great Feast in Eye of the Storm |achieve 1784/5 
+		'Use one of your Great Feasts |use Great Feast##34753
+		.' Present a Great Feast in Eye of the Storm |achieve 1784/5
 	step
 		Congratulations! You've earned the Dinner Impossible achievement!
 ]])
@@ -6614,7 +6614,7 @@ ZygorGuidesViewer:RegisterInclude("Nomi_Dailies",[[
 
 ZygorGuidesViewer:RegisterInclude("H_second_that_emotion",[[
 	step
-		'You can either purchase these from the Auction House or farm for them: 
+		'You can either purchase these from the Auction House or farm for them:
 		.collect 1 Bad Clams##43491
 		.collect 1 Haunted Herring##43492
 		.collect 1 Last Week's Mammoth##43488
@@ -6623,7 +6623,7 @@ ZygorGuidesViewer:RegisterInclude("H_second_that_emotion",[[
 		|next eat
 	step
 	label farm1
-		'You can either purchase these from the Auction House or farm for them: 
+		'You can either purchase these from the Auction House or farm for them:
 		.collect 1 Succulent Clam Meat##36782
 		.collect 1 Mote of Shadow##22577
 		.collect 1 Chunk o' Mammoth##34736
@@ -6696,10 +6696,10 @@ ZygorGuidesViewer:RegisterInclude("H_second_that_emotion",[[
 		.learn Tasty Cupcake##58512 |use Recipe: Tasty Cupcake##43507
 	step
 		'Build a Basic Campfire |cast Basic Campfire##818
-		.create Haunted Herring##58525,Cooking,1 total 
-		.create Bad Clams##58523,Cooking,1 total 
-		.create Last Week's Mammoth##58521,Cooking,1 total 
-		.create Tasty Cupcake##58512,Cooking,1 total 
+		.create Haunted Herring##58525,Cooking,1 total
+		.create Bad Clams##58523,Cooking,1 total
+		.create Last Week's Mammoth##58521,Cooking,1 total
+		.create Tasty Cupcake##58512,Cooking,1 total
 		.collect 1 Haunted Herring##43492
 		.collect 1 Bad Clams##43491
 		.collect 1 Last Week's Mammoth##43488
@@ -6793,7 +6793,7 @@ ZygorGuidesViewer:RegisterInclude("H_The_Scavenger",[[
 		.' Look for Floating Wreckage around this area |tip You may have to fish from other pools to get this to show up |cast Fishing##7620
 		.' Fish from Floating Wreckage |achieve 1257/5
 	step
-		goto Feralas,63.1,51.5 
+		goto Feralas,63.1,51.5
 		.' Look for Waterlogged Wreckage around this area |tip You may have to fish from other pools to get this to show up |cast Fishing##7620
 		.' Fish from Waterlogged Wreckage |achieve 1257/4
 	step
@@ -6851,10 +6851,10 @@ ZygorGuidesViewer:RegisterInclude("H_The_Lurker_Above",[[
 	step
 		.' In order to earn the _Lurker Above_ achievement, you will need to be in a raid group.
 		.' You will also need to be at least Level 70.
-		.' It would be best if you picked up Elixirs of Water Walking 
+		.' It would be best if you picked up Elixirs of Water Walking
 		.' You won't need a certain level of fishing, but the high level you are, the higher change you have of fishing up 'The Lurker Below'.
 		.' Click here after you have read the requirements for this achievement. |confirm
-		.' or 
+		.' or
 		.' Click here if you are in Outland already |confirm |next "outland"
 	step
 		goto Zangarmarsh,50.4,41.0 |n
@@ -6930,7 +6930,7 @@ ZygorGuidesViewer:RegisterInclude("H_Old_Man_Barlowned",[[
 		.turnin Bait Bandits##11666 |or
 		.turnin Felblood Fillet##11669 |or
 		.turnin The One That Got Away##11667 |or
-		.turnin Shrimpin' Ain't Easy##11668 |or	
+		.turnin Shrimpin' Ain't Easy##11668 |or
 	step
 		.' Crcolisks in the City |achieve 905/1
 		.' Bait Bandits |achieve 905/2
@@ -7016,7 +7016,7 @@ ZygorGuidesViewer:RegisterInclude("H_The_Coin_Master",[[
 ZygorGuidesViewer:RegisterInclude("H_Master_Angler_of_Azeroth",[[
 	step
 		'To earn this Achievement, you need to go to Booty Bay, accept this quest and be the first to complete it.
-		.' You can start this quest every _Sunday_ from _2pm to 4pm SERVER TIME_. 
+		.' You can start this quest every _Sunday_ from _2pm to 4pm SERVER TIME_.
 		|confirm
 	step
 		goto Orgrimmar,66.6,41.6
@@ -7048,7 +7048,7 @@ ZygorGuidesViewer:RegisterInclude("H_Master_Angler_of_Azeroth",[[
 ZygorGuidesViewer:RegisterInclude("H_Master_Angler_of_Northrend",[[
 	step
 		'To earn this Achievement, you need to go to Northrend, catch a _Blacktip Shark_ and be the first to turn it in.
-		.' You can start fishing every _Saturday_ at _2pm SERVER TIME_, you will hear the NPC yell out that the 
+		.' You can start fishing every _Saturday_ at _2pm SERVER TIME_, you will hear the NPC yell out that the
 		.' contest has started, make sure you are next to a school of fish, and start fishing!
 		|confirm
 	step
@@ -7091,9 +7091,9 @@ ZygorGuidesViewer:RegisterInclude("H_Master_Angler_of_Northrend",[[
 ZygorGuidesViewer:RegisterInclude("H_TB_Fishing_Dailies",[[
 		goto Thunder Bluff,56.0,47.0
 		.talk Kah Mistrunner##3028 |or
-		.accept Craving Crayfish##29349 |or  
+		.accept Craving Crayfish##29349 |or
 		.accept Pond Predators##29345 |or
-		.accept Shiny Baubles##29354 |or 
+		.accept Shiny Baubles##29354 |or
 		.accept The Race to Restock##29348 |or
 		.accept The Ring's the Thing##29346 |or
 	step
@@ -7125,9 +7125,9 @@ ZygorGuidesViewer:RegisterInclude("H_TB_Fishing_Dailies",[[
 	step
 		goto Thunder Bluff,56.0,47.0
 		.talk Kah Mistrunner##3028
-		.turnin Craving Crayfish##29349  
+		.turnin Craving Crayfish##29349
 		.turnin Pond Predators##29345
-		.turnin The Race to Restock##29348 
+		.turnin The Race to Restock##29348
 		only if havequest(29349) or havequest(29345) or havequest(29348)
 	step
 		goto Thunder Bluff,35,53.8
@@ -7137,7 +7137,7 @@ ZygorGuidesViewer:RegisterInclude("H_TB_Fishing_Dailies",[[
 	step
 		goto Thunder Bluff,28.8,20.4
 		.talk Poshken Hardbinder##30709
-		.turnin The Ring's the Thing##29346 
+		.turnin The Ring's the Thing##29346
 		only if havequest(29346)
 ]])
 ZygorGuidesViewer:RegisterInclude("H_Org_Fishing_Dailies",[[
@@ -7162,7 +7162,7 @@ ZygorGuidesViewer:RegisterInclude("H_Org_Fishing_Dailies",[[
 	step
 		goto 57.2,9.5
 		.' Click Monstrous Clams |tip They look like huge white clams underwater around this area.
-		.get 10 Monstrous Clam Meat |q 26543/1	
+		.get 10 Monstrous Clam Meat |q 26543/1
 	step
 		goto Azshara,27.6,74.5
 		.from Weakened Mosshoof Stag##35096+
@@ -7210,7 +7210,7 @@ ZygorGuidesViewer:RegisterInclude("H_UC_Fishing_Dailies",[[
 		.get Corpse-Fed Pike##69909 |q 293320/1
 		only if havequest(29320)
 	step
-		goto Undercity,64.7,16.5 
+		goto Undercity,64.7,16.5
 		.' Open your Moat Monster Feeding Kit |use Moat Monster Feeding Kit##69999
 		.' Lure the Moat Monster out with the Alliance Decoy |use Alliance Decoy Ki##69998
 		.' Feed the Moat Monster with your Bloated Frogs! |use Bloated Frog##69995
@@ -7229,15 +7229,15 @@ ZygorGuidesViewer:RegisterInclude("H_UC_Fishing_Dailies",[[
 	step
 		goto Undercity,81.6,30.8
 		.talk Armand Cromwell##4573
-		.turnin Like Pike?##29320 |or 
-		.turnin Moat Monster!##29361 |or 
-		.turnin Tadpole Terror##29319 |or 
-		.turnin Time for Slime##29322 |or  
+		.turnin Like Pike?##29320 |or
+		.turnin Moat Monster!##29361 |or
+		.turnin Tadpole Terror##29319 |or
+		.turnin Time for Slime##29322 |or
 		|only if havequest(29320) or havequest(29361) or havequest(29319) or havequest(29322)
 	step
-		goto Undercity,48.4,69.4 
-		.talk Master Apothecary Faranell##2055 |or 
-		.turnin Fish Head##29317 
+		goto Undercity,48.4,69.4
+		.talk Master Apothecary Faranell##2055 |or
+		.turnin Fish Head##29317
 		|only if havequest(29317)
 ]])
 
@@ -7294,7 +7294,7 @@ ZygorGuidesViewer:RegisterInclude("H_SSO_PreQuest_with_Dailies", [[
 		.collect 1 Bash'ir Phasing Device##34248 |n
 		'Use the Bash'ir Phasing Device. |use Bash'ir Phasing Device##34248
 		.' Become Out of Phase |havebuff Interface\Icons\Ability_Mage_Invisibility
-		.click Smuggled Mana Cell##7257 
+		.click Smuggled Mana Cell##7257
 		.' Collect 10 Smuggled Mana Cell |q 11514/1
 	step
 		goto Netherstorm,25.9,66.8
@@ -7306,7 +7306,7 @@ ZygorGuidesViewer:RegisterInclude("H_SSO_PreQuest_with_Dailies", [[
 		.turnin Sunfury Attack Plans##11877
 	step
 		goto 62.8,35.6
-		.talk Emissary Mordin##19202 
+		.talk Emissary Mordin##19202
 		.turnin Gaining the Advantage##11875
 	step
 		goto 61.6,52.2
@@ -7489,7 +7489,7 @@ ZygorGuidesViewer:RegisterInclude("H_SSO_PreQuest_with_Dailies", [[
 	step
 		goto Hellfire Peninsula,66.4,20.1
 		.from Wrath Herald##24919+
-		.collect 4 Demonic Blood##34259 
+		.collect 4 Demonic Blood##34259
 		.' use the Sizzling Embers to summon a Living Flare. |use Sizzling Embers##34253
 		.kill Incandescent Fel Spark##22323+ |n
 		.' Once you see a message that says "Living Flare becomes unstable with brimming energy!" take it to [Hellfire Peninsula,58.6,18.7].
@@ -7830,7 +7830,7 @@ ZygorGuidesViewer:RegisterInclude("H_Therazane_PreQuest", [[
 		..turnin Maziel's Ascendancy##27102
 	step
 		goto 69.5,68.0 |n
-		.' Leave the cave |goto 69.5,68.0,0.5 |noway |c	
+		.' Leave the cave |goto 69.5,68.0,0.5 |noway |c
 	step
 		goto 64.5,82.1
 		.talk Stormcaller Mylra##44010
@@ -7849,7 +7849,7 @@ ZygorGuidesViewer:RegisterInclude("H_Therazane_PreQuest", [[
 		goto 59.9,83.6
 		.from Jadecrest Basilisk##43981+
 		.' Use Mylra's Knife on Jadefire Basilisk corpses |use Mylra's Knife##60382
-		.get 5 Side of Basilisk Meat |q 26766/1 
+		.get 5 Side of Basilisk Meat |q 26766/1
 	step
 		goto 64.5,82.1
 		.talk Stormcaller Mylra##44010
@@ -7917,7 +7917,7 @@ ZygorGuidesViewer:RegisterInclude("H_Therazane_PreQuest", [[
 	step
 		goto 32.2,79.1
 		.' Use The Axe of Earthly Sundering on Emerald Colossi |use The Ace of Earthly Sundering##60490 |tip They look like glowing giants that walk around this area.
-		.kill 5 Sundered Emerald Colossus |q 27932/1 
+		.kill 5 Sundered Emerald Colossus |q 27932/1
 		.from Jade Rager##44220+
 		.get 6 Elemental Ore |q 27933/1
 	step
@@ -7981,7 +7981,7 @@ ZygorGuidesViewer:RegisterInclude("H_Therazane_PreQuest", [[
 		.' Use your Rockslide Reagent on the Earthen Geomancer |use Rockslide Reagent##58885 |tip They must be out of combat for it to work, so kill any troggs attacking the Earthen Geomancer.
 		.' Seal the Armory |q 26501/1
 		.' Click Thunder Stones |tip They looks like blue round spiked cannonballs on the ground and in wagons around this area.
-		.get 12 Thunder Stone |q 26502/1 
+		.get 12 Thunder Stone |q 26502/1
 	step
 		goto 24.5,62.4
 		.talk Gravel Longslab##43168
@@ -8001,7 +8001,7 @@ ZygorGuidesViewer:RegisterInclude("H_Therazane_PreQuest", [[
 		.' Use Deepvein's Patch Kit on Injured Earthens |use Deepvein's Patch Kit##58965 |tip They look like dwarves laying on the ground around this area.
 		.' Patch up 10 Injured Earthen |q 26591/1
 		.' Click Catapult Parts |tip They look kind of like big metal parts laying on the ground around this area.
-		.get 6 Catapult Part |q 26564/1 
+		.get 6 Catapult Part |q 26564/1
 		.from Stone Trogg Berserker##43228+, Stone Trogg Geomancer##43234+, Needlerock Rider##43250+
 		.kill 12 Fractured Battlefront stone troggs |q 26537/1
 	step
@@ -8023,7 +8023,7 @@ ZygorGuidesViewer:RegisterInclude("H_Therazane_PreQuest", [[
 	step
 		goto 22.6,56.9
 		.from Troggzor the Earthinator##43456
-		.get The Earthinator's Cudgel |q 26625/1 
+		.get The Earthinator's Cudgel |q 26625/1
 	step
 		goto 24.5,62.4
 		.talk Gravel Longslab##43168
@@ -8210,7 +8210,7 @@ ZygorGuidesViewer:RegisterInclude("H_Therazane_PreQuest", [[
 	step
 		goto 59.3,40.6
 		.from Twilight Laborer##42924+, Twilight Priestess##42823+, Twilight Duskwarden##42917+
-		.kill 12 Lorthuna's Gate Cultists |q 26376/2 
+		.kill 12 Lorthuna's Gate Cultists |q 26376/2
 	step
 		goto 56.5,41.0
 		.talk Quartz Stonetender##42899
@@ -8269,7 +8269,7 @@ ZygorGuidesViewer:RegisterInclude("H_Therazane_PreQuest", [[
 		.from Jaspertip Borer##42524+, Jaspertip Swarmer##42521+, Jaspertip Ravager##42525+, Jaspertip Crystal-gorger##43171+
 		.kill 12 Jaspertip flayers |q 26438/1
 		.' Click Chalky Crystal Formations |tip They look like big white blocks on the ground around this area.
-		.get 8 Chalky Crystal Formation |q 26437/1 
+		.get 8 Chalky Crystal Formation |q 26437/1
 		.' Click Dormant Stonebound Elementals |tip They look like crumbled rock elementals on the ground around this area.
 		.' Reform 6 Stonebound Elementals |q 26439/1
 	step
@@ -8379,7 +8379,7 @@ ZygorGuidesViewer:RegisterInclude("H_Therazane_PreQuest", [[
 	step
 		goto 39.0,74.2
 		.' Go to this spot next to the big white portal
-		.' Investigate the Master's Gate |q 27008/1 
+		.' Investigate the Master's Gate |q 27008/1
 	step
 		goto 40.1,72.2
 		.from Twilight Cryptomancer##44855+, Twilight Crusher##44849+, Twilight Armsman##44847+
@@ -8579,7 +8579,7 @@ ZygorGuidesViewer:RegisterInclude("H_Therazane_PreQuest", [[
 		..accept The Binding##26971
 	step
 		goto 49.6,52.9
-		.kill High Priestess Lorthuna |q 26971/1 
+		.kill High Priestess Lorthuna |q 26971/1
 	step
 		goto 49.6,52.9
 		.talk Earthcaller Torunscar##43835
@@ -8669,7 +8669,7 @@ ZygorGuidesViewer:RegisterInclude("H_Therazane_DailyQuest", [[
 	step
 		goto 66.4,20.2
 		.' Use Ricket's Tickers next to Deep Garnet Crystals |use Ricket's Tickers##65514 |tip They look like huge red rocks around this area.
-		.get 3 Deep Garnet Crystal |q 27048/4	
+		.get 3 Deep Garnet Crystal |q 27048/4
 	step
 		goto 63.6,23.9
 		.' All around inside this cave:
@@ -8700,7 +8700,7 @@ ZygorGuidesViewer:RegisterInclude("H_Therazane_DailyQuest", [[
 		.kill 8 Fungal Behemoth |q 27049/1
 		.from Verlok Grubthumper##43367+, Verlok Shroomtender##43368+
 		.get Bag of Verlok Miracle-Grow |q 27051/1
-		.' Click Sprouting Crimson Mushrooms |tip They look like tiny mushrooms on the ground around this area.  Try to only click the solid blue, solid red, or white-brown ones.  The blue ones with red spots will explode and hurt you. 
+		.' Click Sprouting Crimson Mushrooms |tip They look like tiny mushrooms on the ground around this area.  Try to only click the solid blue, solid red, or white-brown ones.  The blue ones with red spots will explode and hurt you.
 		.' Destroy 10 Freshly Sprouted Mushrooms |q 27050/1
 	step
 		goto 68.6,29.1 |n
@@ -10481,11 +10481,11 @@ ZygorGuidesViewer:RegisterInclude("H_Icecrown_Argent_Crusade_Rep",[[
 		goto Crystalsong Forest,59.9,57.2 //// Display ID
 		.from Unbound Ent##30862+, Unbound Dryad##30860+
 		.get 8 Crystallized Energy |q 13135/1
-		.click Crystalline Heartwood##8439  
+		.click Crystalline Heartwood##8439
 		.get 10 Crystalline Heartwood |q 13130/1
 	step
 		goto 73.8,53.0
-		.click Ancient Elven Masonry##8356 
+		.click Ancient Elven Masonry##8356
 		.get 10 Ancient Elven Masonry|q 13130/2
 		.' You can find more Ancient Elven Masonry around [79.6,61.3] |n
 	step
@@ -10585,7 +10585,7 @@ ZygorGuidesViewer:RegisterInclude("H_Icecrown_Argent_Crusade_Rep",[[
 		goto 43.2,51.7
 		.' There should be a fight happening, so just wait around until the fight is over |tip If there isn't fight happening, just wait until the fighters spawn again, and there should be some red dragon Ruby Watchers flying above the fight.
 		..' At the end of the fight, a Ruby Watcher will blow a lot of fire on the ground and the Dahlia's Tears will spawn
-		.click Dahlia's Tears##8329 
+		.click Dahlia's Tears##8329
 		..get Dahlia's Tears|q 13078/1
 	step
 		goto 57.9,54.2|n
@@ -10623,7 +10623,7 @@ ZygorGuidesViewer:RegisterInclude("H_Icecrown_Argent_Crusade_Rep",[[
 		..turnin The Boon of A'dal##13082
 	step
 		goto 79.8,30.8
-		.click Bridenbrad's Possessions##1 
+		.click Bridenbrad's Possessions##1
 		..accept Light Within the Darkness##13083
 	step
 		goto 79.8,71.8
@@ -10632,7 +10632,7 @@ ZygorGuidesViewer:RegisterInclude("H_Icecrown_Argent_Crusade_Rep",[[
 	step
 	label "tabard"
 		'You should now be above honored with the _Argent Crusade_.
-		.' The fastest way to continue to earn reputation with _Argent Crusade_ is to buy a tabard and run any dungeon that gives experience. 
+		.' The fastest way to continue to earn reputation with _Argent Crusade_ is to buy a tabard and run any dungeon that gives experience.
 		|confirm
 	step
 		goto Icecrown,87.5,75.6
@@ -10668,7 +10668,7 @@ ZygorGuidesViewer:RegisterInclude("H_Firelands_PreQuests",[[
 	step
 		goto 50.5,38.4
 		.talk Farseer Krogar##45244
-		..turnin The Eye of the Storm##28805	
+		..turnin The Eye of the Storm##28805
 	step
 		goto 39.9,50.9
 		.talk Cenarion Emissary Blackhoof##15188
@@ -11103,7 +11103,7 @@ ZygorGuidesViewer:RegisterInclude("H_Firelands_PreQuests",[[
 	step
 		goto 11.3,38.2
 		.kill 10 Raging Firestorm |q 25381/1
-		.kill 6 Twilight Inferno Lord |q 25382/1		
+		.kill 6 Twilight Inferno Lord |q 25382/1
 		.' Click Panicked Bunnies and Terrified Squirrels |tip They are small and run around this area.
 		.get 10 Frightened Animal |q 25385/1
 	step
@@ -11167,7 +11167,7 @@ ZygorGuidesViewer:RegisterInclude("H_Firelands_PreQuests",[[
 		..accept Smashing Through Ashes##25490
 	step
 		goto 16.4,51.8
-		.kill 8 Charbringer |q 25490/1	
+		.kill 8 Charbringer |q 25490/1
 	step
 		goto 27.1,62.6
 		.talk Arch Druid Hamuul Runetotem##5769
@@ -11277,7 +11277,7 @@ ZygorGuidesViewer:RegisterInclude("H_Firelands_PreQuests",[[
 		.from Twilight Dragonkin##41029+, Twilight Dragonkin Armorers##41030+
 		.' Slay 12 Sethria's Minions |q 25746/1
 		.' Click Twilight Armor Plates |tip They look like tan pieces of metal laying on the ground around this area.
-		.get 8 Twilight Armor Plate |q 25758/1 
+		.get 8 Twilight Armor Plate |q 25758/1
 	step
 		goto 32.8,70.8
 		.talk Thisalee Crow##41006
@@ -11307,7 +11307,7 @@ ZygorGuidesViewer:RegisterInclude("H_Firelands_PreQuests",[[
 		goto 32.8,70.8
 		.talk Thisalee Crow##41006
 		..turnin Sethria's Demise##25776
-		..accept Return to the Shrine##25795	
+		..accept Return to the Shrine##25795
 	step
 		goto 37.4,52.3
 		.' Use your Heap of Core hound Innards near Nemesis |use Heap of Core hound Innards##54744 |tip Nemesis is a huge turtle that walks all around The Flamewake area, so you may need to search for him.
@@ -11401,7 +11401,7 @@ ZygorGuidesViewer:RegisterInclude("H_Firelands_PreQuests",[[
 	step
 		goto 44.3,48.0
 		.talk Aviana##41308
-		..turnin Return to Aviana##25832	
+		..turnin Return to Aviana##25832
 	step
 		goto 27.1,62.6
 		.talk Arch Druid Hamuul Runetotem##5769
@@ -11445,7 +11445,7 @@ ZygorGuidesViewer:RegisterInclude("H_Firelands_PreQuests",[[
 	step
 		goto 27.0,62.7
 		.talk Vision of Ysera##46998
-		..accept The Last Living Lorekeeper##25830	
+		..accept The Last Living Lorekeeper##25830
 	step
 		goto 27.4,55.5
 		.talk Nordu##41381
@@ -11472,16 +11472,16 @@ ZygorGuidesViewer:RegisterInclude("Kaluak_Rep",[[
 		..accept Reclaiming the Quarry##11612
 	step
 		goto 54.7,35.8
-		.' Talk to Elder Atkanok 
+		.' Talk to Elder Atkanok
 		..accept The Honored Ancestors##11605
 		'|model Elder Atkanok##7633
 	step
 		goto 52.8,34
-		.click "Elder Sagani"##7655 
+		.click "Elder Sagani"##7655
 		.' Identify the Elder Sagani |q 11605/2
 	step
 		goto 52.3,31.2
-		.click "Elder Takret"##7655 
+		.click "Elder Takret"##7655
 		.' Identify the Elder Takret |q 11605/3
 	step
 		goto 50.9,32.4
@@ -11535,7 +11535,7 @@ ZygorGuidesViewer:RegisterInclude("Kaluak_Rep",[[
 		..accept A Visit to the Curator##11623
 	step
 		goto 53.1,33.3
-		.click Tuskarr Ritual Object##7472+ 
+		.click Tuskarr Ritual Object##7472+
 		.get 6 Tuskarr Ritual Object|q 11609/1
 	step
 		goto 50.1,32.6
@@ -11695,7 +11695,7 @@ ZygorGuidesViewer:RegisterInclude("Kaluak_Rep",[[
 	step
 		goto 64,45.7
 		.talk Utaik##26213
-		..turnin Preparing for the Worst##11945 
+		..turnin Preparing for the Worst##11945
 	step
 		goto 67.2,54.9
 		.talk Elder Muahit##26218
@@ -12044,7 +12044,7 @@ ZygorGuidesViewer:RegisterInclude("Kaluak_Rep",[[
 		..turnin Meat on the Hook##12017
 	step
 		goto 36.4,65
-		'Talk to Elder Mana'loa |model Elder Mana'loa##7768 
+		'Talk to Elder Mana'loa |model Elder Mana'loa##7768
 		..turnin Elder Mana'loa##12030
 		..accept Freedom for the Lingering##12031
 	step
@@ -12053,7 +12053,7 @@ ZygorGuidesViewer:RegisterInclude("Kaluak_Rep",[[
 		.' Put 15 Indu'le spirits to rest |q 12031/1
 	step
 		goto 36.4,65
-		'Talk to Elder Mana'loa |model Elder Mana'loa##7768 
+		'Talk to Elder Mana'loa |model Elder Mana'loa##7768
 		..turnin Freedom for the Lingering##12031
 		..accept Conversing With the Depths##12032
 	step
@@ -12508,7 +12508,7 @@ ZygorGuidesViewer:RegisterInclude("H_Hodir_Q",[[
 		.' Use your Vials of Frost Oil on the Plagued Proto-Drake Eggs|use Vial of Frost Oil##41612|tip They look like brown spiked eggs sitting in the yellow water around this area.
 		.' Try to get 6 at a time
 		.' Destroy 30 Plagued Proto-Drake Eggs |q 12925/1
-		'|model 3891 
+		'|model 3891
 	step
 		goto 24,61.8
 		.kill Yulda the Stormspeaker##30046 |q 12968/1
@@ -12562,7 +12562,7 @@ ZygorGuidesViewer:RegisterInclude("H_Hodir_Q",[[
 		.get 10 Furious Spark|q 12922/1
 	step
 		goto 77.2,62.9
-		.click Granite Boulder##7750 
+		.click Granite Boulder##7750
 		.' Use Thorim's Charm of Earth on Fjorn|use Thorim's Charm of Earth##41505|tip He's a huge fire giant, holding a huge smithing hammer.
 		.' Help the dwarves kill him
 		.kill Fjorn##29503 |q 12915/1
@@ -12589,7 +12589,7 @@ ZygorGuidesViewer:RegisterInclude("H_Hodir_Q",[[
 		goto 75.4,63.6
 		.talk Njormeld##30099
 		..turnin You Can't Miss Him##12966
-		..accept Battling the Elements##12967		
+		..accept Battling the Elements##12967
 	step
 		goto 75.7,63.9
 		.clicknpc Snorri##30123 |invehicle |c
@@ -13192,7 +13192,7 @@ ZygorGuidesViewer:RegisterInclude("H_Hodir",[[
 		..accept Hot and Cold##12981
 	step
 		goto 64.1,65.1
-		.click Hodir's Horn##7352 
+		.click Hodir's Horn##7352
 		..accept Blowing Hodir's Horn##12977
 	step
 		goto 55.6,63.4
@@ -13221,7 +13221,7 @@ ZygorGuidesViewer:RegisterInclude("H_Hodir",[[
 		only if rep ('The Sons of Hodir')>=Honored
 	step
 		goto 64.2,59.2
-		.click Hodir's Helm##8221 
+		.click Hodir's Helm##8221
 		..turnin Polishing the Helm##13006
 	step
 		goto 69.7,60.2
@@ -13251,7 +13251,7 @@ ZygorGuidesViewer:RegisterInclude("H_Hodir",[[
 		..turnin Hot and Cold##12981
 	step
 		goto 64.1,65.1
-		.click Hodir's Horn##7352 
+		.click Hodir's Horn##7352
 		..turnin Blowing Hodir's Horn##12977
 	step
 		goto 66.2,61.4
@@ -13267,11 +13267,11 @@ ZygorGuidesViewer:RegisterInclude("H_Hodir",[[
 		..accept Spy Hunter##12994
 	step
 		goto 64.2,59.2
-		.click Hodir's Helm##8221 
+		.click Hodir's Helm##8221
 		..accept Polishing the Helm##13006
 	step
 		goto 65.1,60.8
-		.click Hodir's Spear##8220 
+		.click Hodir's Spear##8220
 		..accept Thrusting Hodir's Spear##13003
 	step
 		goto 63.2,62.9
@@ -13286,7 +13286,7 @@ ZygorGuidesViewer:RegisterInclude("H_Hodir",[[
 		.' Use your Ethereal Worg's Fang next to the Corpse of the Fallen Worg |use Ethereal Worg's Fang##42479
 		.' Follow the wolf that spawns and kill the Stormforged Infiltrator it finds
 		.' Repeat this process 2 more times
-		.' Kill 3 Stormforged Infiltrators |q 12994/1	
+		.' Kill 3 Stormforged Infiltrators |q 12994/1
 	step
 		goto 55.6,63.4
 		.from Viscous Oil##30325+ |tip They look like slimes inside this cave.
@@ -13295,19 +13295,19 @@ ZygorGuidesViewer:RegisterInclude("H_Hodir",[[
 		goto 56.6,64.3
 		.' Use the Spear of Hodir on a Wild Wyrm flying around in the sky |use Spear of Hodir##42769
 		.' While fighting the Wild Wyrm, there will be 2 phases to the fight.  Phase 1: |tip In phase 1 of the fight, you will be underneath the Wild Wyrm.  Use your Grab On ability to keep your grip high, or you will fall off and die.  Repeatedly use your Thrust Spear ability, until you get a message the Wild Wyrm is about to use its claw attack.  When you see that message, use your Dodge Claws ability, and then immediately use your Mighty Spear Thrust ability after that.  Remember to keep your grip up by using your Grab On ability, and repeat this process until phase 2 of the fight begins.
-		.' In phase 2 of the fight with the Wild Wyrm, the strategy changes: |tip In phase 2 of the fight, you will be inside the Wild Wyrm's mouth.  Repeatedly use your Pry Jaws Open ability, try to stack it 20 times.  After you stack your Pry Jaws ability 20 times (which will give your Fatal Strike ability 100% chance to hit), use your Fatal Strike ability to kill the Wild Wyrm.  If you are close to dying, just stack your Pry Jaws Open ability as many times as you can, then use your Fatal Strike ability before you die, and hope it kills the Wild Wyrm.  
-		.' Kill the Wild Wyrm |q 13003/1	
+		.' In phase 2 of the fight with the Wild Wyrm, the strategy changes: |tip In phase 2 of the fight, you will be inside the Wild Wyrm's mouth.  Repeatedly use your Pry Jaws Open ability, try to stack it 20 times.  After you stack your Pry Jaws ability 20 times (which will give your Fatal Strike ability 100% chance to hit), use your Fatal Strike ability to kill the Wild Wyrm.  If you are close to dying, just stack your Pry Jaws Open ability as many times as you can, then use your Fatal Strike ability before you die, and hope it kills the Wild Wyrm.
+		.' Kill the Wild Wyrm |q 13003/1
 	step
 		goto 63.5,59.8
 		.talk Frostworg Denmother##30294
 		..turnin Spy Hunter##12994
 	step
 		goto 64.2,59.2
-		.click Hodir's Helm##8221 
+		.click Hodir's Helm##8221
 		..turnin Polishing the Helm##13006
 	step
 		goto 65.1,60.8
-		.click Hodir's Spear##8220 
+		.click Hodir's Spear##8220
 		..turnin Thrusting Hodir's Spear##13003
 	step
 		goto 69.7,60.2
@@ -13353,11 +13353,11 @@ ZygorGuidesViewer:RegisterInclude("H_Hodir",[[
 		..accept Spy Hunter##12994
 	step
 		goto 64.2,59.2
-		.click Hodir's Helm##8221 
+		.click Hodir's Helm##8221
 		..accept Polishing the Helm##13006
 	step
 		goto 65.1,60.8
-		.click Hodir's Spear##8220 
+		.click Hodir's Spear##8220
 		..accept Thrusting Hodir's Spear##13003
 	step
 		goto 67.6,59.9
@@ -13376,7 +13376,7 @@ ZygorGuidesViewer:RegisterInclude("H_Hodir",[[
 		.' Use your Ethereal Worg's Fang next to the Corpse of the Fallen Worg |use Ethereal Worg's Fang##42479
 		.' Follow the wolf that spawns and kill the Stormforged Infiltrator it finds
 		.' Repeat this process 2 more times
-		.' Kill 3 Stormforged Infiltrators |q 12994/1	
+		.' Kill 3 Stormforged Infiltrators |q 12994/1
 	step
 		goto 56.4,65.0
 		.' Use Arngrim's Tooth on Roaming Jormungars |use Arngrim's Tooth##42774
@@ -13390,19 +13390,19 @@ ZygorGuidesViewer:RegisterInclude("H_Hodir",[[
 		goto 56.6,64.3
 		.' Use the Spear of Hodir on a Wild Wyrm flying around in the sky |use Spear of Hodir##42769
 		.' While fighting the Wild Wyrm, there will be 2 phases to the fight.  Phase 1: |tip In phase 1 of the fight, you will be underneath the Wild Wyrm.  Use your Grab On ability to keep your grip high, or you will fall off and die.  Repeatedly use your Thrust Spear ability, until you get a message the Wild Wyrm is about to use its claw attack.  When you see that message, use your Dodge Claws ability, and then immediately use your Mighty Spear Thrust ability after that.  Remember to keep your grip up by using your Grab On ability, and repeat this process until phase 2 of the fight begins.
-		.' In phase 2 of the fight with the Wild Wyrm, the strategy changes: |tip In phase 2 of the fight, you will be inside the Wild Wyrm's mouth.  Repeatedly use your Pry Jaws Open ability, try to stack it 20 times.  After you stack your Pry Jaws ability 20 times (which will give your Fatal Strike ability 100% chance to hit), use your Fatal Strike ability to kill the Wild Wyrm.  If you are close to dying, just stack your Pry Jaws Open ability as many times as you can, then use your Fatal Strike ability before you die, and hope it kills the Wild Wyrm.  
-		.' Kill the Wild Wyrm |q 13003/1	
+		.' In phase 2 of the fight with the Wild Wyrm, the strategy changes: |tip In phase 2 of the fight, you will be inside the Wild Wyrm's mouth.  Repeatedly use your Pry Jaws Open ability, try to stack it 20 times.  After you stack your Pry Jaws ability 20 times (which will give your Fatal Strike ability 100% chance to hit), use your Fatal Strike ability to kill the Wild Wyrm.  If you are close to dying, just stack your Pry Jaws Open ability as many times as you can, then use your Fatal Strike ability before you die, and hope it kills the Wild Wyrm.
+		.' Kill the Wild Wyrm |q 13003/1
 	step
 		goto 63.5,59.8
 		.talk Frostworg Denmother##30294
 		..turnin Spy Hunter##12994
 	step
 		goto 64.2,59.2
-		.click Hodir's Helm##8221 
+		.click Hodir's Helm##8221
 		..turnin Polishing the Helm##13006
 	step
 		goto 65.1,60.8
-		.click Hodir's Spear##8220 
+		.click Hodir's Spear##8220
 		..turnin Thrusting Hodir's Spear##13003
 	step
 		goto 67.6,59.9
@@ -13944,7 +13944,7 @@ ZygorGuidesViewer:RegisterInclude("H_Oracles",[[
 		.get 10 Lifeblood Shard |q 12579/1
 	step
 		goto 54.5,56.6
-		'You can also use Moodle's Stress Ball if you have it in your bags:|use Moodle's Stress Ball##38624 
+		'You can also use Moodle's Stress Ball if you have it in your bags:|use Moodle's Stress Ball##38624
 		.talk Moodle##28122
 		..turnin Lifeblood of the Mosswalker Shrine##12579
 		..accept A Hero's Burden##12581
@@ -14011,7 +14011,7 @@ ZygorGuidesViewer:RegisterInclude("Shado_Pan_Daily_H",[[
 		..accept Assault Fire Camp Gai-Cho##31113 |or 4
 		..accept Assault Deadtalker's Plateau##31114 |or 4
 		..accept The Enemy of My Enemy... Is Still My Enemy!##31119 |or 4
-		..accept Spirit Dust##31116 |or 4 
+		..accept Spirit Dust##31116 |or 4
 		..accept The Deadtalker Cipher##31118 |or 4
 	step
 		'Talk to Chao the Voice or Protector Yi and ask one of them to come with you. They will help you in combat and allow you to turnin your quests outside of this questing hub.|tip Yi patrols so you may need to search for him.
@@ -14056,7 +14056,7 @@ ZygorGuidesViewer:RegisterInclude("Shado_Pan_Daily_H",[[
 		.'Talk to Chao the Voice |modelnpc 62550
 		.'Talk to Protector Yi |modelnpc 62546
 		..turnin Assault Fire Camp Gai-Cho##31113
-		..turnin Assault Deadtalker's Plateau##31114 
+		..turnin Assault Deadtalker's Plateau##31114
 		..turnin The Enemy of My Enemy... Is Still My Enemy!##31119
 		..turnin Spirit Dust##31116
 		..turnin The Deadtalker Cipher##31118
@@ -14067,7 +14067,7 @@ ZygorGuidesViewer:RegisterInclude("Shado_Pan_Daily_H",[[
 		.'Talk to Protector Yi |modelnpc 62546
 		.'Talk to Lao-Chin the Iron Belly |modelnpc 62978
 		..turnin Assault Fire Camp Gai-Cho##31113
-		..turnin Assault Deadtalker's Plateau##31114 
+		..turnin Assault Deadtalker's Plateau##31114
 		..turnin The Enemy of My Enemy... Is Still My Enemy!##31119
 		..turnin Spirit Dust##31116
 		..turnin The Deadtalker Cipher##31118
@@ -14214,9 +14214,9 @@ ZygorGuidesViewer:RegisterInclude("Shado_Pan_Daily_H",[[
 		..turnin Dark Arts##31043
 		..turnin Onyx Hearts##31042
 		..turnin Born Free##31047
-		..turnin Spiteful Sprites##31040 
-		..turnin Egg Rescue!##31041 
-		..turnin Little Hatchlings##31046 
+		..turnin Spiteful Sprites##31040
+		..turnin Egg Rescue!##31041
+		..turnin Little Hatchlings##31046
 		..accept When The Dead Speak##31062 |or
 		..accept Riding the Storm##31061 |or
 		..accept In Sprite Of Everything##31049 |or
@@ -14233,9 +14233,9 @@ ZygorGuidesViewer:RegisterInclude("Shado_Pan_Daily_H",[[
 		..turnin Dark Arts##31043
 		..turnin Onyx Hearts##31042
 		..turnin Born Free##31047
-		..turnin Spiteful Sprites##31040 
-		..turnin Egg Rescue!##31041 
-		..turnin Little Hatchlings##31046 
+		..turnin Spiteful Sprites##31040
+		..turnin Egg Rescue!##31041
+		..turnin Little Hatchlings##31046
 		..accept When The Dead Speak##31062 |or
 		..accept Riding the Storm##31061 |or
 		..accept In Sprite Of Everything##31049 |or
@@ -14243,7 +14243,7 @@ ZygorGuidesViewer:RegisterInclude("Shado_Pan_Daily_H",[[
 	step
 		goto 30.9,12.6
 		.' Use the Bronze Claws on the Cloudrunners around this area. |use Bronze Claws##83134
-		.from Shan'ze Cloudrunner##62584 
+		.from Shan'ze Cloudrunner##62584
 		.' Free 8 Shan'ze Cloudriders |q 31061/1
 		|only if havequest(31061)
 	step
@@ -14271,9 +14271,9 @@ ZygorGuidesViewer:RegisterInclude("Shado_Pan_Daily_H",[[
 	step
 		goto 49.0,70.4
 		.talk Ban Bearheart##62304
-		..turnin When The Dead Speak##31062 
-		..turnin Riding the Storm##31061 
-		..turnin In Sprite Of Everything##31049 
+		..turnin When The Dead Speak##31062
+		..turnin Riding the Storm##31061
+		..turnin In Sprite Of Everything##31049
 		|next "end"
 /// New Questigver today
 	step
@@ -14287,7 +14287,7 @@ ZygorGuidesViewer:RegisterInclude("Shado_Pan_Daily_H",[[
 		goto 49.0,71.3
 		.talk Ling of the Six Pools##63614
 		..accept The Challenger's Ring: Tenwu of the Red Smoke##31221
-		|only if rep('Shado-Pan')>=Revered 
+		|only if rep('Shado-Pan')>=Revered
 	step
 		goto 48.9,71.2
 		.talk Tenwu of the Red Smoke##63616
@@ -14384,22 +14384,22 @@ ZygorGuidesViewer:RegisterInclude("Shado_Pan_Daily_H",[[
 		.' Eastern Idol destroyed |q 31198/4
 		|only if havequest(31198)
 	step
-		goto 23.6,44.7 
+		goto 23.6,44.7
 		'Use the Bag of Shado-Pan Gas Bombs at this location. |use Bag of Shado-Pan Gas Bombs##86532
 		.' Egg Chamber bombed |q 31200/3
 		|only if havequest(31200)
 	step
-		goto 22.0,41.6 
+		goto 22.0,41.6
 		'Use the Bag of Shado-Pan Gas Bombs at this location. |use Bag of Shado-Pan Gas Bombs##86532
 		.' Torture Cell bombed |q 31200/4
 		|only if havequest(31200)
 	step
-		goto 21.2,43.2 
+		goto 21.2,43.2
 		'Use the Bag of Shado-Pan Gas Bombs at this location. |use Bag of Shado-Pan Gas Bombs##86532
 		.' Slaughtering Pit bombed |q 31200/5
 		|only if havequest(31200)
 	step
-		goto 21.0,45.9 
+		goto 21.0,45.9
 		'Use the Bag of Shado-Pan Gas Bombs at this location. |use Bag of Shado-Pan Gas Bombs##86532
 		.' Amber Vault bombed |q 31200/1
 		|only if havequest(31200)
@@ -14452,7 +14452,7 @@ ZygorGuidesViewer:RegisterInclude("Shado_Pan_Daily_H",[[
 		..turnin A Morale Victory##31198
 		..turnin Destroy the Siege Weapons!##31199
 		..turnin Fumigation##31200
-		..turnin Friends, Not Food!##31201 
+		..turnin Friends, Not Food!##31201
 		|only if not completedq(31221)
 	step
 		'Next to you is either Hawkmaster Nurong, Taoshi, or Tenwu.
@@ -14464,7 +14464,7 @@ ZygorGuidesViewer:RegisterInclude("Shado_Pan_Daily_H",[[
 		..turnin A Morale Victory##31198
 		..turnin Destroy the Siege Weapons!##31199
 		..turnin Fumigation##31200
-		..turnin Friends, Not Food!##31201 
+		..turnin Friends, Not Food!##31201
 		|only if completedq(31221)
 	step
 		'Click the Quest Discovered box that displays on the right side of the screen under your minimap
@@ -14530,7 +14530,7 @@ ZygorGuidesViewer:RegisterInclude("Shado_Pan_Daily_H",[[
 		.from Shan'ze Brutalizer##63933+
 		.from Hei Feng##63920 |tip When he casts Deep Breath step behind him.
 		.' Defeat the Mogu Invasion |q 31277/2
-		|only if havequest(31277) 
+		|only if havequest(31277)
 	step
 		goto 49.2,71.0
 		.talk Ban Bearheart##62304
@@ -14748,8 +14748,8 @@ ZygorGuidesViewer:RegisterInclude("Marista_Hub",[[
 		.from Ik'thallik Infestor##56721+, Ik'thik Warrior##56722+
 		.' Kill 15 Ik'thallik Infestors or Warriors |q 30622/1
 		.' Use Ken-Ken's mask on Ik'thik Wing Commanders. |use Ken-Ken's Mask##80337
-		.from Manifestation of Fear##59874+ 
-		.' Defeat 5 Manifestation of Fear that come out of Ik'thik Wing Commanders. |q 30623/1 
+		.from Manifestation of Fear##59874+
+		.' Defeat 5 Manifestation of Fear that come out of Ik'thik Wing Commanders. |q 30623/1
 	step
 		.' Click the Complete Quest box that displays on the right side of the screen under your minimap
 		..turnin The Mantidote##30623
@@ -15016,11 +15016,11 @@ ZygorGuidesViewer:RegisterInclude("August_Celestials",[[
 		goto 53.9,61.9
 		.talk Elder Sage Storm-Sing##57319
 		..turnin Behind the Masks##30063
-		..turnin Saving the Sutras##30064 
+		..turnin Saving the Sutras##30064
 	step
 		goto The Jade Forest 53.9,61.9
 		.talk Elder Sage Tai-Feng##57324
-		..turnin Arrows of Fortune##30065 
+		..turnin Arrows of Fortune##30065
 		..turnin Hidden Power##30066
 		..turnin The Darkness Around Us##30006
 		..accept Flames of the Void##30068
@@ -15055,13 +15055,13 @@ ZygorGuidesViewer:RegisterInclude("August_Celestials",[[
 	label tiger
 		goto Kun-Lai Summit 67.2,55.9
 		.talk Xuen##60968
-		..turnin Trial At The Temple of the White Tiger##31381 
+		..turnin Trial At The Temple of the White Tiger##31381
 		|only if havequest(31381)
 	step
 		goto 67.2,55.9
 		.talk Xuen##60968
 		..accept Round 1: Brewmaster Chani##30879 |or
-		..accept Round 1: The Streetfighter##30880 |or 
+		..accept Round 1: The Streetfighter##30880 |or
 		..accept Contending With Bullies##31517 |tip This quest may not be available.
 		|confirm
 	step
@@ -15083,8 +15083,8 @@ ZygorGuidesViewer:RegisterInclude("August_Celestials",[[
 	step
 		goto 70.3,51.3
 		.talk Xuen##60968
-		..turnin Round 1: Brewmaster Chani##30879 
-		..turnin Round 1: The Streetfighter##30880 
+		..turnin Round 1: Brewmaster Chani##30879
+		..turnin Round 1: The Streetfighter##30880
 		..turnin Contending With Bullies##31517
 		..accept Round 2: Clever Ashyo & Ken-Ken##30881 |or
 		..accept Round 2: Kang Bramblestaff##30882 |or
@@ -15220,18 +15220,18 @@ ZygorGuidesViewer:RegisterInclude("August_Celestials",[[
 	step
 		goto 39.3,62.3
 		.talk Ogo the Elder##61580
-		..turnin The Siege Swells##30956 
-		..turnin The Unending Siege##30952 
+		..turnin The Siege Swells##30956
+		..turnin The Unending Siege##30952
 	step
 		goto 39.3,62.3
 		.talk Ogo the Younger##61581
-		..turnin The Big Guns##30959 
-		..turnin A Blade is a Blade##30954 
+		..turnin The Big Guns##30959
+		..turnin A Blade is a Blade##30954
 	step
 		goto 39.2,62.1
 		.talk Yak-Keeper Kyana##61585
-		..turnin Fallen Sentinels##30953 
-		..turnin In Battle's Shadow##30958 
+		..turnin Fallen Sentinels##30953
+		..turnin In Battle's Shadow##30958
 	step
 		goto 39.4,61.9
 		.talk Sentinel Commander Qipan##61584
@@ -15501,7 +15501,7 @@ ZygorGuidesViewer:RegisterInclude("Dominance_Offensive",[[
 	step
 		goto Krasarang Wilds 22.4,62.2
 		.talk Bixy Buzzsaw##67553
-		..turnin Bug Off!##32236 
+		..turnin Bug Off!##32236
 		|only if havequest(32236)
 	step
 		goto Krasarang Wilds 25.3,60.4
@@ -15900,7 +15900,7 @@ ZygorGuidesViewer:RegisterInclude("Dominance_Offensive",[[
 		.talk Archmage Aethas Sunreaver##68086 |q 32330/2
 		.talk Grand Magister Rommath##68085 |q 32330/1
 	step
-		.' Click the big glowing box in front of you 
+		.' Click the big glowing box in front of you
 		.from Concentrated Sha##68259 |q 32330/4
 	step
 		goto Silvermoon City 91.3,37.5
@@ -15991,7 +15991,7 @@ ZygorGuidesViewer:RegisterInclude("Dominance_Offensive",[[
 		goto Darnassus 38.4,33.3 |n
 		.' You will get a stealth buff. This mission does not put you in a seperate phase from any other NPCs or players in this zone, so be careful!
 		.' Enter the Cenarion Enclave here |goto Darnassus 38.4,33.3 |noway |c
-	step	
+	step
 		goto Darnassus 40.0,39.6
 		.click Divine Bell##
 		.' Locate the Devine Bell |q 32327/2
@@ -16128,7 +16128,7 @@ ZygorGuidesViewer:RegisterInclude("Dominance_Offensive",[[
 	step
 		goto Krasarang Wilds/0 9.9,52.5
 		.talk Tak-Tak##68681
-		.' Tell him to take you to Emperor's Reach |goto 
+		.' Tell him to take you to Emperor's Reach |goto
 	step
 		goto Kun-Lai Summit 55.8,34.0
 		.talk Malkorok##67844
@@ -16384,7 +16384,7 @@ ZygorGuidesViewer:RegisterInclude("H_Tillers",[[
 	step
 		goto 53.1,51.8
 		.talk Gina Mudclaw##58706
-		..turnin Learn and Grow V: Halfhill Market##30257 
+		..turnin Learn and Grow V: Halfhill Market##30257
 		..accept Learn and Grow VI: Gina's Vote##31945
 	step
 		goto 52.9,52.2
@@ -16414,7 +16414,7 @@ ZygorGuidesViewer:RegisterInclude("H_Tillers",[[
 		.' Click here to start doing dailies. |next "dailies" |confirm
 	step
 		goto 52.0,48.4
-		.clicknpc Bursting Scallions##63160 
+		.clicknpc Bursting Scallions##63160
 		.clicknpc Ripe Scallions##63165
 		.' Harvest Ripe Scallions |q 31945/2
 		.get 5 Scallion##74843 |q 31945/3
@@ -16423,7 +16423,7 @@ ZygorGuidesViewer:RegisterInclude("H_Tillers",[[
 	label runty
 		goto 52.0,48.4
 		.clicknpc Runty Scallions##63166
-		.' Press your Space Bar and jump. 
+		.' Press your Space Bar and jump.
 		.' Click here to return to the information page. |next "info" |confirm
 		.' Click here when you are have tilled your crops. |next "bursting" |confirm
 	step
@@ -16452,8 +16452,8 @@ ZygorGuidesViewer:RegisterInclude("H_Tillers",[[
 	step
 	label wild
 		goto 52.0,48.4
-		.clicknpc Wild Scallions##63170	
-		.' Ride the Scallion |invehicle |c 
+		.clicknpc Wild Scallions##63170
+		.' Ride the Scallion |invehicle |c
 	step
 		'Spam the Flex ability on your new hotbar, when the plant tries to cast Vine Slam, interrupt it with your Gnaw ability.
 		.' Build 50 stacks on Dominance. |outvehicle |c
@@ -16482,7 +16482,7 @@ ZygorGuidesViewer:RegisterInclude("H_Tillers",[[
 		.clicknpc Encroaching Weed##60185
 		.' Ride the Weed |invehicle |c
 	step
-		'Spam the Pull ability on your new hotbar. 
+		'Spam the Pull ability on your new hotbar.
 		.' Pull the Weed |outvehicle |c
 	step
 		.' Click here to return to the information page. |next "info" |confirm
@@ -17044,7 +17044,7 @@ ZygorGuidesViewer:RegisterInclude("H_Tillers",[[
 		|next "revered" |only if rep('The Tillers')>=Revered
 	step
 		goto 51.9,48.3
-		'When you arrive at Sunsong Ranch you will get a buff. After 15 minutes your ranch will be expanded. |tip You cannot buy your farm upgrade until the expansion is done. 
+		'When you arrive at Sunsong Ranch you will get a buff. After 15 minutes your ranch will be expanded. |tip You cannot buy your farm upgrade until the expansion is done.
 		|confirm
 		|only if not completedq(31936)
 	step
@@ -17089,7 +17089,7 @@ ZygorGuidesViewer:RegisterInclude("H_Tillers",[[
 		..turnin Growing the Farm II: Knock on Wood##30524
 	step
 		goto 51.9,48.3
-		'When you arrive at Sunsong Ranch you will get a buff. After 15 minutes your ranch will be expanded. |tip You cannot buy your farm upgrade until the expansion is done. 
+		'When you arrive at Sunsong Ranch you will get a buff. After 15 minutes your ranch will be expanded. |tip You cannot buy your farm upgrade until the expansion is done.
 		|confirm
 		|only if not completedq(31937)
 	step
@@ -17219,7 +17219,7 @@ ZygorGuidesViewer:RegisterInclude("H_Tillers",[[
 	step
 		'Wait a day for the Witchberries to grow and then harvest them.
 		.' Harvest 3 Witchberries |q 31949/2
-		.get 15 Witchberries##74846 |q 31949/3	
+		.get 15 Witchberries##74846 |q 31949/3
 	step
 		goto 54.7,47.0
 		.talk Nana Mudclaw##64597
@@ -17287,7 +17287,7 @@ ZygorGuidesViewer:RegisterInclude("H_Tillers",[[
 	step
 		'Wait a day for the Striped Melons to grow and then harvest them.
 		.' Harvest 4 Striped Melons |q 30527/2
-		.get 20 Striped Melon##74848 |q 30527/3	
+		.get 20 Striped Melon##74848 |q 30527/3
 	step
 		goto 52.2,48.8
 		.talk Farmer Yoon##58646
@@ -17322,7 +17322,7 @@ ZygorGuidesViewer:RegisterInclude("H_Tillers",[[
 		..turnin Growing the Farm III: The Mossy Boulder##30529
 	step
 		goto 51.9,48.3
-		'When you arrive at Sunsong Ranch you will get a buff. After 15 minutes your ranch will be expanded. |tip You cannot buy your farm upgrade until the expansion is done. 
+		'When you arrive at Sunsong Ranch you will get a buff. After 15 minutes your ranch will be expanded. |tip You cannot buy your farm upgrade until the expansion is done.
 		|confirm
 		|only if not completedq(31938)
 	step
@@ -17414,12 +17414,12 @@ ZygorGuidesViewer:RegisterInclude("tillers_prequests",[[
 		.talk Farmer Yoon##58646
 		..turnin Learn and Grow II: Tilling and Planting##30254
 		..accept Learn and Grow III: Tending Crops##30255
-	step 
+	step
 		goto 52.0,48.3
 		.' Use the Rusty Watering Can on the Parched EZ-Gro Green Cabbage |use Rusty Watering Can##79104
 		.' Water 2 parched Ez-Gro Green Cabbage |q 30255/1
 		|modelnpc Parched EZ-Gro Green Cabbage##59987
-	step 
+	step
 		goto 52.3,48.8
 		.talk Farmer Yoon##58646
 		..turnin Learn and Grow III: Tending Crops##30255
@@ -17469,7 +17469,7 @@ ZygorGuidesViewer:RegisterInclude("tillers_prequests",[[
 		.' Click here if you are ready to harvest your crops. |confirm
 	step
 		goto 52.0,48.4
-		.clicknpc Bursting Scallions##63160 
+		.clicknpc Bursting Scallions##63160
 		.clicknpc Ripe Scallions##63165
 		.' Harvest Ripe Scallions |q 31945/2
 		.get 5 Scallion##74843 |q 31945/3
@@ -17478,7 +17478,7 @@ ZygorGuidesViewer:RegisterInclude("tillers_prequests",[[
 	label runty
 		goto 52.0,48.4
 		.clicknpc Runty Scallions##63166
-		.' Press your Space Bar and jump. 
+		.' Press your Space Bar and jump.
 		.' Click here to return to the information page. |next "info" |confirm
 		.' Click here when you are have tilled your crops. |next "bursting" |confirm
 	step
@@ -17488,7 +17488,7 @@ ZygorGuidesViewer:RegisterInclude("tillers_prequests",[[
 		.from Voracious Virmen##60039
 		.' Click here to return to the information page. |next "info" |confirm
 		.' Click here when you are have tilled your crops. |next "bursting" |confirm
-	step 
+	step
 	label infested
 		goto 52.2,48.3
 		.click Vintage Bug Sprayer
@@ -17504,11 +17504,11 @@ ZygorGuidesViewer:RegisterInclude("tillers_prequests",[[
 		.from Swooping Plainshawk##60072
 		.' Click here to return to the information page. |next "info" |confirm
 		.' Click here when you are have tilled your crops. |next "bursting" |confirm
-	step 
+	step
 	label wild
 		goto 52.0,48.4
-		.clicknpc Wild Scallions##63170	
-		.' Ride the Scallion |invehicle |c 
+		.clicknpc Wild Scallions##63170
+		.' Ride the Scallion |invehicle |c
 	step
 		'Spam the Flex ability on your new hotbar, when the plant tries to cast Vine Slam, interrupt it with your Gnaw ability.
 		.' Build 50 stacks on Dominance. |outvehicle |c
@@ -17537,7 +17537,7 @@ ZygorGuidesViewer:RegisterInclude("tillers_prequests",[[
 		.clicknpc Encroaching Weed##60185
 		.' Ride the Weed |invehicle |c
 	step
-		'Spam the Pull ability on your new hotbar. 
+		'Spam the Pull ability on your new hotbar.
 		.' Pull the Weed |outvehicle |c
 	step
 		.' Click here to return to the information page. |next "info" |confirm
@@ -17610,7 +17610,7 @@ ZygorGuidesViewer:RegisterInclude("H_Anglers",[[
 		.' If these quests are unavailable today, click here. |confirm
 	step
 		goto 68.4,43.1
-		.clicknpc Frenzied Reef Shark##60408 
+		.clicknpc Frenzied Reef Shark##60408
 		.' Ride the shark. |invehicle |c
 		|only if havequest(30753)
 	step
@@ -17860,7 +17860,7 @@ ZygorGuidesViewer:RegisterInclude("H_Klaxxi",[[
 		.' <I am ready to fly, Xaril.> |invehicle
 		|only if havequest(31216)
 	step
-		'Use the _Venom Bomb_ to kill the small enemies. 
+		'Use the _Venom Bomb_ to kill the small enemies.
 		.' Use the _Paralyzing Syrum_ then immidiately the _Venom Bomb_ to kill the larger enemies.
 		.kill 200 Mantid |q 31216/2
 		.kill 3 Kunchong |q 31216/3
@@ -17899,17 +17899,17 @@ ZygorGuidesViewer:RegisterInclude("H_Klaxxi",[[
 		goto 37.9,33.1
 		.click East Feeder##12991
 		.' Sample the East Feeder |q 31496/2
-		|only if havequest(31496)		
+		|only if havequest(31496)
 	step
 		'Enter this building. |goto 36.3,32.3 <5 |c
 		goto 37.0,32.8
 		.click North Feeder##12991
 		.' Sample the North Feeder |q 31496/3
-		|only if havequest(31496)		
+		|only if havequest(31496)
 	step
 		goto 35.2,31.3
 		.from Shek'zeer Needler##64714+
-		.get 24 Needler Wings##87401 |q 31502/1 
+		.get 24 Needler Wings##87401 |q 31502/1
 		|only if havequest(31502)
 	step
 		goto 66.0,19.3
@@ -17967,7 +17967,7 @@ ZygorGuidesViewer:RegisterInclude("H_Klaxxi",[[
 		..accept The Matriarch's Maw##31599
 		|only if havequest(31109)
 	step
-		goto 58.6,51.1 
+		goto 58.6,51.1
 		.kill 15 Horrorscale Scorpid##62162+ |q 31270/1 |only if havequest(31270)
 		.from Chillwater Turtle##62160+ |only if havequest(31024)
 		.get 4 Meaty Turtle Haunch##82869 |q 31024/1 |only if havequest(31024)
@@ -17980,7 +17980,7 @@ ZygorGuidesViewer:RegisterInclude("H_Klaxxi",[[
 	step
 		goto 61.4,70.3
 		.' Use the Sonic Emitter in your bags on Ik'thik Amberstingers. |use Sonic Emitter##85884
-		.from Ik'thik Amberstinger##63728+ 
+		.from Ik'thik Amberstinger##63728+
 		.get 3 Amber-Encrusted Brain##85885 |q 31268/1
 		|only if havequest(31268)
 	step
@@ -18055,7 +18055,7 @@ ZygorGuidesViewer:RegisterInclude("H_Klaxxi",[[
 	step
 		goto 50.8,41.3
 		.clicknpc Kovok##63765
-		.' Locate Kovok |q 31808/1 
+		.' Locate Kovok |q 31808/1
 		|only if havequest(31808)
 	step
 		'Use the abilities on your hotbar to complete your task.
@@ -18071,9 +18071,9 @@ ZygorGuidesViewer:RegisterInclude("H_Klaxxi",[[
 	step
 		goto 55.0,35.9
 		.talk Kil'ruk the Wind-Reaver##62538
-		..turnin Dreadspinner Extermination##31231 
-		..turnin Nope Nope Nope##31235 
-		..turnin Culling the Swarm##31109 
+		..turnin Dreadspinner Extermination##31231
+		..turnin Nope Nope Nope##31235
+		..turnin Culling the Swarm##31109
 		..turnin Mistblade Destruction##31267
 		..turnin Eradicating the Zan'thik##31111
 		..turnin Vess-Guard Duty##31505
@@ -18092,16 +18092,16 @@ ZygorGuidesViewer:RegisterInclude("H_Klaxxi",[[
 	step
 		goto 54.3,36.1
 		.talk Korven the Prime##62180
-		..turnin An Ancient Empire##31232 
-		..turnin Sap Tapping##31233 
-		..turnin Sampling the Empire's Finest##31496 
+		..turnin An Ancient Empire##31232
+		..turnin Sap Tapping##31233
+		..turnin Sampling the Empire's Finest##31496
 		..turnin The Fight Against Fear##31270
 		..turnin The Scale-Lord##31269
 		..turnin Meltdown##31507
 	step
 		goto 54.3,35.9
 		.talk Rik'kal the Dissector##65253
-		..turnin Bad Genes##31271 
+		..turnin Bad Genes##31271
 		..turnin Wing Clip##31502
 		..turnin Shortcut to Ruin##31503
 		..turnin Putting An Eye Out##31234
@@ -18110,9 +18110,9 @@ ZygorGuidesViewer:RegisterInclude("H_Klaxxi",[[
 	step
 		goto 54.3,35.8
 		.talk Kaz'tik the Manipulator##63758
-		..turnin Brain Food##31238 
-		..turnin Sonic Disruption##31487 
-		..turnin Free From Her Clutches##31494 
+		..turnin Brain Food##31238
+		..turnin Sonic Disruption##31487
+		..turnin Free From Her Clutches##31494
 		..turnin A Little Brain Work##31268
 		..turnin Kunchong Treats##31024
 		..turnin Rampage Against the Machine##31808
@@ -18184,12 +18184,12 @@ ZygorGuidesViewer:RegisterInclude("H_Klaxxi",[[
 		.' Tell him:
 		.' <I am ready to fly, Xaril.> |invehicle |q 31211
 	step
-		'Use the _Venom Syrum_ to kill the small enemies. 
+		'Use the _Venom Syrum_ to kill the small enemies.
 		.' Use the _Paralyzing Syrum_ then immidiately the _Venom Syrum_ to kill the larger enemies.
 		.' Speak to Xaril the Poisoned Mind |q 31211/1
 		.kill 200 Mantid |q 31211/2
 		.kill 3 Kunchong |q 31211/3
-		'|from Krik'thik Wingguard##63613+, Ik'thik Warrior##63635+, Ik'thik Slayer##63636+ Dread Behemoth##65513+, Krik'thik Battletank##63625+, 
+		'|from Krik'thik Wingguard##63613+, Ik'thik Warrior##63635+, Ik'thik Slayer##63636+ Dread Behemoth##65513+, Krik'thik Battletank##63625+,
 	step
 		goto 54.9,36.2
 		.talk Xaril the Poisoned Mind##62151
@@ -18381,7 +18381,7 @@ ZygorGuidesViewer:RegisterInclude("Golden_Lotus",[[
 		|only if havequest(30240)
 	step
 		goto Vale of Eternal Blossoms 5.4,72.3
-		.click Setting Sun Turret 
+		.click Setting Sun Turret
 		.' Mount a turret. |invehicle |c |tip It's on the upper level of the tower here.
 		|only if havequest(30266)
 	step
@@ -18546,7 +18546,7 @@ ZygorGuidesViewer:RegisterInclude("H_Cloud_Serpent",[[
 		.talk Jenova Longeye##58413
 		..accept Just a Flesh Wound##30148 |only if skill("First Aid")>=525
 		..accept A Feast for the Senses##30149 |only if skill("Cooking")>=525
-		..accept Fragments of the Past##30147 |only if skill("Archaeology")>=525 
+		..accept Fragments of the Past##30147 |only if skill("Archaeology")>=525
 		..accept Snack Time##30146 |only if skill("Fishing")>=1
 		|tip NOTE: You will be able to accept Fragments of the Past at any level Archaeology, but won't be able to do the quest unless your skill in Archaeology is 525 or more.
 	step
@@ -18615,7 +18615,7 @@ ZygorGuidesViewer:RegisterInclude("H_Cloud_Serpent",[[
 		goto 57.3,43.5
 		.talk Qua-Ro Whitebrow##58511
 		.' Challenge him to a duel!
-		.' Defeat Qua-Ro Whitebrow |q 31721/1 
+		.' Defeat Qua-Ro Whitebrow |q 31721/1
 		|only if havequest(31721)
 	step
 		goto 58.0,43.7
@@ -18829,7 +18829,7 @@ ZygorGuidesViewer:RegisterInclude("H_Cloud_Serpent",[[
 		..turnin The Sky Race##30152
 		..turnin The Trainer's Challenge: Qua-Ro Whitebrow##31721
 		..turnin The Trainer's Challenge: Ace Longpaw##31717
-		..turnin The Trainer's Challenge: Suchi the Sweet##31720 
+		..turnin The Trainer's Challenge: Suchi the Sweet##31720
 		..turnin The Trainer's Challenge: Big Bao##31718
 		..turnin Preservation##30159
 		..turnin Lingering Doubt##31709
@@ -18842,7 +18842,7 @@ ZygorGuidesViewer:RegisterInclude("H_Cloud_Serpent",[[
 		'Talk to Your Hatchling |tip Your Hatchling is whichever color egg you chose in the prequests.
 		|modelnpc Your Hatchling##58416
 		|modelnpc Your Hatchling##58213
-		..turnin Tiny Treats##31710 
+		..turnin Tiny Treats##31710
 		|only if havequest(31710)
 	step
 		goto 57.5,45.3
@@ -18925,7 +18925,7 @@ ZygorGuidesViewer:RegisterInclude("H_Cloud_Serpent",[[
 		.clicknpc Golden Cloud Serpent##58429
 		.clicknpc Azure Cloud Serpent##58441
 		.clicknpc Jade Cloud Serpent##58442
-		.' Ride your Cloud Serpent |invehicle |c 
+		.' Ride your Cloud Serpent |invehicle |c
 		|only if havequest(30144)
 	step
 		'Fly your Cloud Serpent through the rings made from clouds.
@@ -19011,7 +19011,7 @@ ZygorGuidesViewer:RegisterInclude("Sunreavers_dailies",[[
 		'Moving to the Second Scenario |next "scenario2" |only if thunderstage()>=3 and not completedq(32276)
 		'Moving to the Third Scenario |next "scenario3" |only if thunderstage()>=4 and not completedq(32277)
 		'Moving to the Fourth Scenario |next "scenario4" |only if thunderstage()>=5 and not completedq(32278)
-		'Moving to the Fifth Scenario |next "post5" |only if thunderstage()>5 and not completedq(32279)
+		'Moving to the Fifth Scenario |next "post5" |only if thunderstage()==5 and not completedq(32279)
 //PREQUEST
 	step
 	label "prequest"
@@ -19279,19 +19279,19 @@ ZygorGuidesViewer:RegisterInclude("Sunreavers_dailies",[[
 		.' Enter the courtyard. |scenariogoal 22799
 	step
 		goto 933 57.5,40.8
-		.from Zandalari Stoneshield##69527 
+		.from Zandalari Stoneshield##69527
 		|scenariogoal 22675
 	step
 		scenariostage 1
 	step
 		goto 933 57.9,40.8
-		.from Palace Gatekeeper##69510+ 
+		.from Palace Gatekeeper##69510+
 		|scenariogoal 22685
 	step
 		scenariostage 2
 	step
 		goto 933 59.8,38.0
-		.from Quilen Guardian##69506+, Shan'ze Electrocutioner##69525+, Zandalari Stoneshield##69865+ 
+		.from Quilen Guardian##69506+, Shan'ze Electrocutioner##69525+, Zandalari Stoneshield##69865+
 		|scenariogoal 22734
 	step
 		scenariostage 3
@@ -19339,7 +19339,7 @@ ZygorGuidesViewer:RegisterInclude("Sunreavers_dailies",[[
 	step
 		goto Isle of Thunder 32.5,35.2
 		.talk Magister Hathorel##67663
-		..accept Ihgaluk Crag##32730 
+		..accept Ihgaluk Crag##32730
 		..accept A Wing to Fly On##32506 |only if thunderstage()>=2
 		|noquest
 		|only if thunderstage()>=2 and completedq(32212)
@@ -19450,7 +19450,7 @@ ZygorGuidesViewer:RegisterInclude("Sunreavers_dailies",[[
 		|modelnpc Mummified Remains##69337 |only if havequest(32218)
 		|only if havequest(32219) or havequest(32218) or havequest(32201) or havequest(32224)
 	step
-		goto Isle of Thunder 36.3,58.8 
+		goto Isle of Thunder 36.3,58.8
 		goto zone Hall of the Exalted
 		.' Enter the Hall of the Exalted here |goto Isle of Thunder 36.3,58.8 |noway |c
 		|only if havequest(32226)
@@ -19494,7 +19494,7 @@ ZygorGuidesViewer:RegisterInclude("Sunreavers_dailies",[[
 		|only if havequest(32216)
 	step
 		goto Isle of Thunder/0 28.0,77.2
-		.' Run over _Hatchling Skyscreamers_ in this area to scare them. 
+		.' Run over _Hatchling Skyscreamers_ in this area to scare them.
 		.' Scare 12 Hatchling Skyscreamers |q 32227/1
 		|modelnpc Hatchling Skyscreamer##69128
 		|only if havequest(32227)
@@ -19607,8 +19607,8 @@ ZygorGuidesViewer:RegisterInclude("Sunreavers_dailies",[[
 		.' Speak with Magistrix Vesara |q 32254/3
 		|only if havequest(32254)
 	step
-		map Isle of Thunder/0 
-		path follow loose;loop;ants straight 
+		map Isle of Thunder/0
+		path follow loose;loop;ants straight
 		path	51.8,74.4	53.3,77.0	54.3,79.3
 		path	55.1,82.2	55.1,82.2	55.3,84.2
 		path	54.9,86.7	53.9,88.3	52.4,90.4
@@ -19752,12 +19752,12 @@ ZygorGuidesViewer:RegisterInclude("Sunreavers_dailies",[[
 		..turnin The Bloodletter##32495
 		..turnin Soul Surrender##32220
 		..turnin The Call of Thunder##32225
-		..accept Encroaching Force##32521 |or 
-		..accept Competing Magic##32520 |or 
-		..accept Imposing Threat##32522 |or 
-		..accept The Beating of Troll Drums##32524 |or 
-		..accept The Beast Pens##32523 |or 
-		..accept Among the Bones##32293 |or 
+		..accept Encroaching Force##32521 |or
+		..accept Competing Magic##32520 |or
+		..accept Imposing Threat##32522 |or
+		..accept The Beating of Troll Drums##32524 |or
+		..accept The Beast Pens##32523 |or
+		..accept Among the Bones##32293 |or
 		|noquest
 		|only if thunderstage()>=2 and completedq(32212) and havequest(32201) or thunderstage()>=2 and completedq(32212) and completedq(32201)
 	step
@@ -19786,11 +19786,11 @@ ZygorGuidesViewer:RegisterInclude("Sunreavers_dailies",[[
 	step
 		goto Isle of Thunder/0 32.6,35.5
 		.talk Lor'themar Theron##67990
-		..accept Encroaching Force##32521 
-		..accept Competing Magic##32520 
+		..accept Encroaching Force##32521
+		..accept Competing Magic##32520
 		..accept Imposing Threat##32522
-		..accept The Beating of Troll Drums##32524 
-		..accept The Beast Pens##32523 
+		..accept The Beating of Troll Drums##32524
+		..accept The Beast Pens##32523
 		..accept Among the Bones##32293
 		|noquest
 		|only if thunderstage()>=2 and completedq(32212) and not havequest(32201) and not completedq(32201)
@@ -19826,7 +19826,7 @@ ZygorGuidesViewer:RegisterInclude("Sunreavers_dailies",[[
 		.talk Lor'themar Theron##67990
 		..turnin Competing Magic##32561
 		..turnin Encroaching Force##32521
-		..turnin Imposing Threat##32562 
+		..turnin Imposing Threat##32562
 		|only if havequest(32561) or havequest(32521) or havequest(32562)
 		|only if thunderstage()==1
 	step
@@ -19835,7 +19835,7 @@ ZygorGuidesViewer:RegisterInclude("Sunreavers_dailies",[[
 		..turnin Za'Tual##32729
 		..turnin Encroaching Force##32521
 		..turnin Competing Magic##32520
-		..turnin Imposing Threat##32562 
+		..turnin Imposing Threat##32562
 		..turnin Imposing Threat##32522
 		|only if thunderstage()>=2  and completedq(32212) or havequest(32729) or havequest(32521) or havequest(32520) or havequest(32562)
 	step
@@ -20033,19 +20033,19 @@ ZygorGuidesViewer:RegisterInclude("Sunreavers_dailies",[[
 		goto Isle of Thunder/1 28.0,62.2
 		.' Use your Arcane Emancipator on Scout Alaine |use Arcane Emancipator##93761
 		.' Scout Alaine rescued |q 32209/3
-		|modelnpc Scout Alaine##69357 
+		|modelnpc Scout Alaine##69357
 		|only if havequest(32209)
 	step
 		goto Isle of Thunder/1 44.3,54.8
 		.' Use your Arcane Emancipator on Scout Elearis |use Arcane Emancipator##93761
 		.' Scout Elearis rescued |q 32209/1
-		|modelnpc Scout Elearis##69357 
+		|modelnpc Scout Elearis##69357
 		|only if havequest(32209)
 	step
 		goto Isle of Thunder/1 54.3,35.2
 		.' Use your Arcane Emancipator on Scout Merior |use Arcane Emancipator##93761
 		.' Scout Merior rescued |q 32209/2
-		|modelnpc Scout Merior##69356 
+		|modelnpc Scout Merior##69356
 		|only if havequest(32209)
 	step
 		goto Isle of Thunder/1 21.0,69.9
@@ -20095,7 +20095,7 @@ ZygorGuidesViewer:RegisterInclude("Sunreavers_dailies",[[
 	step
 		goto Isle of Thunder/0 58.6,42.7
 		.talk Taoshi##69413
-		..accept Extended Shore Leave##32676 
+		..accept Extended Shore Leave##32676
 		..accept Raiding the Vault##32677
 		|noquest
 		|only if thunderstage()>=5
@@ -20137,9 +20137,9 @@ ZygorGuidesViewer:RegisterInclude("Sunreavers_dailies",[[
 	step
 		goto Isle of Thunder/0 47.2,40.8
 		.talk Magister Edien Sunhollow##67986
-		..accept Saur Loser##32207 
-		..accept Direhorn or Devilsaur##32297 
-		..accept Loa-saur##32283 
+		..accept Saur Loser##32207
+		..accept Direhorn or Devilsaur##32297
+		..accept Loa-saur##32283
 		|noquest
 	step
 		goto Isle of Thunder/0 47.1,40.7
@@ -20156,7 +20156,7 @@ ZygorGuidesViewer:RegisterInclude("Sunreavers_dailies",[[
 		|only if havequest(32283)
 	step
 		goto Isle of Thunder/0 49.7,38.8
-		.click Saur Fetish##13556 
+		.click Saur Fetish##13556
 		.from Zandalari Saurcaller##69154+
 		.from Zandalari Fetish-Binder##69155+
 		.collect 5 Saur Fetish##93668
@@ -20199,8 +20199,8 @@ ZygorGuidesViewer:RegisterInclude("Sunreavers_dailies",[[
 	 step
 		goto Isle of Thunder 47.2,40.6
 		.talk Scout Captain Elsia##67985
-		..accept Encroaching Force##32563 
-		..accept Zandalari on the Rise##32564 
+		..accept Encroaching Force##32563
+		..accept Zandalari on the Rise##32564
 		|noquest
 		|only if completedq(32523)
 	step
@@ -20220,7 +20220,7 @@ ZygorGuidesViewer:RegisterInclude("Sunreavers_dailies",[[
 		goto Isle of Thunder/1 28.0,62.2
 		.' Use your Arcane Emancipator on Scout Alaine |use Arcane Emancipator##93761
 		.' Scout Alaine rescued |q 32209/3
-		|modelnpc Scout Alaine##69357 
+		|modelnpc Scout Alaine##69357
 		|only if havequest(32209)
 	step
 		goto Isle of Thunder/1 44.3,54.8
@@ -20232,7 +20232,7 @@ ZygorGuidesViewer:RegisterInclude("Sunreavers_dailies",[[
 		goto Isle of Thunder/1 54.3,35.2
 		.' Use your Arcane Emancipator on Scout Merior |use Arcane Emancipator##93761
 		.' Scout Merior rescued |q 32209/2
-		|modelnpc Scout Merior##69356 
+		|modelnpc Scout Merior##69356
 		|only if havequest(32209)
 	step
 		goto Isle of Thunder/1 21.0,69.9
@@ -20656,7 +20656,7 @@ ZygorGuidesViewer:RegisterInclude("vendor_Jewelcrafting_1",[[
 		.talk Taryssa Lazuria##57922
 ]])
 ZygorGuidesViewer:RegisterInclude("vendor_Jewelcrafting_MoP",[[
-		
+
 		goto The Jade Forest 48.0,35.0
 		.talk Mai the Jade Shaper##65098
 ]])
@@ -21152,7 +21152,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Alchemy",[[
 		'This can only be obtained during the Feast of Winter Veil Holiday Event. This is from December 15 - Janurary 2.
 		.collect 1 Smokywood Pastures Special Gift##17726 |n
 		.' Open your Smokywood Pastures Special Gift |use Smokywood Pastures Special Gift##17726
-		.' Or 
+		.' Or
 		.collect 1 Ticking Present##21327 |n
 		.' Open your Ticking Present |use Ticking Present##21327
 		.collect 1 Recipe: Elixir of Frost Power##17709 |n
@@ -21176,7 +21176,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Alchemy",[[
 		.talk Glyx Brewright##2848
 		.buy 1 Recipe: Nature Protection Potion##6057 |n
 		.learn Nature Protection Potion##7259
-	step	
+	step
 		'This is a Random World Drop, from creatures level 25-46 and some dungeons.
 		|tip We recommend Uldaman for grinding.
 		.collect 1 Recipe: Elixir of Detect Lesser Invisibility##3832 |n
@@ -21203,7 +21203,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Alchemy",[[
 		.collect 1 Recipe: Goblin Rocket Fuel##10644 |n
 		.learn Goblin Rocket Fuel##11456
 	step
-		'This recipe can no longer be learned. It was acquired from a quest no longer in-game. 
+		'This recipe can no longer be learned. It was acquired from a quest no longer in-game.
 		.learn Restorative Potion##11452
 	step
 		#include "trainer_Alchemy"
@@ -21230,7 +21230,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Alchemy",[[
 		.talk Alchemist Pestlezugg##5594
 		.buy 1 Recipe: Transmute Mithril to Truesilver##9305 |n
 		.learn Transmute: Mithril to Truesilver##11480
-	step	
+	step
 		goto The Hinterlands 65.2,75.3
 		.from Vilebranch Hideskinner##2644+, Vilebranch Shadow Hunter##2645+, Vilebranch Berserker##2643+, Vilebranch Shadowcaster##2642+, Vilebranch Witch Doctor##2640+
 		.collect 1 Recipe: Wildvine Potion |n
@@ -21261,7 +21261,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Alchemy",[[
 		#include "trainer_Alchemy"
 		.learn Elixir of Greater Agility##11467
 	step
-		'This item may not drop in the game anymore, however they were known to drop from Skeletal Flayers in the past here [Western Plaguelands 54.4,79.9]		
+		'This item may not drop in the game anymore, however they were known to drop from Skeletal Flayers in the past here [Western Plaguelands 54.4,79.9]
 		.collect 1 Recipe: Gift of Arthas##9296 |n
 		.learn Gift of Arthas##11466
 	step
@@ -21372,17 +21372,17 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Alchemy",[[
 		#include "trainer_Alchemy"
 		.learn Elixir of Brute Force##17557
 	step
-		'This recipe can no longer be learned. It was acquired from a quest no longer in-game. 
+		'This recipe can no longer be learned. It was acquired from a quest no longer in-game.
 		.learn Greater Dreamless Sleep Potion##24366
 	step
-		'This recipe can no longer be learned. It was acquired from a quest no longer in-game. 
+		'This recipe can no longer be learned. It was acquired from a quest no longer in-game.
 		.learn Mageblood Elixir##24365
 	step
 		#include "trainer_Alchemy"
 		.learn Major Healing Potion##17556
 	step
 		goto Felwood 39.8,68.2
-		.from Jadefire Rogue##7106 
+		.from Jadefire Rogue##7106
 		.' You can find more Rogues here [Azshara 53.8,22.6]
 		.collect 1 Recipe: Elixir of the Mongoose##13491 |n
 		.learn Elixir of the Mongoose##17571
@@ -21429,7 +21429,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Alchemy",[[
 		.collect 1 Recipe: Greater Shadow Protection Potion##13499 |n
 		.learn Greater Shadow Protection Potion##17578
 	step
-		'This recipe can no longer be learned. It was acquired from a faction no longer in-game. 
+		'This recipe can no longer be learned. It was acquired from a faction no longer in-game.
 		.learn Mighty Troll's Blood Elixir##24368
 	step
 		goto Western Plaguelands 68.0,77.6
@@ -21443,11 +21443,11 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Alchemy",[[
 		.buy 1 Recipe: Transmute Elemental Fire##20761 |n
 		.learn Transmute: Elemental Fire##25146
 	step
-		'This Recipe is dropped from the Bosses of the old raid Molten Core. 
+		'This Recipe is dropped from the Bosses of the old raid Molten Core.
 		.collect 1 Recipe: Major Rejuvenation Potion##18257 |n
 		.learn Major Rejuvenation Potion##22732
 	step
-		'This recipe can no longer be learned. It was acquired from a quest no longer in-game. 
+		'This recipe can no longer be learned. It was acquired from a quest no longer in-game.
 		.learn Gurubashi Mojo Madness##24266
 	step
 		#include "trainer_Alchemy"
@@ -21876,79 +21876,79 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Alchemy",[[
 		.learn Mighty Shadow Protection Potion##53938
 	step
 		#include "trainer_Alchemy"
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' You can do the Northrend Alchemy Research in Dalaran every 3 days to try and learn this. |tip Must be level 400 to learn N. A. Research.
 		.' You can also craft any Potion, Elixir or Flask from WotLK Exspanion to discover this.
 		.learn Crazy Alchemist's Potion##53895
 	step
 		#include "trainer_Alchemy"
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' You can do the Northrend Alchemy Research in Dalaran every 3 days to try and learn this. |tip Must be level 400 to learn N. A. Research.
 		.' You can also craft any Potion, Elixir or Flask from WotLK Exspanion to discover this.
 		.learn Elixir of Accuracy##60354
 	step
 		#include "trainer_Alchemy"
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' You can do the Northrend Alchemy Research in Dalaran every 3 days to try and learn this. |tip Must be level 400 to learn N. A. Research.
 		.' You can also craft any Potion, Elixir or Flask from WotLK Exspanion to discover this.
 		.learn Elixir of Armor Piercing##60365
 	step
 		#include "trainer_Alchemy"
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' You can do the Northrend Alchemy Research in Dalaran every 3 days to try and learn this. |tip Must be level 400 to learn N. A. Research.
 		.' You can also craft any Potion, Elixir or Flask from WotLK Exspanion to discover this.
 		.learn Elixir of Deadly Strikes##60355
 	step
 		#include "trainer_Alchemy"
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' You can do the Northrend Alchemy Research in Dalaran every 3 days to try and learn this. |tip Must be level 400 to learn N. A. Research.
 		.' You can also craft any Potion, Elixir or Flask from WotLK Exspanion to discover this.
 		.learn Elixir of Expertise##60357
 	step
 		#include "trainer_Alchemy"
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' You can do the Northrend Alchemy Research in Dalaran every 3 days to try and learn this. |tip Must be level 400 to learn N. A. Research.
 		.' You can also craft any Potion, Elixir or Flask from WotLK Exspanion to discover this.
 		.learn Elixir of Lightning Speed##60366
 	step
 		#include "trainer_Alchemy"
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' You can do the Northrend Alchemy Research in Dalaran every 3 days to try and learn this. |tip Must be level 400 to learn N. A. Research.
 		.' You can also craft any Potion, Elixir or Flask from WotLK Exspanion to discover this.
 		.learn Elixir of Mighty Defense##60356
 	step
 		#include "trainer_Alchemy"
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' You can do the Northrend Alchemy Research in Dalaran every 3 days to try and learn this. |tip Must be level 400 to learn N. A. Research.
 		.' You can also craft any Potion, Elixir or Flask from WotLK Exspanion to discover this.
 		.learn Elixir of Mighty Mageblood##56519
 	step
 		#include "trainer_Alchemy"
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' You can do the Northrend Alchemy Research in Dalaran every 3 days to try and learn this. |tip Must be level 400 to learn N. A. Research.
 		.' You can also craft any Potion, Elixir or Flask from WotLK Exspanion to discover this.
 		.learn Elixir of Protection##54220
 	step
 		#include "trainer_Alchemy"
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' You can do the Northrend Alchemy Research in Dalaran every 3 days to try and learn this. |tip Must be level 400 to learn N. A. Research.
 		.' You can also craft any Potion, Elixir or Flask from WotLK Exspanion to discover this.
 		.learn Elixir of Water Walking##62410
 	step
 		#include "trainer_Alchemy"
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' You can do the Northrend Alchemy Research in Dalaran every 3 days to try and learn this. |tip Must be level 400 to learn N. A. Research.
 		.' You can also craft any Potion, Elixir or Flask from WotLK Exspanion to discover this.
 		.learn Potion of Speed##54221
 	step
 		#include "trainer_Alchemy"
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' You can do the Northrend Alchemy Research in Dalaran every 3 days to try and learn this. |tip Must be level 400 to learn N. A. Research.
 		.' You can also craft any Potion, Elixir or Flask from WotLK Exspanion to discover this.
 		.learn Potion of Wild Magic##54222
 	step
 		#include "trainer_Alchemy"
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' You can do the Northrend Alchemy Research in Dalaran every 3 days to try and learn this. |tip Must be level 400 to learn N. A. Research.
 		.' You can also craft any Potion, Elixir or Flask from WotLK Exspanion to discover this.
 		.learn Powerful Rejuvenation Potion##53904
@@ -21962,51 +21962,51 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Alchemy",[[
 		#include "trainer_Alchemy"
 		.learn Mighty Alchemist Stone##60405
 	step
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' Most commonly these are learned through Transmuting Gems and Stones within the WotLK Expansion.
 		.learn Transmute: Eternal Air to Earth##53777
 	step
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' Most commonly these are learned through Transmuting Gems and Stones within the WotLK Expansion.
 		.learn Transmute: Eternal Air to Water##53776
 	step
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' Most commonly these are learned through Transmuting Gems and Stones within the WotLK Expansion.
 		.learn Transmute: Eternal Earth to Air##53781
 	step
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' Most commonly these are learned through Transmuting Gems and Stones within the WotLK Expansion.
 		.learn Transmute: Eternal Earth to Shadow##53782
 	step
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' Most commonly these are learned through Transmuting Gems and Stones within the WotLK Expansion.
 		.learn Transmute: Eternal Fire to Life##53775
 	step
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' Most commonly these are learned through Transmuting Gems and Stones within the WotLK Expansion.
 		.learn Transmute: Eternal Fire to Water##53774
 	step
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' Most commonly these are learned through Transmuting Gems and Stones within the WotLK Expansion.
 		.learn Transmute: Eternal Life to Fire##53773
 	step
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' Most commonly these are learned through Transmuting Gems and Stones within the WotLK Expansion.
 		.learn Transmute: Eternal Life to Shadow##53771
 	step
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' Most commonly these are learned through Transmuting Gems and Stones within the WotLK Expansion.
 		.learn Transmute: Eternal Shadow to Earth##53779
 	step
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' Most commonly these are learned through Transmuting Gems and Stones within the WotLK Expansion.
 		.learn Transmute: Eternal Shadow to Life##53780
 	step
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' Most commonly these are learned through Transmuting Gems and Stones within the WotLK Expansion.
 		.learn Transmute: Eternal Water to Air##53783
 	step
-		'This Recipe is learned by Discovery. 
+		'This Recipe is learned by Discovery.
 		.' Most commonly these are learned through Transmuting Gems and Stones within the WotLK Expansion.
 		.learn Transmute: Eternal Water to Fire##53784
 	step
@@ -22210,7 +22210,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Alchemy",[[
 	step
 		'You must have _Archaeology Level 450_ and use _45 Tol'vir Fragments_ combined with Tol'vir Hieroglyphic (optional) to create a Canopic Jar.
 		.collect 1 Canopic Jar##64657 |n
-		.' Open your Canopic Jar |use Canopic Jar##64657 
+		.' Open your Canopic Jar |use Canopic Jar##64657
 		|tip This has a low drop rate.
 		.collect 1 Recipe: Vial of the Sands##67538 |n
 		.learn Vial of the Sands##93328
@@ -22222,7 +22222,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Alchemy",[[
 	step
 		' This Recipe is Discovered by creating _Alchemist's Rejuvenation_ and _Master healing Potions_. You can also create any new Recipe you have discovered to discover this.
 		.collect 1 Recipe: Mad Hozen Elixir##84138 |n
-		.learn Mad Hozen Elixir##114754	
+		.learn Mad Hozen Elixir##114754
 	step
 		' This Recipe is Discovered by creating _Alchemist's Rejuvenation_ and _Master healing Potions_. You can also create any new Recipe you have discovered to discover this.
 		.collect 1 Recipe: Mantid Elixir##84139 |n
@@ -23604,7 +23604,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Blacksmith",[[
 		'This can only be obtained during the Feast of Winter Veil Holiday Event. This is from December 15 - Janurary 2.
 		.collect 1 Smokywood Pastures Special Gift##17726 |n
 		.' Open your Smokywood Pastures Special Gift |use Smokywood Pastures Special Gift##17726
-		.' Or 
+		.' Or
 		.collect 1 Ticking Present##21327 |n
 		.' Open your Ticking Present |use Ticking Present##21327
 		.collect 1 Plans: Edge of Winter##17706 |n
@@ -23678,7 +23678,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Blacksmith",[[
 		.collect 1 Plans: Inlaid Mithril Cylinder##10713 |n
 		.learn Inlaid Mithril Cylinder##11454
 
-	step	
+	step
 		goto Dustwallow Marsh 77.0,18.6
 		.from Strashaz Myrmidon##4368+
 		.collect 1 Plans: Runic Breastplate##12718 |n
@@ -23747,7 +23747,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Blacksmith",[[
 	step
 		goto Felwood 64.8,5.2
 		.talk Meilosh##11557
-		|tip You must be Honored with Timbermaw Hold to purchase this Plan. 
+		|tip You must be Honored with Timbermaw Hold to purchase this Plan.
 		.collect 1 Plans: Heavy Timbermaw Belt##19202 |n
 		.learn Heavy Timbermaw Belt##23628
 
@@ -24163,7 +24163,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Blacksmith",[[
 		.from Nexus Stalker##18314+
 		.collect 1 Plans: Swiftsteel Gloves##23615 |n
 		.learn Swiftsteel Gloves##29648
-	step	
+	step
 		goto Netherstorm 26.8,68.2
 		.from Sunfury Bloodwarder##18853
 		.collect 1 Plans: Greater Ward of Shielding##23639 |n
@@ -24439,7 +24439,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Blacksmith",[[
 		'This Plan is dropped from the Boss NPC's of Trial of the Crusader.
 		.collect 1 Plans: Breastplate of the White Knight##47640 |n
 		.learn Breastplate of the White Knight##67130
-	step	
+	step
 		'This Plan is dropped from the Boss NPC's of Trial of the Crusader.
 		.collect 1 Plans: Saronite Swordbreakers##47641 |n
 		.learn Saronite Swordbreakers##67131
@@ -24481,7 +24481,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Blacksmith",[[
 		.learn Spiked Deathdealers##63192
 	step
 		'This Plan is dropped from the Boss NPC's of Ulduar.
-		.collect 1 Plans: Treads of Destiny##45091 |n 
+		.collect 1 Plans: Treads of Destiny##45091 |n
 		.learn Treads of Destiny##63190
 	step
 		'This Plan drops from NPC's in the Sunwell Plateau.
@@ -24773,7 +24773,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Enchanting",[[
 		'This can only be obtained during the Feast of Winter Veil Holiday Event. This is from December 15 - Janurary 2.
 		.collect 1 Smokywood Pastures Special Gift##17726 |n
 		.' Open your Smokywood Pastures Special Gift |use Smokywood Pastures Special Gift##17726
-		.' Or 
+		.' Or
 		.collect 1 Ticking Present##21327 |n
 		.' Open your Ticking Present |use Ticking Present##21327
 		.collect 1 Formula: Enchant Weapon - Winter's Might##17725 |n
@@ -24819,7 +24819,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Enchanting",[[
 	step
 		#include "trainer_Enchanting"
 		.learn Enchant Boots - Stamina##13836
-	step	
+	step
 		goto Northern Stranglethorn 54.0,75.6
 		.from Venture Co. Strip Miner##674
 		.collect 1 Formula: Enchant Gloves - Advanced Mining##11203 |n
@@ -25075,19 +25075,19 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Enchanting",[[
 		.buy 1 Formula: Enchant Cloak - Subtlety##33151 |n
 		.learn Enchant Cloak - Subtlety##25084
 	step
-		'This is a Boss drop from the Raid Temple of Ahn'Qiraj. 
+		'This is a Boss drop from the Raid Temple of Ahn'Qiraj.
 		.collect 1 Formula: Enchant Gloves - Fire Power##20729 |n
 		.learn Enchant Gloves - Fire Power##25078
 	step
-		'This is a Boss drop from the Raid Temple of Ahn'Qiraj. 
+		'This is a Boss drop from the Raid Temple of Ahn'Qiraj.
 		.collect 1 Formula: Enchant Gloves - Frost Power##20728 |n
 		.learn Enchant Gloves - Frost Power##25074
 	step
-		'This is a Boss drop from the Raid Temple of Ahn'Qiraj. 
+		'This is a Boss drop from the Raid Temple of Ahn'Qiraj.
 		.collect 1 Formula: Enchant Gloves - Healing Power##20730 |n
 		.learn Enchant Gloves - Healing Power##25079
 	step
-		'This is a Boss drop from the Raid Temple of Ahn'Qiraj. 
+		'This is a Boss drop from the Raid Temple of Ahn'Qiraj.
 		.collect 1 Formula: Enchant Gloves - Shadow Power##20727 |n
 		.learn Enchant Gloves - Shadow Power##25073
 	step
@@ -25099,7 +25099,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Enchanting",[[
 	step
 		goto Shattrath City 51.6,41.6
 		.talk Almaador
-		.buy 1 Formula: Enchant Gloves - Threat##33153 |n 
+		.buy 1 Formula: Enchant Gloves - Threat##33153 |n
 		.learn Enchant Gloves - Threat##25072
 	step
 		goto Eastern Plaguelands 81.6,78.2
@@ -25107,7 +25107,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Enchanting",[[
 		.collect 1 Formula: Enchant Weapon - Crusader##16252 |n
 		.learn Enchant Weapon - Crusader##20034
 	step
-		'This is a Boss drop from the Raid Molten Core. 
+		'This is a Boss drop from the Raid Molten Core.
 		.collect 1 Formula: Enchant Weapon - Healing Power##18260 |n
 		.learn Enchant Weapon - Healing Power##22750
 	step
@@ -25125,7 +25125,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Enchanting",[[
 		.buy 1 Formula: Enchant Weapon - Mighty Spirit##19448 |n
 		.learn Enchant Weapon - Mighty Spirit##23803
 	step
-		'This is a Boss drop from the Raid Molten Core. 
+		'This is a Boss drop from the Raid Molten Core.
 		.collect 1 Formula: Enchant Weapon - Spellpower##18259 |n
 		.learn Enchant Weapon - Spellpower##22749
 	step
@@ -25297,7 +25297,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Enchanting",[[
 		.from Coilfang Oracle##17803
 		.collect 1 Formula: Enchant Bracer - Fortitude##22533 |n
 		.learn Enchant Bracer - Fortitude##27914
-	step	
+	step
 		goto Shattrath City 51.6,41.6
 		.talk Almaador##21432
 		|tip You must be Honored with The Sha'tar to purchase this Formula.
@@ -26052,7 +26052,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Cooking",[[
 		.talk Penney Copperpinch##13420
 		.buy Recipe: Gingerbread Cookie##17200 |n
 		.learn Gingerbread Cookie##21143
-	step  
+	step
 		goto Eversong Woods 49.0,47.0
 		.talk Landraelanis##16262
 		.buy Recipe: Lynx Steak##27685 |n
@@ -26125,7 +26125,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Cooking",[[
 		|tip This is only available to Horde and may sell well on the Neutral AH.
 		.buy Recipe: Roasted Kodo Meat##5484 |n
 		.learn Roasted Kodo Meat##6414
-	step	
+	step
 		goto Silverpine Forest 43.2,40.6
 		.talk Andrew Hilbert##3556
 		.buy Recipe: Smoked Bear Meat##6892 |n
@@ -26356,7 +26356,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Cooking",[[
 		.talk Kelsey Yance##2664
 		.buy Recipe: Giant Clam Scorcho##6039 |n
 		.learn Giant Clam Scorcho##7213
-	step	
+	step
 		goto Feralas 74.6,42.8
 		.talk Sheendra Tallgrass##8145
 		.buy Recipe: Hot Wolf Ribs##12229 |n
@@ -27072,7 +27072,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Cooking",[[
 		.talk Nat Pagle##637721
 		.buy Recipe: Krasarang Fritters##85505 |n
 		.learn Krasarang Fritters##124032
-	step	
+	step
 		goto Krasarang Wilds 68.4,43.4
 		.talk Nat Pagle##637721
 		.buy Recipe: Viseclaw Soup##85502 |n
@@ -27173,7 +27173,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Engineering",[[
 	step
 		'This Recipe is learned by learning the Engineering Skill.
 		.learn Rough Dynamite##3919
-	step	
+	step
 		#include "trainer_Engineering"
 		.learn Handful of Copper Bolts##3922
 	step
@@ -27305,7 +27305,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Engineering",[[
 		.talk Buckslappy##49918
 		.buy Schematic: Blue Firework##18649 |n
 		.learn Blue Firework##23067
-	step	
+	step
 		goto Northern Barrens 68.4,69.2
 		.talk Gagsprocket##3495
 		.buy Schematic: Green Firework##18648 |n
@@ -27329,7 +27329,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Engineering",[[
 		#include "trainer_Engineering"
 		.learn Explosive Sheep##3955
 	step
-		'This Schematic may no longer be in game. 
+		'This Schematic may no longer be in game.
 		.collect Schematic: Ice Deflector##13308 |n
 		.learn Ice Deflector##3957
 	step
@@ -27403,7 +27403,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Engineering",[[
 		'This can only be obtained during the Feast of Winter Veil Holiday Event. This is from December 15 - Janurary 2.
 		.collect 1 Smokywood Pastures Special Gift##17726 |n
 		.' Open your Smokywood Pastures Special Gift |use Smokywood Pastures Special Gift##17726
-		.' Or 
+		.' Or
 		.collect 1 Ticking Present##21327 |n
 		.' Open your Ticking Present |use Ticking Present##21327
 		.collect Schematic: Snowmaster 9000##17720 |n
@@ -27439,7 +27439,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Engineering",[[
 		.from Mekgineer Thermaplugg##7800
 		.collect Schematic: Gnomish Cloaking Device##7742 |n
 		.learn Gnomish Cloaking Device##3971
-	step	
+	step
 		goto Northern Stranglethorn 67.6,61.0
 		.talk Gnaz Blunderflame##2687
 		.buy Schematic: Mechanical Dragonling##13311 |n
@@ -27609,7 +27609,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Engineering",[[
 		.learn Mithril Mechanical Dragonling##12624
 		.' You can also purchase this from Ruppo Zipcoil here: [The HInterlands 34.2,37.8]
 		'|talk Ruppo Zipcoil##2688
-	step	
+	step
 		#include "trainer_Engineering"
 		.learn Salt Shaker##19567
 	step
@@ -27649,7 +27649,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Engineering",[[
 		.from Weapon Technician
 		.collect Schematic: Gnomish Alarm-o-Bot##18654 |n
 		.learn Gnomish Alarm-o-Bot##23096
-	step	
+	step
 		goto Blackrock Depths 50.0,61.6
 		.from Plugger Spazzring##9499
 		.collect Schematic: Goblin Jumper Cables XL##18653 |n
@@ -27781,14 +27781,14 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Engineering",[[
 	step
 		#include "trainer_Engineering"
 		.learn Fel Iron Bomb##30310
-	step	
+	step
 		goto Blackrock Depths 36.8,66.0
 		.click Schematic: Field Repair Bot 74A##525
 		.learn Field Repair Bot 74A##22704
 	step
 		#include "trainer_Engineering"
 		.learn Flying Machine##44155
-	step	
+	step
 		goto Zangarmarsh 34.0,51.0
 		.talk Mack Diver##17637
 		..accept The Zapthrottle Mote Extractor!##9635
@@ -27822,7 +27822,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Engineering",[[
 		#include "trainer_Engineering"
 		|tip Must have Gnomish Engineering to train this.
 		.learn Gnomish Flame Turret##30568
-	step	
+	step
 		goto Magisters' Terrace 8.6,50.6
 		.from Kael'thas Sunstrider##24664
 		.collect Schematic: Healing Potion Injector##35310 |n
@@ -27955,7 +27955,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Engineering",[[
 	step
 		#include "trainer_Engineering"
 		.learn Cobalt Frag Bomb##56460
-	step	
+	step
 		goto The Steamvault 32.8,82.4
 		.from Mekgineer Steamrigger##17796
 		.collect Schematic: Rocket Boots Xtreme##23887 |n
@@ -28150,7 +28150,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Engineering",[[
 	step
 		#include "trainer_Engineering"
 		.learn Sonic Booster##56466
-	step	
+	step
 		#include "trainer_Engineering"
 		|tip You must be a Goblin Engineer to train this Schematic.
 		.learn Global Thermal Sapper Charge##56514
@@ -28193,7 +28193,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Engineering",[[
 	step
 		#include "trainer_Engineering"
 		.learn Handful of Obsidium Bolts##84403
-	step	
+	step
 		#include "trainer_Engineering"
 		.learn Heartseeker Scope##56478
 	step
@@ -28202,7 +28202,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Engineering",[[
 	step
 		#include "trainer_Engineering"
 		.learn Wormhole Generator: Northrend##67920
-	step	
+	step
 		#include "trainer_Engineering"
 		.learn Electrostatic Condenser##95703
 	step
@@ -28279,7 +28279,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Engineering",[[
 	step
 		#include "trainer_Engineering"
 		.learn Electrified Ether##94748
-	step	
+	step
 		#include "trainer_Engineering"
 		.learn Armor Plated Combat Shotgun##56479
 	step
@@ -28649,7 +28649,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Jewelcrafting",[[
 	step
 		#include "trainer_Jewelcrafting"
 		.learn Engraved Truesilver Ring##25620
-	step	
+	step
 		goto Undercity 64.8,49.8
 		.talk Felicia Doan##4775
 		.from Design: The Jade Eye##20975 |n
@@ -28973,7 +28973,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Jewelcrafting",[[
 		.talk Ontuvo##27666
 		.buy Design: Forceful Talasite##35325 |n
 		.learn Forceful Talasite##46405
-	step	
+	step
 		'This is a Random World Drop, from creatures level 60-72 and in some dungeons.
 		|tip We recommend Old Hillsbrad Foothils or Shadow Labyrinth for grinding.
 		.collect Design: Glinting Nightseye##24216 |n
@@ -29099,7 +29099,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Jewelcrafting",[[
 		.talk Duchess Mynx##32538
 		.buy Design: Deadly Huge Citrine##41562 |n
 		.learn Deadly Huge Citrine##53877
-	step	
+	step
 		goto Howling Fjord 25.4,58.6
 		.talk Tanaika##31916
 		.buy Design: Defender's Shadow Crystal##41574 |n
@@ -29855,7 +29855,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Jewelcrafting",[[
 		.talk Duchess Mynx##32538
 		.buy Design: Deadly Monarch Topaz##41721 |n
 		.learn Deadly Monarch Topaz##53988
-	step	
+	step
 		goto The Storm Peaks 26.2,47.6
 		.from Stormforged Champion##29370, Stormforged Artificer##29376, Stormforged Ambusher##30208, Stormforged Infiltrator##30222
 		.collect Design: Defender's Twilight Opal##41820 |n
@@ -32036,7 +32036,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Jewelcrafting",[[
 	step
 		#include "trainer_Jewelcrafting"
 		.learn Quick Sunstone##107642
-	step	
+	step
 		#include "trainer_Jewelcrafting"
 		.learn Steady Alexandrite##107613
 	step
@@ -32264,7 +32264,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Leatherworking",[[
 	step
 		#include "trainer_Jewelcrafting"
 		.learn Embossed Leather Vest##2160
-	step		
+	step
 		'This Pattern is learned by completed the quest Kodo Hide Bag.
 		|tip This is a Horde only Quest and may sell well on the Neutral AH.
 		goto Thunder Bluff 44.0,44.6
@@ -32346,7 +32346,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Leatherworking",[[
 		'This is only available to Alliance and may be sold on the Neutral AH.
 		.buy Pattern: Black Whelp Cloak##7289 |n
 		.learn Black Whelp Cloak##9070
-	step	
+	step
 		'This is only available to Alliance and may be sold on the Neutral AH.
 		.buy Pattern: Black Whelp Tunic##20576 |n
 		.learn Black Whelp Tunic##24940
@@ -32571,7 +32571,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Leatherworking",[[
 		'This can only be obtained during the Feast of Winter Veil Holiday Event. This is from December 15 - Janurary 2.
 		.collect 1 Smokywood Pastures Special Gift##17726 |n
 		.' Open your Smokywood Pastures Special Gift |use Smokywood Pastures Special Gift##17726
-		.' Or 
+		.' Or
 		.collect 1 Ticking Present##21327 |n
 		.' Open your Ticking Present |use Ticking Present##21327
 		.collect Pattern: Gloves of the Greatfather##17722 |n
@@ -32769,7 +32769,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Leatherworking",[[
 	step
 		#include "trainer_Leatherworking"
 		.learn Wildfeather Leggings##36075
-	step	
+	step
 		goto Tirisfal Glades 83.2,69.4
 		.talk Werg Thickblade##12943
 		.buy Pattern: Wicked Leather Gauntlets##15725 |n
@@ -32883,7 +32883,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Leatherworking",[[
 		'This can only be obtained during the Feast of Winter Veil Holiday Event. This is from December 15 - Janurary 2.
 		.collect 1 Smokywood Pastures Special Gift##17726 |n
 		.' Open your Smokywood Pastures Special Gift |use Smokywood Pastures Special Gift##17726
-		.' Or 
+		.' Or
 		.collect 1 Ticking Present##21327 |n
 		.' Open your Ticking Present |use Ticking Present##21327
 		.collect Pattern: Winter Boots##34262 |n
@@ -33110,7 +33110,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Leatherworking",[[
 		.buy Pattern: Bramblewood Helm##22771 |n
 		.learn Bramblewood Helm##28472
 	step
-		'This is a Boss drop from the Raid Molten Core. 
+		'This is a Boss drop from the Raid Molten Core.
 		.collect Pattern: Core Armor Kit##18252 |n
 		.learn Core Armor Kit##22727
 	step
@@ -33169,7 +33169,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Leatherworking",[[
 		|tip You must be Revered with Cenarion Circle to purchase this Pattern.
 		.buy Pattern: Sandstalker Breastplate##20511 |n
 		.learn Sandstalker Breastplate##24851
-	step	
+	step
 		goto Silithus 64.6,45.8
 		.talk Aendel Windspear##15293
 		|tip You must be Honored with Cenarion Circle to purchase this Pattern.
@@ -33295,7 +33295,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Leatherworking",[[
 	step
 		#include "trainer_Leatherworking"
 		.learn Primalstorm Breastplate##36077
-	step	
+	step
 		goto Zangarmarsh 79.2,63.8
 		.talk Fedryen Swiftspear##17904
 		|tip You must be Honored with Cenarion Expedition to purchase this Pattern.
@@ -33358,19 +33358,19 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Leatherworking",[[
 	step
 		goto Shattrath City 48.0,26.6
 		.talk Quartermaster Endarin##19321
-		|tip You must be Honored with The Aldor to purchase this Pattern. 
+		|tip You must be Honored with The Aldor to purchase this Pattern.
 		.buy Pattern: Blastguard Belt##29704 |n
 		.learn Blastguard Belt##35537
 	step
 		goto Shattrath City 48.0,26.6
 		.talk Quartermaster Endarin##19321
-		|tip You must be Revered with The Aldor to purchase this Pattern. 
+		|tip You must be Revered with The Aldor to purchase this Pattern.
 		.buy Pattern: Blastguard Boots##29703 |n
 		.learn Blastguard Boots##35536
 	step
 		goto Shattrath City 48.0,26.6
 		.talk Quartermaster Endarin##19321
-		|tip You must be Exalted with The Aldor to purchase this Pattern. 
+		|tip You must be Exalted with The Aldor to purchase this Pattern.
 		.buy Pattern: Blastguard Pants##29702 |n
 		.learn Blastguard Pants##35535
 	step
@@ -33388,7 +33388,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Leatherworking",[[
 	step
 		goto Shattrath City 48.0,26.6
 		.talk Quartermaster Endarin##19321
-		|tip You must be Exalted with The Aldor to purchase this Pattern. 
+		|tip You must be Exalted with The Aldor to purchase this Pattern.
 		.buy Pattern: Enchanted Clefthoof Leggings##29698 |n
 		.learn Enchanted Clefthoof Leggings##35532
 	step
@@ -33406,7 +33406,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Leatherworking",[[
 	step
 		goto Shattrath City 48.0,26.6
 		.talk Quartermaster Endarin##19321
-		|tip You must be Exalted with The Aldor to purchase this Pattern. 
+		|tip You must be Exalted with The Aldor to purchase this Pattern.
 		.buy Pattern: Enchanted Felscale Leggings##29677 |n
 		.learn Enchanted Felscale Leggings##35525
 	step
@@ -33427,22 +33427,22 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Leatherworking",[[
 		|tip You must be Friendly with Thrallmar to purchase this Pattern.
 		.buy Pattern: Felstalker Belt##25738 |n
 		.learn Felstalker Belt##32498
-	step	
+	step
 		goto Shattrath City 48.0,26.6
 		.talk Quartermaster Endarin##19321
-		|tip You must be Honored with The Aldor to purchase this Pattern. 
+		|tip You must be Honored with The Aldor to purchase this Pattern.
 		.buy Pattern: Flamescale Belt##29693 |n
 		.learn Flamescale Belt##35531
 	step
 		goto Shattrath City 48.0,26.6
 		.talk Quartermaster Endarin##19321
-		|tip You must be Revered with The Aldor to purchase this Pattern. 
+		|tip You must be Revered with The Aldor to purchase this Pattern.
 		.buy Pattern: Flamescale Boots##29691 |n
 		.learn Flamescale Boots##35528
 	step
 		goto Shattrath City 48.0,26.6
 		.talk Quartermaster Endarin##19321
-		|tip You must be Exalted with The Aldor to purchase this Pattern. 
+		|tip You must be Exalted with The Aldor to purchase this Pattern.
 		.buy Pattern: Flamescale Leggings##29689 |n
 		.learn Flamescale Leggings##35529
 	step
@@ -33686,7 +33686,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Leatherworking",[[
 		'This is a boss drop from the Raid Hyjal Summit.
 		.collect Pattern: Bindings of Lightning Reflexes##32748 |n
 		.learn Bindings of Lightning Reflexes##41161
-	step 
+	step
 		'This is a boss drop from the Raid Serpentshrine Cavern.
 		.collect Pattern: Boots of Natural Grace##30305 |n
 		.learn Boots of Natural Grace##36355
@@ -35359,7 +35359,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Tailoring",[[
 	step
 		#include "trainer_Tailoring"
 		.learn Gloves of Meditation##3852
-	step	
+	step
 		goto Duskwood 75.8,45.4
 		.talk Danielle Zipstitch##2668
 		.buy Pattern: Bright Yellow Shirt##14627 |n
@@ -35394,7 +35394,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Tailoring",[[
 	step
 		'This Pattern is no longer in the game.
 		.learn Robes of Arcana##6692
-	step	
+	step
 		'This is a Random World Drop, from creatures level 20-35 and in some dungeons.
 		|tip We recommend Gnomeregan or Blackfathom Deeps for grinding.
 		.collect Pattern: Truefaith Gloves##7091 |n
@@ -35494,7 +35494,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Tailoring",[[
 		'This can only be obtained during the Feast of Winter Veil Holiday Event. This is from December 15 - Janurary 2.
 		.collect 1 Smokywood Pastures Special Gift##17726 |n
 		.' Open your Smokywood Pastures Special Gift |use Smokywood Pastures Special Gift##17726
-		.' Or 
+		.' Or
 		.collect 1 Ticking Present##21327 |n
 		.' Open your Ticking Present |use Ticking Present##21327
 		.collect Pattern: Green Holiday Shirt##17724 |n
@@ -35680,7 +35680,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Tailoring",[[
 		'This can only be obtained during the Feast of Winter Veil Holiday Event. This is from December 15 - Janurary 2.
 		.collect 1 Smokywood Pastures Special Gift##17726 |n
 		.' Open your Smokywood Pastures Special Gift |use Smokywood Pastures Special Gift##17726
-		.' Or 
+		.' Or
 		.collect 1 Ticking Present##21327 |n
 		.' Open your Ticking Present |use Ticking Present##21327
 		.collect Pattern: Green Winter Clothes##34261
@@ -35689,7 +35689,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Tailoring",[[
 		'This can only be obtained during the Feast of Winter Veil Holiday Event. This is from December 15 - Janurary 2.
 		.collect 1 Smokywood Pastures Special Gift##17726 |n
 		.' Open your Smokywood Pastures Special Gift |use Smokywood Pastures Special Gift##17726
-		.' Or 
+		.' Or
 		.collect 1 Ticking Present##21327 |n
 		.' Open your Ticking Present |use Ticking Present##21327
 		.collect Pattern: Red Winter Clothes##34319 |n
@@ -36247,7 +36247,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Tailoring",[[
 		.buy Pattern: Primal Mooncloth Belt##21916 |n
 		.learn Primal Mooncloth Belt##26760
 	step
-		goto Nagrand 57.0,38.6 
+		goto Nagrand 57.0,38.6
 		.talk Mathar G'ochar##19015
 		.buy Pattern: Soulcloth Gloves##21902 |n
 		.learn Soulcloth Gloves##26779
@@ -36378,7 +36378,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Tailoring",[[
 		.from Phantom Valet##16408
 		.collect Pattern: Soulcloth Vest##21904 |n
 		.learn Soulcloth Vest##26781
-	step	
+	step
 		goto The Steamvault 80.6,43.6
 		.from Warlord Kalithresh##17798
 		.collect Pattern: Battlecast Hood##24313 |n
@@ -36408,7 +36408,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Tailoring",[[
 		'This is a drop from the Raid: Black Temple.
 		.collect Pattern: Bracers of Nimble Thought##32754 |n
 		.learn Bracers of Nimble Thought##41205
-	step	
+	step
 		goto Shattrath City 66.6,68.6
 		.talk Andrion Darkspinner##22212
 		.buy Pattern: Frozen Shadoweave Robe##21913 |n
@@ -36791,11 +36791,11 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Tailoring",[[
 		.collect Pattern: Cord of the White Dawn##45104
 		.learn Cord of the White Dawn##63205
 	step
-		'This is a drop from the Raid: Ulduar. 
+		'This is a drop from the Raid: Ulduar.
 		.collect Pattern: Sash of Ancient Power##45102 |n
 		.learn Sash of Ancient Power##63203
 	step
-		'This is a drop from the Raid: Ulduar. 
+		'This is a drop from the Raid: Ulduar.
 		.collect Pattern: Savior's Slippers##45105 |n
 		.learn Savior's Slippers##63206
 	step
@@ -37145,7 +37145,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Tailoring",[[
 	step
 		#include "trainer_Tailoring"
 		.learn Windwool Tunic##125525
-	step	
+	step
 		goto Shrine of Two Moons 32.8,53.8
 		.talk Esha the Loommaiden##64051
 		.buy Pattern: Contender's Satin Cuffs##86365 |n
@@ -37213,7 +37213,7 @@ ZygorGuidesViewer:RegisterInclude("Profession_List_Tailoring",[[
 		.talk Esha the Loommaiden##64051
 		.buy Pattern: Greater Cerulean Spellthread##86376 |n
 		.learn Greater Cerulean Spellthread##125555
-	step	
+	step
 		goto Vale of Eternal Blossoms 74.2,42.6
 		.talk Jaluu the Generous##59908
 		|tip You must be Honored with Golden Lotus to purchase this Pattern.
@@ -37352,7 +37352,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 		goto Durotar 47.5,12.8
 		.' Find a Creepy Crawly or Hare from around this area and challenge it to a battle.
 		.' When it reaches 35% health or lower use your Trap ability to capture it.
-		.' Catch a Pet. |q 31590/1 
+		.' Catch a Pet. |q 31590/1
 // Orgrimmar
 	step
 		goto Orgrimmar 52.5,59.3
@@ -37374,7 +37374,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 	step
 		.' Go to Northern Barrens.
 		map Northern Barrens
-		path follow loose;loop;ants straight 
+		path follow loose;loop;ants straight
 		path 45.6,63.8	42.0,60.9	40.1,59.0
 		path 38.8,55.3	38.4,47.9	40.1,42.0
 		path 42.3,40.1	42.5,44.5	42.4,49.4
@@ -37388,7 +37388,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 		.talk Dagra the Fierce##66135
 		.' Let's fight!
 		|tip Dagra has 2 Beast type Pets and 1 Critter type Pet. Mechanical damage will defeat the Beasts and Beast damage will defeat the Critter. It is suggested that your pets are at least level 4.
-		.' Defeat Dagra the Fierce |q 31813/1 
+		.' Defeat Dagra the Fierce |q 31813/1
 	step
 		goto Northern Barrens 58.6,53.0
 		.talk Dagra the Fierce##66135
@@ -37398,7 +37398,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 	step
 		.' Go to Southern Barrans.
 		map Southern Barrens
-		path follow loose;loop;ants straight 
+		path follow loose;loop;ants straight
 		path 42.8,44.6	44.2,42.7	46.2,42.5
 		path 48.0,43.4	49.7,44.5	48.3,48.2
 		path 46.9,49.6	44.7,49.5	42.9,48.5
@@ -37434,8 +37434,8 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 	step
 		.' Go to Desolace.
 		map Desolace
-		path follow loose;loop;ants straight 
-		path 72.6,36.6	75.6,33.4	76.5,29.3	
+		path follow loose;loop;ants straight
+		path 72.6,36.6	75.6,33.4	76.5,29.3
 		path 77.0,25.3	71.5,19.4	65.8,17.7
 		path 64.0,23.0	67.8,28.0
 		.' Level your pets to 13.
@@ -37457,7 +37457,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 	step
 		.' Go to Felwood.
 		map Felwood
-		path follow loose;loop;ants straight 
+		path follow loose;loop;ants straight
 		path 54.2,82.1	57.0,84.4	55.7,87.4
 		path 52.9,86.2	51.3,85.7	48.8,89.3
 		path 47.2,90.1	46.4,86.3	47.2,82.6
@@ -37505,7 +37505,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 	step
 		.' Go to Silithus.
 		map Silithus
-		path follow loose;loop;ants straight 
+		path follow loose;loop;ants straight
 		path 49.1,39.0	37.7,35.9	34.6,35.7
 		path 30.6,39.6	30.4,44.0	33.6,42.5
 		path 35.9,42.0	38.8,45.5	41.7,43.7
@@ -37576,7 +37576,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 		.talk Kortas Darkhammer##66515
 		|tip You will not be able to challenge Kortas if you have the "Pet Recovery" debuff, wait for it to fall off.
 		.' Let's fight!
-		|tip Kortas has 3 Dragonkin type Pets. Use Humanoid type attacks on his pets. His pets are all around level 15 so your pet team should be able to defeat him easily. 
+		|tip Kortas has 3 Dragonkin type Pets. Use Humanoid type attacks on his pets. His pets are all around level 15 so your pet team should be able to defeat him easily.
 		.' Defeat Kortas Darkhammer |q 31903/3
 // Swamp of Sorrows
 	step
@@ -37622,7 +37622,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 	step
 		.' Go to Twilight Highlands.
 		map Twilight Highlands
-		path follow loose;loop;ants straight 
+		path follow loose;loop;ants straight
 		path 57.0,47.4	59.2,45.3	61.0,44.6
 		path 63.4,47.7	63.8,51.9	63.6,56.0
 		path 61.5,59.2	59.5,60.3	56.3,58.9
@@ -37635,7 +37635,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 	step
 		goto Hellfire Peninsula 64.3,49.3
 		.talk Nicki Tinytech##66550
-		|tip You will not be able to challenge Nicky if you have the "Pet Recovery" debuff, wait for it to fall off. 
+		|tip You will not be able to challenge Nicky if you have the "Pet Recovery" debuff, wait for it to fall off.
 		.' Let's fight!
 		|tip Nicky has 3 Mechanical type Pets. Use Elemental type attacks on her pets. Her pets are all around level 20.
 		.' Defeat Nicky Tinytech |q 31921/1
@@ -37643,7 +37643,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 	step
 		goto Shattrath City 58.8,70.1
 		.talk Morulu The Elder##66553
-		|tip You will not be able to challenge Morulu if you have the "Pet Recovery" debuff, wait for it to fall off. 
+		|tip You will not be able to challenge Morulu if you have the "Pet Recovery" debuff, wait for it to fall off.
 		.' Let's fight!
 		|tip Morulu has 3 Aquatic type Pets. Use Flying type attacks on his pets. His pets are all around level 23.
 		.' Defeat Morulu The Elder |q 31921/4
@@ -37651,7 +37651,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 	step
 		goto Nagrand 61.0,49.4
 		.talk Narrok##66552
-		|tip You will not be able to challenge Narrok if you have the "Pet Recovery" debuff, wait for it to fall off. 
+		|tip You will not be able to challenge Narrok if you have the "Pet Recovery" debuff, wait for it to fall off.
 		.' Let's fight!
 		|tip Narrok has an Aquatic type Pet, a Beast type Pet, and a Critter type Pet. Use Flying type attacks on his Aquatic pet, Mechanical type attacks on his Beast pet, and Beast type attacks on his Critter pet. His pets are all around level 22.
 		.' Defeat Narrok |q 31921/3
@@ -37659,19 +37659,19 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 	step
 		goto Zangarmarsh 17.2,50.5
 		.talk Ras'an##66551
-		|tip You will not be able to challenge Ras'an if you have the "Pet Recovery" debuff, wait for it to fall off. 
+		|tip You will not be able to challenge Ras'an if you have the "Pet Recovery" debuff, wait for it to fall off.
 		.' Let's fight!
 		|tip Ras'an has a Flying type Pet, a Humanoid type Pet, and a Magic type Pet. Use Magic type attacks on his Flying pet, Undead type attacks on his Humanoid pet, and Dragonkin type attacks on his Magic pet. His pets are all around level 21.
 		.' Defeat Ras'an |q 31921/2
 	step
 		.' Click the complete quest box on the right side of your screen.
-		..turnin Battle Pet Tamers: Outland##31921 
+		..turnin Battle Pet Tamers: Outland##31921
 		..accept Grand Master Antari##31920
 // Shadowmoon Valley
 	step
 		goto Shadowmoon Valley 30.6,42.0
 		.talk Bloodknight Antari##66557
-		|tip You will not be able to challenge Bloodknight Antari if you have the "Pet Recovery" debuff, wait for it to fall off. 
+		|tip You will not be able to challenge Bloodknight Antari if you have the "Pet Recovery" debuff, wait for it to fall off.
 		.' Let's fight!
 		|tip Bloodknight Antari has an Elemental Pet, a Dragonkin Pet, and a Magic Pet. Use Aquatic type attacks on his Elemental pet, Humanoid type attacks on his Dragonkin pet, and Dragonkin type attacks on his Magic pet. Your pets should be at least level 24 for this fight.
 		.' Defeat Bloodknight Antari |q 31920/1
@@ -37690,7 +37690,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 	step
 		.' Go to The Jade Forest.
 		map The Jade Forest
-		path follow loose;loop;ants straight 
+		path follow loose;loop;ants straight
 		path 49.0,87.0	51.1,87.5	53.3,86.8
 		path 53.1,83.8	52.1,80.9	49.5,78.8
 		path 50.0,82.3	50.2,84.7
@@ -37702,7 +37702,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 	step
 		goto Howling Fjord 28.6,33.9
 		.talk Beegle Blastfuse##66635
-		|tip You will not be able to challenge Beegle Blastfuse if you have the "Pet Recovery" debuff, wait for it to fall off. 
+		|tip You will not be able to challenge Beegle Blastfuse if you have the "Pet Recovery" debuff, wait for it to fall off.
 		.' Let's fight!
 		|tip Beegle Blastfuse has an Aquatic Pet and 2 Flying Pets. Use Flying type attacks on his Aquatic pet and Magic attacks on his Flying pets.Your pets should all be around level 25 before fighting Beegle.
 		.' Defeat Beegle Blastfuse |q 31929/1
@@ -37710,7 +37710,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 	step
 		goto Dragonblight 59.0,77.0
 		.talk Okrut Dragonwaste##66638
-		|tip You will not be able to challenge Okrut Dragonwaste if you have the "Pet Recovery" debuff, wait for it to fall off. 
+		|tip You will not be able to challenge Okrut Dragonwaste if you have the "Pet Recovery" debuff, wait for it to fall off.
 		.' Let's fight!
 		|tip Okrut Dragonwaste has a Dragonkin Pet and 2 Undead Pets. Use Humanoid type attacks on his Dragonkin and Critter type attacks on his Undead. Your pets should all be level 25 before fighting Okrut.
 		.' Defeat Okrut Dragonwaste |q 31929/3
@@ -37718,7 +37718,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 	step
 		goto Crystalsong Forest 50.1,59.0
 		.talk Nearly Headless Jacob##66636
-		|tip You will not be able to challenge Nearly Headless Jacob if you have the "Pet Recovery" debuff, wait for it to fall off. 	
+		|tip You will not be able to challenge Nearly Headless Jacob if you have the "Pet Recovery" debuff, wait for it to fall off.
 		.' Let's fight!
 		|tip Nearly Headless Jacob has 3 Undead Pets. Critter type attacks will be the most useful against Jacob. You should also consider having an Aquatic pet or two. Your pets should all be level 25 when you fight him.
 		.' Defeat Nearly Headless Jacob |q 31929/2
@@ -37726,7 +37726,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 	step
 		goto Zul'Drak 13.2,66.8
 		.talk Gutretch##66639
-		|tip You will not be able to challenge Gutretch if you have the "Pet Recovery" debuff, wait for it to fall off. 
+		|tip You will not be able to challenge Gutretch if you have the "Pet Recovery" debuff, wait for it to fall off.
 		.' Let's fight!
 		|tip Gutretch has 2 Beast type Pets and a Critter type Pet. Use Mechanical type attacks on his Beasts and Beast type attacks on his Critter. Your pets should all be level 25.
 		.' Defeat Gutretch |q 31929/4
@@ -37738,7 +37738,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 	step
 		goto Icecrown 77.4,19.6
 		.talk Major Payne##66675
-		|tip You will not be able to challenge Major Payne if you have the "Pet Recovery" debuff, wait for it to fall off. 	
+		|tip You will not be able to challenge Major Payne if you have the "Pet Recovery" debuff, wait for it to fall off.
 		.' Let's fight!
 		|tip Major Payne has a Beast Pet, a Mechanical Pet, and an Elemental Pet. Use Mechanical type attacks on his Beast, Elemental type attacks on his Mechanical, and Aquatic type attacks on his Elemental. Your pets should be level 25 for this fight.
 		.' Defeat Major Payne |q 31928/1
@@ -37759,7 +37759,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 	step
 		goto Mount Hyjal 61.4,32.7
 		.talk  Brok##66819
-		|tip You will not be able to challenge Brok if you have the "Pet Recovery" debuff, wait for it to fall off. 	
+		|tip You will not be able to challenge Brok if you have the "Pet Recovery" debuff, wait for it to fall off.
 		.' Let's fight!
 		|tip Brok has a Beast Pet, a Critter Pet, and a Magic Pet. Use Mechanical type attacks on his Beast, Beast type attacks on his Critter, and Dragonkin type attacks on his Magic. Your pets should all be level 25.
 		.' Defeat Brok |q 31967/1
@@ -37767,7 +37767,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 	step
 		goto Deepholm 49.9,57.0
 		.talk Bordin Steadyfist##66815
-		|tip You will not be able to challenge Bordin Steadyfist if you have the "Pet Recovery" debuff, wait for it to fall off. 	
+		|tip You will not be able to challenge Bordin Steadyfist if you have the "Pet Recovery" debuff, wait for it to fall off.
 		.' Let's fight!
 		|tip Bordin Steadyfist has a Critter Pet and 2 Elemental Pets. Use Beast type attacks on his Critter and Aquatic type attacks on his Elementals. Your pets should all be level 25.
 		.' Defeat Bordin Steadyfist |q 31967/2
@@ -37775,7 +37775,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 	step
 		goto Twilight Highlands 56.6,56.8
 		.talk Goz Banefury##66822
-		|tip You will not be able to challenge Goz Banefury if you have the "Pet Recovery" debuff, wait for it to fall off. 	
+		|tip You will not be able to challenge Goz Banefury if you have the "Pet Recovery" debuff, wait for it to fall off.
 		.' Let's fight!
 		|tip Goz Banefury has a Beast Pet, an Elemental Pet, and a Magic Pet. Use Mechanical type attacks on his Beast, Aquatic type attacks on his Elemental, and Dragonkin type attacks on his Magic. Your pets should all be level 25.
 		.' Defeat Goz Banefury |q 31967/3
@@ -37787,7 +37787,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 	step
 		goto Uldum 56.5,42.0
 		.talk Obalis##66824
-		|tip You will not be able to challenge Obalis if you have the "Pet Recovery" debuff, wait for it to fall off. 	
+		|tip You will not be able to challenge Obalis if you have the "Pet Recovery" debuff, wait for it to fall off.
 		.' Let's fight!
 		|tip Obalis has a Beast Pet, a Flying Pet, and a Critter Pet. Use Mechanical type attacks on his Beast, Magic type attacks on his Flyer, and Beast type attacks on his Critter. Your pets should all be level 25.
 		.' Defeat Obalis |q 31970/1
@@ -37827,7 +37827,7 @@ ZygorGuidesViewer:RegisterInclude("Horde_Battlepet_quests",[[
 		|tip Mo'ruk has a Beast Pet, a Flying Pet, and an Aquatic Pet. Use Mechanical type attacks on his Beast, Magic type attacks on his Flyer, and Flying type attacks on his Aquatic. Your pets should all be level 25.
 		.' Defeat Mo'ruk |q 31952/3
 	step
-		goto Kun-Lai Summit 35.8,73.8 
+		goto Kun-Lai Summit 35.8,73.8
 		.talk Courageous Yon##66738
 		|tip You will not be able to challenge Courageous Yon if you have the "Pet Recovery" debuff, wait for it to fall off.
 		.' Let's fight!
@@ -38159,7 +38159,7 @@ ZygorGuidesViewer:RegisterInclude("H_Brawl",[[
 		.' Tell them you're ready to fight. |goto Brawl'gar Arena 57.1,48.7 |noway |c
 	step
 		'Fight 1: _Bruce_
-		.' Bruce is a very easy fight, meant to get you started in the Brawler's Guild. He has 1 ability: 
+		.' Bruce is a very easy fight, meant to get you started in the Brawler's Guild. He has 1 ability:
 		..' _Chomp, chomp, chomp_ is an ability that he uses in front of him. When he begins casting, run to the side or behind him to avoid getting hit by this attack.
 		..' _The best strategy for this fight is to dps him as fast as you can, making sure to avoid being directly in front of him whenever he begins to cast his ability._
 		|modelnpc Bruce##67262
