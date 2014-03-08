@@ -4720,6 +4720,8 @@ goto 24.1,32.2
 .' While controlling the Subdued Canyon Ettin, go to [31.5,44.3]
 .' Use your Ettin Control Orb to make the Ettin pick up the Huge Boulder |use Ettin Control Orb##58895
 .' Save Foreman Oslow |q 26520/1
+|modelnpc Canyon Ettin##43094
+|modelnpc Huge Boulder##43196
 step
 goto 31.9,44.9
 .talk 382
@@ -4874,7 +4876,7 @@ goto 29.7,44.5
 ..turnin 26570
 step
 goto 34.4,46.0
-.click Keeshan's Riverboat##33265
+.clicknpc Keeshan's Riverboat##43443
 .' Complete Keeshan's Riverboat Ride |q 26616/1
 step
 goto 52.9,54.6
@@ -5033,14 +5035,14 @@ goto 77.2,65.9
 ..accept 26708
 step
 goto 76.9,66.0
-.click Bravo Company Siege Tank##43714 |invehicle |c
+.clicknpc Bravo Company Siege Tank##43714
+|invehicle |c
 step
 goto 75.1,51.7
 .' Allow John J. Keeshan to kill Blackrock Invaders as you make your way to [Redridge Mountains,60.7,36.7]
 .|tip He will do this automatically when you are in the area.
-.kill 200 Blackrock Invader |q 26708/1
+.kill 200 Blackrock Invader##43775 |q 26708/1
 .' Click the red arrow on your action bar to get off the siege tank |outvehicle |c |q 26708
-|modelnpc Blackrock Drake Rider##43787
 step
 goto 60.7,36.7
 .talk 43733
@@ -5057,6 +5059,7 @@ goto 58.0,55.6
 ..turnin 26713
 ..accept 26714
 .' When Darkblaze attacks, fight him until he flies away
+.from Darkblaze##43496
 .' Defeated Darkblaze |q 26714/1
 step
 ding 21
@@ -5125,9 +5128,8 @@ step
 goto 66.2,26.7
 .from Venom Web Spider##217+
 .get 6 Dusky Lump |q 26623/1
-.from Dire Wolves
-.get 5 Wolf Skirt Steak |q 26620/1
 .kill 12 Dire Wolf##43704+ |q 26618/1
+.get 5 Wolf Skirt Steak |q 26620/1
 .' You can find more Wolves and Spiders at [Duskwood,74.0,19.9]
 step
 goto 73.5,46.9
@@ -5277,8 +5279,8 @@ goto 34.1,76.8 |n
 .' Leave the cave |goto 34.1,76.8,0.5 |noway |c
 step
 goto 38.8,70.4
-.kill 15 Splinter Fist Ogre##889+ |q 25235/1
-|modelnpc Splinter Fist Warrior##212+, Splinter Fist Ogre##889+, Splinter Fist Firemonger##1251+
+.from Splinter Fist Warrior##212+, Splinter Fist Ogre##889+, Splinter Fist Firemonger##1251+
+.kill 15 Splinter Fist Ogre |q 25235/1
 step
 goto 45.1,67.0
 .talk 888
@@ -5350,12 +5352,13 @@ goto 73.0,75.1 |n
 .' Enter the mine |goto 73.0,75.1,0.5 |noway |c
 step
 goto 73.6,79.2
-.click Muddy Journal Page##974
+.click Muddy Journal Page##9749
 .get Muddy Journal Pages |q 26670/1
 step
 goto 73.0,75.1 |n
 .' Kill any Nightbane Tainted Ones that are left in the mine before leaving
 .' Leave the mine |goto 73.0,75.1,0.5 |noway |c
+|modelnpc Nightbane Tainted One##920+
 step
 goto 72.9,74.1
 .kill 8 Nightbane Vile Fang##206+ |q 26690/1
@@ -5401,10 +5404,12 @@ goto 21.6,73.2
 .' Use Harris's Ampule on the Lurking Worgen when it is almost dead |use Harris's Ampule##60206 |tip He's inside the barn, up on the ledge to the left as you enter the barn.
 .|tip If you're a high level, unequip your weapons and armor to lower your stats so you dont one shot it
 .' Capture the Lurking Worgen |q 26720/1
+|modelnpc Lurking Worgen##43814
 step
 goto 21.8,67.3
 .' Use your Holy Censer on Forlorn Spirits |use Holy Censer##60225
 .' Soothe 5 Forlorn Spirits |q 26777/1
+|modelnpc Forlorn Spirit##43923
 step
 goto 18.3,57.7
 .talk 43730
@@ -5414,6 +5419,9 @@ step
 goto 18.5,57.3
 .' Watch Oliver Harris and Jitters attempt to cure the Lurking Worgen
 .' Cure the Worgen |q 26760/1
+|modelnpc Oliver Harris##43730
+|modelnpc jitters##288
+|modelnpc Lurking Worgen##43814
 step
 goto 18.3,57.7
 .talk 43730
@@ -5642,12 +5650,12 @@ goto 56.5,20.3
 .' Rescue Osborn Obnoticus |q 26736/3
 step
 goto 60.7,21.5
-.from Crystal Spine Basilisk##689+
-.get 7 Crystal Spine Basilisk Blood |q 26733/1
 .' Use your Lashtail Raptor Egg Fragment to summon your Lashtail Hatchling |use Lashtail Raptor Egg Fragment##58165
 .from Crystal Spine Basilisk##689+
+.get 7 Crystal Spine Basilisk Blood |q 26733/1
 .' Let your Lashtail Hatchling eat 40 Bites of Basilisk Meat |q 26739/1
 .' You can find more Crystal Spine Basilisks around [Northern Stranglethorn,62.5,26.0]
+|modelnpc Lashtail Raptor##42736
 step
 goto 47.3,11.1
 .talk 739
@@ -5785,6 +5793,7 @@ goto 40.6,26.9
 .get Icon of Tsul'Kalu |q 26743/1
 .get Icon of Mahamba |q 26743/2
 .get Icon of Pogeyan |q 26743/3
+|modelnpc Lashtail Raptor##42736
 step
 goto 40.1,34.7
 .from Murkgill Warrior##4461+, Murkgill Hunter##4458+, Murkgill Forager##4457+, Murkgill Oracle##4459+
@@ -6242,6 +6251,7 @@ goto 61.2,44.6
 .' Click the Quest Completion box that appears under your mini map
 ..turnin 26810
 ..accept 26811
+|model Swirling Green Portal##9041
 step
 goto 62.4,46.8
 .click Half-Buried Bottle##228
@@ -6805,7 +6815,8 @@ goto 40.4,73.5
 .' You will fly onto a Bloodsail ship |goto 36.5,65.9,0.5 |noway |c
 step
 goto 35.6,66.8
-.' Kill Fleet Master Firallon |q 26703/1 |tip He's downstairs in the ship, in the Captain's room.
+.kill Fleet Master Firallon##2546 |q 26703/1
+|tip He's downstairs in the ship, in the Captain's room.
 step
 goto 41.2,73.1
 .talk 2496
@@ -8009,6 +8020,7 @@ goto 67.4,9.0
 .' Burn Warlord Thresh'jin's Body |q 27482/1
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 27482
+|model Bonfire##6411
 step
 goto 64.5,13.7
 .' Don't walk over the dirt piles on the ground, they spawn more enemies
@@ -8241,6 +8253,7 @@ step
 goto 88.0,32.5
 .' Walk into the teleporter |tip It looks like a machine with a blue circle at the bottom of it.
 .' Teleport up the mountain |goto 82.8,33.9,0.5 |noway |c
+|model Teleporter##2047
 step
 .' The path up to Fuselight starts at [Badlands,68.8,31.7]. |goto Badlands,68.8,31.7,0.5
 step
@@ -8276,6 +8289,7 @@ goto 64.6,37.1
 .' Use your Billy Goat Blaster on Billy Goats |use Billy Goat Blaster##62397 |tip They are rams all around the outskirts of this town.
 .|tip You can do this while mounted
 .' Nudge 12 Billy Goats |q 27776/1
+|modelnpc Billy Goat##46393
 step
 goto 64.3,38.1
 .talk 46653
@@ -8984,7 +8998,7 @@ goto 39.4,67.9
 ..accept 28033
 step
 goto 39.8,67.9
-.talk 47429
+.talk 47269
 ..turnin 28033
 ..accept 28034
 step
@@ -9136,11 +9150,6 @@ step
 goto 16.0,66.0
 .kill 5 Blackrock Whelper##47782+ |q 28416/1
 .kill 5 Flamescale Broodling##7049+ |q 28416/2
-.' You can find more mobs to kill at [Burning Steppes 19.1,58.7]
-step
-goto 16.0,66.0
-.kill 5 Blackrock Whelper##47782+ |q 28174/1
-.kill 5 Flamescale Broodling##7049+ |q 28174/2
 .' You can find more mobs to kill at [Burning Steppes 19.1,58.7]
 step
 goto 17.3,52.1
@@ -10225,6 +10234,8 @@ step
 goto 60.1,50.9
 .' Use Umi's Mechanical Yeti on Legacki |use Umi's Mechanical Yeti##12928
 .' Scare Legacki |q 28722/1
+|modelnpc Legacki##10978
+|modelnpc Mechanical Yeti##12257
 step
 goto 59.3,49.8
 .talk 10305
@@ -10719,7 +10730,7 @@ goto 61.4,62.9 |n
 .' Leave the cave |goto 61.4,62.9,0.5 |noway |c
 step
 goto  62.9,64.2
-.clicknpc Abandoned Bloodwash Crate##41402+
+.clicknpc Abandoned Bloodwash Crate##41402
 ..' <Help the Rockpool tadpoles.>
 ..accept 25707
 step
@@ -21423,7 +21434,8 @@ goto 52,62.6
 ..turnin 10099
 step
 goto 67.1,48.9
-.click Trampled Skeletons |tip They are very easy to miss, but once you find one you will find them really fast.
+.click Trampled Skeleton##278+
+|tip They are very easy to miss, but once you find one you will find them really fast.
 .' Cleanse 8 Trampled Skeletons |q 10047/1
 step
 goto 58.7,47
@@ -21794,10 +21806,12 @@ step
 goto 66.4,76.6
 .' Use your Smoke Beacon under the tower|use Smoke Beacon##31739
 .' Mark the Southern Tower |q 10895/2
+|model Smoke Beacon##6544
 step
 goto 67.9,67
 .' Use your Smoke Beacon under the tower|use Smoke Beacon##31739
 .' Mark the Northern Tower |q 10895/1
+|model Smoke Beacon##6544
 step
 goto 71,63.4
 .talk 21133
@@ -22214,7 +22228,7 @@ goto Zangarmarsh 19.7,52.0
 |only if rep ('Sporeggar')>=Neutral and not completedq(9808)
 step
 goto Zangarmarsh 19.2,53.5
-.click Glowcap##182053
+.click Glowcap##6874
 .collect 10 Glowcap Mushroom##24245 |q 9808/1
 .' You can find more around [31.3,37.7]
 |only if rep ('Sporeggar')>=Neutral and not completedq(9808)
@@ -22299,12 +22313,14 @@ goto 41.3,29
 ..fpath Orebor Harborage
 step
 goto 26.4,22.8
-.click Daggerfen Poison Vial |tip Little clear bottle with white liquid in it, sitting on the ground next to a hut.
+.click Daggerfen Poison Vial##7142
+|tip Little clear bottle with white liquid in it, sitting on the ground next to a hut.
 .get Daggerfen Poison Vial |q 9848/2
 .' It can also be at [25.4,25.0]
 step
 goto 24.4,27
-.click Daggerfen Poison Manual |tip At the top of the big tower, to the right as you reach the top, on the floor.
+.click Daggerfen Poison Manual##6930
+|tip At the top of the big tower, to the right as you reach the top, on the floor.
 .get Daggerfen Poison Manual|q 9848/1
 step
 goto 23.8,26.8
@@ -22738,7 +22754,8 @@ goto 31.2,46.7
 step
 goto 31.6,52.6
 .from Cabal Abjurist##21660+, Cabal Tomb-Raider##21662+, Cabal Skirmisher##21661+
-.get 10 Mark of Kil'jaeden |q 10325/1 |only if rep ('The Aldor') >= Neutral
+.get 10 Mark of Kil'jaeden |q 10325/1
+|only if rep ('The Aldor') >= Neutral
 step
 'Go outside to 37.4,51.2 |goto 37.4,51.2
 .talk 22370
@@ -23189,19 +23206,20 @@ goto Zangarmarsh 41.9,27.2
 only if rep ('Kurenai')<=Neutral
 step
 goto Zangarmarsh 41.8,27.3
-.click Wanted Poster##183284
+.click Wanted Poster##6901
 ..accept 10116
-|modeldisplay 6901
 only if rep ('Kurenai')<=Neutral
 step
 goto 26.4,22.8
-.' Click the Daggerfen Poison Vial |tip Little clear bottle with white liquid in it, sitting on the ground next to a hut.
+.click the Daggerfen Poison Vial##7142
+|tip Little clear bottle with white liquid in it, sitting on the ground next to a hut.
 .get Daggerfen Poison Vial|q 9848/2
 .' It can also be at [25.4,25.0]
 only if rep ('Kurenai')<=Neutral
 step
 goto 24.4,27
-.' Click the Daggerfen Poison Manual |tip At the top of the big tower, to the right as you reach the top, on the floor.
+.click the Daggerfen Poison Manual##6930
+|tip At the top of the big tower, to the right as you reach the top, on the floor.
 .get Daggerfen Poison Manual|q 9848/1
 only if rep ('Kurenai')<=Neutral
 step
@@ -23742,6 +23760,7 @@ goto 35.2,77.3
 .' Allow the newly spawned Kaliri to follow you
 .|tip Once you have the blessing, mounting will cause you to lose it.
 |modelnpc Kaliri Aura##21767
+|model Lashh'an Summoning Circle##343
 |confirm
 step
 goto 36.2,67.1
@@ -24266,21 +24285,21 @@ step
 goto 40.7,18.7
 .' Stand next to the wooden totem with the Understanding Ravenspeech buff on you |tip On the ground, next to a pond with basilisks in it.
 .' Receive the Third Prophecy |q 10607/3
-|modelnpc The Third Prophecy##7249
+|model The Third Prophecy##7249
 step
 goto 39,17.2
 .' Stand next to the wooden totem with the Understanding Ravenspeech buff on you |tip Up the left ramp, then left across the hanging bridge.
 .' Receive the First Prophecy |q 10607/1
-|modelnpc The First Prophecy##7249
+|model The First Prophecy##7249
 step
 goto 42.5,21.6
 .' Stand next to the wooden totem with the Understanding Ravenspeech buff on you |tip Up the right ramp, then go right across the hanging bridge, then down the stairs to the left.
 .' Receive the Second Prophecy |q 10607/2
-|modelnpc The Second Prophecy##7249
+|model The Second Prophecy##7249
 step
 goto 40.2,23
 .' Stand next to the wooden totem with the Understanding Ravenspeech buff on you |tip On the ground, in front of a hut.
-.' Receive the Fourth Prophecy |q 10607/4 |modelnpc The Fourth Prophecy##7249
+.' Receive the Fourth Prophecy |q 10607/4 |model The Fourth Prophecy##7249
 .from Grishna Scorncrow##19990+, Grishna Falconwing##19988+, Grishna Harbinger##19989+
 .get Orb of the Grishna|n
 .' Click the Orb of the Grishna |use Orb of the Grishna##31489
@@ -24432,6 +24451,7 @@ goto 31.5,56.6
 .' Escort Maxx A. Million Mk. V to safety through the ruins |q 10191/1
 .' Click the red glowing crystals on the ground while escorting Maxx A. Million Mk. V
 .get 10 Etherlithium Matrix Crystal |q 10186/1
+|model Etherlithium Matrix Crystal##7075
 step
 goto 31.5,56.6
 .talk 19578
@@ -24867,16 +24887,20 @@ goto 57.7,85.2
 step
 'Kill 10 Mana Seekers and 10 Mageslayers as you do the following steps: |n
 |confirm
+|modelnpc Mana Seeker##18867
+|modelnpc Mageslayers##18866
 step
 goto 56.9,86.8
 .' Go inside the little house
 .' Click Dathric's Blade when standing next to the Weapon Rack |use Dathric's Blade##28351
 .' Put Dathric's Spirit to Rest |q 10182/1
+|model Weapon Rack##130
 step
 goto 56.4,87.8
 .' Go inside the little house
 .' Click Luminrath's Mantle when standing next to the Dresser |use Luminrath's Mantle##28352
 .' Put Luminrath's Spirit to Rest |q 10306/1
+|model Dresser##4
 step
 goto 55.7,87.2
 .click Mana Bomb Fragment##7214
@@ -24885,11 +24909,13 @@ step
 goto 55.1,87.5
 .' Click Cohlien's Cap when standing next to the Foot Locker |use Cohlien's Cap##28353
 .' Put Cohlien's Spirit to Rest |q 10307/1
+|model Footlocker##8
 step
 goto 55.5,86.5
 .' Go inside the house with a huge log laying diagonally into it
 .' Click Belmara's Tome when standing next to the Bookshelf |use Belmara's Tome##28336
 .' Put Belmara's Spirit to Rest |q 10305/1
+|model Bookshelf##137
 step
 goto 55.5,86.7
 .kill 10 Mana Seeker##18867+ |q 10185/1

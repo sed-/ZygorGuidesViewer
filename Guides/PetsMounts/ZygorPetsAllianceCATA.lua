@@ -6303,7 +6303,7 @@ goto 42.4,39.8
 .get 3 Moonstalker Whisker |q 13566/1
 step
 goto 44.1,40.8
-.clicknpc Mottled Does##33313
+.clicknpc Mottled Doe##33313
 .get 3 Tuft of Mottled Doe Hair |q 13566/2
 step
 goto 46.6,38.9

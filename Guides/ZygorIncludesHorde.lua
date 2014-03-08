@@ -38766,7 +38766,7 @@ ZygorGuidesViewer:RegisterInclude("celestial_tournament",[[
 		.' OR
 		.' Click here if those 3 NPCs are _Shademaster Kiryn_, _Blingtron 4000_, and _Wise Mari_. |confirm |next "shademaster"
 		.' OR
-		.' Click here if those 3 NPCs are _Sully "The Pickle" McLeary_, _Dr. Ion Goldbloom_, and _Lorewalker Cho_. |confirm |next "thepickle"
+		.' Click here if those 3 NPCs are _Sully 'The Pickle' McLeary_, _Dr. Ion Goldbloom_, and _Lorewalker Cho_. |confirm |next "thepickle"
 //Scenario (option 1)
 	step
 	label "chen"
@@ -38817,10 +38817,10 @@ ZygorGuidesViewer:RegisterInclude("celestial_tournament",[[
 	step
 	label "thepickle"
 		goto Celestial Tournament/0 37.8,57.4
-		.talk Sully "The Pickle" McLeary##71929
+		.talk Sully 'The Pickle' McLeary##71929
 		.' Tell him, "Let's do this!"
-		|tip Sully "The Pickle" McLeary has an Undead Pet, a Critter Pet and an Aquatic Pet. Use Critter type attacks on his Undead, Beast type attacks on his Critter, and Flying type attacks on his Aquatic. Your pets should all be level 25.
-		.' Defeat Sully "The Pickle" McLeary in a pet battle |q 33137
+		|tip Sully 'The Pickle' McLeary has an Undead Pet, a Critter Pet and an Aquatic Pet. Use Critter type attacks on his Undead, Beast type attacks on his Critter, and Flying type attacks on his Aquatic. Your pets should all be level 25.
+		.' Defeat Sully 'The Pickle' McLeary in a pet battle |q 33137
 		|confirm
 	step
 		goto Celestial Tournament/0 40.4,56.4

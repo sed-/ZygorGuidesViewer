@@ -78,7 +78,7 @@ ZygorGuidesViewer:RegisterInclude("a_begin_pandaria",[[
 		.' Equip a Skyfire Parachute |q 31733/1
 	step
 		goto 43.6,90.7 //goto 41.4,79.7
-		.talk Sully "The Pickle" McLeary##54616
+		.talk Sully 'The Pickle' McLeary##54616
 		..turnin Touching Ground##31733
 ]])
 
@@ -5070,7 +5070,7 @@ ZygorGuidesViewer:RegisterInclude("A_Deepholm_Leveling",[[
 		..turnin Putting the Pieces Together##26439
 	step
 		goto 34.4,34.3
-		.talk Kor The Immovable##42469
+		.talk Kor the Immovable##42469
 		..accept Pebble##28869
 	step
 		'Next to you:
@@ -25030,7 +25030,7 @@ ZygorGuidesViewer:RegisterInclude("Operation_Shieldwall_Daily",[[
 		|confirm
 	step
 		goto Krasarang Wilds 16.9,78.6
-		.talk Sully "The Pickle" McLeary##54616
+		.talk Sully 'The Pickle' McLeary##54616
 		..accept Burn Out!##32154 |or 2
 		..accept Dis-Assembly Required##32446 |or 2
 		..accept Circle of Life##32159 |or 2
@@ -25129,7 +25129,7 @@ ZygorGuidesViewer:RegisterInclude("Operation_Shieldwall_Daily",[[
 		..turnin Undermining the Under Miner##32433
 	step
 		goto Krasarang Wilds 16.9,78.6
-		.talk Sully "The Pickle" McLeary##54616
+		.talk Sully 'The Pickle' McLeary##54616
 		..turnin Burn Out!##32154
 		..turnin Dis-Assembly Required##32446
 	step
@@ -25247,7 +25247,7 @@ ZygorGuidesViewer:RegisterInclude("Operation_Shieldwall_Daily",[[
 		.talk Barkeep Townsley##68526
 		.' Tell her you're ready for the first clue.
 		.'  Find Keith and talk to him here. [Deeprun Tram/2 64.8,22.7].
-		.talk Keith "The Party" Westin##3001
+		.talk Keith 'The Party' Westin##3001
 		.' Pink Marmot delivered |q 32381/1
 		|only if havequest(32381)
 	step
@@ -43218,7 +43218,7 @@ ZygorGuidesViewer:RegisterInclude("celestial_tournament",[[
 		.' OR
 		.' Click here if those 3 NPCs are _Shademaster Kiryn_, _Blingtron 4000_, and _Wise Mari_. |confirm |next "shademaster"
 		.' OR
-		.' Click here if those 3 NPCs are _Sully "The Pickle" McLeary_, _Dr. Ion Goldbloom_, and _Lorewalker Cho_. |confirm |next "thepickle"
+		.' Click here if those 3 NPCs are _Sully 'The Pickle' McLeary_, _Dr. Ion Goldbloom_, and _Lorewalker Cho_. |confirm |next "thepickle"
 //Scenario (option 1)
 	step
 	label "chen"
@@ -43269,10 +43269,10 @@ ZygorGuidesViewer:RegisterInclude("celestial_tournament",[[
 	step
 	label "thepickle"
 		goto Celestial Tournament/0 37.8,57.4
-		.talk Sully "The Pickle" McLeary##71929
+		.talk Sully 'The Pickle' McLeary##71929
 		.' Tell him, "Let's do this!"
-		|tip Sully "The Pickle" McLeary has an Undead Pet, a Critter Pet and an Aquatic Pet. Use Critter type attacks on his Undead, Beast type attacks on his Critter, and Flying type attacks on his Aquatic. Your pets should all be level 25.
-		.' Defeat Sully "The Pickle" McLeary in a pet battle |q 33137
+		|tip Sully 'The Pickle' McLeary has an Undead Pet, a Critter Pet and an Aquatic Pet. Use Critter type attacks on his Undead, Beast type attacks on his Critter, and Flying type attacks on his Aquatic. Your pets should all be level 25.
+		.' Defeat Sully 'The Pickle' McLeary in a pet battle |q 33137
 		|confirm
 	step
 		goto Celestial Tournament/0 40.4,56.4

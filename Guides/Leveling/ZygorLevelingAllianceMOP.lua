@@ -3320,7 +3320,7 @@ goto 74.9,88.6
 ..accept 30828
 step
 goto 72.0,85.6
-.clicknpc Pool of Corruption
+.clicknpc Pool of Corruption##61500
 .|tip They look like dark purple, swirling sources of light on top of the water in this area
 .from Boiling Rage##59170+
 .' Cleanse 6 Pools of Corruption |q 30828/1

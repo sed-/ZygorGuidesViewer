@@ -2002,16 +2002,16 @@ step
 .' We suggest that you are in a party of 2-3 people.
 |confirm
 step
+goto Krasarang Wilds 14.8,57.2
+.from Kar Warmaker##68321
+|achieve 7932/1
+step
 goto Krasarang Wilds 13.2,66.2
 .from Ubunti the Shade##68320
-|achieve 7932/1
+|achieve 7932/2
 step
 goto Krasarang Wilds 10.6,56.8
 .from Muerta##68322
-|achieve 7932/2
-step
-goto Krasarang Wilds 87.4,29.2
-.from Kar Warmaker##68321
 |achieve 7932/3
 step
 |achieve 7932
@@ -6438,7 +6438,7 @@ step
 |achieve 8343/12
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Events\\Brawler's Guild Achievements\\Rabble Rabble Rabble",[[
-description Take Willard "Bubbles" Wilcox's portal to Orgrimmar.
+description Take Willard 'Bubbles' Wilcox's portal to Orgrimmar.
 author support@zygorguides.com
 condition end achieved(7949)
 step

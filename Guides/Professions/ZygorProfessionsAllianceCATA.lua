@@ -8572,7 +8572,7 @@ step
 .' Click here to continue |confirm
 #include "profession_single_start",prof1="Mining"
 step
-#include "home_TradeDistrict"
+#include "home_DwarvenDistrict"
 step
 'Redirecting to Mining 1-75 |next "sm_1-75" |only if skill("Mining")<75
 'Redirecting to Mining 55-155 |next "sm_75-125" |only if skill("Mining")>=75 and skill("Mining")<125

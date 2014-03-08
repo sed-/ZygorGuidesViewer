@@ -2990,7 +2990,7 @@ do
 			for i=1,GetNumMapLandmarks() do
 				local name,_,textureIndex,_,_ = GetMapLandmarkInfo(i);
 				if ( name == "Wintergrasp Fortress") then
-					if ( textureIndex == 79 ) then
+					if ( textureIndex == 77 ) then
 						if UnitFactionGroup("player")=="Horde" then
 							SetMapToCurrentZone()
 							return true
