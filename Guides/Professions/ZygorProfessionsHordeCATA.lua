@@ -10045,17 +10045,17 @@ label	end_way_of_steam
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining & Herbalism\\Mining & Herbalism 1-600 Leveling Guide",[[
 description This guide will walk you through leveling your Mining and Herbalism skills from 1 - 600.
 author support@zygorguides.com
-completion skill,Mining,600 and skill,Herbalism,600
+completion skill Mining,600 and skill Herbalism,600
 step
 label "route"
 'Redirecting to Pandarian Mining and Herbalism 1-525 |next "choice" |only if (skill("Mining")<525 or skill("Herbalism")<525) and level>=85 and _G.GetExpansionLevel()>=4 and ZGV.guidesets['ProfessionsHMoP']
 'Redirecting to Mining 1-50 |next "min_1-50" |only if (skill("Mining")<50 or skill("Herbalism")<50) and (level<85 or _G.GetExpansionLevel()<4 or not ZGV.guidesets['ProfessionsHMoP'])
 'Redirecting to Mining 50-125 |next "min_50-125" |only if ((skill("Mining")>=50 and skill("Mining")<125) or (skill("Herbalism")>=50 and skill("Herbalism")<125)) and (level<85 or _G.GetExpansionLevel()<4 or not ZGV.guidesets['ProfessionsHMoP'])
-'Redirecting to Mining 125-200 |next "min_125-200" |only if ((skill("Mining")>=125 and skill("Mining")<200) or (skill("Herbalism")>=125 and skill("Herbalism")<200)) and (level<85 or _G.GetExpansionLevel()<4 or not ZGV.guidesets['ProfessionsHMoP'])
-'Redirecting to Mining 200-275 |next "min_200-275" |only if ((skill("Mining")>=200 and skill("Mining")<275) or (skill("Herbalism")>=200 and skill("Herbalism")<275)) and (level<85 or _G.GetExpansionLevel()<4 or not ZGV.guidesets['ProfessionsHMoP'])
-'Redirecting to Mining 275-350 |next "min_275-350" |only if ((skill("Mining")>=275 and skill("Mining")<350) or (skill("Herbalism")>=275 and skill("Herbalism")<350)) and (level<85 or _G.GetExpansionLevel()<4 or not ZGV.guidesets['ProfessionsHMoP'])
-'Redirecting to Mining 350-425 |next "min_350-425" |only if ((skill("Mining")>=350 and skill("Mining")<425) or (skill("Herbalism")>=350 and skill("Herbalism")<425)) and (level<85 or _G.GetExpansionLevel()<4 or not ZGV.guidesets['ProfessionsHMoP'])
-'Redirecting to Mining 425-525 |next "min_425-525" |only if ((skill("Mining")>=425 and skill("Mining")<525) or (skill("Herbalism")>=425 and skill("Herbalism")<525)) and (level<85 or _G.GetExpansionLevel()<4 or not ZGV.guidesets['ProfessionsHMoP'])
+'Redirecting to Mining 125-200 |next "min_125-200" |only if ((skill("Mining")>=125 and skill("Mining")<200) or (skill("Herbalism")>=125 and skill("Herbalism")<200)) and (level<85 or not ZGV.guidesets['ProfessionsHMoP'])
+'Redirecting to Mining 200-275 |next "min_200-275" |only if ((skill("Mining")>=200 and skill("Mining")<275) or (skill("Herbalism")>=200 and skill("Herbalism")<275)) and (level<85 or not ZGV.guidesets['ProfessionsHMoP'])
+'Redirecting to Mining 275-350 |next "min_275-350" |only if ((skill("Mining")>=275 and skill("Mining")<350) or (skill("Herbalism")>=275 and skill("Herbalism")<350)) and (level<85 or not ZGV.guidesets['ProfessionsHMoP'])
+'Redirecting to Mining 350-425 |next "min_350-425" |only if ((skill("Mining")>=350 and skill("Mining")<425) or (skill("Herbalism")>=350 and skill("Herbalism")<425)) and (level<85 or not ZGV.guidesets['ProfessionsHMoP'])
+'Redirecting to Mining 425-525 |next "min_425-525" |only if ((skill("Mining")>=425 and skill("Mining")<525) or (skill("Herbalism")>=425 and skill("Herbalism")<525)) and (level<85 or not ZGV.guidesets['ProfessionsHMoP'])
 'Redirecting to Mining 525-600 |next "route2" |only if skill("Mining")>=525 and skill("Mining")<600 and skill("Herbalism")>=525 and skill("Herbalism")<600
 step
 label choice
@@ -10083,7 +10083,7 @@ path	37.9,30.4	48.5,32.8	51.4,36.5
 path	51.7,52.0	53.6,62.4	55.6,69.7
 path	60.9,69.1	60.7,58.0	57.6,46.9
 path	55.0,32.4	57.8,26.1	53.4,12.5
-#include "follow_path_mine_herb"
+#include "follow_path_both"
 skill Herbalism,70
 skill Mining,35
 step
@@ -10108,7 +10108,7 @@ path	39.5,21.0	44.2,8.3 	51.3,14.0
 path	57.5,20.9	56.1,34.3	49.9,46.2
 path	43.1,50.1	38.2,49.1	40.1,55.0
 path	41.3,67.4	41.3,67.4	36.3,69.9
-#include "follow_path_mine_herb"
+#include "follow_path_both"
 skill Herbalism,125
 skill Mining,125
 step
@@ -10127,7 +10127,7 @@ path	23.8,25.0	34.2,35.9	41.3,30.1
 path	43.6,43.1	46.3,54.1	53.7,60.8
 path	58.0,67.1	62.9,72.9	62.4,67.1
 path	60.5,56.0	58.9,19.5
-#include "follow_path_mine_herb"
+#include "follow_path_both"
 skill Herbalism,150
 skill Mining,150
 step
@@ -10138,7 +10138,7 @@ path	77.4,81.7	80.1,78.9	79.8,74.4
 path	80.2,70.7	79.0,66.5	76.1,65.7
 path	75.1,59.8	70.8,59.5	68.9,59.2
 path	66.9,63.3	62.8,64.0
-#include "follow_path_mine_herb"
+#include "follow_path_both"
 skill Herbalism,230
 skill Mining,200
 step
@@ -10158,7 +10158,7 @@ path	31.0,67.8	32.1,56.9	29.4,44.8
 path	37.5,47.8	40.5,39.1	47.2,42.1
 path	53.5,35.4	77.0,19.0
 #include "follow_path_herbs"
-.collect Sungrass##8838
+.collect Sungrass##8838 |n
 skill Herbalism,285
 step
 map Un'Goro Crater
@@ -10172,7 +10172,7 @@ skill Mining,275
 step
 title + Mining and Herbalism (275-350)
 label	"minherb_275-350"
-#include trainer_Mining
+#include "trainer_Mining"
 .skillmax Mining,375
 .learn Smelt Fel Iron##29356
 step
@@ -10201,7 +10201,7 @@ path	68.7,77.6	71.0,71.7	70.1,68.6
 path	65.0,59.8	65.6,56.0	75.0,63.9
 path	78.4,80.2	80.7,77.5	77.3,63.7
 path	72.7,60.2	71.5,53.1	68.3,52.0
-#include "follow_path_mine_herb"
+#include "follow_path_both"
 skill Herbalism,325
 skill Mining,325
 step
@@ -10218,13 +10218,13 @@ path 43.1,22.8	50.8,23.5	57.0,29.0
 path 65.0,37.6	70.3,42.6	68.8,51.1
 path 72.3,58.1	73.8,67.9	69.8,78.1
 path 57.9,75.5	49.0,79.0
-#include "follow_path_mine_herb"
+#include "follow_path_both"
 skill Herbalism,350
 skill Mining,350
 step
 title + Mining and Herbalism (350-425)
 label	"minherb_350-425"
-#include trainer_Mining
+#include "trainer_Mining"
 .skillmax Mining,450
 .learn Smelt Adamantite##29358
 .learn Smelt Cobalt##49252
@@ -10247,7 +10247,7 @@ path 63.5,37.1	65.5,48.7	66.9,62.7
 path 64.4,67.8	64.4,72.4	67.9,76.5
 path 71.3,73.6	72.5,67.9	77.3,67.2
 path 77.2,60.8	74.9,55.3	79.1,50.4
-"follow_path_mine_herb"
+#include "follow_path_both"
 skill Herbalism,400
 skill Mining,400
 step
@@ -10266,7 +10266,7 @@ path	33.8,73.4	33.0,67.9	40.9,70.1
 path	34.5,88.9	50.9,88.8	51.5,82.1
 path	46.0,60.9	55.5,66.5	58.7,88.2
 path	62.3,74.5	63.6,84.4
-"follow_path_mine_herb"
+#include "follow_path_both"
 skill Herbalism,425
 skill Mining,425
 step
@@ -10289,7 +10289,7 @@ path 36.6,28.9		33.0,19.1		47.8,12.9
 path 45.9,21.1		43.6,25.1		44.5,28.6
 path 49.1,33.6		56.7,38.3		73.8,32.7
 path 75.2,41.9		69.6,46.4
-"follow_path_mine_herb"
+#include "follow_path_both"
 skill Herbalism,500
 skill Mining,500
 step
@@ -10299,7 +10299,9 @@ path 61.5,14.0		57.1,44.7		60.5,58.3
 path 69.8,76.5		65.9,75.9		60.0,83.2
 path 59.0,58.8		55.3,45.8		52.0,45.6
 path 50.8,42.5		50.8,36.0
-"follow_path_mine_herb"
+#include "follow_path_both"
+skill Herbalism,525
+skill Mining,525
 skill Herbalism,525
 skill Mining,525
 step

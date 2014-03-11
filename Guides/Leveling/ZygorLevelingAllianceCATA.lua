@@ -1944,7 +1944,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Eastern Kingd
 author support@zygorguides.com
 image Westfall
 description Westfall borders the Kingdom of Stormwind and is mostly populated by humans not under the Alliance's complete control. The region was stolen right under the Alliance's nose by its own bitter people. Once a rich agricultural center, this land has lain fallow and forgotten since the Second War, but was held by the Defias Brotherhood for a time before the Cataclysm. Stormwind claimed the land as its own, but found little time to be concerned with it, with insufficient funds and might to retake the region. A handful of farmers still tried to keep their land, and some even attempted a tithe to Stormwind every year, but most only grew enough to feed themselves. Bandits and gnolls raided those farms that remained, and Stormwind's resources were stretched too thin to protect the beleaguered populace. The Defias Brotherhood controlled much of the region, focused in the southern area of Moonbrook.
-next Zygor's Alliance Leveling Guides\\Eastern Kingdoms 1-60\\Redridge Mountains (15-21)\\Redridge Mountains (15-16)
+next Zygor's Alliance Leveling Guides\\Eastern Kingdoms 1-60\\Redridge Mountains (15-21)\\Redridge Mountains (16-21)
 startlevel 10.5
 dynamic on
 step
@@ -4543,10 +4543,10 @@ goto The Hinterlands 11.1,46.1
 .talk 8018
 .' Tell him your king needs you! You will ride a Gryphon to Western Plaguelands. |goto Western Plaguelands 39.5,69.5 |noway |c
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Eastern Kingdoms 1-60\\Redridge Mountains (15-21)\\Redridge Mountains (15-16)",[[
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Eastern Kingdoms 1-60\\Redridge Mountains (15-21)\\Redridge Mountains (16-21)",[[
 author support@zygorguides.com
-image Redridge_Mountains
-next Zygor's Alliance Leveling Guides\\Eastern Kingdoms 1-60\\Redridge Mountains (15-21)\\Redridge Mountains (16-21)
+image Redridge_Mountains_2
+next Zygor's Alliance Leveling Guides\\Eastern Kingdoms 1-60\\Duskwood (21-26)\\Duskwood (21-26)
 startlevel 15.6
 dynamic on
 step
@@ -4602,13 +4602,6 @@ goto 15.3,64.6
 ..turnin 26504
 ..turnin 26503
 ..accept 26505
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Eastern Kingdoms 1-60\\Redridge Mountains (15-21)\\Redridge Mountains (16-21)",[[
-author support@zygorguides.com
-image Redridge_Mountains_2
-next Zygor's Alliance Leveling Guides\\Eastern Kingdoms 1-60\\Duskwood (21-26)\\Duskwood (21-26)
-startlevel 16.35
-dynamic on
 step
 goto Redridge Mountains,29.4,53.8
 .talk 931
@@ -8172,7 +8165,7 @@ step
 ding 44
 step
 goto 28.3,32.3
-.' Use your Argent Lightwell Charm next to the big brown monster corpses |use Argent Lightwell Charm##61375 |tip You will have to put 3 around each corpse, and you can't put them too close together.
+.' Use your Argent Lightwell Charm next to the big brown monster corpses |tip Kill the mages (?) around the corpsebeast, then use the Argent Lightwell Charm 3 times around the corpsebeast. You must kill the mages (?) before you use the Charm. |use Argent Lightwell Charm##61375
 .' Destroy 3 Corpsebeasts |q 27530/1
 step
 goto 27.6,20.9
@@ -13157,7 +13150,7 @@ goto 57.4,33.8
 ..accept 13831
 step
 goto 57.0,33.2
-.from Vile Corruptor##33022+, Vile Grell##33021+
+.from Vile Corruptor##33022+
 .get 6 Foul Ichor |q 13554/1
 .kill 8 Vile Grell##33021+ |q 13529/2
 .' Click Secure Bear Cages and Secure Duskrat Cages |tip They look like metal cages all around inside the cave. |model 676
@@ -13210,6 +13203,7 @@ step
 goto 42.9,39.0
 .' Go to this spot
 .' Locate Grimclaw |q 13564/1 |tip He's a dead white bear laying on the ground.
+|modelnpc Grimclaw##33053
 step
 goto 43.0,39.0
 .talk 33048
@@ -13230,7 +13224,7 @@ goto 44.1,40.8
 .get 3 Tuft of Mottled Doe Hair |q 13566/2
 step
 goto 46.6,38.9
-.click Hungry Thistle Bear##33978+
+.clicknpc Hungry Thistle Bear##33978+
 .get 3 Thistle Bear Fur |q 13566/3
 step
 goto 48.6,40.4
@@ -13293,7 +13287,8 @@ goto 53.0,11.0
 .' As the robot, walk north underwater to get near a group of murlocs
 .' Use the Depth Charge Countdown Pulse ability on your hotbar to kill them
 .kill 50 Scavenging Greymist Murlocs |q 13560/1
-|modelnpc Greymist Warrior##33277+,Greymist Tidehunter##33262+
+|modelnpc Greymist Warrior##33277+
+|modelnpc Greymist Tidehunter##33262+
 step
 goto 51.0,19.2
 .talk 32979
@@ -13363,6 +13358,7 @@ step
 goto 60.2,7.0
 .' Follow Sentinel Aynasha as she runs |tip Let her run ahead and get attacked first, or else she won't stop and help you fight.
 .' Escort Sentinel Aynasha to the Dock |q 13510/1
+|modelnpc Sentinel Aynasha##32964
 step
 goto 58.9,19.4
 .talk 32965
@@ -13435,6 +13431,9 @@ goto 69.5,18.8
 step
 goto 70.3,20.1
 .' Use the abilities on your hotbar near the trolls and next to the troll buildings around this area
+.from Shatterspear Champion##32858+
+.from Shatterspear Raider##33071+
+.from Shatterspear Priestess##32855+
 .' Kill 30 Shatterspear Vale Trolls |q 13514/1
 .' Destroy 6 Shatterspear Structures |q 13514/2
 step
@@ -13725,7 +13724,7 @@ goto 43.7,53.5
 ..accept 13588
 step
 goto 43.5,53.7
-.' Click Thessera to ride on her |model 32711
+.' Click Thessera to ride on her |modelnpc Warp-Huntress Kula##32711
 .' While flying, use the Emerald Barrage ability on your hotbar to do the following:
 .kill Twilight Portal##34316+ |q 13588/1
 .kill 12 Twilight Rider##34282+ |q 13588/2
@@ -13818,7 +13817,7 @@ goto 44.1,82.5
 .' Use your Blessed Herb Bundle on a Blackwood furlbogs |use Blessed Herb Bundle##44889
 .from Spirit of Corruption##33000+
 .' Cleanse 7 Blackwood Furbolg Cleansed |q 13545/1 |tip You don't have to kill the furbolgs, they will become friendly and disappear after you cleanse them.
-.' Click Jadefire Brazier to destroy them |model 8553
+.' Click Jadefire Brazier to destroy them |model Jadefire Brazier##8553
 .' Destroy 8 Jadefire Brazier |q 13572/1
 step
 ding 19
@@ -13853,6 +13852,7 @@ goto 40.6,84.5
 .' Click the Quest Complete box that displays on the right side of the screen under your minimap
 ..turnin 13892
 ..accept 13948
+|modelnpc Foreman Balsoth##34406
 step
 goto 38.6,78.2
 .click Glittering Shell##261
@@ -13874,6 +13874,8 @@ goto 39.9,84.8
 .' Go to this spot
 .' Watch the dialogue
 .' Complete the Master's Glaive Surveillance |q 13948/1
+|modelnpc Thalya the Voidcaller##34427
+|modelnpc Doomspeaker Trevellion##34326
 step
 goto 45.2,74.6
 .talk 34301
@@ -13891,6 +13893,7 @@ step
 goto 42.3,76.7
 .' Use Lifebringer Sapling on a Grizzled Thistle Bear |use Lifebringer Sapling##46363
 .' Test the Lifebringer Sapling |q 13925/1
+|modelnpc Consumed Thistle Bear##34302
 step
 goto 45.2,74.6
 .talk 34301
@@ -14012,7 +14015,7 @@ step
 goto 32.3,85.4
 .' Follow the path down to the end of the cave
 .from Warlord Wrathspine##34423
-.click Warlord Wrathspine##34423
+.clicknpc Warlord Wrathspine##34423
 ..turnin 13899
 ..accept 13900
 step
@@ -14077,6 +14080,7 @@ step
 goto 32.7,21.5
 .' Use your Bottle of Wildfire next to Bathran's corpse |use Bottle of Wildfire##44967
 .' Burn Bathran's Corpse |q 13595/1
+|modelnpc Bathran's corpse##33183
 step
 goto 32.3,21.4
 .from Forsaken Herbalist##3733+, Orc Overseer##3734+
@@ -14440,12 +14444,13 @@ goto 83.8,63.1
 ..turnin 13869
 step
 goto 86.9,61.3
-.click Warsong Shredder##33706
+.clicknpc Warsong Shredder##33706
 .' Control a Warsong Shredder |invehicle |c |q 13698
 step
 goto 86.8,60.8
 .' Use the Warsong Shredder Blade ability on your hotbar next to Horde Explosives |tip They look like barrels on the ground around this area.
 .' Destroy 8 Horde Explosives |q 13698/1
+|model Horde Explosives##472
 step
 goto 84.0,62.6
 .' Don't get out of the Warsong Shredder
@@ -14694,7 +14699,7 @@ goto 59.0,58.8
 ..accept 13928
 step
 goto 58.8,57.5
-.click Laughing Sister##2723+
+.clicknpc Laughing Sister##4054
 .get 10 Laughing Sister's Corpse |q 13928/1
 step
 goto 62.3,51.1
@@ -14711,6 +14716,9 @@ goto 62.4,50.2
 .' Use the abilities on your hotbar to fight the Horde enemies
 .' Destroy 50 Warsong Enemies |q 13935/1
 .' To recover your health, go to the moonwell at the bottom of the big tree at [62.1,51.0] |tip You can only heal if you are not in combat.  If you are in combat, it won't heal you.
+|modelnpc Warsong Demolisher##32850
+|modelnpc Warsong Invader##32856
+|modelnpc Warsong Trampler##34390
 step
 'Click the red arrow on your hotbar |outvehicle |c |q 13935
 step
@@ -15040,7 +15048,7 @@ goto Stonetalon Mountains,71.8,45.7
 ..accept 25614
 step
 goto 71.8,45.8
-.click Sniper Cannon##27770
+.clicknpc Sniper Cannon##32254
 .' Use your Sniper Shot ability to shoot at the Warsong War Riders |tip They are wind riders flying around in the sky to the southeast.
 .kill 8 Warsong Wing Commander##40942+ |q 25614/1
 step
@@ -15142,7 +15150,7 @@ step
 ding 29
 step
 goto 73.3,61.1
-.click Rope Ladder##32266
+.click Rope Ladder##9094
 .' Fight the mobs that attack you as you ride the hot air balloon
 .' Divert Krom'gar's Hot Air Balloon |q 25652/1
 step
@@ -15379,6 +15387,7 @@ goto 39.1,45.1
 .' When you have a Helpless Young Druid, fly to [40.0,31.9]
 .' Use your Drop Off Young Druid ability on your hotbar in this spot
 .' Rescue 5 Helpless Young Druids |q 25889/1
+|modelnpc Helpless Young Druid##41528
 step
 'Click the red arrow on your hotbar |outvehicle |noway |c |q 25889
 step
@@ -15544,24 +15553,28 @@ goto 70.7,76.1
 .' Go to this spot
 .' Use your Dynamite Bundle next to the wooden beam |use Dynamite Bundle##56018
 .' Plant Explosives at the First Beam |q 25811/1
+|modelnpc Frightened Miner##41283
 step
 goto 69.7,75.2
 .' Talk to Frightened Miners to rescue them as you walk
 .' Go to this spot
 .' Use your Dynamite Bundle next to the wooden beam |use Dynamite Bundle##56018
 .' Plant Explosives at the Second Beam |q 25811/2
+|modelnpc Frightened Miner##41283
 step
 goto 68.7,71.3
 .' Talk to Frightened Miners to rescue them as you walk
 .' Go to this spot
 .' Use your Dynamite Bundle next to the wooden beam |use Dynamite Bundle##56018
 .' Plant Explosives at the Third Beam |q 25811/3
+|modelnpc Frightened Miner##41283
 step
 goto 68.5,72.6
 .' Talk to Frightened Miners to rescue them as you walk
 .' Go to this spot
 .' Use your Dynamite Bundle next to the wooden beam |use Dynamite Bundle##56018
 .' Plant Explosives at the Fourth Beam |q 25811/4
+|modelnpc Frightened Miner##41283
 step
 goto 69.0,71.8
 .talk 41283
@@ -15788,6 +15801,7 @@ goto 77.0,18.1
 .' Complete Cleansing Ritual |q 14193/1
 .' Click on the Complete Quest box that appears under your mini map.
 ..turnin 14193
+|model Cup of Elune##439
 step
 goto 74.5,23.7
 .from Hatefury Hellcaller##4675+, Hatefury Shadowstalker##4674+, Hatefury Felsworn##4672+, Hatefury Betrayer##4673+, Hatefury Trickster##4671+
@@ -15799,6 +15813,7 @@ step
 goto 78.7,23.1
 .' Use your Satyr Flesh while standing next to Elune's Brazier |use Satyr Flesh##48857 |tip It looks like a yellow and blue object in the middle of some large pillars.
 .' Give the Sacrificial Offering |q 14358/1
+|model Elune's Brazier##6661
 step
 goto 78.8,23.1
 .click Elune's Brazier##6661
@@ -15807,6 +15822,7 @@ step
 goto 75.9,26.6
 .' Use your Satyr Saber while standing next to Elune's Handmaiden |use Satyr Saber##48943 |tip It looks like a stone statue of a Nightelf holding a basin over her head.
 .' Complete Elune's Ritual of War |q 14357/1
+|model Elune's Handmaiden##9053
 step
 goto 75.9,26.6
 .click Elune's Handmaiden##9053
@@ -15816,6 +15832,7 @@ goto 65.2,23.2
 .' Use your Swoop Eggs while standing in a Swoop Nest |use Swoop Eggs##49014 |tip They look like big brown bird nests on the ground around this area.
 .' Protect the Swoop Eggs until they are collected by a Defiant Swoop
 .' Protect 3 Swoop Eggs |q 14246/1
+|model swoop nest##7143
 step
 goto 69.3,21.2
 .click Smouldering Stone##9067
@@ -15823,7 +15840,7 @@ goto 69.3,21.2
 ..accept 14254
 step
 goto 65.6,20.8
-.' Click Element 116
+.click Element 116##384
 .|tip They look like little ore chunks inside pink clouds of smoke on the ground around this area.
 .get 7 Element 116 |q 14254/1
 .' More can be found around [Desolace,62.3,25.5]
@@ -15985,7 +16002,7 @@ step
 goto 29.2,15.0
 .' Use your Shatter Rubble ability to shoot Piles of Rubble around this area
 .|tip Just spam your 4 key, you don't have to target the rubble.
-.click Ancient Tablet Fragment##49102
+.click Ancient Tablet Fragment##2654
 .|tip Not every piece you collect will be usable
 .collect 4 Ancient Tablet Fragment##49102 |n
 .' Use your Ancient Tablet Fragments |use Ancient Tablet Fragment##49102
@@ -16133,6 +16150,7 @@ goto 60.8,57.2
 .' Use your Soothing Broth near Enraged Kodos |use Soothing Brot##49144
 .' Calm 5 Enraged Kodo |q 14309/1
 .' You can find more Enraged Kodos around [Desolace,58.0,58.9]
+|modelnpc Enraged Kodo##36094
 step
 goto 60.9,61.9
 .talk 11596
@@ -24799,7 +24817,7 @@ step
 .kill 5 Sunfury Researcher##20136+ |q 10246/1
 .' Kill Overseer Seylanna
 ..collect Coruu Access Crystal##29396 |q 10321 |sticky
-.click Coruu Control Console####7076
+.click Coruu Control Console##7076
 ..' Click "<Begin emergency shutdown>"
 .' Kill the technicians as they come to try to save the Manaforge
 ..'Only takes 2 minutes
@@ -25188,7 +25206,7 @@ step
 only if rep ('The Aldor') >= Neutral
 step
 goto 59.1,66.8
-.click Duro Control Console####7076
+.click Duro Control Console##7076
 .' Click "<Begin emergency shutdown>"
 .' Kill the technicians as they come to try to save the Manaforge
 ..'Only takes 2 minutes
@@ -25201,7 +25219,7 @@ step
 only if rep ('The Scryers') >= Neutral
 step
 goto 59.1,66.8
-.click Duro Control Console####7076
+.click Duro Control Console##7076
 .' Click "<Begin emergency shutdown>"
 .' Kill the technicians as they come to try to save the Manaforge
 ..'Only takes 2 minutes
@@ -25370,14 +25388,17 @@ step
 goto 51.6,20.5
 .' Use Surveying Markers next to this Draenei Banner |use Surveying Markers##29445
 .' Place Surveying Marker One |q 10335/1
+|model Draenei Banner##6271
 step
 goto 54.5,22.8
 .' Use Surveying Markers next to this Draenei Banner |use Surveying Markers##29445
 .' Place Surveying Marker Two |q 10335/2
+|model Draenei Banner##6271
 step
 goto 55.8,20.0
 .' Use Surveying Markers next to this Draenei Banner |use Surveying Markers##29445
 .' Place Surveying Marker Three |q 10335/3
+|model Draenei Banner##6271
 step
 goto 51.7,20.4
 ..kill 10 Hound of Culuthas##20141+ |q 10336/1
@@ -25585,6 +25606,7 @@ goto 57.1,37.6
 step
 'Escort the Captured Protectorate Vanguard to Protectorate Watch Post
 .' Escort Captured Protectorate Vanguard |q 10425/1
+|modelnpc Captured Protectorate Vanguard##20763
 step
 goto 59.5,32.4
 .talk 20448
@@ -26302,6 +26324,7 @@ goto 45.3,68.2
 .' If you do lose the disguise, you can get another one from Borak at [Shadowmoon Valley,47.5,57.2]
 .' Talk to Grand Commander Ruusk at [46.5,71.9]
 .' Deliver Illidan's Message |q 10577/1
+|modelnpc Commander Ruusk##20563
 step
 goto 47.6,57.2
 .talk 21293
@@ -26565,6 +26588,7 @@ goto 61.1,58.4
 .' Use your Rocknail Flayer Carcasses on the ground near Mature Netherwing Drakes |use Rocknail Flayer Carcass##31372 |tip They look like blue dragons flying in the sky around this area.
 .' A dragon will fly down and eat the carcass
 .' Feed 8 Mature Netherwing Drakes |q 10804/1
+|modelnpc Mature Netherwing Drake##21648
 step
 goto 59.3,58.7
 .talk 22113 |tip He wanders around Netherwing Fields so you may need to search for him.
@@ -26607,6 +26631,7 @@ step
 goto 68.7,61.4
 .' Use your Enchanted Nethervine Crystal on Enslaved Netherwing Drakes |use Enchanted Nethervine Crystal##31652
 .' Free 5 Enslaved Netherwing Drakes |q 10854/1 |tip If the Enslaved Netherwing Drake begins attacking the Dragonmaw Subjugator after you use the crystal on them, you may need to help them so they don't die. Be careful not to make the Drake attack you though.
+|modelnpc Enslaved Netherwing Drake##21722
 step
 goto 63.5,60.9
 .talk 21657 |tip He is flying high above Netherwing Fields, you may need to search for him.
@@ -36312,7 +36337,6 @@ author support@zygorguides.com
 condition end achieved(4902)
 startlevel 00.00
 dynamic on
-leechsteps "Zygor's Alliance Leveling Guides\\Eastern Kingdoms 1-60\\Redridge Mountains (15-21)\\Redridge Mountains (15-16)"
 leechsteps "Zygor's Alliance Leveling Guides\\Eastern Kingdoms 1-60\\Redridge Mountains (15-21)\\Redridge Mountains (16-21)"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Loremaster Guides\\Eastern Kingdoms 1-60\\Searing Gorge",[[
@@ -39247,7 +39271,7 @@ step
 'You will start riding a horse:
 .' Spam the Rescue Krennan ability on your hotbar when your horse takes a big leap |tip You should see Krennan Aranas dangling in a tree.
 .' Rescue Krennan Aranas |q 14293/1
-' |modelnpc 35753
+' |modelnpc Krennan Aranas##35753
 step
 goto 55.7,80.7
 .talk 35906
@@ -39406,7 +39430,9 @@ goto 26.9,79.5
 step
 goto 25.2,70.3
 .kill 8 Forsaken Combatant |q 14369/1
-|modelnpc Forsaken Infantry##38616+, Forsaken Slavedriver##37701+, Forsaken Sailor##36396+
+|modelnpc Forsaken Infantry##38616+
+|modelnpc Forsaken Slavedriver##37701+
+|modelnpc Forsaken Sailor##36396+
 step
 goto 28.4,64.3 |n
 .' Enter the cellar |goto 28.4,64.3,0.5 |noway |c
@@ -39827,7 +39853,8 @@ step
 goto 44.1,51.6
 .' Follow Tobias Mistmantle into Lights' Dawn Cathedral. Hide in the water when he tells you to and listen to the meeting.
 .' Hunt for Sylvanas |q 24902/1
-' |modelnpc 38469
+|modelnpc Lady Sylvanas Windrunner##38469
+|modelnpc Tobias Mistmantle##35618
 step
 goto 38.6,60.3
 .talk 38611

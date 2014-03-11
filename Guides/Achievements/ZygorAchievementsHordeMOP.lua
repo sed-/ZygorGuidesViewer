@@ -1579,6 +1579,10 @@ goto Krasarang Wilds 18.8,31.7
 .click Pandaren Fighting Tactics##
 .achieve What is Worth Fighting For##6858/1
 step
+goto Vale of Eternal Blossoms 26.6,21.5
+.click Together, We Are Strong##
+.achieve What is Worth Fighting For##6858/4
+step
 goto Vale of Eternal Blossoms 52.9,68.6
 .click Always Remember##
 .achieve What is Worth Fighting For##6858/2
@@ -1586,10 +1590,6 @@ step
 goto Kun-Lai Summit 63.0,40.8
 .click Victory in Kun-Lai##
 .achieve What is Worth Fighting For##6858/5
-step
-goto Valley of the Four Winds 26.6,21.5
-.click Together, We Are Strong##
-.achieve What is Worth Fighting For##6858/4
 step
 'Congratulations, you have earned the What is Worth Fighting For Achievement!
 ]])

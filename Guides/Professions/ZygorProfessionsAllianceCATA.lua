@@ -10311,7 +10311,7 @@ label	end_way_of_steam
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining & Herbalism\\Mining & Herbalism 1-600 Leveling Guide",[[
 description This guide will walk you through leveling your Mining and Herbalism skills from 1 - 600.
 author support@zygorguides.com
-completion skill,Mining,600 and skill,Herbalism,600
+completion skill Mining,600 and skill Herbalism,600
 step
 label "route"
 'Redirecting to Pandarian Mining and Herbalism 1-525 |next "choice" |only if (skill("Mining")<525 or skill("Herbalism")<525) and level>=85 and _G.GetExpansionLevel()>=4 and ZGV.guidesets['ProfessionsAMoP']

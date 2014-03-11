@@ -18680,4 +18680,10 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [43443]="Keeshan's Riverboat",
 [43714]="Bravo Company Siege Tank",
 [20934]="Severed Defender",
+[35753]="Krennan Aranas ",
+[32711]="Warp-Huntress Kula",
+[34132]="Astranaar Thrower",
+[33706]="Warsong Shredder",
+[32254]="Sniper Cannon",
+[36059]="Blood-filled Leech",
 } end)

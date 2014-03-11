@@ -124,7 +124,7 @@ ZygorGuidesViewer:RegisterInclude("follow_path_mine",[[
 		.' Zoom your minimap all the way out, track ore, and follow the path while mining yellow spots on your minimap.
 ]])
 
-ZygorGuidesViewer:RegisterInclude("follow_path_mine_herb",[[
+ZygorGuidesViewer:RegisterInclude("follow_path_both",[[
 		.' Zoom your minimap all the way out, track ore and herbs, and follow the path while mining and gathering at yellow spots on your minimap.
 ]])
 
