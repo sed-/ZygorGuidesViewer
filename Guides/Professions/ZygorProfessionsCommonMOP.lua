@@ -2555,8 +2555,8 @@ ZygorGuidesViewer:RegisterInclude("Pandarian_Herbalism_1-600",[[
 	step
 	label "route"
 		'Redirecting to Herbalism 1-70 |next "herb_1-70" |only if skill("Herbalism")<70
-		'Redirecting to Herbalism 70-130 |next "herb_70-130" |only if skill("Herbalism")>=70 and skill("Herbalism")<130
-		'Redirecting to Herbalism 130-225 |next "herb_130-225" |only if skill("Herbalism")>=130 and skill("Herbalism")<225
+		'Redirecting to Herbalism 70-150 |next "herb_70-150" |only if skill("Herbalism")>=70 and skill("Herbalism")<150
+		'Redirecting to Herbalism 150-200 |next "herb_150-200" |only if skill("Herbalism")>=150 and skill("Herbalism")<200
 		'Redirecting to Herbalism 200-285 |next "herb_200-285" |only if skill("Herbalism")>=225 and skill("Herbalism")<285
 		'Redirecting to Herbalism 285-350 |next "herb_285-375" |only if skill("Herbalism")>=285 and skill("Herbalism")<350
 		'Redirecting to Herbalism 350-425 |next "herb_350-425" |only if skill("Herbalism")>=350 and skill("Herbalism")<425

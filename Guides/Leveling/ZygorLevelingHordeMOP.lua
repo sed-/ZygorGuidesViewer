@@ -6043,7 +6043,7 @@ author support@zygorguides.com
 image WanderingIsle
 monkquest 1
 condition invalid not raceclass('Monk') !!Monk only.
-condition suggested raceclass('Monk') and not completedq(31840) or not completedq(31841) or not completedq(31842) or not completedq(31843) or not completedq(31844) or not completedq(31845) or not completedq(31846) and level>=1
+condition suggested raceclass('Monk') and not completedq(31840) or not completedq(31841) or not completedq(31842) or not completedq(31843) or not completedq(31844) or not completedq(31845) or not completedq(31846) and level>=20
 condition end completedq(31840)
 dynamic on
 step

@@ -557,7 +557,7 @@ label "larva"
 goto Ghostlands 45.3,31.1
 .kill Larva##16068 |achieve 2556/1
 step
-label "travel_silvermoon"
+label "travel_shattrath"
 'Skipping next part of guide |next "+travel_silvermoon" |only if step:Find("+ewe"):IsComplete()
 'Proceeding next step |next |only if default
 step
