@@ -7421,7 +7421,7 @@ ZygorGuidesViewer:RegisterInclude("H_SSO_PreQuest_with_Dailies", [[
 		.' Use your Astromancer's Crystal to sample the Portal's density. |use Astromancer's Crystal##34533
 		.' Portal Reading Taken |q 11547/1
 	step
-		.' Take this path back to they shoreside. |goto Isle of Quel'Danas,57.3,38.6 |c
+		.' Take this path back to the shoreside. |goto Isle of Quel'Danas,57.3,38.6 |c
 	step
 		goto Isle of Quel'Danas,64.1,49.9
 		.from Darkspine Myrmidon##25060+
@@ -7436,6 +7436,10 @@ ZygorGuidesViewer:RegisterInclude("H_SSO_PreQuest_with_Dailies", [[
 		goto Isle of Quel'Danas,61.1,62.0
 		.' Use your Astromancer's Crystal to sample the Shrine's density. |use Astromancer's Crystal##34533
 		.' Shrine Reading Taken |q 11547/2
+	step
+		goto 51.5,32.5
+		.talk Mar'nah##24975
+		..turnin Open for Business##11546
 	step
 		goto Isle of Quel'Danas,53.8,34.3
 		.talk Captain Valindria##25088
@@ -7452,10 +7456,6 @@ ZygorGuidesViewer:RegisterInclude("H_SSO_PreQuest_with_Dailies", [[
 		goto 49.3,40.4
 		.talk Magister Ilastar##25069
 		..turnin Crush the Dawnblade##11540
-	step
-		goto 51.5,32.5
-		.talk Mar'nah##24975
-		..turnin Open for Business##11546
 	step
 		goto 47.5,35.3
 		.talk Astromancer Darnarian##25133

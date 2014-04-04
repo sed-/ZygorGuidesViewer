@@ -4016,6 +4016,618 @@ ZygorGuidesViewer:RegisterInclude("A_Kurenai_Faction",[[
 	label exalted
 		.' Congratulations, you are now Exalted with The Kurenai! |condition rep("Kurenai")==Exalted
 ]])
+ZygorGuidesViewer:RegisterInclude("A_Zangarmarsh_Quests",[[
+	author support@zygorguides.com
+	image Zangarmarsh
+	next Zygor's Alliance Leveling Guides\\Outland 60-70\\Terokkar Forest (64-65)
+	startlevel 62.4
+	dynamic on
+	step
+		goto Zangarmarsh,80.4,64.2
+		.talk Lauranna Thar'well##17909
+		..accept Plants of Zangarmarsh##9802
+		.talk Ikeyen##17956
+		..accept The Umbrafen Tribe##9747
+	step
+		goto 79.1,65.3
+		.talk Warden Hamoot##17858
+		.|tip He is all the way at the top of the tower.
+		..accept A Warm Welcome##9728
+	step
+		goto 78.5,63.1
+		.talk Lethyn Moonfire##17834
+		..accept The Dying Balance##9895
+	step
+		goto 78.4,62
+		.talk Ysiel Windsinger##17841
+		..turnin The Cenarion Expedition##9912
+		..accept Disturbance at Umbrafen Lake##9716
+	step
+		goto 80.1,73.3
+		.kill Boglash##18281 |q 9895/1 |tip He walks around this whole area in the water, so some searching may be necessary.
+	step
+		goto 83.4,85.5
+		.talk Kayra Longmane##17969
+		.|tip She is inside the wooden hut at this location.
+		..accept Escape from Umbrafen##9752
+		..'Escort Kayra Longmane |q 9752/1
+	step
+		goto 85.3,90.9
+		.kill Kataru##18080 |q 9747/1 |tip In the big building, all the way at the top.
+	step
+		goto 83.1,85.2
+		.kill 6 Umbrafen Oracle##18077+ |q 9747/2
+		.kill 8 Umbrafen Seer##18079+ |q 9747/3
+		.kill 6 Umbrafen Witchdoctor##20115+ |q 9747/4
+		.|tip These mobs try to run away in fear.
+		.' You can find more of them at [Zangarmarsh,84,88.7]
+	step
+		goto 80.4,64.2
+		.talk Ikeyen##17956
+		..turnin The Umbrafen Tribe##9747
+		..accept A Damp, Dark Place##9788
+		.talk Lauranna Thar'well##17909
+		..accept Saving the Sporeloks##10096
+	step
+		goto 78.5,63.1
+		.talk Lethyn Moonfire##17834
+		..turnin The Dying Balance##9895
+	step
+		goto 78.4,62
+		.talk Ysiel Windsinger##17841
+		..turnin Escape from Umbrafen##9752
+	step
+		goto 80.4,64.7
+		.talk Windcaller Blackhoof##18070
+		..accept Safeguarding the Watchers##9894
+	step
+		goto 74.7,91.6|n
+		.' The path to 'Ikeyen's Belongings' starts here |goto Zangarmarsh,74.7,91.6,0.3 |noway |c
+	step
+		'Go southwest inside the cave to 70.5,97.9 |goto 70.5,97.9
+		.click Ikeyen's Belongings##318
+		.get Ikeyen's Belongings |q 9788/1
+	step
+		'Go northeast inside the cave to 72.5,94.0 |goto 72.5,94.0
+		.kill Lord Klaq##18282 |q 9894/1 |tip On the bottom level of the cave, in the small round room all the way in the back.
+		.|tip If you go back up the way you came for 'Ikeyen's Belongings' you can jump down to him.
+	step
+		goto 75.7,90.2
+		.kill 10 Marsh Lurker##18136+ |q 10096/2
+		.kill 10 Marsh Dredger##18137+ |q 10096/1
+		.|tip Fight your way back out of the cave and you should get the rest of the kills you need.
+	step
+		goto 70.9,82.1
+		.' Stand here to Investigate Umbrafen Lake |q 9716/1
+		.from Darkcrest Slaver##19946+,Darkcrest Sorceress##19947+
+		.get 10 Unidentified Plant Parts|q 9802/1
+		.get 30 Naga Claws|q 9728/1
+		.' You can find more Naga at:
+		.' [73.4,82.3]
+		.' [72.2,75.8]
+	step
+		goto 80.4,64.7
+		.talk Windcaller Blackhoof##18070
+		..turnin Safeguarding the Watchers##9894
+	step
+		goto 80.4,64.2
+		.talk Ikeyen##17956
+		..turnin A Damp, Dark Place##9788
+		.talk Lauranna Thar'well##17909
+		..turnin Plants of Zangarmarsh##9802
+		..turnin Saving the Sporeloks##10096
+	step
+		goto 79.1,65.3
+		.talk Warden Hamoot##17858
+		.|tip He is at the top of the tower.
+		..turnin A Warm Welcome##9728
+	step
+		goto 78.5,63.1
+		.talk Lethyn Moonfire##17834
+		..accept Watcher Leesa'oh##9697
+		..accept What's Wrong at Cenarion Thicket?##9957 |only if not completedq(9968) or not completedq(9971)
+	step
+		goto 78.4,62
+		.talk Ysiel Windsinger##17841
+		..turnin Disturbance at Umbrafen Lake##9716
+		..accept As the Crow Flies##9718
+		..'Use the Stormcrow Amulet in your bags |use Stormcrow Amulet##25465
+		..'Watch yourself fly as a crow
+		.' Lakes of Zangarmarsh Explored |q 9718/1
+	step
+		goto 78.4,62
+		.talk Ysiel Windsinger##17841
+		..turnin As the Crow Flies##9718
+		..accept Balance Must Be Preserved##9720
+	step
+		goto 80.4,64.7
+		.talk Windcaller Blackhoof##18070
+		..accept Blessings of the Ancients##9785
+	step
+		goto 78.1,63.8
+		.talk Keleth##17901 |tip He patrols around town so you may need to search for him
+		.'Get the Mark of War |q 9785/2
+	step
+		goto 81.1,63.9
+		.talk Ashyen##17900 |tip He patrols around town so you may need to search for him
+		.'Get the Mark of Lore |q 9785/1
+	step
+		goto 80.4,64.7
+		.talk Windcaller Blackhoof##18070
+		..turnin Blessings of the Ancients##9785
+	step
+		goto 70.6,80.3
+		.' Use your Ironvine Seeds on the Umbrafen Lake Pump Controls |use Ironvine Seeds##24355 |tip The pump controls look like a little box with some levers on it.
+		.' Disable the Umbrafen Lake Pump Controls |q 9720/1
+	step
+		goto 63.1,64.1
+		.' Use your Ironvine Seeds on the Lagoon Pump Controls |use Ironvine Seeds##24355 |tip The pump controls look like a little box with some levers on it.
+		.' Disable the Lagoon Pump Controls |q 9720/4
+	step
+		goto 70.5,49.2
+		.' Ride the elevator up to Telredor |goto 70.4,49.3 <5 |c
+	step
+		goto 68.3,50.0
+		.talk Vindicator Idaar##18004
+		..accept The Fate of Tuurem##9793
+		..accept The Dead Mire##9782
+	step
+		goto 68.2,49.4
+		.talk Anchorite Ahuurn##18003
+		..accept The Orebor Harborage##9776
+		..accept The Boha'mu Ruins##9786
+	step
+		goto 68.6,49.4
+		.talk Prospector Conall##18295
+		..accept Unfinished Business##9901
+	step
+		goto 68.6,48.7
+		.talk Ruam##18007
+		..accept Fulgor Spores##9777
+	step
+		goto 67.8,47.9
+		.talk Haalrun##18005
+		..accept Too Many Mouths to Feed##9781
+	step
+		goto 67.6,47.9
+		.talk Noraani##18006
+		..accept Menacing Marshfangs##9791
+	step
+		goto 67.8,51.4
+		.talk Munci##18788
+		..fpath Telredor
+	step
+		goto 71.3,46.9
+		.click Fulgor Spore##6880
+		.|tip They look like small glowing green mushrooms on the ground around this area.
+		.get 6 Fulgor Spore |q 9777/1
+		.' More spores and marshfang rippers can be found near [Zangarmarsh,67.6,54.1]eq
+		.kill 10 Marshfang Ripper##18130+ |q 9791/1
+	step
+		goto 77.2,45.9
+		.kill Sporewing##18280 |q 9901/1 |tip He patrols the area so you may need to search for him
+	step
+		goto 80.7,43.4
+		.click Dead Mire Soil##20
+		.get Dead Mire Soil Sample|q 9782/1
+	step
+		.' Ride the elevator up to Telredor |goto 70.4,49.3 <5 |c
+	step
+		goto 68.3,50.1
+		.talk Vindicator Idaar##18004
+		..turnin The Dead Mire##9782
+		..accept An Unnatural Drought##9783
+	step
+		goto 68.6,49.4
+		.talk Prospector Conall##18295
+		..turnin Unfinished Business##9901
+		..accept Blacksting's Bane##9896
+	step
+		goto 68.6,48.7
+		.talk Ruam##18007
+		..turnin Fulgor Spores##9777
+	step
+		goto 67.7,48
+		.talk Noraani##18006
+		..turnin Menacing Marshfangs##9791
+		..accept Umbrafen Eel Filets##9780
+	step
+		ding 63
+	step
+		goto 82.9,36.0
+		.kill 12 Withered Giant##18124+ |q 9783/1
+		.collect 1 Withered Basidium |n
+		.|tip It drops from the Withered Giants.
+		.' Click the Withered Basidium |use Withered Basidium##24483
+		..accept Withered Basidium##9827
+	step
+		goto 74.2,60.7
+		.kill 10 Mire Hydra##18213+ |q 9781/1
+		.from Umbrafen Eel##18138+
+		|tip Hydras can be found along the shoreline in this area.
+		,' Lots of eels can be found in the water at [Zangarmarsh,74.5,73.4]
+		.get 8 Eel Filet|q 9780/1
+	step
+		.' Ride the elevator up to Telredor |goto 70.4,49.3 <5 |c
+	step
+		goto 68.3,50.1
+		.talk Vindicator Idaar##18004
+		..turnin An Unnatural Drought##9783
+	step
+		goto 68.6,48.7
+		.talk Ruam##18007
+		..turnin Withered Basidium##9827
+		..accept Withered Flesh##10355
+	step
+		goto  67.6,47.9
+		.talk Noraani##18006
+		..turnin Umbrafen Eel Filets##9780
+	step
+		goto 67.8,47.9
+		.talk Haalrun##18005
+		..turnin Too Many Mouths to Feed##9781
+		..accept Diaphanous Wings##9790
+	step
+		goto 82.7,41.0
+		.from Parched Hydra##20324+
+		.get 5 Parched Hydra Sample |q 10355/1
+		.from Withered Bog Lord##19402+
+		.get 5 Withered Bog Lord Sample|q 10355/2
+		.collect 6 Bog Lord Tendril##24291 |tip Hold onto these, you will need them for a quest later.
+	step
+		goto 70.7,60.3
+		.from Umbraglow Stinger##18132+
+		.' More can be found around [Zangarmarsh,67.8,74.7]
+		.get 8 Diaphanous Wing|q 9790/1
+	step
+		.' Ride the elevator up to Telredor |goto 70.4,49.3 <5 |c
+	step
+		goto 68.6,48.7
+		.talk Ruam##18007
+		..turnin Withered Flesh##10355
+	step
+		goto 67.7,48
+		.talk Haalrun##18005
+		..turnin Diaphanous Wings##9790
+	step
+		goto 62,40.8
+		.' Use your Ironvine Seeds on the Serpent Lake Controls |use Ironvine Seeds##24355 |tip The pump controls look like a little box with some levers on it.
+		.' Disable the Serpent Lake Controls |q 9720/3
+		.' Kill Steam Pump Overseers, Bloodscale Overseers, and Bloodscale Wavecallers until you get the Drain Schematics.
+		.' Click the Drain Schematics in your bags |use Drain Schematics##24330
+		..accept Drain Schematics##9731
+	step
+		goto 49.5,59.2
+		.from Blacksting##18283
+		.get Blacksting's Stinger |q 9896/1
+	step
+		goto 44.5,66.1|n
+		.' The path up to 'The Boha'mu Ruins' starts here |goto Zangarmarsh,44.5,66.1,0.5 |noway |c
+	step
+		goto 44.1,68.8
+		.' Explore the Boha'mu Ruins |q 9786/1
+	step
+		goto 32.8,59.1
+		.from "Count" Ungula##18285
+		.get "Count" Ungula's Mandible |n
+		.' Click "Count" Ungula's Mandible |use "Count" Ungula's Mandible##25459
+		..accept The Count of the Marshes##9911
+	step
+		goto 36.9,58.0
+		.from Greater Sporebat##18129+, Fen Strider##18134+, Sporebat##18128+
+		.collect 6 Fertile Spores##24449 |tip Hold onto these, you will need them for a quest later.
+	step
+		goto 23.3,66.2
+		.talk Watcher Leesa'oh##17831
+		..turnin Watcher Leesa'oh##9697
+		..accept Observing the Sporelings##9701
+		..turnin The Count of the Marshes##9911
+	step
+		goto 19.1,63.9
+		.talk Fahssn##17923
+		..accept The Sporelings' Plight##9739
+		..accept Natural Enemies##9743
+		..turnin Natural Enemies##9743
+	step
+		goto 14.5,61.6
+		.click Mature Spore Sac##6911
+		.collect 10 Mature Spore Sac##24290 |q 9739
+	step
+		goto 13.6,59.8
+		.' Go here to Investigate the Spawning Glen |q 9701/1
+	step
+		goto 19.1,63.9
+		.talk Fahssn##17923
+		..turnin The Sporelings' Plight##9739
+	step
+	label "routespore"
+		'Routing to proper section |next "unfriendly" |only if rep('Sporeggar')<=Unfriendly
+		'Routing to proper section |next "neutral" |only if rep('Sporeggar')==Neutral
+		'Routing to proper section |next "friendly" |only if rep('Sporeggar')>=Friendly
+	step
+	label "unfriendly"
+		goto 13.6,59.8
+		.from Starving Fungal Giant##18125+, Starving Bog Lord##19519+ |only if rep ('Sporeggar')<=Unfriendly
+		.collect 6 Bog Lord Tendril##24291 |only if rep ('Sporeggar')<=Unfriendly
+	step
+		goto 19.1,63.9
+		.talk Fahssn##17923
+		..accept More Tendrils!##9744 |instant |only if rep('Sporeggar')<=Unfriendly
+		|next "routespore"
+	step
+	label "neutral"
+		goto Zangarmarsh 19.7,52.0
+		.talk Msshi'fn##17924
+		..accept Glowcap Mushrooms##9808
+		|only if rep ('Sporeggar')>=Neutral and not completedq(9808)
+	step
+		goto Zangarmarsh 19.2,53.5
+		.click Glowcap##6874
+		.collect 10 Glowcap Mushroom##24245 |q 9808/1
+		.' You can find more around [31.3,37.7]
+		|only if rep ('Sporeggar')>=Neutral and not completedq(9808)
+	step
+		goto Zangarmarsh 19.7,52.0
+		.talk Msshi'fn##17924
+		..turnin Glowcap Mushrooms##9808
+		|only if rep ('Sporeggar')>=Neutral and not completedq(9808)
+	step
+		goto 19.1,63.9
+		.talk Fahssn##17923
+		..accept Sporeggar##9919
+		|only if not completedq(9919)
+	step
+		goto 19.7,52.1
+		.talk Msshi'fn##17924
+		..turnin Sporeggar##9919
+		|only if not completedq(9919)
+	step
+		goto 13.6,59.8
+		.from Starving Fungal Giant##18125+, Starving Bog Lord##19519+
+		.collect 6 Bog Lord Tendril##24291
+	step
+		goto 19.1,63.9
+		.talk Fahssn##17923
+		..accept More Tendrils!##9744 |instant
+		|next "routespore"
+	step
+	label "friendly"
+		goto 23.3,66.2
+		.talk Watcher Leesa'oh##17831
+		..turnin Observing the Sporelings##9701
+		..accept A Question of Gluttony##9702
+	step
+		goto 27,63.3
+		.click Discarded Nutriment##3993
+		.|tip They look like small dark purple mushrooms laying on their side on the ground around this area.
+		.get 10 Discarded Nutriment##24233 |q 9702/1
+	step
+		goto 23.3,66.2
+		.talk Watcher Leesa'oh##17831
+		..turnin A Question of Gluttony##9702
+		..accept Familiar Fungi##9708
+	step
+		goto 19.2,49.4
+		.talk Gshaff##17925
+		..accept Fertile Spores##9806
+		..turnin Fertile Spores##9806
+	step
+		goto 19.5,50
+		.talk Gzhun'tt##17856
+		..accept Now That We're Friends...##9726
+	step
+		goto 25.4,42.9
+		.' Use your Ironvine Seeds on the Marshlight Lake Pump Controls |use Ironvine Seeds##24355 |tip The pump controls look like a little box with some levers on it.
+		.' Disable the Marshlight Lake Pump Controls|q 9720/2
+	step
+		goto 26.8,43
+		.kill 12 Bloodscale Slavedriver##18089+ |q 9726/1
+		.kill 6 Bloodscale Enchantress##18088+ |q 9726/2
+	step
+		goto 19.5,50
+		.talk Gzhun'tt##17856
+		..turnin Now That We're Friends...##9726
+	step
+		goto 41.2,28.7
+		.talk Timothy Daniels##18019
+		..accept Secrets of the Daggerfen##9848
+	step
+		goto 41.7,27.3
+		.click Wanted Poster##6901
+		..accept Wanted: Chieftain Mummaki##10116
+	step
+		goto 41.9,27.2
+		.talk Ikuti##18008
+		..turnin The Orebor Harborage##9776
+		..accept Ango'rosh Encroachment##9835
+		..accept Daggerfen Deviance##10115
+	step
+		goto 41.3,29
+		.talk Halu##22485
+		..fpath Orebor Harborage
+	step
+		goto 26.4,22.8
+		.click Daggerfen Poison Vial##7142
+		|tip Little clear bottle with white liquid in it, sitting on the ground next to a hut.
+		.get Daggerfen Poison Vial |q 9848/2
+		.' It can also be at [25.4,25.0]
+	step
+		goto 24.4,27
+		.click Daggerfen Poison Manual##6930
+		|tip At the top of the big tower, to the right as you reach the top, on the floor.
+		.get Daggerfen Poison Manual|q 9848/1
+	step
+		goto 23.8,26.8
+		.from Chieftain Mummaki##19174
+		.|tip He is at the top of the big building.
+		.get Chieftain Mummaki's Totem |q 10116/1
+	step
+		goto 25.6,23.1
+		.kill 3 Daggerfen Assassin##18116+ |q 10115/1
+		.kill 15 Daggerfen Muckdweller##18115+ |q 10115/2
+	step
+		goto 29.6,28.3
+		.kill 5 Ango'rosh Shaman##18118+ |q 9835/1
+		.kill 10 Ango'rosh Ogre##18117+ |q 9835/2
+		.' You can find more Ogres at [36.0,32.0]
+	step
+		.from Ango'rosh Shaman##18118+, Ango'rosh Ogre##18117+
+		.get 15 Mushroom Sample|q 9708/1
+	step
+		goto 41.2,28.7
+		.talk Timothy Daniels##18019
+		..turnin Secrets of the Daggerfen##9848
+	step
+		goto 41.9,27.2
+		.talk Ikuti##18008
+		..turnin Ango'rosh Encroachment##9835
+		..accept Overlord Gorefist##9839
+		..turnin Wanted: Chieftain Mummaki##10116
+		..turnin Daggerfen Deviance##10115
+	step
+		goto 41.9,26.2
+		.talk Innkeeper Kerp##18908
+		.home Orebor Harborage
+	step
+		goto 41.6,27.3
+		.talk Maktu##18010
+		..accept Natural Armor##9834
+	step
+		goto 40.8,28.7
+		.talk Puluu##18009
+		..accept Stinger Venom##9830
+		..accept Lines of Communication##9833
+		..accept The Terror of Marshlight Lake##9902
+	step
+		goto 48.1,38.4
+		.from Fenclaw Thrasher##18214+
+		.get 8 Fenclaw Hide|q 9834/1
+	step
+		goto 50.4,40.8
+		.' Locate the drain in Serpent Lake |q 9731/1 |tip Swim straight down at this spot.
+	step
+		goto 35.9,58.6
+		.kill 12 Marshfang Slicer##18131+ |q 9833/1
+	step
+		goto 23.3,66.2
+		.talk Watcher Leesa'oh##17831
+		..turnin Familiar Fungi##9708
+		..accept Stealing Back the Mushrooms##9709
+	step
+		goto 22.4,46.1
+		.kill Terrorclaw##20477 |q 9902/1
+	step
+		goto 17.3,38.4
+		.from Marshlight Bleeder##18133+, Fenglow Stinger##20198+ |tip They are all around this area, to the north and south.
+		.get 6 Marshlight Bleeder Venom|q 9830/1
+		.' You'll be able to find more around [Zangarmarsh,19.6,33.3]
+	step
+		 .' The path to Ango'Rosh Grounds starts here |goto 17.1,13.4 <5 |c
+	step
+		goto 18.3,7.7
+		.kill 1 Overlord Gorefist##18160 |q 9839/1 |tip Follow the path up the hill. Overlord Gorefist is inside the small house on the left.
+	step
+		goto 17.3,10.2
+		.kill 10 Ango'rosh Mauler##18120+ |q 9839/2
+		.click Box of Mushrooms##2350
+		.get 10 Box of Mushrooms|q 9709/1
+		.|tip They look like small wooden boxes on the ground around this area.
+		.|tip Ango'rosh mobs can drop the boxes of mushrooms too.
+		.|tip Looting the boxes on the ground causes an enemy to spawn and attack you.
+		.' More mobs and boxes can be found in the cave at [Zangarmarsh,17.3,9.6]
+	step
+		goto 40.8,28.7
+		.talk Puluu##18009
+		..turnin Stinger Venom##9830
+		..turnin Lines of Communication##9833
+		..turnin The Terror of Marshlight Lake##9902
+	step
+		goto 41.6,27.3
+		.talk Maktu##18010
+		..turnin Natural Armor##9834
+		..accept Maktu's Revenge##9905
+	step
+		goto 41.9,27.2
+		.talk Ikuti##18008
+		..turnin Overlord Gorefist##9839
+	step
+		ding 64
+	step
+		goto 42.2,41.4
+		.kill Mragesh##18286 |q 9905/1
+	step
+		goto 23.3,66.2
+		.talk Watcher Leesa'oh##17831
+		..turnin Stealing Back the Mushrooms##9709
+	step
+		goto 41.6,27.3
+		.talk Maktu##18010
+		..turnin Maktu's Revenge##9905
+	step
+		goto 68.2,49.4
+		.talk Anchorite Ahuurn##18003
+		..turnin The Boha'mu Ruins##9786
+		..accept Idols of the Feralfen##9787
+	step
+		goto 68.6,49.4
+		.talk Prospector Conall##18295
+		..turnin Blacksting's Bane##9896
+	step
+		goto 49.3,60.6
+		.click Feralfen Idol##6925+
+		.get 6 Feralfen Idol|q 9787/1
+		.|tip They look like small stone birds on the ground around this area.
+	step
+		.' Ride the elevator up to Telredor |goto 70.4,49.3 <5 |c
+	step
+		goto 68.2,49.4
+		.talk Anchorite Ahuurn##18003
+		..turnin Idols of the Feralfen##9787
+		..accept Gathering the Reagents##9801
+	step
+		goto 63.3,52.1
+		.from Sporebat##18128+
+		.get 4 Sporebat Eye |q 9801/1
+		.from Fen Strider##18134+
+		.get 4 Fen Strider Tentacle|q 9801/2
+		.' You can find more at [51.1,57.8]
+	step
+		.' Ride the elevator up to Telredor |goto 70.4,49.3 <5 |c
+	step
+		goto 68.2,49.4
+		.talk Anchorite Ahuurn##18003
+		..turnin Gathering the Reagents##9801
+		..accept Messenger to the Feralfen##9803
+	step
+		goto 44.6,66.1
+		.' Drink Ahuurn's Elixir |use Ahuurn's Elixir##24428
+		|confirm
+	step
+		goto 44.1,69.5
+		.talk Elder Kuruti##18197
+		.' Get Elder Kuruti's Response |q 9803/1
+	step
+		.' Ride the elevator up to Telredor |goto 70.4,49.3 <5 |c
+	step
+		goto 68.2,49.4
+		.talk Anchorite Ahuurn##18003
+		..turnin Messenger to the Feralfen##9803
+	step
+		goto 78.4,62
+		.talk Ysiel Windsinger##17841
+		..turnin Balance Must Be Preserved##9720
+		..turnin Drain Schematics##9731
+		..accept Warning the Cenarion Circle##9724
+	step
+		goto Hellfire Peninsula,16.0,52.1
+		.talk Amythiel Mistwalker##16885
+		..turnin Warning the Cenarion Circle##9724
+		..accept Return to the Marsh##9732
+	step
+		goto Zangarmarsh,78.4,62
+		.talk Ysiel Windsinger##17841
+		..turnin Return to the Marsh##9732
+]])
 --------------------------------------------------------------------------------------------------------------------------------------
 -- Leveling Northrend
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -17873,7 +18485,7 @@ ZygorGuidesViewer:RegisterInclude("A_SSO_PreQuest_Dailies",[[
 		.' Use your Astromancer's Crystal to sample the Portal's density. |use Astromancer's Crystal##34533
 		.' Portal Reading Taken |q 11547/1
 	step
-		.' Take this path back to they shoreside. |goto Isle of Quel'Danas,57.3,38.6 |c
+		.' Take this path back to the shoreside. |goto Isle of Quel'Danas,57.3,38.6 |c
 	step
 		goto Isle of Quel'Danas,64.1,49.9
 		.from Darkspine Myrmidon##25060+
@@ -17888,6 +18500,10 @@ ZygorGuidesViewer:RegisterInclude("A_SSO_PreQuest_Dailies",[[
 		goto Isle of Quel'Danas,61.1,62.0
 		.' Use your Astromancer's Crystal to sample the Shrine's density. |use Astromancer's Crystal##34533
 		.' Shrine Reading Taken |q 11547/2
+	step
+		goto 51.5,32.5
+		.talk Mar'nah##24975
+		..turnin Open for Business##11546
 	step
 		goto Isle of Quel'Danas,53.8,34.3
 		.talk Captain Valindria##25088
@@ -17904,10 +18520,6 @@ ZygorGuidesViewer:RegisterInclude("A_SSO_PreQuest_Dailies",[[
 		goto 49.3,40.4
 		.talk Magister Ilastar##25069
 		..turnin Crush the Dawnblade##11540
-	step
-		goto 51.5,32.5
-		.talk Mar'nah##24975
-		..turnin Open for Business##11546
 	step
 		goto 47.5,35.3
 		.talk Astromancer Darnarian##25133
@@ -20826,9 +21438,14 @@ ZygorGuidesViewer:RegisterInclude("A_Oracles_PreQuests", [[
 		'You can also use Moodle's Stress Ball if you have it in your bags:|use Moodle's Stress Ball##38624
 		.talk Moodle##28122
 		..turnin Lifeblood of the Mosswalker Shrine##12579
-		..accept A Hero's Burden##12581
 ]])
 ZygorGuidesViewer:RegisterInclude("A_Oracles_Dailies", [[
+	step
+		goto 54.5,56.6
+		'You can also use Moodle's Stress Ball if you have it in your bags:|use Moodle's Stress Ball##38624
+		.talk Moodle##28122
+		..accept A Hero's Burden##12581
+	step
 		' During this next part you will fight a boss.
 		.' If you kill Zepik the Gorloc Hunter during the fight, you will be able to pick up the Oracle quest, and vice versa.
 		.' NOTE** _You must kill Artuis Slowly if you are high level_. This will decrease your Reputation with the _Frenzyheart Tribe_ to _Hated_
@@ -26273,7 +26890,7 @@ ZygorGuidesViewer:RegisterInclude("Kirin_Tor_Offensive",[[
 		scenariogoal 22669
 	step
 		scenariostage 3
-	 step
+	step
 		goto 933 49.3,26.0
 		.talk Taoshi##69810
 		.' Tell her lets go.
@@ -26305,6 +26922,7 @@ ZygorGuidesViewer:RegisterInclude("Kirin_Tor_Offensive",[[
 		goto Isle of Thunder 63.2,72.2
 		.talk Lady Jaina Proudmoore##67992
 		..turnin To the Skies!##32652
+		.' Depending on your current phase, she can also be found here [63.2,74.0]
 		|next "start"
 //stage5
 	step
@@ -26472,7 +27090,7 @@ ZygorGuidesViewer:RegisterInclude("Kirin_Tor_Offensive",[[
 		|noquest
 		|only if completedq(32732) and completedq(32644)
 	step
-		goto Isle of Thunder 42.3,75.0
+		goto Isle of Thunder 55.6,74.4
 		.talk Image of Archmage Vargoth##69678
 		..accept Skin of the Saurok##32549 |tip NOTE: This quest will give you the ability to disguise yourself as a saurok. This spell will happen automatically whenever you are outside of combat and inside Ihgaluk Crag. If you try to attack another saurok, the disguise will vanish and all saurok will be hostile to you until you are out of combat again.
 		|only if not completedq(32549)
