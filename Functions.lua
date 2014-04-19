@@ -223,3 +223,103 @@ function dig_in(data,...)
 	end
 	return data
 end
+
+-- Sometimes you just want to run something when a certain event happens, or you
+-- have to wait for the next OnUpdate for something to update. It generally
+-- takes a bit of setup: Creating a frame, registering the event. Why not be
+-- able to just say "delay running this function a bit?"
+-- Well, now you can =). ~~Jeremiah
+
+-- When a function is finished, a DELAYED_RUN_RETURN event is sent with
+-- the event name and anything returned by the function.
+
+-- Also supports checking CanSendAuctionQuery, effectively treating it as an event.
+ZGV.EventDelayFrame = CreateFrame("Frame")
+local delayedRunTable = {}
+
+-- {time, function}
+local timedDelayedRunTable = {}
+local registeredEventsTable = {}
+
+-- Note that DelayedRun and the function you call is run with the : operator, so you always have access to self.
+-- Also note that any number of arguments can be sent to your function.
+function ZGV:DelayedRun(aFunction, event, ...)
+	if not (event=="OnUpdate" or event=="CanSendAuctionQuery" or registeredEventsTable[event]) then
+		ZGV.EventDelayFrame:RegisterEvent(event)
+		registeredEventsTable[event]=true
+	end
+	tinsert(delayedRunTable, {aFunction, event, self, {...}})
+end
+
+-- Time is in seconds.
+function ZGV:TimedDelayedRun(aFunction, waitTime, ...)
+	tinsert(timedDelayedRunTable, {aFunction, time()+waitTime, self, {...}})
+end
+
+local function OnUpdateHandler()
+ 	-- A mark, then remove is performed because tremove changes the table structure. 
+	local markForRemove = {} 
+
+	for index, aTable in pairs(delayedRunTable) do
+		if aTable[2]==nil or aTable[2]=="OnUpdate" then
+			local myReturn = {aTable[1](aTable[3], unpack(aTable[4]))}
+			ZGV:SendMessage("DELAYED_RUN_RETURN", aTable[2], unpack(myReturn))
+			markForRemove[index] = true
+		end
+		
+		if aTable[2]=="CanSendAuctionQuery" and CanSendAuctionQuery() then
+			local myReturn = {aTable[1](aTable[3], unpack(aTable[4]))}
+			ZGV:SendMessage("DELAYED_RUN_RETURN", aTable[2], unpack(myReturn))
+			markForRemove[index] = true
+		end
+ 	end
+
+	for index, aTable in pairs(timedDelayedRunTable) do
+		if aTable[2] < time() then
+			local myReturn = {aTable[1](aTable[3], unpack(aTable[4]))}
+			ZGV:SendMessage("DELAYED_RUN_RETURN", aTable[2], unpack(myReturn))
+			timedDelayedRunTable[index]=nil
+		end
+	end
+	
+	for index, aTable in pairs(markForRemove) do
+		--tremove(delayedRunTable, index)
+		delayedRunTable[index]=nil
+	end
+	markForRemove = nil
+end
+
+local function OnEventHandler(self, event)
+	for index, aTable in pairs(delayedRunTable) do
+		if aTable[2]==event then
+			local myReturn = {aTable[1](aTable[3], unpack(aTable[4]))}
+			ZGV:SendMessage("DELAYED_RUN_RETURN", aTable[2], unpack(myReturn))
+		end
+ 	end
+ 	-- In this case, the event name esentially "marks" what needs to be removed.
+	for index, aTable in pairs(delayedRunTable) do
+		if aTable[2]==event then
+			--tremove(delayedRunTable, index)
+			delayedRunTable[index]=nil
+		end
+	end
+end
+
+ZGV.EventDelayFrame:SetScript("OnUpdate",OnUpdateHandler)
+ZGV.EventDelayFrame:SetScript("OnEvent",OnEventHandler)
+
+-- Sometimes GetItemInfo does not return the information you want: In its current
+-- form, it doesn't maintain the cache between sessions.
+
+-- This can be problematic with auctions: We want the items' info, but it's not
+-- always there: If you sell everything you have of a certain item, then exit
+-- and reload the game, GetItemInfo will return null.
+
+-- So this caches items between sessions.
+
+tinsert(ZGV.startups,function(self)
+	if not ZGV.db.global.itemCache then
+		ZGV.db.global.itemCache = {}
+	end
+end)
+

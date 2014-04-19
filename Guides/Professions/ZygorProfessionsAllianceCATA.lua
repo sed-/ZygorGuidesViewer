@@ -3840,7 +3840,7 @@ path	29.5,11.3	35.0,12.0	40.6,13.1
 path	45.1,16.3	47.3,19.3	47.3,26.6
 #include "follow_path_mine"
 skill Mining,255
-.collect 180 Thorium Ore##10620
+.collect 198 Thorium Ore##10620
 .collect 20 Dense Stone##12365
 #include "max_skill_warning",skill="Mining",goto="eng_125-210_farm"
 step
@@ -3879,8 +3879,8 @@ label  "eng_280-350"
 .skillmax Engineering,375 |tip You must be at least level 50.
 .learn Thorium Tube##19795
 step
-.' You don't need to save anything from the Artisan Engineering section to use in the Master portion.
-..' Feel free to sell off anything you might have created and you may also sell off any left over materials from this section.
+.' Make sure to save any Thorium Bars/Ores you have for the next section.
+..' Feel free to sell off anything you might have created and you may also sell off any other left over materials from this section.
 |confirm
 step
 #include "maincity_anvil"
@@ -3893,6 +3893,7 @@ step
 .buy 40 Adamantite Bar##23446
 .buy 18 Netherweave Cloth##21877
 .buy 10 Felsteel Bar##23448
+.buy 138 Thorium Bar##12359
 #include go_farm,skill="Mining",req="275",goto="eng_280-350_farm"
 next "eng_280-350_skill"
 step
@@ -3921,7 +3922,7 @@ path 58.5,31.5	65.9,34.4
 #include "max_skill_warning",skill="Mining",goto="eng_280-350_farm"
 step
 label "farm2"
-'Skipping 2nd part of farming |next "+exit" |only if step:Find("+farming"):IsComplete()
+'Skipping 2nd part of farming |next "farmnether" |only if step:Find("+farming"):IsComplete()
 'Proceeding to farm |next |only if default
 step
 label "farming"
@@ -3943,11 +3944,31 @@ path 57.9,75.5	49.0,79.0
 .collect 80 Adamantite Ore##23425
 .collect 10 Mote of Fire##22574
 .collect 20 Mote of Earth##22573
-#include "max_skill_warning",skill="Mining",goto="eng_280-350_farm"
+.collect 40 Eternium Ore##23427
 step
+label "farmnether"
 goto Nagrand,73.3,69.7
 .from Boulderfist Mystic##17135+, Boulderfist Crusher##17134+
-.collect 30 Netherweave Cloth##21877
+.collect 18 Netherweave Cloth##21877
+step
+label "farmthorium"
+map Silithus
+path	54.8,26.8	52.3,22.8	50.5,15.3
+path	55.8,12.5	61.8,12.5	68.3,15.6
+path	69.7,19.7	68.4,26.3	72.3,27.9
+path	72.5,39.5	70.0,43.5	66.7,44.7
+path	64.6,45.0	67.1,55.0	67.0,59.8
+path	67.3,63.0	69.5,69.6	68.1,74.1
+path	66.3,81.9	65.7,83.4	56.8,76.1
+path	56.6,81.2	50.6,80.3	44.6,80.2
+path	40.4,80.9	26.1,80.1	25.3,74.2
+path	26.7,69.5	33.0,66.3	30.8,62.6
+path	26.6,53.5	28.4,47.9	27.8,40.6
+path	27.6,33.9	25.2,27.1	28.5,16.2
+path	29.5,11.3	35.0,12.0	40.6,13.1
+path	45.1,16.3	47.3,19.3	47.3,26.6
+#include "follow_path_mine"
+.collect 138 Thorium Ore##10620
 step
 #include "maincity_anvil"
 .create Fel Iron Bar##29356,Mining,110 total
@@ -5046,8 +5067,7 @@ label "route"
 'Redirecting to Inscription 275-350 |next "ins_275-350" |only if skill("Inscription")>=275 and skill("Inscription")<350
 'Redirecting to Inscription 350-425 |next "ins_350-425" |only if skill("Inscription")>=350 and skill("Inscription")<425
 'Redirecting to Inscription 425-500 |next "ins_425-500" |only if skill("Inscription")>=425 and skill("Inscription")<500
-'Redirecting to Inscription 500-525 |next "ins_500-525" |only if skill("Inscription")>=500 and skill("Inscription")<525 and not ZGV.guidesets['ProfessionsAMoP']
-'Redirecting to Inscription 525-600 |next "route2" |only if skill("Inscription")>=525 and skill("Inscription")<600
+'Redirecting to Inscription 500-600 |next "route2" |only if skill("Inscription")>=500 and skill("Inscription")<600
 step
 .'NOTE: When getting additional materials using this guide, do not sell them or throw them away. Most of them will be used in the guide at a later time.
 step
@@ -5426,7 +5446,7 @@ step
 .create 1 Glyph of Healing Stream Totem##57242,Inscription,220
 step
 #include "trainer_Inscription"
-.learn Glyph of The Moonbeast##56959
+.learn Glyph of Guided Stars##56959
 step
 .create 2 Glyph of The Moonbeast##56959,Inscription,226
 step
@@ -6025,7 +6045,7 @@ label "ins_525"
 step
 label "ins_500-600"
 .'Please purchase the upgrade Profession guide to see the content for MOP |only if not ZGV.guidesets['ProfessionsAMoP']
-|next Profession Guides\\Inscription\\Inscription 500-600 Leveling Guide |only if ZGV.guidesets['ProfessionsAMoP']
+|next "Profession Guides\\Inscription\\Inscription 500-600 Leveling Guide" |only if ZGV.guidesets['ProfessionsAMoP']
 step
 label "ins_600"
 'Congratulations, you are now a Zen Master Scribe!
@@ -9616,7 +9636,7 @@ path	27.0,33.4	27.1,37.2	28.1,42.9
 path	30.9,51.7	28.1,50.1	26.3,47.3
 path	26.1,43.4	25.4,38.4	25.6,34.6
 path	24.3,28.1
-.from Onyx Venomtail##63586+, Dread Scarab##63587+, Ruby Venomtail##63588+
+.from Onyx Venomtail##63586+, Ruby Venomtail##63588+
 .'Click here to pick a different leather. |confirm |next "start"
 only if ZGV.guidesets['ProfessionsAMoP']
 step "sha"

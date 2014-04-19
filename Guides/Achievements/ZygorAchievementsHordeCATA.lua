@@ -2242,7 +2242,7 @@ step
 'Congratulations! You have earned the Title _Jenkins_!!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\High Quality",[[
-description This guide will show you how to earn the Jenkins Title.
+description This guide will show you how to earn the High Quality Achievement.
 author support@zygorguides.com
 condition end achieved(7463)
 step
@@ -2258,7 +2258,7 @@ step
 .' Congratulations, you have earned the _High Quality_ achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Family Reunion",[[
-description This guide will show you how to earn the Jenkins Title.
+description This guide will show you how to earn the Family Reunion Achievement.
 author support@zygorguides.com
 condition end achieved(6608)
 step

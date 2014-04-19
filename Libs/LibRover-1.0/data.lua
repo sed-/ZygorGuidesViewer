@@ -2258,7 +2258,7 @@ data.basenodes.inns = {
 		{name="The Lazy Turnip",faction="B",npc="Innkeeper Lei Lan",npcid=59582,x=55.1,y=50.3},
 		{name="Stone Mug Tavern",faction="B",npc="Nan the Mason Mug",npcid=62878,x=19.7,y=55.9},
 		{name="Sunsong Ranch",faction="B",npc="Farmer's Journal",npcid=70585,x=52.7,y=47.9},
-	},
+		{name="Thunderfoot Inn",faction="B",npc="Nan Thunderfoot",npcid=65528,x=83.7,y=20.3},	},
 	['Vale of Eternal Blossoms']={
 		{name="The Golden Lantern",f=3,faction="A",npc="Matron Vi Vinh",npcid=64149,x=36.4,y=66.8},
 		{name="The Golden Rose",faction="B",npc="Bartender Tomro",npcid=58691,x=35.3,y=77.6},

@@ -7757,6 +7757,315 @@ goto 19.4,53
 .talk 50387
 ..turnin 28854
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\Zul Gurub (ZG) 85",[[
+dungeon 793
+description This guide will walk you through the Zul Gurub dungeon.
+achieveid 688
+author support@zygorguides.com
+step
+label "start"
+goto Zul'Gurub/0 30.6,47.4
+.talk 53151
+..accept 29154
+step
+goto 30.6,47.3
+.talk 53024
+..accept 29241
+step
+goto 30.5,51.0
+.talk 53043
+..accept 29242
+step
+goto 30.8,47.1
+.talk 53023
+..accept 29172 |or
+..accept 29175 |or
+..accept 29173 |or
+.' T'ara will only offer 1 or 2 of these quests at a time.
+step
+goto 33.4,46.7
+.from Venomancer Mauri##52380
+.clicknpc Zanzil's Cauldron of Toxic Torment##52529
+.' Get the Toxic Torment Buff. |havebuff Interface\Icons\INV_Misc_Cauldron_Nature
+step
+goto 37.2,46.4
+.' Fight your way through this path.
+.from Venomtip Needler##52379+
+.' If you need another nature buff, you can get one here.
+|confirm
+step
+goto 43.9,51.0
+.from Tiki Lord Mu'Loa##52340
+|confirm
+step
+goto 48.5,52.1
+.' Fight your way to the next cauldron.
+.clicknpc Zanzil's Cauldron of Toxic Torment##52529
+.' Get the Toxic Torment Buff. |havebuff Interface\Icons\INV_Misc_Cauldron_Nature
+step
+.' Pull the Venomguard Destroyers near the cauldron and kill them.
+.from Venomguard Destroyer##52311+
+|confirm
+step
+goto 50.8,55.1
+.' _High Priest Venoxis_
+.' _Phase 1:_
+.' He will cast, _Toxic Link_ which attaches 2 party members. Run 25 yards away from each other to break this.
+.' _Whispers of Hethiss_ is a beam of poison that will damage a player while channeled. This needs to be _interrupted_.
+.' During the fight he will use _Venomous Effusion_ which creates a maze of poison on the ground. Avoid the wall at all cost.
+.' _Phase 2:_
+.' Venoxis will _Transform_ into a snake god. A _poisonous cloud maze_ will appear on the ground, avoid walking in this.
+.' He will continue to use _Venomous Effusion_.
+.' His damage will be increased by 50% while in snake form.
+.' He will cast a _Pool of Acrid Tears_ on the player furthest away from him which deals nature damage. Avoid if you can.
+.' He will use a cone attack, _Breath of Hethiss_, so melee should attack from the back if possible.
+.' _Phase 3:_
+.' Players will be _chased by Poison Tendrils_, avoid these for 12 seconds. After this phase, Venoxis will take 100% more damage for 10 seconds. If  you do not kill him, phase 1 will repeat.
+.from High Priest Venoxis##52155
+|confirm
+step
+.' Follow this path |goto 49.4,54.3 <5 |c
+step
+.' Follow this path |goto 49.0,58.1 <5 |c
+step
+.' Follow this path |goto 52.9,57.8 <5 |c
+step
+.' Once you get to this opening, avoid the rocks to make it up the hill. |goto 56.2,63.0 <5 |c
+step
+goto 56.9,72.3
+.from Berserking Boulder Roller##52348
+|confirm
+step
+goto 60.1,80.2
+.' _Bloodlord Mandokir_
+.' He will randomly use _Decapitate_ which will kill whoever he uses it on.
+.' When the player is killed, a _Chained Spirit_ will revive you, giving you _Spirit's Vengeance_, granting 25% Health, Damage, Healing and decreasing damage taken by 10%. This effect stacks.
+.' He will gain a _Level Up_ buff when he kills a player, increasing damage dealt by 20%, a stacking effect.
+.' Mandokir will summon his raptor _Ohgan_. _Kill the Raptor_ everytime it spawns or it will kill a Chained Spirit.
+.' There are only _8 spirits_, so kill Ohgan as fast as possible.
+.' He will use _Devastating Slam_ often during the fight, a 45 degree cone attack that will likely kill you. It marks the ground as to where it strikes, so avoid it.
+.' He will toss the _Bloodletting_ debuff on a random target, dealing 50% of their current health as shadow damage.
+.from Bloodlord Mandokir##52151
+|modelnpc Ohgan##52157
+|confirm
+step
+.' Go back down the hill |goto 56.6,63.3 <5 |c
+step
+goto 54.6,63.0
+.from Kaulema the Mover##52422
+.' Slay Kaulema the Mover |q 29173/2
+|only if havequest(29173)
+step
+goto 54.9,55.5
+.from Mor'Lek the Dismantler##52405
+.' Slay Mor'Lek the Dismantler |q 29173/1
+|only if havequest(29173)
+step
+goto 54.5,52.7
+.from Witch Doctor Qu'in##52322
+.from Chosen of Hethiss##52323+
+|confirm
+step
+goto 59.5,46.1
+.from Ritual Tiki Mask##52364+
+|confirm
+step
+goto 59.3,46.4
+.' If a party member has an Archaeology of 225 at least and wishes to fight the boss, click here. |confirm |next
+.' If the party wishes to skip the Archaeology boss, click here. |next "end" |confirm
+step
+.' The Edge of Madness event will summon 1 of 4 random bosses.
+.' If Hazza'rah spawns click here. |next "hazza" |confirm
+.' If Renataki spawns click here. |next "rena" |confirm
+.' If Wushoolay spawns click here. |next "wush" |confirm
+.' If Gri'lek spawns click here. |next "gri" |confirm
+step
+label hazza
+'_Hazza'rah_
+.' Hazza'rah will use _Nightmare_ and summon 4 adds. Each add will target a random party member and cast _Waking Nightmare_ stunning them. The player who is not stunned must kill the adds before they reach the targetted player.
+.from Hazza'rah##52271
+.get Mysterious Gurubashi Bijou##69647 |q 29242/1 |only if havequest(29242)
+|confirm |only if not havequest(29242) |next "end"
+step
+label rena
+'_Renataki_
+.' _Renataki_ will use _Deadly Poison_ throughout the fight. This effect stacks and can be cleansed.
+.' He will periodically _Vanish_. When he does this make sure everybody in the party is at 100% health. He will _Ambush_ a random target that deals 90% of the players health.
+.' He will also cast _Thousand Blades_. This whirlwind is dangerous and needs to be avoided.
+.from Renataki##52269
+.get Mysterious Gurubashi Bijou##69647 |q 29242/1 |only if havequest(29242)
+|confirm |only if not havequest(29242) |next "end"
+step
+label wush
+'_Wushoolay_
+.' Wushoolay will summon _Lightning Clouds_ periodically that should be avoided.
+.' He will use _Forked Lightning_, so spread out.
+.' Wushoolay will transform into a ball of lightning and charge at a random player. After he reaches them he begins to cast _Lightning Rod_. Everybody needs to run away from Wushoolay at this point, Lightning Rod does deadly amounts of damage and needs to be avoided
+.from Wushoolay##52286
+.get Mysterious Gurubashi Bijou##69647 |q 29242/1 |only if havequest(29242)
+|confirm |only if not havequest(29242) |next "end"
+step
+label gri
+'_Gri'lek_
+.' Gri'lek is a kiting encounter.
+.' He will fixate on a random party member and gain the _Avatar_ buff, increasing his damage output by 500% and reducing his movement speed. If he fixates on you just run away until it is done.
+.' He will cast _Entangling Roots_ on the player he is chasing, this can and needs to be dispelled.
+.' He constantly summons _Rupture Lines_. Avoid the rumbling dirt.
+.from Gri'lek##52258
+.get Mysterious Gurubashi Bijou##69647 |q 29242/1 |only if havequest(29242)
+|confirm |only if not havequest(29242) |next "end"
+step
+label "end"
+.' Follow this path. |goto 58.0,50.9 <5 |c
+step
+.' Follow this path. |goto 56.5,50.5 <5 |c
+step
+.' Follow this path. |goto 56.6,43.3 <5 |c
+step
+.' Follow this path. |goto 58.5,34.9 <5 |c
+step
+goto 62.4,33.8
+.from Mortaxx##52438
+.' Kill Mortaxx |q 29173/3
+|only if havequest(29173)
+step
+.' Enter the building here |goto 57.9,29.8 <5 |c
+|only if havequest(29175)
+step
+goto 57.7,27.3
+.from Gurubashi Master Chef##52392
+.' Destroy the Gurubashi Master Chef |q 29175/2
+|only if havequest(29172)
+step
+.' Follow this path. |goto 55.6,27.7 <5 |c
+step
+.' Follow this path down towards the water. |goto 53.6,29.2 <5 |c
+|only if havequest(29172)
+step
+goto 55.1,33.5
+.from Lost Offspring of Gahz'ranka##52418
+.' Kill a Lost Offspring of Gahz'ranka |q 29172/1
+|only if havequest(29172)
+step
+.' Follow this path. |goto 47.9,27.6 <5 |c
+step
+goto 47.8,20.9
+.' _High Priestess Kilnara_
+.' _Phase 1_
+.' The tank should pull the Pride of Bethekk and keep aggro on Kilnara.
+.' The DPS should focus on killing the 16 _Pride of Bethekk_, pulling 4 at a time. (You can kill more if you've got great dps)
+.' She will cast _Tears of Blood_ on random party members. It deals massive damage and should be dispelled as soon as possible.
+.' She will also cast _Lash of Anguish_ on a random target, which should be dispelled.
+.' She will cast _Wave of Agony_ at a random player, attacking and knocking back anyone in front of her. Avoid it.
+.' _Phase 2_
+.' Once she reaches 50% health she will enter phase 2, vanishing. When she reappears, she will be in cat form.
+.' She will deal out more damage. DPS her down as fast as possible.
+.from High Priestess Kilnara##52059
+|modelnpc Pride of Bethekk##52061+
+|confirm
+step
+goto 47.6,23.6 |n
+.' Go upstairs and leave the building. |goto 47.6,23.6 <5 |noway |c
+step
+.' Follow this path |goto 44.9,28.1 <5 |c
+step
+.' Follow this path |goto 42.2,29.1 <5 |c
+step
+.' Follow this path |goto 38.1,29.8 <5 |c
+|only if havequest(29172)
+step
+.' Follow this path |goto 37.0,32.1 <5 |c
+|only if havequest(29172)
+step
+.' Follow this path |goto 33.8,36.1 <5 |c
+|only if havequest(29172)
+step
+.' Follow this path |goto 33.0,38.4 <5 |c
+|only if havequest(29172)
+step
+.from Florawing Hive Queen##52442
+.' Destroy the Florawing Hive Queen |q 29172/2
+|only if havequest(29172)
+step
+.' Follow this path |goto 38.8,27.1 <5 |c
+step
+.' Follow this path |goto 34.8,27.1 <5 |c
+step
+.' Follow this path up to the next boss |goto 34.8,27.1 <5 |c
+step
+goto 31.4,24.8
+.from Zanzil##52053
+.' Zanzil will _Drain 3 Cauldrons_ separately during this fight. You will use the buff of each Cauldron for the proper _response to the boss_.
+.' Use the Green Cauldron at [30.6,23.9] to get the buff. He will cast _Graveyard Gas_ and put poison all over the ground.
+.' Use the Blue Cauldron at [31.6,27.3] to get the _Forstburn Formula_. He will resurrect a Berserker which you will have to kill.
+.' Use the Red Cauldron at [33.0,24.3] to get the _Burning Blood_. The Tank will use this to aggro and kill all the Zombies that resurrect.
+|confirm
+step
+.' Follow this path |goto 37.7,27.5 <5 |c
+step
+.' Follow this path |goto 42.7,30.2 <5 |c
+step
+.' Follow this path |goto 41.1,37.0 <5 |c
+step
+.' Follow this path |goto 46.1,39.9 <5 |c
+step
+.' Follow this path up and around |goto 46.6,36.6 <5 |c
+step
+goto 48.7,39.9
+.' This fight has 2 phases
+.' _Phase 1:_ Jin'do will cast an aura _Shadows of Hakkar_, which will do heavy damage to the group. Make sure to _stand in_ the _green bubbles_ while this aura is active.
+.' Once his aura, _Shadows of Hakkar_ is over, move _out of_ the bubble.
+.' _Phase 2:_ Jin'do will go away and there will be _3 chains_ protected by a barrier on the ground. The _tank_ will need to _grab a Gurubashi Spirit_ and get near the chains.
+.' The Gurubashi Spirit will use _Body Slam_ on a player, if the player is near the chains, the _barrier will break_. Kill 3 chains by breaking the barrier and attacking them.
+.from Jin'do the Godbreaker##52148 |only if not havequest(29154)
+.kill Jin'do the Godbreaker##52148 |q 29241/1 |only if havequest(29241)
+.get Zul'Gurub Stone |q 29154/1 |only if havequest(29154)
+|confirm |only if not havequest(29154)
+step
+.' Go to this bridge |goto 42.5,42.4 <5 |c
+|only if havequest(29172)
+step
+goto 43.0,44.6
+.from Gub##52440
+.' Destroy Gub |q 29175/1
+|only if havequest(29175)
+step
+.' Follow this path |goto 43.6,47.9 <5 |c
+|only if havequest(29172)
+step
+.' Cross the bridge |goto 44.8,51.0 <5 |c
+|only if havequest(29172)
+step
+.' Follow this path |goto 47.8,53.0 <5 |c
+|only if havequest(29172)
+step
+.' Follow the path to the edge of the water |goto 46.7,54.3 <5 |c
+|only if havequest(29172)
+step
+goto 46.1,55.7
+.from Tor-Tun##52414
+.' Destroy Tor-Tun |q 29172/3
+|only if havequest(29172)
+step
+goto 30.7,47.5
+.talk 53151
+..turnin 29154
+step
+goto 30.6,47.3
+.talk 53024
+..turnin 29241
+step
+goto 30.8,47.1
+.talk 53023
+..turnin 29172 |or
+..turnin 29175 |or
+..turnin 29173 |or
+.' T'ara will only offer 1 or 2 of these quests at a time.
+step
+goto 30.5,50.9
+.talk 53043
+..turnin 29242
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\Zul'Aman (ZA) 85",[[
 dungeon 781
 description This guide will walk you through the Zul'Aman dungeon.
@@ -8006,211 +8315,6 @@ step
 goto 93.0,53.6
 .talk 52924
 ..turnin 11196
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\Zul Gurub (ZG) 85",[[
-dungeon 793
-description This guide will walk you through the Zul Gurub dungeon.
-achieveid 688
-author support@zygorguides.com
-step
-label	"start"
-goto Zul'Gurub 30.7,47.5
-.talk 53151
-..accept 29252
-step
-goto 30.6,47.3
-.talk 53024
-..accept 29241
-step
-goto 30.5,51.0
-.talk 53043
-..accept 29242
-step
-goto 33.4,46.7
-.from Venomancer Mauri##52380
-.clicknpc Zanzil's Cauldron of Toxic Torment##52529
-.' Get the Toxic Torment Buff. |havebuff Interface\Icons\INV_Misc_Cauldron_Nature
-step
-goto 37.2,46.4
-.' Fight your way through this path.
-.from Venomtip Needler##52379+
-.' If you need another nature buff, you can get one here.
-|confirm
-step
-goto 43.9,51.0
-.from Tiki Lord Mu'Loa##52340+
-|confirm
-step
-goto 48.5,52.1
-.' Fight your way to the next cauldron.
-.clicknpc Zanzil's Cauldron of Toxic Torment##52529
-.' Get the Toxic Torment Buff. |havebuff Interface\Icons\INV_Misc_Cauldron_Nature
-step
-.' Pull the Venomguard Destroyers near the cauldron and kill them.
-.from Venomguard Destroyer##52311+
-|confirm
-step
-goto 50.8,55.1
-.' _High Priest Venoxis_
-.' _Phase 1:_
-.' He will cast, _Toxic Link_ which attaches 2 party members. Run 25 yards away from each other to break this.
-.' _Whispers of Hethiss_ is a beam of poison that will damage a player while channeled. This needs to be _interrupted_.
-.' During the fight he will use _Venomous Effusion_ which creates a maze of poison on the ground. Avoid the wall at all cost.
-.' _Phase 2:_
-Venoxis will _Transform_ into a snake god. A _poisonous cloud maze_ will appear on the ground, avoid walking in this.
-.' He will continue to use _Venomous Effusion_.
-.' His damage will be increased by 50% while in snake form.
-.' He will cast a _Pool of Acrid Tears_ on the player furthest away from him which deals nature damage. Avoid if you can.
-.' He will use a cone attack, _Breath of Hethiss_, so melee should attack from the back if possible.
-.' _Phase 3:_
-.' Players will be _chased by Poison Tendrils_, avoid these for 12 seconds. After this phase, Venoxis will take 100% more damage for 10 seconds. If  you do not kill him, phase 1 will repeat.
-.from High Priest Venoxis##52155
-|confirm
-step
-map Zul'Gurub
-path loop off
-path	49.4,54.3	49.0,58.1	52.9,57.8
-path	55.8,61.8	56.9,72.3
-.' Follow this path, once you get to this opening, watch out for the rocks.
-.' Run up this path and kill the Berserker
-.from Berserking Boulder Roller##52348
-|confirm
-step
-goto 60.1,80.2
-.' _Bloodlord Mandokir_
-.' He will randomly use _Decapitate_ which will kill whoever he uses it on.
-.' When the player is killed, a _Chained Spirit_ will revive you, giving you _Spirit's Vengeance_, granting 25% Health, Damage, Healing and decreasing damage taken by 10%. This effect stacks.
-.' He will gain a _Level Up_ buff when he kills a player, increasing damage dealt by 20%, a stacking effect.
-.' Mandokir will summon his raptor _Ohgan_. _Kill the Raptor_ everytime it spawns or it will kill a Chained Spirit.
-.' There are only _8 spirits_, so kill Ohgan as fast as possible.
-.' He will use _Devastating Slam_ often during the fight, a 45 degree cone attack that will likely kill you. It marks the ground as to where it strikes, so avoid it.
-.' He will toss the _Bloodletting_ debuff on a random target, dealing 50% of their current health as shadow damage.
-.from Bloodlord Mandokir##52151
-|modelnpc Ohgan##52157
-|confirm
-step
-goto 54.5,52.7
-'Go back down the hill and clear the trash.
-.from Witch Doctor Qu'in##52322
-.from Chosen of Hethiss##52323+
-|confirm
-step
-goto 59.5,46.1
-.from Ritual Tiki Mask##52364+
-|confirm
-step
-goto 59.3,46.4
-.' If a party member has an Archaeology of 225 at least and wishes to fight the boss, click here. |confirm |next
-.' If the party wishes to skip the Archaeology boss, click here. |next "end" |confirm
-step
-'The Edge of Madness event will summon 1 of 4 random bosses.
-.' If Hazza'rah spawns click here. |next "hazza" |confirm
-.' If Renataki spawns click here. |next "rena" |confirm
-.' If Wushoolay spawns click here. |next "wush" |confirm
-.' If Gri'lek spawns click here. |next "gri" |confirm
-step
-label hazza
-'_Hazza'rah_
-.' Hazza'rah will use _Nightmare_ and summon 4 adds. Each add will target a random party member and cast _Waking Nightmare_ stunning them. The player who is not stunned must kill the adds before they reach the targetted player.
-.from Hazza'rah##52271
-.get Mysterious Gurubashi Bijou##69647 |q 29242/1 |only if havequest(29242)
-|confirm |only if not havequest(29242) |next "end"
-step
-label rena
-'_Renataki_
-.' _Renataki_ will use _Deadly Poison_ throughout the fight. This effect stacks and can be cleansed.
-.' He will periodically _Vanish_. When he does this make sure everybody in the party is at 100% health. He will _Ambush_ a random target that deals 90% of the players health.
-.' He will also cast _Thousand Blades_. This whirlwind is dangerous and needs to be avoided.
-.from Renataki##52269
-.get Mysterious Gurubashi Bijou##69647 |q 29242/1 |only if havequest(29242)
-|confirm |only if not havequest(29242) |next "end"
-step
-label wush
-'_Wushoolay_
-.' Wushoolay will summon _Lightning Clouds_ periodically that should be avoided.
-.' He will use _Forked Lightning_, so spread out.
-.' Wushoolay will transform into a ball of lightning and charge at a random player. After he reaches them he begins to cast _Lightning Rod_. Everybody needs to run away from Wushoolay at this point, Lightning Rod does deadly amounts of damage and needs to be avoided
-.from Wushoolay##52286
-.get Mysterious Gurubashi Bijou##69647 |q 29242/1 |only if havequest(29242)
-|confirm |only if not havequest(29242) |next "end"
-step
-label gri
-'_Gri'lek_
-.' Gri'lek is a kiting encounter.
-.' He will fixate on a random party member and gain the _Avatar_ buff, increasing his damage output by 500% and reducing his movement speed. If he fixates on you just run away until it is done.
-.' He will cast _Entangling Roots_ on the player he is chasing, this can and needs to be dispelled.
-.' He constantly summons _Rupture Lines_. Avoid the rumbling dirt.
-.from Gri'lek##52258
-.get Mysterious Gurubashi Bijou##69647 |q 29242/1 |only if havequest(29242)
-|confirm |only if not havequest(29242) |next "end"
-step
-label end
-map Zul'Gurub
-path loop off
-path	56.6,50.6	56.7,43.2	58.3,31.1
-path	55.1,27.6	47.6,27.2	47.5,18.9
-.' Follow the path around, go down these stairs. |goto 47.5,18.5 <5 |noway |c
-step
-goto 47.8,20.9
-.' _High Priestess Kilnara_
-.' _Phase 1_
-.' The tank should pull the Pride of Bethekk and keep aggro on Kilnara.
-.' The DPS should focus on killing the 16 _Pride of Bethekk_, pulling 4 at a time. (You can kill more if you've got great dps)
-.' She will cast _Tears of Blood_ on random party members. It deals massive damage and should be dispelled as soon as possible.
-.' She will also cast _Lash of Anguish_ on a random target, which should be dispelled.
-.' She will cast _Wave of Agony_ at a random player, attacking and knocking back anyone in front of her. Avoid it.
-.' _Phase 2_
-.' Once she reaches 50% health she will enter phase 2, vanishing. When she reappears, she will be in cat form.
-.' She will deal out more damage. DPS her down as fast as possible.
-.from High Priestess Kilnara##52059
-|modelnpc Pride of Bethekk##52061+
-|confirm
-step
-goto 47.6,23.6 |n
-.' Go upstairs and leave the building. |goto 47.6,23.6 <5 |noway |c
-step
-map Zul'Gurub
-path loop off
-path	44.9,28.1	42.2,29.1	38.8,27.1
-path	34.8,27.1
-.' Follow this path up to the next boss. |goto 34.8,27.1 |noway |c
-step
-goto 31.4,24.8
-.from Zanzil##52053
-.' Zanzil will _Drain 3 Cauldrons_ separately during this fight. You will use the buff of each Cauldron for the proper _response to the boss_.
-.' Use the Green Cauldron at [30.6,23.9] to get the buff. He will cast _Graveyard Gas_ and put poison all over the ground.
-.' Use the Blue Cauldron at [31.6,27.3] to get the _Forstburn Formula_. He will resurrect a Berserker which you will have to kill.
-.' Use the Red Cauldron at [33.0,24.3] to get the _Burning Blood_. The Tank will use this to aggro and kill all the Zombies that resurrect.
-|confirm
-step
-map Zul'Gurub
-path loop off
-path	42.8,29.9	41.3,36.3	46.4,39.8
-path	46.4,36.4	51.0,36.0
-.' Follow the path and the stairs up. |goto 50.8,39.7 <5 |noway |c
-step
-goto 48.7,39.9
-.' This fight has 2 phases
-.' _Phase 1:_ Jin'do will cast an aura _Shadows of Hakkar_, which will do heavy damage to the group. Make sure to _stand in_ the _green bubbles_ while this aura is active.
-.' Once his aura, _Shadows of Hakkar_ is over, move _out of_ the bubble.
-.' _Phase 2:_ Jin'do will go away and there will be _3 chains_ protected by a barrier on the ground. The _tank_ will need to _grab a Gurubashi Spirit_ and get near the chains.
-.' The Gurubashi Spirit will use _Body Slam_ on a player, if the player is near the chains, the _barrier will break_. Kill 3 chains by breaking the barrier and attacking them.
-.from Jin'do the Godbreaker##52148 |only if not havequest(29252)
-.kill Jin'do the Godbreaker##52148 |q 29241/1 |only if havequest(29241)
-.get Zul'Gurub Stone |q 29252/1 |only if havequest(29252)
-|confirm |only if not havequest(29252)
-step
-goto 30.7,47.5
-.talk 53151
-..turnin 29252
-step
-goto 30.6,47.3
-.talk 53024
-..turnin 29241
-step
-goto 30.5,50.9
-.talk 53043
-..turnin 29242
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Pandaria Dungeons\\Temple of the Jade Serpent 85-87",[[
 dungeon 867

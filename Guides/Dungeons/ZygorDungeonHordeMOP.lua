@@ -7723,7 +7723,7 @@ description This guide will walk you through the Zul Gurub dungeon.
 achieveid 691
 author support@zygorguides.com
 step
-label	"start"
+label "start"
 goto Zul'Gurub 30.7,47.5
 .talk 53151
 ..accept 29252
@@ -7735,6 +7735,13 @@ step
 goto 30.5,51.0
 .talk 53043
 ..accept 29242
+step
+goto Zul'Gurub/0 30.8,47.1
+.talk 53023
+..accept 29172 |or
+..accept 29175 |or
+..accept 29173 |or
+.' T'ara will only offer 1 or 2 of these quests at a time.
 step
 goto 33.4,46.7
 .from Venomancer Mauri##52380
@@ -7777,12 +7784,15 @@ Venoxis will _Transform_ into a snake god. A _poisonous cloud maze_ will appear 
 .from High Priest Venoxis##52155
 |confirm
 step
-map Zul'Gurub
-path loop off
-path	49.4,54.3	49.0,58.1	52.9,57.8
-path	55.8,61.8	56.9,72.3
-.' Follow this path, once you get to this opening, watch out for the rocks.
-.' Run up this path and kill the Berserker
+.' Follow this path |goto 49.4,54.3 <5 |c
+step
+.' Follow this path |goto 49.0,58.1 <5 |c
+step
+.' Follow this path |goto 52.9,57.8 <5 |c
+step
+.' Once you get to this opening, avoid the rocks to make it up the hill. |goto 56.2,63.0 <5 |c
+step
+goto 56.9,72.3
 .from Berserking Boulder Roller##52348
 |confirm
 step
@@ -7799,8 +7809,19 @@ goto 60.1,80.2
 |modelnpc Ohgan##52157
 |confirm
 step
+.' Go back down the hill |goto 56.6,63.3 <5 |c
+step
+goto 54.6,63.0
+.from Kaulema the Mover##52422
+.' Slay Kaulema the Mover |q 29173/2
+|only if havequest(29173)
+step
+goto 54.9,55.5
+.from Mor'Lek the Dismantler##52405
+.' Slay Mor'Lek the Dismantler |q 29173/1
+|only if havequest(29173)
+step
 goto 54.5,52.7
-'Go back down the hill and clear the trash.
 .from Witch Doctor Qu'in##52322
 .from Chosen of Hethiss##52323+
 |confirm
@@ -7813,7 +7834,7 @@ goto 59.3,46.4
 .' If a party member has an Archaeology of 225 at least and wishes to fight the boss, click here. |confirm |next
 .' If the party wishes to skip the Archaeology boss, click here. |next "end" |confirm
 step
-'The Edge of Madness event will summon 1 of 4 random bosses.
+.' The Edge of Madness event will summon 1 of 4 random bosses.
 .' If Hazza'rah spawns click here. |next "hazza" |confirm
 .' If Renataki spawns click here. |next "rena" |confirm
 .' If Wushoolay spawns click here. |next "wush" |confirm
@@ -7854,12 +7875,39 @@ label gri
 .get Mysterious Gurubashi Bijou##69647 |q 29242/1 |only if havequest(29242)
 |confirm |only if not havequest(29242) |next "end"
 step
-label end
-map Zul'Gurub
-path loop off
-path	56.6,50.6	56.7,43.2	58.3,31.1
-path	55.1,27.6	47.6,27.2	47.5,18.9
-.' Follow the path around, go down these stairs. |goto 47.5,18.5 <5 |noway |c
+label "end"
+.' Follow this path. |goto 58.0,50.9 <5 |c
+step
+.' Follow this path. |goto 56.5,50.5 <5 |c
+step
+.' Follow this path. |goto 56.6,43.3 <5 |c
+step
+.' Follow this path. |goto 58.5,34.9 <5 |c
+step
+goto 62.4,33.8
+.from Mortaxx##52438
+.' Kill Mortaxx |q 29173/3
+|only if havequest(29173)
+step
+.' Enter the building here |goto 57.9,29.8 <5 |c
+|only if havequest(29175)
+step
+goto 57.7,27.3
+.from Gurubashi Master Chef##52392
+.' Destroy the Gurubashi Master Chef |q 29175/2
+|only if havequest(29172)
+step
+.' Follow this path. |goto 55.6,27.7 <5 |c
+step
+.' Follow this path down towards the water. |goto 53.6,29.2 <5 |c
+|only if havequest(29172)
+step
+goto 55.1,33.5
+.from Lost Offspring of Gahz'ranka##52418
+.' Kill a Lost Offspring of Gahz'ranka |q 29172/1
+|only if havequest(29172)
+step
+.' Follow this path. |goto 47.9,27.6 <5 |c
 step
 goto 47.8,20.9
 .' _High Priestess Kilnara_
@@ -7879,11 +7927,31 @@ step
 goto 47.6,23.6 |n
 .' Go upstairs and leave the building. |goto 47.6,23.6 <5 |noway |c
 step
-map Zul'Gurub
-path loop off
-path	44.9,28.1	42.2,29.1	38.8,27.1
-path	34.8,27.1
-.' Follow this path up to the next boss. |goto 34.8,27.1 |noway |c
+.' Follow this path |goto 44.9,28.1 <5 |c
+step
+.' Follow this path |goto 42.2,29.1 <5 |c
+step
+.' Follow this path |goto 38.1,29.8 <5 |c
+|only if havequest(29172)
+step
+.' Follow this path |goto 37.0,32.1 <5 |c
+|only if havequest(29172)
+step
+.' Follow this path |goto 33.8,36.1 <5 |c
+|only if havequest(29172)
+step
+.' Follow this path |goto 33.0,38.4 <5 |c
+|only if havequest(29172)
+step
+.from Florawing Hive Queen##52442
+.' Destroy the Florawing Hive Queen |q 29172/2
+|only if havequest(29172)
+step
+.' Follow this path |goto 38.8,27.1 <5 |c
+step
+.' Follow this path |goto 34.8,27.1 <5 |c
+step
+.' Follow this path up to the next boss |goto 34.8,27.1 <5 |c
 step
 goto 31.4,24.8
 .from Zanzil##52053
@@ -7893,11 +7961,15 @@ goto 31.4,24.8
 .' Use the Red Cauldron at [33.0,24.3] to get the _Burning Blood_. The Tank will use this to aggro and kill all the Zombies that resurrect.
 |confirm
 step
-map Zul'Gurub
-path loop off
-path	42.8,29.9	41.3,36.3	46.4,39.8
-path	46.4,36.4	51.0,36.0
-.' Follow the path and the stairs up. |goto 50.8,39.7 <5 |noway |c
+.' Follow this path |goto 37.7,27.5 <5 |c
+step
+.' Follow this path |goto 42.7,30.2 <5 |c
+step
+.' Follow this path |goto 41.1,37.0 <5 |c
+step
+.' Follow this path |goto 46.1,39.9 <5 |c
+step
+.' Follow this path up and around |goto 46.6,36.6 <5 |c
 step
 goto 48.7,39.9
 .' This fight has 2 phases
@@ -7910,6 +7982,31 @@ goto 48.7,39.9
 .get Zul'Gurub Stone |q 29252/1 |only if havequest(29252)
 |confirm |only if not havequest(29252)
 step
+.' Go to this bridge |goto 42.5,42.4 <5 |c
+|only if havequest(29172)
+step
+goto 43.0,44.6
+.from Gub##52440
+.' Destroy Gub |q 29175/1
+|only if havequest(29175)
+step
+.' Follow this path |goto 43.6,47.9 <5 |c
+|only if havequest(29172)
+step
+.' Cross the bridge |goto 44.8,51.0 <5 |c
+|only if havequest(29172)
+step
+.' Follow this path |goto 47.8,53.0 <5 |c
+|only if havequest(29172)
+step
+.' Follow the path to the edge of the water |goto 46.7,54.3 <5 |c
+|only if havequest(29172)
+step
+goto 46.1,55.7
+.from Tor-Tun##52414
+.' Destroy Tor-Tun |q 29172/3
+|only if havequest(29172)
+step
 goto 30.7,47.5
 .talk 53151
 ..turnin 29252
@@ -7917,6 +8014,13 @@ step
 goto 30.6,47.3
 .talk 53024
 ..turnin 29241
+step
+goto 30.8,47.1
+.talk 53023
+..turnin 29172 |or
+..turnin 29175 |or
+..turnin 29173 |or
+.' T'ara will only offer 1 or 2 of these quests at a time.
 step
 goto 30.5,50.9
 .talk 53043

@@ -92,6 +92,7 @@ do
 			Lib.loaded=true
 		elseif event == "TAXIMAP_OPENED" then
 			Lib:ScanTaxiMap()
+			ZGV:SetWaypoint() -- Force arrow to re-check itself -- Jeremiah
 		elseif event == "UI_INFO_MESSAGE" then
 			if arg1==ERR_NEWTAXIPATH then
 				-- discovery! cheating by zone name.
@@ -103,6 +104,7 @@ do
 				end
 				name = minimap_exceptions[name] or name
 				Lib.master[name]=true
+				ZGV.LibRover:UpdateNow("quiet") -- Try to force update of arrow ~~ Jeremiah
 			end
 		elseif event == "UPDATE_FACTION" then --Faction update is not needed anymore.
 			Lib:MarkKnownByLevels() --Only needs to be ran once after the faction's information has been made available at startup
@@ -204,11 +206,23 @@ do
 
 	local aliases={["Stormwind City"]="Stormwind", ["Theramore Isle"]="Theramore"}
 	function Lib:FindTaxi(name,trim)   -- RIP manataur. Bye bye buddy.
+
+		-- Get faction info because Andorhal has separate Horde and Alliance flight points with the same name. ~~ Jeremiah
+		local faction = nil
+		local factionEnglish = UnitFactionGroup("player")
+		if factionEnglish == "Alliance" then
+			faction = "A"
+		elseif factionEnglish == "Horde" then
+			faction = "H"
+		end
+
 		if trim and name then name = name:gsub(", .*","") end  -- trim zone names (in european languages, at least)
 		name = aliases[name] or name
 		for c,cont in pairs(Lib.taxipoints) do  for z,zone in pairs(cont) do  for n,node in ipairs(zone) do
-			if node.name==name  -- raw name, pretty rare
-			or node.name==(type(name)=="string" and name:gsub(", .*",""))  -- node name with zone appended
+			if (faction == nil or node.faction == faction) and ( 
+				node.name==name  -- raw name, pretty rare
+				or node.name==(type(name)=="string" and name:gsub(", .*",""))  -- node name with zone appended
+			)
 			then
 				return node
 			end

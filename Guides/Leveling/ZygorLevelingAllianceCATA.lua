@@ -9297,7 +9297,7 @@ goto 45.6,46.3
 ..' Take 1 Handfuls of Mud
 ..' Take 3 Spool of Thread
 .' Click to proceed. |confirm
-only Pandaran
+only Pandaren
 step
 goto 45.5,46.4
 .talk 48001
@@ -22227,7 +22227,7 @@ step
 label "routespore"
 'Routing to proper section |next "unfriendly" |only if rep('Sporeggar')<=Unfriendly
 'Routing to proper section |next "neutral" |only if rep('Sporeggar')==Neutral
-'Routing to proper section |next "friendly" |only if rep('Sporeggar')>Neutral
+'Routing to proper section |next "friendly" |only if rep('Sporeggar')>=Friendly
 step
 label "unfriendly"
 goto 13.6,59.8
@@ -22275,7 +22275,7 @@ goto 19.1,63.9
 ..accept 9744 |instant
 |next "routespore"
 step
-label	"friendly"
+label "friendly"
 goto 23.3,66.2
 .talk 17831
 ..turnin 9701
@@ -29119,20 +29119,20 @@ goto 22.7,31.2
 .' Attack the Scourge Crystal when the purple bubble shield disappears
 .' Destroy the Scourge Crystal
 |confirm
-|modelnpc Sourege Crystal##24464
+|modelnpc Scourge Crystal##24464
 step
 goto 21.9,28.8
 .' Use your Scourging Crystal Controller on the Scourge Crystal |use Scourging Crystal Controller##33960 |tip It looks like a big floating purple crystal.
 .' Attack the Scourge Crystal when the purple bubble shield disappears
 .' Destroy the Scourge Crystal
 |confirm
-|modelnpc Sourege Crystal##24464
+|modelnpc Scourge Crystal##24464
 step
 goto 21.5,24.6
 .' Use your Scourging Crystal Controller on the Scourge Crystal |use Scourging Crystal Controller##33960 |tip It looks like a big floating purple crystal.
 .' Attack the Scourge Crystal when the purple bubble shield disappears
 .' Destroy the last Scourge Crystal |q 11396/1
-|modelnpc Sourege Crystal##24464
+|modelnpc Scourge Crystal##24464
 step
 goto 19.8,22.2
 .talk 24544
@@ -36750,7 +36750,7 @@ author support@zygorguides.com
 condition end achieved(1190)
 startlevel 00.00
 dynamic on
-leechsteps "Zygor's Alliance Leveling Guides\\Outland 60-70\\Zangarmarsh (62-64)"
+#include "A_Zangarmarsh_Quests"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Loremaster Guides\\Outland 60-70\\Terokkar Forest",[[
 author support@zygorguides.com
@@ -41739,7 +41739,7 @@ goto 63.9,59.4
 .talk 41347
 ..turnin 25888
 step
-.' Leave the cave |goto 61.5,63.3 <5 |cd
+.' Leave the cave |goto 61.5,63.3 <5 |c
 step
 goto 48.3,72.5 |n
 .' Enter the cave |goto 48.3,72.5,0.5 |noway |c

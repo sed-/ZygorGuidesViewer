@@ -544,7 +544,7 @@ step
 'If you don't have cooking, you may be able to buy all of the items needed from the _Auction House_.
 |confirm
 step
-goto The Jade Forest 58.2,32.3
+goto Valley of the Four Winds 58.9,47.1
 .' Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
 .' Stand anywhere on the shore.
 .' Use your Fishing skill to fish in the water |cast Fishing##7620
@@ -1402,7 +1402,7 @@ goto The Jade Forest 35.7,30.5
 .click The First Monks##213415
 .achieve What is Worth Fighting For##6858/3
 step
-goto Krasarang Wilds 18.8,31.7
+goto Valley of the Four Winds 18.8,31.7
 .click Pandaren Fighting Tactics##
 .achieve What is Worth Fighting For##6858/1
 step

@@ -94,6 +94,8 @@
 	<Script file="Item-AutoEquip.lua" />
 	<Script file="Item-Events.lua" />
 
+	<Script file="InitialFlightPaths.lua" />
+
 	<Include file="Data\data.xml"/>
 
 	<Include file="Guides\Autoload.xml"/>

@@ -15,6 +15,7 @@ step
 step
 label "reset"
 'Click here to do the daily set in Kalimdor |confirm |next "kalpets" |only if completedq(31897)
+'Click here to do the daily set in the Eastern Kingdoms |confirm |next "ekpets" |only if completedq(31915) and completedq(31897)
 'Click here to do the daily set in Outland |confirm |next "outpets" |only if completedq(31920)
 'Click here to do the daily set in Northrend |confirm |next "northpets" |only if completedq(31928)
 'Click here to do the daily set in the Cataclysm |confirm |next "catapets" |only if completedq(31970)
@@ -184,6 +185,116 @@ step
 goto Dustwallow Marsh 53.9,74.8
 .talk 66436
 ..turnin 31905
+|next "reset"
+step
+label "ekpets"
+goto Swamp of Sorrows 76.8,41.5
+.talk 66518
+..accept 31913
+|only if completedq(31915)
+step
+goto Swamp of Sorrows 76.8,41.5
+.talk 66518
+|tip You will not be able to challenge Everessa if you have the "Pet Recovery" debuff, wait for it to fall off.
+.' Let's fight!
+|tip Everessa has a Flying Pet, a Beast Pet, and an Aquatic Pet. Use Magic type attacks on the Flying Pet, Mechanical type attacks on the Beast Pet, and Flying type attacks on the Aquatic Pet. Her pets are all level 16. You should be able to win with ease.
+.' Defeat Everessa |q 31913/1
+|only if completedq(31915)
+step
+goto Swamp of Sorrows 76.8,41.5
+.talk 66518
+..turnin 31913
+|only if completedq(31915)
+step
+goto Burning Steppes 25.5,47.4
+.talk 66520
+..accept 31914
+|only if completedq(31915)
+step
+goto Burning Steppes 25.5,47.4
+.talk 66520
+|tip You will not be able to challenge Durin if you have the "Pet Recovery" debuff, wait for it to fall off.
+.' Let's fight!
+|tip Durin has a Flying type Pet, a Critter Pet, and an Elemental Pet. Use Magic type attacks on the Flying Pet, Beast type attacks on the Critter Pet, and Aquatic type attacks on the Elemental Pet. His pets are all level 17. You should be able to win with ease.
+.' Defeat Durin Darkhammer |q 31914/1
+|only if completedq(31915)
+step
+goto Burning Steppes 25.5,47.4
+.talk 66520
+..turnin 31914
+|only if completedq(31915)
+step
+goto Searing Gorge 35.3,27.8
+.talk 66515
+..accept 31912
+|only if completedq(31915)
+step
+goto Searing Gorge 35.3,27.8
+.talk 66515
+|tip You will not be able to challenge Kortas if you have the "Pet Recovery" debuff, wait for it to fall off.
+.' Let's fight!
+|tip Kortas has 3 Dragonkin type Pets. Use Humanoid type attacks on his pets. His pets are all around level 15 so your pet team should be able to defeat him easily.
+.' Defeat Kortas Darkhammer |q 31912/1
+|only if completedq(31915)
+step
+goto Searing Gorge 35.3,27.8
+.talk 66515
+..turnin 31912
+|only if completedq(31915)
+step
+goto The Hinterlands 63.0,54.6
+.talk 66478
+..accept 31910
+|only if completedq(31915)
+step
+goto The Hinterlands 63.0,54.6
+.talk 66478
+|tip You will not be able to challenge David if you have the "Pet Recovery" debuff, wait for it to fall off.
+.' Let's fight!
+|tip David has a Beast Pet, a Critter Pet, and an Magic Pet. Use Mechanical type attacks on the Beast Pet, Beast type attacks on the Critter Pet, and Dragonkin type attacks on the Magic Pet. His pets are all around level 13 so your pet team should be able to defeat him easily.
+.' Defeat David Kosse |q 31910/1
+|only if completedq(31915)
+step
+goto The Hinterlands 63.0,54.6
+.talk 66478
+..turnin 31910
+|only if completedq(31915)
+step
+goto Eastern Plaguelands 67.0,52.4
+.talk 66512
+..accept 31911
+|only if completedq(31915)
+step
+goto Eastern Plaguelands 67.0,52.4
+.talk 66512
+|tip You will not be able to challenge Deiza if you have the "Pet Recovery" debuff, wait for it to fall off.
+.' Let's fight!
+|tip Deiza has 2 Beast type Pets and an Undead type Pet. Use Mechanical type attacks on the Beast Pets and Critter type attacks on the Undead Pet. Her pets are all around level 14 so your pet team should be able to defeat her easily.
+.' Defeat Deiza Plaguehorn |q 31911/1
+|only if completedq(31915)
+step
+goto Eastern Plaguelands 67.0,52.4
+.talk 66512
+..turnin 31911
+|only if completedq(31915)
+step
+goto Deadwind Pass 40.1,76.4
+.talk 66522
+..accept 31916
+|only if completedq(31915)
+step
+goto Deadwind Pass 40.1,76.4
+.talk 66522
+|tip You will not be able to challenge Lydia if you have the "Pet Recovery" debuff, wait for it to fall off.
+.' Let's fight!
+|tip Lydia has an Elemental type Pet and 2 Undead type Pets. Use Aquatic type attacks on the Elemental Pet and Critter type attacks on the Undead Pets. Your pets should be at least level 19 before fighting Lydia.
+.' Defeat Lydia Accoste |q 31916/1
+|only if completedq(31915)
+step
+goto 40.1,76.4
+.talk 66522
+..turnin 31916
+|only if completedq(31915)
 |next "reset"
 step
 label "outpets"

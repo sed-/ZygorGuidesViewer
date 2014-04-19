@@ -1486,7 +1486,7 @@ path +	55.0,36.9	53.0,29.7	57.9,30.0
 path +	54.8,19.0	50.0,17.2	44.2,23.6
 #include "follow_path_mine"
 .collect 20 Copper Ore##2770
-#include max_skill_warning",skill="Mining",goto="bla_125-210_farm"
+#include "max_skill_warning",skill="Mining",goto="bla_125-210_farm"
 step
 label "farm2"
 'Skipping 2nd part of farming |next "+farm3" |only if itemcount("Bronze Bar")>=50 and itemcount("Coarse Grinding Stone")>=30
@@ -3642,7 +3642,7 @@ label "eng_250-280"
 step
 #include "auctioneer"
 .buy 20 Dense Stone##12365
-.buy 180 Thorium Bar##12359
+.buy 198 Thorium Bar##12359
 .buy 35 Runecloth##14047
 #include go_farm,skill="Mining",req="200",goto="eng_250-280_farm"
 next "eng_250-280_skill"
@@ -3651,7 +3651,7 @@ step
 .skillmax Mining,300
 .learn Smelt Thorium##16153
 step
-label  "eng_250-280_farm"
+label "eng_250-280_farm"
 map Silithus
 path	54.8,26.8	52.3,22.8	50.5,15.3
 path	55.8,12.5	61.8,12.5	68.3,15.6
@@ -3669,7 +3669,7 @@ path	29.5,11.3	35.0,12.0	40.6,13.1
 path	45.1,16.3	47.3,19.3	47.3,26.6
 #include "follow_path_mine"
 skill Mining,255
-.collect 180 Thorium Ore##10620
+.collect 198 Thorium Ore##10620
 .collect 32 Dense Stone##12365
 step
 goto Silithus,45.8,38.2
@@ -3699,17 +3699,14 @@ step
 .create 20 Thorium Widget##19791,Engineering,280
 step
 title +Engineering 280-350
-label  "eng_280-350"
+label "eng_280-350"
 #include "trainer_Engineering"
 .skillmax Engineering,375 |tip You must be at least level 50.
 .learn Thorium Tube##19795
 step
-.' You don't need to save anything from the Apprentice Engineering section to use in the Journeyman portion.
-..' Feel free to sell off anything you might have created and you may also sell off any left over materials from this section.
+.' Make sure to save any Thorium Bars/Ores you have for the next section.
+..' Feel free to sell off anything you might have created and you may also sell off any other left over materials from this section.
 |confirm
-step
-#include "maincity_anvil"
-.create 23 Thorium Tube##19795,Engineering,300
 step
 #include "auctioneer"
 .buy 80 Fel Iron Bar##23445
@@ -3718,6 +3715,7 @@ step
 .buy 40 Adamantite Bar##23446
 .buy 18 Netherweave Cloth##21877
 .buy 10 Felsteel Bar##23448
+.buy 138 Thorium Bar##12359
 #include go_farm,skill="Mining",req="275",goto="eng_280-350_farm"
 next "eng_280-350_skill"
 step
@@ -3734,7 +3732,7 @@ label "farm"
 step
 label "farming"
 map Hellfire Peninsula
-path    69.3,47.5	74.5,38.7	68.2,37.7
+path	69.3,47.5	74.5,38.7	68.2,37.7
 path	62.0,31.0	58.0,32.8	54.0,26.7
 path	46.0,29.3	34.1,29.1	32.0,34.5
 path	38.5,38.2	35.7,40.7	33.4,49.8
@@ -3761,7 +3759,7 @@ path	72.7,60.2	71.5,53.1	68.3,52.0
 .collect 40 Eternium Ore##23427 |n
 step
 label "farm2"
-'Skipping 2nd part of farming |next "+exit" |only if step:Find("+farming"):IsComplete()
+'Skipping 2nd part of farming |next "farmnether" |only if step:Find("+farming"):IsComplete()
 'Proceeding to farm |next |only if default
 step
 label "farming"
@@ -3785,9 +3783,29 @@ path 57.9,75.5	49.0,79.0
 .collect 20 Mote of Earth##22573
 .collect 40 Eternium Ore##23427
 step
+label "farmnether"
 goto Nagrand,73.3,69.7
 .from Boulderfist Mystic##17135+, Boulderfist Crusher##17134+
 .collect 18 Netherweave Cloth##21877
+step
+label "farmthorium"
+map Silithus
+path	54.8,26.8	52.3,22.8	50.5,15.3
+path	55.8,12.5	61.8,12.5	68.3,15.6
+path	69.7,19.7	68.4,26.3	72.3,27.9
+path	72.5,39.5	70.0,43.5	66.7,44.7
+path	64.6,45.0	67.1,55.0	67.0,59.8
+path	67.3,63.0	69.5,69.6	68.1,74.1
+path	66.3,81.9	65.7,83.4	56.8,76.1
+path	56.6,81.2	50.6,80.3	44.6,80.2
+path	40.4,80.9	26.1,80.1	25.3,74.2
+path	26.7,69.5	33.0,66.3	30.8,62.6
+path	26.6,53.5	28.4,47.9	27.8,40.6
+path	27.6,33.9	25.2,27.1	28.5,16.2
+path	29.5,11.3	35.0,12.0	40.6,13.1
+path	45.1,16.3	47.3,19.3	47.3,26.6
+#include "follow_path_mine"
+.collect 138 Thorium Ore##10620
 step
 #include "trainer_Mining"
 .learn Smelt Adamantite##29358
@@ -3801,7 +3819,11 @@ step
 #include "maincity_anvil"
 .create Felsteel Bar##29360,Mining,10 total
 step
-label  "eng_280-350_skill"
+label "eng_280-350_skill"
+step
+#include "maincity_anvil"
+.create 23 Thorium Tube##19795,Engineering,300
+step
 #include "trainer_Engineering"
 .learn Handful of Fel Iron Bolts##30305
 step
@@ -5263,7 +5285,7 @@ step
 .create 1 Glyph of Healing Stream Totem##57242,Inscription,220
 step
 #include "trainer_Inscription"
-.learn Glyph of The Moonbeast##56959
+.learn Glyph of Guided Stars##56959
 step
 .create 2 Glyph of The Moonbeast##56959,Inscription,226
 step
@@ -5856,7 +5878,7 @@ label "ins_525"
 step
 label "ins_500-600"
 .'Please purchase the upgrade Profession guide to see the content for MOP |only if not ZGV.guidesets['ProfessionsHMoP']
-|next Profession Guides\\Inscription\\Inscription 500-600 Leveling Guide |only if ZGV.guidesets['ProfessionsHMoP']
+|next "Profession Guides\\Inscription\\Inscription 500-600 Leveling Guide" |only if ZGV.guidesets['ProfessionsHMoP']
 step
 label "ins_600"
 'Congratulations, you are now a Zen Master Scribe!
@@ -9365,7 +9387,7 @@ path	27.0,33.4	27.1,37.2	28.1,42.9
 path	30.9,51.7	28.1,50.1	26.3,47.3
 path	26.1,43.4	25.4,38.4	25.6,34.6
 path	24.3,28.1
-.from Onyx Venomtail##63586+, Dread Scarab##63587+, Ruby Venomtail##63588+
+.from Onyx Venomtail##63586+, Ruby Venomtail##63588+
 .'Click here to pick a different leather. |confirm |next "start"
 only if ZGV.guidesets['ProfessionsHMoP']
 step "sha"

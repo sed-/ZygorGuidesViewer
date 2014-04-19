@@ -181,6 +181,8 @@ function Pointer:Startup()
 	AstrolabeFixZones(545,679) --Gilneas
 	AstrolabeFixZones(679,545)
 
+	AstrolabeFixZones(793,697)
+	
 	self:SetMinimapPlayerTexture()
 
 	self.ready = true
@@ -278,7 +280,7 @@ local phasedMaps = {
 	[720]=4, -- Uldum
 	[748]=4,
 	[697]=5, -- Zul'Gurub
-	[793]=6,
+	[793]=5,
 } -- TODO expand as per need
 setmetatable(phasedMaps,{__index=function(t,map) return map and type(map)=="number" and 10000+map or 0 end})
 ZGV.Pointer.phasedMaps = phasedMaps

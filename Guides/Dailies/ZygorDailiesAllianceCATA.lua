@@ -7558,6 +7558,7 @@ goto 27.1,62.0
 ..' You will only be able to accept one of these quests per day:
 ..accept 29101 |or
 ..accept 29161 |or
+|noquest
 step
 goto Mount Hyjal,27.3,61.6
 .talk 53073
@@ -7734,6 +7735,7 @@ goto Molten Front,50.6,87.2
 ..accept 29299 |or
 ..accept 29255 |or
 ..accept 29257 |or
+|noquest
 step
 goto 48.7,86.9
 .talk 52467
@@ -7746,6 +7748,7 @@ goto 46.8,90.2
 ..' You will only be able to accept one of these quests per day: |tip She will not offer a quest in this location, on some days.  On those days, she will offer a quest later, in a different location.
 ..accept 29263 |or
 ..accept 29278 |or
+|noquest
 step
 goto 45.6,86.2
 .talk 53080
@@ -8054,10 +8057,12 @@ step
 goto 66.4,65.4
 .talk 54163
 ..accept 29297
+|noquest
 step
 goto 66.3,66.1
 .talk 52477
 ..accept 29276 |tip This quest will not always be available each day.
+|noquest
 step
 goto 66.1,63.9
 .talk 52921

@@ -640,7 +640,7 @@ goto 29.0,66.3
 .kill Squirrel##1412 |achieve 2556/4
 step
 label "travel_twilight"
-'Skipping next part of guide |next "+travel_hinterlands" |only if step:Find("+maggot"):IsComplete()
+'Skipping next part of guide |next "+travel_hinterlands" |only if step:Find("twilight_critters"):IsComplete() and step:Find("+shore_crab"):IsComplete()
 'Proceeding next step |next |only if default
 step
 label "twilight_critters"
@@ -729,7 +729,7 @@ label "travel_dalaran"
 'Proceeding next step |next |only if default
 step
 label "underbelly_rat"
-goto 47.4,42.5
+goto Dalaran/2 41.0,50.4
 .kill Underbelly Rat##32428 |achieve 2556/5
 step
 label "travel_zuldrak"
@@ -868,7 +868,7 @@ goto Durotar 36.4,40.8
 .kill Water Snake##4953 |achieve 2556/2
 step
 label "durotar_critters"
-goto Durotar,45.6,16.0
+goto Durotar 50.5,30.2
 .' Use the Love emote on a Hare. |clicknpc Hare##5951 |script DoEmote("LOVE")
 .' Love a Hare |achieve 1206/10
 step
@@ -876,7 +876,7 @@ goto 45.6,16.0
 .kill Adder##3300 |achieve 2556/12
 step
 label "swine"
-goto 48.5,15.9
+goto 43.7,30.1
 .' Use the Love emote on a Swine |clicknpc Swine##10685 |script DoEmote("LOVE")
 .' Love a Swine |achieve 1206/19
 step
@@ -2280,7 +2280,7 @@ step
 'Congratulations! You have earned the Title _Jenkins_!!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\General Achievements\\High Quality",[[
-description This guide will show you how to earn the Jenkins Title.
+description This guide will show you how to earn the High Quality Achievement.
 author support@zygorguides.com
 condition end achieved(7463)
 step
@@ -2296,7 +2296,7 @@ step
 .' Congratulations, you have earned the _High Quality_ achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\General Achievements\\Family Reunion",[[
-description This guide will show you how to earn the Jenkins Title.
+description This guide will show you how to earn the Family Reunion Achievement.
 author support@zygorguides.com
 condition end achieved(6608)
 step

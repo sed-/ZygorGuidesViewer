@@ -14,6 +14,7 @@ step
 step
 label "reset"
 'Click here to do the daily set in the Eastern Kingdoms |confirm |next "ekpets" |only if completedq(31915)
+'Click here to do the daily set in Kalimdor |confirm |next "kalimpets" |only if completedq(31915) and completedq(31897)
 'Click here to do the daily set in Outland |confirm |next "outpets" |only if completedq(31920)
 'Click here to do the daily set in Northrend |confirm |next "northpets" |only if completedq(31928)
 'Click here to do the daily set in the Cataclysm |confirm |next "catapets" |only if completedq(31970)
@@ -141,6 +142,11 @@ goto Swamp of Sorrows 76.8,41.5
 .' Defeat Everessa |q 31913/1
 |only if completedq(31915)
 step
+goto Swamp of Sorrows 76.8,41.5
+.talk 66518
+..turnin 31913
+|only if completedq(31915)
+step
 goto Redridge Mountains 33.2,52.6
 .talk 65651
 ..accept 31781
@@ -157,11 +163,6 @@ step
 goto Redridge Mountains 33.2,52.6
 .talk 65651
 ..turnin 31781
-|only if completedq(31915)
-step
-goto Swamp of Sorrows 76.8,41.5
-.talk 66518
-..turnin 31913
 |only if completedq(31915)
 step
 goto Burning Steppes 25.5,47.4
@@ -236,6 +237,109 @@ goto Eastern Plaguelands 67.0,52.4
 ..turnin 31911
 |only if completedq(31915)
 |next "reset"
+step
+label "kalimpets"
+goto Winterspring 65.6,64.4
+.talk 66466
+..accept 31909
+|only if completedq(31915)
+step
+goto Winterspring 65.6,64.4
+.talk 66466
+.' Tell her you want to fight!
+.' She uses level 19 Flying, Beast and Dragonkin pets.
+.' Defeat Stone Cold Trixxy |q 31909/1
+|only if completedq(31915)
+step
+goto Winterspring 65.6,64.4
+.talk 66466
+..turnin 31909
+|only if completedq(31915)
+step
+goto Moonglade 46.1,60.3
+.talk 66412
+..accept 31908
+|only if completedq(31915)
+step
+goto Moonglade 46.1,60.3
+.talk 66412
+|tip You will not be able to challenge Elena if you have the "Pet Recovery" debuff, wait for it to fall off.
+.' Let's fight!
+.' Defeat Elena Flutterfly |q 31908/1
+|only if completedq(31915)
+step
+goto Moonglade 46.1,60.3
+.talk 66412
+..turnin 31908
+|only if completedq(31915)
+step
+goto Felwood 40.0,56.6
+.talk 66442
+..accept 31907
+|only if completedq(31915)
+step
+goto Felwood 40.0,56.6
+.talk 66442
+|tip You will not be able to challenge Zoltan if you have the "Pet Recovery" debuff, wait for it to fall off.
+.' Let's do it!
+.' Defeat Zoltan |q 31907/1
+|only if completedq(31915)
+step
+goto Felwood 40.0,56.6
+.talk 66442
+..turnin 31907
+|only if completedq(31915)
+step
+goto Feralas 59.7,49.6
+.talk 66352
+.accept 31871
+|only if completedq(31915)
+step
+goto Feralas 59.7,49.6
+.talk 66352
+|tip You will not be able to challenge Traitor Gluk if you have the "Pet Recovery" debuff, wait for it to fall off.
+.' Let's fight!
+.' Defeat Traitor Gluk |q 31871/1
+|only if completedq(31915)
+step
+goto Feralas 59.7,49.6
+.talk 66352
+.turnin 31871
+|only if completedq(31915)
+step
+goto Thousand Needles 31.9,33.0
+.talk 66452
+..accept 31906
+|only if completedq(31915)
+step
+goto Thousand Needles 31.9,33.0
+.talk 66452
+|tip You will not be able to challenge Kela Grimtotem if you have the "Pet Recovery" debuff, wait for it to fall off.
+.' Let's fight!
+.' Defeat Kela Grimtotem |q 31906/1
+|only if completedq(31915)
+step
+goto Thousand Needles 31.9,33.0
+.talk 66452
+..turnin 31906
+|only if completedq(31915)
+step
+goto Dustwallow Marsh 53.9,74.8
+.talk 66436
+..accept 31905
+|only if completedq(31915)
+step
+goto Dustwallow Marsh 53.9,74.8
+.talk 66436
+|tip You will not be able to challenge Grazzle the Great if you have the "Pet Recovery" debuff, wait for it to fall off.
+.' Let's fight!
+.' Defeat Grazzle the Great |q 31905/1
+|only if completedq(31915)
+step
+goto Dustwallow Marsh 53.9,74.8
+.talk 66436
+..turnin 31905
+|only if completedq(31915)
 step
 label "outpets"
 goto Hellfire Peninsula 64.3,49.3

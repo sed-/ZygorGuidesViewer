@@ -669,7 +669,7 @@ step
 'Routing to proper section |next "prequests" |only if not completedq(12695)
 'Routing to proper section |next "daily" |only if completedq(12695)
 step
-label "prequest"
+label "prequests"
 goto Sholazar Basin,50.5,62.1
 .talk 28568
 ..accept 12654

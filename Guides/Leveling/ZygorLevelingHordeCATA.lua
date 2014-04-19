@@ -2900,7 +2900,7 @@ step
 goto 52.0,33.6
 .kill 10 Hillsbrad Worgen##45255+ |q 27231/1
 .' Use your Barrel of Explosive Ale on Orc Sea Dogs |use Barrel of Explosive Ale##60870
-.|tip They look like dead orcs on the ground around this area. You can mark them with shit+v (Use v to mark enemies again).
+.|tip They look like dead orcs on the ground around this area. You can mark them with shift+v (Use v to mark enemies again).
 .' Rouse 8 Orc Sea Dogs |q 27226/1
 step
 goto 59.2,34.2
@@ -8585,7 +8585,7 @@ goto 45.6,46.3
 ..' Take 1 Handful of Mud
 ..' Take 3 Spools of Thread
 .|confirm
-only Pandaran
+only Pandaren
 step
 goto 45.5,46.4
 .talk 48001
@@ -33831,10 +33831,6 @@ goto 41.1,85.9
 .talk 29904
 .home K3
 step
-goto 40.7,84.6
-.talk 29721
-..fpath K3
-step
 goto 41.1,86.1
 .talk 29473
 ..accept 12843
@@ -33844,6 +33840,10 @@ goto 40.9,85.3
 .talk 29428
 ..accept 12827
 ..accept 12836
+step
+goto 40.7,84.6
+.talk 29721
+..fpath K3
 step
 goto 39.8,86.4
 .click Charred Wreckage##8108

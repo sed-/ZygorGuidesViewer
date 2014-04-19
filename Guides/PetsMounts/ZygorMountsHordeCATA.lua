@@ -13168,11 +13168,17 @@ goto Gundrak/1 38.8,49.0
 step
 .' _What the Eck?_
 goto Gundrak/1 25.6,69.2
-.' For this achievement, you must defeat Eck the Ferocious while under the effects of _Eck Residue_
-.' Eck the Ferocious uses an ability called _Eck Spit_ which will give you a debuff.
-.' _You need to be in front of him in order to get the debuff!_
+.' For this achievement, you must defeat Gal'darah in Heroic difficulty while under the effects of _Eck Residue_
+.' Eck the Ferocious uses an ability called _Eck Spit_ which will give you the debuff.
+.' _You need to be in front of Eck in order to get the debuff!_
 .from Eck the Ferocious##29932
+|confirm
+step
+' _What the Eck?_
+goto Gundrak/1 46.5,27
+.' Kill Gal'darah while you have the _Eck Spit_ debuff to complete this achievement.
 .' Note that you shouldn't dps the boss too fast or you could miss the acheivement.
+.from Gal'darah
 |achieve 2136/18
 step
 .' _Share the Love_
@@ -13235,15 +13241,6 @@ goto 19.2,52.0
 .from Loken##28923
 |achieve 2136/25
 step
-.' _The Culling of Time_
-.' This achievement requires that you defeat the _Infinite Corruptor_ in the Culling of Stratholme.
-.' When you start the instance, a timer will start.
-.' When that timer ends, you fail the achievement.
-.' You will need to fight up to the last boss before the timer runs out.
-goto The Culling of Stratholme/2 51.6,41.6
-.from Infinite Corruptor##32273
-|achieve 2136/28
-step
 .' _Zombiefest!_
 .' This achievement is tricky to pull off.
 .' There are only 85 to 90 zombies in the first area before entering the building.
@@ -13255,9 +13252,19 @@ step
 .' You can track this achievement in game to see how much time you've got left.
 |achieve 2136/29
 step
+.' _The Culling of Time_
+.' This achievement requires that you defeat the _Infinite Corruptor_ in the Culling of Stratholme.
+.' When you start the instance, a timer will start.
+.' When that timer ends, you fail the achievement.
+.' You will need to fight up to the last boss before the timer runs out.
+goto The Culling of Stratholme/2 51.6,41.6
+.from Infinite Corruptor##32273
+|achieve 2136/28
+step
+goto Utgarde Pinnacle/1 35.8,85.6
 .' _The Incredible Hulk_
 .' For this achievement, you will need to have _Svala Sorrow Grave_ kill a _Scourge Hulk_.
-.' Before engaging Svala, pull a Scourge Hulk, which can be found at [Utgarde Pinnacle/1 35.8,85.6] or [Utgarde Pinnacle/1 24.0,69.3].
+.' Before engaging Svala, pull a Scourge Hulk, which can be found at this spot or [Utgarde Pinnacle/1 24.0,69.3].
 .' Beat the Hulk down to 10k Health.
 .' Now, engage Svala. If you are soloing, take her to the top of the steps, to [Utgarde Pinnacle/2 39.9,68.8]. This will give you time for the Scourge Hulk to walk to you and not know you out of range of the sword while stunned.
 .' If you are in a group, just have the tank pull the abomination to the alter. When the sword lands, it will either kill the Hulk, or massively damage it, leaving a dot that will kill him afterwards.
@@ -13266,8 +13273,8 @@ step
 step
 .' _Lodi Dodi We Loves the Skadi_
 .' This achievement requires that you defeat Skadi the Ruthelss within 3 minutes of starting his gauntlet event.
-.' The event starts as soon as you arrive at [68.1,69.1].
-.' Run to [68.0,35.7].
+.' The event starts as soon as you arrive at [Utgarde Pinnacle/2 68.1,69.1].
+.' Run to [Utgarde Pinnacle/2 68.0,35.7].
 .' Kill all enemies that you have gathered, picking up 3 harpoons.
 .' When the message _Skadi is now in range of the harpoons_ appears, click theharpoon launchers to bring him down.
 .' Dps him as fast as you can and the achievement is yours.
@@ -13282,7 +13289,7 @@ step
 .' During the fight, you will see Ymiron cast _Bane_.
 .' It is important to _STOP ALL DPS_ when this happens. The buff lasts for 5 seconds.
 .' You can use _Spellsteal_ and Warlock pets can _Devour Magic_ to get rid of it. It can be dispelled.
-goto 40.6,53.4
+goto Utgarde Pinnacle/2 40.6,53.4
 .from King Ymiron##26861
 |achieve 2136/33
 step

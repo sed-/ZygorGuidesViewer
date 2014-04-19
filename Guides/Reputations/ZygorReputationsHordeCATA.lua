@@ -10386,7 +10386,7 @@ goto 33.3,34.5
 step
 goto 24.1,29.6
 .from Coldarra Wyrmkin##25728+
-.collect 5 Frozen Axe |q 11936
+.collect 5 Frozen Axe##35586
 step
 goto 24.1,29.6
 .from Warbringer Goredrak##25712

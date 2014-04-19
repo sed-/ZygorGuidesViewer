@@ -13587,6 +13587,7 @@ goto Mount Hyjal,27.2,62.6
 ..accept 29127 |or
 ..accept 29123 |or
 ..accept 29166 |or
+|noquest
 step
 goto 27.2,62.6
 .talk 52669
@@ -13594,6 +13595,7 @@ goto 27.2,62.6
 ..accept 29147 |or
 ..accept 29164 |or
 ..accept 29125 |or
+|noquest
 step
 goto 27.5,62.5
 .talk 52986
@@ -13601,12 +13603,14 @@ goto 27.5,62.5
 ..accept 29246 |or
 ..accept 29247 |or
 ..accept 29248 |or
+|noquest
 step
 goto 27.1,62.0
 .talk 52671
 ..' You will only be able to accept one of these quests per day:
 ..accept 29101 |or
 ..accept 29161 |or
+|noquest
 step
 goto Mount Hyjal,27.3,61.6
 .talk 53073

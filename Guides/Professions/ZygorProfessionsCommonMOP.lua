@@ -38,7 +38,7 @@ ZygorGuidesViewer:RegisterInclude("Pandarian_Cooking_1-520",[[
 		skillmax Cooking,150
 		|only if skill('Cooking')<=89
 	step
-		goto Krasarang Wilds 37.4,35.2
+		goto Valley of the Four Winds 58.9,47.1
 		.' Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
 		.' Use your Fishing skill to fish in the water here. You can look for fishing pools around the beach also |cast Fishing##131474
 		.collect 6 Golden Carp##74866
@@ -103,7 +103,7 @@ ZygorGuidesViewer:RegisterInclude("Pandarian_Cooking_1-520",[[
 		.learn Golden Carp Consomme##104237
 		|only if skill('Cooking')<=299
 	step
-		goto Krasarang Wilds 37.4,35.2
+		goto Valley of the Four Winds 58.9,47.1
 		.' Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
 		.' Use your Fishing skill to fish in the water here. You can look for fishing pools around the beach also |cast Fishing##131474
 		.collect 24 Golden Carp##74866 |only if skill('Cooking')<=299
@@ -119,7 +119,7 @@ ZygorGuidesViewer:RegisterInclude("Pandarian_Cooking_1-520",[[
 		.learn Fish Cake##104297
 		|only if skill('Cooking')<=329
 	step
-		goto Krasarang Wilds 37.4,35.2
+		goto Valley of the Four Winds 58.9,47.1
 		.' Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
 		.' Use your Fishing skill to fish in the water here. You can look for fishing pools around the beach also |cast Fishing##131474
 		.collect 12 Golden Carp##74866 |only if skill('Cooking')>=300 and skill('Cooking')<=329
@@ -159,7 +159,7 @@ ZygorGuidesViewer:RegisterInclude("Pandarian_Cooking_1-520",[[
 		.buy 6 Rice##74851
 		|only if skill('Cooking')<=449
 	step
-		goto Krasarang Wilds 37.4,35.2
+		goto Valley of the Four Winds 58.9,47.1
 		.' Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
 		.' Use your Fishing skill to fish in the water here. You can look for fishing pools around the beach also |cast Fishing##131474
 		.collect 12 Golden Carp##74866 
@@ -459,7 +459,8 @@ ZygorGuidesViewer:RegisterInclude("Cooking_Oven",[[
 	step
 	title + Way of the Oven
 	label	Cooking_Oven
-		'Skipping 1st part of cooking |next "+twin_fish" |only if step:Find("+create_fowl"):IsComplete()
+		'Proceeding to Twin Fish Platter |next "twin_fish" |only if skill('Way of the Oven')>=550 and skill('Way of the Oven')<575
+		'Proceeding to Banquet of the Oven |next "banquet_oven" |only if skill('Way of the Oven')>=575
 		'Proceeding to Wild Fowl Roast |next |only if default
 	step
 		goto Valley of the Four Winds 53.4,51.6
@@ -679,7 +680,8 @@ ZygorGuidesViewer:RegisterInclude("Cooking_Brew",[[
 	step
 	title + Way of the Brew
 	label	Cooking_Brew
-		'Skipping 1st part of cooking |next "+jade_brew" |only if step:Find("+create_tea"):IsComplete()
+		'Proceeding to Jade Witch Brew |next "jade_brew" |only if skill('Way of the Brew')>=550 and skill('Way of the Brew')<575
+		'Proceeding to Banquet of the Brew |next "banquet_brew" |only if skill('Way of the Brew')>=575
 		'Proceeding to Ginseng Tea |next |only if default
 	step
 		goto Valley of the Four Winds 53.0,52.0
@@ -916,7 +918,8 @@ ZygorGuidesViewer:RegisterInclude("Cooking_Wok",[[
 	step
 	title + Way of the Wok
 	label	Cooking_Wok
-		'Skipping 1st part of cooking |next "+stir_fry" |only if step:Find("+create_carrot"):IsComplete()
+		'Proceeding to Valley Stir Fry |next "stir_fry" |only if skill('Way of the Wok')>=550 and skill('Way of the Wok')<575
+		'Proceeding to Banquet of the Wok |next "banquet_wok" |only if skill('Way of the Wok')>=575
 		'Proceeding to Sauteed Carrots |next |only if default
 	step
 		goto Valley of the Four Winds 52.7,52.0
@@ -1141,8 +1144,9 @@ ZygorGuidesViewer:RegisterInclude("Cooking_Steamer",[[
 	step
 	title + Way of the Steamer
 	label Cooking_Steamer
-		'Skipping 1st part of cooking |next "+fire_spirit" |only if step:Find("+create_shrimp"):IsComplete()
-		'Proceeding to Sauteed Carrots |next |only if default
+		'Proceeding to Fire Spirit Salmon |next "fire_spirit" |only if skill('Way of the Steamer')>=550 and skill('Way of the Steamer')<575
+		'Proceeding to Banquet of the Steamer |next "banquet_steam" |only if skill('Way of the Steamer')>=575
+		'Proceeding to Shrimp Dumplings |next |only if default
 	step
 		goto Valley of the Four Winds 52.7,52.0
 		.talk Anthea Ironpaw##58713
@@ -1366,8 +1370,9 @@ ZygorGuidesViewer:RegisterInclude("Cooking_Pot",[[
 	step
 	title + Way of the Pot
 	label	Cooking_Pot
-		'Skipping 1st part of cooking |next "+braised_turtle" |only if step:Find("+create_mist"):IsComplete()
-		'Proceeding to Sauteed Carrots |next |only if default
+		'Proceeding to Braised Turtle |next "braised_turtle" |only if skill('Way of the Pot')>=550 and skill('Way of the Pot')<575
+		'Proceeding to Banquet of the Pot |next "banquet_pot" |only if skill('Way of the Pot')>=575
+		'Proceeding to Swirling Mist Soup |next |only if default
 	step
 		goto Valley of the Four Winds 52.6,51.6
 		.talk Mei Mei Ironpaw##58714
@@ -1598,7 +1603,8 @@ ZygorGuidesViewer:RegisterInclude("Cooking_Grill",[[
 	step
 	title + "Way of the Grill"
 	label Cooking_Grill
-		'Skipping 1st part of cooking |next "+eternal_blossom" |only if step:Find("+create_tiger_steak"):IsComplete()
+		'Proceeding to Eternal Blossom Fish |next "eternal_blossom" |only if skill('Way of the Grill')>=550 and skill('Way of the Grill')<575
+		'Proceeding to Banquet of the Grill |next "banquet_grill" |only if skill('Way of the Grill')>=575
 		'Proceeding to Tiger Steak |next |only if default
 	step
 		goto Valley of the Four Winds 52.7,52.0

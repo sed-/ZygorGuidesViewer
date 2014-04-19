@@ -23810,7 +23810,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cloud_Serpent", [[
 		..accept Feeding Time##30156 |or 2
 		..accept The Easiest Way To A Serpent's Heart##30154 |or 2
 		..accept Sweet as Honey##30150 |or 2
-		|noquest
+		.' Make sure Your Hatchling offers no more quests and click here.|confirm
 		|modelnpc Your Hatchling##58416
 		|modelnpc Your Hatchling##58213
 		|only if not completedq(30143)
@@ -23823,7 +23823,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cloud_Serpent", [[
 		..accept Feeding Time##30156 |or 2
 		..accept The Easiest Way To A Serpent's Heart##30154 |or 2
 		..accept Sweet as Honey##30150 |or 2
-		|noquest
+		.' Make sure Your Hatchling offers no more quests and click here.|confirm
 		|modelnpc Your Hatchling##58416
 		|modelnpc Your Hatchling##58213
 		|only if completedq(30143)
@@ -26639,6 +26639,7 @@ ZygorGuidesViewer:RegisterInclude("A_Beasts_of_Fable_D",[[
 		..accept Beasts of Fable Book I##32604
 		..accept Beasts of Fable Book II##32868
 		..accept Beasts of Fable Book III##32869
+		..accept Pandaren Spirit Tamer##32428 |only if not completedq(32428)
 	step
 		goto Vale of Eternal Blossoms 11.0,70.9
 		.' _No-No_
@@ -26672,11 +26673,39 @@ ZygorGuidesViewer:RegisterInclude("A_Beasts_of_Fable_D",[[
 		.' Xi'a defeated |q 32868/3
 		'|modelnpc 68566
 	step
+		goto Dread Wastes 61.1,87.5
+		.' _Flowing Pandaren Spirit_
+		.' This enemy uses aquatic and elemental pets.
+		.' They are strong against undead and mechanical and weak to flying and aquatic pets.
+		.' I would suggest using flying and aquatic pets against this enemy.
+		.' Flowing Pandaren Spirit defeated |q 32428/4
+		'|modelnpc 68462
+		|only if havequest(32428)
+	step
+		goto Dread Wastes 61.1,87.5
+		.talk Flowing Pandaren Spirit##68462
+		..accept Flowing Pandaren Spirit##32439
+		|only if completedq(32428)
+	step
+		goto Dread Wastes 61.1,87.5
+		.' _Flowing Pandaren Spirit_
+		.' This enemy uses aquatic and elemental pets.
+		.' They are strong against undead and mechanical and weak to flying and aquatic pets.
+		.' I would suggest using flying and aquatic pets against this enemy.
+		.' Flowing Pandaren Spirit defeated |q 32439/1
+		'|modelnpc 68462
+		|only if havequest(32439)
+	step
+		goto Dread Wastes 61.1,87.5
+		.talk Flowing Pandaren Spirit##68462
+		..turnin Flowing Pandaren Spirit##32439
+		|only if havequest(32439)
+	step
 		goto Dread Wastes 26.1,50.2
 		.' _Gorespine_
 		.' This enemy is a beast.
-		.' It is strong against humanoids and weak against mechanical pets.
-		.' I would suggest using a team of mechanical pets against this enemy.
+		.' They are strong against undead and mechanical and weak to flying and aquatic pets.
+		.' I would suggest using flying and aquatic pets against this enemy.
 		.' Gorespine defeated |q 32869/1
 		'|modelnpc 68558
 	step
@@ -26688,12 +26717,73 @@ ZygorGuidesViewer:RegisterInclude("A_Beasts_of_Fable_D",[[
 		.' Ti'un the Wanderer defeated |q 32869/3
 		'|modelnpc 68562
 	step
+		goto Townlong Steppes 57.1,42.1
+		.' _Burning Pandaren Spirit_
+		.' This enemy uses a dragonkin, flying and elemental pet.
+		.' They are strong against flying, beast, and mechanical pets, respectively.
+		.' They are weak against humanoid, magic, and aquatic pets, respectively.
+		.' I would suggest using a humanoid, magic, and aquatic pet against this enemy.
+		.' Burning Pandaren Spirit defeated |quest 32428/1
+		'|modelnpc 68463
+		|only if havequest(32428)
+	step
+		goto Townlong Steppes 57.1,42.1
+		.talk Burning Pandaren Spirit##68463
+		..accept Burning Pandaren Spirit##32434
+		|only if completedq(32428)
+	step
+		goto Townlong Steppes 57.1,42.1
+		.' _Burning Pandaren Spirit_
+		.' This enemy uses a dragonkin, flying and elemental pet.
+		.' They are strong against flying, beast, and mechanical pets, respectively.
+		.' They are weak against humanoid, magic, and aquatic pets, respectively.
+		.' I would suggest using a humanoid, magic, and aquatic pet against this enemy.
+		.' Burning Pandaren Spirit defeated |quest 32434/1
+		'|modelnpc 68463
+		|only if havequest(32434)
+	step
+		goto Townlong Steppes 57.1,42.1
+		.talk Burning Pandaren Spirit##68463
+		..turnin Burning Pandaren Spirit##32434
+		|only if havequest(32434)
+	step
 		goto Kun-Lai Summit 35.2,56.2
+		.' _Kafi_
 		.' This enemy is a beast.
 		.' It is strong against humanoids and weak against mechanical pets.
 		.' I would suggest using a team of mechanical pets against this enemy.
 		.' Kafi defeated |q 32604/2
 		'|modelnpc 68563
+	step
+		goto Kun-Lai Summit 64.9,93.8
+		.' _Thundering Pandaren Spirit_
+		.' This enemy uses a beast, elemental, and magic pet.
+		.' They are strong against humanoids, mechanical, and aquatic pets, respectively.
+		.' They are weak against mechanical, aquatic, and dragonkin pets, respectively.
+		.' I would suggest using a mechanical, aquatic, and dragonkin pet against this enemy.
+		.' Thundering Pandaren Spirit defeated |q 32428/2
+		'|modelnpc 68465
+		|only if havequest(32428)
+	step
+		goto Kun-Lai Summit 64.9,93.8
+		.talk Thundering Pandaren Spirit##68465
+		..accept Thundering Pandaren Spirit##32441
+		|only if completedq(32428)
+	step
+		goto Kun-Lai Summit 64.9,93.8
+		.' _Thundering Pandaren Spirit_
+		.' This enemy uses a beast, elemental, and magic pet.
+		.' They are strong against humanoids, mechanical, and aquatic pets, respectively.
+		.' They are weak against mechanical, aquatic, and dragonkin pets, respectively.
+		.' I would suggest using a mechanical, aquatic, and dragonkin pet against this enemy.
+		.' Thundering Pandaren Spirit defeated |q 32441/1
+		'|modelnpc 68465
+		|only if havequest(32441)
+	step
+		goto Kun-Lai Summit 64.9,93.8
+		.talk Thundering Pandaren Spirit##68465
+		..turnin Thundering Pandaren Spirit##32441
+		|only if havequest(32441)
 	step
 		goto Kun-Lai Summit 67.9,84.7
 		.' _Dos-Ryga_
@@ -26702,6 +26792,36 @@ ZygorGuidesViewer:RegisterInclude("A_Beasts_of_Fable_D",[[
 		.' I would suggest using flying pets against this enemy.
 		.' Dos-Ryga defeated |q 32604/3
 		'|modelnpc 68564
+	step
+		goto The Jade Forest 28.9,36
+		.' _Whispering Pandaren Spirit_
+		.' This enemy uses a flying, elemental, and dragonkin pet.
+		.' They are strong against beast, mechanical, and flying pets, respectively.
+		.' They are weak against magic, aquatic, and humanoid pets, respectively.
+		.' I would suggest using a magic, aquatic, and humanoid pet against this enemy.
+		.' Whispering Pandaren Spirit defeated |q 32428/3
+		'|modelnpc 68464
+		|only if havequest(32428)
+	step
+		goto The Jade Forest 28.9,36
+		.talk Whispering Pandaren Spirit##68464
+		..accept Whispering Pandaren Spirit##32440
+		|only if completedq(32428)
+	step
+		goto The Jade Forest 28.9,36
+		.' _Whispering Pandaren Spirit_
+		.' This enemy uses a flying, elemental, and dragonkin pet.
+		.' They are strong against beast, mechanical, and flying pets, respectively.
+		.' They are weak against magic, aquatic, and humanoid pets, respectively.
+		.' I would suggest using a magic, aquatic, and humanoid pet against this enemy.
+		.' Whispering Pandaren Spirit defeated |q 32440/1
+		'|modelnpc 68464
+		|only if havequest(32440)
+	step
+		goto The Jade Forest 28.9,36
+		.talk Whispering Pandaren Spirit##68464
+		..turnin Whispering Pandaren Spirit##32440
+		|only if havequest(32440)
 	step
 		goto The Jade Forest 48.4,71.0
 		.' _Ka'wi the Gorger_
@@ -26724,6 +26844,7 @@ ZygorGuidesViewer:RegisterInclude("A_Beasts_of_Fable_D",[[
 		..turnin Beasts of Fable Book I##32604
 		..turnin Beasts of Fable Book II##32868
 		..turnin Beasts of Fable Book III##32869
+		..turnin Pandaren Spirit Tamer##32428 |only if not completedq(32428)
 ]])
 
 ZygorGuidesViewer:RegisterInclude("Kirin_Tor_Offensive",[[

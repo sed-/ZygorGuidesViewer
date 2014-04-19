@@ -134,7 +134,7 @@ label "dailies"
 #include "Golden_Lotus"
 step
 label "buy"
-goto Vale of Eternal Blossoms 73.3,42.9
+goto Vale of Eternal Blossoms 63.0,22.2
 .talk 59908
 .buy Reins of the Regal Riding Crane##87783
 .learnmount Regal Riding Crane##127177 |use Reins of the Regal Riding Crane##87783
@@ -152,7 +152,7 @@ label "dailies"
 #include "Golden_Lotus"
 step
 label "buy"
-goto Vale of Eternal Blossoms 73.3,42.9
+goto Vale of Eternal Blossoms 63.0,22.2
 .talk 59908
 .buy Reins of the Azure Riding Crane##87781
 .learnmount Azure Riding Crane##127174 |use Reins of the Azure Riding Crane##87781
@@ -170,7 +170,7 @@ label "dailies"
 #include "Golden_Lotus"
 step
 label "buy"
-goto Vale of Eternal Blossoms 73.3,42.9
+goto Vale of Eternal Blossoms 63.0,22.2
 .talk 59908
 .buy Reins of the Golden Riding Crane##87782
 .learnmount Golden Riding Crane##127176 |use Reins of the Golden Riding Crane##87782
