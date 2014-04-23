@@ -225,5 +225,6 @@ ZygorGuidesViewer.DisplayModelsExtra={
 	[05585]={cy=0.20,cz=0.40,camscale=0.50},
 	[05555]={cy=0.20,cz=0.40,camscale=0.50},
 	[09989]={cy=0.20,cz=0.40,camscale=0.50},
+	[37138]={camscale=1.10},
 }
 

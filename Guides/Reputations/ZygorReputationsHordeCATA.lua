@@ -10482,12 +10482,13 @@ goto 36.2,81.4
 .talk 55531
 .turnin 11973
 step
-goto The Oculus 62.8,44.1
+goto The Oculus/1 64.0,39.2
 .accept 13124
+.|tip This quest should automatically appear and be accepted after entering The Oculus.
 step
-goto The Oculus,38.4,51.0
+goto The Oculus/1 38.6,51.3
 'Fight the mobs up until this point, and click the Nexus Portal.
-.' Click here to continue. |confirm |q 13124
+.' Click here to continue. |confirm
 step
 .kill Drakos the Interrogator##27654 |n
 .talk 27658 |tip You will only be able to talk to him after Drakos is dead.

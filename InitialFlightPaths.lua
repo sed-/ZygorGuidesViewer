@@ -129,7 +129,7 @@ function loadFlightPaths()
 					else
 						error("Setting up initial flight points for Pandaren failed, please report to dev team (InitialFlightPaths.lua).")
 					end
-				end, NEUTRAL_FACTION_SELECT_RESULT)
+				end, "NEUTRAL_FACTION_SELECT_RESULT")
 			elseif englishFaction == "Alliance" then
 				ZGV.db.char.taxis = {
 					["Goldshire"] = true,

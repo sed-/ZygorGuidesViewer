@@ -929,5 +929,8 @@ ZGV.ObjectModelsExtra={
 	[05652]={cz=2.00,camscale=1.80},
 	[11506]={cz=1.00,camscale=2.10},
 	[09844]={cz=0.20,camscale=0.30},
+	[02452]={cz=0.60,camscale=0.90},
+	[00465]={cz=2.40,camscale=1.00},
+	[06756]={cy=-1.00,cz=19.00,camscale=1.50,scale=1.20},
 }
 -- Please keep this file sorted! Editplus: select, Tools-Sort

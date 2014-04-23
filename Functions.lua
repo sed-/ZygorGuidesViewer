@@ -244,6 +244,10 @@ local registeredEventsTable = {}
 -- Note that DelayedRun and the function you call is run with the : operator, so you always have access to self.
 -- Also note that any number of arguments can be sent to your function.
 function ZGV:DelayedRun(aFunction, event, ...)
+	if not aFunction then error ("No function") end
+	if not event then error ("No event") end
+	if type(event)~="string" then error("Event type must be string, is "..type(event)) end
+	
 	if not (event=="OnUpdate" or event=="CanSendAuctionQuery" or registeredEventsTable[event]) then
 		ZGV.EventDelayFrame:RegisterEvent(event)
 		registeredEventsTable[event]=true

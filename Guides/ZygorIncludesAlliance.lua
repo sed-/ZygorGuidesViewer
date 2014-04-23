@@ -13652,6 +13652,7 @@ ZygorGuidesViewer:RegisterInclude("Noblegarden Quests",[[
 		.talk Noblegarden Vendor##32836
 		..accept A Tisket, a Tasket, a Noblegarden Basket##13502
 	step
+		goto Teldrassil 55.5,51.0
 		'Search around Dolanaar for Brightly Colored Eggs and click them:
 		.click Brightly Colored Egg##1407+
 		|tip There is at least one available at all times. If Dolanaar is too crowded with other players looking for eggs, you can also find them at Azure Watch, Goldshire, and Kharanos.
@@ -13676,6 +13677,7 @@ ZygorGuidesViewer:RegisterInclude("Noblegarden Achievements",[[
 		goto Teldrassil 55.5,51.0
 		.click Brightly Colored Egg##1407+
 		|tip There is at least one available at all times. If Dolanaar is too crowded with other players looking for eggs, you can also find them at Azure Watch, Goldshire, and Kharanos.
+		.' Click Brightly Colored Eggs in your bags |use Brightly Colored Egg##45072
 		.collect 100 Noblegarden Chocolate##44791+ |n
 		.' Eat 100 Noblegarden Chocolates |achieve 2418 |use Noblegarden Chocolate##44791
 		.' Discover a White Tuxedo Shirt by opening Brightly Colored Eggs |achieve 248/1
@@ -13749,7 +13751,7 @@ ZygorGuidesViewer:RegisterInclude("Noblegarden Achievements",[[
 		.' Find another player who is wearing the Elegant Dress and perform the Kiss emote on them |script DoEmote("KISS") |tip The Elegant Dress looks like a long pink dress when worn.
 		.' Kiss someone wearing an Elegant Dress while wearing a White Tuxedo Shirt and Black Tuxedo Pants |achieve 2576
 	step
-		'Find a female character of every race that are at least level 18 and do the following: |tip The best places to try and find them would be Dalaran, Shattrath, Stormwind, and Orgrimmar.
+		'Find a female character of every race that is at least level 18 and do the following: |tip The best places to try and find them would be Dalaran, Shattrath, Stormwind, and Orgrimmar.
 		.' Use your Spring Flowers on them |use Spring Flowers##45073
 		.' Place bunny ears on a Blood Elf |achieve 2422/1
 		.' Place bunny ears on a Tauren |achieve 2422/9
