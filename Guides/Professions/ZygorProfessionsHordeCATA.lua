@@ -9664,11 +9664,11 @@ step
 step
 goto Zangarmarsh 31.6,49.2
 .talk 18015
-.buy 1 Recipe: Feltail Delight##27695
+.buy 1 Recipe: Blackened Trout##27694
 step
 goto Zangarmarsh 85.2,54.6
 .talk 18011
-.buy 1 Recipe: Blackened Trout##27694
+.buy 1 Recipe: Feltail Delight##27695
 step
 goto Terokkar Forest 48.8,46.0
 .talk 18960

@@ -13894,13 +13894,13 @@ ZygorGuidesViewer:RegisterInclude("Children's Week Shattrath",[[
 		goto Tanaris,64.9,50.0 |n
 		.' Enter the Caverns of Time here |goto Tanaris,64.9,50.0,0.5 |noway |c
 	step
-		'Follow the path down to 59.9,57.2 |goto Tanaris,59.9,57.2 |tip You will end up underground, in the Caverns of Time, next to a big dragon named Zaladormu, who is laying on a big platform.
+		'Follow the path down to 53.2,56.8 |goto Tanaris/18 53.2,56.8 |tip You will end up underground, in the Caverns of Time, next to a big dragon named Zaladormu, who is laying on a big platform.
 		.' Use your Draenei Orphan Whistle to summon your Draenei Orphan |use Draenei Orphan Whistle##31881
-		.' Take Dornaa to the Caverns of Time |q 10962/1
+		.' Take Dornaa to the Caverns of Time |q 10962/2
 	step
-		goto 63.0,57.3
+		goto Tanaris/17 40.0,77.0
 		.talk Alurmi##21643
-		.buy 1 Toy Dragon##31951 |q 10962/2
+		.buy 1 Toy Dragon##31951 |q 10962/1
 	step
 		'Use your Draenei Orphan Whistle to summon your Draenei Orphan |use Draenei Orphan Whistle##31881
 		.talk Draenei Orphan##22818
@@ -15627,8 +15627,6 @@ ZygorGuidesViewer:RegisterInclude("A_The_Northrend_Gourmet",[[
 		.learn Haunted Herring##58525 |use Recipe: Haunted Herring##43510
 		.learn Last Week's Mammoth##58521 |use Recipe: Last Week's Mammoth##43508
 		.learn Tasty Cupcake##58512 |use Recipe: Tasty Cupcake##43507
-	step
-		fly Nesingwary Base Camp
 	step
 		goto Sholazar Basin 26.8,60.1
 		.talk Grimbooze Thunderbrew##29157

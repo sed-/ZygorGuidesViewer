@@ -1932,7 +1932,7 @@ ZygorGuidesViewer:RegisterInclude("H_Love_Is_In_The_Air_Achievements",[[
 --Noblegarden--
 ZygorGuidesViewer:RegisterInclude("H_Noblegarden_Achievements",[[
 	step
-		'You may be unable to complete some of the achievements if you are lower level.  So, if you find you cannot do something in this guide, simply skip it and do what you can
+		'You may not be unable to complete some of the achievements if you are lower level.  So, if you find you cannot do something in this guide, simply skip it and do what you can
 		|confirm
 	step
 		goto Mulgore,47.2,59.3
@@ -2189,13 +2189,14 @@ ZygorGuidesViewer:RegisterInclude("H_Children's_Week_Shattrath_Quests",[[
 		goto Tanaris,64.9,50.0 |n
 		.' Enter the Caverns of Time here |goto Tanaris,64.9,50.0,0.5 |noway |c
 	step
-		'Follow the path down to 60.0,57.0 |goto Tanaris,60.0,57.0 |tip You will end up underground, in the Caverns of Time, next to a big dragon named Zaladormu, who is laying on a big platform.
+		'Follow the path down to 53.2,56.8 |goto Tanaris/18 53.2,56.8 |tip You will end up underground, in the Caverns of Time, next to a big dragon named Zaladormu, who is laying on a big platform.
 		.' Use your Blood Elf Orphan Whistle to summon your Blood Elf Orphan |use Blood Elf Orphan Whistle##31880
-		.' Take Salandria to the Caverns of Time |q 10963/1
+		.' Take Salandria to the Caverns of Time |q 10963/2
 	step
-		goto Tanaris,63.0,57.3
+		goto Tanaris/17 39.9,77.3
 		.talk Alurmi##21643
-		.buy 1 Toy Dragon##31951 |q 10963/2
+		.|tip She is inside the Caverns of Time tunnel.
+		.buy 1 Toy Dragon##31951 |q 10963/1
 	step
 		'Use your Blood Elf Orphan Whistle to summon your Blood Elf Orphan |use Blood Elf Orphan Whistle##31880
 		.talk Blood Elf Orphan##22817
@@ -2420,7 +2421,7 @@ ZygorGuidesViewer:RegisterInclude("H_Children's_Week_Achievements",[[
 		'Enter the Warsong Gulch battleground and return a fallen flag |tip Make sure your Orphan is standing next to you when you return the fallen flag, or else you won't get credit for the achievement.
 		.' Return a fallen flag in Warsong Gulch |achieve 1786/4
 	step
-		'Congratulations, you do it For The Children! |achieve 1793/1
+		'Congratulations, you do it For The Children! |achieve 1793
 ]])
 -- WINTERS VEIL --
 

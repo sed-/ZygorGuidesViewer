@@ -2,22 +2,34 @@ function loadFlightPaths()
 	if not ZGV.db.char.initialFlightPathsLoaded then
 		local initialPaths = {
 			["Human"] = {
+				["Darnassus"] = true,
 				["Goldshire"] = true,
 				["Ironforge"] = true,
+				["The Exodar"] = true,
 				["Gol'Bolar Quarry"] = true,
-				["Serpent's Overlook"] = false,
+				["Moonglade"] = true,
+				["Lor'danel"] = true,
+				["Dolanaar"] = true,
+				["Azure Watch"] = true,
+				["Kharanos"] = true,
+				["Rut'theran Village"] = true,
 				["Eastvale Logging Camp"] = true,
 				["Stormwind"] = true,
-				["Kharanos"] = true,
 			},
 			["Dwarf"] = {
+				["Darnassus"] = true,
 				["Goldshire"] = true,
 				["Ironforge"] = true,
+				["The Exodar"] = true,
 				["Gol'Bolar Quarry"] = true,
-				["Serpent's Overlook"] = false,
+				["Moonglade"] = true,
+				["Lor'danel"] = true,
+				["Dolanaar"] = true,
+				["Azure Watch"] = true,
+				["Kharanos"] = true,
+				["Rut'theran Village"] = true,
 				["Eastvale Logging Camp"] = true,
 				["Stormwind"] = true,
-				["Kharanos"] = true,
 			},
 			["NightElf"] = {
 				["Darnassus"] = true,
@@ -29,13 +41,19 @@ function loadFlightPaths()
 				["Rut'theran Village"] = true,
 			},
 			["Gnome"] = {
+				["Darnassus"] = true,
 				["Goldshire"] = true,
 				["Ironforge"] = true,
+				["The Exodar"] = true,
 				["Gol'Bolar Quarry"] = true,
-				["Serpent's Overlook"] = false,
+				["Moonglade"] = true,
+				["Lor'danel"] = true,
+				["Dolanaar"] = true,
+				["Azure Watch"] = true,
+				["Kharanos"] = true,
+				["Rut'theran Village"] = true,
 				["Eastvale Logging Camp"] = true,
 				["Stormwind"] = true,
-				["Kharanos"] = true,
 			},
 			["Draenei"] = {
 				["Darnassus"] = true,
@@ -110,13 +128,19 @@ function loadFlightPaths()
 					-- Assuming Pandaren start similar to Worgen and Goblins.
 					if englishFaction == "Alliance" then
 						ZGV.db.char.taxis = {
+							["Darnassus"] = true,
 							["Goldshire"] = true,
 							["Ironforge"] = true,
+							["The Exodar"] = true,
 							["Gol'Bolar Quarry"] = true,
-							["Serpent's Overlook"] = false,
+							["Moonglade"] = true,
+							["Lor'danel"] = true,
+							["Dolanaar"] = true,
+							["Azure Watch"] = true,
+							["Kharanos"] = true,
+							["Rut'theran Village"] = true,
 							["Eastvale Logging Camp"] = true,
 							["Stormwind"] = true,
-							["Kharanos"] = true,
 						}
 					elseif englishFaction == "Horde" then
 						ZGV.db.char.taxis = {
@@ -132,13 +156,19 @@ function loadFlightPaths()
 				end, "NEUTRAL_FACTION_SELECT_RESULT")
 			elseif englishFaction == "Alliance" then
 				ZGV.db.char.taxis = {
+					["Darnassus"] = true,
 					["Goldshire"] = true,
 					["Ironforge"] = true,
+					["The Exodar"] = true,
 					["Gol'Bolar Quarry"] = true,
-					["Serpent's Overlook"] = false,
+					["Moonglade"] = true,
+					["Lor'danel"] = true,
+					["Dolanaar"] = true,
+					["Azure Watch"] = true,
+					["Kharanos"] = true,
+					["Rut'theran Village"] = true,
 					["Eastvale Logging Camp"] = true,
 					["Stormwind"] = true,
-					["Kharanos"] = true,
 				}
 				ZGV.db.char.initialFlightPathsLoaded = true
 			elseif englishFaction == "Horde" then
@@ -158,13 +188,19 @@ function loadFlightPaths()
 			-- Currently assuming Death Knights start similar to pandaren ~~ Jeremiah
 			if englishFaction == "Alliance" then
 				ZGV.db.char.taxis = {
+					["Darnassus"] = true,
 					["Goldshire"] = true,
 					["Ironforge"] = true,
+					["The Exodar"] = true,
 					["Gol'Bolar Quarry"] = true,
-					["Serpent's Overlook"] = false,
+					["Moonglade"] = true,
+					["Lor'danel"] = true,
+					["Dolanaar"] = true,
+					["Azure Watch"] = true,
+					["Kharanos"] = true,
+					["Rut'theran Village"] = true,
 					["Eastvale Logging Camp"] = true,
 					["Stormwind"] = true,
-					["Kharanos"] = true,
 				}
 				ZGV.db.char.initialFlightPathsLoaded = true
 			elseif englishFaction == "Horde" then
