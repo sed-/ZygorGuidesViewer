@@ -149,6 +149,9 @@ function loadFlightPaths()
 							["Razor Hill"] = true,
 							["Thunder Bluff"] = true,
 							["Bloodhoof Village"] = true,
+							["Undercity"] = true,
+							["The Bulwark"] = true,
+							["Brill"] = true,
 						}
 					else
 						error("Setting up initial flight points for Pandaren failed, please report to dev team (InitialFlightPaths.lua).")
@@ -178,6 +181,9 @@ function loadFlightPaths()
 					["Razor Hill"] = true,
 					["Thunder Bluff"] = true,
 					["Bloodhoof Village"] = true,
+					["Undercity"] = true,
+					["The Bulwark"] = true,
+					["Brill"] = true,
 				}
 				ZGV.db.char.initialFlightPathsLoaded = true
 			end
@@ -210,6 +216,9 @@ function loadFlightPaths()
 					["Razor Hill"] = true,
 					["Thunder Bluff"] = true,
 					["Bloodhoof Village"] = true,
+					["Undercity"] = true,
+					["The Bulwark"] = true,
+					["Brill"] = true,
 				}
 				ZGV.db.char.initialFlightPathsLoaded = true
 			end
