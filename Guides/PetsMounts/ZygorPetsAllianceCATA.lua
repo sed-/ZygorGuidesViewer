@@ -230,8 +230,8 @@ description This guide will walk you through obtaining
 description the Beast pet: Black Kingsnake
 pet 75
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Black Kingsnake##10360
 |modeldisplay 4268
 .' Alternatively, you can use the _Stormwind Auctioneer_ to see if any are available before going to Booty Bay.
@@ -1106,8 +1106,8 @@ description This guide will walk you through obtaining
 description the Critter pet: Brown Prairie Dog
 pet 70
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Prairie Dog Whistle##10394
 |modeldisplay 1072
 .' Alternatively, you can use the _Stormwind Auctioneer_ to see if any are available before going to Booty Bay.
@@ -1119,8 +1119,8 @@ description This guide will walk you through obtaining
 description the Beast pet: Brown Snake
 pet 77
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Brown Snake##10361
 |modeldisplay 2957
 .' Alternatively, you can use the _Stormwind Auctioneer_ to see if any are available before going to Booty Bay.
@@ -1562,8 +1562,8 @@ description This guide will walk you through obtaining
 description the Beast pet: Durotar Scorpion
 pet 207
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Durotar Scorpion##44973
 .' Alternatively, you can use the _Stormwind Auctioneer_ to see if any are available before going to Booty Bay.
 |modeldisplay 32055
@@ -1736,8 +1736,8 @@ description This guide will walk you through obtaining
 description the Magic pet: Enchanted Broom
 pet 213
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Enchanted Broom##44982
 |modeldisplay 16910
 .' Alternatively, you can use the _Stormwind Auctioneer_ to see if any are available before going to Booty Bay.
@@ -1749,8 +1749,8 @@ description This guide will walk you through obtaining
 description the Magic pet:Enchanted Lantern
 pet 267
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Enchanted Lantern##67274
 |modeldisplay 36902
 .' Alternatively, you can use the _Stormwind Auctioneer_ to see if any are available before going to Booty Bay.
@@ -2686,8 +2686,8 @@ description This guide will walk you through obtaining
 description the Dragonkin pet: Golden Dragonhawk Hatchling
 pet 142
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Golden Dragonhawk Hatchling##29953
 |modeldisplay 28401
 .' Alternatively, you can use the _Stormwind Auctioneer_ to see if any are available before going to Booty Bay.
@@ -3656,8 +3656,8 @@ description This guide will walk you through obtaining
 description the Critter pet: Mulgore Hatchling
 pet 210
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Mulgore Hatcling##44980
 |modeldisplay 6476
 .' Alternatively, you can use the _Stormwind Auctioneer_ to see if any are available before going to Booty Bay.
@@ -5215,8 +5215,8 @@ description This guide will walk you through obtaining
 description the Undead pet: Sen'jin Fetish
 pet 218
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Sen'jin Fetish##45606
 |modeldisplay 29189
 .' Alternatively, you can use the _Stormwind Auctioneer_ to see if any are available before going to Booty Bay.
@@ -5266,8 +5266,8 @@ description This guide will walk you through obtaining
 description the Dragonkin pet: Silver Dragonhawk Hatchling
 pet 144
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Silver Dragonhawk##29957
 |modeldisplay 29362
 .' Alternatively, you can use the _Stormwind Auctioneer_ to see if any are available before going to Booty Bay.
@@ -5972,8 +5972,8 @@ description This guide will walk you through obtaining
 description the Flying pet: Tirisfal Batling
 pet 206
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Tirisfal Batling##44971
 |modeldisplay 28499
 .' Alternatively, you can use the _Stormwind Auctioneer_ to see if any are available before going to Booty Bay.

@@ -984,6 +984,7 @@ ZygorGuidesViewer:RegisterInclude("Cooking_Wok",[[
 		.' Click here if you wish to kill mobs for more Juicycrunch Carrots. Note that the mobs have a very low drop rate. |confirm |next "killjcc"
 		.' Click here to be taken to the beginning of the guide. |confirm |next "farmjcc"
 	step
+	label "killjcc"
 		goto Valley of the Four Winds 86.5,28.5
 		.from Snagtooth Hooligan##56462+
 		.collect 30 Juicycrunch Carrot##74841 |next "create_carrot"
@@ -1471,6 +1472,7 @@ ZygorGuidesViewer:RegisterInclude("Cooking_Pot",[[
 		.' Click here if you wish to kill mobs for more Juicycrunch Carrots. Note that the mobs have a very low drop rate. |confirm |next "killjcc"
 		.' Click here to be taken to the beginning of the guide. |confirm |next "farmjcc"
 	step
+	label "killjcc"
 		goto Valley of the Four Winds 86.5,28.5
 		.from Snagtooth Hooligan##56462+
 		.collect 60 Juicycrunch Carrot##74841 |next "donejcc"
@@ -1557,6 +1559,7 @@ ZygorGuidesViewer:RegisterInclude("Cooking_Pot",[[
 		.' Click here if you wish to kill mobs for more Juicycrunch Carrots. Note that the mobs have a very low drop rate. |confirm |next "killjcc"
 		.' Click here to be taken to the beginning of the guide. |confirm |next "farmjcc"
 	step
+	label "killjcc"
 		goto Valley of the Four Winds 86.5,28.5
 		.from Snagtooth Hooligan##56462+
 		.collect 250 Juicycrunch Carrot##74841 |next "farm_banquet_pot_4"

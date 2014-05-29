@@ -40,6 +40,12 @@
 					if #ZGV.CreatureDetector.DetectedGuides==1 then
 						ZGV:SetGuide(ZGV.CreatureDetector.DetectedGuides[1].title)
 					else
+						local badIDs = ""
+						for i, v in pairs(ZGV.CreatureDetector.DetectedGuides) do
+							badIDs = badIDs.." "..(v.condition_end_raw or v.condition_end or v.title_short).." "
+						end
+						error("Duplicate IDs: "..badIDs)
+						-- There is no GuidePicker? ~~ Jeremiah
 						ZGV.GuidePicker:NavigateTo("DETECTOR")
 					end
 				end

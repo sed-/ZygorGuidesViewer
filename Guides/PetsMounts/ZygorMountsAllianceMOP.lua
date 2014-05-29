@@ -553,14 +553,14 @@ step
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Mists of Pandaria\\Flying Mounts\\Obsidian Nightwing",[[
 description This guide will help you acquire the Obsidian Nightwing Mount.
 model 42498
-condition end hasmount(124659)
+condition end hasmount(121820)
 step
 .' You can only obtain this mount through the Recruit-A-Friend program.
 |confirm
 step
 .' Check your in-game mail for your new mount!
 .collect 1 Heart of the Nightwing##83086
-.learnmount Obsidian Nightwing##124659 |use Heart of the Nightwing##83086
+.learnmount Obsidian Nightwing##121820 |use Heart of the Nightwing##83086
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Mists of Pandaria\\Ground Mounts\\Amber Scorpion",[[
 description This guide will help you acquire the Amber Scorpion Mount.

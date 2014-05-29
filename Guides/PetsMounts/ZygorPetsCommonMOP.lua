@@ -2146,10 +2146,10 @@ description the Beast pet:Vengeful Porcupette
 sugGroup 5.4 Pets
 pet 1344
 step
-.' Be warned that this mount may require that you do some PVP combat.
+.' Be warned that this pet may require that you do some PVP combat.
 |confirm
 step
-.' In order to earn this mount you will need to acquire the _Censer of Eternal Agony_, which costs 2500 _Timeless Coin_ to obtain.
+.' In order to earn this pet you will need to acquire the _Censer of Eternal Agony_, which costs 2500 _Timeless Coin_ to obtain.
 .' There are several caches found throughout the entire isle.
 .' Each enemy drops a random number of coins, but this should not take a long time.
 .earn 2500 Timeless Coin##777

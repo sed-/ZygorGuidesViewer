@@ -18,8 +18,8 @@ description This guide will walk you through obtaining
 description the Critter pet: Snowshoe Rabbit
 pet 72
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Rabbit Crate (Snowshoe)##8497
 .' These pets aren't available to the Horde by normal means.
 .' Alternatively, you can purchase this from the Horde Auctioneer, although it may not be available.
@@ -49,8 +49,8 @@ description This guide will walk you through obtaining
 description the Elemental pet: Ammen Vale Lashling
 pet 212
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Ammen Vale Lashling##44984
 .' These pets aren't available to the Horde by normal means.
 .' Alternatively, you can purchase this from the Horde Auctioneer, although it may not be available.
@@ -955,8 +955,8 @@ description This guide will walk you through obtaining
 description the Flying pet:Yellow Moth
 pet 140
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Yellow Moth Egg##29903
 .' These pets aren't available to the Horde by normal means.
 .' Alternatively, you can purchase this from the Horde Auctioneer, although it may not be available.
@@ -969,8 +969,8 @@ description This guide will walk you through obtaining
 description the Flying pet:Blue Moth
 pet 138
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Blue Moth Egg##29901
 .' These pets aren't available to the Horde by normal means.
 .' Alternatively, you can purchase this from the Horde Auctioneer, although it may not be available.
@@ -983,8 +983,8 @@ description This guide will walk you through obtaining
 description the Beast pet: Bombay Cat
 pet 40
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Cat Carrier (Bombay)##8485
 .' These pets aren't available to the Horde by normal means.
 .' Alternatively, you can purchase this from the Horde Auctioneer, although it may not be available.
@@ -1091,8 +1091,8 @@ description This guide will walk you through obtaining
 description the Beast pet: Cornish Rex Cat
 pet 41
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Cat Carrier (Cornish Rex)##8486
 .' These pets aren't available to the Horde by normal means.
 .' Alternatively, you can purchase this from the Horde Auctioneer, although it may not be available.
@@ -1143,8 +1143,8 @@ description This guide will walk you through obtaining
 description the Beast pet: Dun Morogh Cub
 pet 205
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Dun Morogh Cub##44970
 .' These pets aren't available to the Horde by normal means.
 .' Alternatively, you can purchase this from the Horde Auctioneer, although it may not be available.
@@ -1378,8 +1378,8 @@ description This guide will walk you through obtaining
 description the Critter pet: Elwynn Lamb
 pet 209
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Elwynn Lamb##44974
 .' These pets aren't available to the Horde by normal means.
 .' Alternatively, you can purchase this from the Horde Auctioneer, although it may not be available.
@@ -2540,8 +2540,8 @@ description This guide will walk you through obtaining
 description the Flying pet: Great Horned Owl
 pet 68
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Great Horned Owl##8500
 .' These pets aren't available to the Horde by normal means.
 .' Alternatively, you can purchase this from the Horde Auctioneer, although it may not be available.
@@ -2611,8 +2611,8 @@ description This guide will walk you through obtaining
 description the Flying pet: Hawk Owl
 pet 67
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Hawk Owl##8501
 .' These pets aren't available to the Horde by normal means.
 .' Alternatively, you can purchase this from the Horde Auctioneer, although it may not be available.
@@ -2909,8 +2909,8 @@ description This guide will walk you through obtaining
 description the Magic pet:Magic Lamp
 pet 292
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Magic Lamp##67275
 .' These pets aren't available to the Horde by normal means.
 .' Alternatively, you can purchase this from the Horde Auctioneer, although it may not be available.
@@ -2929,9 +2929,9 @@ description This guide will walk you through obtaining
 description the Mechanical pet: Mechanopeep
 pet 215
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
-.collect 1 Mechanopeep##45002
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
+.buy 1 Mechanopeep##45002
 .' These pets aren't available to the Horde by normal means.
 .' Alternatively, you can purchase this from the Horde Auctioneer, although it may not be available.
 '|modeldisplay 28539
@@ -3188,8 +3188,8 @@ description This guide will walk you through obtaining
 description the Beast pet: Orange Tabby Cat
 pet 43
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Cat Carrier (Orange Tabby)##8487
 .' These pets aren't available to the Horde by normal means.
 .' Alternatively, you can purchase this from the Horde Auctioneer, although it may not be available.
@@ -5065,8 +5065,8 @@ description This guide will walk you through obtaining
 description the Beast pet: Silver Tabby Cat
 pet 45
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Cat Carrier (Silver Tabby)##8488
 .' These pets aren't available to the Horde by normal means.
 .' Alternatively, you can purchase this from the Horde Auctioneer, although it may not be available.
@@ -5261,8 +5261,8 @@ description This guide will walk you through obtaining
 description the Elemental pet: Teldrassil Sproutling
 pet 204
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Teldrassil Sproutling##44965
 .' These pets aren't available to the Horde by normal means.
 .' Alternatively, you can purchase this from the Horde Auctioneer, although it may not be available.
@@ -5937,8 +5937,8 @@ description This guide will walk you through obtaining
 description the Critter pet: White Kitten
 pet 46
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 Cat Carrier (White Kitten)##8489
 .' These pets aren't available to the Horde by normal means.
 .' Alternatively, you can purchase this from the Horde Auctioneer, although it may not be available.
@@ -5951,8 +5951,8 @@ description This guide will walk you through obtaining
 description the Flying pet: White Moth
 pet 141
 step
-goto The Cape of Stranglethorn/0 40.1,72.4
-.talk 8123
+goto The Cape of Stranglethorn/0 43.1,71.5
+.talk 15677
 .buy 1 White Moth Egg##29904
 .' These pets aren't available to the Horde by normal means.
 .' Alternatively, you can purchase this from the Horde Auctioneer, although it may not be available.

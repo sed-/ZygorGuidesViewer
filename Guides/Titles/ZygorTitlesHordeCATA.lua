@@ -4978,6 +4978,22 @@ step
 step
 'Congratulations! You have earned the title Savior of Azeroth!
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Titles\\Raid Titles\\Delver of the Vaults",[[
+description This guide will walk you through earning the Delver of the Vaults title.
+step
+.' To get this title you must defeat the Will of the Emperor in Heroic mode in the Guardians of Mogu'shan raid.
+.' Click here to load the Mogu'shan raid guide. |confirm
+step
+leechsteps "Zygor's Horde Dungeon Guides\\Raids\\Pandaria (LFR)\\Guardians of Mogu'shan (LFR)"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Titles\\Raid Titles\\The Fearless",[[
+description This guide will walk you through earning the Fearless title.
+step
+.' To get this title you must defeat the Sha of Fear on Heroic difficulty in the Terrace of Endless Spring raid.
+.' Click here to load the Terrace of Endless Spring raid guide. |confirm
+step
+leechsteps "Zygor's Horde Dungeon Guides\\Raids\\Pandaria (LFR)\\Terrace of Endless Spring (LFR)"
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Titles\\Explorer Achievement\\Kalimdor",[[
 description This guide section will walk you through completing
 description the Explorer achievement.

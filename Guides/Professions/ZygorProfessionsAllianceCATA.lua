@@ -5103,12 +5103,12 @@ path 79.6,80.4	59.1,78.3	50.8,85.2
 path 46.8,81.1	37.3,87.6	26.2,89.0
 path 30.1,76.1	33.2,66.5
 #include "follow_path_herbs"
-.' You need about 140 herbs total
+.' You need about 120 herbs total
 .collect Silverleaf##765 |n
 .collect Peacebloom##2447 |n
 .collect Earthroot##2449 |n
-.' You'll need about {_G.max(0 , (140-itemcount(765,2447,2449,22710)))} more herbs.
-.' Mill the 140 herbs you gathered into Alabaster Pigment
+.' You'll need about {_G.max(0 , (120-itemcount(765,2447,2449,22710)))} more herbs.
+.' Mill the 120 herbs you gathered into Alabaster Pigment
 .collect 69 Alabaster Pigment##39151
 #include "max_skill_warning",skill="Herbalism",goto="ins_1-50_farm"
 step
@@ -5128,8 +5128,8 @@ label "ins_50-150"
 .skillmax Inscription,150 |tip You must be at least level 10.
 .learn Enchanting Vellum##52739
 step
-.' You don't need to save anything from the Apprentice Inscription section to use in the Journeyman portion.
-..' Feel free to sell off anything you might have created and you may also sell off any left over materials from this section.
+.' You need to save the _Moonglow Ink_ made from the pervious section.
+..' Feel free to sell off anything else you might have created and you may also sell off any left over materials from this section.
 |confirm
 step
 #include "vendor_Inscription"
@@ -5199,13 +5199,13 @@ step
 .buy 13 Common Parchment##39354
 step
 #include "auctioneer"
-.' You need about 170 Golden giving herbs total
+.' You need about 150 Golden giving herbs total
 .buy Grave Moss##3369 |n
 .buy Kingsblood##3356 |n
 .buy Liferoot##3357 |n
 .buy Wild Steelbloom##3355 |n
-.' You'll need about {_G.max(0 , (170-itemcount(3369,3356,3357,3355)))} more herbs.
-.' Mill the 170 Golden-giving herbs into Golden Pigment and Burnt Pigment |cast Milling##51005
+.' You'll need about {_G.max(0 , (150-itemcount(3369,3356,3357,3355)))} more herbs.
+.' Mill the 150 Golden-giving herbs into Golden Pigment and Burnt Pigment |cast Milling##51005
 .buy 90 Golden Pigment##39338
 .buy 20 Burnt Pigment##43104
 #include go_farm,skill="Herbalism",req="105",goto="ins_50-150_farm_pt2"
@@ -5290,13 +5290,13 @@ step
 .buy 16 Light Parchment##39354
 step
 #include "auctioneer"
-.' You need 155 Emerald-giving herbs total or you can buy the pigment off of the Auction House if you do not want to mill.
+.' You need 120 Emerald-giving herbs total or you can buy the pigment off of the Auction House if you do not want to mill.
 .buy Dragon's Teeth##3819 |n
 .buy Fadeleaf##3818 |n
 .buy Goldthorn##3821 |n
 .buy Khadgar's Whisker##3358 |n
-.' You'll need about {_G.max(0 , (155-itemcount(3819,3818,3821,3358)))} more herbs.
-.' Mill the 155 Emerald-giving herbs you purchased into Emerald Pigment |cast Milling##51005
+.' You'll need about {_G.max(0 , (120-itemcount(3819,3818,3821,3358)))} more herbs.
+.' Mill the 120 Emerald-giving herbs you purchased into Emerald Pigment |cast Milling##51005
 .collect 72 Emerald Pigment##39339
 .collect 10 Indigo Pigment##43105
 #include go_farm,skill="Herbalism",req="150",goto="ins_150-200_farm"
@@ -5741,7 +5741,7 @@ step
 skill Inscription,380
 step
 #include "trainer_Inscription"
-.learn Glyph of Retreat##124463
+.learn Glyph of Fortuitous Spheres##124463
 step
 .create 2 Glyph of Retreat##124463,Inscription,386
 step
@@ -5794,9 +5794,6 @@ step
 .buy Azshara's Veil##52985 |n
 .buy Cinderbloom##52983 |n
 .buy Stormvine##52984 |n
-|tip Twilight Jasmine and Whiptail have a higher chance of yielding Burning Embers.
-.buy Twilight Jasmine##52987 |n
-.buy Whiptail##52988 |n
 .' You'll need about {_G.max(0 , (180-itemcount(52985,52983,52989,52984,52987,52988)))} more herbs in stacks of 5.
 .' Mill the 180 herbs you purchased into Ashen Pigment and Burning Embers  |cast Milling##51005
 .buy 6 Volatile Earth##52327

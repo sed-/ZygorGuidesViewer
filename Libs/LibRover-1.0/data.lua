@@ -1046,6 +1046,10 @@ data.basenodes.advanced = {
 	--]]
 
 	--{"REGION",name="ironforgecenter",center="Ironforge 48,43",radius=100,nofly=1},
+
+	-- Peak of Serenity, monk training area. Players are not allowed to leave on foot while training (might be dependent on level?).
+	{"REGION",name="peak_of_serenity",center="Kun-Lai Summit 50,40",radius=300}, -- One large circle.
+	{"REGION",name="peak_of_serenity",mapzone=809,zonematch="*/*/*/Peak of Serenity"}, -- Make sure the peak itself is always part of the region.
 }
 
 -- different data layout, live with it
@@ -1419,6 +1423,8 @@ data.basenodes.travel = {
 	"Moonglade  56.3,32.4						<spell:18960>", --Class based!
 	-- DK DEATHGATE
 	"Eastern Plaguelands 83.72,50.03			<spell:50977>", --Class based!
+	-- Zen Pilgrimage (monks)
+	"Kun-Lai Summit 48.64,42.94			<spell:126892>", --Class based!
 
 -- ITEM TELEPORTS:
 

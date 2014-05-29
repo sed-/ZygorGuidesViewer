@@ -15188,7 +15188,7 @@ goto 38.8,27.0
 step
 goto 38.8,27.0
 .talk 35773
-.' Tell him you are ready to be shown the threat he speaks of.
+.' Tell her you are ready to be shown the threat she speaks of.
 .' Scout the Naga Forces |q 14256/1
 step
 goto 38.8,27.0

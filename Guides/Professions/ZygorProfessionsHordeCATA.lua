@@ -1315,7 +1315,7 @@ step
 #include "home_ValleyofStrength"
 step
 #include "auctioneer"
-.buy 95 Rough Stone##2835
+.buy 96 Rough Stone##2835
 .buy 150 Copper Bar##2840
 #include go_farm,skill="Mining",req="1",goto="bla_1-75_farm"
 next "bla_1-75_skill"
@@ -1331,7 +1331,7 @@ path +	50.7,63.3	54.9,67.0	56.2,49.8
 path +	55.0,36.9	53.0,29.7	57.9,30.0
 path +	54.8,19.0	50.0,17.2	44.2,23.6
 #include "follow_path_mine"
-.collect 95 Rough Stone##2835
+.collect 96 Rough Stone##2835
 .collect 150 Copper Ore##2770
 .skill Mining,50
 #include "max_skill_warning",skill="Mining",goto="bla_1-75_farm"
@@ -1361,13 +1361,13 @@ label "bla_75-125"
 #include "trainer_Blacksmithing"
 .skillmax Blacksmithing,150
 step
-.' You will need the 70 _Copper Bars_ that you saved from previous stage of Blacksmithing for the current section.
-..collect 76 Copper Bar##2840 |n
+.' You will need the 60 _Copper Bars_ that you saved from previous stage of Blacksmithing for the current section.
+..collect 60 Copper Bar##2840 |n
 |confirm
 step
 #include "auctioneer"
 .buy 60 Coarse Stone##2836
-.buy 150 Copper Bar##2840
+.buy 100 Copper Bar##2840
 .buy 90 Bronze Bar##2841
 #include go_farm,skill="Mining",req="65",goto="bla_75-125_farm"
 next "bla_75-125_skill"
@@ -1392,7 +1392,7 @@ path +	50.7,63.3	54.9,67.0	56.2,49.8
 path +	55.0,36.9	53.0,29.7	57.9,30.0
 path +	54.8,19.0	50.0,17.2	44.2,23.6
 #include "follow_path_mine"
-.collect 210 Copper Ore##2770 |only if itemcount("Copper Bar")<235
+.collect 85 Copper Ore##2770 |only if itemcount("Copper Bar")<235
 #include "max_skill_warning",skill="Mining",goto="bla_1-75_farm"
 step
 label "farm2"
@@ -1412,17 +1412,17 @@ path +	62.7,64.6	67.0,69.1	75.6,69.2
 path +	82.4,71.8	86.5,79.1	90.1,76.6
 #include "follow_path_mine"
 .collect 60 Coarse Stone##2836
-.collect 60 Tin Ore##2771
+.collect 45 Tin Ore##2771
 skill Mining,125
 #include "max_skill_warning",skill="Mining",goto="bla_75-125_farm"
 step
 #include "maincity_forge2"
 .create Copper Bar##2657,Mining,205 total |n
-.collect 210 Copper Bar##2840
+.collect 100 Copper Bar##2840
 step
 #include "maincity_forge2"
 .create Tin Bar##3304,Mining,85 total |n
-.collect 60 Tin Bar##3576
+.collect 45 Tin Bar##3576
 step
 #include "maincity_forge2"
 .create Bronze Bar##2659,Mining,170 total |n
@@ -1433,7 +1433,7 @@ label "bla_75-125_skill"
 .learn Coarse Grinding Stone##3326
 step
 #include "maincity_anvil"
-.create 30 Coarse Grinding Stone##3326,Blacksmithing,30 total |n
+.create 30 Coarse Grinding Stone##3326, Blacksmithing,95
 .collect 30 Coarse Grinding Stone##3478 |tip Save 30 Coarse Grinding Stones, you'll need them later.
 step
 #include "trainer_Blacksmithing"
@@ -6773,31 +6773,34 @@ step
 .skillmax Tailoring,75 |tip You must be at least level 5.
 step
 #include "auctioneer"
-.buy 210 Linen Cloth##2589
+.buy 214 Linen Cloth##2589
 #include go_farm_level,level="8",goto="tl_1-75_farm"
 |next "tl_1-75_skill"
 step
 label	"tl_1-75_farm"
 goto Mulgore,60.6,47.7
 .from Venture Co. Supervisor##2979+, Enforcer Emilgund##5787+, Supervisor Fizsprocket##3051+, Venture Co. Worker##2978+
-.collect 210 Linen Cloth##2589
+.collect 156 Linen Cloth##2589
 step
 label	"tl_1-75_skill"
-.create 105 Bolt of Linen Cloth##2963,Tailoring,105 total
+.create 78 Bolt of Linen Cloth##2963,Tailoring,78 total
 .skill Tailoring,50
 step
 #include "trainer_Tailoring"
 .learn Heavy Linen Gloves##3840
 step
 #include "vendor_Tailoring"
-.buy 40 Coarse Thread##2320
+.buy 41 Coarse Thread##2320
 step
-.create 20 Heavy Linen Gloves##3840,Tailoring,70
+.create 21 Heavy Linen Gloves##3840,Tailoring,70
 step
 #include "trainer_Tailoring"
 .learn Reinforced Linen Cape##2397
 step
 .create 5 Reinforced Linen Cape##2397,Tailoring,75
+step
+'You should have around _55 Bolts of Linen Cloth_ left over after reaching level 75 in Tailoring. Save these, as you will need them for the next section.
+|confirm
 step
 title + Tailoring 75-125
 label	"tl_75-125"
@@ -6807,10 +6810,19 @@ label	"tl_75-125"
 step
 #include "auctioneer"
 .buy 135 Wool Cloth##2592
+.buy 55 Bolt of Linen Cloth##2996 |tip You can also buy Linen Cloth and turn them into bolts yourself.
 #include go_farm_level,level="22",goto="tl_75-125_farm"
 |next "tl_75-125_skill"
 step
 label	"tl_75-125_farm"
+goto Mulgore,60.6,47.7
+.from Venture Co. Supervisor##2979+, Enforcer Emilgund##5787+, Supervisor Fizsprocket##3051+, Venture Co. Worker##2978+
+..collect 110 Linen Cloth##2589
+|only itemcount(2996)<24
+step
+.create 55 Bolt of Linen Cloth##2963,Tailoring,55 total |n |tip You should have saved these from the _1-75 section_.
+..collect 55 Bolt of Linen Cloth##2996
+step
 goto Hillsbrad Foothills 40.4,47.9
 .from Stormpike Engineer##49116+
 ..collect 135 Wool Cloth##2592
@@ -6825,7 +6837,7 @@ step
 #include "vendor_Tailoring"
 .buy 45 Fine Thread##2321
 step
-.create 40 Simple Kilt##12046,Tailoring,110
+.create Simple Kilt##12046,Tailoring,110
 step
 #include "trainer_Tailoring"
 .learn Double-stitched Woolen Shoulders##3848
@@ -6845,7 +6857,7 @@ step
 |next "tl_125-200_skill"
 step
 label	"tl_125-200_farm"
-'Skipping next part of farming |next "+farm2" |only if step:Find("+farming"):IsComplete()
+'Skipping next part of farming |next "+farm2" |only if step:Find("+farming"):IsComplete() or skill("Tailoring")>=175 or itemcount(4305)<161
 'Proceeding to farm |next |only if default
 step
 label	"farming"
@@ -6857,7 +6869,7 @@ path	18.9,76.4	17.3,77.5
 .' Make sure you kill the enemies within the circle as well.
 .collect 808 Silk Cloth##4306 |tip You can also farm these by killing humanoid mobs in the Scarlet Monastery instance.
 step
-'Skipping next part of farming |next "exit" |only if step:Find("+farming"):IsComplete()
+'Skipping next part of farming |next "exit" |only if step:Find("+farming"):IsComplete() or itemcount(4339)<120
 'Proceeding to farm |next |only if default
 step
 label	"farming"

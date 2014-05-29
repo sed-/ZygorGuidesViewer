@@ -2405,6 +2405,21 @@ step
 step
 'Congratulations! You have earned the title Savior of Azeroth!
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\Delver of the Vaults",[[
+step
+.' To get this title you must defeat the Will of the Emperor in Heroic mode in the Guardians of Mogu'shan raid.
+.' Click here to load the Mogu'shan raid guide. |confirm
+step
+leechsteps "Zygor's Alliance Dungeon Guides\\Raids\\Pandaria (LFR)\\Guardians of Mogu'shan (LFR)"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\The Fearless",[[
+description This guide will walk you through earning the Fearless title.
+step
+.' To get this title you must defeat the Sha of Fear on Heroic difficulty in the Terrace of Endless Spring raid.
+.' Click here to load the Terrace of Endless Spring raid guide. |confirm
+step
+leechsteps "Zygor's Alliance Dungeon Guides\\Raids\\Pandaria (LFR)\\Terrace of Endless Spring (LFR)"
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Insane in the Membrane\\Bloodsail Buccaneers Group",[[
 description This Guide will help you get Reputation to earn the title _The Insane_.
 author support@zygorguides.com

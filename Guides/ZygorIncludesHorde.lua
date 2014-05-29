@@ -232,7 +232,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Quests",[[
 		.talk Shadi Mistrunner##8363
 		.buy 5 Coarse Thread##2320
 		.buy 5 Blue Dye##6260
-		.buy 10 Red Dye##2604
+		.buy 10 Shiny Bauble##6529
 		|only if skill("Leatherworking")>74 and not completedq(29517)
 	step
 		goto Darkmoon Island 55.4,54.8
@@ -15283,7 +15283,7 @@ ZygorGuidesViewer:RegisterInclude("Dominance_Offensive",[[
 		.talk Grizzle Gearslip##67926
 		..' Find Grizzle Gearslip |q 32250/3
 	step
-		'Next to you
+		'Next to you:
 		.talk Garrosh Hellscream##62092
 		..turnin The Might of the Warchief##32250
 		..accept Domination Point##32108
@@ -15634,9 +15634,8 @@ ZygorGuidesViewer:RegisterInclude("Dominance_Offensive",[[
 		..accept Taking Advantage##32118
 	step
 		goto Krasarang Wilds 76.2,34.0 |n
-		'Click the portal to go to the Ruins of Ogudei |goto Krasarang Wilds/3 37.4,46.4,0.5
+		'Click the portal to go to the Ruins of Ogudei |goto Krasarang Wilds/3 37.4,46.4,0.5 |c
 		|only if havequest(32118)
-		|confirm
 	step
 		goto Krasarang Wilds/3 36.1,42.1
 		.talk Kaelis Sunsoar##68274
@@ -15675,8 +15674,8 @@ ZygorGuidesViewer:RegisterInclude("Dominance_Offensive",[[
 		|only if havequest(32342)
 	step
 		goto Krasarang Wilds/2 67.8,80.3
-		.from Gen-li, Twister of Words##68169+
-		.from Meng-do, Strength of Mountains##68170+
+		.from Gen-li Twister of Words##68169
+		.from Meng-do Strength of Mountains##68170
 		..collect Gen-Li's Essence##92736 |q 32343/1
 		..collect Meng-do's Essence##92735 |q 32343/1
 	step
@@ -15715,7 +15714,7 @@ ZygorGuidesViewer:RegisterInclude("Dominance_Offensive",[[
 	step
 		goto Krasarang Wilds 9.9,52.4
 		.talk Tak-Tak##68681
-		.' Tell him to take you to the Shrine of Seven Stars. |goto Vale of Eternal Blossoms,59.1,20.4 |noway |c
+		.' Tell him to take you to the Shrine of Two Moons. |goto Vale of Eternal Blossoms,59.1,20.4 |noway |c
 	step
 		goto Shrine of Two Moons/2 32.1,83.8
 		.talk Garrosh Hellscream##67840
@@ -16154,7 +16153,7 @@ ZygorGuidesViewer:RegisterInclude("Dominance_Offensive",[[
 		goto Krasarang Wilds 10.8,53.4
 		.talk Tuskripper Grukna##69060
 		..buy 1 Grand Commendation of Dominance Offensive##93232 |n
-		.' Use the Commendation of Dominance Offensive you just purchased. |condition ZGV:GetReputation("Dominanse Offensive").hasBonus |use Grand Commendation of Dominance Offensive##93232
+		.' Use the Commendation of Dominance Offensive you just purchased. |condition ZGV:GetReputation("Dominance Offensive").hasBonus |use Grand Commendation of Dominance Offensive##93232
 		|only if rep("Dominance Offensive")>=Revered
 	step
 		'This is the end of this guide.

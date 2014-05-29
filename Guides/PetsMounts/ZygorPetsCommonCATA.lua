@@ -2381,7 +2381,11 @@ step
 goto 26.5,52.1
 .' Click The Schools of Arcane Magic - Divination |tip It looks like a blue book laying on the floor next to 2 bookshelves upstairs inside this building.
 .' Read The Schools of Arcane Magic - Divination |achieve 1956/4
-.' Click here if the correct book isn't there |confirm |next "RestartHigherLearning"
+.' Click here if the correct book isn't there |confirm
+step
+.' Click here to proceed. |confirm
+.' Or
+.' Click here to go back to the beginning of this guide. |confirm |next "RestartHigherLearning"
 step
 |use The Schools of Arcane Magic - Mastery##43824 |tip You should receive this in your mailbox
 |confirm

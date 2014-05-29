@@ -13489,7 +13489,7 @@ goto
 .' Click here for 25 man abilities. |next "yogg25" |confirm
 step
 label "yogg10"
-goto
+goto Ulduar/4 68,40.8
 '_Yogg-Saron 10 man_
 '_Phase 1_
 '_Sara_
@@ -13503,7 +13503,7 @@ goto
 |modelnpc Sara##33134
 .' Click here to move to _Phase 2_ |confirm
 step
-goto
+goto Ulduar/4 68,40.8
 '_Yogg-Saron 10 man_
 '_Phase 2_
 .' There are now two areas; outside and inside the Mind's Eye. During this phase, portals are opened to the Mind's Eye. This phase ends when the Mind's Eye is at 30% health.
@@ -13530,7 +13530,7 @@ goto
 |modelnpc Sara##33134
 .' Click here to move to _Phase 3_ |confirm
 step
-goto
+goto Ulduar/4 68,40.8
 '_Yogg-Saron 10 man_
 '_Phase 3_
 '_The Head of the Beast_
@@ -13544,7 +13544,7 @@ goto
 |next "yoggcomplete" |confirm
 step
 label "yogg25"
-goto
+goto Ulduar/4 68,40.8
 '_Yogg-Saron 25 man_
 '_Phase 1_
 '_Sara_
@@ -13558,7 +13558,7 @@ goto
 |modelnpc Sara##33134
 .' Click here to move to _Phase 2_ |confirm
 step
-goto
+goto Ulduar/4 68,40.8
 '_Yogg-Saron 25 man_
 '_Phase 2_
 .' There are now two areas; outside and inside the Mind's Eye. During this phase, portals are opened to the Mind's Eye. This phase ends when the Mind's Eye is at 30% health.
@@ -13585,7 +13585,7 @@ goto
 |modelnpc Sara##33134
 .' Click here to move to _Phase 3_ |confirm
 step
-goto
+goto Ulduar/4 68,40.8
 '_Yogg-Saron 25 man_
 '_Phase 3_
 '_The Head of the Beast_
@@ -14945,7 +14945,7 @@ path loop off
 path	58.8,54.7	47.1,53.3
 map Blackwing Descent/2
 path	47.4,88.1	57.6,69.5	65.5,69.7
-.' Follow the path, clearing trash as you make your way to the next boss, Maloriak. |goto Blackwing Descent/2 65.5,69.7 < 10 |noway |c
+.' Follow the path, clearing trash as you make your way to the next boss, Maloriak. |goto Blackwing Descent/2 65.5,69.7 <10 |noway |c
 step
 goto Blackwing Descent/2 71.4,70.2
 '_Maloriak_

@@ -301,6 +301,53 @@ step
 step
 .' Congatulations, you have earned the _Merciless, Vengeful, Brutal and Deadly Pet Brawler_ achievements, granting you the _Trainer_title!
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Titles\\Mists of Pandaria Titles\\The Relic Hunter",[[
+description This guide will walk you through earning the Relic Hunter Title.
+step
+leechsteps "Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Is Another Man's Treasure"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Titles\\Mists of Pandaria Titles\\Delver of the Vaults",[[
+description This guide will walk you through earning the Delver of the Vaults title.
+step
+.' To get this title you must defeat the Will of the Emperor in Heroic mode in the Guardians of Mogu'shan raid.
+.' Click here to load the Mogu'shan raid guide. |confirm
+step
+leechsteps "Zygor's Horde Dungeon Guides\\Raids\\Pandaria (LFR)\\Guardians of Mogu'shan (LFR)"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Titles\\Mists of Pandaria Titles\\The Fearless",[[
+description This guide will walk you through earning the Fearless title.
+step
+.' To get this title you must defeat the Sha of Fear on Heroic difficulty in the Terrace of Endless Spring raid.
+.' Click here to load the Terrace of Endless Spring raid guide. |confirm
+step
+leechsteps "Zygor's Horde Dungeon Guides\\Raids\\Pandaria (LFR)\\Terrace of Endless Spring (LFR)"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Titles\\Mists of Pandaria Titles\\Undaunted",[[
+description This guide will walk you through earning the Undaunted title.
+step
+.' To get this title you will need to beat each of the following Challenge Mode dungeons with a rating of Bronze or better.
+|confirm
+step
+|achieve 6374/1
+step
+|achieve 6374/2
+step
+|achieve 6374/3
+step
+|achieve 6374/4
+step
+|achieve 6374/5
+step
+|achieve 6374/6
+step
+|achieve 6374/7
+step
+|achieve 6374/8
+step
+|achieve 6374/9
+step
+|achieve 6374
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Titles\\Mists of Pandaria Titles\\Brawler",[[
 description This guide will walk you through earning the Brawler Title.
 condition end achieved(7942)

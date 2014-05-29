@@ -8398,13 +8398,13 @@ goto Nagrand,27.3,43.1
 ..accept 10011
 step
 goto Nagrand,25.0,36.1
-.from "Demos, Overseer of Hate##18535"
+.from Demos Overseer of Hate##18535
 .collect Fel Cannon Activator##25770 |n
 .' Use the Fel Cannon Activator in your bags |use Fel Cannon Activator##25770
 .' Destroy Forge Camp: Hate |q 10011/1
 step
 goto 19.6,51.1
-.from "Xirkos, Overseer of Fear##18536"
+.from Xirkos Overseer of Fear##18536
 .collect Fel Cannon Activator##25771 |n
 .' Use the Fel Cannon Activator in your bags |use Fel Cannon Activator##25771
 .' Destoy Forge Camp: Fear |q 10011/2
@@ -9828,6 +9828,24 @@ step
 step
 label "learn"
 .learnmount Sandstone Drake##93326 |use Vial of the Sands##65891
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Gold Only Mounts\\Winged Steed of the Ebon Blade",[[
+description This guide will walk you through obtaining
+description the flying mounts that can be obtained
+description through gold farming.
+condition end hasmount(54729)
+model 28108
+step
+' _Only Death Knights_ can buy this mount!
+' It costs about 1000 gold.
+|confirm
+step
+goto Eastern Plaguelands 84,49.8
+.talk 29587
+..buy 1 Winged Steed of the Ebon Blade##40775
+..collect 1 Winged Steed of the Ebon Blade##40775
+step
+.learnmount Winged Steed of the Ebon Blade##54729 |use Winged Steed of the Ebon Blade##40775
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Riding Nether Ray\\Skyguard Faction Dailies",[[
 description This guide will take you through the quests needed to become Exalted with the Shatari Skyguard
@@ -12595,7 +12613,7 @@ step
 step
 .learnmount Flame Hippogryph##97359 |use Flame Hippogryph##69213
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Ironbound Proto Drake ",[[
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Ironbound Proto-Drake ",[[
 author support@zygorguides.com
 description This guide will walk you through earning the achievements required to obtain the Ironbound Proto-Drake.
 condition end hasmount(63956)
@@ -13740,6 +13758,34 @@ goto Tempest Keep 50,15.2
 |modeldisplay 17890
 step
 .learnmount Ashes of Al'ar##40192 |use Ashes of Al'ar##32458
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Mimiron's Head",[[
+author support@zygorguides.com
+condition end hasmount(63796)
+model 28890
+step
+'This mount is dropped by Yogg-Saron in the Ulduar raid. It can also drop from Unclaimed Black Market Containers which can be purchased from the Black Market Auction House in Pandaria.
+.' Click here to kill Yogg-Saron |next "raid" |confirm
+.' Click here to buy Black Market Containers |next "bmc" |confirm
+step
+label "raid"
+' This mount is dropped by Yogg-Saron in the Ulduar raid.
+goto Ulduar/4 68,40.8
+.from Yogg-Saron##33288 |n
+.collect 1 Mimiron's Head##45693 |next "end"
+|modeldisplay 28890
+step
+label "bmc"
+goto The Veiled Stair 63.8,75.8
+.talk 62943
+.' Buy any Unclaimed Black Market Container(s) you wish.
+.collect 1 Unclaimed Black Market Container##97565
+step
+' Open the Black Market Container |use Unclaimed Black Market Container##97565
+.collect 1 Mimiron's Head##45693 |next "end"
+step
+label "end"
+.learnmount Mimiron's Head##63796 |use Mimiron's Head##45693
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store\\Celestial Steed",[[
 author support@zygorguides.com

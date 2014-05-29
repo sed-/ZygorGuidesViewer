@@ -3255,7 +3255,7 @@ goto 71.5,93.1
 ..turnin 30508
 ..accept 30512
 step
-goto 74.8,88.8
+goto 75.0,88.9
 .talk 59263
 ..accept 30469
 ..accept 30467
@@ -3470,7 +3470,7 @@ goto 53.8,82.7
 ..accept 30652
 step
 goto 51.2,79.3
-.' While in this area, look for Pandaren Prisoner to set free
+.' While in this area, look for Pandaren Prisoners to set free
 |modelnpc Pandaren Prisoner##60038
 .clicknpc Explosives Barrel##60095
 .collect 1 Explosives Barrel##80528 |q 30651
